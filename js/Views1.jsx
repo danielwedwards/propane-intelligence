@@ -16,6 +16,7 @@ function MarketMapView({ onSelect, selected }) {
 
   // ----- controlled filter state -------------------------------------------
   const [ownership, setOwnership] = React.useState(() => new Set()); // empty = all
+  const [states, setStates]       = React.useState(() => new Set()); // empty = all
   const [search, setSearch]       = React.useState('');
   const [revRange, setRevRange]   = React.useState([0, 5000]);   // $M
   const [locRange, setLocRange]   = React.useState([0, 5000]);
@@ -33,20 +34,44 @@ function MarketMapView({ onSelect, selected }) {
     return counts;
   }, [companies]);
 
+  // Per-state company counts (counts each state a company operates in).
+  const stateCounts = React.useMemo(() => {
+    const counts = {};
+    for (const c of companies) {
+      const sts = (c.states && c.states.length) ? c.states : (c.hqState ? [c.hqState] : []);
+      const seen = new Set();
+      for (const s of sts) {
+        if (!s || seen.has(s)) continue;
+        seen.add(s);
+        counts[s] = (counts[s] || 0) + 1;
+      }
+    }
+    return counts;
+  }, [companies]);
+
   const filters = React.useMemo(() => ({
     ownership: ownership.size ? ownership : null,
+    states: states.size ? states : null,
     region,
     revRange: revRange[0] === 0 && revRange[1] === 5000 ? null : revRange,
     locRange: locRange[0] === 0 && locRange[1] === 5000 ? null : locRange,
     fitRange: fitRange[0] === 0 && fitRange[1] === 100 ? null : fitRange,
     hideExcluded: true,
-  }), [ownership, region, revRange, locRange, fitRange]);
+  }), [ownership, states, region, revRange, locRange, fitRange]);
 
   const toggleOwnership = (k) => {
     setOwnership(prev => {
       const next = new Set(prev);
       if (next.has(k)) next.delete(k);
       else next.add(k);
+      return next;
+    });
+  };
+  const toggleState = (s) => {
+    setStates(prev => {
+      const next = new Set(prev);
+      if (next.has(s)) next.delete(s);
+      else next.add(s);
       return next;
     });
   };
@@ -60,6 +85,7 @@ function MarketMapView({ onSelect, selected }) {
 
   const clearAll = () => {
     setOwnership(new Set());
+    setStates(new Set());
     setSearch('');
     setRevRange([0, 5000]);
     setLocRange([0, 5000]);
@@ -101,6 +127,10 @@ function MarketMapView({ onSelect, selected }) {
                 }}>{l}</button>
               ))}
             </div>
+          </FilterBlock>
+
+          <FilterBlock title="State" value={states.size ? `${states.size} selected` : 'All states'}>
+            <StatePicker stateCounts={stateCounts} selected={states} onToggle={toggleState} onClear={() => setStates(new Set())} />
           </FilterBlock>
 
           <FilterBlock title="Ownership" value={ownership.size ? `${ownership.size} selected` : 'All types'} count={companies.length}>
@@ -262,6 +292,95 @@ function FilterBlock({ title, value, count, children }) {
   );
 }
 
+// All 50 states + DC, alphabetical; count comes from companies that operate there.
+const _US_STATES = [
+  'AL','AK','AZ','AR','CA','CO','CT','DE','DC','FL','GA','HI','ID','IL','IN','IA',
+  'KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM',
+  'NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA',
+  'WV','WI','WY',
+];
+
+function StatePicker({ stateCounts = {}, selected, onToggle, onClear }) {
+  const [q, setQ] = React.useState('');
+  const [showAll, setShowAll] = React.useState(false);
+  const ql = q.trim().toUpperCase();
+
+  // Visible set: states that exist in data, optionally filtered by typed prefix.
+  const all = _US_STATES.filter(s => (stateCounts[s] || 0) > 0);
+  const filtered = ql ? all.filter(s => s.startsWith(ql)) : all;
+  const shown = showAll ? filtered : filtered.slice(0, 18);
+  const hiddenCount = filtered.length - shown.length;
+
+  return (
+    <div>
+      <div style={{ position: 'relative', marginBottom: 8 }}>
+        <input
+          value={q}
+          onChange={e => setQ(e.target.value)}
+          placeholder="Type a state code (e.g. TX)…"
+          style={{ width: '100%', padding: '6px 10px 6px 26px', border: '1px solid #E3E8EE', borderRadius: 6, fontSize: 11, fontFamily: 'inherit', outline: 'none', boxSizing: 'border-box', textTransform: 'uppercase' }}
+        />
+        <div style={{ position: 'absolute', left: 8, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}>
+          <Icon name="search" size={11} color="#8B97A8"/>
+        </div>
+      </div>
+
+      {selected && selected.size > 0 && (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginBottom: 8 }}>
+          {[...selected].sort().map(s => (
+            <button key={s} onClick={() => onToggle(s)} style={{
+              padding: '2px 7px', border: '1px solid #635BFF', background: '#EEF0FF',
+              color: '#4B45B8', borderRadius: 9999, fontSize: 10, fontWeight: 600,
+              cursor: 'pointer', fontFamily: "'IBM Plex Mono'", display: 'inline-flex',
+              alignItems: 'center', gap: 4,
+            }}>
+              {s}
+              <Icon name="x" size={9} color="#4B45B8"/>
+            </button>
+          ))}
+          {selected.size > 1 && (
+            <button onClick={onClear} style={{ padding: '2px 7px', border: 'none', background: 'transparent', color: '#8B97A8', fontSize: 10, cursor: 'pointer', fontFamily: 'inherit' }}>Clear</button>
+          )}
+        </div>
+      )}
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 3 }}>
+        {shown.map(s => {
+          const on = selected.has(s);
+          const n = stateCounts[s] || 0;
+          return (
+            <button key={s} onClick={() => onToggle(s)} title={`${s} · ${n} companies`} style={{
+              padding: '4px 0', border: '1px solid ' + (on ? '#635BFF' : '#E3E8EE'),
+              background: on ? '#EEF0FF' : '#fff',
+              color: on ? '#4B45B8' : '#425466',
+              borderRadius: 4, fontSize: 10, fontWeight: 600,
+              cursor: 'pointer', fontFamily: "'IBM Plex Mono'",
+              display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1.1,
+            }}>
+              <span>{s}</span>
+              <span style={{ fontSize: 8, color: on ? '#635BFF' : '#8B97A8', fontWeight: 500, marginTop: 1 }}>{n}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {hiddenCount > 0 && (
+        <button onClick={() => setShowAll(true)} style={{ marginTop: 8, padding: '4px 8px', border: 'none', background: 'transparent', color: '#635BFF', fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit' }}>
+          Show {hiddenCount} more
+        </button>
+      )}
+      {showAll && filtered.length > 18 && (
+        <button onClick={() => setShowAll(false)} style={{ marginTop: 8, padding: '4px 8px', border: 'none', background: 'transparent', color: '#8B97A8', fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit' }}>
+          Show fewer
+        </button>
+      )}
+      {filtered.length === 0 && (
+        <div style={{ padding: '8px 4px', fontSize: 11, color: '#8B97A8' }}>No states match "{q}".</div>
+      )}
+    </div>
+  );
+}
+
 function RangeSlider({ low = 20, high = 80, tone = 'neutral' }) {
   const color = tone === 'indigo' ? '#635BFF' : '#0A2540';
   return (
@@ -344,10 +463,19 @@ const TYPE_TONE = {
 
 function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
   const rows = window.MOCK_COMPANIES || [];
+  const [statePickerOpen, setStatePickerOpen] = React.useState(false);
+  const statePickerRef = React.useRef(null);
+  React.useEffect(() => {
+    if (!statePickerOpen) return;
+    const onDoc = (e) => { if (statePickerRef.current && !statePickerRef.current.contains(e.target)) setStatePickerOpen(false); };
+    document.addEventListener('mousedown', onDoc);
+    return () => document.removeEventListener('mousedown', onDoc);
+  }, [statePickerOpen]);
 
   // ----- filter state -----
   const [search, setSearch]       = React.useState('');
   const [ownership, setOwnership] = React.useState(() => new Set());
+  const [statesSel, setStatesSel] = React.useState(() => new Set());
   const [region, setRegion]       = React.useState('all');
   const [sortCol, setSortCol]     = React.useState('fitScore');
   const [sortDir, setSortDir]     = React.useState('desc');
@@ -355,9 +483,10 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
 
   const filters = React.useMemo(() => ({
     ownership: ownership.size ? ownership : null,
+    states: statesSel.size ? statesSel : null,
     region,
     hideExcluded: true,
-  }), [ownership, region]);
+  }), [ownership, statesSel, region]);
 
   // Filter via the shared engine (same filter as the map for parity).
   const filtered = React.useMemo(() => {
@@ -405,10 +534,29 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
   const toggleOwnership = (k) => setOwnership(prev => {
     const next = new Set(prev); if (next.has(k)) next.delete(k); else next.add(k); return next;
   });
+  const toggleStateSel = (s) => setStatesSel(prev => {
+    const next = new Set(prev); if (next.has(s)) next.delete(s); else next.add(s); return next;
+  });
+
+  // Per-state company counts for the dropdown picker.
+  const stateCountsList = React.useMemo(() => {
+    const counts = {};
+    for (const c of rows) {
+      const sts = (c.states && c.states.length) ? c.states : (c.hqState ? [c.hqState] : []);
+      const seen = new Set();
+      for (const s of sts) {
+        if (!s || seen.has(s)) continue;
+        seen.add(s);
+        counts[s] = (counts[s] || 0) + 1;
+      }
+    }
+    return counts;
+  }, [rows]);
 
   // Active-filter chips
   const chips = [];
   ownership.forEach(o => chips.push({ label: o[0].toUpperCase() + o.slice(1), clear: () => toggleOwnership(o) }));
+  [...statesSel].sort().forEach(s => chips.push({ label: s, clear: () => toggleStateSel(s) }));
   if (region !== 'all') chips.push({ label: region.replace('_',' '), clear: () => setRegion('all') });
   if (search) chips.push({ label: '"' + search + '"', clear: () => setSearch('') });
 
@@ -455,6 +603,32 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
               </button>
             );
           })}
+        </div>
+
+        {/* State picker dropdown */}
+        <div ref={statePickerRef} style={{ position: 'relative' }}>
+          <button onClick={() => setStatePickerOpen(o => !o)} style={{
+            padding: '4px 9px',
+            border: '1px solid ' + (statesSel.size ? '#635BFF' : '#E3E8EE'),
+            background: statesSel.size ? '#EEF0FF' : '#fff',
+            color: statesSel.size ? '#4B45B8' : '#425466',
+            borderRadius: 9999, fontSize: 11, fontWeight: 500, cursor: 'pointer',
+            fontFamily: 'inherit', display: 'inline-flex', alignItems: 'center', gap: 4,
+          }}>
+            <Icon name="map" size={11}/>
+            {statesSel.size ? `${statesSel.size} state${statesSel.size > 1 ? 's' : ''}` : 'States'}
+            <span style={{ fontSize: 9, marginLeft: 2 }}>▾</span>
+          </button>
+          {statePickerOpen && (
+            <div style={{ position: 'absolute', top: 30, left: 0, zIndex: 50, width: 280, background: '#fff', border: '1px solid #E3E8EE', borderRadius: 8, boxShadow: '0 8px 20px rgba(10,37,64,0.15)', padding: 12 }}>
+              <StatePicker
+                stateCounts={stateCountsList}
+                selected={statesSel}
+                onToggle={toggleStateSel}
+                onClear={() => setStatesSel(new Set())}
+              />
+            </div>
+          )}
         </div>
 
         {chips.length > 0 && chips.map((ch, i) => (
