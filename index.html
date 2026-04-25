@@ -662,6 +662,90 @@ table.lt td{padding:var(--space-sm) var(--space-sm);min-height:var(--touch-min)}
 .main.view-charts .charts-wrap{display:block!important}
 [data-theme="dark"] .charts-wrap{background:#0a1018}
 [data-theme="dark"] .charts-wrap > div > div{background:#16202e}
+/* === v4.3.0: Intelligence section (News + Signals) === */
+.intel-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
+.main.view-intel{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
+.main.view-intel .left,.main.view-intel .rh,.main.view-intel .map-wrap,.main.view-intel .charts-wrap{display:none!important}
+.main.view-intel .intel-wrap{display:block!important}
+.intel-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.intel-tabs{display:inline-flex;background:#F0F2F5;border-radius:var(--radius-sm);padding:3px;gap:2px}
+.intel-tab{padding:7px 16px;border:none;border-radius:5px;font-size:12px;font-weight:600;font-family:inherit;color:var(--text-tertiary);background:transparent;cursor:pointer;transition:all var(--tr-fast);letter-spacing:0.2px}
+.intel-tab:hover{color:var(--text-primary)}
+.intel-tab.active{background:var(--white);color:var(--text-primary);box-shadow:var(--shadow-xs)}
+.intel-tab .tab-count{margin-left:6px;font-family:var(--font-mono);font-size:11px;color:var(--text-tertiary);font-weight:500}
+.intel-tab.active .tab-count{color:var(--brand)}
+.intel-meta{font-size:11px;color:var(--text-tertiary);margin-left:auto}
+.intel-meta b{color:var(--green);font-weight:600}
+.intel-meta b.stale{color:var(--amber)}
+.intel-search{flex:1;min-width:240px;display:flex;align-items:center;gap:8px;padding:7px 12px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md)}
+.intel-search input{flex:1;border:none;outline:none;font-size:13px;font-family:inherit;color:var(--text-primary);background:transparent}
+.intel-impact{display:inline-flex;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:2px}
+.intel-impact button{padding:5px 10px;border:none;border-radius:4px;background:transparent;color:var(--text-secondary);font-weight:500;font-size:12px;font-family:inherit;cursor:pointer;transition:all var(--tr-fast)}
+.intel-impact button.active{background:var(--brand-light);color:var(--brand-dark);font-weight:600}
+.intel-cats{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.intel-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:9999px;border:1px solid var(--border);background:var(--white);color:var(--text-secondary);font-size:12px;font-weight:500;font-family:inherit;cursor:pointer;transition:all var(--tr-fast)}
+.intel-chip:hover{border-color:var(--text-tertiary);color:var(--text-primary)}
+.intel-chip.active{background:var(--text-primary);color:var(--white);border-color:var(--text-primary)}
+.intel-chip .chip-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.intel-chip .chip-count{font-family:var(--font-mono);font-size:11px;color:var(--text-tertiary);font-weight:500}
+.intel-chip.active .chip-count{color:rgba(255,255,255,0.7)}
+.intel-action-strip{margin-bottom:20px}
+.intel-action-strip .action-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.intel-action-strip .action-head h3{margin:0;font-size:13px;font-weight:600;color:var(--text-primary);letter-spacing:-0.1px}
+.intel-action-strip .action-head .badge{font-size:10px;font-weight:700;color:var(--brand);background:var(--brand-light);padding:2px 8px;border-radius:9999px;text-transform:uppercase;letter-spacing:0.4px}
+.intel-action-strip .action-head .meta{margin-left:auto;font-size:11px;color:var(--text-tertiary)}
+.intel-action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.intel-action-card{position:relative;padding:14px 16px;background:var(--white);border:1px solid var(--border-subtle);border-radius:10px;display:flex;flex-direction:column;gap:8px;cursor:pointer;transition:box-shadow var(--tr-fast),transform var(--tr-fast);overflow:hidden}
+.intel-action-card:hover{box-shadow:var(--shadow);transform:translateY(-1px)}
+.intel-action-card .top-bar{position:absolute;top:0;left:0;right:0;height:3px}
+.intel-action-card .row{display:flex;align-items:center;gap:6px;font-size:11px}
+.intel-action-card h4{margin:0;font-size:13px;font-weight:600;color:var(--text-primary);line-height:1.35;letter-spacing:-0.1px}
+.intel-action-card p{margin:0;font-size:12px;color:var(--text-secondary);line-height:1.5;flex:1}
+.intel-action-card .foot{display:flex;align-items:center;gap:6px;padding-top:8px;border-top:1px solid var(--border-subtle);font-size:11px}
+.intel-feed{background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;overflow:hidden}
+.intel-card{padding:18px 20px;border-bottom:1px solid var(--border-subtle);display:flex;gap:14px;cursor:pointer;transition:background var(--tr-fast)}
+.intel-card:hover{background:var(--light-bg)}
+.intel-card:last-child{border-bottom:none}
+.intel-card .rail{display:flex;flex-direction:column;align-items:center;width:28px;flex-shrink:0;padding-top:3px}
+.intel-card .rail .ico{width:28px;height:28px;border-radius:7px;background:var(--light-bg);border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+.intel-card .body{flex:1;min-width:0}
+.intel-card .top{display:flex;align-items:center;gap:8px;margin-bottom:5px;flex-wrap:wrap;font-size:11px}
+.intel-card .top .src{color:var(--text-secondary);font-weight:600}
+.intel-card .top .dot-sep{color:var(--text-tertiary)}
+.intel-card .top .ago{color:var(--text-tertiary)}
+.intel-card .impact-bar{margin-left:auto;display:flex;align-items:center;gap:6px}
+.intel-card .impact-bar .lbl{font-size:10px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.3px}
+.intel-card .impact-bar .gauge{width:48px;height:4px;background:var(--border-subtle);border-radius:2px;overflow:hidden;position:relative}
+.intel-card .impact-bar .gauge i{position:absolute;left:0;top:0;bottom:0}
+.intel-card .impact-bar .num{font-family:var(--font-mono);font-size:12px;font-weight:600}
+.intel-card h4{margin:4px 0 6px;font-size:14px;font-weight:600;color:var(--text-primary);line-height:1.4;letter-spacing:-0.1px}
+.intel-card .summary{font-size:12px;color:var(--text-secondary);line-height:1.55;margin:0 0 10px}
+.intel-card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.intel-card .ctag{padding:3px 9px;background:var(--brand-light);border:1px solid transparent;border-radius:9999px;font-size:11px;font-weight:500;color:var(--brand-dark);font-family:inherit;cursor:pointer;transition:all var(--tr-fast)}
+.intel-card .ctag:hover{background:var(--brand);color:#fff}
+.intel-card .ctag.unknown{background:var(--light-bg);border:1px solid var(--border);color:var(--text-secondary);cursor:default}
+.intel-card .ctag.unknown:hover{background:var(--light-bg);color:var(--text-secondary)}
+.intel-card .pill{padding:2px 8px;border-radius:9999px;font-size:10px;font-weight:700;letter-spacing:0.3px;text-transform:uppercase}
+.intel-card .pill.breaking{background:var(--red-light);color:var(--red)}
+.intel-card .pill.cat{display:inline-flex;align-items:center;gap:5px}
+.intel-card .pill.cat .d{width:6px;height:6px;border-radius:50%}
+.intel-card .pill.conf-high{background:var(--green-light);color:var(--green)}
+.intel-card .pill.conf-medium{background:var(--amber-light);color:var(--amber)}
+.intel-card .pill.conf-low{background:var(--border-subtle);color:var(--text-secondary)}
+.intel-empty{padding:48px 24px;text-align:center;color:var(--text-tertiary);font-size:13px}
+[data-theme="dark"] .intel-wrap{background:#0a1018}
+[data-theme="dark"] .intel-tabs{background:#1a2534}
+[data-theme="dark"] .intel-tab.active{background:#16202e;color:#e0e4ea}
+[data-theme="dark"] .intel-search{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .intel-impact{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .intel-impact button.active{background:#241947;color:#a193fc}
+[data-theme="dark"] .intel-chip{background:#16202e;border-color:#2a3a4e;color:#c0c8d4}
+[data-theme="dark"] .intel-chip.active{background:#e0e4ea;color:#0a1018}
+[data-theme="dark"] .intel-feed{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .intel-card{border-color:#243447}
+[data-theme="dark"] .intel-card:hover{background:#1a2534}
+[data-theme="dark"] .intel-card .rail .ico{background:#0e1620;border-color:#2a3a4e}
+[data-theme="dark"] .intel-action-card{background:#16202e;border-color:#2a3a4e}
 
 /* ========== MODERN SAAS: SIDEBAR LAYOUT ========== */
 .app-layout{display:flex;flex:1;overflow:hidden}
@@ -801,7 +885,7 @@ Continue with Microsoft
 <li><kbd>Space</kbd> &mdash; Toggle platform add/remove for selected row</li>
 <li><kbd>?</kbd> &mdash; Toggle this help panel</li>
 <li><kbd>/</kbd> &mdash; Focus search bar</li>
-<li><kbd>M</kbd> &mdash; Market Map &nbsp; <kbd>C</kbd> &mdash; Companies &nbsp; <kbd>A</kbd> &mdash; Analytics</li>
+<li><kbd>M</kbd> &mdash; Market Map &nbsp; <kbd>C</kbd> &mdash; Companies &nbsp; <kbd>I</kbd> &mdash; Intelligence &nbsp; <kbd>A</kbd> &mdash; Analytics</li>
 <li><kbd>T</kbd> &mdash; Companies &gt; Table only &nbsp; <kbd>B</kbd> &mdash; Companies &gt; Table + Map</li>
 <li><kbd>Esc</kbd> &mdash; Close panels</li>
 </ul>
@@ -862,6 +946,7 @@ Continue with Microsoft
 <div class="section-nav" id="sectionNav" role="tablist" aria-label="Main sections">
 <button class="section-btn" data-section="map" role="tab" aria-selected="false" onclick="setSection('map')" title="Market Map (M)">Market Map</button>
 <button class="section-btn active" data-section="companies" role="tab" aria-selected="true" onclick="setSection('companies')" title="Companies (C)">Companies</button>
+<button class="section-btn" data-section="intelligence" role="tab" aria-selected="false" onclick="setSection('intelligence')" title="Intelligence (I)">Intelligence</button>
 <button class="section-btn" data-section="analytics" role="tab" aria-selected="false" onclick="setSection('analytics')" title="Analytics (A)">Analytics</button>
 </div>
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
@@ -1036,6 +1121,32 @@ Continue with Microsoft
 <div class="chart-card"><div class="chart-header"><h3 id="chartLocTitle">Top 25 by Location Count</h3></div><div id="chartLocations" style="height:780px"></div></div>
 </div>
 </div>
+<!-- v4.3.0: Intelligence section (News + Signals) -->
+<div class="intel-wrap" id="intelWrap">
+<div class="intel-head">
+<div class="intel-tabs" id="intelTabs" role="tablist" aria-label="Intelligence tabs">
+<button class="intel-tab active" data-tab="news" role="tab" aria-selected="true" onclick="setIntelTab('news')">News <span class="tab-count" id="intelNewsCount">0</span></button>
+<button class="intel-tab" data-tab="signals" role="tab" aria-selected="false" onclick="setIntelTab('signals')">Signals <span class="tab-count" id="intelSignalsCount">0</span></button>
+</div>
+<span class="intel-meta" id="intelMeta">Loading…</span>
+</div>
+<div class="intel-head" style="margin-bottom:12px">
+<div class="intel-search">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--text-tertiary);flex-shrink:0"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+<input type="text" id="intelQuery" placeholder="Search headlines, summaries, companies&hellip;" oninput="renderIntelligence()" autocomplete="off"/>
+</div>
+<div class="intel-impact" id="intelImpact" role="group" aria-label="Filter by impact">
+<button class="active" data-impact="all" onclick="setIntelImpact('all')">Any</button>
+<button data-impact="high" onclick="setIntelImpact('high')">High</button>
+<button data-impact="mid" onclick="setIntelImpact('mid')">Mid</button>
+<button data-impact="low" onclick="setIntelImpact('low')">Low</button>
+</div>
+</div>
+<div class="intel-cats" id="intelCats"></div>
+<div id="intelActionStrip"></div>
+<div class="intel-feed" id="intelFeed"></div>
+</div>
+</div>
 </div><!-- close mainArea -->
 </div><!-- close app-layout -->
 <div class="po" id="po" onclick="cp()"></div>
@@ -1137,13 +1248,14 @@ function setMobileView(view){
 /* === PRODUCT SPRINT B: Desktop view toggle (now driven by section nav in v4.1.0) === */
 function setView(view){
   let main=document.getElementById('mainArea');
-  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts'));
-  main.classList.remove('view-table','view-map','view-charts');
+  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel'));
+  main.classList.remove('view-table','view-map','view-charts','view-intel');
   if(view==='table')main.classList.add('view-table');
   else if(view==='map')main.classList.add('view-map');
   else if(view==='charts'){main.classList.add('view-charts');setTimeout(function(){renderCharts();chartInstances.forEach(function(c){c.resize()})},100)}
-  // v4.2.0: Sync section nav + Companies sub-toggle UI from view
-  let section=(view==='map')?'map':(view==='charts'?'analytics':'companies');
+  else if(view==='intel'){main.classList.add('view-intel');setTimeout(function(){renderIntelligence()},50)}
+  // v4.3.0: Sync section nav + Companies sub-toggle UI from view
+  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':'companies'));
   document.querySelectorAll('.section-btn').forEach(btn=>{
     let isActive=btn.dataset.section===section;
     btn.classList.toggle('active',isActive);
@@ -1165,7 +1277,7 @@ function setView(view){
     if((view==='map'||view==='both')&&!prevHadMap)resetMapToScope();
   },150);
 }
-/* v4.2.0: Top-level section selector. Companies remembers last sub-state via localStorage. */
+/* v4.3.0: Top-level section selector. Companies remembers last sub-state via localStorage. */
 function setSection(section){
   if(section==='map'){setView('map');return}
   if(section==='companies'){
@@ -1174,6 +1286,7 @@ function setSection(section){
     setView(sub);
     return;
   }
+  if(section==='intelligence'||section==='intel'){setView('intel');return}
   if(section==='analytics'||section==='charts'){setView('charts');return}
 }
 /* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
@@ -2375,9 +2488,10 @@ document.addEventListener('keydown',e=>{
   }
   if(e.key==='?'){e.preventDefault();toggleHelp();return}
   if(e.key==='/'){e.preventDefault();document.getElementById('si').focus();return}
-  // v4.2.0: section + sub-view shortcuts
+  // v4.3.0: section + sub-view shortcuts
   if(e.key==='m'||e.key==='M'){e.preventDefault();setSection('map');return}                 // Market Map section
   if(e.key==='c'||e.key==='C'){e.preventDefault();setSection('companies');return}            // Companies section (uses last sub)
+  if(e.key==='i'||e.key==='I'){e.preventDefault();setSection('intelligence');return}         // Intelligence section
   if(e.key==='a'||e.key==='A'){e.preventDefault();setSection('analytics');return}            // Analytics section
   if(e.key==='t'||e.key==='T'){e.preventDefault();setCompaniesSub('table');return}           // Companies > Table only
   if(e.key==='b'||e.key==='B'){e.preventDefault();setCompaniesSub('both');return}            // Companies > Table + Map
@@ -2760,6 +2874,267 @@ function renderCharts(){
 }
 /* Single resize listener (not inside renderCharts to avoid duplicates) */
 window.addEventListener('resize',function(){chartInstances.forEach(function(c){try{c.resize()}catch(e){}})});
+
+/* ================================================================
+ * v4.3.0: Intelligence section — News & Signals
+ * ================================================================ */
+let INTEL_NEWS=null;        // {generatedAt,count,sources,articles}
+let INTEL_SIGNALS=null;     // {generatedAt,count,signals}
+let intelTab='news';        // 'news' | 'signals'
+let intelImpact='all';      // 'all' | 'high' | 'mid' | 'low'
+let intelCategory='all';    // 'all' | category key
+let _intelLoadStarted=false;
+
+const INTEL_CAT_META={
+  ma:          {label:'M&A',          color:'#7C5CFC',icon:'\u2191'},
+  leadership:  {label:'Leadership',   color:'#C4862D',icon:'\u2605'},
+  capital:     {label:'Capital',      color:'#175CD3',icon:'$'},
+  regulatory:  {label:'Regulatory',   color:'#697386',icon:'\u00A7'},
+  expansion:   {label:'Expansion',    color:'#027A48',icon:'\u2197'},
+  pricing:     {label:'Pricing',      color:'#475467',icon:'\u2261'},
+  litigation:  {label:'Litigation',   color:'#D92D20',icon:'\u26A0'},
+  partnership: {label:'Partnership',  color:'#7C5CFC',icon:'\u292D'}
+};
+const INTEL_SIG_META={
+  public_material_event: {label:'8-K Filing',     color:'#175CD3',icon:'$'},
+  ownership_change:      {label:'Ownership',      color:'#7C5CFC',icon:'\u21BB'},
+  leadership_change:     {label:'Leadership',     color:'#C4862D',icon:'\u2605'},
+  expansion:             {label:'Expansion',      color:'#027A48',icon:'\u2197'},
+  distress:              {label:'Distress',       color:'#D92D20',icon:'\u26A0'},
+  capital_raise:         {label:'Capital Raise',  color:'#175CD3',icon:'$'},
+  default:               {label:'Signal',         color:'#697386',icon:'\u25CF'}
+};
+
+function _intelTimeAgo(iso){
+  if(!iso)return'';
+  let now=Date.now(),then=new Date(iso).getTime();
+  let diff=Math.max(0,now-then);
+  let h=Math.floor(diff/3600000);
+  if(h<1)return'just now';
+  if(h<24)return h+'h ago';
+  let d=Math.floor(h/24);
+  if(d<7)return d+'d ago';
+  let w=Math.floor(d/7);
+  if(w<5)return w+'w ago';
+  let mo=Math.floor(d/30);
+  return mo+'mo ago';
+}
+function _intelEscape(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function _intelResolveCompany(id,fallbackLabel){
+  if(!id)return{id:null,name:fallbackLabel||'',matched:false};
+  let hit=DATA.find(c=>c.id===id)||DATA.find(c=>c.canonicalId===id);
+  if(hit)return{id:hit.id,name:hit.name,matched:true};
+  // Fall back: look up by name normalization
+  if(fallbackLabel){
+    let n=fallbackLabel.toLowerCase().replace(/[^a-z0-9]/g,'');
+    let nh=DATA.find(c=>c.name&&c.name.toLowerCase().replace(/[^a-z0-9]/g,'')===n);
+    if(nh)return{id:nh.id,name:nh.name,matched:true};
+  }
+  // Convert snake_case id back to a human-readable label
+  let pretty=String(id).replace(/_/g,' ').replace(/\b\w/g,ch=>ch.toUpperCase());
+  return{id:null,name:fallbackLabel||pretty,matched:false};
+}
+
+async function _intelLoad(){
+  if(_intelLoadStarted)return;
+  _intelLoadStarted=true;
+  let intelMeta=document.getElementById('intelMeta');
+  if(intelMeta)intelMeta.textContent='Loading…';
+  try{
+    let[nRes,sRes]=await Promise.all([
+      fetch('data/news.json').catch(()=>({ok:false})),
+      fetch('data/signals.json').catch(()=>({ok:false}))
+    ]);
+    if(nRes.ok)INTEL_NEWS=await nRes.json();
+    if(sRes.ok)INTEL_SIGNALS=await sRes.json();
+  }catch(e){console.error('Intelligence load failed',e)}
+  renderIntelligence();
+}
+
+function setIntelTab(tab){
+  intelTab=(tab==='signals')?'signals':'news';
+  intelCategory='all'; // reset cat filter when switching tabs
+  document.querySelectorAll('.intel-tab').forEach(b=>{
+    let isA=b.dataset.tab===intelTab;
+    b.classList.toggle('active',isA);
+    b.setAttribute('aria-selected',isA?'true':'false');
+  });
+  renderIntelligence();
+}
+function setIntelImpact(level){
+  intelImpact=level;
+  document.querySelectorAll('#intelImpact button').forEach(b=>{
+    b.classList.toggle('active',b.dataset.impact===level);
+  });
+  renderIntelligence();
+}
+function setIntelCategory(cat){
+  intelCategory=cat;
+  renderIntelligence();
+}
+function _intelOpenUrl(url){if(url)window.open(url,'_blank','noopener,noreferrer')}
+function _intelOpenCompany(id){if(id&&DATA.find(c=>c.id===id))op(id)}
+
+function _intelRenderCard(item,kind){
+  // Unified card renderer for news article OR signal
+  let isNews=(kind==='news');
+  let metaTbl=isNews?INTEL_CAT_META:INTEL_SIG_META;
+  let key=isNews?item.category:item.type;
+  let m=metaTbl[key]||metaTbl['default']||{label:key||'Item',color:'#697386',icon:'\u25CF'};
+  let impact=isNews?(item.impactScore||0):(item.strength||0);
+  let headline=isNews?(item.headline||''):(item.label||item.notes||'Signal');
+  let summary=isNews?(item.summary||''):(item.notes||item.evidence||'');
+  let companyId=isNews?(item.companyIds&&item.companyIds[0]):item.companyId;
+  let companyIds=isNews?(item.companyIds||[]):(companyId?[companyId]:[]);
+  let url=item.url||item.sourceUrl;
+  let when=isNews?item.publishedAt:item.observedAt;
+  let src=item.source||'';
+  let read=isNews?(item.readMinutes?(item.readMinutes+' min read'):''):(item.evidence||'');
+  let fallbackLabel=isNews?'':(item.companyLabel||'');
+  let chipsHtml=companyIds.slice(0,4).map(id=>{
+    let r=_intelResolveCompany(id,fallbackLabel);
+    if(r.matched){
+      return '<button class="ctag" onclick="event.stopPropagation();_intelOpenCompany(\''+_intelEscape(r.id)+'\')" title="Open profile">'+_intelEscape(r.name)+'</button>';
+    }
+    return '<span class="ctag unknown" title="Not in current dataset">'+_intelEscape(r.name)+'</span>';
+  }).join('');
+  let breaking=isNews&&item.isBreaking?'<span class="pill breaking">Breaking</span>':'';
+  let confPill='';
+  if(!isNews&&item.confidence){
+    confPill='<span class="pill conf-'+_intelEscape(item.confidence)+'">'+_intelEscape(item.confidence)+'</span>';
+  }
+  let impactBar='<div class="impact-bar"><span class="lbl">'+(isNews?'Impact':'Strength')+'</span><span class="gauge"><i style="width:'+Math.min(100,impact)+'%;background:'+m.color+'"></i></span><span class="num" style="color:'+m.color+'">'+impact+'</span></div>';
+  return '<div class="intel-card" onclick="_intelOpenUrl(\''+_intelEscape(url||'')+'\')">'+
+    '<div class="rail"><div class="ico" style="color:'+m.color+'">'+_intelEscape(m.icon)+'</div></div>'+
+    '<div class="body">'+
+      '<div class="top">'+
+        '<span class="pill cat" style="background:'+m.color+'1A;color:'+m.color+'"><span class="d" style="background:'+m.color+'"></span>'+_intelEscape(m.label)+'</span>'+
+        breaking+confPill+
+        '<span class="src">'+_intelEscape(src)+'</span>'+
+        (when?'<span class="dot-sep">&middot;</span><span class="ago">'+_intelEscape(_intelTimeAgo(when))+'</span>':'')+
+        (read?'<span class="dot-sep">&middot;</span><span class="ago">'+_intelEscape(read)+'</span>':'')+
+        impactBar+
+      '</div>'+
+      '<h4>'+_intelEscape(headline)+'</h4>'+
+      (summary?'<p class="summary">'+_intelEscape(summary.length>320?summary.slice(0,320)+'\u2026':summary)+'</p>':'')+
+      (chipsHtml?'<div class="tags">'+chipsHtml+'</div>':'')+
+    '</div>'+
+  '</div>';
+}
+
+function renderIntelligence(){
+  if(!INTEL_NEWS&&!INTEL_SIGNALS){_intelLoad();return}
+  let news=(INTEL_NEWS&&INTEL_NEWS.articles)?INTEL_NEWS.articles:[];
+  let signals=(INTEL_SIGNALS&&INTEL_SIGNALS.signals)?INTEL_SIGNALS.signals:[];
+  let nc=document.getElementById('intelNewsCount');if(nc)nc.textContent=news.length;
+  let sc=document.getElementById('intelSignalsCount');if(sc)sc.textContent=signals.length;
+  // Meta: most recent generatedAt
+  let latest=null,liveCount=0;
+  if(INTEL_NEWS&&INTEL_NEWS.generatedAt){latest=INTEL_NEWS.generatedAt;liveCount+=news.length}
+  if(INTEL_SIGNALS&&INTEL_SIGNALS.generatedAt&&(!latest||INTEL_SIGNALS.generatedAt>latest)){latest=INTEL_SIGNALS.generatedAt}
+  let metaEl=document.getElementById('intelMeta');
+  if(metaEl){
+    if(latest){
+      let staleHours=(Date.now()-new Date(latest).getTime())/3600000;
+      let stale=staleHours>72;
+      metaEl.innerHTML='<b class="'+(stale?'stale':'')+'">\u25CF</b> Last updated '+_intelTimeAgo(latest)+' &middot; '+(news.length+signals.length)+' items';
+    } else {
+      metaEl.textContent='No data loaded';
+    }
+  }
+  let items=intelTab==='news'?news:signals;
+  let q=(document.getElementById('intelQuery')||{}).value||'';q=q.trim().toLowerCase();
+  // Build categories list (only for news; signals use type)
+  let catsEl=document.getElementById('intelCats');
+  if(catsEl){
+    let metaTbl=intelTab==='news'?INTEL_CAT_META:INTEL_SIG_META;
+    let keyField=intelTab==='news'?'category':'type';
+    let counts={};items.forEach(x=>{let k=x[keyField]||'default';counts[k]=(counts[k]||0)+1});
+    let chipsArr=['<button class="intel-chip '+(intelCategory==='all'?'active':'')+'" onclick="setIntelCategory(\'all\')">All <span class="chip-count">'+items.length+'</span></button>'];
+    Object.keys(metaTbl).forEach(k=>{
+      if(k==='default')return;
+      let n=counts[k]||0;
+      if(n===0&&intelCategory!==k)return;
+      let m=metaTbl[k];
+      chipsArr.push('<button class="intel-chip '+(intelCategory===k?'active':'')+'" onclick="setIntelCategory(\''+k+'\')"><span class="chip-dot" style="background:'+m.color+'"></span>'+m.label+' <span class="chip-count">'+n+'</span></button>');
+    });
+    catsEl.innerHTML=chipsArr.join('');
+  }
+  // Filter
+  let filtered=items.filter(x=>{
+    let key=intelTab==='news'?x.category:x.type;
+    if(intelCategory!=='all'&&key!==intelCategory)return false;
+    let imp=intelTab==='news'?(x.impactScore||0):(x.strength||0);
+    if(intelImpact==='high'&&imp<70)return false;
+    if(intelImpact==='mid'&&(imp<40||imp>=70))return false;
+    if(intelImpact==='low'&&imp>=40)return false;
+    if(q){
+      let head=intelTab==='news'?(x.headline||''):(x.label||'');
+      let sum=intelTab==='news'?(x.summary||''):(x.notes||x.evidence||'');
+      let comp=intelTab==='news'?(x.companyIds||[]).map(id=>_intelResolveCompany(id,'').name).join(' '):(x.companyLabel||'');
+      let hay=(head+' '+sum+' '+comp+' '+(x.source||'')).toLowerCase();
+      if(!hay.includes(q))return false;
+    }
+    return true;
+  });
+  // Action items: top 3 high-impact + recent
+  let actionItems=items.slice().filter(x=>{let imp=intelTab==='news'?(x.impactScore||0):(x.strength||0);return imp>=70})
+    .sort((a,b)=>{
+      let da=intelTab==='news'?a.publishedAt:a.observedAt;
+      let db=intelTab==='news'?b.publishedAt:b.observedAt;
+      return new Date(db||0)-new Date(da||0);
+    }).slice(0,3);
+  let asEl=document.getElementById('intelActionStrip');
+  if(asEl){
+    if(actionItems.length===0){asEl.innerHTML=''}
+    else{
+      let metaTbl=intelTab==='news'?INTEL_CAT_META:INTEL_SIG_META;
+      let cardsHtml=actionItems.map(x=>{
+        let key=intelTab==='news'?x.category:x.type;
+        let m=metaTbl[key]||metaTbl['default']||{label:key,color:'#697386'};
+        let imp=intelTab==='news'?(x.impactScore||0):(x.strength||0);
+        let headline=intelTab==='news'?x.headline:x.label;
+        let summary=intelTab==='news'?x.summary:(x.notes||x.evidence||'');
+        let when=intelTab==='news'?x.publishedAt:x.observedAt;
+        let url=x.url||x.sourceUrl;
+        let companyIds=intelTab==='news'?(x.companyIds||[]):(x.companyId?[x.companyId]:[]);
+        let firstChip='';
+        if(companyIds.length){
+          let r=_intelResolveCompany(companyIds[0],x.companyLabel||'');
+          if(r.matched)firstChip='<button class="ctag" onclick="event.stopPropagation();_intelOpenCompany(\''+_intelEscape(r.id)+'\')">'+_intelEscape(r.name)+'</button>';
+          else firstChip='<span class="ctag unknown">'+_intelEscape(r.name)+'</span>';
+        }
+        return '<div class="intel-action-card" onclick="_intelOpenUrl(\''+_intelEscape(url||'')+'\')">'+
+          '<div class="top-bar" style="background:'+m.color+'"></div>'+
+          '<div class="row"><span class="pill cat" style="background:'+m.color+'1A;color:'+m.color+'"><span class="d" style="background:'+m.color+'"></span>'+_intelEscape(m.label)+'</span>'+
+          (intelTab==='news'&&x.isBreaking?'<span class="pill breaking">Breaking</span>':'')+
+          '<span class="ago" style="margin-left:auto;color:var(--text-tertiary);font-size:11px">'+_intelEscape(_intelTimeAgo(when))+'</span></div>'+
+          '<h4>'+_intelEscape(headline)+'</h4>'+
+          '<p>'+_intelEscape((summary||'').slice(0,140))+((summary||'').length>140?'\u2026':'')+'</p>'+
+          '<div class="foot">'+firstChip+'<span style="margin-left:auto;display:flex;gap:5px;align-items:center"><span style="font-size:10px;color:var(--text-tertiary);font-weight:700;text-transform:uppercase;letter-spacing:0.3px">'+(intelTab==='news'?'Impact':'Strength')+'</span><span style="font-family:var(--font-mono);font-size:12px;font-weight:600;color:'+m.color+'">'+imp+'</span></span></div>'+
+        '</div>';
+      }).join('');
+      let title=intelTab==='news'?'Deal triggers this week':'High-strength signals';
+      asEl.innerHTML='<div class="intel-action-strip"><div class="action-head"><h3>'+title+'</h3><span class="badge">'+actionItems.length+' need attention</span><span class="meta">Auto-surfaced by impact + recency</span></div><div class="intel-action-grid">'+cardsHtml+'</div></div>';
+    }
+  }
+  // Feed
+  let feedEl=document.getElementById('intelFeed');
+  if(feedEl){
+    if(filtered.length===0){
+      feedEl.innerHTML='<div class="intel-empty">No '+(intelTab==='news'?'articles':'signals')+' match these filters.</div>';
+    } else {
+      let kind=intelTab==='news'?'news':'signals';
+      // Sort by recency desc
+      let sorted=filtered.slice().sort((a,b)=>{
+        let da=intelTab==='news'?a.publishedAt:a.observedAt;
+        let db=intelTab==='news'?b.publishedAt:b.observedAt;
+        return new Date(db||0)-new Date(da||0);
+      });
+      feedEl.innerHTML=sorted.map(it=>_intelRenderCard(it,kind)).join('');
+    }
+  }
+}
 
 // Keep share message updated as user types
 
