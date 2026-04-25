@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>U.S. Propane Market Map — UI Kit</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+html, body { margin: 0; padding: 0; height: 100vh; font-family: Inter, sans-serif; background: #FAFBFC; color: #101828; overflow: hidden; }
+* { box-sizing: border-box; }
+#root { height: 100vh; display: flex; flex-direction: column; }
+.app { flex: 1; display: flex; min-height: 0; position: relative; }
+.main-split { flex: 1; display: flex; min-width: 0; min-height: 0; }
+@keyframes orb1{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(80px,-60px) scale(1.15)}50%{transform:translate(-40px,70px) scale(0.9)}75%{transform:translate(60px,30px) scale(1.1)}}
+@keyframes orb2{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(-70px,50px) scale(1.1)}50%{transform:translate(60px,-40px) scale(0.95)}75%{transform:translate(-50px,-60px) scale(1.12)}}
+@keyframes orb3{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(50px,70px) scale(0.9)}50%{transform:translate(-80px,-30px) scale(1.15)}75%{transform:translate(40px,-50px) scale(1.05)}}
+@keyframes orb4{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(-60px,-70px) scale(1.12)}50%{transform:translate(70px,50px) scale(0.92)}75%{transform:translate(-40px,60px) scale(1.08)}}
+@keyframes orb5{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(55px,65px) scale(1.1)}50%{transform:translate(-45px,-35px) scale(0.93)}75%{transform:translate(70px,-45px) scale(1.08)}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script src="mockData.js"></script>
+<script type="text/babel" src="Login.jsx"></script>
+<script type="text/babel" src="Header.jsx"></script>
+<script type="text/babel" src="Sidebar.jsx"></script>
+<script type="text/babel" src="LeagueTable.jsx"></script>
+<script type="text/babel" src="MapPanel.jsx"></script>
+<script type="text/babel" src="ProfilePanel.jsx"></script>
+<script type="text/babel" src="ProForma.jsx"></script>
+
+<script type="text/babel">
+function App() {
+  const [loggedIn, setLoggedIn] = React.useState(false);
+  const [view, setView] = React.useState('both');
+  const [search, setSearch] = React.useState('');
+  const [filters, setFilters] = React.useState({ owner: 'ALL', type: 'ALL', region: 'ALL' });
+  const [selected, setSelected] = React.useState(null);
+  const [platform, setPlatform] = React.useState([]);
+  const [pfExpanded, setPfExpanded] = React.useState(false);
+
+  const rows = window.MOCK_COMPANIES.filter(c => {
+    if (search && !c.name.toLowerCase().includes(search.toLowerCase())) return false;
+    if (filters.owner !== 'ALL' && c.type !== filters.owner) return false;
+    return true;
+  });
+
+  const selectedCompany = window.MOCK_COMPANIES.find(c => c.id === selected);
+
+  const toggleAdd = (id) => {
+    setPlatform(p => p.includes(id) ? p.filter(x => x !== id) : [...p, id]);
+    setPfExpanded(true);
+  };
+
+  if (!loggedIn) return <Login onSignIn={() => setLoggedIn(true)} />;
+
+  return (
+    <React.Fragment>
+      <Header view={view} onView={setView} onLogout={() => setLoggedIn(false)} />
+      <div className="app">
+        <Sidebar filters={filters} onFilter={(g,v) => setFilters(f => ({ ...f, [g]: v }))} search={search} onSearch={setSearch} />
+        <div className="main-split">
+          {(view === 'table' || view === 'both') && <LeagueTable rows={rows} onRow={setSelected} onAdd={toggleAdd} onSpot={() => {}} platform={platform} selected={selected} />}
+          {(view === 'map' || view === 'both') && <MapPanel />}
+        </div>
+        <ProfilePanel company={selectedCompany} onClose={() => setSelected(null)} onAdd={toggleAdd} platform={platform} />
+        <ProForma companies={window.MOCK_COMPANIES} platform={platform} onRemove={toggleAdd} expanded={pfExpanded} onToggle={() => setPfExpanded(!pfExpanded)} />
+      </div>
+    </React.Fragment>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
