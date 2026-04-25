@@ -47,6 +47,17 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
   const [cmdOpen, setCmdOpen] = React.useState(false);
   const [scenariosOpen, setScenariosOpen] = React.useState(false);
   const [scenarios, setScenariosState] = React.useState(() => loadScenarios());
+  // Phase 13 — pro-forma stack persisted to localStorage
+  const [portfolio, setPortfolioState] = React.useState(() => (window._loadPortfolio ? window._loadPortfolio() : []));
+  const [proFormaOpen, setProFormaOpen] = React.useState(false);
+  const [shareOpen, setShareOpen] = React.useState(false);
+  const persistPortfolio = (next) => { setPortfolioState(next); if (window._savePortfolio) window._savePortfolio(next); };
+  const handleAddPortfolio = (id) => {
+    if (!id) return;
+    persistPortfolio(portfolio.includes(id) ? portfolio : [...portfolio, id]);
+  };
+  const handleRemovePortfolio = (id) => persistPortfolio(portfolio.filter(x => x !== id));
+  const handleClearPortfolio = () => persistPortfolio([]);
 
   // Persist view/selected/compare to the URL whenever they change.
   React.useEffect(() => {
@@ -68,13 +79,14 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
   const persistScenarios = (arr) => { setScenariosState(arr); saveScenarios(arr); };
   const saveCurrentScenario = (label) => {
     const name = (label && label.trim()) || ('Scenario ' + (scenarios.length + 1));
-    const next = [...scenarios.filter(s => s.name !== name), { name, view, selected, compare, savedAt: Date.now() }];
+    const next = [...scenarios.filter(s => s.name !== name), { name, view, selected, compare, portfolio, savedAt: Date.now() }];
     persistScenarios(next);
   };
   const applyScenario = (s) => {
     setView(s.view || 'map');
     setSelected(s.selected || null);
     setCompare(s.compare || []);
+    if (Array.isArray(s.portfolio)) persistPortfolio(s.portfolio);
   };
   const removeScenario = (name) => persistScenarios(scenarios.filter(s => s.name !== name));
 
@@ -98,7 +110,7 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
   return (
     <div className="redesign" style={{ width: '100vw', height: '100vh', background: '#F6F9FC', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', fontFamily: "'Inter', sans-serif" }}>
       <TopNav active={view} onView={setView} onCmd={() => setCmdOpen(true)} onLogout={onLogout} user={user} />
-      <div style={{ flex: 1, display: 'flex', minHeight: 0 }}>
+      <div style={{ flex: 1, display: 'flex', minHeight: 0, paddingBottom: portfolio.length > 0 ? 64 : 0 }}>
         <SideNav active={view} onView={(v) => { setView(v); setSelected(null); }} />
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minWidth: 0, position: 'relative' }}>
           <PageHeader title={viewTitle[0]} sub={viewTitle[1]}>
@@ -125,15 +137,39 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
           {view === 'brief' && <BriefView />}
           {view === 'compare' && <CompareView ids={compare} onRemove={(id) => setCompare(compare.filter(x => x !== id))} />}
 
-          {selected && <CompanyDetail companyId={selected} onClose={() => setSelected(null)} onCompare={handleCompare} />}
+          {selected && <CompanyDetail companyId={selected} onClose={() => setSelected(null)} onCompare={handleCompare} onAddPortfolio={handleAddPortfolio} inPortfolio={portfolio.includes(selected)} />}
         </div>
       </div>
+
+      {/* Phase 13 — persistent footer bar appears whenever the deal stack has any items */}
+      {portfolio.length > 0 && window.PortfolioFooterBar && (
+        <PortfolioFooterBar
+          ids={portfolio}
+          onRemove={handleRemovePortfolio}
+          onClear={handleClearPortfolio}
+          onOpen={() => setProFormaOpen(true)}
+          onSave={() => setScenariosOpen(true)}
+          onShare={() => setShareOpen(true)}
+          onSelect={(id) => setSelected(id)}
+        />
+      )}
+      {proFormaOpen && window.ProFormaModal && (
+        <ProFormaModal
+          ids={portfolio}
+          onClose={() => setProFormaOpen(false)}
+          onRemove={handleRemovePortfolio}
+          onSelect={(id) => { setSelected(id); setProFormaOpen(false); }}
+        />
+      )}
+      {shareOpen && window.ShareModal && (
+        <ShareModal ids={portfolio} onClose={() => setShareOpen(false)} />
+      )}
 
       {cmdOpen && <CommandPalette onClose={() => setCmdOpen(false)} onView={(v) => { setView(v); setCmdOpen(false); }} />}
       {scenariosOpen && (
         <ScenariosPanel
           scenarios={scenarios}
-          current={{ view, selected, compare }}
+          current={{ view, selected, compare, portfolio }}
           onClose={() => setScenariosOpen(false)}
           onSave={(name) => { saveCurrentScenario(name); }}
           onApply={(s) => { applyScenario(s); setScenariosOpen(false); }}
@@ -171,6 +207,7 @@ function ScenariosPanel({ scenarios, current, onClose, onSave, onApply, onRemove
             View: <b style={{ color: '#425466' }}>{current.view}</b>
             {current.selected ? (<>· Selected: <b style={{ color: '#425466' }}>{current.selected}</b></>) : null}
             {current.compare && current.compare.length ? (<> · Comparing {current.compare.length}</>) : null}
+            {current.portfolio && current.portfolio.length ? (<> · Pro-forma stack {current.portfolio.length}</>) : null}
           </div>
         </div>
 
@@ -188,6 +225,7 @@ function ScenariosPanel({ scenarios, current, onClose, onSave, onApply, onRemove
                   {s.view}
                   {s.selected ? ' · ' + s.selected : ''}
                   {s.compare && s.compare.length ? ' · compare ' + s.compare.length : ''}
+                  {s.portfolio && s.portfolio.length ? ' · stack ' + s.portfolio.length : ''}
                 </div>
               </div>
               <Button variant="ghost" size="sm" onClick={() => onApply(s)}>Open</Button>

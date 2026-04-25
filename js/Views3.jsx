@@ -740,7 +740,7 @@ function _FitBreakdown({ breakdown, total }) {
 }
 
 // Company Detail (slideover) — used in multiple views
-function CompanyDetail({ companyId, onClose, onCompare }) {
+function CompanyDetail({ companyId, onClose, onCompare, onAddPortfolio, inPortfolio }) {
   const c = (window.MOCK_COMPANIES || []).find(x => x.id === companyId);
   const [showAllLocs, setShowAllLocs] = React.useState(false);
   if (!c) return null;
@@ -783,7 +783,15 @@ function CompanyDetail({ companyId, onClose, onCompare }) {
           </div>
         </div>
         <div style={{ display: 'flex', gap: 8, marginTop: 14, flexWrap: 'wrap' }}>
-          <Button variant="primary" size="sm" icon="plus">Add to pro forma</Button>
+          {c.id !== 'll' && (
+            <Button
+              variant={inPortfolio ? 'secondary' : 'primary'}
+              size="sm"
+              icon={inPortfolio ? 'check' : 'plus'}
+              onClick={() => onAddPortfolio && onAddPortfolio(c.id)}
+              disabled={!!inPortfolio}
+            >{inPortfolio ? 'In pro forma' : 'Add to pro forma'}</Button>
+          )}
           <Button variant="secondary" size="sm" onClick={() => onCompare && onCompare(c.id)}>Add to compare</Button>
           {c.website && (
             <a href={c.website} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>

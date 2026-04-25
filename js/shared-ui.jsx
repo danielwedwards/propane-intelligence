@@ -31,6 +31,9 @@ const Icon = ({ name, size = 16, color = 'currentColor', stroke = 1.75 }) => {
     info: <React.Fragment><circle cx="12" cy="12" r="9"/><path d="M12 8.5h.01M11 12h1v5h1"/></React.Fragment>,
     'log-out': <React.Fragment><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></React.Fragment>,
     bookmark: <React.Fragment><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></React.Fragment>,
+    layers: <React.Fragment><path d="m12 2-10 5 10 5 10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></React.Fragment>,
+    'trending-up': <React.Fragment><path d="M3 17 9 11 13 15 21 7M14 7h7v7"/></React.Fragment>,
+    'external-link': <React.Fragment><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></React.Fragment>,
   };
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={stroke} strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
