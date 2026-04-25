@@ -971,6 +971,32 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
   @page{margin:0.5in;size:landscape}
 }
 .deck-cover{display:none}
+/* === v4.17.0: Command palette (⌘K / Ctrl-K fuzzy search) === */
+.cp-overlay{position:fixed;inset:0;background:rgba(20,20,20,0.55);backdrop-filter:blur(2px);z-index:9000;display:none;align-items:flex-start;justify-content:center;padding-top:12vh}
+.cp-overlay.open{display:flex}
+.cp-modal{width:640px;max-width:92vw;background:var(--white);border-radius:14px;box-shadow:0 30px 80px rgba(20,20,20,.35),0 6px 18px rgba(20,20,20,.18);overflow:hidden;display:flex;flex-direction:column;max-height:72vh;border:1px solid var(--border)}
+.cp-input-wrap{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--border-subtle)}
+.cp-prompt{color:var(--brand);font-size:18px}
+.cp-input-wrap input{flex:1;border:none;background:transparent;font-size:16px;font-family:inherit;color:var(--text-primary);outline:none}
+.cp-esc{font-size:9px;padding:2px 6px;border:1px solid var(--border);border-radius:4px;background:var(--light-bg);color:var(--text-tertiary);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.5px}
+.cp-list{flex:1;overflow-y:auto;padding:6px 0}
+.cp-section-h{font-size:9.5px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.6px;padding:8px 18px 4px}
+.cp-item{display:flex;align-items:center;gap:11px;padding:8px 18px;cursor:pointer;border-left:2px solid transparent}
+.cp-item:hover,.cp-item.active{background:var(--light-bg);border-left-color:var(--brand)}
+.cp-ico{flex:0 0 auto;width:24px;height:24px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff}
+.cp-body{flex:1;min-width:0}
+.cp-title{font-size:13px;font-weight:500;color:var(--text-primary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cp-title mark{background:rgba(124,92,252,.18);color:var(--text-primary);padding:0 1px;border-radius:2px}
+.cp-sub{font-size:10.5px;color:var(--text-tertiary);margin-top:1px}
+.cp-kbd{flex:0 0 auto;font-size:9px;padding:1px 6px;border:1px solid var(--border);border-radius:4px;background:var(--light-bg);color:var(--text-tertiary);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.4px}
+.cp-empty{padding:30px 18px;text-align:center;color:var(--text-tertiary);font-size:12px}
+.cp-foot{padding:9px 18px;border-top:1px solid var(--border-subtle);font-size:10px;color:var(--text-tertiary);background:var(--light-bg);display:flex;justify-content:space-between;align-items:center}
+.cp-foot kbd{font-size:9px;padding:1px 5px;border:1px solid var(--border);border-radius:3px;background:var(--white);color:var(--text-secondary);font-family:var(--font-mono)}
+[data-theme="dark"] .cp-modal{background:#0e1620;border-color:#1f2a36}
+[data-theme="dark"] .cp-input-wrap input{color:#e0e4ea}
+[data-theme="dark"] .cp-esc,[data-theme="dark"] .cp-kbd,[data-theme="dark"] .cp-foot{background:#16202e;border-color:#1f2a36;color:#a0aec0}
+[data-theme="dark"] .cp-foot kbd{background:#0e1620}
+[data-theme="dark"] .cp-item:hover,[data-theme="dark"] .cp-item.active{background:#142031}
 /* v4.14.0 Watchlist panel items + star toggle */
 .wl-item{display:flex;gap:10px;align-items:center;padding:9px 14px;border-left:2px solid transparent;transition:background .12s ease;cursor:pointer}
 .wl-item:hover{background:var(--light-bg);border-left-color:#E0A106}
@@ -1314,6 +1340,18 @@ Continue with Microsoft
 <span>SOC 2 Type II &middot; HIPAA-ready</span>
 </div>
 </div>
+<!-- v4.17.0 Command palette -->
+<div class="cp-overlay" id="cpOverlay" role="dialog" aria-modal="true" aria-label="Command palette" onclick="if(event.target===this)toggleCmdPalette()">
+<div class="cp-modal">
+<div class="cp-input-wrap">
+<span class="cp-prompt" aria-hidden="true">&#10142;</span>
+<input type="text" id="cpInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search companies, sections, scenarios, actions&hellip;" aria-label="Command palette query" onkeydown="cpHandleKey(event)" oninput="cpRender()"/>
+<kbd class="cp-esc">esc</kbd>
+</div>
+<div class="cp-list" id="cpList" role="listbox"></div>
+<div class="cp-foot"><span><kbd>&uarr;&darr;</kbd> navigate &nbsp; <kbd>&#9166;</kbd> open &nbsp; <kbd>esc</kbd> close</span></div>
+</div>
+</div>
 <!-- Help Modal -->
 <div class="help-modal" id="helpModal" role="dialog" aria-modal="true" aria-label="Scoring methodology and keyboard shortcuts" onclick="if(event.target===this)toggleHelp()">
 <div class="hm-content">
@@ -1347,6 +1385,7 @@ Continue with Microsoft
 <li><kbd>Enter</kbd> &mdash; Open profile for selected row</li>
 <li><kbd>Space</kbd> &mdash; Toggle platform add/remove for selected row</li>
 <li><kbd>?</kbd> &mdash; Toggle this help panel</li>
+<li><kbd>&#8984;K</kbd> / <kbd>Ctrl</kbd>+<kbd>K</kbd> &mdash; Open command palette (search anything)</li>
 <li><kbd>/</kbd> &mdash; Focus search bar</li>
 <li><kbd>M</kbd> Market Map &nbsp; <kbd>C</kbd> Companies &nbsp; <kbd>I</kbd> Intelligence &nbsp; <kbd>P</kbd> Pro-Forma &nbsp; <kbd>A</kbd> Analytics</li>
 <li><kbd>R</kbd> Brief (Rollup) &nbsp; <kbd>O</kbd> Overlap &nbsp; <kbd>N</kbd> Network &nbsp; <kbd>X</kbd> Compare &nbsp; <kbd>S</kbd> Scenarios</li>
@@ -3924,6 +3963,139 @@ function _actRenderPanel(){
   body.innerHTML=h;
 }
 
+/* === v4.17.0: Command palette (Cmd/Ctrl-K) === */
+let _cpActiveIdx=0,_cpResults=[];
+const CP_SECTIONS=[
+  {label:'Market Map',key:'map',hint:'M'},
+  {label:'Companies',key:'companies',hint:'C'},
+  {label:'Intelligence',key:'intelligence',hint:'I'},
+  {label:'Pro-Forma',key:'proforma',hint:'P'},
+  {label:'Brief (Rollup)',key:'brief',hint:'R'},
+  {label:'Overlap',key:'overlap',hint:'O'},
+  {label:'Network',key:'network',hint:'N'},
+  {label:'Compare',key:'compare',hint:'X'},
+  {label:'Scenarios',key:'scenarios',hint:'S'},
+  {label:'Analytics',key:'analytics',hint:'A'}
+];
+const CP_ACTIONS=[
+  {label:'Save current platform',ico:'☰',color:'#7C5CFC',run:()=>{setSection('scenarios');setTimeout(()=>{let n=document.getElementById('scnSaveName');if(n)n.focus()},200)}},
+  {label:'Export deck (PDF)',ico:'⎙',color:'#324663',run:()=>{exportDeck()}},
+  {label:'Export companies CSV',ico:'⎙',color:'#324663',run:()=>{if(typeof exportCSV==='function')exportCSV()}},
+  {label:'Clear platform',ico:'×',color:'#C0392B',run:()=>{if(typeof clearPlatform==='function')clearPlatform()}},
+  {label:'Clear compare',ico:'×',color:'#C0392B',run:()=>{cmpClear()}},
+  {label:'Clear activity log',ico:'⎚',color:'#697386',run:()=>{_actClear()}},
+  {label:'Print Brief',ico:'⎙',color:'#324663',run:()=>{setSection('brief');setTimeout(()=>briefPrint(),200)}},
+  {label:'Open keyboard shortcuts',ico:'?',color:'#5B8DEF',run:()=>{toggleHelp()}}
+];
+function _cpFuzzy(query,text){
+  if(!query)return {score:0,matches:[]};
+  let q=query.toLowerCase(),t=text.toLowerCase();
+  if(t.includes(q))return {score:100-t.indexOf(q),matches:[[t.indexOf(q),t.indexOf(q)+q.length]]};
+  // Fallback: subsequence match
+  let qi=0,matches=[],start=-1;
+  for(let i=0;i<t.length&&qi<q.length;i++){
+    if(t[i]===q[qi]){if(start<0)start=i;qi++;if(qi===q.length)matches.push([start,i+1])}
+    else if(start>=0){qi=0;start=-1;i=Math.max(0,i-1)}
+  }
+  return qi===q.length?{score:30-Math.min(t.length-q.length,30),matches:matches}:{score:-1,matches:[]};
+}
+function _cpHighlight(text,query){
+  if(!query)return _cmpEsc(text);
+  let f=_cpFuzzy(query,text);
+  if(!f.matches.length)return _cmpEsc(text);
+  let result='',cursor=0;
+  f.matches.forEach(m=>{
+    result+=_cmpEsc(text.slice(cursor,m[0]));
+    result+='<mark>'+_cmpEsc(text.slice(m[0],m[1]))+'</mark>';
+    cursor=m[1];
+  });
+  result+=_cmpEsc(text.slice(cursor));
+  return result;
+}
+function toggleCmdPalette(){
+  let o=document.getElementById('cpOverlay');if(!o)return;
+  let opening=!o.classList.contains('open');
+  o.classList.toggle('open',opening);
+  if(opening){
+    let inp=document.getElementById('cpInput');if(inp){inp.value='';inp.focus()}
+    _cpActiveIdx=0;cpRender();
+  }
+}
+function cpRender(){
+  let q=(document.getElementById('cpInput').value||'').trim();
+  let list=document.getElementById('cpList');if(!list)return;
+  let results=[];
+  // Section results
+  CP_SECTIONS.forEach(s=>{
+    let f=_cpFuzzy(q,s.label);
+    if(!q||f.score>=0)results.push({type:'section',label:s.label,sub:'Section &middot; '+s.hint,ico:s.hint,color:'#7C5CFC',score:q?f.score+50:50,run:()=>setSection(s.key),kbd:s.hint});
+  });
+  // Action results
+  CP_ACTIONS.forEach(a=>{
+    let f=_cpFuzzy(q,a.label);
+    if(!q||f.score>=0)results.push({type:'action',label:a.label,sub:'Action',ico:a.ico,color:a.color,score:q?f.score+30:30,run:a.run});
+  });
+  // Companies (cap to 30 to keep palette responsive)
+  if(q.length>=1){
+    DATA.forEach(c=>{
+      if(c.excluded)return;
+      let nameF=_cpFuzzy(q,c.name);
+      let parentF=c.parentGroup?_cpFuzzy(q,c.parentGroup):{score:-1};
+      let stateF=c.hqState?_cpFuzzy(q,c.hqState):{score:-1};
+      let best=Math.max(nameF.score,parentF.score,stateF.score);
+      if(best>=0){
+        let inWl=_wlHas(c.id),inPF=platform.includes(c.id),inCmp=compareIds.includes(c.id);
+        let badge=[];if(inPF)badge.push('Platform');if(inCmp)badge.push('Compare');if(inWl)badge.push('Watch');
+        results.push({type:'company',label:c.name,sub:(c.hqCity?c.hqCity+', '+c.hqState:c.hqState||'')+(badge.length?' &middot; '+badge.join(' &middot; '):''),ico:(c.name||'?').charAt(0).toUpperCase(),color:'#324663',score:best,run:()=>{op(c.id);if(!document.getElementById('mainArea').classList.contains('view-companies'))setSection('companies')}});
+      }
+    });
+  }
+  // Scenarios
+  _scnAll().forEach(s=>{
+    let f=_cpFuzzy(q,s.name);
+    if(!q||f.score>=0)results.push({type:'scenario',label:s.name,sub:'Scenario &middot; '+(s.ids||[]).length+' companies',ico:'☰',color:'#7C5CFC',score:q?f.score:20,run:()=>scnLoad(s.id)});
+  });
+  // Watchlist
+  _wlAll().forEach(id=>{
+    let c=DATA.find(x=>x.id===id);if(!c)return;
+    let f=_cpFuzzy(q,c.name);
+    if(!q||f.score>=0)results.push({type:'watchlist',label:'Open '+c.name,sub:'Watchlist',ico:'★',color:'#E0A106',score:q?f.score:10,run:()=>op(c.id)});
+  });
+  // Sort by score desc, cap at 50
+  results.sort((a,b)=>b.score-a.score);
+  results=results.slice(0,50);
+  _cpResults=results;
+  if(_cpActiveIdx>=results.length)_cpActiveIdx=Math.max(0,results.length-1);
+  if(!results.length){list.innerHTML='<div class="cp-empty">No matches for &ldquo;'+_cmpEsc(q)+'&rdquo;</div>';return}
+  // Group by type
+  let groups={section:'Sections',action:'Actions',company:'Companies',scenario:'Scenarios',watchlist:'Watchlist'};
+  let html='';let lastType=null;let i=0;
+  results.forEach(r=>{
+    if(r.type!==lastType){html+='<div class="cp-section-h">'+groups[r.type]+'</div>';lastType=r.type}
+    html+='<div class="cp-item'+(i===_cpActiveIdx?' active':'')+'" data-idx="'+i+'" onmouseover="_cpActiveIdx='+i+';document.querySelectorAll(\'.cp-item\').forEach(el=>el.classList.toggle(\'active\',el.dataset.idx==='+i+'))" onclick="_cpRun('+i+')">'+
+      '<span class="cp-ico" style="background:'+r.color+'">'+_cmpEsc(r.ico||'•')+'</span>'+
+      '<div class="cp-body"><div class="cp-title">'+_cpHighlight(r.label,q)+'</div>'+
+      '<div class="cp-sub">'+r.sub+'</div></div>'+
+      (r.kbd?'<span class="cp-kbd">'+_cmpEsc(r.kbd)+'</span>':'')+
+      '</div>';
+    i++;
+  });
+  list.innerHTML=html;
+  // Scroll active into view
+  let activeEl=list.querySelector('.cp-item.active');if(activeEl)activeEl.scrollIntoView({block:'nearest'});
+}
+function _cpRun(idx){
+  let r=_cpResults[idx];if(!r)return;
+  toggleCmdPalette();
+  setTimeout(()=>{try{r.run()}catch(e){console.error('[cp run]',e)}},10);
+}
+function cpHandleKey(e){
+  if(e.key==='ArrowDown'){e.preventDefault();_cpActiveIdx=Math.min(_cpActiveIdx+1,_cpResults.length-1);cpRender()}
+  else if(e.key==='ArrowUp'){e.preventDefault();_cpActiveIdx=Math.max(_cpActiveIdx-1,0);cpRender()}
+  else if(e.key==='Enter'){e.preventDefault();_cpRun(_cpActiveIdx)}
+  else if(e.key==='Escape'){e.preventDefault();toggleCmdPalette()}
+}
+
 /* === v4.14.0: Watchlist + news alerts (pinned companies, alert badge on news mentions) === */
 const WL_KEY='pi_watchlist', WL_NEWS_SEEN_KEY='pi_watchlist_news_seen';
 function _wlAll(){try{let s=localStorage.getItem(WL_KEY);if(!s)return [];let a=JSON.parse(s);return Array.isArray(a)?a:[]}catch(e){return []}}
@@ -4633,7 +4805,14 @@ function updateH(){
 
 // === KEYBOARD SHORTCUTS ===
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){cp();closeSavesDropdown();document.getElementById('helpModal').classList.remove('open');document.getElementById('sourcesModal').classList.remove('open');if(map)map.closePopup();/* tippy cleanup removed */return}
+  // v4.17.0: Cmd/Ctrl-K opens command palette (works even from inside inputs)
+  if((e.metaKey||e.ctrlKey)&&(e.key==='k'||e.key==='K')){
+    e.preventDefault();toggleCmdPalette();return;
+  }
+  if(e.key==='Escape'){
+    let cpO=document.getElementById('cpOverlay');if(cpO&&cpO.classList.contains('open')){toggleCmdPalette();return}
+    cp();closeSavesDropdown();document.getElementById('helpModal').classList.remove('open');document.getElementById('sourcesModal').classList.remove('open');if(map)map.closePopup();return
+  }
   // Ignore shortcuts when typing in inputs
   let tag=document.activeElement.tagName;
   if(tag==='INPUT'||tag==='TEXTAREA'||tag==='SELECT'){
