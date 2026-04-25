@@ -691,6 +691,83 @@ table.lt td{padding:var(--space-sm) var(--space-sm);min-height:var(--touch-min)}
 [data-theme="dark"] .pf-empty-section{background:#16202e;border-color:#2a3a4e}
 /* When in Pro-Forma section, hide the bottom pf-bar to avoid duplication */
 body:has(.main.view-proforma) .pf-bar{display:none!important}
+/* === v4.6.0: Brief section (executive one-page rollup) === */
+.brief-wrap{display:none;flex:1;overflow-y:auto;padding:32px 28px;background:var(--light-bg)}
+.main.view-brief{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
+.main.view-brief .left,.main.view-brief .rh,.main.view-brief .map-wrap,.main.view-brief .charts-wrap,.main.view-brief .intel-wrap,.main.view-brief .pf-wrap{display:none!important}
+.main.view-brief .brief-wrap{display:block!important}
+body:has(.main.view-brief) .pf-bar{display:none!important}
+.brief-page{max-width:920px;margin:0 auto;background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;box-shadow:var(--shadow-xs);padding:36px 44px;font-family:var(--font-sans)}
+.brief-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding-bottom:18px;border-bottom:2px solid var(--brand);margin-bottom:22px;flex-wrap:wrap}
+.brief-head .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.6px;margin-bottom:6px}
+.brief-head .title-block h1{margin:0;font-family:var(--font-serif);font-size:30px;font-weight:400;color:var(--text-primary);letter-spacing:-0.4px;line-height:1.15}
+.brief-head .title-block .sub{margin-top:6px;font-size:12px;color:var(--text-secondary);font-family:var(--font-mono)}
+.brief-head .actions{display:flex;gap:8px;flex-wrap:wrap}
+.brief-head .actions button{padding:8px 14px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--white);color:var(--text-secondary);font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;transition:all var(--tr-fast);display:inline-flex;align-items:center;gap:6px}
+.brief-head .actions button:hover{border-color:var(--brand);color:var(--brand)}
+.brief-head .actions button.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.brief-head .actions button.primary:hover{background:var(--brand-dark);color:#fff}
+.brief-kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:24px}
+.brief-kpi{padding:14px 14px;background:var(--light-bg);border:1px solid var(--border-subtle);border-radius:var(--radius-md);text-align:left}
+.brief-kpi .l{font-size:9px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.6px;margin-bottom:6px}
+.brief-kpi .v{font-size:22px;font-weight:700;color:var(--text-primary);font-family:var(--font-mono);line-height:1.1}
+.brief-kpi .v.brand{color:var(--brand)}
+.brief-kpi .n{font-size:10px;color:var(--text-secondary);margin-top:4px}
+.brief-section{margin-top:22px}
+.brief-section h2{margin:0 0 12px;font-family:var(--font-serif);font-size:15px;font-weight:600;color:var(--text-primary);letter-spacing:-0.1px;display:flex;align-items:center;gap:10px;padding-bottom:6px;border-bottom:1px solid var(--border-subtle)}
+.brief-section h2 .ix{display:inline-flex;width:20px;height:20px;border-radius:5px;background:var(--brand-light);color:var(--brand-dark);align-items:center;justify-content:center;font-size:11px;font-weight:700;font-family:var(--font-mono)}
+.brief-section h2 .meta{margin-left:auto;font-family:var(--font-mono);font-size:10px;color:var(--text-tertiary);font-weight:500;letter-spacing:0.3px}
+.brief-empty{padding:36px 20px;text-align:center;background:var(--light-bg);border:1px dashed var(--border);border-radius:8px;color:var(--text-secondary);font-size:13px}
+.brief-empty b{color:var(--text-primary);font-weight:600}
+.brief-tbl{width:100%;border-collapse:collapse;font-size:12px}
+.brief-tbl thead th{text-align:left;padding:6px 8px;font-size:9px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.4px;border-bottom:1px solid var(--border)}
+.brief-tbl thead th.num{text-align:right}
+.brief-tbl tbody td{padding:8px;border-bottom:1px solid var(--border-subtle);vertical-align:middle}
+.brief-tbl tbody td.num{text-align:right;font-family:var(--font-mono)}
+.brief-tbl tbody tr.anchor{background:var(--brand-muted)}
+.brief-tbl tbody tr.anchor td{font-weight:600;color:var(--brand-dark)}
+.brief-tbl tbody tr.total{background:#F9FAFB;font-weight:700;border-top:2px solid var(--brand)}
+.brief-tbl tbody tr.total td{font-weight:700}
+.brief-tbl .star{color:var(--gold);margin-right:4px}
+.brief-grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.brief-card{background:var(--light-bg);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:14px 16px}
+.brief-card .row{display:flex;align-items:center;gap:8px;font-size:12px;padding:6px 0;border-bottom:1px solid var(--border-subtle)}
+.brief-card .row:last-child{border-bottom:none}
+.brief-card .row .nm{flex:1;color:var(--text-primary);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brief-card .row .meta{font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);flex-shrink:0}
+.brief-card .row .pct{font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--brand);min-width:52px;text-align:right}
+.brief-bar-row{display:flex;align-items:center;gap:10px;font-size:12px;padding:6px 0}
+.brief-bar-row .lbl{flex:0 0 38%;color:var(--text-primary);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brief-bar-row .bar{flex:1;height:6px;background:var(--border-subtle);border-radius:3px;overflow:hidden;position:relative}
+.brief-bar-row .bar i{position:absolute;left:0;top:0;bottom:0;background:var(--brand);border-radius:3px}
+.brief-bar-row .v{flex:0 0 36px;text-align:right;font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--text-primary)}
+.brief-intel-list{display:flex;flex-direction:column;gap:8px}
+.brief-intel-item{padding:10px 12px;background:var(--light-bg);border:1px solid var(--border-subtle);border-radius:var(--radius-md);cursor:pointer;transition:background var(--tr-fast)}
+.brief-intel-item:hover{background:var(--white);border-color:var(--brand-light)}
+.brief-intel-item .top{display:flex;align-items:center;gap:8px;font-size:10px;color:var(--text-tertiary);margin-bottom:4px;flex-wrap:wrap}
+.brief-intel-item .top .src{font-weight:600;color:var(--text-secondary)}
+.brief-intel-item .top .pill{padding:1px 6px;border-radius:9999px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;color:#fff}
+.brief-intel-item .top .impact{margin-left:auto;font-family:var(--font-mono);font-weight:700;color:var(--brand-dark)}
+.brief-intel-item .hl{font-size:13px;font-weight:500;color:var(--text-primary);line-height:1.4}
+.brief-foot{margin-top:24px;padding-top:14px;border-top:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;color:var(--text-tertiary);font-family:var(--font-mono);flex-wrap:wrap}
+.brief-foot .gen{font-weight:600;color:var(--text-secondary)}
+[data-theme="dark"] .brief-wrap{background:#0a1018}
+[data-theme="dark"] .brief-page{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .brief-kpi,[data-theme="dark"] .brief-card,[data-theme="dark"] .brief-intel-item,[data-theme="dark"] .brief-empty{background:#0f1722;border-color:#2a3a4e}
+[data-theme="dark"] .brief-tbl tbody tr.total,[data-theme="dark"] .brief-tbl tbody tr.anchor{background:rgba(124,92,252,0.12)}
+@media print{
+  body:has(.main.view-brief) .topbar,
+  body:has(.main.view-brief) .header-tabs,
+  body:has(.main.view-brief) #filterBar,
+  body:has(.main.view-brief) .brief-head .actions,
+  body:has(.main.view-brief) .pf-bar,
+  body:has(.main.view-brief) #helpModal,
+  body:has(.main.view-brief) .toast{display:none!important}
+  body:has(.main.view-brief) .brief-wrap{padding:0;background:#fff}
+  body:has(.main.view-brief) .brief-page{box-shadow:none;border:none;max-width:100%;padding:18px 0}
+  body:has(.main.view-brief) .brief-intel-item{break-inside:avoid;page-break-inside:avoid}
+  body:has(.main.view-brief) .brief-section{break-inside:avoid;page-break-inside:avoid}
+}
 /* === v4.3.0: Intelligence section (News + Signals) === */
 .intel-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
 .main.view-intel{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
@@ -977,6 +1054,7 @@ Continue with Microsoft
 <button class="section-btn active" data-section="companies" role="tab" aria-selected="true" onclick="setSection('companies')" title="Companies (C)">Companies</button>
 <button class="section-btn" data-section="intelligence" role="tab" aria-selected="false" onclick="setSection('intelligence')" title="Intelligence (I)">Intelligence</button>
 <button class="section-btn" data-section="proforma" role="tab" aria-selected="false" onclick="setSection('proforma')" title="Pro-Forma (P)">Pro-Forma</button>
+<button class="section-btn" data-section="brief" role="tab" aria-selected="false" onclick="setSection('brief')" title="Brief (R)">Brief</button>
 <button class="section-btn" data-section="analytics" role="tab" aria-selected="false" onclick="setSection('analytics')" title="Analytics (A)">Analytics</button>
 </div>
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
@@ -1164,6 +1242,12 @@ Continue with Microsoft
 </div>
 <div id="pfSectionBody"></div>
 </div>
+<!-- v4.6.0: Brief section (executive one-page rollup) -->
+<div class="brief-wrap" id="briefWrap">
+<div class="brief-page" id="briefPage">
+<div id="briefBody"></div>
+</div>
+</div>
 <!-- v4.3.0: Intelligence section (News + Signals) -->
 <div class="intel-wrap" id="intelWrap">
 <div class="intel-head">
@@ -1291,15 +1375,16 @@ function setMobileView(view){
 /* === PRODUCT SPRINT B: Desktop view toggle (now driven by section nav in v4.1.0) === */
 function setView(view){
   let main=document.getElementById('mainArea');
-  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma'));
-  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma');
+  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma')&&!main.classList.contains('view-brief'));
+  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma','view-brief');
   if(view==='table')main.classList.add('view-table');
   else if(view==='map')main.classList.add('view-map');
   else if(view==='charts'){main.classList.add('view-charts');setTimeout(function(){renderCharts();chartInstances.forEach(function(c){c.resize()})},100)}
   else if(view==='intel'){main.classList.add('view-intel');setTimeout(function(){renderIntelligence()},50)}
   else if(view==='proforma'){main.classList.add('view-proforma');setTimeout(function(){updatePF()},50)}
+  else if(view==='brief'){main.classList.add('view-brief');setTimeout(function(){renderBrief()},50)}
   // v4.4.0: Sync section nav + Companies sub-toggle UI from view
-  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':'companies')));
+  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':(view==='brief'?'brief':'companies'))));
   document.querySelectorAll('.section-btn').forEach(btn=>{
     let isActive=btn.dataset.section===section;
     btn.classList.toggle('active',isActive);
@@ -1332,6 +1417,7 @@ function setSection(section){
   }
   if(section==='intelligence'||section==='intel'){setView('intel');return}
   if(section==='proforma'||section==='pro-forma'||section==='pf'){setView('proforma');return}
+  if(section==='brief'){setView('brief');return}
   if(section==='analytics'||section==='charts'){setView('charts');return}
 }
 /* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
@@ -2456,6 +2542,9 @@ function updatePF(){
     let pfSec=document.getElementById('pfSectionBody');
     if(pfSec)pfSec.innerHTML='<div class="pf-empty-section"><h3>No platform selected</h3><p>Build a pro-forma platform by adding companies from the Companies table or Market Map. Click any company row, then use <b>Add to Platform</b> to include it. The platform anchors on Lampton-Love by default.</p><div class="empty-cta"><button class="primary" onclick="setSection(\'companies\')">Browse Companies</button><button class="secondary" onclick="setSection(\'map\')">Open Market Map</button></div></div>';
     let pfSecStats=document.getElementById('pfSectionStats');if(pfSecStats)pfSecStats.textContent='';
+    // v4.6.0: keep Brief view in sync (empty state)
+    let main_e=document.getElementById('mainArea');
+    if(main_e&&main_e.classList.contains('view-brief')&&typeof renderBrief==='function')renderBrief();
     setTimeout(()=>map.invalidateSize(),50);return;
   }
   if(cta)cta.style.display='none';
@@ -2574,7 +2663,192 @@ function updatePF(){
   }
   let pfSecStats=document.getElementById('pfSectionStats');
   if(pfSecStats)pfSecStats.textContent=document.getElementById('pfStats').textContent;
+  // v4.6.0: keep Brief view in sync when platform mutates while it's active
+  let main_=document.getElementById('mainArea');
+  if(main_&&main_.classList.contains('view-brief')&&typeof renderBrief==='function')renderBrief();
   setTimeout(()=>map.invalidateSize(),50);
+}
+
+/* === v4.6.0: Brief view — executive one-page rollup === */
+function _briefEsc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function _briefFmtDate(d){
+  d=d||new Date();
+  let mo=['January','February','March','April','May','June','July','August','September','October','November','December'][d.getMonth()];
+  return mo+' '+d.getDate()+', '+d.getFullYear();
+}
+function briefPrint(){window.print()}
+function briefEmail(){
+  let ll=DATA.find(c=>c.id===LL_ID);
+  let acqs=platform.map(id=>DATA.find(c=>c.id===id)).filter(Boolean);
+  let allCos=[ll,...acqs].filter(Boolean);
+  let totalLocs=allCos.reduce((s,c)=>s+c.locations.length,0);
+  let totalRev=allCos.reduce((s,c)=>s+(c.estRevenue||0),0);
+  let allStates=[...new Set(allCos.flatMap(c=>c.states))].sort();
+  let totalMarketLocs=DATA.reduce((s,c)=>s+c.locations.length,0);
+  let pfPct=totalMarketLocs?Math.round(totalLocs/totalMarketLocs*1000)/10:0;
+  let lines=['Lampton-Love Platform Brief','Generated '+_briefFmtDate(),'',
+    'Platform: '+allCos.length+' companies (LL + '+acqs.length+' targets)',
+    'Locations: '+totalLocs+' across '+allStates.length+' states',
+    'Revenue: $'+totalRev.toFixed(1)+'M',
+    'National share: '+pfPct+'%','','Targets:'];
+  acqs.forEach(c=>{lines.push('  - '+c.name+'  ('+c.locations.length+' locs, '+c.states.length+' states)')});
+  let body=encodeURIComponent(lines.join('\n'));
+  let subj=encodeURIComponent('Lampton-Love Platform Brief — '+_briefFmtDate());
+  window.location.href='mailto:?subject='+subj+'&body='+body;
+}
+function renderBrief(){
+  let body=document.getElementById('briefBody');if(!body)return;
+  let ll=DATA.find(c=>c.id===LL_ID);
+  let acqs=platform.map(id=>DATA.find(c=>c.id===id)).filter(Boolean);
+  let allCos=[ll,...acqs].filter(Boolean);
+  let dateStr=_briefFmtDate();
+  let llName=ll?ll.name:'Lampton-Love';
+  // Header is always present
+  let head='<div class="brief-head">'+
+    '<div class="title-block">'+
+    '<div class="eyebrow">Strategic Platform Brief</div>'+
+    '<h1>'+_briefEsc(llName)+' Pro-Forma Rollup</h1>'+
+    '<div class="sub">As of '+dateStr+'  &middot;  '+(acqs.length>0?(acqs.length+' acquisition target'+(acqs.length===1?'':'s')+' selected'):'No targets selected')+'</div>'+
+    '</div>'+
+    '<div class="actions">'+
+    '<button class="primary" onclick="briefPrint()" title="Print or save as PDF">&#128424; Print / PDF</button>'+
+    '<button onclick="briefEmail()" title="Email summary">&#9993; Email</button>'+
+    '<button onclick="setSection(\'companies\')" title="Browse companies">&#43; Add targets</button>'+
+    '</div></div>';
+  // Empty state
+  if(acqs.length===0){
+    body.innerHTML=head+
+      '<div class="brief-empty"><b>No platform built yet.</b><br>'+
+      'Select acquisition targets from the Companies table or Market Map, then return here for an executive rollup.<br><br>'+
+      '<button class="primary" onclick="setSection(\'companies\')" style="padding:8px 18px;border:none;border-radius:6px;background:var(--brand);color:#fff;font-weight:600;font-size:13px;cursor:pointer">Browse Companies</button></div>'+
+      _briefFooter();
+    return;
+  }
+  // Aggregates
+  let totalLocs=allCos.reduce((s,c)=>s+c.locations.length,0);
+  let totalRev=allCos.reduce((s,c)=>s+(c.estRevenue||0),0);
+  let totalGal=allCos.reduce((s,c)=>s+(c.estAnnualGallons||0),0);
+  let totalEmp=allCos.reduce((s,c)=>s+(c.employeeCount||0),0);
+  let allStates=[...new Set(allCos.flatMap(c=>c.states))].sort();
+  let totalMarketLocs=DATA.reduce((s,c)=>s+c.locations.length,0);
+  let pfPct=totalMarketLocs?Math.round(totalLocs/totalMarketLocs*1000)/10:0;
+  let llStates=ll?new Set(ll.states):new Set();
+  let newStates=allStates.filter(s=>!llStates.has(s));
+  // KPI strip
+  let kpis='<div class="brief-kpis">'+
+    '<div class="brief-kpi"><div class="l">Companies</div><div class="v">'+allCos.length+'</div><div class="n">LL + '+acqs.length+' target'+(acqs.length===1?'':'s')+'</div></div>'+
+    '<div class="brief-kpi"><div class="l">Locations</div><div class="v">'+totalLocs.toLocaleString()+'</div><div class="n">+'+(ll?Math.round((totalLocs/ll.locations.length-1)*100):0)+'% vs base</div></div>'+
+    '<div class="brief-kpi"><div class="l">States</div><div class="v">'+allStates.length+'</div><div class="n">'+(newStates.length>0?'+'+newStates.length+' new':'no new states')+'</div></div>'+
+    '<div class="brief-kpi"><div class="l">Revenue</div><div class="v">$'+totalRev.toFixed(0)+'M</div><div class="n">'+(ll&&ll.estRevenue?'+'+Math.round((totalRev/ll.estRevenue-1)*100)+'% vs base':'estimated')+'</div></div>'+
+    '<div class="brief-kpi"><div class="l">Natl Share</div><div class="v brand">'+pfPct+'%</div><div class="n">of '+totalMarketLocs.toLocaleString()+' US locs</div></div>'+
+    '</div>';
+  // Composition table
+  let comp='<div class="brief-section"><h2><span class="ix">1</span>Platform Composition<span class="meta">'+allCos.length+' COMPANIES</span></h2>'+
+    '<table class="brief-tbl"><thead><tr>'+
+    '<th>Company</th><th>Type</th><th class="num">Locations</th><th class="num">States</th><th class="num">Revenue</th><th class="num">Gallons (M)</th><th class="num">Fit</th>'+
+    '</tr></thead><tbody>';
+  // LL anchor row
+  comp+='<tr class="anchor"><td><span class="star">&#9733;</span>'+_briefEsc(llName)+'</td>'+
+    '<td>'+_briefEsc(ll&&ll.ownership?ll.ownership:'—')+'</td>'+
+    '<td class="num">'+(ll?ll.locations.length:0)+'</td>'+
+    '<td class="num">'+(ll?ll.states.length:0)+'</td>'+
+    '<td class="num">'+(ll&&ll.estRevenue?'$'+ll.estRevenue+'M':'—')+'</td>'+
+    '<td class="num">'+(ll&&ll.estAnnualGallons?ll.estAnnualGallons:'—')+'</td>'+
+    '<td class="num" style="color:var(--brand-dark);font-weight:600">Anchor</td></tr>';
+  // Acquisition rows, with computed fit
+  let withFit=acqs.map(c=>{let fb=null;try{fb=computeFitBreakdown(c)}catch(e){}return{c:c,fit:fb?fb.composite:0}});
+  withFit.sort((a,b)=>b.fit-a.fit);
+  withFit.forEach(({c,fit})=>{
+    comp+='<tr><td>'+_briefEsc(c.name)+'</td>'+
+      '<td>'+_briefEsc(c.ownership||'—')+'</td>'+
+      '<td class="num">'+c.locations.length+'</td>'+
+      '<td class="num">'+c.states.length+'</td>'+
+      '<td class="num">'+(c.estRevenue?'$'+c.estRevenue+'M':'—')+'</td>'+
+      '<td class="num">'+(c.estAnnualGallons||'—')+'</td>'+
+      '<td class="num" style="font-weight:600;color:'+(fit>=70?'var(--green)':fit>=50?'var(--brand)':'var(--text-secondary)')+'">'+fit+'</td></tr>';
+  });
+  // Total row
+  comp+='<tr class="total"><td>Pro-Forma Total</td><td>—</td>'+
+    '<td class="num">'+totalLocs+'</td>'+
+    '<td class="num">'+allStates.length+'</td>'+
+    '<td class="num">$'+totalRev.toFixed(0)+'M</td>'+
+    '<td class="num">'+totalGal.toFixed(0)+'</td>'+
+    '<td class="num">—</td></tr></tbody></table></div>';
+  // Geographic footprint + Top fit-score targets (two-column)
+  // Per-state platform vs total
+  let pfStateLocs={},allStateLocs={};
+  allCos.forEach(c=>c.locations.forEach(l=>{pfStateLocs[l.state]=(pfStateLocs[l.state]||0)+1}));
+  DATA.forEach(c=>c.locations.forEach(l=>{allStateLocs[l.state]=(allStateLocs[l.state]||0)+1}));
+  let stateRows=allStates.map(st=>({st:st,pf:pfStateLocs[st]||0,tot:allStateLocs[st]||0,pct:allStateLocs[st]?Math.round((pfStateLocs[st]||0)/allStateLocs[st]*1000)/10:0}))
+    .sort((a,b)=>b.pct-a.pct).slice(0,8);
+  let geoCard='<div class="brief-card"><div style="font-size:11px;color:var(--text-tertiary);margin-bottom:8px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.4px">Top States by Share</div>';
+  if(stateRows.length===0)geoCard+='<div style="font-size:12px;color:var(--text-secondary)">No state coverage.</div>';
+  else stateRows.forEach(r=>{
+    let barPct=Math.min(100,r.pct*2); // scale: 50% share = full bar
+    geoCard+='<div class="brief-bar-row"><span class="lbl">'+r.st+'</span>'+
+      '<span class="bar"><i style="width:'+barPct+'%"></i></span>'+
+      '<span class="v">'+r.pct+'%</span></div>';
+  });
+  geoCard+='<div style="font-size:10px;color:var(--text-tertiary);margin-top:8px;font-family:var(--font-mono);border-top:1px solid var(--border-subtle);padding-top:6px">'+allStates.length+' state'+(allStates.length===1?'':'s')+' total &middot; '+totalLocs+' locations</div></div>';
+  // Top fit-score targets
+  let fitRows=withFit.slice(0,5);
+  let fitCard='<div class="brief-card"><div style="font-size:11px;color:var(--text-tertiary);margin-bottom:8px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.4px">Top Strategic Fit</div>';
+  if(fitRows.length===0)fitCard+='<div style="font-size:12px;color:var(--text-secondary)">No targets selected.</div>';
+  else fitRows.forEach(({c,fit})=>{
+    fitCard+='<div class="brief-bar-row"><span class="lbl" title="'+_briefEsc(c.name)+'">'+_briefEsc(c.name)+'</span>'+
+      '<span class="bar"><i style="width:'+fit+'%;background:'+(fit>=70?'var(--green)':fit>=50?'var(--brand)':'var(--amber)')+'"></i></span>'+
+      '<span class="v">'+fit+'</span></div>';
+  });
+  fitCard+='<div style="font-size:10px;color:var(--text-tertiary);margin-top:8px;font-family:var(--font-mono);border-top:1px solid var(--border-subtle);padding-top:6px">Composite 0&ndash;100  &middot;  6-bucket model</div></div>';
+  let geo='<div class="brief-section"><h2><span class="ix">2</span>Geographic & Strategic Fit</h2><div class="brief-grid2">'+geoCard+fitCard+'</div></div>';
+  // Recent intelligence — kick off lazy load if not loaded
+  if(!INTEL_NEWS&&!_intelLoadStarted){_intelLoad().then(()=>{ if(document.getElementById('mainArea').classList.contains('view-brief'))renderBrief() })}
+  let intelHtml='<div class="brief-section"><h2><span class="ix">3</span>Recent Intelligence';
+  let allArticles=(INTEL_NEWS&&INTEL_NEWS.articles)?INTEL_NEWS.articles:[];
+  // Prefer items mentioning platform companies, fall back to highest-impact recent
+  let pfIds=new Set(allCos.map(c=>c.id));
+  let relevant=allArticles.filter(a=>(a.companyIds||[]).some(id=>{
+    let r=_intelResolveCompany(id,'');return r.matched&&pfIds.has(r.id);
+  }));
+  let pickList=relevant.length>0?relevant:allArticles.slice();
+  pickList.sort((a,b)=>{
+    let ai=a.impactScore||0,bi=b.impactScore||0;
+    if(bi!==ai)return bi-ai;
+    return new Date(b.publishedAt||0)-new Date(a.publishedAt||0);
+  });
+  let topItems=pickList.slice(0,4);
+  intelHtml+='<span class="meta">'+(relevant.length>0?'PLATFORM-RELEVANT':'INDUSTRY')+' &middot; '+topItems.length+' ITEM'+(topItems.length===1?'':'S')+'</span></h2>';
+  if(!INTEL_NEWS){
+    intelHtml+='<div class="brief-empty" style="padding:18px">Loading recent intelligence&hellip;</div>';
+  } else if(topItems.length===0){
+    intelHtml+='<div class="brief-empty" style="padding:18px">No recent intelligence available.</div>';
+  } else {
+    intelHtml+='<div class="brief-intel-list">';
+    topItems.forEach(a=>{
+      let m=INTEL_CAT_META[a.category]||{label:a.category||'Item',color:'#697386'};
+      let when=_intelTimeAgo(a.publishedAt);
+      let url=a.url||a.sourceUrl||'';
+      let click=url?'onclick="window.open(\''+_briefEsc(url)+'\',\'_blank\',\'noopener,noreferrer\')"':'';
+      intelHtml+='<div class="brief-intel-item" '+click+'>'+
+        '<div class="top">'+
+        '<span class="src">'+_briefEsc(a.source||'Source')+'</span>'+
+        '<span>&middot;</span><span>'+_briefEsc(when)+'</span>'+
+        '<span class="pill" style="background:'+m.color+'">'+_briefEsc(m.label)+'</span>'+
+        '<span class="impact">Impact '+(a.impactScore||0)+'</span>'+
+        '</div>'+
+        '<div class="hl">'+_briefEsc(a.headline||'')+'</div>'+
+        '</div>';
+    });
+    intelHtml+='</div>';
+  }
+  intelHtml+='</div>';
+  body.innerHTML=head+kpis+comp+geo+intelHtml+_briefFooter();
+}
+function _briefFooter(){
+  return '<div class="brief-foot">'+
+    '<span class="gen">propane-intelligence</span>'+
+    '<span>Generated '+_briefFmtDate()+' &middot; CONFIDENTIAL &middot; DO NOT DISTRIBUTE</span>'+
+    '</div>';
 }
 
 function clearPlatform(){
@@ -2654,6 +2928,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='c'||e.key==='C'){e.preventDefault();setSection('companies');return}            // Companies section (uses last sub)
   if(e.key==='i'||e.key==='I'){e.preventDefault();setSection('intelligence');return}         // Intelligence section
   if(e.key==='p'||e.key==='P'){e.preventDefault();setSection('proforma');return}              // Pro-Forma section
+  if(e.key==='r'||e.key==='R'){e.preventDefault();setSection('brief');return}                  // Brief section (Rollup)
   if(e.key==='a'||e.key==='A'){e.preventDefault();setSection('analytics');return}            // Analytics section
   if(e.key==='t'||e.key==='T'){e.preventDefault();setCompaniesSub('table');return}           // Companies > Table only
   if(e.key==='b'||e.key==='B'){e.preventDefault();setCompaniesSub('both');return}            // Companies > Table + Map
