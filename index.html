@@ -917,6 +917,22 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
 [data-theme="dark"] .act-item:hover{background:#142031}
 @media (max-width:760px){.act-panel{width:300px}}
 @media print{.act-wrap{display:none!important}}
+/* v4.14.0 Watchlist panel items + star toggle */
+.wl-item{display:flex;gap:10px;align-items:center;padding:9px 14px;border-left:2px solid transparent;transition:background .12s ease;cursor:pointer}
+.wl-item:hover{background:var(--light-bg);border-left-color:#E0A106}
+.wl-ico{flex:0 0 auto;width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#E0A106 0%,#C0392B 100%);color:#fff;font-size:11px;font-weight:700}
+.wl-body{flex:1;min-width:0}
+.wl-name{font-size:12.5px;font-weight:600;color:var(--text-primary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wl-meta{font-size:10.5px;color:var(--text-tertiary);margin-top:2px}
+.wl-badge{flex:0 0 auto;min-width:20px;height:18px;padding:0 6px;border-radius:9px;background:#E74C3C;color:#fff;font-size:10px;font-weight:700;line-height:18px;text-align:center}
+.wl-rm{flex:0 0 auto;background:transparent;border:none;color:var(--text-tertiary);font-size:14px;cursor:pointer;width:22px;height:22px;border-radius:4px;line-height:1}
+.wl-rm:hover{background:rgba(192,57,43,.1);color:#C0392B}
+[data-theme="dark"] .wl-item:hover{background:#142031}
+/* Star toggle button (used in profile header + companies-table rows) */
+.wl-star{background:transparent;border:none;color:#cbd5e0;font-size:16px;cursor:pointer;padding:2px 6px;line-height:1;transition:color .12s ease;border-radius:4px}
+.wl-star:hover{color:#E0A106}
+.wl-star.is-on{color:#E0A106}
+.wl-star:focus-visible{outline:2px solid var(--brand);outline-offset:1px}
 /* === v4.7.0: Overlap section (pairwise territory heatmap) === */
 .overlap-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
 .main.view-overlap{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
@@ -1352,6 +1368,17 @@ Continue with Microsoft
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
 <button class="sub-btn" data-sub="table" role="tab" aria-selected="false" onclick="setCompaniesSub('table')" title="Table only (T)">Table</button>
 <button class="sub-btn active" data-sub="both" role="tab" aria-selected="true" onclick="setCompaniesSub('both')" title="Table + Map (B)">+ Map</button>
+</div>
+<div class="act-wrap">
+<button class="act-btn" id="wlBtn" onclick="toggleWatchlistPanel()" aria-haspopup="true" aria-expanded="false" aria-label="Watchlist" title="Watchlist">
+<span class="act-bell" aria-hidden="true">&#9733;</span>
+<span class="act-badge" id="wlBadge" aria-live="polite" style="display:none;background:#E0A106">0</span>
+</button>
+<div class="act-panel" id="wlPanel" role="dialog" aria-label="Watchlist">
+<div class="act-head"><h3>Watchlist</h3><span class="act-foot" style="border:none;padding:0;text-transform:none;letter-spacing:0">Click any to open profile</span></div>
+<div class="act-list" id="wlBody"><div class="act-empty">No watched companies yet.</div></div>
+<div class="act-foot">News mentions surface as alerts in Activity</div>
+</div>
 </div>
 <div class="act-wrap">
 <button class="act-btn" id="actBtn" onclick="toggleActivityPanel()" aria-haspopup="true" aria-expanded="false" aria-label="Recent activity" title="Recent activity">
@@ -2337,7 +2364,7 @@ function render(){try{
     '<td><button class="spot-btn'+(inSpot?' on':'')+'" onclick="toggleSpotlight(\''+c.id+'\',event)" title="Spotlight on map" aria-label="Spotlight '+esc(c.name)+'">&#128065;</button></td>'+
     '<td>'+(canAdd?'<button class="add-btn'+(inPF?' added':'')+'" onclick="event.stopPropagation();togglePlatform(\''+c.id+'\')" title="'+(inPF?'Remove from':'Add to')+' platform" aria-label="'+(inPF?'Remove':'Add')+' '+esc(c.name)+'">'+(inPF?'&#10003;':'+')+'</button>':(isLL?'<span style="color:var(--gold);font-size:11px" aria-label="Lampton Love platform company">&#9733;</span>':''))+'</td>'+
     '<td class="num" style="color:var(--slate);font-size:10px">'+(i+1)+'</td>'+
-    '<td><span class="cn">'+highlightText(c.name,searchQuery)+'<small>'+(c.parentGroup&&c.parentGroup!==c.name?highlightText(c.parentGroup,searchQuery)+' \u00b7 ':'')+esc(c.hqCity?c.hqCity+', ':'')+esc(c.hqState)+'</small></span></td>'+
+    '<td><span class="cn">'+highlightText(c.name,searchQuery)+(canAdd?' <button class="wl-star'+(_wlHas(c.id)?' is-on':'')+'" onclick="event.stopPropagation();toggleWatchlist(\''+c.id+'\')" aria-label="'+(_wlHas(c.id)?'Unwatch':'Watch')+' '+esc(c.name)+'" title="'+(_wlHas(c.id)?'Remove from watchlist':'Add to watchlist')+'">'+(_wlHas(c.id)?'\u2605':'\u2606')+'</button>':'')+'<small>'+(c.parentGroup&&c.parentGroup!==c.name?highlightText(c.parentGroup,searchQuery)+' \u00b7 ':'')+esc(c.hqCity?c.hqCity+', ':'')+esc(c.hqState)+'</small></span></td>'+
     '<td><span class="badge '+BC[c.ownership]+'">'+OL[c.ownership]+'</span></td>'+
     '<td class="num">'+(stateFilter.size>0?c.locations.filter(function(l){return stateFilter.has(l.state)}).length:c.locations.length)+'</td>'+
     '<td class="num'+pPulse+'" onmouseenter="showScoreTip(event,\''+c.id+'\',\'prox\')" onmouseleave="hideScoreTip()"><span class="'+scoreCls(ps)+'">'+(ps||'\u2014')+'</span></td>'+
@@ -2766,10 +2793,12 @@ function op(id){try{
   let stateLocs={};c.locations.forEach(l=>{stateLocs[l.state]=(stateLocs[l.state]||0)+1});
 
   let inCmp=compareIds.includes(c.id);
+  let inWl=_wlHas(c.id);
   document.getElementById('pb').innerHTML=
     '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">'+
     (canAdd?'<button class="pp-add'+(inPF?' added':'')+'" style="flex:1;min-width:200px" onclick="togglePlatform(\''+c.id+'\');op(\''+c.id+'\')">'+(inPF?'&#10005; Remove from Platform':'+ Add to Pro Forma Platform')+'</button>':'')+
     '<button onclick="toggleCompare(\''+c.id+'\');op(\''+c.id+'\')" style="padding:9px 14px;background:'+(inCmp?'rgba(124,92,252,0.10)':'var(--white)')+';border:1px solid '+(inCmp?'var(--brand)':'var(--border)')+';color:'+(inCmp?'var(--brand)':'var(--text-secondary)')+';border-radius:var(--radius-md);font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap" title="'+(inCmp?'Remove from Compare':'Add to Compare (X)')+'">'+(inCmp?'&#10003; In Compare':'+ Compare')+'</button>'+
+    (canAdd?'<button onclick="toggleWatchlist(\''+c.id+'\')" style="padding:9px 12px;background:'+(inWl?'rgba(224,161,6,0.12)':'var(--white)')+';border:1px solid '+(inWl?'#E0A106':'var(--border)')+';color:'+(inWl?'#9B6E04':'var(--text-secondary)')+';border-radius:var(--radius-md);font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap" title="'+(inWl?'Remove from Watchlist':'Add to Watchlist')+'">'+(inWl?'★ Watching':'☆ Watch')+'</button>':'')+
     '</div>'+
 
     /* === PRODUCT SPRINT: Enhanced Company Overview with research data === */
@@ -3718,7 +3747,10 @@ const ACT_KIND_META={
   scenario_import: {icon:'⤓', color:'#7C5CFC', label:'Scenarios imported'},
   compare_add:     {icon:'▤', color:'#2BB673', label:'Added to compare'},
   compare_remove:  {icon:'▤', color:'#C0392B', label:'Removed from compare'},
-  compare_clear:   {icon:'▤', color:'#697386', label:'Compare cleared'}
+  compare_clear:   {icon:'▤', color:'#697386', label:'Compare cleared'},
+  watchlist_add:   {icon:'★', color:'#E0A106', label:'Watchlist added'},
+  watchlist_remove:{icon:'☆', color:'#697386', label:'Watchlist removed'},
+  news_alert:      {icon:'⚑', color:'#E74C3C', label:'News alert'}
 };
 function _actAll(){try{let s=localStorage.getItem(ACT_KEY);if(!s)return [];let a=JSON.parse(s);return Array.isArray(a)?a:[]}catch(e){return []}}
 function _actPersist(arr){try{localStorage.setItem(ACT_KEY,JSON.stringify(arr.slice(0,ACT_CAP)));return true}catch(e){console.error('[activity persist]',e);return false}}
@@ -3784,6 +3816,103 @@ function _actRenderPanel(){
       '</div>';
   });
   body.innerHTML=h;
+}
+
+/* === v4.14.0: Watchlist + news alerts (pinned companies, alert badge on news mentions) === */
+const WL_KEY='pi_watchlist', WL_NEWS_SEEN_KEY='pi_watchlist_news_seen';
+function _wlAll(){try{let s=localStorage.getItem(WL_KEY);if(!s)return [];let a=JSON.parse(s);return Array.isArray(a)?a:[]}catch(e){return []}}
+function _wlPersist(arr){try{localStorage.setItem(WL_KEY,JSON.stringify(arr));return true}catch(e){console.error('[wl persist]',e);return false}}
+function _wlHas(id){return _wlAll().includes(id)}
+function _wlAdd(id){let a=_wlAll();if(a.includes(id))return false;a.unshift(id);_wlPersist(a);_wlUpdateBadge();return true}
+function _wlRemove(id){let a=_wlAll();let i=a.indexOf(id);if(i<0)return false;a.splice(i,1);_wlPersist(a);_wlUpdateBadge();return true}
+function toggleWatchlist(id,refresh){
+  if(!id||id===LL_ID)return;
+  let c=DATA.find(x=>x.id===id);if(!c)return;
+  if(_wlHas(id)){_wlRemove(id);showToast('Removed from watchlist: '+c.name);_actLog('watchlist_remove',c.name,{id:c.id})}
+  else{_wlAdd(id);showToast('Added to watchlist: '+c.name);_actLog('watchlist_add',c.name,{id:c.id})}
+  // Refresh companies table star + open profile if visible
+  if(refresh!==false){
+    if(typeof render==='function')render();
+    let pn=document.getElementById('pn');
+    if(pn&&pn.textContent===c.name)op(id);
+    if(document.getElementById('wlPanel')&&document.getElementById('wlPanel').classList.contains('open'))_wlRenderPanel();
+  }
+}
+function _wlUpdateBadge(){
+  let b=document.getElementById('wlBadge');if(!b)return;
+  let n=_wlAll().length;
+  if(n<=0){b.style.display='none';b.textContent=''}
+  else{b.style.display='';b.textContent=n>99?'99+':String(n)}
+}
+function toggleWatchlistPanel(){
+  let panel=document.getElementById('wlPanel');if(!panel)return;
+  let open=panel.classList.toggle('open');
+  let btn=document.getElementById('wlBtn');if(btn)btn.setAttribute('aria-expanded',open?'true':'false');
+  if(open){_wlRenderPanel();
+    setTimeout(()=>{document.addEventListener('click',_wlOutside,{capture:true})},10);
+  } else {document.removeEventListener('click',_wlOutside,{capture:true})}
+}
+function _wlOutside(e){
+  let panel=document.getElementById('wlPanel'),btn=document.getElementById('wlBtn');
+  if(!panel)return;
+  if(panel.contains(e.target))return;
+  if(btn&&btn.contains(e.target))return;
+  panel.classList.remove('open');if(btn)btn.setAttribute('aria-expanded','false');
+  document.removeEventListener('click',_wlOutside,{capture:true});
+}
+function _wlNewsCountFor(id){
+  if(!INTEL_NEWS||!INTEL_NEWS.articles)return 0;
+  return INTEL_NEWS.articles.filter(a=>(a.companyIds||[]).some(cid=>{
+    let r=_intelResolveCompany(cid,'');return r.matched&&r.id===id;
+  })).length;
+}
+function _wlRenderPanel(){
+  let body=document.getElementById('wlBody');if(!body)return;
+  let arr=_wlAll().map(id=>DATA.find(c=>c.id===id)).filter(Boolean);
+  if(arr.length===0){body.innerHTML='<div class="act-empty">No watched companies. Star any company in the table or profile to track its news + filings.</div>';return}
+  let h='';
+  arr.forEach(c=>{
+    let n=_wlNewsCountFor(c.id);
+    let init=(c.name||'?').trim().charAt(0).toUpperCase();
+    h+='<div class="wl-item" onclick="op(\''+c.id+'\');toggleWatchlistPanel()">'+
+      '<span class="wl-ico" aria-hidden="true">'+_cmpEsc(init)+'</span>'+
+      '<div class="wl-body"><div class="wl-name">'+_cmpEsc(c.name)+'</div>'+
+      '<div class="wl-meta">'+_cmpEsc(c.hqCity?c.hqCity+', '+c.hqState:c.hqState||'—')+' · '+(c.locations||[]).length+' locs</div></div>'+
+      (n>0?'<span class="wl-badge" title="'+n+' news mention'+(n===1?'':'s')+'">'+n+'</span>':'')+
+      '<button class="wl-rm" onclick="event.stopPropagation();toggleWatchlist(\''+c.id+'\')" aria-label="Remove from watchlist" title="Remove">&times;</button>'+
+      '</div>';
+  });
+  body.innerHTML=h;
+}
+function _wlScanNewsForAlerts(){
+  // Compare current news article ids against last-seen set for each watched company.
+  // Log a news_alert into activity feed for every new mention.
+  if(!INTEL_NEWS||!INTEL_NEWS.articles)return;
+  let watched=_wlAll();if(!watched.length)return;
+  let seen={};try{let s=localStorage.getItem(WL_NEWS_SEEN_KEY);if(s)seen=JSON.parse(s)||{}}catch(e){}
+  let firstScan=Object.keys(seen).length===0;
+  let updated={...seen};
+  let logged=0;
+  watched.forEach(cid=>{
+    let prev=new Set(seen[cid]||[]);
+    let arts=INTEL_NEWS.articles.filter(a=>(a.companyIds||[]).some(c=>{
+      let r=_intelResolveCompany(c,'');return r.matched&&r.id===cid;
+    }));
+    let newOnes=arts.filter(a=>!prev.has(a.id));
+    if(!firstScan){
+      newOnes.forEach(a=>{
+        let c=DATA.find(x=>x.id===cid);
+        let nm=c?c.name:cid;
+        _actLog('news_alert',nm+' — '+(a.headline||'(no headline)').slice(0,80),{id:cid,articleId:a.id,url:a.url||a.sourceUrl||''});
+        logged++;
+      });
+    }
+    updated[cid]=arts.map(a=>a.id);
+  });
+  // Trim updated to only watched cids
+  let clean={};watched.forEach(cid=>{if(updated[cid])clean[cid]=updated[cid]});
+  try{localStorage.setItem(WL_NEWS_SEEN_KEY,JSON.stringify(clean))}catch(e){}
+  if(logged>0)showToast(logged+' new alert'+(logged===1?'':'s')+' for watched companies');
 }
 
 /* === v4.9.0: Compare view (port from v3 CompareView) === */
@@ -4797,6 +4926,7 @@ async function _intelLoad(){
     if(sRes.ok)INTEL_SIGNALS=await sRes.json();
   }catch(e){console.error('Intelligence load failed',e)}
   renderIntelligence();
+  try{_wlScanNewsForAlerts()}catch(e){console.error('[wl scan]',e)}
 }
 
 function setIntelTab(tab){
@@ -5043,6 +5173,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   let sn=document.getElementById('shareScenarioName');
   if(sn)sn.addEventListener('input',updateShareMessage);
   _actUpdateBadge();
+  _wlUpdateBadge();
 });
 
 function loadFromURL(){
