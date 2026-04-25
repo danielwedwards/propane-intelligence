@@ -1,0 +1,307 @@
+{
+  "source": "https://southcentralfs.com/",
+  "scraped": "2026-04-11",
+  "member_id": "southcentralfs",
+  "locations": [
+    {
+      "name": "Martinsville",
+      "street": "13791 N Cline Orchard Rd",
+      "city": "Martinsville",
+      "state": "IL",
+      "zip": "62442",
+      "phone": "(217) 382-4128",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Casey",
+      "street": "700 W Monroe Ave #1210",
+      "city": "Casey",
+      "state": "IL",
+      "zip": "62420",
+      "phone": "(217) 849-2241",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Toledo",
+      "street": "708 S Meridian",
+      "city": "Toledo",
+      "state": "IL",
+      "zip": "62468",
+      "phone": "(217) 849-2241",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Humboldt",
+      "street": "50 N Broadway",
+      "city": "Humboldt",
+      "state": "IL",
+      "zip": "61931",
+      "phone": "(217) 856-3511",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "NAHC",
+      "street": "1605 W Jourdan St.",
+      "city": "Newton",
+      "state": "IL",
+      "zip": "62448",
+      "phone": "(618) 783-8789",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Gays Bulk Fuel Plant",
+      "street": "1543 CR 350 N",
+      "city": "Gays",
+      "state": "IL",
+      "zip": "61928",
+      "phone": "(217) 752-6722",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Sullivan",
+      "street": "982 CR 1350 N",
+      "city": "Sullivan",
+      "state": "IL",
+      "zip": "61951",
+      "phone": "(217) 728-2540",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Sullivan Fast Stop",
+      "street": "305 S Hamilton St",
+      "city": "Sullivan",
+      "state": "IL",
+      "zip": "61951",
+      "phone": "(217) 728-4316",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Sullivan Fast Stop Express",
+      "street": "211 North Market Street",
+      "city": "Sullivan",
+      "state": "IL",
+      "zip": "61951",
+      "phone": "(217) 342-9231",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Windsor Fast Stop",
+      "street": "1520 Kentucky Ave",
+      "city": "Windsor",
+      "state": "IL",
+      "zip": "61957",
+      "phone": "(217) 459-2055",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "South Central Structures & Doors",
+      "street": "400 S. Willow Street",
+      "city": "Effingham",
+      "state": "IL",
+      "zip": "62401",
+      "phone": "(217) 857-6566",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "The Farm Store",
+      "street": "444 S Willow Street",
+      "city": "Effingham",
+      "state": "IL",
+      "zip": "62401",
+      "phone": "(217) 342-9234",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Effingham Fast Stop General Store",
+      "street": "410 S. Willow Street",
+      "city": "Effingham",
+      "state": "IL",
+      "zip": "62401",
+      "phone": "(217) 342-2013",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Effingham Willow Street",
+      "street": "410 S. Willow Street",
+      "city": "Effingham",
+      "state": "IL",
+      "zip": "62401",
+      "phone": "(217) 342-9263",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Corporate Office",
+      "street": "405 S. Banker St. PO Box 629",
+      "city": "Effingham",
+      "state": "IL",
+      "zip": "62401",
+      "phone": "(217) 342-9231",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Stewardson",
+      "street": "2895 Co Hwy 33",
+      "city": "Stewardson",
+      "state": "IL",
+      "zip": "62463",
+      "phone": "(217) 644-2408",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Feed Mill",
+      "street": "13916 E State Hwy 37",
+      "city": "Watson",
+      "state": "IL",
+      "zip": "62473",
+      "phone": "(217) 536-5000",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Flora Fast Stop",
+      "street": "11109 Old Hwy 50",
+      "city": "Flora",
+      "state": "IL",
+      "zip": "62839",
+      "phone": "(217) 342-9231",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Flora",
+      "street": "11109 Old Hwy 50",
+      "city": "Flora",
+      "state": "IL",
+      "zip": "62839",
+      "phone": "(618) 662-2423",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Altamont",
+      "street": "7471 N. 300th St.",
+      "city": "Altamont",
+      "state": "IL",
+      "zip": "62411",
+      "phone": "(618) 483-5117",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Tower Hill",
+      "street": "103 E Freemont St",
+      "city": "Tower Hill",
+      "state": "IL",
+      "zip": "62571",
+      "phone": "(217) 567-3142",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Moweaqua Fast Stop",
+      "street": "605 North Main Street",
+      "city": "Moweaqua",
+      "state": "IL",
+      "zip": "62550",
+      "phone": "(217) 342-9231",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "St. Peter Fast Stop",
+      "street": "510 E Railroad St",
+      "city": "St. Peter",
+      "state": "IL",
+      "zip": "62880",
+      "phone": "(217) 342-9231",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "St. Peter",
+      "street": "510 E Railroad St",
+      "city": "St. Peter",
+      "state": "IL",
+      "zip": "62880",
+      "phone": "(618) 349-6277",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Vandalia Fast Stop",
+      "street": "1800 Hillsboro Rd",
+      "city": "Vandalia",
+      "state": "IL",
+      "zip": "62471",
+      "phone": "(618) 283-1368",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Vandalia",
+      "street": "100 Pine Ridge Drive",
+      "city": "Vandalia",
+      "state": "IL",
+      "zip": "62471",
+      "phone": "(618) 283-0789",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Sandoval",
+      "street": "910 Range Rd",
+      "city": "Sandoval",
+      "state": "IL",
+      "zip": "62882",
+      "phone": "(618) 247-3266",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Centralia",
+      "street": "996 Walnut Hill Rd",
+      "city": "Centralia",
+      "state": "IL",
+      "zip": "62801",
+      "phone": "(618) 532-9254",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Greenville",
+      "street": "1715 E City Route 40",
+      "city": "Greenville",
+      "state": "IL",
+      "zip": "62246",
+      "phone": "(618) 664-2030",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Country Depot",
+      "street": "822 S 2nd St",
+      "city": "Greenville",
+      "state": "IL",
+      "zip": "62246",
+      "phone": "(618) 664-9566",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

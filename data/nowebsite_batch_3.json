@@ -1,0 +1,142 @@
+[
+  {
+    "id": "central_propane_hazel_green",
+    "name": "Central Propane - Hazel Green",
+    "state": "AL",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Multi-location local operator in North Alabama"
+  },
+  {
+    "id": "penn_jersey_propane_gas_co",
+    "name": "Penn-Jersey Propane Gas Co",
+    "state": "NJ",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "PA/NJ regional propane"
+  },
+  {
+    "id": "eagle_energy_corporation",
+    "name": "Eagle Energy Corporation",
+    "state": "NV",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "NV regional energy/propane"
+  },
+  {
+    "id": "dooleys_petroleum_inc",
+    "name": "Dooley's Petroleum Inc.",
+    "state": "MN",
+    "website": "",
+    "ownership": "private",
+    "nlocs": 1,
+    "score": 2,
+    "notes": ""
+  },
+  {
+    "id": "rocky_mountain_lp_gas",
+    "name": "Rocky Mountain LP Gas",
+    "state": "CO",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Colorado regional propane"
+  },
+  {
+    "id": "twin_rivers_propane",
+    "name": "TWIN RIVERS PROPANE",
+    "state": "GA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Georgia regional dealer"
+  },
+  {
+    "id": "g_l_distributing",
+    "name": "G & L Distributing",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT operator"
+  },
+  {
+    "id": "grill_gas_express",
+    "name": "Grill Gas Express",
+    "state": "AL",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator, no clear web presence"
+  },
+  {
+    "id": "superior_propane",
+    "name": "Superior Propane",
+    "state": "AZ",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Local AZ operator"
+  },
+  {
+    "id": "pro_gas_propane",
+    "name": "Pro Gas Propane",
+    "state": "GA",
+    "website": "",
+    "ownership": "private",
+    "nlocs": 2,
+    "score": 2,
+    "notes": ""
+  },
+  {
+    "id": "tri_county_gas",
+    "name": "Tri-County Gas",
+    "state": "FL",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Florida regional dealer"
+  },
+  {
+    "id": "r_d_propane",
+    "name": "R & D Propane",
+    "state": "OR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small OR propane operator"
+  },
+  {
+    "id": "tricounty_gas",
+    "name": "TriCounty Gas",
+    "state": "WY",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WY operator"
+  },
+  {
+    "id": "reed_oil",
+    "name": "Reed Oil",
+    "state": "NC",
+    "website": "",
+    "ownership": "private",
+    "nlocs": 2,
+    "score": 2,
+    "notes": ""
+  }
+]

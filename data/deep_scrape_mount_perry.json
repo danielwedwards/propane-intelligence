@@ -1,0 +1,10 @@
+{
+  "source": "mountperrypropane.com and public listings",
+  "scraped": "2026-04-11",
+  "company": "Mount Perry Propane LLC",
+  "parent": "Energy Distribution Partners (EDP) (per brief; verify)",
+  "notes": "Single-location propane retailer serving Southeastern Ohio (Cambridge to Columbus corridor).",
+  "locations": [
+    {"name": "Mount Perry Propane", "street": "1100 Mount Perry Rd", "city": "Mount Perry", "state": "OH", "zip": "43760", "phone": "740-787-1145"}
+  ]
+}

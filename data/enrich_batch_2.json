@@ -1,0 +1,657 @@
+[
+  {
+    "id": "land_o_lakes_oil_co",
+    "name": "Land O'Lakes Oil Co",
+    "state": "MN"
+  },
+  {
+    "id": "coop_s_propane",
+    "name": "Coop's Propane",
+    "state": "MO"
+  },
+  {
+    "id": "guier_fertilizer",
+    "name": "Guier Fertilizer",
+    "state": "MO"
+  },
+  {
+    "id": "capital_energy_co",
+    "name": "Capital Energy Co",
+    "state": "MO"
+  },
+  {
+    "id": "tarkio_lp_gas",
+    "name": "Tarkio LP Gas",
+    "state": "MO"
+  },
+  {
+    "id": "schoonover_oil_co",
+    "name": "Schoonover Oil Co",
+    "state": "MO"
+  },
+  {
+    "id": "island_energy_inc",
+    "name": "Island Energy Inc.",
+    "state": "MO"
+  },
+  {
+    "id": "southern_fs_inc",
+    "name": "Southern FS, Inc.",
+    "state": "MO"
+  },
+  {
+    "id": "klondike_oil_gas",
+    "name": "Klondike Oil & Gas",
+    "state": "MS"
+  },
+  {
+    "id": "coombs_gas_co",
+    "name": "Coombs Gas, Co.",
+    "state": "MS"
+  },
+  {
+    "id": "fair_propane_kosciusko",
+    "name": "Fair Propane Kosciusko",
+    "state": "MS"
+  },
+  {
+    "id": "prairie_fuels",
+    "name": "Prairie Fuels",
+    "state": "MT"
+  },
+  {
+    "id": "prairie_ag_coop",
+    "name": "Prairie Ag Coop",
+    "state": "MT"
+  },
+  {
+    "id": "general_distributing_co",
+    "name": "General Distributing Co",
+    "state": "MT"
+  },
+  {
+    "id": "a_a_stieg_wholesale_inc",
+    "name": "A & A Stieg Wholesale Inc",
+    "state": "MT"
+  },
+  {
+    "id": "olson_propane",
+    "name": "Olson Propane",
+    "state": "MT"
+  },
+  {
+    "id": "creative_energy",
+    "name": "Creative Energy",
+    "state": "MT"
+  },
+  {
+    "id": "farmers_union_propane_bulk_plant",
+    "name": "Farmers Union propane bulk plant",
+    "state": "MT"
+  },
+  {
+    "id": "psi_propane_services_innovated",
+    "name": "PSI Propane Services Innovated",
+    "state": "MT"
+  },
+  {
+    "id": "cross_petroleum_services",
+    "name": "Cross Petroleum Services",
+    "state": "MT"
+  },
+  {
+    "id": "rocky_mountain_supply_ennis",
+    "name": "Rocky Mountain Supply- Ennis",
+    "state": "MT"
+  },
+  {
+    "id": "j_r_services",
+    "name": "J & R Services",
+    "state": "MT"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_salmon",
+    "name": "Valley Wide Cooperative Energy | Salmon",
+    "state": "MT"
+  },
+  {
+    "id": "montana_energy_alliance",
+    "name": "Montana Energy Alliance",
+    "state": "MT"
+  },
+  {
+    "id": "miller_oil_co",
+    "name": "Miller Oil Co",
+    "state": "MT"
+  },
+  {
+    "id": "plevna_propane",
+    "name": "Plevna Propane",
+    "state": "MT"
+  },
+  {
+    "id": "salmon_river_propane",
+    "name": "Salmon River Propane",
+    "state": "MT"
+  },
+  {
+    "id": "cromwell_s_convenience_petroleum_propane",
+    "name": "Cromwell's Convenience Petroleum & Propane",
+    "state": "MT"
+  },
+  {
+    "id": "agland_cooperative",
+    "name": "Agland Cooperative",
+    "state": "MT"
+  },
+  {
+    "id": "bumgarner_propane",
+    "name": "Bumgarner Propane",
+    "state": "NC"
+  },
+  {
+    "id": "s_m_propane_sales_supplies",
+    "name": "S & M Propane Sales & Supplies",
+    "state": "NC"
+  },
+  {
+    "id": "parker_gas",
+    "name": "Parker Gas",
+    "state": "NC"
+  },
+  {
+    "id": "berico_fuels_propane",
+    "name": "Berico Fuels & Propane",
+    "state": "NC"
+  },
+  {
+    "id": "burke_oil_and_propane_company",
+    "name": "Burke Oil and Propane Company",
+    "state": "NC"
+  },
+  {
+    "id": "blue_ridge_energy",
+    "name": "Blue Ridge Energy",
+    "state": "NC"
+  },
+  {
+    "id": "quality_oil_company",
+    "name": "Quality Oil Company",
+    "state": "NC"
+  },
+  {
+    "id": "spirit_lake_propane",
+    "name": "Spirit Lake Propane",
+    "state": "ND"
+  },
+  {
+    "id": "arrowwood_prairie_co_op_cooperstown_office",
+    "name": "Arrowwood Prairie Co-op - Cooperstown Office",
+    "state": "ND"
+  },
+  {
+    "id": "farmers_union_oil_co_nd",
+    "name": "Farmers Union Oil Co",
+    "state": "ND"
+  },
+  {
+    "id": "chs_southwest_grain",
+    "name": "CHS Southwest Grain",
+    "state": "ND"
+  },
+  {
+    "id": "dakota_s_propane_gas_co_op",
+    "name": "Dakota's Propane Gas Co-Op",
+    "state": "ND"
+  },
+  {
+    "id": "pinnacle_bulk_propane",
+    "name": "Pinnacle bulk propane",
+    "state": "ND"
+  },
+  {
+    "id": "gray_oil_co",
+    "name": "Gray Oil Co",
+    "state": "ND"
+  },
+  {
+    "id": "mutch_oil_co_grand_forks_inc",
+    "name": "Mutch Oil Co-Grand Forks Inc",
+    "state": "ND"
+  },
+  {
+    "id": "farmers_union_co_op_oil",
+    "name": "Farmers Union Co-Op Oil",
+    "state": "ND"
+  },
+  {
+    "id": "skip_s_petroleum_propane_co",
+    "name": "Skip's Petroleum & Propane Co",
+    "state": "ND"
+  },
+  {
+    "id": "mcintosh_propane_bulk_plant",
+    "name": "Mcintosh Propane Bulk Plant",
+    "state": "ND"
+  },
+  {
+    "id": "arrowwood_prairie_co_op_carrington_main_office",
+    "name": "Arrowwood Prairie Co-op - Carrington Main Office",
+    "state": "ND"
+  },
+  {
+    "id": "rough_riders_propane_inc",
+    "name": "Rough Riders Propane, Inc.",
+    "state": "ND"
+  },
+  {
+    "id": "fitterer_gas_oil",
+    "name": "Fitterer Gas & Oil",
+    "state": "ND"
+  },
+  {
+    "id": "kavan_propane_oil_inc",
+    "name": "Kavan Propane & Oil Inc",
+    "state": "NE"
+  },
+  {
+    "id": "agland_coop_bulk_plant",
+    "name": "Agland Coop Bulk Plant",
+    "state": "NE"
+  },
+  {
+    "id": "murphy_s_propane",
+    "name": "Murphy's Propane",
+    "state": "NE"
+  },
+  {
+    "id": "knudsen_oil_feed",
+    "name": "Knudsen Oil & Feed",
+    "state": "NE"
+  },
+  {
+    "id": "otte_oil_propane_inc",
+    "name": "Otte Oil & Propane, Inc",
+    "state": "NE"
+  },
+  {
+    "id": "3d_oil_lp",
+    "name": "3D Oil & LP",
+    "state": "NE"
+  },
+  {
+    "id": "farmers_pride_cooperative",
+    "name": "Farmers Pride Cooperative",
+    "state": "NE"
+  },
+  {
+    "id": "sandhill_oil_co",
+    "name": "Sandhill Oil Co",
+    "state": "NE"
+  },
+  {
+    "id": "stagner_propane",
+    "name": "Stagner Propane",
+    "state": "NE"
+  },
+  {
+    "id": "nebraska_iowa_supply_co",
+    "name": "Nebraska Iowa Supply Co",
+    "state": "NE"
+  },
+  {
+    "id": "n_b_gas_co",
+    "name": "N & B Gas Co.",
+    "state": "NE"
+  },
+  {
+    "id": "best_propane_llc",
+    "name": "Best Propane LLC",
+    "state": "NE"
+  },
+  {
+    "id": "great_plains_propane_service_inc",
+    "name": "Great Plains Propane Service, Inc.",
+    "state": "NE"
+  },
+  {
+    "id": "panhandle_coop_system",
+    "name": "Panhandle Coop System",
+    "state": "NE"
+  },
+  {
+    "id": "energy_north_propane",
+    "name": "Energy North Propane",
+    "state": "NH"
+  },
+  {
+    "id": "stiles_fuel",
+    "name": "Stiles Fuel",
+    "state": "NH"
+  },
+  {
+    "id": "ciardelli_fuel_company_inc",
+    "name": "Ciardelli Fuel Company, Inc.",
+    "state": "NH"
+  },
+  {
+    "id": "gastec_propane_refill_station",
+    "name": "Gastec Propane & Refill Station",
+    "state": "NJ"
+  },
+  {
+    "id": "yankee_propane",
+    "name": "Yankee Propane",
+    "state": "NJ"
+  },
+  {
+    "id": "penn_jersey_propane_gas_co",
+    "name": "Penn-Jersey Propane Gas Co",
+    "state": "NJ"
+  },
+  {
+    "id": "progas_inc",
+    "name": "ProGas Inc",
+    "state": "NJ"
+  },
+  {
+    "id": "cenco_heating_oil_propane",
+    "name": "Cenco Heating Oil & Propane",
+    "state": "NJ"
+  },
+  {
+    "id": "northern_new_mexico_gas_company",
+    "name": "Northern New Mexico Gas Company",
+    "state": "NM"
+  },
+  {
+    "id": "northern_new_mexico_gas_company_raton",
+    "name": "Northern New Mexico Gas Company - Raton",
+    "state": "NM"
+  },
+  {
+    "id": "country_gas",
+    "name": "Country Gas",
+    "state": "NM"
+  },
+  {
+    "id": "bfs_propane_services_llc",
+    "name": "BFS Propane Services LLC",
+    "state": "NM"
+  },
+  {
+    "id": "ortega_s_propane_service_inc",
+    "name": "Ortega's Propane Service Inc.",
+    "state": "NM"
+  },
+  {
+    "id": "cross_country_propane_feed_supply",
+    "name": "Cross Country Propane Feed & Supply",
+    "state": "NM"
+  },
+  {
+    "id": "ortega_sons_propane_services",
+    "name": "Ortega & Sons Propane Services",
+    "state": "NM"
+  },
+  {
+    "id": "a_x_propane",
+    "name": "A-X Propane",
+    "state": "NM"
+  },
+  {
+    "id": "columbus_lp_gas",
+    "name": "Columbus LP Gas",
+    "state": "NM"
+  },
+  {
+    "id": "pendleton_propane",
+    "name": "Pendleton Propane.",
+    "state": "NM"
+  },
+  {
+    "id": "lopez_lp_gas_company_llc",
+    "name": "Lopez LP Gas Company LLC.",
+    "state": "NM"
+  },
+  {
+    "id": "g_m_propane",
+    "name": "G M Propane",
+    "state": "NM"
+  },
+  {
+    "id": "romero_s_rio_grande_propane",
+    "name": "Romero's Rio Grande Propane",
+    "state": "NM"
+  },
+  {
+    "id": "high_plains_lp_services",
+    "name": "High Plains LP Services",
+    "state": "NM"
+  },
+  {
+    "id": "griffin_s_fuel_center_plus",
+    "name": "Griffin's Fuel Center Plus",
+    "state": "NM"
+  },
+  {
+    "id": "arro_autogas",
+    "name": "ARRO AUTOGAS",
+    "state": "NV"
+  },
+  {
+    "id": "49_r_propane_inc",
+    "name": "49'R Propane, Inc.",
+    "state": "NV"
+  },
+  {
+    "id": "golden_gate_petro",
+    "name": "Golden Gate Petro",
+    "state": "NV"
+  },
+  {
+    "id": "affordable_propane_m_f_barcellos_inc",
+    "name": "Affordable Propane (M F Barcellos Inc)",
+    "state": "NV"
+  },
+  {
+    "id": "vegas_propane_inc_nv",
+    "name": "Vegas Propane Inc",
+    "state": "NV"
+  },
+  {
+    "id": "patriot_energy",
+    "name": "Patriot Energy",
+    "state": "NV"
+  },
+  {
+    "id": "eagle_energy_corporation",
+    "name": "Eagle Energy Corporation",
+    "state": "NV"
+  },
+  {
+    "id": "winnemucca_gas",
+    "name": "Winnemucca Gas",
+    "state": "NV"
+  },
+  {
+    "id": "wendt_s_propane_oil",
+    "name": "Wendt's Propane & Oil",
+    "state": "NY"
+  },
+  {
+    "id": "ehrhart_energy",
+    "name": "Ehrhart Energy",
+    "state": "NY"
+  },
+  {
+    "id": "bruces_liberty_gas_and_propane_tank_filling_station",
+    "name": "Bruces liberty gas and propane tank filling station",
+    "state": "NY"
+  },
+  {
+    "id": "noco_hvac_fuels_and_energy",
+    "name": "NOCO HVAC, Fuels, and Energy",
+    "state": "NY"
+  },
+  {
+    "id": "corse_fuels",
+    "name": "Corse Fuels",
+    "state": "NY"
+  },
+  {
+    "id": "hilltop_energy_buyer_s_group",
+    "name": "Hilltop Energy Buyer's Group",
+    "state": "NY"
+  },
+  {
+    "id": "irish_propane",
+    "name": "Irish Propane",
+    "state": "NY"
+  },
+  {
+    "id": "griffith_energy",
+    "name": "Griffith Energy",
+    "state": "NY"
+  },
+  {
+    "id": "red_hot_propane",
+    "name": "Red Hot Propane",
+    "state": "OH"
+  },
+  {
+    "id": "j_p_propane_gas_service_inc",
+    "name": "J.P. Propane Gas Service, Inc.",
+    "state": "OH"
+  },
+  {
+    "id": "ak_energy_jackson",
+    "name": "AK Energy - Jackson",
+    "state": "OH"
+  },
+  {
+    "id": "schilling_propane",
+    "name": "Schilling Propane",
+    "state": "OH"
+  },
+  {
+    "id": "linden_s_propane_inc",
+    "name": "Linden's Propane, Inc",
+    "state": "OH"
+  },
+  {
+    "id": "brightstar_propane_fuels",
+    "name": "BrightStar Propane & Fuels",
+    "state": "OH"
+  },
+  {
+    "id": "the_gas_house",
+    "name": "The Gas House",
+    "state": "OH"
+  },
+  {
+    "id": "walterville_propane",
+    "name": "Walterville Propane",
+    "state": "OH"
+  },
+  {
+    "id": "buckeye_propane_co_inc",
+    "name": "Buckeye Propane Co., Inc.",
+    "state": "OH"
+  },
+  {
+    "id": "ak_energy_gallia",
+    "name": "AK Energy - Gallia",
+    "state": "OH"
+  },
+  {
+    "id": "centerra_co_op_fuel_heating_oil",
+    "name": "Centerra Co-Op Fuel & Heating Oil",
+    "state": "OH"
+  },
+  {
+    "id": "ashville_propane",
+    "name": "Ashville Propane",
+    "state": "OH"
+  },
+  {
+    "id": "acorn_lpg_propane",
+    "name": "Acorn LPG Propane",
+    "state": "OH"
+  },
+  {
+    "id": "enderby_gas_inc_ok",
+    "name": "Enderby Gas Inc",
+    "state": "OK"
+  },
+  {
+    "id": "froman_propane_co",
+    "name": "Froman Propane Co",
+    "state": "OK"
+  },
+  {
+    "id": "red_baker_propane_inc",
+    "name": "Red Baker Propane Inc",
+    "state": "OK"
+  },
+  {
+    "id": "liberty_propane_company",
+    "name": "Liberty Propane Company",
+    "state": "OK"
+  },
+  {
+    "id": "red_river_farm_coop",
+    "name": "Red River Farm Coop",
+    "state": "OK"
+  },
+  {
+    "id": "blackburn_propane_service",
+    "name": "Blackburn Propane Service",
+    "state": "OK"
+  },
+  {
+    "id": "pitmon_oil_gas",
+    "name": "Pitmon Oil & Gas",
+    "state": "OK"
+  },
+  {
+    "id": "morrison_propane",
+    "name": "Morrison Propane",
+    "state": "OK"
+  },
+  {
+    "id": "harris_lp_inc",
+    "name": "Harris LP Inc",
+    "state": "OK"
+  },
+  {
+    "id": "steve_s_propane",
+    "name": "Steve's Propane",
+    "state": "OK"
+  },
+  {
+    "id": "industrial_maltsberger_propane_okc",
+    "name": "Industrial Maltsberger Propane OKC",
+    "state": "OK"
+  },
+  {
+    "id": "lundy_s_propane_gas_co",
+    "name": "Lundy's Propane Gas Co",
+    "state": "OK"
+  },
+  {
+    "id": "affordable_propane_of_neosho",
+    "name": "Affordable Propane of Neosho",
+    "state": "OK"
+  },
+  {
+    "id": "lakeland_petroleum_cpp_grove",
+    "name": "Lakeland Petroleum CPP Grove",
+    "state": "OK"
+  },
+  {
+    "id": "ed_staub_sons_propane",
+    "name": "Ed Staub & Sons Propane",
+    "state": "OR"
+  }
+]

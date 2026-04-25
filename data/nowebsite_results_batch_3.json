@@ -1,0 +1,266 @@
+[
+  {
+    "id": "central_propane_hazel_green",
+    "name": "Central Propane - Hazel Green",
+    "locations_found": [
+      {
+        "name": "Central Propane - Hazel Green",
+        "address": "15190 US Highway 231-431 N",
+        "city": "Hazel Green",
+        "state": "AL",
+        "zip": "35750",
+        "phone": "(256) 828-0220"
+      }
+    ],
+    "notes": "Single confirmed location in Hazel Green, AL. Company website central-propane.com lists a 'Locations' page but search results only surfaced the Hazel Green address. Serves northeast Alabama."
+  },
+  {
+    "id": "penn_jersey_propane_gas_co",
+    "name": "Penn-Jersey Propane Gas Co",
+    "locations_found": [
+      {
+        "name": "Penn-Jersey Propane Gas Co - Hainesport",
+        "address": "1456 Route 38, Suite A",
+        "city": "Hainesport",
+        "state": "NJ",
+        "zip": "08036",
+        "phone": "(609) 654-2964"
+      },
+      {
+        "name": "Penn-Jersey Propane Gas Co - Medford",
+        "address": "6 N Main St (Rear)",
+        "city": "Medford",
+        "state": "NJ",
+        "zip": "08055",
+        "phone": "(609) 654-2964"
+      }
+    ],
+    "notes": "Two NJ locations found (Hainesport and Medford). Serves South Jersey and greater Philadelphia area."
+  },
+  {
+    "id": "eagle_energy_corporation",
+    "name": "Eagle Energy Corporation",
+    "locations_found": [
+      {
+        "name": "Eagle Energy Corporation",
+        "address": "8895 Canyon River Ct",
+        "city": "Sparks",
+        "state": "NV",
+        "zip": "89434",
+        "phone": "(775) 852-8558"
+      }
+    ],
+    "notes": "Single confirmed Sparks, NV location. Serves Reno/Sparks and parts of California. Small local operator."
+  },
+  {
+    "id": "dooleys_petroleum_inc",
+    "name": "Dooley's Petroleum Inc.",
+    "locations_found": [
+      {
+        "name": "Dooley's Petroleum - Willmar (HQ)",
+        "address": "3101 3rd Ave SW",
+        "city": "Willmar",
+        "state": "MN",
+        "zip": "56201",
+        "phone": "(320) 235-5200"
+      },
+      {
+        "name": "Dooley's Petroleum - Murdock",
+        "address": "304 US Hwy 12",
+        "city": "Murdock",
+        "state": "MN",
+        "zip": "56271",
+        "phone": "(320) 875-2641"
+      },
+      {
+        "name": "Dooley's Petroleum - Clara City",
+        "address": "104 1st Street SW",
+        "city": "Clara City",
+        "state": "MN",
+        "zip": "56222",
+        "phone": "(320) 847-2438"
+      },
+      {
+        "name": "Dooley's Petroleum - Sauk Centre",
+        "address": "914 Main St S",
+        "city": "Sauk Centre",
+        "state": "MN",
+        "zip": "56378",
+        "phone": "(320) 352-5753"
+      },
+      {
+        "name": "Dooley's Petroleum - Hoffman",
+        "address": "208 1st Street N",
+        "city": "Hoffman",
+        "state": "MN",
+        "zip": "56339",
+        "phone": "(320) 986-2079"
+      },
+      {
+        "name": "Dooley's Petroleum - Sauk Rapids",
+        "address": "1106 Lincoln Ave",
+        "city": "Sauk Rapids",
+        "state": "MN",
+        "zip": "",
+        "phone": ""
+      },
+      {
+        "name": "Dooley's Petroleum - Bird Island",
+        "address": "",
+        "city": "Bird Island",
+        "state": "MN",
+        "zip": "",
+        "phone": ""
+      }
+    ],
+    "notes": "Multi-location MN/Upper Midwest operator with significantly more branches than estimated. At least 6-7 confirmed Minnesota locations. Company does have a website (dooleypetro.com) despite being flagged as no-website."
+  },
+  {
+    "id": "rocky_mountain_lp_gas",
+    "name": "Rocky Mountain LP Gas",
+    "locations_found": [
+      {
+        "name": "Rocky Mountain LP Gas - Westcliffe",
+        "address": "95 Main St",
+        "city": "Westcliffe",
+        "state": "CO",
+        "zip": "81252",
+        "phone": "(719) 783-2062"
+      },
+      {
+        "name": "Rocky Mountain LP Gas - Walsenburg",
+        "address": "111 West 7th Street",
+        "city": "Walsenburg",
+        "state": "CO",
+        "zip": "81089",
+        "phone": "(719) 738-1141"
+      }
+    ],
+    "notes": "Two CO locations (Westcliffe, Walsenburg). Serving Colorado since 1964."
+  },
+  {
+    "id": "twin_rivers_propane",
+    "name": "TWIN RIVERS PROPANE",
+    "locations_found": [
+      {
+        "name": "Twin Rivers Propane",
+        "address": "424 Industrial Blvd",
+        "city": "Cornelia",
+        "state": "GA",
+        "zip": "30531",
+        "phone": "(706) 776-6269"
+      }
+    ],
+    "notes": "Single GA location (Cornelia/Baldwin area). Note: Twin Rivers Propane appears to be affiliated with or acquired by United Propane Gas (UPG) per FuelWonk listing. May no longer be an independent entity."
+  },
+  {
+    "id": "g_l_distributing",
+    "name": "G & L Distributing",
+    "locations_found": [
+      {
+        "name": "G & L Distributing",
+        "address": "1700 E 2700 S",
+        "city": "Delta",
+        "state": "UT",
+        "zip": "84624",
+        "phone": "(435) 864-2856"
+      }
+    ],
+    "notes": "Single Delta, UT location. Small single-location operator; contact Garth Lake. Listed in Utah State Fire Marshal LP gas licensees."
+  },
+  {
+    "id": "grill_gas_express",
+    "name": "Grill Gas Express",
+    "locations_found": [],
+    "notes": "Not a traditional propane dealer with a physical storefront. Grill Gas Express is a propane tank exchange/delivery service (Blue Rhino/Amerigas cylinders) primarily operating in Tennessee (Memphis area), Mississippi, and Florida. No Alabama location confirmed. Original state hint of AL appears incorrect. Likely should be removed from SE propane market map or reclassified as a tank exchange service rather than a propane distributor."
+  },
+  {
+    "id": "superior_propane",
+    "name": "Superior Propane",
+    "locations_found": [
+      {
+        "name": "Superior Propane, Inc.",
+        "address": "600 E Frank Way",
+        "city": "Williams",
+        "state": "AZ",
+        "zip": "86046",
+        "phone": "(928) 635-1314"
+      }
+    ],
+    "notes": "Single Williams, AZ location. Serves Flagstaff, Prescott, Grand Canyon, Winslow, Sedona areas. 60+ years in business."
+  },
+  {
+    "id": "pro_gas_propane",
+    "name": "Pro Gas Propane",
+    "locations_found": [],
+    "notes": "Could not confirm a distinct 'Pro Gas Propane' company in Georgia via web search. Results returned unrelated companies (GasPro/gowithgaspro.com in Grovetown, various other GA propane dealers). May be defunct, very small local operator with no web presence, or potentially conflated with GasPro (Grovetown, GA, (762) 994-0050, 110 A Harlem Grovetown Rd). Flagged for manual review."
+  },
+  {
+    "id": "tri_county_gas",
+    "name": "Tri-County Gas",
+    "locations_found": [
+      {
+        "name": "Tri-County Gas",
+        "address": "415 S Waukesha St",
+        "city": "Bonifay",
+        "state": "FL",
+        "zip": "32425",
+        "phone": "(850) 547-3696"
+      }
+    ],
+    "notes": "Single FL location (Bonifay). In business since 1962. Serves Holmes, Washington, Jackson counties in FL panhandle."
+  },
+  {
+    "id": "r_d_propane",
+    "name": "R & D Propane",
+    "locations_found": [
+      {
+        "name": "R & D Propane Inc",
+        "address": "85900 Hwy 99 S",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97405",
+        "phone": "(541) 746-4621"
+      }
+    ],
+    "notes": "Single Eugene, OR location (also noted as Florence, OR). Family-owned since 1982, serves Lane, Benton, Linn, Douglas counties. Company does have a website (rdpropane.com) despite being flagged as no-website."
+  },
+  {
+    "id": "tricounty_gas",
+    "name": "TriCounty Gas",
+    "locations_found": [
+      {
+        "name": "TriCounty Gas",
+        "address": "234 TW Rd",
+        "city": "Buffalo",
+        "state": "WY",
+        "zip": "82834",
+        "phone": "(307) 684-7411"
+      }
+    ],
+    "notes": "Single WY location. Alt address cited: 3800 US Highway 14-16 E, Buffalo, WY. Serves Sheridan, Johnson, Campbell counties in northern Wyoming. Company does have a website (tricountygas.com)."
+  },
+  {
+    "id": "reed_oil",
+    "name": "Reed Oil",
+    "locations_found": [
+      {
+        "name": "Reed Oil Co - Manteo",
+        "address": "405 NC Highway 345",
+        "city": "Manteo",
+        "state": "NC",
+        "zip": "27954",
+        "phone": "(252) 473-9965"
+      },
+      {
+        "name": "Reed Oil - Hertford",
+        "address": "206 N Covent Garden St",
+        "city": "Hertford",
+        "state": "NC",
+        "zip": "27944",
+        "phone": "(252) 426-5458"
+      }
+    ],
+    "notes": "Two NC locations confirmed (Manteo on Outer Banks and Hertford). 80+ years in business. Also referenced as Reed Gas Company."
+  }
+]

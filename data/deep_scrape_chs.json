@@ -1,0 +1,127 @@
+{
+  "source": "https://www.chsnw.com/about-us/locations",
+  "scraped": "2026-04-11",
+  "note": "CHS Inc. operates through multiple regional cooperatives with propane/fuel services. Primary CHS-branded propane retail is CHS Northwest (Pacific NW region). CHS wholesale propane is supplied via 150 terminals in 40 states + 5 Canadian provinces to a network of ~1,400 Cenex-branded retail locations owned by member cooperatives (not directly operated by CHS). Locator at cenex.com is a Google Maps-based JS app not parseable via simple HTTP scraping. This file contains only CHS Northwest propane-carrying locations.",
+  "locations": [
+    {
+      "name": "CHS Northwest - Lynden",
+      "street": "402 Main Street",
+      "city": "Lynden",
+      "state": "WA",
+      "zip": "98264",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Lynden",
+      "street": "2041 Agronomy Way",
+      "city": "Lynden",
+      "state": "WA",
+      "zip": "98264",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Astoria",
+      "street": "92707 Svensen Market Road",
+      "city": "Astoria",
+      "state": "OR",
+      "zip": "97103",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Chehalis",
+      "street": "153 NW State Avenue",
+      "city": "Chehalis",
+      "state": "WA",
+      "zip": "98532",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Chimacum",
+      "street": "9315 Rhody Drive",
+      "city": "Chimacum",
+      "state": "WA",
+      "zip": "98325",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Spokane Valley",
+      "street": "1010 North Dyer Road",
+      "city": "Spokane Valley",
+      "state": "WA",
+      "zip": "99212",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Building D \u2022 Suite B",
+      "street": "1006 Fryar Avenue",
+      "city": "Sumner",
+      "state": "WA",
+      "zip": "98390",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Yakima",
+      "street": "4 Mead Avenue",
+      "city": "Yakima",
+      "state": "WA",
+      "zip": "98902",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Bellingham",
+      "street": "3500 Meridian Street",
+      "city": "Bellingham",
+      "state": "WA",
+      "zip": "98225",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Ferndale",
+      "street": "1720 LaBounty Drive",
+      "city": "Ferndale",
+      "state": "WA",
+      "zip": "98248",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Lynden",
+      "street": "415 Depot Rd.",
+      "city": "Lynden",
+      "state": "WA",
+      "zip": "98264",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Nooksack",
+      "street": "104 Nooksack Avenue",
+      "city": "Nooksack",
+      "state": "WA",
+      "zip": "98247",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Ferndale",
+      "street": "1720 LaBounty Dr.",
+      "city": "Ferndale",
+      "state": "WA",
+      "zip": "98248",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Lynden",
+      "street": "300 Main Street",
+      "city": "Lynden",
+      "state": "WA",
+      "zip": "98264",
+      "phone": ""
+    },
+    {
+      "name": "CHS Northwest - Nooksack",
+      "street": "102 Nooksack Ave.",
+      "city": "Nooksack",
+      "state": "WA",
+      "zip": "98247",
+      "phone": ""
+    }
+  ]
+}

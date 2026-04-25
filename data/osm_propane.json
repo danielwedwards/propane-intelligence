@@ -1,0 +1,2528 @@
+[
+  {
+    "name": "Propane & Air Gas Supply",
+    "city": "",
+    "state": "",
+    "lat": 32.2928,
+    "lng": -86.4549,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "name": "Propane & Air Gas Supply"
+    }
+  },
+  {
+    "name": "Acme Propane",
+    "city": "Highland Home",
+    "state": "AL",
+    "lat": 31.9633,
+    "lng": -86.313,
+    "address": "97 Davenport Highway, Highland Home, AL 36041",
+    "tags": {
+      "name": "Acme Propane",
+      "opening_hours": "Mo-Fr 08:00-16:30",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 34.6416,
+    "lng": -86.0387,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.2789,
+    "lng": -87.0991,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 32.8447,
+    "lng": -86.5915,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "Birmingham",
+    "state": "AL",
+    "lat": 33.5311,
+    "lng": -86.7913,
+    "address": "815 34th Street North, Birmingham, AL 35222",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "phone": "+1 205-323-1511",
+      "website": "https://www.amerigas.com/locations/propane-offices/alabama/birmingham/815-34th-st-n"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 32.9562,
+    "lng": -87.1713,
+    "address": "",
+    "tags": {
+      "brand": "Suburban Propane",
+      "name": "Suburban Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Ferrellgas",
+    "city": "",
+    "state": "",
+    "lat": 32.9621,
+    "lng": -87.149,
+    "address": "",
+    "tags": {
+      "brand": "Ferrellgas",
+      "fuel:lpg": "yes",
+      "name": "Ferrellgas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Yuma Oil",
+    "city": "",
+    "state": "",
+    "lat": 32.6417,
+    "lng": -114.4102,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "fuel:lpg": "yes",
+      "name": "Yuma Oil",
+      "operator": "independant"
+    }
+  },
+  {
+    "name": "Propane",
+    "city": "Gold Canyon",
+    "state": "AZ",
+    "lat": 33.3582,
+    "lng": -111.4672,
+    "address": "7138 East United States Highway 60, Gold Canyon, AZ 85118",
+    "tags": {
+      "amenity": "fuel",
+      "name": "Propane"
+    }
+  },
+  {
+    "name": "Propane",
+    "city": "Phoenix",
+    "state": "AZ",
+    "lat": 33.6315,
+    "lng": -112.0303,
+    "address": "15827 North Cave Creek Road, Phoenix, AZ 85032",
+    "tags": {
+      "amenity": "fuel",
+      "name": "Propane"
+    }
+  },
+  {
+    "name": "propane",
+    "city": "",
+    "state": "",
+    "lat": 33.5968,
+    "lng": -112.0998,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "name": "propane"
+    }
+  },
+  {
+    "name": "propane",
+    "city": "",
+    "state": "",
+    "lat": 33.5233,
+    "lng": -112.0822,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "name": "propane"
+    }
+  },
+  {
+    "name": "Costco Propane",
+    "city": "",
+    "state": "",
+    "lat": 32.3258,
+    "lng": -111.0487,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "brand": "Costco",
+      "name": "Costco Propane",
+      "website": "https://www.costco.com/warehouse-locations/nw-tucson-tucson-az-431.html"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "Phoenix",
+    "state": "AZ",
+    "lat": 33.3033,
+    "lng": -111.9963,
+    "address": "4005 East Chandler Boulevard, Phoenix, AZ 85048",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 33.3039,
+    "lng": -111.9987,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 33.568,
+    "lng": -112.099,
+    "address": "",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 33.539,
+    "lng": -112.2189,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "operator": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.525,
+    "lng": -112.2042,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Ferrellgas",
+    "city": "",
+    "state": "",
+    "lat": 33.2341,
+    "lng": -111.7214,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "brand": "Ferrellgas",
+      "fuel:lpg": "yes",
+      "name": "Ferrellgas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 33.5077,
+    "lng": -112.2361,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "operator": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.5244,
+    "lng": -112.2047,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.4669,
+    "lng": -112.2228,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.5092,
+    "lng": -112.2665,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.538,
+    "lng": -112.2033,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Pinnacle Propane",
+    "city": "",
+    "state": "",
+    "lat": 34.4186,
+    "lng": -110.5778,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "fuel:lpg": "yes",
+      "name": "Pinnacle Propane",
+      "phone": "+1-928-474-2254"
+    }
+  },
+  {
+    "name": "Propane Refill Station",
+    "city": "",
+    "state": "",
+    "lat": 31.7303,
+    "lng": -110.0796,
+    "address": "",
+    "tags": {
+      "name": "Propane Refill Station",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.5372,
+    "lng": -112.2384,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 33.5086,
+    "lng": -112.2202,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.5363,
+    "lng": -112.2385,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.5517,
+    "lng": -112.1812,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.5515,
+    "lng": -112.184,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 32.3967,
+    "lng": -110.9941,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Ferrellgas",
+    "city": "",
+    "state": "",
+    "lat": 32.3522,
+    "lng": -111.0466,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "brand": "Ferrellgas",
+      "fuel:lpg": "yes",
+      "name": "Ferrellgas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 32.397,
+    "lng": -110.9952,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "QuikTrip",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "lat": 33.4941,
+    "lng": -111.8812,
+    "address": "3882 North 92nd Street, Scottsdale, AZ 85251",
+    "tags": {
+      "brand": "QuikTrip",
+      "fuel:lpg": "yes",
+      "name": "QuikTrip",
+      "shop": "convenience"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.5375,
+    "lng": -112.0982,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.3788,
+    "lng": -112.1351,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 34.2443,
+    "lng": -111.3248,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.3576,
+    "lng": -112.4262,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "Goodyear",
+    "state": "AZ",
+    "lat": 33.459,
+    "lng": -112.3947,
+    "address": "1100 North Estrella Parkway, Goodyear, AZ 85338",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.437,
+    "lng": -112.4103,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 34.2399,
+    "lng": -111.3177,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.4245,
+    "lng": -112.3577,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 33.7997,
+    "lng": -112.127,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 32.2351,
+    "lng": -110.8427,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.4506,
+    "lng": -112.3917,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "Litchfield Park",
+    "state": "AZ",
+    "lat": 33.5085,
+    "lng": -112.3392,
+    "address": "13014 West Camelback Road, Litchfield Park, AZ 85340",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "lat": 33.6707,
+    "lng": -111.9044,
+    "address": "20427 North Hayden Road, Scottsdale, AZ 85255",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.6254,
+    "lng": -111.9425,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Giant",
+    "city": "Flagstaff",
+    "state": "AZ",
+    "lat": 35.189,
+    "lng": -111.6619,
+    "address": "1205 South Milton Road, Flagstaff, AZ 86001",
+    "tags": {
+      "amenity": "fuel",
+      "brand": "Giant",
+      "fuel:lpg": "yes",
+      "name": "Giant",
+      "opening_hours": "24/7"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 33.6673,
+    "lng": -114.2096,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Pattie's RV Park & Propane",
+    "city": "",
+    "state": "",
+    "lat": 33.6664,
+    "lng": -114.2095,
+    "address": "",
+    "tags": {
+      "name": "Pattie's RV Park & Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 41.2274,
+    "lng": -72.9969,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Propane Refill Station",
+    "city": "",
+    "state": "",
+    "lat": 41.8201,
+    "lng": -73.3743,
+    "address": "",
+    "tags": {
+      "name": "Propane Refill Station",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 28.5599,
+    "lng": -81.8231,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 27.84,
+    "lng": -82.7298,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 25.5383,
+    "lng": -80.3717,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino",
+      "phone": "+1-786-410-4928"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 25.5399,
+    "lng": -80.3714,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 25.5513,
+    "lng": -80.3717,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino",
+      "phone": "+1-305-971-2613"
+    }
+  },
+  {
+    "name": "Caladesi Propane",
+    "city": "",
+    "state": "",
+    "lat": 28.0688,
+    "lng": -82.7699,
+    "address": "",
+    "tags": {
+      "name": "Caladesi Propane",
+      "shop": "fuel"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 25.6847,
+    "lng": -80.3659,
+    "address": "",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 25.7021,
+    "lng": -80.3498,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Southern Quality Propane",
+    "city": "",
+    "state": "",
+    "lat": 30.0936,
+    "lng": -84.3853,
+    "address": "",
+    "tags": {
+      "name": "Southern Quality Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 25.6861,
+    "lng": -80.3152,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 28.4272,
+    "lng": -81.4444,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Propane",
+    "city": "",
+    "state": "",
+    "lat": 28.3762,
+    "lng": -81.6795,
+    "address": "",
+    "tags": {
+      "name": "Propane",
+      "opening_hours": "Mo-Su 09:00-11:00,14:00-16:30,PH",
+      "operator": "Thousand Trails Orlando",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 28.5518,
+    "lng": -81.5843,
+    "address": "",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.9245,
+    "lng": -114.9405,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.6542,
+    "lng": -111.6032,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Propane Tank Vending Machine",
+    "city": "",
+    "state": "",
+    "lat": 37.5328,
+    "lng": -97.2427,
+    "address": "",
+    "tags": {
+      "name": "Propane Tank Vending Machine",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Ferrellgas",
+    "city": "Kansas City",
+    "state": "KS",
+    "lat": 39.0502,
+    "lng": -94.6412,
+    "address": "2837 Roe Lane, Kansas City, KS 66103",
+    "tags": {
+      "brand": "Ferrellgas",
+      "fuel:lpg": "yes",
+      "name": "Ferrellgas",
+      "phone": "+1-913-236-5656",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Sandpiper Propane Stoarge",
+    "city": "",
+    "state": "",
+    "lat": 38.1792,
+    "lng": -75.3839,
+    "address": "",
+    "tags": {
+      "name": "Sandpiper Propane Stoarge"
+    }
+  },
+  {
+    "name": "Sharp Energy Propane Stoarge",
+    "city": "",
+    "state": "",
+    "lat": 38.1795,
+    "lng": -75.3844,
+    "address": "",
+    "tags": {
+      "name": "Sharp Energy Propane Stoarge"
+    }
+  },
+  {
+    "name": "Sharp Energy Propane Stoarge",
+    "city": "",
+    "state": "",
+    "lat": 38.179,
+    "lng": -75.3862,
+    "address": "",
+    "tags": {
+      "name": "Sharp Energy Propane Stoarge"
+    }
+  },
+  {
+    "name": "Sandpiper Propane Stoarge",
+    "city": "",
+    "state": "",
+    "lat": 38.1778,
+    "lng": -75.385,
+    "address": "",
+    "tags": {
+      "name": "Sandpiper Propane Stoarge"
+    }
+  },
+  {
+    "name": "Propane",
+    "city": "",
+    "state": "",
+    "lat": 39.5774,
+    "lng": -77.7976,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "fuel:lpg": "yes",
+      "name": "Propane"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 39.5801,
+    "lng": -76.3739,
+    "address": "",
+    "tags": {
+      "name": "Suburban Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.4058,
+    "lng": -76.7908,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Allied Propane",
+    "city": "Elkton",
+    "state": "MD",
+    "lat": 39.6048,
+    "lng": -75.842,
+    "address": "307 West Pulaski Highway, Elkton, MD 21921",
+    "tags": {
+      "name": "Allied Propane",
+      "phone": "+1-800-995-0581",
+      "shop": "gas",
+      "website": "https://www.alliedpropane.com/"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 38.9815,
+    "lng": -77.0992,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 38.9654,
+    "lng": -77.104,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 39.4104,
+    "lng": -79.4046,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "operator": "Sheetz"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.4001,
+    "lng": -79.392,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino",
+      "operator": "Shop 'n Save"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.4172,
+    "lng": -79.4009,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino",
+      "operator": "Luke's Convenience Store"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.4093,
+    "lng": -79.406,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino",
+      "operator": "Naylor's Ace Hardware"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.4017,
+    "lng": -79.393,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Tractor Supply Propane Refill",
+    "city": "",
+    "state": "",
+    "lat": 38.9299,
+    "lng": -76.5649,
+    "address": "",
+    "tags": {
+      "name": "Tractor Supply Propane Refill",
+      "operator": "Tractor Supply",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "American Gas Propane",
+    "city": "Oxford",
+    "state": "MS",
+    "lat": 34.3818,
+    "lng": -89.5098,
+    "address": "1330 North Lamar Boulevard, Oxford, MS 38655",
+    "tags": {
+      "name": "American Gas Propane"
+    }
+  },
+  {
+    "name": "Fair Propane",
+    "city": "",
+    "state": "",
+    "lat": 33.0676,
+    "lng": -89.5636,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "name": "Fair Propane"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 31.3462,
+    "lng": -89.2639,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Rymes Propane and Oil",
+    "city": "",
+    "state": "",
+    "lat": 43.4385,
+    "lng": -71.5931,
+    "address": "",
+    "tags": {
+      "name": "Rymes Propane and Oil"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.8465,
+    "lng": -71.3606,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.8843,
+    "lng": -71.3255,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Rymes Propane and Oil",
+    "city": "",
+    "state": "",
+    "lat": 43.2374,
+    "lng": -71.4614,
+    "address": "",
+    "tags": {
+      "name": "Rymes Propane and Oil",
+      "shop": "fuel"
+    }
+  },
+  {
+    "name": "Rymes Propane & Oil",
+    "city": "West Lebanon",
+    "state": "NH",
+    "lat": 43.6369,
+    "lng": -72.315,
+    "address": "103 South Main Street, West Lebanon, NH 03784",
+    "tags": {
+      "name": "Rymes Propane & Oil",
+      "phone": "+1-603-298-8234",
+      "website": "https://rymes.com/"
+    }
+  },
+  {
+    "name": "Propane Gas Association of New England",
+    "city": "",
+    "state": "",
+    "lat": 43.235,
+    "lng": -71.3611,
+    "address": "",
+    "tags": {
+      "name": "Propane Gas Association of New England",
+      "website": "https://pgane.org/"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.9302,
+    "lng": -72.2773,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.0312,
+    "lng": -71.074,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.9912,
+    "lng": -70.9293,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 42.9842,
+    "lng": -70.9394,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 44.43,
+    "lng": -71.1929,
+    "address": "",
+    "tags": {
+      "brand": "Suburban Propane",
+      "name": "Suburban Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.8271,
+    "lng": -71.1061,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 42.9942,
+    "lng": -70.927,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.9837,
+    "lng": -70.9401,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.9936,
+    "lng": -70.925,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.9852,
+    "lng": -70.9381,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 42.9659,
+    "lng": -70.833,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.8942,
+    "lng": -70.8658,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Rhymes Propane & Oil",
+    "city": "",
+    "state": "",
+    "lat": 42.9336,
+    "lng": -72.2779,
+    "address": "",
+    "tags": {
+      "name": "Rhymes Propane & Oil",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.7696,
+    "lng": -71.2203,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.9928,
+    "lng": -71.5055,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.0403,
+    "lng": -71.168,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Diamond Propane",
+    "city": "",
+    "state": "",
+    "lat": 44.6322,
+    "lng": -75.0831,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "name": "Diamond Propane"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 44.6053,
+    "lng": -75.1298,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "name": "Suburban Propane"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 43.8372,
+    "lng": -73.4017,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Gulf",
+    "city": "",
+    "state": "",
+    "lat": 40.8227,
+    "lng": -72.9978,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "fuel:lpg": "yes",
+      "name": "Gulf"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 42.2183,
+    "lng": -78.023,
+    "address": "",
+    "tags": {
+      "name": "Suburban Propane"
+    }
+  },
+  {
+    "name": "Syracuse Propane King",
+    "city": "",
+    "state": "",
+    "lat": 43.016,
+    "lng": -76.074,
+    "address": "5050 Jamesville Road",
+    "tags": {
+      "fuel:lpg": "yes",
+      "name": "Syracuse Propane King",
+      "opening_hours": "Nov-May: Th-Fr 11:00-17:00; Nov-May: Sa-Su 12:00-17:00; May-Nov: Mo-Fr 09:00-18:00; May-Nov: Sa-Su 09:00-17:00",
+      "shop": "gas",
+      "website": "https://syracusepropaneking.com/"
+    }
+  },
+  {
+    "name": "M & M Holland Propane",
+    "city": "West Valley",
+    "state": "NY",
+    "lat": 42.4202,
+    "lng": -78.6939,
+    "address": "10035 US-219, West Valley, NY 14171",
+    "tags": {
+      "name": "M & M Holland Propane",
+      "opening_hours": "Mo-Fr 08:00-17:00; Sa 09:00-12:00",
+      "phone": "+1 716-592-7242",
+      "website": "https://www.hollandpropane.com/"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "Millerton",
+    "state": "NY",
+    "lat": 41.982,
+    "lng": -73.5217,
+    "address": "6180 Route 22, Millerton, NY 12546",
+    "tags": {
+      "name": "Suburban Propane"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.1542,
+    "lng": -77.0782,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 42.9364,
+    "lng": -74.6238,
+    "address": "",
+    "tags": {
+      "name": "Suburban Propane"
+    }
+  },
+  {
+    "name": "Russo Fuel and Propane Inc.",
+    "city": "",
+    "state": "",
+    "lat": 41.6726,
+    "lng": -73.9607,
+    "address": "",
+    "tags": {
+      "name": "Russo Fuel and Propane Inc.",
+      "shop": "fuel"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 38.9656,
+    "lng": -83.7276,
+    "address": "",
+    "tags": {
+      "name": "Suburban Propane",
+      "shop": "fuel"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 41.0723,
+    "lng": -80.657,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Victory Propane",
+    "city": "",
+    "state": "",
+    "lat": 39.8407,
+    "lng": -84.4184,
+    "address": "",
+    "tags": {
+      "name": "Victory Propane"
+    }
+  },
+  {
+    "name": "Ferrellgas",
+    "city": "",
+    "state": "",
+    "lat": 40.9745,
+    "lng": -81.1485,
+    "address": "",
+    "tags": {
+      "fuel:lpg": "yes",
+      "name": "Ferrellgas",
+      "shop": "fuel"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 41.1664,
+    "lng": -81.4392,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.173,
+    "lng": -84.1612,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 38.9501,
+    "lng": -83.4049,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 40.6914,
+    "lng": -84.1267,
+    "address": "",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Collett Propane",
+    "city": "Wilmington",
+    "state": "OH",
+    "lat": 39.4836,
+    "lng": -83.9295,
+    "address": "6611 W State Route 73, Wilmington, OH 45177",
+    "tags": {
+      "name": "Collett Propane",
+      "opening_hours": "Mo-Fr 08:00-16:00; Sa-Su off",
+      "operator": "Collett Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.7389,
+    "lng": -82.6358,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 39.1786,
+    "lng": -84.0907,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.7158,
+    "lng": -82.5792,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Rutter's",
+    "city": "",
+    "state": "",
+    "lat": 40.2095,
+    "lng": -77.0225,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "brand": "Rutter's",
+      "fuel:lpg": "yes",
+      "name": "Rutter's"
+    }
+  },
+  {
+    "name": "Propane",
+    "city": "",
+    "state": "",
+    "lat": 40.8869,
+    "lng": -76.7872,
+    "address": "",
+    "tags": {
+      "name": "Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 40.2284,
+    "lng": -75.0944,
+    "address": "",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Liberty Oil & Propane",
+    "city": "",
+    "state": "",
+    "lat": 40.6938,
+    "lng": -76.1627,
+    "address": "",
+    "tags": {
+      "name": "Liberty Oil & Propane"
+    }
+  },
+  {
+    "name": "Padfield Propane",
+    "city": "Port Carbon",
+    "state": "PA",
+    "lat": 40.7061,
+    "lng": -76.1752,
+    "address": "620 Port Carbon Saint Clair Highway, Port Carbon, PA 17965",
+    "tags": {
+      "name": "Padfield Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Pocono Oil & Propane",
+    "city": "",
+    "state": "",
+    "lat": 40.9947,
+    "lng": -75.2478,
+    "address": "",
+    "tags": {
+      "amenity": "fuel",
+      "name": "Pocono Oil & Propane"
+    }
+  },
+  {
+    "name": "Keystone Propane",
+    "city": "Tobyhanna",
+    "state": "PA",
+    "lat": 41.1802,
+    "lng": -75.4185,
+    "address": "1623 Church Street, Tobyhanna, PA 18466",
+    "tags": {
+      "name": "Keystone Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "Allentown",
+    "state": "PA",
+    "lat": 40.6286,
+    "lng": -75.431,
+    "address": "1127 North Quebec Street, Allentown, PA 18109",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Horwith Fuel Oil & Propane",
+    "city": "Allentown",
+    "state": "PA",
+    "lat": 40.6238,
+    "lng": -75.4485,
+    "address": "670 Union Boulevard, Allentown, PA 18109",
+    "tags": {
+      "name": "Horwith Fuel Oil & Propane"
+    }
+  },
+  {
+    "name": "Liberty Propane",
+    "city": "Allentown",
+    "state": "PA",
+    "lat": 40.6206,
+    "lng": -75.4522,
+    "address": "500 Union Boulevard, Allentown, PA 18109",
+    "tags": {
+      "name": "Liberty Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 40.1114,
+    "lng": -78.8159,
+    "address": "",
+    "tags": {
+      "name": "Suburban Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 40.3412,
+    "lng": -75.3153,
+    "address": "",
+    "tags": {
+      "name": "Suburban Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 40.4685,
+    "lng": -75.3184,
+    "address": "",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Progressive Propane",
+    "city": "",
+    "state": "",
+    "lat": 40.4824,
+    "lng": -75.3729,
+    "address": "",
+    "tags": {
+      "name": "Progressive Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Great Valley Propane",
+    "city": "Quakertown",
+    "state": "PA",
+    "lat": 40.4075,
+    "lng": -75.3394,
+    "address": "1432 South West End Boulevard, Quakertown, PA 18951",
+    "tags": {
+      "name": "Great Valley Propane",
+      "phone": "+1 610-251-2203",
+      "shop": "gas",
+      "website": "https://www.gvpropane.com/"
+    }
+  },
+  {
+    "name": "Eastern Propane",
+    "city": "",
+    "state": "",
+    "lat": 40.4146,
+    "lng": -75.5103,
+    "address": "",
+    "tags": {
+      "name": "Eastern Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Eddinger Propane Gas",
+    "city": "Bally",
+    "state": "PA",
+    "lat": 40.4071,
+    "lng": -75.5827,
+    "address": "1619 Route 100, Bally, PA 19503",
+    "tags": {
+      "name": "Eddinger Propane Gas",
+      "phone": "+1 610-845-2091",
+      "shop": "gas",
+      "website": "https://eddingerpropane.com/"
+    }
+  },
+  {
+    "name": "SOS Propane",
+    "city": "Milford",
+    "state": "PA",
+    "lat": 41.3238,
+    "lng": -74.8018,
+    "address": "322 Broad Street, Milford, PA 18337",
+    "tags": {
+      "name": "SOS Propane",
+      "shop": "yes"
+    }
+  },
+  {
+    "name": "Keystone Propane Service",
+    "city": "Greentown",
+    "state": "PA",
+    "lat": 41.3245,
+    "lng": -75.3069,
+    "address": "1565 PA-507, Greentown, PA 18426",
+    "tags": {
+      "name": "Keystone Propane Service",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 39.8937,
+    "lng": -76.1698,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 40.1909,
+    "lng": -75.5316,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.1494,
+    "lng": -97.719,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 43.7589,
+    "lng": -103.6091,
+    "address": "",
+    "tags": {
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 45.9357,
+    "lng": -102.1778,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 45.9344,
+    "lng": -102.1657,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 45.9345,
+    "lng": -102.1575,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.0825,
+    "lng": -98.3023,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.8603,
+    "lng": -97.8928,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.3922,
+    "lng": -97.9973,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.7022,
+    "lng": -98.0478,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.3505,
+    "lng": -97.4212,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Ferrellgas",
+    "city": "",
+    "state": "",
+    "lat": 42.8805,
+    "lng": -97.3457,
+    "address": "",
+    "tags": {
+      "brand": "Ferrellgas",
+      "fuel:lpg": "yes",
+      "name": "Ferrellgas",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 42.6694,
+    "lng": -96.6644,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.7395,
+    "lng": -98.9577,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Hancock Oil & Propane",
+    "city": "",
+    "state": "",
+    "lat": 43.7342,
+    "lng": -98.9572,
+    "address": "",
+    "tags": {
+      "name": "Hancock Oil & Propane",
+      "shop": "fuel"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 44.079,
+    "lng": -98.5713,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 44.0676,
+    "lng": -99.4419,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 44.0524,
+    "lng": -98.2757,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 43.5626,
+    "lng": -96.7107,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 44.0386,
+    "lng": -96.6075,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 44.2829,
+    "lng": -96.7893,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 44.2967,
+    "lng": -96.7942,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 44.3303,
+    "lng": -98.2168,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 45.55,
+    "lng": -100.4521,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Blue Rhino",
+    "city": "",
+    "state": "",
+    "lat": 45.0142,
+    "lng": -99.9661,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "Blue Rhino",
+      "fuel:lpg": "yes",
+      "name": "Blue Rhino"
+    }
+  },
+  {
+    "name": "Cenex Propane",
+    "city": "",
+    "state": "",
+    "lat": 45.2264,
+    "lng": -96.6083,
+    "address": "",
+    "tags": {
+      "brand": "Cenex",
+      "name": "Cenex Propane"
+    }
+  },
+  {
+    "name": "Propane Farm",
+    "city": "",
+    "state": "",
+    "lat": 43.1074,
+    "lng": -72.8933,
+    "address": "",
+    "tags": {
+      "name": "Propane Farm",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Propane Field",
+    "city": "",
+    "state": "",
+    "lat": 44.2459,
+    "lng": -88.5084,
+    "address": "",
+    "tags": {
+      "name": "Propane Field"
+    }
+  },
+  {
+    "name": "AmeriGas",
+    "city": "",
+    "state": "",
+    "lat": 43.0593,
+    "lng": -87.8969,
+    "address": "",
+    "tags": {
+      "amenity": "vending_machine",
+      "brand": "AmeriGas",
+      "fuel:lpg": "yes",
+      "name": "AmeriGas"
+    }
+  },
+  {
+    "name": "Suburban Propane",
+    "city": "",
+    "state": "",
+    "lat": 44.571,
+    "lng": -91.651,
+    "address": "",
+    "tags": {
+      "name": "Suburban Propane",
+      "shop": "gas"
+    }
+  },
+  {
+    "name": "Propane Division",
+    "city": "",
+    "state": "",
+    "lat": 45.3064,
+    "lng": -92.6992,
+    "address": "",
+    "tags": {
+      "name": "Propane Division"
+    }
+  },
+  {
+    "name": "Cenex Propane Refill",
+    "city": "",
+    "state": "",
+    "lat": 43.4534,
+    "lng": -88.8052,
+    "address": "",
+    "tags": {
+      "name": "Cenex Propane Refill",
+      "shop": "gas"
+    }
+  }
+]

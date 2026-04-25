@@ -1,0 +1,1214 @@
+[
+  {
+    "name": "Aleutians West Census Area",
+    "state": "AK",
+    "lat": 51.949,
+    "lng": 179.6212
+  },
+  {
+    "name": "Hoonah-Angoon Census Area",
+    "state": "AK",
+    "lat": 58.4033,
+    "lng": -135.8849
+  },
+  {
+    "name": "Copper River Census Area",
+    "state": "AK",
+    "lat": 62.0345,
+    "lng": -143.9222
+  },
+  {
+    "name": "North Slope Borough",
+    "state": "AK",
+    "lat": 69.4493,
+    "lng": -153.4728
+  },
+  {
+    "name": "Baldwin County",
+    "state": "AL",
+    "lat": 30.6592,
+    "lng": -87.7461
+  },
+  {
+    "name": "Marengo County",
+    "state": "AL",
+    "lat": 32.2476,
+    "lng": -87.7911
+  },
+  {
+    "name": "Jefferson County",
+    "state": "AL",
+    "lat": 33.5534,
+    "lng": -86.8965
+  },
+  {
+    "name": "Lauderdale County",
+    "state": "AL",
+    "lat": 34.9042,
+    "lng": -87.6511
+  },
+  {
+    "name": "Union County",
+    "state": "AR",
+    "lat": 33.1682,
+    "lng": -92.5981
+  },
+  {
+    "name": "Phillips County",
+    "state": "AR",
+    "lat": 34.4237,
+    "lng": -90.8556
+  },
+  {
+    "name": "Johnson County",
+    "state": "AR",
+    "lat": 35.5734,
+    "lng": -93.4663
+  },
+  {
+    "name": "Fulton County",
+    "state": "AR",
+    "lat": 36.3813,
+    "lng": -91.8193
+  },
+  {
+    "name": "Santa Cruz County",
+    "state": "AZ",
+    "lat": 31.5257,
+    "lng": -110.8452
+  },
+  {
+    "name": "Graham County",
+    "state": "AZ",
+    "lat": 32.9318,
+    "lng": -109.8783
+  },
+  {
+    "name": "Yavapai County",
+    "state": "AZ",
+    "lat": 34.6311,
+    "lng": -112.5772
+  },
+  {
+    "name": "Coconino County",
+    "state": "AZ",
+    "lat": 35.8297,
+    "lng": -111.7737
+  },
+  {
+    "name": "San Diego County",
+    "state": "CA",
+    "lat": 33.0236,
+    "lng": -116.7761
+  },
+  {
+    "name": "Santa Clara County",
+    "state": "CA",
+    "lat": 37.2216,
+    "lng": -121.6895
+  },
+  {
+    "name": "El Dorado County",
+    "state": "CA",
+    "lat": 38.7856,
+    "lng": -120.5342
+  },
+  {
+    "name": "Del Norte County",
+    "state": "CA",
+    "lat": 41.7499,
+    "lng": -123.981
+  },
+  {
+    "name": "Archuleta County",
+    "state": "CO",
+    "lat": 37.2024,
+    "lng": -107.0509
+  },
+  {
+    "name": "Pueblo County",
+    "state": "CO",
+    "lat": 38.1628,
+    "lng": -104.4847
+  },
+  {
+    "name": "Summit County",
+    "state": "CO",
+    "lat": 39.621,
+    "lng": -106.1376
+  },
+  {
+    "name": "Sedgwick County",
+    "state": "CO",
+    "lat": 40.8716,
+    "lng": -102.3554
+  },
+  {
+    "name": "Greater Bridgeport Planning Region",
+    "state": "CT",
+    "lat": 41.1846,
+    "lng": -73.2094
+  },
+  {
+    "name": "Lower Connecticut River Valley Planning Region",
+    "state": "CT",
+    "lat": 41.4203,
+    "lng": -72.4935
+  },
+  {
+    "name": "Capitol Planning Region",
+    "state": "CT",
+    "lat": 41.817,
+    "lng": -72.5759
+  },
+  {
+    "name": "Northwest Hills Planning Region",
+    "state": "CT",
+    "lat": 41.8548,
+    "lng": -73.2215
+  },
+  {
+    "name": "District of Columbia",
+    "state": "DC",
+    "lat": 38.9042,
+    "lng": -77.0165
+  },
+  {
+    "name": "Sussex County",
+    "state": "DE",
+    "lat": 38.6732,
+    "lng": -75.337
+  },
+  {
+    "name": "Kent County",
+    "state": "DE",
+    "lat": 39.0971,
+    "lng": -75.503
+  },
+  {
+    "name": "New Castle County",
+    "state": "DE",
+    "lat": 39.5759,
+    "lng": -75.6441
+  },
+  {
+    "name": "Monroe County",
+    "state": "FL",
+    "lat": 25.5861,
+    "lng": -81.0226
+  },
+  {
+    "name": "Brevard County",
+    "state": "FL",
+    "lat": 28.2983,
+    "lng": -80.7003
+  },
+  {
+    "name": "Lafayette County",
+    "state": "FL",
+    "lat": 29.9901,
+    "lng": -83.1785
+  },
+  {
+    "name": "Holmes County",
+    "state": "FL",
+    "lat": 30.862,
+    "lng": -85.8159
+  },
+  {
+    "name": "Echols County",
+    "state": "GA",
+    "lat": 30.714,
+    "lng": -82.8974
+  },
+  {
+    "name": "Toombs County",
+    "state": "GA",
+    "lat": 32.1178,
+    "lng": -82.3306
+  },
+  {
+    "name": "McDuffie County",
+    "state": "GA",
+    "lat": 33.4806,
+    "lng": -82.4796
+  },
+  {
+    "name": "Towns County",
+    "state": "GA",
+    "lat": 34.9025,
+    "lng": -83.7323
+  },
+  {
+    "name": "Hawaii County",
+    "state": "HI",
+    "lat": 19.5978,
+    "lng": -155.5024
+  },
+  {
+    "name": "Kalawao County",
+    "state": "HI",
+    "lat": 21.2188,
+    "lng": -156.974
+  },
+  {
+    "name": "Kauai County",
+    "state": "HI",
+    "lat": 22.012,
+    "lng": -159.706
+  },
+  {
+    "name": "Lee County",
+    "state": "IA",
+    "lat": 40.6476,
+    "lng": -91.4772
+  },
+  {
+    "name": "Johnson County",
+    "state": "IA",
+    "lat": 41.6707,
+    "lng": -91.5905
+  },
+  {
+    "name": "Buchanan County",
+    "state": "IA",
+    "lat": 42.4703,
+    "lng": -91.8387
+  },
+  {
+    "name": "Dickinson County",
+    "state": "IA",
+    "lat": 43.3896,
+    "lng": -95.1961
+  },
+  {
+    "name": "Franklin County",
+    "state": "ID",
+    "lat": 42.1736,
+    "lng": -111.823
+  },
+  {
+    "name": "Blaine County",
+    "state": "ID",
+    "lat": 43.3942,
+    "lng": -113.9554
+  },
+  {
+    "name": "Clark County",
+    "state": "ID",
+    "lat": 44.2902,
+    "lng": -112.3546
+  },
+  {
+    "name": "Boundary County",
+    "state": "ID",
+    "lat": 48.7731,
+    "lng": -116.5247
+  },
+  {
+    "name": "Alexander County",
+    "state": "IL",
+    "lat": 37.1837,
+    "lng": -89.3495
+  },
+  {
+    "name": "Jersey County",
+    "state": "IL",
+    "lat": 39.0802,
+    "lng": -90.3614
+  },
+  {
+    "name": "Ford County",
+    "state": "IL",
+    "lat": 40.5965,
+    "lng": -88.2246
+  },
+  {
+    "name": "Jo Daviess County",
+    "state": "IL",
+    "lat": 42.3624,
+    "lng": -90.2115
+  },
+  {
+    "name": "Spencer County",
+    "state": "IN",
+    "lat": 38.0097,
+    "lng": -87.0104
+  },
+  {
+    "name": "Bartholomew County",
+    "state": "IN",
+    "lat": 39.2058,
+    "lng": -85.898
+  },
+  {
+    "name": "Jay County",
+    "state": "IN",
+    "lat": 40.435,
+    "lng": -85.0023
+  },
+  {
+    "name": "Steuben County",
+    "state": "IN",
+    "lat": 41.6435,
+    "lng": -85.0024
+  },
+  {
+    "name": "Chautauqua County",
+    "state": "KS",
+    "lat": 37.1543,
+    "lng": -96.2454
+  },
+  {
+    "name": "Hamilton County",
+    "state": "KS",
+    "lat": 37.9952,
+    "lng": -101.7937
+  },
+  {
+    "name": "Wallace County",
+    "state": "KS",
+    "lat": 38.9266,
+    "lng": -101.7711
+  },
+  {
+    "name": "Republic County",
+    "state": "KS",
+    "lat": 39.8289,
+    "lng": -97.6509
+  },
+  {
+    "name": "Fulton County",
+    "state": "KY",
+    "lat": 36.5525,
+    "lng": -89.1877
+  },
+  {
+    "name": "Green County",
+    "state": "KY",
+    "lat": 37.2781,
+    "lng": -85.5379
+  },
+  {
+    "name": "Morgan County",
+    "state": "KY",
+    "lat": 37.9229,
+    "lng": -83.2589
+  },
+  {
+    "name": "Boone County",
+    "state": "KY",
+    "lat": 38.9589,
+    "lng": -84.7364
+  },
+  {
+    "name": "Plaquemines Parish",
+    "state": "LA",
+    "lat": 29.2824,
+    "lng": -89.5761
+  },
+  {
+    "name": "St. Tammany Parish",
+    "state": "LA",
+    "lat": 30.41,
+    "lng": -89.952
+  },
+  {
+    "name": "LaSalle Parish",
+    "state": "LA",
+    "lat": 31.6801,
+    "lng": -92.1616
+  },
+  {
+    "name": "Union Parish",
+    "state": "LA",
+    "lat": 32.8293,
+    "lng": -92.3756
+  },
+  {
+    "name": "Nantucket County",
+    "state": "MA",
+    "lat": 41.2934,
+    "lng": -70.1022
+  },
+  {
+    "name": "Plymouth County",
+    "state": "MA",
+    "lat": 41.9872,
+    "lng": -70.7419
+  },
+  {
+    "name": "Hampshire County",
+    "state": "MA",
+    "lat": 42.3395,
+    "lng": -72.6637
+  },
+  {
+    "name": "Essex County",
+    "state": "MA",
+    "lat": 42.6427,
+    "lng": -70.8649
+  },
+  {
+    "name": "Somerset County",
+    "state": "MD",
+    "lat": 38.0744,
+    "lng": -75.8533
+  },
+  {
+    "name": "Prince George's County",
+    "state": "MD",
+    "lat": 38.8293,
+    "lng": -76.8482
+  },
+  {
+    "name": "Baltimore County",
+    "state": "MD",
+    "lat": 39.4432,
+    "lng": -76.6166
+  },
+  {
+    "name": "Allegany County",
+    "state": "MD",
+    "lat": 39.6123,
+    "lng": -78.7031
+  },
+  {
+    "name": "York County",
+    "state": "ME",
+    "lat": 43.426,
+    "lng": -70.6684
+  },
+  {
+    "name": "Androscoggin County",
+    "state": "ME",
+    "lat": 44.1677,
+    "lng": -70.2074
+  },
+  {
+    "name": "Washington County",
+    "state": "ME",
+    "lat": 44.967,
+    "lng": -67.6094
+  },
+  {
+    "name": "Aroostook County",
+    "state": "ME",
+    "lat": 46.7092,
+    "lng": -68.6124
+  },
+  {
+    "name": "Berrien County",
+    "state": "MI",
+    "lat": 41.7914,
+    "lng": -86.7425
+  },
+  {
+    "name": "Lapeer County",
+    "state": "MI",
+    "lat": 43.0886,
+    "lng": -83.2243
+  },
+  {
+    "name": "Kalkaska County",
+    "state": "MI",
+    "lat": 44.6789,
+    "lng": -85.089
+  },
+  {
+    "name": "Keweenaw County",
+    "state": "MI",
+    "lat": 47.3673,
+    "lng": -88.3513
+  },
+  {
+    "name": "Mower County",
+    "state": "MN",
+    "lat": 43.6662,
+    "lng": -92.7595
+  },
+  {
+    "name": "Scott County",
+    "state": "MN",
+    "lat": 44.6518,
+    "lng": -93.5337
+  },
+  {
+    "name": "Morrison County",
+    "state": "MN",
+    "lat": 46.0205,
+    "lng": -94.2666
+  },
+  {
+    "name": "Kittson County",
+    "state": "MN",
+    "lat": 48.776,
+    "lng": -96.7803
+  },
+  {
+    "name": "Dunklin County",
+    "state": "MO",
+    "lat": 36.153,
+    "lng": -90.0623
+  },
+  {
+    "name": "Perry County",
+    "state": "MO",
+    "lat": 37.7111,
+    "lng": -89.8021
+  },
+  {
+    "name": "Saline County",
+    "state": "MO",
+    "lat": 39.1358,
+    "lng": -93.2042
+  },
+  {
+    "name": "Worth County",
+    "state": "MO",
+    "lat": 40.4805,
+    "lng": -94.4192
+  },
+  {
+    "name": "Hancock County",
+    "state": "MS",
+    "lat": 30.3916,
+    "lng": -89.4828
+  },
+  {
+    "name": "Jasper County",
+    "state": "MS",
+    "lat": 32.0167,
+    "lng": -89.1192
+  },
+  {
+    "name": "Leflore County",
+    "state": "MS",
+    "lat": 33.5498,
+    "lng": -90.2949
+  },
+  {
+    "name": "Alcorn County",
+    "state": "MS",
+    "lat": 34.8866,
+    "lng": -88.5811
+  },
+  {
+    "name": "Beaverhead County",
+    "state": "MT",
+    "lat": 45.1339,
+    "lng": -112.8929
+  },
+  {
+    "name": "Fallon County",
+    "state": "MT",
+    "lat": 46.3182,
+    "lng": -104.4057
+  },
+  {
+    "name": "McCone County",
+    "state": "MT",
+    "lat": 47.6296,
+    "lng": -105.7572
+  },
+  {
+    "name": "Daniels County",
+    "state": "MT",
+    "lat": 48.7944,
+    "lng": -105.5417
+  },
+  {
+    "name": "Brunswick County",
+    "state": "NC",
+    "lat": 34.0388,
+    "lng": -78.2278
+  },
+  {
+    "name": "Graham County",
+    "state": "NC",
+    "lat": 35.3484,
+    "lng": -83.8309
+  },
+  {
+    "name": "Davie County",
+    "state": "NC",
+    "lat": 35.9294,
+    "lng": -80.5426
+  },
+  {
+    "name": "Alleghany County",
+    "state": "NC",
+    "lat": 36.4894,
+    "lng": -81.1323
+  },
+  {
+    "name": "Adams County",
+    "state": "ND",
+    "lat": 46.0968,
+    "lng": -102.5332
+  },
+  {
+    "name": "Kidder County",
+    "state": "ND",
+    "lat": 46.9383,
+    "lng": -99.7312
+  },
+  {
+    "name": "Nelson County",
+    "state": "ND",
+    "lat": 47.9187,
+    "lng": -98.2044
+  },
+  {
+    "name": "Divide County",
+    "state": "ND",
+    "lat": 48.8148,
+    "lng": -103.5093
+  },
+  {
+    "name": "Richardson County",
+    "state": "NE",
+    "lat": 40.1237,
+    "lng": -95.7186
+  },
+  {
+    "name": "Seward County",
+    "state": "NE",
+    "lat": 40.8719,
+    "lng": -97.1404
+  },
+  {
+    "name": "Morrill County",
+    "state": "NE",
+    "lat": 41.7322,
+    "lng": -102.9906
+  },
+  {
+    "name": "Boyd County",
+    "state": "NE",
+    "lat": 42.8944,
+    "lng": -98.773
+  },
+  {
+    "name": "Hillsborough County",
+    "state": "NH",
+    "lat": 42.9115,
+    "lng": -71.7231
+  },
+  {
+    "name": "Strafford County",
+    "state": "NH",
+    "lat": 43.2933,
+    "lng": -71.0356
+  },
+  {
+    "name": "Belknap County",
+    "state": "NH",
+    "lat": 43.5191,
+    "lng": -71.4254
+  },
+  {
+    "name": "Coos County",
+    "state": "NH",
+    "lat": 44.6525,
+    "lng": -71.2894
+  },
+  {
+    "name": "Cape May County",
+    "state": "NJ",
+    "lat": 39.0858,
+    "lng": -74.8464
+  },
+  {
+    "name": "Burlington County",
+    "state": "NJ",
+    "lat": 39.8758,
+    "lng": -74.663
+  },
+  {
+    "name": "Hudson County",
+    "state": "NJ",
+    "lat": 40.7314,
+    "lng": -74.0786
+  },
+  {
+    "name": "Sussex County",
+    "state": "NJ",
+    "lat": 41.1375,
+    "lng": -74.6919
+  },
+  {
+    "name": "Hidalgo County",
+    "state": "NM",
+    "lat": 31.8981,
+    "lng": -108.7519
+  },
+  {
+    "name": "Socorro County",
+    "state": "NM",
+    "lat": 33.9917,
+    "lng": -106.9391
+  },
+  {
+    "name": "Santa Fe County",
+    "state": "NM",
+    "lat": 35.5145,
+    "lng": -105.964
+  },
+  {
+    "name": "Colfax County",
+    "state": "NM",
+    "lat": 36.613,
+    "lng": -104.6401
+  },
+  {
+    "name": "Clark County",
+    "state": "NV",
+    "lat": 36.2141,
+    "lng": -115.0144
+  },
+  {
+    "name": "Douglas County",
+    "state": "NV",
+    "lat": 38.9051,
+    "lng": -119.609
+  },
+  {
+    "name": "Lander County",
+    "state": "NV",
+    "lat": 39.9002,
+    "lng": -117.0472
+  },
+  {
+    "name": "Humboldt County",
+    "state": "NV",
+    "lat": 41.4079,
+    "lng": -118.1276
+  },
+  {
+    "name": "Richmond County",
+    "state": "NY",
+    "lat": 40.5613,
+    "lng": -74.1399
+  },
+  {
+    "name": "Allegany County",
+    "state": "NY",
+    "lat": 42.2479,
+    "lng": -78.0262
+  },
+  {
+    "name": "Genesee County",
+    "state": "NY",
+    "lat": 43.0009,
+    "lng": -78.1928
+  },
+  {
+    "name": "Clinton County",
+    "state": "NY",
+    "lat": 44.7527,
+    "lng": -73.7056
+  },
+  {
+    "name": "Lawrence County",
+    "state": "OH",
+    "lat": 38.6039,
+    "lng": -82.5172
+  },
+  {
+    "name": "Madison County",
+    "state": "OH",
+    "lat": 39.8966,
+    "lng": -83.4009
+  },
+  {
+    "name": "Stark County",
+    "state": "OH",
+    "lat": 40.8141,
+    "lng": -81.3657
+  },
+  {
+    "name": "Ashtabula County",
+    "state": "OH",
+    "lat": 41.9066,
+    "lng": -80.7456
+  },
+  {
+    "name": "Love County",
+    "state": "OK",
+    "lat": 33.9578,
+    "lng": -97.2451
+  },
+  {
+    "name": "McClain County",
+    "state": "OK",
+    "lat": 35.0164,
+    "lng": -97.4498
+  },
+  {
+    "name": "Wagoner County",
+    "state": "OK",
+    "lat": 35.9634,
+    "lng": -95.5142
+  },
+  {
+    "name": "Ottawa County",
+    "state": "OK",
+    "lat": 36.8358,
+    "lng": -94.8027
+  },
+  {
+    "name": "Josephine County",
+    "state": "OR",
+    "lat": 42.387,
+    "lng": -123.5716
+  },
+  {
+    "name": "Linn County",
+    "state": "OR",
+    "lat": 44.4889,
+    "lng": -122.5372
+  },
+  {
+    "name": "Union County",
+    "state": "OR",
+    "lat": 45.3041,
+    "lng": -117.9991
+  },
+  {
+    "name": "Clatsop County",
+    "state": "OR",
+    "lat": 46.0245,
+    "lng": -123.705
+  },
+  {
+    "name": "Greene County",
+    "state": "PA",
+    "lat": 39.8477,
+    "lng": -80.2257
+  },
+  {
+    "name": "Allegheny County",
+    "state": "PA",
+    "lat": 40.4698,
+    "lng": -79.9805
+  },
+  {
+    "name": "Jefferson County",
+    "state": "PA",
+    "lat": 41.138,
+    "lng": -79.0124
+  },
+  {
+    "name": "Erie County",
+    "state": "PA",
+    "lat": 42.118,
+    "lng": -80.0964
+  },
+  {
+    "name": "Gu\u00e1nica Municipio",
+    "state": "PR",
+    "lat": 17.9482,
+    "lng": -66.9229
+  },
+  {
+    "name": "Maricao Municipio",
+    "state": "PR",
+    "lat": 18.174,
+    "lng": -66.9355
+  },
+  {
+    "name": "Rinc\u00f3n Municipio",
+    "state": "PR",
+    "lat": 18.339,
+    "lng": -67.2508
+  },
+  {
+    "name": "Isabela Municipio",
+    "state": "PR",
+    "lat": 18.484,
+    "lng": -67.014
+  },
+  {
+    "name": "Washington County",
+    "state": "RI",
+    "lat": 41.3968,
+    "lng": -71.6203
+  },
+  {
+    "name": "Kent County",
+    "state": "RI",
+    "lat": 41.6751,
+    "lng": -71.5803
+  },
+  {
+    "name": "Providence County",
+    "state": "RI",
+    "lat": 41.8698,
+    "lng": -71.5786
+  },
+  {
+    "name": "Beaufort County",
+    "state": "SC",
+    "lat": 32.3581,
+    "lng": -80.6894
+  },
+  {
+    "name": "Calhoun County",
+    "state": "SC",
+    "lat": 33.6748,
+    "lng": -80.7803
+  },
+  {
+    "name": "Kershaw County",
+    "state": "SC",
+    "lat": 34.3384,
+    "lng": -80.5909
+  },
+  {
+    "name": "Cherokee County",
+    "state": "SC",
+    "lat": 35.0498,
+    "lng": -81.6076
+  },
+  {
+    "name": "Union County",
+    "state": "SD",
+    "lat": 42.8311,
+    "lng": -96.6508
+  },
+  {
+    "name": "Aurora County",
+    "state": "SD",
+    "lat": 43.7247,
+    "lng": -98.5776
+  },
+  {
+    "name": "Sully County",
+    "state": "SD",
+    "lat": 44.7223,
+    "lng": -100.1314
+  },
+  {
+    "name": "Campbell County",
+    "state": "SD",
+    "lat": 45.7856,
+    "lng": -100.0021
+  },
+  {
+    "name": "Polk County",
+    "state": "TN",
+    "lat": 35.1094,
+    "lng": -84.5411
+  },
+  {
+    "name": "Maury County",
+    "state": "TN",
+    "lat": 35.6157,
+    "lng": -87.0778
+  },
+  {
+    "name": "Davidson County",
+    "state": "TN",
+    "lat": 36.1691,
+    "lng": -86.7848
+  },
+  {
+    "name": "Pickett County",
+    "state": "TN",
+    "lat": 36.5594,
+    "lng": -85.0757
+  },
+  {
+    "name": "Cameron County",
+    "state": "TX",
+    "lat": 26.1029,
+    "lng": -97.479
+  },
+  {
+    "name": "Walker County",
+    "state": "TX",
+    "lat": 30.7432,
+    "lng": -95.5698
+  },
+  {
+    "name": "Shackelford County",
+    "state": "TX",
+    "lat": 32.7438,
+    "lng": -99.347
+  },
+  {
+    "name": "Dallam County",
+    "state": "TX",
+    "lat": 36.2864,
+    "lng": -102.594
+  },
+  {
+    "name": "Washington County",
+    "state": "UT",
+    "lat": 37.2625,
+    "lng": -113.4878
+  },
+  {
+    "name": "Millard County",
+    "state": "UT",
+    "lat": 38.9567,
+    "lng": -113.1331
+  },
+  {
+    "name": "Tooele County",
+    "state": "UT",
+    "lat": 40.4678,
+    "lng": -113.124
+  },
+  {
+    "name": "Cache County",
+    "state": "UT",
+    "lat": 41.7341,
+    "lng": -111.7454
+  },
+  {
+    "name": "Danville city",
+    "state": "VA",
+    "lat": 36.5833,
+    "lng": -79.4081
+  },
+  {
+    "name": "Dickenson County",
+    "state": "VA",
+    "lat": 37.1367,
+    "lng": -82.3492
+  },
+  {
+    "name": "Lexington city",
+    "state": "VA",
+    "lat": 37.7823,
+    "lng": -79.4443
+  },
+  {
+    "name": "Frederick County",
+    "state": "VA",
+    "lat": 39.2037,
+    "lng": -78.2638
+  },
+  {
+    "name": "Windham County",
+    "state": "VT",
+    "lat": 42.9953,
+    "lng": -72.7219
+  },
+  {
+    "name": "Orange County",
+    "state": "VT",
+    "lat": 44.0034,
+    "lng": -72.3696
+  },
+  {
+    "name": "Lamoille County",
+    "state": "VT",
+    "lat": 44.6112,
+    "lng": -72.6327
+  },
+  {
+    "name": "Franklin County",
+    "state": "VT",
+    "lat": 44.859,
+    "lng": -72.9094
+  },
+  {
+    "name": "Clark County",
+    "state": "WA",
+    "lat": 45.7717,
+    "lng": -122.486
+  },
+  {
+    "name": "Lewis County",
+    "state": "WA",
+    "lat": 46.5801,
+    "lng": -122.3774
+  },
+  {
+    "name": "Douglas County",
+    "state": "WA",
+    "lat": 47.7418,
+    "lng": -119.6946
+  },
+  {
+    "name": "Whatcom County",
+    "state": "WA",
+    "lat": 48.8427,
+    "lng": -121.8364
+  },
+  {
+    "name": "Kenosha County",
+    "state": "WI",
+    "lat": 42.5875,
+    "lng": -87.88
+  },
+  {
+    "name": "La Crosse County",
+    "state": "WI",
+    "lat": 43.9082,
+    "lng": -91.1118
+  },
+  {
+    "name": "Menominee County",
+    "state": "WI",
+    "lat": 44.9913,
+    "lng": -88.6693
+  },
+  {
+    "name": "Bayfield County",
+    "state": "WI",
+    "lat": 46.6342,
+    "lng": -91.1773
+  },
+  {
+    "name": "McDowell County",
+    "state": "WV",
+    "lat": 37.3828,
+    "lng": -81.6582
+  },
+  {
+    "name": "Webster County",
+    "state": "WV",
+    "lat": 38.4835,
+    "lng": -80.4491
+  },
+  {
+    "name": "Wood County",
+    "state": "WV",
+    "lat": 39.2116,
+    "lng": -81.5162
+  },
+  {
+    "name": "Hancock County",
+    "state": "WV",
+    "lat": 40.517,
+    "lng": -80.5702
+  },
+  {
+    "name": "Uinta County",
+    "state": "WY",
+    "lat": 41.2847,
+    "lng": -110.5589
+  },
+  {
+    "name": "Lincoln County",
+    "state": "WY",
+    "lat": 42.23,
+    "lng": -110.683
+  },
+  {
+    "name": "Washakie County",
+    "state": "WY",
+    "lat": 43.8788,
+    "lng": -107.6691
+  },
+  {
+    "name": "Sheridan County",
+    "state": "WY",
+    "lat": 44.7814,
+    "lng": -106.8812
+  }
+]

@@ -1,0 +1,1746 @@
+{
+  "batch": "midwest",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Van Andel Propane",
+      "hqCity": "Hudsonville",
+      "hqState": "MI",
+      "website": "https://vanandelpropane.com",
+      "knownLocations": [
+        {
+          "city": "Hudsonville",
+          "state": "MI",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned West Michigan propane supplier serving residential and commercial customers for over 50 years."
+    },
+    {
+      "name": "HotFlame Gas",
+      "hqCity": null,
+      "hqState": "MI",
+      "website": "https://www.hotflamegas.com",
+      "knownLocations": [
+        {
+          "city": null,
+          "state": "MI",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Michigan propane supplier."
+    },
+    {
+      "name": "Kerschner's Gas Service",
+      "hqCity": null,
+      "hqState": "WI",
+      "website": "https://kerschners.com",
+      "knownLocations": [
+        {
+          "state": "WI",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Central Wisconsin LP heating, propane and septic service since 1953."
+    },
+    {
+      "name": "Tripoli Propane",
+      "hqCity": "Tripoli",
+      "hqState": "WI",
+      "website": "https://www.tripolipropane.com",
+      "knownLocations": [
+        {
+          "city": "Tripoli",
+          "state": "WI",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-run North Central Wisconsin propane provider."
+    },
+    {
+      "name": "Hilgy's LP Gas",
+      "hqCity": null,
+      "hqState": "WI",
+      "website": "https://hilgys.com",
+      "knownLocations": [
+        {
+          "state": "WI",
+          "city": null,
+          "street": null
+        },
+        {
+          "state": "MI",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Northern Wisconsin/UP Michigan propane dealer since 1958."
+    },
+    {
+      "name": "Countrystyle Propane",
+      "hqCity": "Oconto Falls",
+      "hqState": "WI",
+      "website": "https://www.countrystylepropane.com",
+      "knownLocations": [
+        {
+          "city": "Oconto Falls",
+          "state": "WI",
+          "street": null
+        },
+        {
+          "city": "Marinette",
+          "state": "WI",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "50+ year propane dealer serving Northeast Wisconsin."
+    },
+    {
+      "name": "Thaler Oil Company",
+      "hqCity": null,
+      "hqState": "WI",
+      "website": "https://www.thaleroil.com",
+      "knownLocations": [
+        {
+          "state": "WI",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Chippewa/Dunn/Eau Claire area propane, fuel oil, bulk lubricants."
+    },
+    {
+      "name": "HTP Energy",
+      "hqCity": "Onalaska",
+      "hqState": "WI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Onalaska",
+          "state": "WI",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Western Wisconsin propane provider."
+    },
+    {
+      "name": "Burnett Dairy Cooperative",
+      "hqCity": "Grantsburg",
+      "hqState": "WI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Grantsburg",
+          "state": "WI",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Northwest Wisconsin dairy cooperative with propane division."
+    },
+    {
+      "name": "W&H Cooperative",
+      "hqCity": "Eagle Grove",
+      "hqState": "IA",
+      "website": "https://www.whcoop.com",
+      "knownLocations": [
+        {
+          "city": "Eagle Grove",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Humboldt",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Webster City",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Clarion",
+          "state": "IA",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "North-central Iowa farmers cooperative delivering propane, diesel, gasoline across 9 counties."
+    },
+    {
+      "name": "Key Cooperative",
+      "hqCity": "Roland",
+      "hqState": "IA",
+      "website": "https://www.keycoop.com",
+      "knownLocations": [
+        {
+          "city": "Roland",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Nevada",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Sully",
+          "state": "IA",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central Iowa Cenex-affiliated member cooperative with propane, storage and delivery; likely 10+ branches."
+    },
+    {
+      "name": "Innovative Ag Services",
+      "hqCity": "Monticello",
+      "hqState": "IA",
+      "website": "https://www.innovativeag.com",
+      "knownLocations": [
+        {
+          "city": "Monticello",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Ackley",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Alden",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Allison",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Clarksville",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Ellsworth",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Elma",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Garden City",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Hubbard",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Lawn Hill",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Marshalltown",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Stout",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Union",
+          "state": "IA",
+          "street": null
+        },
+        {
+          "city": "Williams",
+          "state": "IA",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central/northcentral Iowa ag coop with 13+ propane loading facilities - high branch count."
+    },
+    {
+      "name": "Heartland Cooperative",
+      "hqCity": "West Des Moines",
+      "hqState": "IA",
+      "website": "https://home.heartlandcoop.com",
+      "knownLocations": [
+        {
+          "city": "West Des Moines",
+          "state": "IA",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central Iowa ag cooperative offering energy and propane services."
+    },
+    {
+      "name": "Stubbs Petroleum",
+      "hqCity": null,
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "state": "IA",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Iowa propane and petroleum dealer."
+    },
+    {
+      "name": "Warren County Oil",
+      "hqCity": null,
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "state": "IA",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Iowa propane and oil company serving Warren County."
+    },
+    {
+      "name": "Dealers LP",
+      "hqCity": "Davenport",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Davenport",
+          "state": "IA",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Davenport Iowa propane dealer."
+    },
+    {
+      "name": "Modern Gas Co",
+      "hqCity": "Rock Rapids",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rock Rapids",
+          "state": "IA",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Northwest Iowa propane company."
+    },
+    {
+      "name": "Berkley Agribusiness",
+      "hqCity": "Urbandale",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Urbandale",
+          "state": "IA",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Iowa agribusiness with propane operations."
+    },
+    {
+      "name": "Midwest Meter",
+      "hqCity": "Hampton",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hampton",
+          "state": "IA",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Iowa propane metering and equipment."
+    },
+    {
+      "name": "Beaudry Oil & Propane",
+      "hqCity": "Elk River",
+      "hqState": "MN",
+      "website": "https://www.beaudryoilpropanedieselfuel.com",
+      "knownLocations": [
+        {
+          "city": "Elk River",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Detroit Lakes",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Twin Cities / Central MN propane and heating fuel distributor since 1981."
+    },
+    {
+      "name": "Edwards Oil & Propane",
+      "hqCity": null,
+      "hqState": "MN",
+      "website": "https://edwardsoilandpropane.com",
+      "knownLocations": [
+        {
+          "state": "MN",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Northern Minnesota propane and fuel."
+    },
+    {
+      "name": "Ag Partners Cooperative",
+      "hqCity": "Goodhue",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Goodhue",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Belle Plaine",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Lake City",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Le Center",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "LeSueur",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Morristown",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SE Minnesota ag cooperative with 6+ propane locations (Goodhue, Belle Plaine, Lake City, Le Center, LeSueur, Morristown)."
+    },
+    {
+      "name": "Centra Sota Cooperative",
+      "hqCity": "Buffalo",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Buffalo",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central Minnesota ag cooperative with propane division."
+    },
+    {
+      "name": "Central Counties Cooperative",
+      "hqCity": "Atwater",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Atwater",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Litchfield",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central Minnesota propane cooperative, 2+ locations."
+    },
+    {
+      "name": "Central Farm Service",
+      "hqCity": "Truman",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Truman",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Southern Minnesota ag cooperative with propane."
+    },
+    {
+      "name": "Central United Cooperative",
+      "hqCity": "Sleepy Eye",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sleepy Eye",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Winthrop",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SW Minnesota ag cooperative with propane."
+    },
+    {
+      "name": "Chandler Cooperative",
+      "hqCity": "Chandler",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Chandler",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Edgerton",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SW MN propane cooperative with multiple branches."
+    },
+    {
+      "name": "CHS Prairie Lakes",
+      "hqCity": "Starbuck",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Starbuck",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Herman",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Luverne",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Marshall",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Pipestone",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "CHS Inc regional unit covering W/SW Minnesota, 5+ propane offices (CHS Fortune 100 ag coop)."
+    },
+    {
+      "name": "Community Coop Oil Assn Faribault",
+      "hqCity": "Faribault",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Faribault",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Faribault area propane cooperative."
+    },
+    {
+      "name": "Consumers Coop Oil",
+      "hqCity": "Clarkfield",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Clarkfield",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Western MN propane cooperative."
+    },
+    {
+      "name": "Cottonwood Coop Oil",
+      "hqCity": "Cottonwood",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cottonwood",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Cottonwood MN propane coop."
+    },
+    {
+      "name": "Country Pride Services Cooperative",
+      "hqCity": "Bingham Lake",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bingham Lake",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SW MN ag cooperative with propane."
+    },
+    {
+      "name": "Crystal Valley Cooperative",
+      "hqCity": "Mankato",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mankato",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Jackson",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "South-central Minnesota ag cooperative with propane, 2+ locations."
+    },
+    {
+      "name": "Meadowland Farmers Cooperative",
+      "hqCity": "Wabasso",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wabasso",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SW MN propane cooperative."
+    },
+    {
+      "name": "Mid-County Cooperative",
+      "hqCity": "Cologne",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cologne",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central MN propane cooperative."
+    },
+    {
+      "name": "Morris Cooperative Association",
+      "hqCity": "Morris",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Morris",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "West-central MN propane coop."
+    },
+    {
+      "name": "High Plains Cooperative",
+      "hqCity": "Plainview",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Plainview",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SE MN propane cooperative."
+    },
+    {
+      "name": "Hutchinson Cooperative",
+      "hqCity": "Hutchinson",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hutchinson",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central MN propane cooperative."
+    },
+    {
+      "name": "Park Region Cooperative",
+      "hqCity": "Pelican Rapids",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pelican Rapids",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "West-central MN propane cooperative."
+    },
+    {
+      "name": "Paynesville Farmers Union Cooperative Oil",
+      "hqCity": "Paynesville",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Paynesville",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central MN farmers union propane cooperative."
+    },
+    {
+      "name": "Pope County Cooperative",
+      "hqCity": "Villard",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Villard",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "West-central MN propane cooperative."
+    },
+    {
+      "name": "Pro Ag Farmers Cooperative",
+      "hqCity": "Henning",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Henning",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central MN farmers propane cooperative."
+    },
+    {
+      "name": "Leaf River Ag Services",
+      "hqCity": "Wadena",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wadena",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central MN ag services with propane."
+    },
+    {
+      "name": "Lakes Community Cooperative",
+      "hqCity": "Lake Park",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lake Park",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Perham",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "West-central MN propane cooperative, 2 branches."
+    },
+    {
+      "name": "Lac Qui Parle Coop Oil",
+      "hqCity": "Dawson",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dawson",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Western MN propane cooperative."
+    },
+    {
+      "name": "Donnelly Cooperative",
+      "hqCity": "Donnelly",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Donnelly",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "West-central MN propane cooperative."
+    },
+    {
+      "name": "Farmward Cooperative",
+      "hqCity": "Morgan",
+      "hqState": "MN",
+      "website": "https://farmward.net",
+      "knownLocations": [
+        {
+          "city": "Morgan",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Canby",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Ivanhoe",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Marshall",
+          "state": "MN",
+          "street": null
+        },
+        {
+          "city": "Minneota",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SW MN ag cooperative with 5+ propane locations serving home/farm/business."
+    },
+    {
+      "name": "Farmers Coop Oil Clara City",
+      "hqCity": "Clara City",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Clara City",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Western MN propane cooperative."
+    },
+    {
+      "name": "Farmers Union Oil Southern Valley",
+      "hqCity": "Breckenridge",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Breckenridge",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "West-central MN farmers union propane cooperative."
+    },
+    {
+      "name": "Farmers Union Oil Warroad",
+      "hqCity": "Warroad",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Warroad",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Far north MN farmers union propane."
+    },
+    {
+      "name": "Farmers Union Oil Grygla",
+      "hqCity": "Grygla",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Grygla",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Far north MN farmers union propane."
+    },
+    {
+      "name": "Farmers Union Oil Lake Bronson",
+      "hqCity": "Lake Bronson",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lake Bronson",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Far north MN farmers union propane."
+    },
+    {
+      "name": "Farmers Union Oil Montevideo",
+      "hqCity": "Montevideo",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Montevideo",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Western MN farmers union propane."
+    },
+    {
+      "name": "Farmers Union Oil Thief River Falls",
+      "hqCity": "Thief River Falls",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Thief River Falls",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Far north MN farmers union propane."
+    },
+    {
+      "name": "Farmers Union Oil Alexandria",
+      "hqCity": "Alexandria",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Alexandria",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central MN farmers union propane."
+    },
+    {
+      "name": "Fauskee Oil",
+      "hqCity": "Brooten",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brooten",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Central MN propane dealer."
+    },
+    {
+      "name": "Fevig Oil & Propane",
+      "hqCity": "Felton",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Felton",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "NW MN propane dealer."
+    },
+    {
+      "name": "Fertile Oil",
+      "hqCity": "Fertile",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fertile",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "NW MN propane and fuel dealer."
+    },
+    {
+      "name": "Fond du Lac Propane",
+      "hqCity": "Cloquet",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cloquet",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "NE MN propane dealer serving Fond du Lac area."
+    },
+    {
+      "name": "Floodwood Gas & Electric",
+      "hqCity": "Floodwood",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Floodwood",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "municipal",
+      "notes": "Floodwood MN municipal propane/electric utility."
+    },
+    {
+      "name": "Belgrade Coop Association",
+      "hqCity": "Belgrade",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Belgrade",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central MN propane cooperative."
+    },
+    {
+      "name": "Bemidji Coop Association",
+      "hqCity": "Bemidji",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bemidji",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Northern MN propane cooperative."
+    },
+    {
+      "name": "Ashby Equity Association",
+      "hqCity": "Ashby",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ashby",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "West-central MN farmers propane coop."
+    },
+    {
+      "name": "Ascheman Propane",
+      "hqCity": "Danvers",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Danvers",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Western MN propane dealer."
+    },
+    {
+      "name": "A & J Gas",
+      "hqCity": "Blomkest",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Blomkest",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Western MN propane dealer."
+    },
+    {
+      "name": "BOSS Propane",
+      "hqCity": "Saginaw",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Saginaw",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "NE MN propane supplier."
+    },
+    {
+      "name": "Caywood Oil & Propane",
+      "hqCity": "Saginaw",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Saginaw",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "NE MN propane and fuel."
+    },
+    {
+      "name": "Deans Bulk Service",
+      "hqCity": "Barnesville",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Barnesville",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "W MN bulk fuel and propane."
+    },
+    {
+      "name": "Dexter LP",
+      "hqCity": "Dexter",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dexter",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "SE MN propane dealer."
+    },
+    {
+      "name": "Dehn Oil",
+      "hqCity": "Ramsey",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ramsey",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Twin Cities area propane and oil."
+    },
+    {
+      "name": "H & K Propane",
+      "hqCity": "Glenville",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Glenville",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "S MN propane dealer."
+    },
+    {
+      "name": "Hokah Coop Oil Association",
+      "hqCity": "Hokah",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hokah",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SE MN propane cooperative."
+    },
+    {
+      "name": "Hutt Oil",
+      "hqCity": "Boyd",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Boyd",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "W MN propane and fuel dealer."
+    },
+    {
+      "name": "Hi-Yield Products",
+      "hqCity": "Alden",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Alden",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "S MN propane and ag products."
+    },
+    {
+      "name": "Larson Oil",
+      "hqCity": "Wheaton",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wheaton",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "W MN family propane and fuel."
+    },
+    {
+      "name": "Matthees Oil",
+      "hqCity": "Zumbrota",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Zumbrota",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "SE MN propane and fuel dealer."
+    },
+    {
+      "name": "Miller Gas",
+      "hqCity": "Henderson",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Henderson",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Central MN propane dealer."
+    },
+    {
+      "name": "MVP Energy",
+      "hqCity": "Kellogg",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kellogg",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "SE MN propane and energy."
+    },
+    {
+      "name": "LPG & NH3 Supply",
+      "hqCity": "Buffalo",
+      "hqState": "MN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Buffalo",
+          "state": "MN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Central MN propane/anhydrous supplier."
+    },
+    {
+      "name": "Midwest Farmers Cooperative",
+      "hqCity": "Nehawka",
+      "hqState": "NE",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Nehawka",
+          "state": "NE",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SE Nebraska farmers cooperative with 26 locations - HIGH branch count."
+    },
+    {
+      "name": "Country Partners Cooperative",
+      "hqCity": "Gothenburg",
+      "hqState": "NE",
+      "website": "https://www.countrypartnerscoop.com",
+      "knownLocations": [
+        {
+          "city": "Gothenburg",
+          "state": "NE",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Central Nebraska ag cooperative with residential/commercial/ag propane."
+    },
+    {
+      "name": "BandP Propane",
+      "hqCity": "Holton",
+      "hqState": "KS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Holton",
+          "state": "KS",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Northeast Kansas propane dealer 50+ years."
+    },
+    {
+      "name": "Bair Propane",
+      "hqCity": "Burden",
+      "hqState": "KS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Burden",
+          "state": "KS",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned S central KS propane dealer since 1959 serving Cowley, Sumner, Butler, Elk, Chautauqua counties."
+    },
+    {
+      "name": "Southwest Gas Equipment",
+      "hqCity": "Liberal",
+      "hqState": "KS",
+      "website": "https://www.swgpropane.com",
+      "knownLocations": [
+        {
+          "city": "Liberal",
+          "state": "KS",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "SW Kansas/Oklahoma propane equipment/services since 1953."
+    },
+    {
+      "name": "Wayman Oil",
+      "hqCity": null,
+      "hqState": "KS",
+      "website": null,
+      "knownLocations": [
+        {
+          "state": "KS",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Kansas propane and oil dealer."
+    },
+    {
+      "name": "Legacy Cooperative",
+      "hqCity": null,
+      "hqState": "ND",
+      "website": "https://www.legacy-cooperative.com",
+      "knownLocations": [
+        {
+          "state": "ND",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Northcentral North Dakota ag cooperative delivering Cenex fuels and propane."
+    },
+    {
+      "name": "Farmers Union Fuel and Parts",
+      "hqCity": "Velva",
+      "hqState": "ND",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Velva",
+          "state": "ND",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "ND farmers union cooperative with propane, transport loads, burnerfuel."
+    },
+    {
+      "name": "Farmers Union Oil Beach",
+      "hqCity": "Beach",
+      "hqState": "ND",
+      "website": "https://www.cenexofbeach.com",
+      "knownLocations": [
+        {
+          "city": "Beach",
+          "state": "ND",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Western ND producer-member cooperative specializing in energy with 2 locations."
+    },
+    {
+      "name": "Farstad Oil",
+      "hqCity": "West Fargo",
+      "hqState": "ND",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "West Fargo",
+          "state": "ND",
+          "street": null
+        },
+        {
+          "city": "Mandan",
+          "state": "ND",
+          "street": null
+        },
+        {
+          "city": "Minot",
+          "state": "ND",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "ND propane and petroleum dealer with 3 locations across the state."
+    },
+    {
+      "name": "Petro Serve USA",
+      "hqCity": "West Fargo",
+      "hqState": "ND",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "West Fargo",
+          "state": "ND",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "West Fargo ND energy cooperative with propane."
+    },
+    {
+      "name": "Dale Petroleum",
+      "hqCity": "Fargo",
+      "hqState": "ND",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fargo",
+          "state": "ND",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Fargo ND propane and petroleum."
+    },
+    {
+      "name": "FEI",
+      "hqCity": "Valley City",
+      "hqState": "ND",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Valley City",
+          "state": "ND",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Valley City ND propane supplier."
+    },
+    {
+      "name": "West Dakota Oil",
+      "hqCity": "Dickinson",
+      "hqState": "ND",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dickinson",
+          "state": "ND",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Western ND propane/petroleum (operating as Fitterer Oil) since 1965."
+    },
+    {
+      "name": "Southeast Farmers Cooperative",
+      "hqCity": null,
+      "hqState": "SD",
+      "website": "https://www.southeastfarmers.com",
+      "knownLocations": [
+        {
+          "state": "SD",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "SE South Dakota Cenex-affiliated cooperative with propane division (open to non-members)."
+    },
+    {
+      "name": "Agtegra Cooperative",
+      "hqCity": "Aberdeen",
+      "hqState": "SD",
+      "website": "https://www.agtegra.com",
+      "knownLocations": [
+        {
+          "city": "Aberdeen",
+          "state": "SD",
+          "street": null
+        },
+        {
+          "city": "Britton",
+          "state": "SD",
+          "street": null
+        },
+        {
+          "city": "Selby",
+          "state": "SD",
+          "street": null
+        },
+        {
+          "city": "Milbank",
+          "state": "SD",
+          "street": null
+        },
+        {
+          "city": "Leola",
+          "state": "SD",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Major ND/SD farmer-owned ag coop - 6,800 member-owners, bulk propane/transport with 5+ propane-specific branches."
+    },
+    {
+      "name": "Koopman & Sons Gas",
+      "hqCity": "Colton",
+      "hqState": "SD",
+      "website": "https://www.koopmanandsonsgas.com",
+      "knownLocations": [
+        {
+          "city": "Colton",
+          "state": "SD",
+          "street": null
+        },
+        {
+          "city": "Dell Rapids",
+          "state": "SD",
+          "street": null
+        },
+        {
+          "city": "Hartford",
+          "state": "SD",
+          "street": null
+        },
+        {
+          "city": "Sioux Falls",
+          "state": "SD",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "SE SD residential/commercial propane dealer with 4 locations."
+    },
+    {
+      "name": "Deuel County Farmers Union Oil",
+      "hqCity": "Toronto",
+      "hqState": "SD",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Toronto",
+          "state": "SD",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Eastern SD farmers union propane cooperative."
+    },
+    {
+      "name": "CHS River Plains",
+      "hqCity": null,
+      "hqState": "SD",
+      "website": "https://www.chsriverplains.com",
+      "knownLocations": [
+        {
+          "state": "SD",
+          "city": null,
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "CHS Inc regional affiliate serving SD with propane."
+    },
+    {
+      "name": "Sacramento Energy Resources",
+      "hqCity": "Yankton",
+      "hqState": "SD",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Yankton",
+          "state": "SD",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Yankton SD propane/energy."
+    },
+    {
+      "name": "Meridian Liquids Partners",
+      "hqCity": "Yankton",
+      "hqState": "SD",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Yankton",
+          "state": "SD",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Yankton SD propane/NGL handler."
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+[
+  {
+    "id": "scott_petroleum_anderson_s_gas_propane",
+    "name": "Scott Petroleum / Anderson's Gas & Propane",
+    "website": "https://scottpetroleum.net/",
+    "locations_found": [
+      {"name": "Scott Petroleum HQ (Itta Bena)", "address": "102 Main Street", "city": "Itta Bena", "state": "MS", "zip": "38941", "phone": ""},
+      {"name": "Scott Petroleum Greenville", "address": "3239 Highway 82 E", "city": "Greenville", "state": "MS", "zip": "", "phone": ""},
+      {"name": "Scott Petroleum Canton", "address": "", "city": "Canton", "state": "MS", "zip": "", "phone": ""}
+    ],
+    "notes": "Correct domain is scottpetroleuminc.com (input URL unreachable). Company operates ~47 bulk plants across MS/AR/LA plus 7 C-stores; full branch list not exposed on website."
+  },
+  {
+    "id": "foster_fuels_hearth_home_showroom",
+    "name": "Foster Fuels Hearth & Home Showroom",
+    "website": "https://www.fosterfuels.com",
+    "locations_found": [
+      {"name": "Brookneal (HQ)", "address": "16720 Brookneal Hwy", "city": "Brookneal", "state": "VA", "zip": "24528", "phone": "434-376-2322"},
+      {"name": "Rustburg", "address": "10951 Wards Rd", "city": "Rustburg", "state": "VA", "zip": "24588", "phone": "434-808-1597"},
+      {"name": "Forest", "address": "17898 Forest Rd", "city": "Forest", "state": "VA", "zip": "24551", "phone": "434-333-0897"},
+      {"name": "Hearth & Home Showroom (Blairs)", "address": "6261 US-29 BUS", "city": "Blairs", "state": "VA", "zip": "24527", "phone": "434-836-8283"}
+    ],
+    "notes": "Company has ~8 VA locations per search results; 4 with confirmed addresses."
+  },
+  {
+    "id": "united_propane_gas_vienna_il",
+    "name": "United Propane Gas (Vienna, IL)",
+    "website": "https://unitedpropanegas.com",
+    "locations_found": [
+      {"name": "United Propane Gas Corporate (Paducah)", "address": "4200 Cairo Rd", "city": "Paducah", "state": "KY", "zip": "42001", "phone": "800-874-4427"},
+      {"name": "Heartland Propane (Herrin)", "address": "", "city": "Herrin", "state": "IL", "zip": "", "phone": ""},
+      {"name": "South Indiana Propane", "address": "", "city": "Salem", "state": "IN", "zip": "", "phone": ""},
+      {"name": "Calloway County Propane", "address": "", "city": "Murray", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Gasper River Propane", "address": "", "city": "Auburn", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Green River Propane", "address": "", "city": "Livermore", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Graves County Propane", "address": "", "city": "Mayfield", "state": "KY", "zip": "", "phone": ""},
+      {"name": "West Kentucky Propane", "address": "", "city": "Paducah", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Midwest Propane", "address": "", "city": "Trenton", "state": "MO", "zip": "", "phone": ""},
+      {"name": "MO Energy Propane", "address": "", "city": "Unionville", "state": "MO", "zip": "", "phone": ""},
+      {"name": "Small Bootheel Propane", "address": "", "city": "Sikeston", "state": "MO", "zip": "", "phone": ""},
+      {"name": "Cumberland River Propane", "address": "", "city": "Springfield", "state": "TN", "zip": "", "phone": ""},
+      {"name": "Highland Rim Propane", "address": "", "city": "Manchester", "state": "TN", "zip": "", "phone": ""},
+      {"name": "Natchez Trace Propane", "address": "", "city": "Waynesboro", "state": "TN", "zip": "", "phone": ""},
+      {"name": "Obion County Propane", "address": "", "city": "Union City", "state": "TN", "zip": "", "phone": ""},
+      {"name": "Quality Propane", "address": "", "city": "Lebanon", "state": "TN", "zip": "", "phone": ""},
+      {"name": "Southern Propane", "address": "", "city": "Columbia", "state": "TN", "zip": "", "phone": ""},
+      {"name": "Stewart County Propane", "address": "", "city": "Dover", "state": "TN", "zip": "", "phone": ""}
+    ],
+    "notes": "Correct domain is upgas.com. Operates ~80 locations across 12 states under regional brand names; street-level addresses exposed only via interactive map."
+  },
+  {
+    "id": "r_h_foster_energy_machias",
+    "name": "R.H. Foster Energy - Machias",
+    "website": "https://rhfoster.com",
+    "locations_found": [
+      {"name": "Hampden Energy Services (Corporate HQ)", "address": "81 Mecaw Rd, PO Box 688", "city": "Hampden", "state": "ME", "zip": "04444", "phone": "207-947-3835"},
+      {"name": "Dennysville Energy Services / Eastern Plumbing & Heating", "address": "263 US-1", "city": "Dennysville", "state": "ME", "zip": "04628", "phone": "207-726-4700"},
+      {"name": "Penobscot Energy Services", "address": "1441 Castine Rd", "city": "Penobscot", "state": "ME", "zip": "04476", "phone": "207-326-8808"},
+      {"name": "Machias Energy Services", "address": "32 Old County Rd, PO Box 336", "city": "Machias", "state": "ME", "zip": "04654", "phone": "207-255-4501"},
+      {"name": "Beals / Carver Energy Services", "address": "45 Bay View Drive, PO Box 62", "city": "Beals", "state": "ME", "zip": "04611", "phone": "207-497-3400"},
+      {"name": "Ellsworth Energy Services", "address": "372 High Street, PO Box 1647", "city": "Ellsworth", "state": "ME", "zip": "04605", "phone": "207-667-0695"},
+      {"name": "Lincoln Energy Services", "address": "110 River Rd", "city": "Lincoln", "state": "ME", "zip": "04457", "phone": "207-794-2200"}
+    ],
+    "notes": "7 branch locations across Maine."
+  },
+  {
+    "id": "freeman_gas_brevard_office",
+    "name": "Freeman Gas Brevard Office",
+    "website": "https://freemangas.com/",
+    "locations_found": [
+      {"name": "Spartanburg - Howard Street", "address": "1450 Howard St", "city": "Spartanburg", "state": "SC", "zip": "29303", "phone": "864-582-2804"},
+      {"name": "Spartanburg - Pine Lake Drive", "address": "113 S Pine Lake Dr", "city": "Spartanburg", "state": "SC", "zip": "29306", "phone": ""},
+      {"name": "Spartanburg - Asheville Highway", "address": "1186 Asheville Hwy", "city": "Spartanburg", "state": "SC", "zip": "29303", "phone": ""},
+      {"name": "Roebuck", "address": "113 Peake Rd", "city": "Roebuck", "state": "SC", "zip": "", "phone": ""}
+    ],
+    "notes": "Acquired by Superior Plus Propane; website now redirects to superiorpluspropane.com/freeman-gas. Operates ~23 stores across GA/NC/SC/TN. Input state 'GA' for Brevard office appears incorrect - Brevard is in NC."
+  },
+  {
+    "id": "propane_northwest_tacoma",
+    "name": "Propane Northwest - Tacoma",
+    "website": "https://www.propanenw.com",
+    "locations_found": [
+      {"name": "Tacoma", "address": "19122 38th Ave E", "city": "Tacoma", "state": "WA", "zip": "98446", "phone": "253-875-3000"}
+    ],
+    "notes": "Correct domain is propanenorthwest.com. Multi-location PNW operator but only Tacoma location confirmed with full address. Interactive map-based locator does not expose additional branches in static content."
+  },
+  {
+    "id": "cross_petroleum_services",
+    "name": "Cross Petroleum Services",
+    "website": "https://www.crosspetroleum.com",
+    "locations_found": [
+      {"name": "Billings (HQ)", "address": "1818 Minnesota Ave, PO Box 1078", "city": "Billings", "state": "MT", "zip": "59103", "phone": "406-252-5519"},
+      {"name": "Glendive", "address": "56 Highway 16, PO Box 1388", "city": "Glendive", "state": "MT", "zip": "59330", "phone": "406-377-8325"},
+      {"name": "Terry", "address": "14 Ten Mile Road", "city": "Terry", "state": "MT", "zip": "59315", "phone": "406-635-4124"},
+      {"name": "Hysham", "address": "", "city": "Hysham", "state": "MT", "zip": "", "phone": ""},
+      {"name": "Savage", "address": "", "city": "Savage", "state": "MT", "zip": "", "phone": ""},
+      {"name": "Sidney", "address": "", "city": "Sidney", "state": "MT", "zip": "", "phone": ""}
+    ],
+    "notes": "Input domain crosspetroleum.com redirects to valleypacific.com; correct domain is crossps.com. 6 MT locations; street addresses confirmed for 3."
+  },
+  {
+    "id": "sapp_bros_petroleum",
+    "name": "Sapp Bros. Petroleum",
+    "website": "https://sappbrospetroleum.com/",
+    "locations_found": [
+      {"name": "Omaha (HQ)", "address": "9915 S 148th St", "city": "Omaha", "state": "NE", "zip": "68138", "phone": "402-895-2202"},
+      {"name": "Omaha Service Center", "address": "9905 Sapp Brothers Dr", "city": "Omaha", "state": "NE", "zip": "68138", "phone": ""},
+      {"name": "Denver", "address": "", "city": "Denver", "state": "CO", "zip": "", "phone": ""},
+      {"name": "Julesburg", "address": "", "city": "Julesburg", "state": "CO", "zip": "", "phone": ""},
+      {"name": "Peru", "address": "", "city": "Peru", "state": "IL", "zip": "", "phone": ""},
+      {"name": "Atlantic", "address": "", "city": "Atlantic", "state": "IA", "zip": "", "phone": ""},
+      {"name": "Carter Lake", "address": "", "city": "Carter Lake", "state": "IA", "zip": "", "phone": ""},
+      {"name": "Le Mars", "address": "", "city": "Le Mars", "state": "IA", "zip": "", "phone": ""},
+      {"name": "Shenandoah", "address": "", "city": "Shenandoah", "state": "IA", "zip": "", "phone": ""},
+      {"name": "Sioux City", "address": "", "city": "Sioux City", "state": "IA", "zip": "", "phone": ""},
+      {"name": "Blue Rapids", "address": "", "city": "Blue Rapids", "state": "KS", "zip": "", "phone": ""},
+      {"name": "Hanover", "address": "", "city": "Hanover", "state": "KS", "zip": "", "phone": ""},
+      {"name": "Harrisonville/Kansas City", "address": "", "city": "Harrisonville", "state": "MO", "zip": "", "phone": ""},
+      {"name": "Blair", "address": "", "city": "Blair", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Butte", "address": "", "city": "Butte", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Columbus", "address": "", "city": "Columbus", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Crete", "address": "", "city": "Crete", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Elgin", "address": "", "city": "Elgin", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Filley", "address": "", "city": "Filley", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Fremont", "address": "", "city": "Fremont", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Grand Island", "address": "", "city": "Grand Island", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Humboldt", "address": "", "city": "Humboldt", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Imperial", "address": "", "city": "Imperial", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Lincoln", "address": "", "city": "Lincoln", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Norfolk", "address": "", "city": "Norfolk", "state": "NE", "zip": "", "phone": ""},
+      {"name": "North Platte", "address": "", "city": "North Platte", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Ogallala", "address": "", "city": "Ogallala", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Sidney", "address": "", "city": "Sidney", "state": "NE", "zip": "", "phone": ""},
+      {"name": "West Point", "address": "", "city": "West Point", "state": "NE", "zip": "", "phone": ""},
+      {"name": "York", "address": "", "city": "York", "state": "NE", "zip": "", "phone": ""},
+      {"name": "Salt Lake City", "address": "", "city": "Salt Lake City", "state": "UT", "zip": "", "phone": ""},
+      {"name": "Cheyenne", "address": "", "city": "Cheyenne", "state": "WY", "zip": "", "phone": ""}
+    ],
+    "notes": "Correct domain is sappbros.net. 30+ petroleum locations across CO/IL/IA/KS/MO/NE/UT/WY; city-only on main locator page."
+  },
+  {
+    "id": "ngl_energy_partners",
+    "name": "NGL Energy Partners",
+    "website": "http://www.nglep.com/",
+    "locations_found": [],
+    "notes": "NGL Energy Partners divested its retail propane business in April 2025 (sold to Superior Plus). Company now focuses on Crude Oil Logistics, Water Solutions, and Liquids Logistics - no longer a retail propane operator. Formerly traded under Osterman Propane, Downeast Energy, Eastern Propane, Atlantic Propane, Anthem Propane, Brantley Gas brands."
+  },
+  {
+    "id": "chs_southwest_grain",
+    "name": "CHS Southwest Grain",
+    "website": "https://www.chsinc.com",
+    "locations_found": [
+      {"name": "Belfield", "address": "305 1st Ave SE", "city": "Belfield", "state": "ND", "zip": "58622", "phone": "701-575-4386"},
+      {"name": "Boyle Terminal", "address": "3645 98th Ave SW", "city": "Taylor", "state": "ND", "zip": "58656", "phone": "701-483-6212"},
+      {"name": "CHS Nutrition Feed Plant", "address": "4855 GTA Dr", "city": "Dickinson", "state": "ND", "zip": "58607", "phone": "701-483-1277"},
+      {"name": "Dickinson Agronomy", "address": "1722 Hwy 22 S", "city": "Dickinson", "state": "ND", "zip": "58601", "phone": "701-483-4552"},
+      {"name": "Dickinson Terminal", "address": "1519 W Broadway", "city": "Dickinson", "state": "ND", "zip": "58601", "phone": "701-483-6781"},
+      {"name": "Dickinson Energy (Propane)", "address": "1722 Hwy 22 S", "city": "Dickinson", "state": "ND", "zip": "58601", "phone": "701-483-5157"},
+      {"name": "Dickinson Seed Plant", "address": "527 E Broadway", "city": "Dickinson", "state": "ND", "zip": "58601", "phone": "701-483-2971"},
+      {"name": "Elgin", "address": "110 South Main St", "city": "Elgin", "state": "ND", "zip": "58533", "phone": "701-941-9630"},
+      {"name": "Gladstone", "address": "471 Rothschiller St", "city": "Gladstone", "state": "ND", "zip": "58630", "phone": "701-483-0021"},
+      {"name": "Hettinger", "address": "302 Mirror Lake Road", "city": "Hettinger", "state": "ND", "zip": "58639", "phone": "701-941-8880"},
+      {"name": "Killdeer", "address": "200 Railroad St", "city": "Killdeer", "state": "ND", "zip": "58640", "phone": "701-483-4554"},
+      {"name": "Lemmon", "address": "201 2nd St E", "city": "Lemmon", "state": "SD", "zip": "57638", "phone": "605-898-1540"},
+      {"name": "New England", "address": "170 Elevator Road", "city": "New England", "state": "ND", "zip": "58647", "phone": "701-483-4555"},
+      {"name": "New Salem", "address": "103 South 3rd St", "city": "New Salem", "state": "ND", "zip": "58563", "phone": "701-204-7044"},
+      {"name": "Reeder", "address": "502 Railroad Ave", "city": "Reeder", "state": "ND", "zip": "58649", "phone": "701-941-8675"},
+      {"name": "Regent", "address": "120 Cannonball St", "city": "Regent", "state": "ND", "zip": "58650", "phone": "701-941-9885"},
+      {"name": "Richardton", "address": "351 N Ave", "city": "Richardton", "state": "ND", "zip": "58652", "phone": "701-483-4559"}
+    ],
+    "notes": "17 CHS Southwest Grain locations across ND/SD. Dickinson Energy is the propane-specific branch."
+  },
+  {
+    "id": "ak_energy_gallia",
+    "name": "AK Energy - Gallia",
+    "website": "https://www.akenergy.com",
+    "locations_found": [
+      {"name": "AK Energy (Jackson)", "address": "433 Dixon Run Rd", "city": "Jackson", "state": "OH", "zip": "45640", "phone": "740-688-8758"}
+    ],
+    "notes": "Correct domain is akenergy.llc. Only one office listed; serves Jackson, Ross, Vinton, Gallia and Mason counties in southern OH/northern WV."
+  },
+  {
+    "id": "blossman_propane",
+    "name": "Blossman Propane",
+    "website": "https://www.blossmangas.com/",
+    "locations_found": [
+      {"name": "Canton", "address": "", "city": "Canton", "state": "GA", "zip": "", "phone": ""},
+      {"name": "Douglasville", "address": "", "city": "Douglasville", "state": "GA", "zip": "", "phone": ""},
+      {"name": "Gainesville", "address": "", "city": "Gainesville", "state": "GA", "zip": "", "phone": ""},
+      {"name": "Bowdon", "address": "", "city": "Bowdon", "state": "GA", "zip": "", "phone": ""},
+      {"name": "Alpha Gas (Pensacola)", "address": "", "city": "Pensacola", "state": "FL", "zip": "", "phone": ""}
+    ],
+    "notes": "75+ branches across Southeast; 9th largest US propane dealer. Full branch directory at blossmangas.com/find-locations/ but not exposed in static HTML. Individual branch pages exist per location (e.g., /locations/blossman-gas-canton-ga/)."
+  },
+  {
+    "id": "mrohs_gas_inc",
+    "name": "Mrohs Gas, Inc.",
+    "website": "https://mrohsgas.com",
+    "locations_found": [
+      {"name": "Mrohs Gas Corporate Office", "address": "4471 Crisfield Hwy", "city": "Crisfield", "state": "MD", "zip": "21817", "phone": "410-968-0252"}
+    ],
+    "notes": "Single office; serves MD Tri-County (Wicomico, Worcester, Somerset), lower Sussex County DE, and northern VA Eastern Shore."
+  },
+  {
+    "id": "premier_energy",
+    "name": "Premier Energy",
+    "website": "https://premierenergy.com",
+    "locations_found": [
+      {"name": "Premier Companies HQ (Seymour)", "address": "811 W 2nd Street", "city": "Seymour", "state": "IN", "zip": "47274", "phone": "812-522-4911"},
+      {"name": "Somerset", "address": "605 S Main St", "city": "Somerset", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Harrodsburg (Factory St)", "address": "419 Factory St", "city": "Harrodsburg", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Harrodsburg (N College St)", "address": "131 N College St", "city": "Harrodsburg", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Pendleton", "address": "602 Pendleton Rd", "city": "Pendleton", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Columbia", "address": "706 Burkesville St", "city": "Columbia", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Warsaw", "address": "303 E Main St", "city": "Warsaw", "state": "KY", "zip": "", "phone": ""},
+      {"name": "Cynthiana", "address": "2012 US-27", "city": "Cynthiana", "state": "KY", "zip": "", "phone": ""}
+    ],
+    "notes": "Correct corporate URL is premierag.com (premierenergy.com is an unrelated GA company). Premier Companies operates fuel/propane stations throughout IN, KY, TN, OH. Delivers propane to ~15,000 tanks."
+  },
+  {
+    "id": "o_nealgas_inc_ar",
+    "name": "O'Nealgas Inc",
+    "website": "https://onealgas.com/",
+    "locations_found": [
+      {"name": "Choudrant (Corporate HQ)", "address": "3452 Highway 145 N", "city": "Choudrant", "state": "LA", "zip": "71227", "phone": "318-768-2511"},
+      {"name": "Columbia", "address": "7205 Highway 165 S", "city": "Columbia", "state": "LA", "zip": "71418", "phone": "318-649-7336"},
+      {"name": "Smackover", "address": "4404 Smackover Highway", "city": "Smackover", "state": "AR", "zip": "71762", "phone": "870-725-2495"},
+      {"name": "Farmerville", "address": "406 South Main", "city": "Farmerville", "state": "LA", "zip": "71241", "phone": "318-368-9094"},
+      {"name": "Haughton", "address": "5170 Highway 80", "city": "Haughton", "state": "LA", "zip": "71037", "phone": "318-746-8480"},
+      {"name": "Homer", "address": "900 West Main", "city": "Homer", "state": "LA", "zip": "71040", "phone": "318-927-3575"},
+      {"name": "Many", "address": "25585 Highway 171 N", "city": "Many", "state": "LA", "zip": "71449", "phone": "318-256-5522"},
+      {"name": "Monroe", "address": "703 North 5th St", "city": "Monroe", "state": "LA", "zip": "71201", "phone": "318-322-4663"},
+      {"name": "Winnsboro", "address": "4030 Front St", "city": "Winnsboro", "state": "LA", "zip": "71295", "phone": "318-435-6190"},
+      {"name": "Tallulah", "address": "1600 Felicia Dr", "city": "Tallulah", "state": "LA", "zip": "71282", "phone": "318-574-5702"},
+      {"name": "Stephens", "address": "1224 N 1st St", "city": "Stephens", "state": "AR", "zip": "71764", "phone": "870-786-9767"}
+    ],
+    "notes": "11 locations across LA and AR; corporate HQ actually in LA, not AR as listed in input."
+  },
+  {
+    "id": "butler_lp_gas",
+    "name": "Butler LP Gas",
+    "website": "https://butlerlpgas.com",
+    "locations_found": [
+      {"name": "Butler LP Gas (Walterboro)", "address": "3886 Bells Hwy", "city": "Walterboro", "state": "SC", "zip": "29488", "phone": "843-538-5207"}
+    ],
+    "notes": "Single-location family-owned operator serving Colleton County, SC."
+  },
+  {
+    "id": "utah_propane",
+    "name": "Utah Propane",
+    "website": "https://utahpropane.com",
+    "locations_found": [
+      {"name": "Utah Propane (Cedar City)", "address": "3425 Iron Springs Rd", "city": "Cedar City", "state": "UT", "zip": "84721", "phone": "435-922-5500"}
+    ],
+    "notes": "Small family-owned business; only one physical office. Mailing PO Box in St. George, UT 84790."
+  },
+  {
+    "id": "v_1_propane",
+    "name": "V-1 Propane",
+    "website": "https://www.v1propane.com",
+    "locations_found": [
+      {"name": "Cody", "address": "PO Box 2473", "city": "Cody", "state": "WY", "zip": "82414", "phone": ""},
+      {"name": "Rawlins", "address": "2118 East Daley Street", "city": "Rawlins", "state": "WY", "zip": "82301", "phone": ""},
+      {"name": "Lander", "address": "1320 Main St", "city": "Lander", "state": "WY", "zip": "", "phone": ""},
+      {"name": "Rock Springs", "address": "201 Industrial Dr", "city": "Rock Springs", "state": "WY", "zip": "", "phone": ""},
+      {"name": "Casper", "address": "", "city": "Casper", "state": "WY", "zip": "", "phone": ""},
+      {"name": "Douglas", "address": "", "city": "Douglas", "state": "WY", "zip": "", "phone": ""}
+    ],
+    "notes": "V-1 Propane was acquired and is now operated under the AmeriGas brand. Input domain v1propane.com unreachable. Multi-state Western operator per input notes; addresses shown are from WY only."
+  },
+  {
+    "id": "mfa_oil",
+    "name": "MFA Oil",
+    "website": "https://www.mfaoil.com/",
+    "locations_found": [
+      {"name": "Rogersville", "address": "7007 E US Hwy 60", "city": "Rogersville", "state": "MO", "zip": "", "phone": "417-753-9055"},
+      {"name": "Butler", "address": "975 Elks Dr", "city": "Butler", "state": "MO", "zip": "", "phone": "660-679-3532"},
+      {"name": "Eldon", "address": "704 Industrial Dr", "city": "Eldon", "state": "MO", "zip": "", "phone": ""},
+      {"name": "Pevely", "address": "8647 Commercial Blvd", "city": "Pevely", "state": "MO", "zip": "", "phone": ""},
+      {"name": "Shell Knob", "address": "20654 FR 1250", "city": "Shell Knob", "state": "MO", "zip": "65747", "phone": ""}
+    ],
+    "notes": "Large multi-state cooperative HQ in Columbia, MO. Over 1,600 employees; manages bulk petroleum and propane plants across central US. Full locator is dynamic AJAX — complete branch list not exposed in static content."
+  },
+  {
+    "id": "ceres_solutions",
+    "name": "Ceres Solutions",
+    "website": "https://ceres.coop",
+    "locations_found": [
+      {"name": "Keystone Cooperative HQ (Indianapolis)", "address": "770 N High School Rd", "city": "Indianapolis", "state": "IN", "zip": "46214", "phone": ""},
+      {"name": "Fremont Administrative", "address": "720 W Main St", "city": "Fremont", "state": "MI", "zip": "49412", "phone": "231-924-3851"},
+      {"name": "Fremont Agronomy", "address": "540 W Main St", "city": "Fremont", "state": "MI", "zip": "49412", "phone": "231-924-3851"},
+      {"name": "R and F Agronomy", "address": "4002 W County Rd 600 N", "city": "Anderson", "state": "IN", "zip": "46011", "phone": "765-754-7449"},
+      {"name": "Decatur Agronomy", "address": "1966 W State Rd 224", "city": "Decatur", "state": "IN", "zip": "46733", "phone": "260-724-2169"},
+      {"name": "Goshen Agronomy", "address": "66058 County Road 15", "city": "Goshen", "state": "IN", "zip": "46526", "phone": "574-831-2231"},
+      {"name": "Angola Propane", "address": "610 W Broad", "city": "Angola", "state": "IN", "zip": "46703", "phone": "260-665-7427"},
+      {"name": "Bainbridge Propane", "address": "6922 N County Rd 100 E", "city": "Bainbridge", "state": "IN", "zip": "46105", "phone": "765-522-2800"}
+    ],
+    "notes": "Ceres Solutions merged into Keystone Cooperative; ceres.coop redirects to keystonecoop.com. Keystone has 80+ locations across IN/MI offering propane, agronomy, grain, and animal nutrition."
+  }
+]

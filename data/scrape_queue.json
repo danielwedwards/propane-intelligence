@@ -1,0 +1,839 @@
+{
+  "unitedpropanegas.com": {
+    "website": "https://unitedpropanegas.com/",
+    "companies": [
+      {
+        "id": "united_propane_gas_cleveland_tn",
+        "name": "United Propane Gas (Cleveland, TN)",
+        "state": "GA"
+      },
+      {
+        "id": "united_propane_gas_henagar_al",
+        "name": "United Propane Gas (Henagar, AL)",
+        "state": "TN"
+      },
+      {
+        "id": "united_propane_gas_vienna_il",
+        "name": "United Propane Gas (Vienna, IL)",
+        "state": "IL"
+      }
+    ],
+    "state_hint": "GA"
+  },
+  "arrowwoodprairie.com": {
+    "website": "https://www.arrowwoodprairie.com",
+    "companies": [
+      {
+        "id": "arrowwood_prairie_co_op_carrington_main_office",
+        "name": "Arrowwood Prairie Co-op - Carrington Main Office",
+        "state": "ND"
+      },
+      {
+        "id": "arrowwood_prairie_co_op_cooperstown_office",
+        "name": "Arrowwood Prairie Co-op - Cooperstown Office",
+        "state": "ND"
+      }
+    ],
+    "state_hint": "ND"
+  },
+  "premierenergy.com": {
+    "website": "https://premierenergy.com",
+    "companies": [
+      {
+        "id": "premier_energy_formerly_gaile_s_propane",
+        "name": "Premier Energy (Formerly Gaile's Propane)",
+        "state": "IN"
+      },
+      {
+        "id": "premier_energy",
+        "name": "Premier Energy",
+        "state": "KY"
+      }
+    ],
+    "state_hint": "IN"
+  },
+  "bluestargas.com": {
+    "website": "https://bluestargas.com/",
+    "companies": [
+      {
+        "id": "blue_star_gas_crescent_city_co",
+        "name": "Blue Star Gas - Crescent City Co.",
+        "state": "CA"
+      },
+      {
+        "id": "blue_star_gas_eugene_co",
+        "name": "Blue Star Gas - Eugene Co.",
+        "state": "OR"
+      }
+    ],
+    "state_hint": "CA"
+  },
+  "consolidatedenergyco.com": {
+    "website": "https://consolidatedenergyco.com/",
+    "companies": [
+      {
+        "id": "consolidated_energy_company",
+        "name": "Consolidated Energy Company",
+        "state": "IA"
+      },
+      {
+        "id": "consolidated_energy",
+        "name": "Consolidated Energy",
+        "state": "IA"
+      }
+    ],
+    "state_hint": "IA"
+  },
+  "edstaub.com": {
+    "website": "https://www.edstaub.com",
+    "companies": [
+      {
+        "id": "ed_staub_sons_petroleum",
+        "name": "ED STAUB & SONS PETROLEUM",
+        "state": "OR"
+      },
+      {
+        "id": "ed_staub_sons_propane",
+        "name": "Ed Staub & Sons Propane",
+        "state": "OR"
+      }
+    ],
+    "state_hint": "OR"
+  },
+  "akenergy.com": {
+    "website": "https://www.akenergy.com",
+    "companies": [
+      {
+        "id": "ak_energy_jackson",
+        "name": "AK Energy - Jackson",
+        "state": "OH"
+      },
+      {
+        "id": "ak_energy_gallia",
+        "name": "AK Energy - Gallia",
+        "state": "OH"
+      }
+    ],
+    "state_hint": "OH"
+  },
+  "mfaoil.com": {
+    "website": "https://www.mfaoil.com/",
+    "companies": [
+      {
+        "id": "mfa_oil",
+        "name": "MFA Oil",
+        "state": "AR"
+      },
+      {
+        "id": "mfa_oil_propane",
+        "name": "MFA Oil Propane",
+        "state": "IL"
+      }
+    ],
+    "state_hint": "AR"
+  },
+  "spaldinggas.com": {
+    "website": "https://spaldinggas.com/",
+    "companies": [
+      {
+        "id": "dcc",
+        "name": "DCC",
+        "state": "GA"
+      }
+    ],
+    "state_hint": "GA"
+  },
+  "scottpetroleum.net": {
+    "website": "https://scottpetroleum.net/",
+    "companies": [
+      {
+        "id": "scott_petroleum_anderson_s_gas_propane",
+        "name": "Scott Petroleum / Anderson's Gas & Propane",
+        "state": "AR"
+      }
+    ],
+    "state_hint": "AR"
+  },
+  "valleywidecoop.com": {
+    "website": "https://www.valleywidecoop.com",
+    "companies": [
+      {
+        "id": "valley_wide_cooperative_energy_salmon",
+        "name": "Valley Wide Cooperative Energy | Salmon",
+        "state": "MT"
+      }
+    ],
+    "state_hint": "MT"
+  },
+  "svalleyec.com": {
+    "website": "https://svalleyec.com",
+    "companies": [
+      {
+        "id": "sequachee_valley_electric_cooperative",
+        "name": "Sequachee Valley Electric Cooperative",
+        "state": "TN"
+      }
+    ],
+    "state_hint": "TN"
+  },
+  "fosterfuels.com": {
+    "website": "https://www.fosterfuels.com",
+    "companies": [
+      {
+        "id": "foster_fuels_hearth_home_showroom",
+        "name": "Foster Fuels Hearth & Home Showroom",
+        "state": "VA"
+      }
+    ],
+    "state_hint": "VA"
+  },
+  "nnmgc.com": {
+    "website": "https://www.nnmgc.com",
+    "companies": [
+      {
+        "id": "northern_new_mexico_gas_company",
+        "name": "Northern New Mexico Gas Company",
+        "state": "NM"
+      }
+    ],
+    "state_hint": "NM"
+  },
+  "superiorpluspropane.com": {
+    "website": "https://www.superiorpluspropane.com/",
+    "companies": [
+      {
+        "id": "superior_plus_energy_services",
+        "name": "Superior Plus Energy Services",
+        "state": "CT"
+      }
+    ],
+    "state_hint": "CT"
+  },
+  "clevelandpetroleum.com": {
+    "website": "https://clevelandpetroleum.com",
+    "companies": [
+      {
+        "id": "cleveland_petroleum_products",
+        "name": "Cleveland Petroleum Products",
+        "state": "KS"
+      }
+    ],
+    "state_hint": "KS"
+  },
+  "rhfoster.com": {
+    "website": "https://rhfoster.com",
+    "companies": [
+      {
+        "id": "r_h_foster_energy_machias",
+        "name": "R.H. Foster Energy - Machias",
+        "state": "ME"
+      }
+    ],
+    "state_hint": "ME"
+  },
+  "rockymtnsupply.com": {
+    "website": "https://www.rockymtnsupply.com",
+    "companies": [
+      {
+        "id": "rocky_mountain_supply_ennis",
+        "name": "Rocky Mountain Supply- Ennis",
+        "state": "MT"
+      }
+    ],
+    "state_hint": "MT"
+  },
+  "sungaspropane.com": {
+    "website": "https://sungaspropane.com/",
+    "companies": [
+      {
+        "id": "sungas_propane_clarksville",
+        "name": "SunGas Propane Clarksville",
+        "state": "AR"
+      }
+    ],
+    "state_hint": "AR"
+  },
+  "freemangas.com": {
+    "website": "https://freemangas.com/",
+    "companies": [
+      {
+        "id": "freeman_gas_brevard_office",
+        "name": "Freeman Gas Brevard Office",
+        "state": "GA"
+      }
+    ],
+    "state_hint": "GA"
+  },
+  "mulgrewoil.com": {
+    "website": "https://mulgrewoil.com",
+    "companies": [
+      {
+        "id": "mulgrew_oil_and_propane_co",
+        "name": "Mulgrew Oil and Propane Co",
+        "state": "IL"
+      }
+    ],
+    "state_hint": "IL"
+  },
+  "blumontenergy.com": {
+    "website": "https://blumontenergy.com",
+    "companies": [
+      {
+        "id": "blumont_energy_lynchburg",
+        "name": "Blumont Energy - Lynchburg",
+        "state": "VA"
+      }
+    ],
+    "state_hint": "VA"
+  },
+  "propanenw.com": {
+    "website": "https://www.propanenw.com",
+    "companies": [
+      {
+        "id": "propane_northwest_tacoma",
+        "name": "Propane Northwest - Tacoma",
+        "state": "WA"
+      }
+    ],
+    "state_hint": "WA"
+  },
+  "southgapropane.com": {
+    "website": "https://www.southgapropane.com/",
+    "companies": [
+      {
+        "id": "south_georgia_propane_inc",
+        "name": "South Georgia Propane Inc",
+        "state": "GA"
+      }
+    ],
+    "state_hint": "GA"
+  },
+  "corriganoil.com": {
+    "website": "https://corriganoil.com",
+    "companies": [
+      {
+        "id": "corrigan_oil_and_propane",
+        "name": "Corrigan Oil and Propane",
+        "state": "IN"
+      }
+    ],
+    "state_hint": "IN"
+  },
+  "crosspetroleum.com": {
+    "website": "https://www.crosspetroleum.com",
+    "companies": [
+      {
+        "id": "cross_petroleum_services",
+        "name": "Cross Petroleum Services",
+        "state": "MT"
+      }
+    ],
+    "state_hint": "MT"
+  },
+  "blakemanpropane.com": {
+    "website": "https://www.blakemanpropane.com",
+    "companies": [
+      {
+        "id": "blakeman_propane_inc",
+        "name": "Blakeman Propane, Inc.",
+        "state": "WY"
+      }
+    ],
+    "state_hint": "WY"
+  },
+  "superiorfuels.com": {
+    "website": "https://superiorfuels.com",
+    "companies": [
+      {
+        "id": "superior_fuel_company",
+        "name": "Superior Fuel Company",
+        "state": "MN"
+      }
+    ],
+    "state_hint": "MN"
+  },
+  "sappbrospetroleum.com": {
+    "website": "https://sappbrospetroleum.com/",
+    "companies": [
+      {
+        "id": "sapp_bros_petroleum",
+        "name": "Sapp Bros. Petroleum",
+        "state": "CO"
+      }
+    ],
+    "state_hint": "CO"
+  },
+  "rahnsoil.com": {
+    "website": "https://rahnsoil.com",
+    "companies": [
+      {
+        "id": "rahn_s_oil_propane",
+        "name": "Rahn's Oil & Propane",
+        "state": "MN"
+      }
+    ],
+    "state_hint": "MN"
+  },
+  "energynorthpropane.com": {
+    "website": "https://www.energynorthpropane.com",
+    "companies": [
+      {
+        "id": "energy_north_propane",
+        "name": "Energy North Propane",
+        "state": "NH"
+      }
+    ],
+    "state_hint": "NH"
+  },
+  "woodfordoil.com": {
+    "website": "https://www.woodfordoil.com",
+    "companies": [
+      {
+        "id": "woodford_oil_company",
+        "name": "Woodford Oil Company",
+        "state": "WV"
+      }
+    ],
+    "state_hint": "WV"
+  },
+  "nglep.com": {
+    "website": "http://www.nglep.com/",
+    "companies": [
+      {
+        "id": "ngl_energy_partners",
+        "name": "NGL Energy Partners",
+        "state": "AR"
+      }
+    ],
+    "state_hint": "AR"
+  },
+  "energywestpropane.com": {
+    "website": "https://energywestpropane.com/",
+    "companies": [
+      {
+        "id": "energy_west_montana",
+        "name": "Energy West Montana",
+        "state": "ID"
+      }
+    ],
+    "state_hint": "ID"
+  },
+  "qualityoilnc.com": {
+    "website": "https://www.qualityoilnc.com",
+    "companies": [
+      {
+        "id": "quality_oil_company",
+        "name": "Quality Oil Company",
+        "state": "NC"
+      }
+    ],
+    "state_hint": "NC"
+  },
+  "chsinc.com": {
+    "website": "https://www.chsinc.com",
+    "companies": [
+      {
+        "id": "chs_southwest_grain",
+        "name": "CHS Southwest Grain",
+        "state": "ND"
+      }
+    ],
+    "state_hint": "ND"
+  },
+  "towncountrygas.com": {
+    "website": "https://towncountrygas.com",
+    "companies": [
+      {
+        "id": "town___country_gas",
+        "name": "Town & Country Gas",
+        "state": "GA"
+      }
+    ],
+    "state_hint": "GA"
+  },
+  "fallriverpropane.com": {
+    "website": "https://fallriverpropane.com/",
+    "companies": [
+      {
+        "id": "fall_river_propane",
+        "name": "Fall River Propane",
+        "state": "MT"
+      }
+    ],
+    "state_hint": "MT"
+  },
+  "tigerfuel.com": {
+    "website": "https://www.tigerfuel.com",
+    "companies": [
+      {
+        "id": "tiger_fuel_company",
+        "name": "Tiger Fuel Company",
+        "state": "VA"
+      }
+    ],
+    "state_hint": "VA"
+  },
+  "burdenpropane.com": {
+    "website": "https://www.burdenpropane.com",
+    "companies": [
+      {
+        "id": "burden_propane_inc",
+        "name": "Burden Propane Inc",
+        "state": "WA"
+      }
+    ],
+    "state_hint": "WA"
+  },
+  "comooil.com": {
+    "website": "https://www.comooil.com",
+    "companies": [
+      {
+        "id": "como_oil_propane",
+        "name": "Como Oil & Propane",
+        "state": "WI"
+      }
+    ],
+    "state_hint": "WI"
+  },
+  "blossmangas.com": {
+    "website": "https://www.blossmangas.com/",
+    "companies": [
+      {
+        "id": "blossman_propane",
+        "name": "Blossman Propane",
+        "state": "GA"
+      }
+    ],
+    "state_hint": "GA"
+  },
+  "proflamepropane.com": {
+    "website": "https://proflamepropane.com/",
+    "companies": [
+      {
+        "id": "proflame_propane",
+        "name": "Proflame Propane",
+        "state": "ID"
+      }
+    ],
+    "state_hint": "ID"
+  },
+  "davenportenergy.com": {
+    "website": "https://www.davenportenergy.com",
+    "companies": [
+      {
+        "id": "davenport_energy",
+        "name": "Davenport Energy",
+        "state": "VA"
+      }
+    ],
+    "state_hint": "VA"
+  },
+  "lin-gas.com": {
+    "website": "https://lin-gas.com",
+    "companies": [
+      {
+        "id": "lin_gas_propane",
+        "name": "Lin-Gas Propane",
+        "state": "IL"
+      }
+    ],
+    "state_hint": "IL"
+  },
+  "mrohsgas.com": {
+    "website": "https://mrohsgas.com",
+    "companies": [
+      {
+        "id": "mrohs_gas_inc",
+        "name": "Mrohs Gas, Inc.",
+        "state": "MD"
+      }
+    ],
+    "state_hint": "MD"
+  },
+  "prairieagcoop.com": {
+    "website": "https://www.prairieagcoop.com",
+    "companies": [
+      {
+        "id": "prairie_ag_coop",
+        "name": "Prairie Ag Coop",
+        "state": "MT"
+      }
+    ],
+    "state_hint": "MT"
+  },
+  "enderbygas.com": {
+    "website": "https://www.enderbygas.com",
+    "companies": [
+      {
+        "id": "enderby_gas_inc_ok",
+        "name": "Enderby Gas Inc",
+        "state": "OK"
+      }
+    ],
+    "state_hint": "OK"
+  },
+  "cangaspropane.com": {
+    "website": "https://cangaspropane.com/",
+    "companies": [
+      {
+        "id": "cangas_propane",
+        "name": "CanGas Propane",
+        "state": "ID"
+      }
+    ],
+    "state_hint": "ID"
+  },
+  "yankeepropane.com": {
+    "website": "https://www.yankeepropane.com",
+    "companies": [
+      {
+        "id": "yankee_propane",
+        "name": "Yankee Propane",
+        "state": "NJ"
+      }
+    ],
+    "state_hint": "NJ"
+  },
+  "marshpet.com": {
+    "website": "http://www.marshpet.com/",
+    "companies": [
+      {
+        "id": "marsh_propane",
+        "name": "Marsh Propane",
+        "state": "TN"
+      }
+    ],
+    "state_hint": "TN"
+  },
+  "they barely even have a location on google": {
+    "website": "https://They barely even have a location on google",
+    "companies": [
+      {
+        "id": "sem_stream_lp",
+        "name": "Sem Stream LP",
+        "state": "AR"
+      }
+    ],
+    "state_hint": "AR"
+  },
+  "onealgas.com": {
+    "website": "https://onealgas.com/",
+    "companies": [
+      {
+        "id": "o_nealgas_inc_ar",
+        "name": "O'Nealgas Inc",
+        "state": "AR"
+      }
+    ],
+    "state_hint": "AR"
+  },
+  "titanpropane.com": {
+    "website": "https://titanpropane.com/",
+    "companies": [
+      {
+        "id": "titan_propane",
+        "name": "Titan Propane",
+        "state": "AZ"
+      }
+    ],
+    "state_hint": "AZ"
+  },
+  "norupgas.com": {
+    "website": "https://norupgas.com/",
+    "companies": [
+      {
+        "id": "norup_gas_inc",
+        "name": "Norup Gas Inc",
+        "state": "CO"
+      }
+    ],
+    "state_hint": "CO"
+  },
+  "valleyenergyinc.com": {
+    "website": "https://valleyenergyinc.com",
+    "companies": [
+      {
+        "id": "valley_energy",
+        "name": "Valley Energy",
+        "state": "MD"
+      }
+    ],
+    "state_hint": "MD"
+  },
+  "butlerlpgas.com": {
+    "website": "https://butlerlpgas.com",
+    "companies": [
+      {
+        "id": "butler_lp_gas",
+        "name": "Butler LP Gas",
+        "state": "SC"
+      }
+    ],
+    "state_hint": "SC"
+  },
+  "fredsenergy.com": {
+    "website": "https://www.fredsenergy.com",
+    "companies": [
+      {
+        "id": "fred_s_energy",
+        "name": "Fred's Energy",
+        "state": "VT"
+      }
+    ],
+    "state_hint": "VT"
+  },
+  "pfmpropane.com": {
+    "website": "https://www.pfmpropane.com/?utm_source=gmb&utm_medium=organic&utm_campaign=uberall",
+    "companies": [
+      {
+        "id": "pico_propane",
+        "name": "Pico Propane",
+        "state": "NC"
+      }
+    ],
+    "state_hint": "NC"
+  },
+  "sharpenergy.com": {
+    "website": "https://www.sharpenergy.com/",
+    "companies": [
+      {
+        "id": "sharp_energy",
+        "name": "Sharp Energy",
+        "state": "DE"
+      }
+    ],
+    "state_hint": "DE"
+  },
+  "utahpropane.com": {
+    "website": "https://utahpropane.com",
+    "companies": [
+      {
+        "id": "utah_propane",
+        "name": "Utah Propane",
+        "state": "UT"
+      }
+    ],
+    "state_hint": "UT"
+  },
+  "thompsongas.com": {
+    "website": "https://thompsongas.com/",
+    "companies": [
+      {
+        "id": "thompsongas",
+        "name": "ThompsonGas",
+        "state": "AL"
+      }
+    ],
+    "state_hint": "AL"
+  },
+  "ayergoss.com": {
+    "website": "https://ayergoss.com",
+    "companies": [
+      {
+        "id": "ayer_goss",
+        "name": "Ayer & Goss",
+        "state": "MA"
+      }
+    ],
+    "state_hint": "MA"
+  },
+  "acadiafuel.com": {
+    "website": "https://acadiafuel.com",
+    "companies": [
+      {
+        "id": "acadia_fuel",
+        "name": "Acadia Fuel",
+        "state": "ME"
+      }
+    ],
+    "state_hint": "ME"
+  },
+  "v1propane.com": {
+    "website": "https://www.v1propane.com",
+    "companies": [
+      {
+        "id": "v_1_propane",
+        "name": "V-1 Propane",
+        "state": "WY"
+      }
+    ],
+    "state_hint": "WY"
+  },
+  "parkergas.com": {
+    "website": "https://www.parkergas.com",
+    "companies": [
+      {
+        "id": "parker_gas",
+        "name": "Parker Gas",
+        "state": "NC"
+      }
+    ],
+    "state_hint": "NC"
+  },
+  "grecogas.com": {
+    "website": "https://www.grecogas.com",
+    "companies": [
+      {
+        "id": "greco_gas",
+        "name": "Greco Gas",
+        "state": "PA"
+      }
+    ],
+    "state_hint": "PA"
+  },
+  "hinogas.com": {
+    "website": "https://www.hinogas.com",
+    "companies": [
+      {
+        "id": "hino_gas",
+        "name": "Hino Gas",
+        "state": "TX"
+      }
+    ],
+    "state_hint": "TX"
+  },
+  "pepup.com": {
+    "website": "https://pepup.com",
+    "companies": [
+      {
+        "id": "pepup",
+        "name": "PepUp",
+        "state": "MD"
+      }
+    ],
+    "state_hint": "MD"
+  },
+  "co-alliance.com": {
+    "website": "https://co-alliance.com",
+    "companies": [
+      {
+        "id": "co_alliance_propane",
+        "name": "Co-Alliance Propane",
+        "state": "IN"
+      }
+    ],
+    "state_hint": "IN"
+  },
+  "ceres.coop": {
+    "website": "https://ceres.coop",
+    "companies": [
+      {
+        "id": "ceres_solutions",
+        "name": "Ceres Solutions",
+        "state": "IN"
+      }
+    ],
+    "state_hint": "IN"
+  },
+  "evergreenfs.com": {
+    "website": "https://evergreenfs.com",
+    "companies": [
+      {
+        "id": "evergreen_fs",
+        "name": "Evergreen FS",
+        "state": "IL"
+      }
+    ],
+    "state_hint": "IL"
+  }
+}

@@ -1,0 +1,283 @@
+[
+  {
+    "id": "great_plains_propane_service_inc",
+    "name": "Great Plains Propane Service, Inc.",
+    "locations_found": [
+      {
+        "name": "Great Plains Propane Service, Inc.",
+        "address": "642 US-6",
+        "city": "Ashland",
+        "state": "NE",
+        "zip": "68003",
+        "phone": "(402) 944-3349"
+      }
+    ],
+    "notes": "Single-location operator, family-owned since 1955. Serves Saunders, Sarpy, Cass, Lancaster, Douglas, Washington, Dodge, Pottawattamie, and Otoe counties. Company DOES have a website (gpspropane.com / greatplainspropane.com) despite being in the no-website batch."
+  },
+  {
+    "id": "appalachian_propane_supply",
+    "name": "Appalachian Propane & Supply",
+    "locations_found": [
+      {
+        "name": "Appalachian Propane & Supply",
+        "address": "6637 Webster Rd",
+        "city": "Summersville",
+        "state": "WV",
+        "zip": "26651",
+        "phone": "(304) 872-6100"
+      }
+    ],
+    "notes": "Single-location small operator in Summersville, WV."
+  },
+  {
+    "id": "buckeye_propane_co_inc",
+    "name": "Buckeye Propane Co., Inc.",
+    "locations_found": [
+      {
+        "name": "Buckeye Propane - Circleville",
+        "address": "28980 Logan Elm Road",
+        "city": "Circleville",
+        "state": "OH",
+        "zip": "43113",
+        "phone": "(740) 477-9561"
+      },
+      {
+        "name": "Buckeye Propane - New Holland (HQ)",
+        "address": "9083 US Highway 22 E",
+        "city": "New Holland",
+        "state": "OH",
+        "zip": "43145",
+        "phone": "(740) 495-5394"
+      },
+      {
+        "name": "Buckeye Propane - Jamestown",
+        "address": "4330 Hog Eye Rd",
+        "city": "Jamestown",
+        "state": "OH",
+        "zip": "45335",
+        "phone": "(937) 675-6770"
+      },
+      {
+        "name": "Buckeye Propane - Leesburg",
+        "address": "224 West Main Street",
+        "city": "Leesburg",
+        "state": "OH",
+        "zip": "45135",
+        "phone": "(937) 780-6390"
+      },
+      {
+        "name": "Buckeye Propane - London",
+        "address": "731 US Rte 42 SW",
+        "city": "London",
+        "state": "OH",
+        "zip": "43140",
+        "phone": "(740) 852-3709"
+      },
+      {
+        "name": "Buckeye Propane - Waverly",
+        "address": "74 Progress Dr",
+        "city": "Waverly",
+        "state": "OH",
+        "zip": "45135",
+        "phone": ""
+      }
+    ],
+    "notes": "MAJOR UPDATE: Not a single-location operator - Buckeye Propane & Soft Water has 6 locations across southern/southwest Ohio. Independently owned since 1957. Company DOES have a website (buckeyepropane.com) despite being in the no-website batch."
+  },
+  {
+    "id": "spencer_mountain_propane",
+    "name": "SPENCER MOUNTAIN PROPANE",
+    "locations_found": [
+      {
+        "name": "Spencer Mountain Propane",
+        "address": "252 Industrial Pkwy",
+        "city": "Spencer",
+        "state": "TN",
+        "zip": "38585",
+        "phone": "(931) 946-7525"
+      }
+    ],
+    "notes": "Single-location small operator. May be affiliated with/acquired by United Propane Gas (upgas.com)."
+  },
+  {
+    "id": "b_l_propane_co_inc",
+    "name": "B & L Propane Co., Inc.",
+    "locations_found": [
+      {
+        "name": "B & L Propane Co., Inc.",
+        "address": "585 N State St",
+        "city": "Hurricane",
+        "state": "UT",
+        "zip": "84737",
+        "phone": "(435) 635-2919"
+      }
+    ],
+    "notes": "Single-location, family-owned since 1961. Serves Hurricane and surrounding southern Utah."
+  },
+  {
+    "id": "almighty_propane_llc",
+    "name": "Almighty Propane LLC",
+    "locations_found": [
+      {
+        "name": "Almighty Propane LLC",
+        "address": "1400 N Rabb Rd",
+        "city": "La Feria",
+        "state": "TX",
+        "zip": "78559",
+        "phone": "(956) 355-0806"
+      }
+    ],
+    "notes": "Single-location small operator in Rio Grande Valley. Company DOES have a website (almightypropane.com) despite being in the no-website batch."
+  },
+  {
+    "id": "fulfer_propane_inc",
+    "name": "Fulfer Propane, Inc",
+    "locations_found": [
+      {
+        "name": "Fulfer Propane, Inc.",
+        "address": "20306 N State Route 108",
+        "city": "Stephenville",
+        "state": "TX",
+        "zip": "76401",
+        "phone": "(254) 968-8488"
+      }
+    ],
+    "notes": "Single-location family-owned operator since 1974. Serves Erath, Palo Pinto, Eastland, Hood, Comanche, Parker, and Somervell counties (north-central TX, not West TX as originally noted). Company DOES have a website (fulferpropane.com)."
+  },
+  {
+    "id": "wolf_river_propane",
+    "name": "Wolf River Propane",
+    "locations_found": [
+      {
+        "name": "Wolf River Propane LLC",
+        "address": "315 Burton Rd",
+        "city": "New London",
+        "state": "WI",
+        "zip": "54961",
+        "phone": "(715) 752-0044"
+      }
+    ],
+    "notes": "Single-location operator serving east central Wisconsin. Company DOES have a website (wolfriverpropane.com)."
+  },
+  {
+    "id": "new_flame_propane",
+    "name": "New Flame Propane",
+    "locations_found": [
+      {
+        "name": "New Flame Propane (retail/filling station)",
+        "address": "8819 NE 117th Ave",
+        "city": "Vancouver",
+        "state": "WA",
+        "zip": "98662",
+        "phone": "(360) 823-1222"
+      },
+      {
+        "name": "New Flame Propane LLC (registered office)",
+        "address": "315 N Parkway Ave",
+        "city": "Battle Ground",
+        "state": "WA",
+        "zip": "98604",
+        "phone": "(360) 823-1222"
+      }
+    ],
+    "notes": "Small operator in Clark County, WA. Two addresses identified: Vancouver retail/fill station and Battle Ground registered business address. Company DOES have a website (newflamepropane.com)."
+  },
+  {
+    "id": "barker_s_propane",
+    "name": "Barker's propane",
+    "locations_found": [
+      {
+        "name": "Barker's Propane",
+        "address": "855 S Main St",
+        "city": "Logan",
+        "state": "UT",
+        "zip": "84321",
+        "phone": "(435) 994-5300"
+      }
+    ],
+    "notes": "Single-location small operator in Logan, UT."
+  },
+  {
+    "id": "seven_is_enough",
+    "name": "Seven is Enough",
+    "locations_found": [
+      {
+        "name": "Seven is Enough",
+        "address": "205 S Alley St",
+        "city": "Damascus",
+        "state": "VA",
+        "zip": "24236",
+        "phone": ""
+      }
+    ],
+    "notes": "Single-location small operator in Damascus, VA (far southwest VA). Phone number not found in public listings. Possibly affiliated with Glade Spring Co. Propane."
+  },
+  {
+    "id": "luke_s_propane",
+    "name": "Luke's Propane",
+    "locations_found": [
+      {
+        "name": "Luke's Propane LLC (WA registered entity)",
+        "address": "",
+        "city": "Brush Prairie",
+        "state": "WA",
+        "zip": "",
+        "phone": ""
+      },
+      {
+        "name": "Luke's Propane Inc (primary operations)",
+        "address": "512 Industrial Way",
+        "city": "Molalla",
+        "state": "OR",
+        "zip": "97038",
+        "phone": "(503) 829-8087"
+      }
+    ],
+    "notes": "STATE MISLABEL: Primary operations are in Molalla, OR (not WA). A Luke's Propane LLC entity is registered in Brush Prairie, WA (Clark County, near Portland OR metro area) but no operating address/phone was found for it. Likely a single-region operator serving the Portland/SW WA border area from the Oregon HQ. Company DOES have a website (lukespropane.com)."
+  },
+  {
+    "id": "northwoods_lp",
+    "name": "Northwoods LP",
+    "locations_found": [
+      {
+        "name": "Northwoods LP",
+        "address": "5190 Linden St",
+        "city": "Laona",
+        "state": "WI",
+        "zip": "54541",
+        "phone": "(715) 674-7405"
+      }
+    ],
+    "notes": "Single-location small operator in Laona, WI (northern WI). NOTE: A separate 'Northwoods Propane' exists in Rice Lake, WI (2477 16th St, 54868, 715-236-7718) - likely a different company. Northwoods LP DOES have a website (northwoodslp.com)."
+  },
+  {
+    "id": "asapropane",
+    "name": "Asapropane",
+    "locations_found": [
+      {
+        "name": "ASAPropane",
+        "address": "2208 Bennett Point Rd",
+        "city": "Queenstown",
+        "state": "MD",
+        "zip": "21658",
+        "phone": "(443) 822-0238"
+      }
+    ],
+    "notes": "STATE MISLABEL: Located in Queenstown, MD (not DE). On Delmarva peninsula (Eastern Shore of Maryland). Single-location veteran-owned operator. Company DOES have a website (asapropane.com)."
+  },
+  {
+    "id": "lp_plus",
+    "name": "LP Plus",
+    "locations_found": [
+      {
+        "name": "LP+ (LP Plus)",
+        "address": "719 Harvey St",
+        "city": "Green Bay",
+        "state": "WI",
+        "zip": "54302",
+        "phone": ""
+      }
+    ],
+    "notes": "Single-location drive-thru propane refill station, cylinder sales, service, and autogas in Green Bay, WI. Phone not found in public listings. Company DOES have a website (lpplususa.com)."
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "source": "web search aggregation - EDP (Energy Distribution Partners) subsidiaries",
+  "scraped": "2026-04-11",
+  "company": "Energy Distribution Partners subsidiaries",
+  "notes": "Small roll-up operator. Individual branded subsidiaries are typically single- or dual-location operators. Barrett (AZ), Sullivan (PA), Cetane name disambiguation below.",
+  "locations": [
+    {
+      "brand": "Barrett Propane",
+      "name": "Barrett Propane - Prescott",
+      "address": "1555 W Iron Springs Rd, Ste 5",
+      "city": "Prescott",
+      "state": "AZ",
+      "zip": "86305",
+      "phone": "(928) 636-1600",
+      "notes": "Serves Yavapai County quad-cities area since 1960; single-location operator"
+    },
+    {
+      "brand": "Sullivan Oil & Propane",
+      "name": "Sullivan Oil & Propane - Bath",
+      "address": null,
+      "city": "Bath",
+      "state": "PA",
+      "zip": null,
+      "phone": null,
+      "notes": "Headquartered in Bath, PA; 15 employees; serves Lehigh Valley and Poconos; acquired by EDP Oct 2024 (41st acquisition)"
+    }
+  ],
+  "disambiguation": {
+    "Cetane Propane": "No operating propane distributor named 'Cetane Propane' found. 'Cetane Associates' (1177 W. Loop S, Suite 1650, Houston, TX 77027, ph 860-592-0089) is an M&A advisory / business broker for propane & delivered fuels industry — NOT a distributor. Should be removed from market map."
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "source": "https://www.agvalley.com/locations (StoreRocket API: https://storerocket.io/api/user/aKpDMEo4dR/locations)",
+  "scraped": "2026-04-11",
+  "locations": [
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Arapahoe Cardtrols",
+      "street": "1305 Chestnut St.",
+      "street2": "",
+      "city": "Arapahoe",
+      "state": "NE",
+      "zip": "68922",
+      "phone": "800-228-1452",
+      "email": "",
+      "lat": "40.3057877",
+      "lng": "-99.9083695",
+      "type": "Standard",
+      "filters": [
+        "Energy",
+        "Cardtrols"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Arapahoe Headquarters",
+      "street": "601 Main St.",
+      "street2": "",
+      "city": "Arapahoe",
+      "state": "NE",
+      "zip": "68922",
+      "phone": "308-962-3681",
+      "email": "info@agvalley.com",
+      "lat": "40.3020961",
+      "lng": "-99.8964163",
+      "type": "Standard",
+      "filters": [
+        "Agronomy",
+        "Feed",
+        "Grain",
+        "Energy"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Arapahoe Seed Warehouse",
+      "street": "901 Pine St.",
+      "street2": "",
+      "city": "Arapahoe",
+      "state": "NE",
+      "zip": "68922",
+      "phone": "308-962-7790",
+      "email": "",
+      "lat": "40.3005552",
+      "lng": "-99.9054046",
+      "type": "Standard",
+      "filters": [
+        "Agronomy"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Atlanta (Grain)",
+      "street": "33 US-34",
+      "street2": "",
+      "city": "Atlanta",
+      "state": "NE",
+      "zip": "68923",
+      "phone": "308-655-8756",
+      "email": "",
+      "lat": "40.3660067",
+      "lng": "-99.4728030",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Bartley (Elevator, Cardtrols)",
+      "street": "86 Commercial St.",
+      "street2": "PO Box 227",
+      "city": "Bartley",
+      "state": "NE",
+      "zip": "69020",
+      "phone": "308-692-3444",
+      "email": "",
+      "lat": "40.2477975",
+      "lng": "-100.3067693",
+      "type": "Standard",
+      "filters": [
+        "Grain",
+        "Rails",
+        "Energy",
+        "Cardtrols"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Big Springs (Agronomy, Grain)",
+      "street": "106 Pine St.",
+      "street2": "PO Box 476",
+      "city": "Big Springs",
+      "state": "NE",
+      "zip": "69122",
+      "phone": "308-889-3323",
+      "email": "",
+      "lat": "41.0600726",
+      "lng": "-102.0749672",
+      "type": "Standard",
+      "filters": [
+        "Agronomy",
+        "Feed",
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Cambridge (Agronomy, Feed, Service Station, Cardtrols)",
+      "street": "40827 Hwy 6 & 34",
+      "street2": "PO Box 370",
+      "city": "Cambridge",
+      "state": "NE",
+      "zip": "69022",
+      "phone": "308-697-4543",
+      "email": "",
+      "lat": "40.2782354",
+      "lng": "-100.1908578",
+      "type": "Standard",
+      "filters": [
+        "Agronomy",
+        "Feed",
+        "Energy",
+        "Service Station",
+        "Cardtrols"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Edison (Agronomy: Liquid/Dry, Elevator, Grain, Service Station, Cardtrols)",
+      "street": "72133 State Hwy 136",
+      "street2": "",
+      "city": "Edison",
+      "state": "NE",
+      "zip": "68936",
+      "phone": "308-927-3681",
+      "email": "",
+      "lat": "40.2815852",
+      "lng": "-99.7768788",
+      "type": "Standard",
+      "filters": [
+        "Agronomy",
+        "Grain",
+        "Rails",
+        "Energy",
+        "Service Station",
+        "Cardtrols"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Eustis (Grain, Feed)",
+      "street": "113 East Railroad",
+      "street2": "PO Box 149",
+      "city": "Eustis",
+      "state": "NE",
+      "zip": "69028",
+      "phone": "308-486-3221",
+      "email": "",
+      "lat": "40.6613611",
+      "lng": "-100.0288054",
+      "type": "Standard",
+      "filters": [
+        "Feed",
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Eustis East (Grain)",
+      "street": "41842 Hwy 23",
+      "street2": "",
+      "city": "Eustis",
+      "state": "NE",
+      "zip": "69028",
+      "phone": "308-486-5318",
+      "email": "",
+      "lat": "40.6611177",
+      "lng": "-100.0242925",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Holbrook (Grain)",
+      "street": "107 Tower St.",
+      "street2": "PO Box 167",
+      "city": "Holbrook",
+      "state": "NE",
+      "zip": "68948",
+      "phone": "308-493-5690",
+      "email": "",
+      "lat": "40.3029601",
+      "lng": "-100.0059193",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Indianola (Agronomy)",
+      "street": "302 4th St.",
+      "street2": "",
+      "city": "Indianola",
+      "state": "NE",
+      "zip": "69034",
+      "phone": "308-364-2214",
+      "email": "",
+      "lat": "40.2318249",
+      "lng": "-100.4178680",
+      "type": "Standard",
+      "filters": [
+        "Agronomy"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Indianola C-Store (C-Store, Service Station, Cardtrols)",
+      "street": "424 D St.",
+      "street2": "PO Box C",
+      "city": "Indianola",
+      "state": "NE",
+      "zip": "69034",
+      "phone": "308-364-2214",
+      "email": "",
+      "lat": "40.2340766",
+      "lng": "-100.4182312",
+      "type": "Standard",
+      "filters": [
+        "Energy",
+        "Service Station",
+        "Cardtrols",
+        "Convenience Store"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Jennings (Grain)",
+      "street": "2549 K-383",
+      "street2": "",
+      "city": "Jennings",
+      "state": "KS",
+      "zip": "67643",
+      "phone": "785-678-2200",
+      "email": "",
+      "lat": "39.6953837",
+      "lng": "-100.2659662",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Logan (Grain)",
+      "street": "109 County Road 10",
+      "street2": "",
+      "city": "Stapleton",
+      "state": "NE",
+      "zip": "69163",
+      "phone": "308-636-2929",
+      "email": "",
+      "lat": "41.3962759",
+      "lng": "-100.5216318",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Maywood (Agronomy)",
+      "street": "38442 Hwy 23",
+      "street2": "PO Box 85",
+      "city": "Maywood",
+      "state": "NE",
+      "zip": "69038",
+      "phone": "308-362-4443",
+      "email": "",
+      "lat": "40.6575876",
+      "lng": "-100.6221189",
+      "type": "Standard",
+      "filters": [
+        "Agronomy",
+        "Energy"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Maywood (Elevator, Feed Mill)",
+      "street": "106 Railroad St.",
+      "street2": "",
+      "city": "Maywood",
+      "state": "NE",
+      "zip": "69038",
+      "phone": "308-362-4243",
+      "email": "",
+      "lat": "40.6586280",
+      "lng": "-100.6197498",
+      "type": "Standard",
+      "filters": [
+        "Agronomy",
+        "Feed",
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "North Platte (Agronomy, Elevator, Feed)",
+      "street": "402 E 7th St.",
+      "street2": "PO Box 766",
+      "city": "North Platte",
+      "state": "NE",
+      "zip": "69101",
+      "phone": "308-534-7636",
+      "email": "",
+      "lat": "41.1401195",
+      "lng": "-100.7587249",
+      "type": "Standard",
+      "filters": [
+        "Agronomy",
+        "Feed",
+        "Grain",
+        "Rails"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Norton (Agronomy)",
+      "street": "10380 Hwy US-283",
+      "street2": "",
+      "city": "Norton",
+      "state": "KS",
+      "zip": "67654",
+      "phone": "785-877-5900",
+      "email": "",
+      "lat": "39.8510028",
+      "lng": "-99.8892420",
+      "type": "Standard",
+      "filters": [
+        "Agronomy"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Norton (Elevator, Feed Mill)",
+      "street": "314 W North St.",
+      "street2": "",
+      "city": "Norton",
+      "state": "KS",
+      "zip": "67654",
+      "phone": "785-877-3881",
+      "email": "",
+      "lat": "39.8312972",
+      "lng": "-99.8919884",
+      "type": "Standard",
+      "filters": [
+        "Feed",
+        "Grain",
+        "Rails"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Norton (Grain)",
+      "street": "East 17870, Rd L",
+      "street2": null,
+      "city": "Norton",
+      "state": "KS",
+      "zip": "67654",
+      "phone": "785-877-5131",
+      "email": null,
+      "lat": "39.8401767",
+      "lng": "-99.8580219",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Norton Cardtrols",
+      "street": "201 W Lincoln St.",
+      "street2": "",
+      "city": "Norton",
+      "state": "KS",
+      "zip": "67654",
+      "phone": "800-228-1452",
+      "email": "",
+      "lat": "39.8303400",
+      "lng": "-99.8905776",
+      "type": "Standard",
+      "filters": [
+        "Energy",
+        "Cardtrols"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Norton East (Grain)",
+      "street": "E 17870 Road L",
+      "street2": "",
+      "city": "Norton",
+      "state": "KS",
+      "zip": "67654",
+      "phone": "785-877-5131",
+      "email": "",
+      "lat": "39.8401767",
+      "lng": "-99.8580219",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Orleans (Grain)",
+      "street": "10876 Hwy 136",
+      "street2": "",
+      "city": "Orleans",
+      "state": "NE",
+      "zip": "68966",
+      "phone": "308-472-4075",
+      "email": "",
+      "lat": "40.1355349",
+      "lng": "-99.4688309",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Oxford (Feed Store)",
+      "street": "101 S Railway St.",
+      "street2": "PO Box 335",
+      "city": "Oxford",
+      "state": "NE",
+      "zip": "68967",
+      "phone": "308-824-3431",
+      "email": "",
+      "lat": "40.2496765",
+      "lng": "-99.6330994",
+      "type": "Standard",
+      "filters": [
+        "Feed"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Wilsonville Cardtrols",
+      "street": "41276 NE-89",
+      "street2": "",
+      "city": "Wilsonville",
+      "state": "NE",
+      "zip": "69046",
+      "phone": "800-228-1452",
+      "email": "",
+      "lat": "40.1076506",
+      "lng": "-100.1018234",
+      "type": "Standard",
+      "filters": [
+        "Energy",
+        "Cardtrols"
+      ]
+    },
+    {
+      "company": "Ag Valley Cooperative",
+      "name": "Wilsonville Elevator",
+      "street": "70947 Drive 413",
+      "street2": "PO Box 162",
+      "city": "Wilsonville",
+      "state": "NE",
+      "zip": "69046",
+      "phone": "308-349-9001",
+      "email": "",
+      "lat": "40.1176015",
+      "lng": "-100.0896966",
+      "type": "Standard",
+      "filters": [
+        "Grain"
+      ]
+    }
+  ]
+}

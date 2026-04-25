@@ -1,0 +1,81 @@
+{
+  "co_alliance_propane": {
+    "id": "co_alliance_propane",
+    "legacy_brand": "Co-Alliance LLP",
+    "merged_into": "Keystone Cooperative (2022)",
+    "source_urls": [
+      "https://www.keystonecoop.com/seriouslylocal",
+      "https://www.keystonecoop.com/locations/"
+    ],
+    "notes": "Co-Alliance historically operated in central/northern Indiana, southern Michigan, and western Ohio. Merged with Ceres Solutions in 2022 to form Keystone Cooperative. Locations assigned by historic geographic footprint: all MI and OH propane sites, plus central/northern IN (Tipton, Lebanon, Martinsville, Noblesville, Stilesville, Shelbyville, Wabash, Rochester, Logansport, Plymouth, Argos, Decatur, Angola, Monroe, Bringhurst, Swayzee, Wilkinson, Valparaiso, Rolling Prairie, Goshen). Co-Alliance HQ was Avon, IN.",
+    "locations_found": [
+      {"name": "Avon (Headquarters)", "address": "5250 E US Hwy 36", "city": "Avon", "state": "IN", "zip": "46123", "phone": "800-525-0272", "services": "Headquarters"},
+      {"name": "Angola", "address": "610 W Broad", "city": "Angola", "state": "IN", "zip": "46703", "phone": "260-665-7427", "services": "Propane"},
+      {"name": "Argos", "address": "15124 N Michigan St", "city": "Argos", "state": "IN", "zip": "46501", "phone": "574-780-0025", "services": "Agronomy, Propane"},
+      {"name": "Bringhurst", "address": "27 W 250 S", "city": "Bringhurst", "state": "IN", "zip": "46913", "phone": "574-967-4168", "services": "Agronomy, Refined Fuels, Propane"},
+      {"name": "Buchanan", "address": "16724 Bakertown Rd", "city": "Buchanan", "state": "MI", "zip": "49107", "phone": "269-695-6823", "services": "Agronomy, Refined Fuels, Propane"},
+      {"name": "Lena (Conover)", "address": "7436 N Bollinger Rd", "city": "Conover", "state": "OH", "zip": "45317", "phone": "937-368-3856", "services": "Agronomy, Propane"},
+      {"name": "Decatur", "address": "1966 W State Rd 224", "city": "Decatur", "state": "IN", "zip": "46733", "phone": "260-724-2169", "services": "Agronomy, Propane"},
+      {"name": "Berrien (Eau Claire)", "address": "7937 E Main St", "city": "Eau Claire", "state": "MI", "zip": "49111", "phone": "269-461-4222", "services": "Gas Station, Propane, Refined Fuels"},
+      {"name": "Goshen Energy", "address": "806 E Logan St", "city": "Goshen", "state": "IN", "zip": "46528", "phone": "574-533-4131", "services": "Gas Station, Propane, Refined Fuels"},
+      {"name": "Greenville", "address": "619 Sater St", "city": "Greenville", "state": "OH", "zip": "45331", "phone": "937-548-1122", "services": "Gas Station, Refined Fuels, Propane"},
+      {"name": "McGonigle (Hamilton OH)", "address": "2273 Millville Oxford Road", "city": "Hamilton", "state": "OH", "zip": "45013", "phone": "513-863-1414", "services": "Propane, Refined Fuels"},
+      {"name": "Hamilton Propane (MI)", "address": "4670 E Washington Street", "city": "Hamilton", "state": "MI", "zip": "49419", "phone": "888-427-2968", "services": "Propane"},
+      {"name": "Plevna (Kokomo)", "address": "7983 400 N", "city": "Kokomo", "state": "IN", "zip": "46901", "phone": "574-753-3673", "services": "Propane"},
+      {"name": "Indian Trails (Lebanon)", "address": "7250 E State Rd 47", "city": "Lebanon", "state": "IN", "zip": "46052", "phone": "765-325-2800", "services": "Propane"},
+      {"name": "Lebanon", "address": "400 S Coombs St", "city": "Lebanon", "state": "IN", "zip": "46052", "phone": "765-482-5600", "services": "Propane"},
+      {"name": "Logansport", "address": "2472 W 150 N", "city": "Logansport", "state": "IN", "zip": "46947", "phone": "574-753-3673", "services": "Propane"},
+      {"name": "Martinsville", "address": "50 State Rd 39 Bypass", "city": "Martinsville", "state": "IN", "zip": "46151", "phone": "765-342-3335", "services": "Propane"},
+      {"name": "Monroe", "address": "221 W 100 S", "city": "Monroe", "state": "IN", "zip": "46772", "phone": "260-692-6111", "services": "Propane"},
+      {"name": "Noblesville", "address": "16222 Allisonville Rd", "city": "Noblesville", "state": "IN", "zip": "46060", "phone": "317-773-0870", "services": "Propane"},
+      {"name": "Plymouth", "address": "11699 Lincoln Highway", "city": "Plymouth", "state": "IN", "zip": "46563", "phone": "574-936-2431", "services": "Propane"},
+      {"name": "Richmond", "address": "1435 NW 5th St", "city": "Richmond", "state": "IN", "zip": "47374", "phone": "765-966-6082", "services": "Propane"},
+      {"name": "Rochester", "address": "1496 N Meridian Rd", "city": "Rochester", "state": "IN", "zip": "46975", "phone": "574-223-2156", "services": "Propane"},
+      {"name": "Rolling Prairie", "address": "310 S Prairie St", "city": "Rolling Prairie", "state": "IN", "zip": "46371", "phone": "219-778-2015", "services": "Propane"},
+      {"name": "Schoolcraft", "address": "16721 S US 131", "city": "Schoolcraft", "state": "MI", "zip": "49087", "phone": "269-679-5226", "services": "Propane"},
+      {"name": "Shelbyville", "address": "1340 N Michigan Rd", "city": "Shelbyville", "state": "IN", "zip": "46176", "phone": "317-392-2446", "services": "Propane"},
+      {"name": "Stilesville", "address": "10260 E SR 240", "city": "Stilesville", "state": "IN", "zip": "46180", "phone": "317-539-2525", "services": "Propane"},
+      {"name": "Swayzee", "address": "0691 S 800 W", "city": "Swayzee", "state": "IN", "zip": "46986", "phone": "765-675-7529", "services": "Propane"},
+      {"name": "Tipton", "address": "1005 N Berryman Pike", "city": "Tipton", "state": "IN", "zip": "46072", "phone": "765-675-7529", "services": "Propane"},
+      {"name": "Traverse City", "address": "5915 Denali Drive", "city": "Traverse City", "state": "MI", "zip": "49684", "phone": "800-435-5143", "services": "Propane"},
+      {"name": "Valparaiso", "address": "403 US 30", "city": "Valparaiso", "state": "IN", "zip": "46383", "phone": "219-462-9049", "services": "Propane"},
+      {"name": "Wabash", "address": "2025 S Wabash St", "city": "Wabash", "state": "IN", "zip": "46992", "phone": "260-563-9541", "services": "Propane"},
+      {"name": "Junction (Wilkinson)", "address": "6250 E State Rd 234", "city": "Wilkinson", "state": "IN", "zip": "46186", "phone": "317-326-2511", "services": "Propane"},
+      {"name": "Zanesville", "address": "975 Malinda St", "city": "Zanesville", "state": "OH", "zip": "43701", "phone": "740-452-6326", "services": "Propane"}
+    ]
+  },
+  "ceres_solutions": {
+    "id": "ceres_solutions",
+    "legacy_brand": "Ceres Solutions LLP",
+    "merged_into": "Keystone Cooperative (2022)",
+    "source_urls": [
+      "https://www.keystonecoop.com/seriouslylocal",
+      "https://www.keystonecoop.com/locations/",
+      "https://fuelwonk.com/vendor/ceres-solutions",
+      "https://www.yelp.com/biz/ceres-solutions-crawfordsville"
+    ],
+    "notes": "Ceres Solutions formed 2007 from Westland Co-op (Crawfordsville), Growers Co-op (Terre Haute), and AgroKey Co-op (Rensselaer). Historic footprint: western Indiana from Lake Michigan to Ohio River — Crawfordsville, Lafayette, Terre Haute, Vincennes, Boswell, Sullivan, State Line, Rensselaer, Bainbridge, Brazil, Clay City. Confirmed Ceres legacy via Yelp/BBB/FuelWonk: 2112 Indianapolis Rd Crawfordsville, 3354 US 52 S Lafayette, 2802 W SR 352 Boswell, 2988 W Old 54 Sullivan, 7544 S 1050 W State Line. Merged into Keystone Cooperative in 2022.",
+    "locations_found": [
+      {"name": "Crawfordsville (HQ)", "address": "2112 Indianapolis Road", "city": "Crawfordsville", "state": "IN", "zip": "47933", "phone": "765-362-6108", "services": "Energy, Gas Station, Propane"},
+      {"name": "Whitesville", "address": "3997 E Ladoga Rd", "city": "Crawfordsville", "state": "IN", "zip": "47933", "phone": "765-364-1105", "services": "Agronomy, Fertilizer"},
+      {"name": "Bainbridge", "address": "6922 N County Rd 100 E", "city": "Bainbridge", "state": "IN", "zip": "46105", "phone": "765-522-2800", "services": "Agronomy, Refined Fuels, Propane, Swine/Animal Nutrition"},
+      {"name": "Boswell", "address": "2802 W St Rd 352", "city": "Boswell", "state": "IN", "zip": "47921", "phone": "765-869-5219", "services": "Agronomy, Propane"},
+      {"name": "Ade (Brook)", "address": "2887 W 883 S", "city": "Brook", "state": "IN", "zip": "47922", "phone": "219-275-2732", "services": "Agronomy, Propane"},
+      {"name": "Chalmers", "address": "5774 S State Rd 43", "city": "Chalmers", "state": "IN", "zip": "47929", "phone": "219-984-5353", "services": "Gas Station, Propane, Refined Fuels"},
+      {"name": "Kingman", "address": "18 W Main St", "city": "Kingman", "state": "IN", "zip": "47952", "phone": "765-397-3342", "services": "Propane"},
+      {"name": "Lafayette", "address": "3354 US 52 South", "city": "Lafayette", "state": "IN", "zip": "47905", "phone": "765-477-6542", "services": "Propane"},
+      {"name": "Quincy", "address": "2151 Quincy Rd", "city": "Quincy", "state": "IN", "zip": "47456", "phone": "765-522-2800", "services": "Propane"},
+      {"name": "Rensselaer", "address": "1466 N McKinley Ave", "city": "Rensselaer", "state": "IN", "zip": "47978", "phone": "219-866-2801", "services": "Propane"},
+      {"name": "Terre Haute", "address": "2500 S 13th St", "city": "Terre Haute", "state": "IN", "zip": "47802", "phone": "812-235-8123", "services": "Propane"},
+      {"name": "Vincennes", "address": "3002 Decker Rd", "city": "Vincennes", "state": "IN", "zip": "47591", "phone": "812-882-5000", "services": "Propane"},
+      {"name": "Sullivan", "address": "2988 W Old 54", "city": "Sullivan", "state": "IN", "zip": "47882", "phone": "812-268-4313", "services": "Propane"},
+      {"name": "State Line", "address": "7544 S 1050 W", "city": "State Line", "state": "IN", "zip": "47982", "phone": "765-385-2333", "services": "Propane"},
+      {"name": "Brazil North", "address": "996 W CR 1200 N", "city": "Brazil", "state": "IN", "zip": "47834", "phone": "812-443-6681", "services": "Agronomy, Propane"},
+      {"name": "Clay City", "address": "209 W 8th St", "city": "Clay City", "state": "IN", "zip": "47841", "phone": "812-939-2121", "services": "Agronomy, Propane"},
+      {"name": "Farmersburg", "address": "500 N 2nd Ave", "city": "Farmersburg", "state": "IN", "zip": "47850", "phone": "812-696-2156", "services": "Agronomy"},
+      {"name": "Francesville", "address": "3435 S 1450 West", "city": "Francesville", "state": "IN", "zip": "47946", "phone": "219-567-9171", "services": "Agronomy"},
+      {"name": "Goodland", "address": "203 S Benton St", "city": "Goodland", "state": "IN", "zip": "47948", "phone": "219-297-4242", "services": "Agronomy"},
+      {"name": "Boswell Energy", "address": "2802 W State Rd 352", "city": "Boswell", "state": "IN", "zip": "47921", "phone": "765-869-5219", "services": "Propane (FuelWonk listing 47921)"}
+    ]
+  }
+}

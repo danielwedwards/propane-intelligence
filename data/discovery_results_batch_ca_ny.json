@@ -1,0 +1,911 @@
+{
+  "batch": "ca_ny",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Valley Propane of Bakersfield",
+      "hqCity": "Bakersfield",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bakersfield",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Full service, locally owned and operated propane dealer serving the Bakersfield area in Kern County."
+    },
+    {
+      "name": "Lava Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Established in 2007, locally owned and operated propane dealer serving central California."
+    },
+    {
+      "name": "49R Propane",
+      "hqCity": "Placerville",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Placerville",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local El Dorado County family owned residential propane company supplying western El Dorado County."
+    },
+    {
+      "name": "All Service Propane",
+      "hqCity": "Anderson",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Anderson",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned propane dealer serving Shasta County and northern California communities."
+    },
+    {
+      "name": "Sierra Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "https://sierrapropane.net/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Delivers propane services for homes, businesses, and farms in the Sierra Nevada region."
+    },
+    {
+      "name": "Northern Sierra Propane",
+      "hqCity": "Grass Valley",
+      "hqState": "CA",
+      "website": "https://www.northernsierrapropane.com/",
+      "knownLocations": [
+        {
+          "city": "Grass Valley",
+          "state": "CA",
+          "street": "13121 John Bauer Ave"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Founded in 1990 by Edward Rogers, locally operated propane dealer serving Nevada and Placer counties."
+    },
+    {
+      "name": "Wildhorse Propane & Appliances",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "https://wildhorsepropane.net/",
+      "knownLocations": [
+        {
+          "city": "Paso Robles",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Atascadero",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family owned business since 1980 serving Monterey County and North San Luis Obispo County."
+    },
+    {
+      "name": "Redwood Coast Fuels",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ukiah",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Santa Rosa",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Eureka",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Fuel, propane and lubricants delivery across Sonoma, Mendocino, Lake and Humboldt counties."
+    },
+    {
+      "name": "Keene Gas",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Eureka",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Fortuna",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family run business, Humboldt and Trinity County propane provider for over 70 years."
+    },
+    {
+      "name": "Sequoia Gas Company",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "https://sequoiagas.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane supplier serving Humboldt and North Coast California regions."
+    },
+    {
+      "name": "Eastern Sierra Propane",
+      "hqCity": "Bishop",
+      "hqState": "CA",
+      "website": "https://www.easternsierrapropane.com",
+      "knownLocations": [
+        {
+          "city": "Bishop",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Big Pine",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Mammoth Lakes",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Established April 1993, serves Bishop, Big Pine, Mammoth Lakes, and Lakeshore in the eastern Sierra."
+    },
+    {
+      "name": "Ace Propane",
+      "hqCity": "Grass Valley",
+      "hqState": "CA",
+      "website": "https://www.acepropane.net/",
+      "knownLocations": [
+        {
+          "city": "Grass Valley",
+          "state": "CA",
+          "street": "720 S Auburn St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Established by local Grass Valley residents as an alternative to larger gas companies."
+    },
+    {
+      "name": "Windmill Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Modesto",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned and operated full-service propane company with owners active in day-to-day operations in Central Valley."
+    },
+    {
+      "name": "Souza Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Modesto",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Turlock",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Founded by John and Zelda Souza, serving Stanislaus, San Joaquin, Merced, and Calaveras counties."
+    },
+    {
+      "name": "Cross Petroleum",
+      "hqCity": "Weaverville",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weaverville",
+          "state": "CA",
+          "street": "102 Washington Street"
+        },
+        {
+          "city": "Mt Shasta",
+          "state": "CA",
+          "street": "1012 North Mt Shasta Blvd"
+        },
+        {
+          "city": "Redding",
+          "state": "CA",
+          "street": "5292 Caterpillar Rd"
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane and petroleum distributor with locations across far Northern California."
+    },
+    {
+      "name": "Tri-Flame Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Chico",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serves Butte, Glenn and Tehama counties with propane delivery across numerous small towns."
+    },
+    {
+      "name": "K-Gas",
+      "hqCity": "Oroville",
+      "hqState": "CA",
+      "website": "https://www.kgaspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Oroville",
+          "state": "CA",
+          "street": "2770 Feather River Blvd"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serving Butte County and surrounding areas since 1986 with propane delivery to Oroville, Paradise, Gridley, and nearby communities."
+    },
+    {
+      "name": "Reliance Propane Service",
+      "hqCity": "Paradise",
+      "hqState": "CA",
+      "website": "https://reliance-propane.com/",
+      "knownLocations": [
+        {
+          "city": "Paradise",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Has served Butte County and surrounding areas for over 30 years, including Paradise, Magalia, Chico, Oroville."
+    },
+    {
+      "name": "Browns Gas Company",
+      "hqCity": "Marysville",
+      "hqState": "CA",
+      "website": "https://www.brownsgasco.com",
+      "knownLocations": [
+        {
+          "city": "Marysville",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer serving Marysville, Yuba City, Colusa area, voted best of Yuba-Sutter for 19 years."
+    },
+    {
+      "name": "Hunt and Sons",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "http://www.huntandsons.net/",
+      "knownLocations": [
+        {
+          "city": "Portola",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Quincy",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Chico",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Colusa",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Yuba City",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and fuel distributor serving Plumas, Sierra, Butte, Colusa, Sutter, and Nevada counties."
+    },
+    {
+      "name": "Truckee Tahoe Propane",
+      "hqCity": "Truckee",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Truckee",
+          "state": "CA",
+          "street": "11380 Donner Pass Rd"
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane dealer emphasizing quality and reliability serving the Truckee-Tahoe area (now affiliated with AmeriGas)."
+    },
+    {
+      "name": "BSE Rental and Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family owned equipment rental, sales and construction supply company founded in 1952 serving Central California, also offers propane."
+    },
+    {
+      "name": "Clark Energy",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://clark-energy.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local family-owned full-service fuel delivery provider established 2010 in Central Adirondacks of New York."
+    },
+    {
+      "name": "Norco Propane Energy Services",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://norcopropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned and operated full-service regional propane supplier in Western New York."
+    },
+    {
+      "name": "Wendts Propane and Oil",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "http://www.wendtspropaneandoil.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and fuel delivery company serving Western NY."
+    },
+    {
+      "name": "Twin Forks Propane",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://twinforkspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Riverhead",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned and operated serving The Hamptons, Montauk, Riverhead, Greenport and surrounding Eastern Long Island."
+    },
+    {
+      "name": "Great White Propane",
+      "hqCity": "Riverhead",
+      "hqState": "NY",
+      "website": "https://greatwhitepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Riverhead",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Full service propane company, family owned and operated in Riverhead serving Long Island."
+    },
+    {
+      "name": "Propane Depot",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://propanedepot.com/",
+      "knownLocations": [
+        {
+          "city": "Riverhead",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local family owned propane dealer serving Montauk, Riverhead, Southampton and other Long Island areas."
+    },
+    {
+      "name": "Rinker Oil and Propane",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://www.rinkeroilandpropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and heating oil dealer serving the Southern Tier of New York."
+    },
+    {
+      "name": "Scott Smith and Son",
+      "hqCity": "Binghamton",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Binghamton",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local propane dealer serving the Binghamton area in the Southern Tier."
+    },
+    {
+      "name": "Endicott Agway",
+      "hqCity": "Endicott",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Endicott",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Agway farm cooperative location providing propane to the Southern Tier / Binghamton area."
+    },
+    {
+      "name": "Warners Gas Service",
+      "hqCity": "Binghamton",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Binghamton",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local propane dealer serving the Binghamton and Broome County area."
+    },
+    {
+      "name": "Phillips Fuel",
+      "hqCity": "Binghamton",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Binghamton",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent fuel and propane dealer serving the Binghamton area."
+    },
+    {
+      "name": "Reinhardt Home Heating",
+      "hqCity": "Oneonta",
+      "hqState": "NY",
+      "website": "https://www.reinhardthomeheating.com/",
+      "knownLocations": [
+        {
+          "city": "Oneonta",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Since 1937, serves Oneonta, Otego, Milford, Laurens, Davenport, Worcester, Cooperstown with heating oil and propane."
+    },
+    {
+      "name": "Ace Oil and Propane",
+      "hqCity": "Kingston",
+      "hqState": "NY",
+      "website": "https://aceoilandpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Kingston",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer serving Kingston and Ulster County including Rhinebeck and Red Hook."
+    },
+    {
+      "name": "Van Etten Energy Systems",
+      "hqCity": "Monticello",
+      "hqState": "NY",
+      "website": "https://www.vanettenoil.com/",
+      "knownLocations": [
+        {
+          "city": "Monticello",
+          "state": "NY",
+          "street": "79 Saint John St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Over 70 years of experience serving Hudson Valley and Catskill region homeowners and businesses."
+    },
+    {
+      "name": "Shaw Propane",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://shawpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Queensbury",
+          "state": "NY",
+          "street": ""
+        },
+        {
+          "city": "Saratoga Springs",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane, heating oil and kerosene delivery in Warren and Saratoga counties with multiple cylinder exchange locations."
+    },
+    {
+      "name": "First Fuel and Propane",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://firstfuelandpropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned business since 1993 serving Saratoga, Warren, Columbia and Dutchess counties in upstate New York."
+    },
+    {
+      "name": "Main-Care Energy",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://www.maincareenergy.com/",
+      "knownLocations": [
+        {
+          "city": "Glens Falls",
+          "state": "NY",
+          "street": ""
+        },
+        {
+          "city": "Lake George",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Since 1930, heating fuel and propane delivery services in Lake George, Glens Falls and greater Albany region."
+    },
+    {
+      "name": "Galway Co-op",
+      "hqCity": "Galway",
+      "hqState": "NY",
+      "website": "https://galwayco-op.com/",
+      "knownLocations": [
+        {
+          "city": "Galway",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Cooperative propane buying group servicing multiple New York counties through Ferrellgas."
+    },
+    {
+      "name": "Phelps Sungas",
+      "hqCity": "Canandaigua",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Canandaigua",
+          "state": "NY",
+          "street": ""
+        },
+        {
+          "city": "Geneva",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Since 1939 serving propane to the Finger Lakes region including Geneva, Canandaigua, Penn Yan."
+    },
+    {
+      "name": "E and V Energy",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://eandvenergy.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Fuel and propane delivery to homes, businesses, and farms throughout the Finger Lakes and Central/North NY."
+    },
+    {
+      "name": "Pinnacle Rental Centers",
+      "hqCity": "Corning",
+      "hqState": "NY",
+      "website": "https://www.pinnaclerentalcenters.com/",
+      "knownLocations": [
+        {
+          "city": "Corning",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane sales and refills serving Bath, Corning, Hornell, Hammondsport, Naples, Penn Yan, Watkins Glen."
+    },
+    {
+      "name": "Valley Energy",
+      "hqCity": "Dansville",
+      "hqState": "NY",
+      "website": "https://www.valley-fuels.com/",
+      "knownLocations": [
+        {
+          "city": "Dansville",
+          "state": "NY",
+          "street": "10121 Poags Hole Road"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned propane energy company serving Allegany, Genesee, Livingston, Monroe, Ontario, Orleans, Steuben, Wayne, Wyoming, and Yates counties."
+    },
+    {
+      "name": "Little Falls Fuel",
+      "hqCity": "Little Falls",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Little Falls",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Provides propane and fuel service to the Mohawk Valley with competitive rates."
+    },
+    {
+      "name": "Griffs Propane",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://www.griffspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Rome",
+          "state": "NY",
+          "street": ""
+        },
+        {
+          "city": "Utica",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane company with multiple locations including Rome and Utica in Central New York / Mohawk Valley."
+    },
+    {
+      "name": "Valley Propane and Fuels",
+      "hqCity": "Hornell",
+      "hqState": "NY",
+      "website": "https://www.valley-fuels.com/hornell-ny",
+      "knownLocations": [
+        {
+          "city": "Hornell",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer serving Hornell, Bath, Wellsville and Steuben County in the Southern Tier."
+    },
+    {
+      "name": "Quinlans Gas",
+      "hqCity": "Poughkeepsie",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Poughkeepsie",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serves Poughkeepsie, Millbrook, Pawling, Rhinebeck and Dutchess County with propane delivery."
+    },
+    {
+      "name": "Depew Energy",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://www.depewoil.com/",
+      "knownLocations": [
+        {
+          "city": "Poughkeepsie",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and heating oil delivery in Dutchess County including Poughkeepsie, Wappingers Falls, Hyde Park."
+    },
+    {
+      "name": "Durkin Water and Propane",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://www.durkinpropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family business serving propane needs of homes and businesses for almost 100 years in Lower Dutchess, Putnam and Westchester counties."
+    },
+    {
+      "name": "Stewart P Wilson Lakes Gas",
+      "hqCity": "Penn Yan",
+      "hqState": "NY",
+      "website": "https://www.stewartpwilsoninc.com/",
+      "knownLocations": [
+        {
+          "city": "Penn Yan",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and Lakes Gas dealer in Penn Yan serving the Yates County / Finger Lakes region."
+    },
+    {
+      "name": "J and R Fuel",
+      "hqCity": "Saratoga Springs",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Saratoga Springs",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local propane and fuel dealer serving the Saratoga Springs area in upstate NY."
+    },
+    {
+      "name": "Keene Gas NY",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dunkirk",
+          "state": "NY",
+          "street": ""
+        },
+        {
+          "city": "Fredonia",
+          "state": "NY",
+          "street": ""
+        },
+        {
+          "city": "Mayville",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer serving Dunkirk, Fredonia, Mayville area in Chautauqua County with 24 hour emergency service."
+    },
+    {
+      "name": "Sweetwater Propane",
+      "hqCity": "Geneva",
+      "hqState": "NY",
+      "website": "https://www.sweetwaterpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Geneva",
+          "state": "NY",
+          "street": "1112 NY-5 and 20"
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane supplier serving the Canandaigua, Geneva and Finger Lakes region of New York."
+    }
+  ]
+}

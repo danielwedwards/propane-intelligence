@@ -1,0 +1,152 @@
+[
+  {
+    "id": "palmetto_propane_fuels_ice",
+    "name": "Palmetto Propane, Fuels, & Ice",
+    "state": "GA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Southeast regional fuels dealer"
+  },
+  {
+    "id": "affordable_propane_arkansas",
+    "name": "Affordable Propane Arkansas",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  },
+  {
+    "id": "mountain_country_propane",
+    "name": "Mountain Country Propane",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Mountain region AR operator"
+  },
+  {
+    "id": "tumbleweed_propane_inc",
+    "name": "Tumbleweed Propane, Inc.",
+    "state": "WY",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WY operator"
+  },
+  {
+    "id": "red_flame_oil_propane",
+    "name": "Red Flame Oil & Propane",
+    "state": "WV",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WV operator"
+  },
+  {
+    "id": "west_plains_propane",
+    "name": "West Plains Propane",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  },
+  {
+    "id": "south_fork_propane",
+    "name": "South Fork Propane",
+    "state": "CO",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "South Fork, CO local operator"
+  },
+  {
+    "id": "duncan_service_inc",
+    "name": "Duncan Service Inc",
+    "state": "WV",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WV operator"
+  },
+  {
+    "id": "northwest_propane",
+    "name": "Northwest Propane",
+    "state": "WA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WA/PNW operator"
+  },
+  {
+    "id": "swva_gas_service",
+    "name": "SWVA Gas Service",
+    "state": "VA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Southwest VA operator"
+  },
+  {
+    "id": "queen_city_gas",
+    "name": "Queen City Gas",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  },
+  {
+    "id": "ape_fuels_inc",
+    "name": "APE Fuels Inc",
+    "state": "AZ",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small AZ fuels operator"
+  },
+  {
+    "id": "l_l_propane",
+    "name": "L & L Propane",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WI operator"
+  },
+  {
+    "id": "brummer_co",
+    "name": "Brummer Co",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WI operator"
+  },
+  {
+    "id": "samco",
+    "name": "Samco",
+    "state": "AZ",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  }
+]

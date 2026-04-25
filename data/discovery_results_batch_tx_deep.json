@@ -1,0 +1,1101 @@
+{
+  "batch": "tx_deep_dive",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Eagle Fuel TX",
+      "hqCity": "Tyler",
+      "hqState": "TX",
+      "website": "https://eaglepropaneandfuelstx.com/",
+      "knownLocations": [
+        {
+          "city": "Tyler",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned bulk fuel and propane in Tyler, Mineola, Odessa and Pecos."
+    },
+    {
+      "name": "Legacy Fuels",
+      "hqCity": "Lubbock",
+      "hqState": "TX",
+      "website": "https://www.legacy-fuels.com/",
+      "knownLocations": [
+        {
+          "city": "Lubbock",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane provider serving Lubbock and surrounding West Texas."
+    },
+    {
+      "name": "WTG Fuels",
+      "hqCity": "Levelland",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Levelland",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane/fuel in Levelland and South Plains."
+    },
+    {
+      "name": "Tucker Oil Co",
+      "hqCity": "Levelland",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Levelland",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and oil dealer in Levelland area."
+    },
+    {
+      "name": "M and M Fuels",
+      "hqCity": "Levelland",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Levelland",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer in the Levelland area."
+    },
+    {
+      "name": "Center Gas",
+      "hqCity": "Levelland",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Levelland",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and gas dealer in Levelland area."
+    },
+    {
+      "name": "Schneider Distributing Company Inc",
+      "hqCity": "San Angelo",
+      "hqState": "TX",
+      "website": "https://www.schneiderpropane.com/",
+      "knownLocations": [
+        {
+          "city": "San Angelo",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Concho Valley propane, gasoline and diesel distributor with retail station in San Angelo."
+    },
+    {
+      "name": "Concho Propane Company",
+      "hqCity": "San Angelo",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "San Angelo",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane supplier serving San Angelo and the Concho Valley."
+    },
+    {
+      "name": "Fox Propane",
+      "hqCity": "San Angelo",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "San Angelo",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane supplier serving San Angelo."
+    },
+    {
+      "name": "The Propane Station",
+      "hqCity": "Abilene",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Abilene",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane dealer in Abilene."
+    },
+    {
+      "name": "West Texas Gas Fuels",
+      "hqCity": "Fort Stockton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fort Stockton",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane and gas company serving Pecos County including Fort Stockton."
+    },
+    {
+      "name": "Double R Welding",
+      "hqCity": "Fort Stockton",
+      "hqState": "TX",
+      "website": "https://www.doublerwelding.com/",
+      "knownLocations": [
+        {
+          "city": "Fort Stockton",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Welding supply and propane filling in Fort Stockton."
+    },
+    {
+      "name": "Seminole Butane Company",
+      "hqCity": "Seminole",
+      "hqState": "TX",
+      "website": "https://seminolebutanetx.com/",
+      "knownLocations": [
+        {
+          "city": "Seminole",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family West Texas propane and bulk fuel in Seminole."
+    },
+    {
+      "name": "Boyds Equipment",
+      "hqCity": "Amarillo",
+      "hqState": "TX",
+      "website": "https://www.boydsequipment.com/",
+      "knownLocations": [
+        {
+          "city": "Amarillo",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Amarillo propane supplier for 80+ years serving Amarillo and Canyon."
+    },
+    {
+      "name": "Haigood and Campbell LLC",
+      "hqCity": "Weatherford",
+      "hqState": "TX",
+      "website": "https://www.haigood-campbell.com/",
+      "knownLocations": [
+        {
+          "city": "Weatherford",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane dealer serving Weatherford, Fort Worth, Wichita Falls since 1947."
+    },
+    {
+      "name": "Heine Propane",
+      "hqCity": "Weatherford",
+      "hqState": "TX",
+      "website": "https://www.heinepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Weatherford",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned propane in Weatherford serving Parker County."
+    },
+    {
+      "name": "Decatur Bowie Propane",
+      "hqCity": "Decatur",
+      "hqState": "TX",
+      "website": "https://dbpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Decatur",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "North Texas propane gas delivery in Decatur and Bowie area."
+    },
+    {
+      "name": "Welch Gas",
+      "hqCity": "Mt. Pleasant",
+      "hqState": "TX",
+      "website": "https://welchgas.com/",
+      "knownLocations": [
+        {
+          "city": "Mt. Pleasant",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane since 1949; offices in Mt. Pleasant, New Boston, Daingerfield."
+    },
+    {
+      "name": "Texarkana Propane",
+      "hqCity": "Texarkana",
+      "hqState": "TX",
+      "website": "https://texarkanapropane.com/",
+      "knownLocations": [
+        {
+          "city": "Texarkana",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local propane dealer serving Texarkana."
+    },
+    {
+      "name": "Fricks Butane Gas Company",
+      "hqCity": "Texarkana",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Texarkana",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned butane and propane dealer in Texarkana region."
+    },
+    {
+      "name": "Keene Gas",
+      "hqCity": "Texarkana",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Texarkana",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer in Texarkana area."
+    },
+    {
+      "name": "Red River Farm Coop",
+      "hqCity": "Gainesville",
+      "hqState": "TX",
+      "website": "https://www.redriverfarmcoop.com/",
+      "knownLocations": [
+        {
+          "city": "Gainesville",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "North Texas farmer-owned cooperative offering propane and tanks since 1964."
+    },
+    {
+      "name": "Kelly Propane and Fuel",
+      "hqCity": "Holliday",
+      "hqState": "TX",
+      "website": "https://kellypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Holliday",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane/fuel dealer 60+ years in Wichita Falls, Holliday, Vernon, Burkburnett."
+    },
+    {
+      "name": "Dixie LP-Gas",
+      "hqCity": "Whitney",
+      "hqState": "TX",
+      "website": "https://dixielpgas.com/",
+      "knownLocations": [
+        {
+          "city": "Whitney",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane/fuel delivery in Hillsboro, Whitney, Central Texas."
+    },
+    {
+      "name": "Hilco United Service Inc",
+      "hqCity": "Whitney",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Whitney",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane supplier in Whitney area."
+    },
+    {
+      "name": "Cooper Propane",
+      "hqCity": "Winnsboro",
+      "hqState": "TX",
+      "website": "https://www.cooperpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Winnsboro",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned since 1947 serving Wood, Hopkins, Franklin, Camp, Titus, Upshur, Rains, Morris counties."
+    },
+    {
+      "name": "Bluebonnet Propane of Texas",
+      "hqCity": "Cleburne",
+      "hqState": "TX",
+      "website": "https://www.bluebonnetpropane.com",
+      "knownLocations": [
+        {
+          "city": "Cleburne",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Second-generation family propane company near Cleburne."
+    },
+    {
+      "name": "Cleburne Propane",
+      "hqCity": "Granbury",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Granbury",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane dealer in Granbury/Cleburne area (Pinnacle affiliate)."
+    },
+    {
+      "name": "Santo Propane Company",
+      "hqCity": "Lipan",
+      "hqState": "TX",
+      "website": "https://www.santopropane.com/",
+      "knownLocations": [
+        {
+          "city": "Lipan",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "50+ year family propane with locations in Granbury, Lipan, Stephenville."
+    },
+    {
+      "name": "Propane Exchange LLC",
+      "hqCity": "Weatherford",
+      "hqState": "TX",
+      "website": "https://propaneexchangellc.com/",
+      "knownLocations": [
+        {
+          "city": "Weatherford",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Cylinder exchange and delivery in North Texas."
+    },
+    {
+      "name": "McCraw Oil Company",
+      "hqCity": "Sherman",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sherman",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Texas/Oklahoma propane and petroleum dealer since 1972."
+    },
+    {
+      "name": "Sanders Propane",
+      "hqCity": "Waxahachie",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Waxahachie",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local propane dealer in Waxahachie area."
+    },
+    {
+      "name": "Chapman Propane",
+      "hqCity": "Waxahachie",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Waxahachie",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local propane dealer in Waxahachie area."
+    },
+    {
+      "name": "Poor Boys LP Gas",
+      "hqCity": "Waxahachie",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Waxahachie",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer in the Waxahachie region."
+    },
+    {
+      "name": "Freds Propane Service",
+      "hqCity": "Paris",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Paris",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local propane dealer serving Paris area."
+    },
+    {
+      "name": "A and J Propane",
+      "hqCity": "Paris",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Paris",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer in Paris and NE Texas."
+    },
+    {
+      "name": "Star Tex Propane",
+      "hqCity": "Waco",
+      "hqState": "TX",
+      "website": "https://www.startexpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Waco",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "30+ year Central TX propane with locations serving Waco, Burnet, College Station, Killeen."
+    },
+    {
+      "name": "Smith and Smith Propane and Hardware",
+      "hqCity": "Killeen",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Killeen",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane/hardware in Killeen serving 50-mile radius."
+    },
+    {
+      "name": "Bellville Butane Company",
+      "hqCity": "Bellville",
+      "hqState": "TX",
+      "website": "https://bellvillebutane.com/",
+      "knownLocations": [
+        {
+          "city": "Bellville",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Fuel and propane serving Austin and Waller Counties since 1955."
+    },
+    {
+      "name": "Sharp Propane",
+      "hqCity": "Bryan",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bryan",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane provider in Bryan/College Station area."
+    },
+    {
+      "name": "All Service Propane",
+      "hqCity": "Bryan",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bryan",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane provider in Bryan area."
+    },
+    {
+      "name": "Propane Plus",
+      "hqCity": "Bryan",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bryan",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane provider in Bryan/College Station."
+    },
+    {
+      "name": "MB Propane LLC",
+      "hqCity": "Blanco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Blanco",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "60+ year Hill County propane delivery."
+    },
+    {
+      "name": "Low Price Gas",
+      "hqCity": "New Braunfels",
+      "hqState": "TX",
+      "website": "https://www.lowpricegaspropane.com/",
+      "knownLocations": [
+        {
+          "city": "New Braunfels",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane/plumbing in Bulverde, Boerne, New Braunfels, San Marcos, Wimberley."
+    },
+    {
+      "name": "Two Rivers Propane",
+      "hqCity": "New Braunfels",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "New Braunfels",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer in New Braunfels."
+    },
+    {
+      "name": "Blue Sky Propane LP",
+      "hqCity": "Canyon Lake",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Canyon Lake",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Hill Country propane dealer in Canyon Lake."
+    },
+    {
+      "name": "Liquefied Propane Installations LLC",
+      "hqCity": "New Braunfels",
+      "hqState": "TX",
+      "website": "https://lpipropane.com/",
+      "knownLocations": [
+        {
+          "city": "New Braunfels",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane and plumbing services in New Braunfels, Boerne, Seguin, San Antonio."
+    },
+    {
+      "name": "Dynasty Propane",
+      "hqCity": "Seguin",
+      "hqState": "TX",
+      "website": "https://www.dynastypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Seguin",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "South-Central Texas propane with offices in Seguin and Kenedy."
+    },
+    {
+      "name": "Brady Butane Company Inc",
+      "hqCity": "Brady",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brady",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane since 1946 serving McCulloch, Brown, San Saba, Llano, Mason, Menard, Concho, Coleman counties."
+    },
+    {
+      "name": "Andys Propane Service",
+      "hqCity": "Weslaco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weslaco",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer in Weslaco serving RGV."
+    },
+    {
+      "name": "Talbott Propane",
+      "hqCity": "Victoria",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Victoria",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane dealer in Victoria, TX."
+    },
+    {
+      "name": "Tejas Propane",
+      "hqCity": "Port Lavaca",
+      "hqState": "TX",
+      "website": "https://www.tejaspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Port Lavaca",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "25+ year family propane delivery and tank sales in Port Lavaca."
+    },
+    {
+      "name": "Coastal Butane Service",
+      "hqCity": "Rockport",
+      "hqState": "TX",
+      "website": "https://www.coastalbutane.com/",
+      "knownLocations": [
+        {
+          "city": "Rockport",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Rural Texas coastal propane dealer."
+    },
+    {
+      "name": "Frontier LP Gas",
+      "hqCity": "Athens",
+      "hqState": "TX",
+      "website": "https://frontierlpgas.com/",
+      "knownLocations": [
+        {
+          "city": "Athens",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Athens-based propane delivery and tank service."
+    },
+    {
+      "name": "Glo Flame Propane",
+      "hqCity": "Longview",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Longview",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "East Texas family propane dealer in Longview and Rusk."
+    },
+    {
+      "name": "Consumers LP Gas and Appliance",
+      "hqCity": "Rusk",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rusk",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and appliance dealer in Rusk area."
+    },
+    {
+      "name": "Perry Propane",
+      "hqCity": "Rusk",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rusk",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local Rusk-area propane dealer."
+    },
+    {
+      "name": "Automatic Gas of Greenville",
+      "hqCity": "Greenville",
+      "hqState": "TX",
+      "website": "https://www.automaticgas.com/",
+      "knownLocations": [
+        {
+          "city": "Greenville",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "55+ year propane serving Greenville, Mt. Enterprise, Jacksonville."
+    },
+    {
+      "name": "P and R Propane",
+      "hqCity": "Liberty Hill",
+      "hqState": "TX",
+      "website": "https://www.prpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Liberty Hill",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Residential/commercial propane in Liberty Hill area."
+    },
+    {
+      "name": "Hill Butane Company",
+      "hqCity": "Bowie",
+      "hqState": "TX",
+      "website": "https://hillbutane.com/",
+      "knownLocations": [
+        {
+          "city": "Bowie",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane/butane with 24/7 online ordering in North Texas."
+    },
+    {
+      "name": "Sandifers LP Gas",
+      "hqCity": "Beaumont",
+      "hqState": "TX",
+      "website": "https://sandiferslp.com/",
+      "knownLocations": [
+        {
+          "city": "Beaumont",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "SE Texas propane in Kountze, Silsbee, Woodville, Jasper, Newton, Liberty, Dayton, Hamshire, Winnie, Anahuac."
+    },
+    {
+      "name": "Baygas Propane",
+      "hqCity": "Beaumont",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Beaumont",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane dealer in Beaumont/Gulf Coast area."
+    },
+    {
+      "name": "Fontenots Propane",
+      "hqCity": "Beaumont",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Beaumont",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane filling station in Beaumont."
+    },
+    {
+      "name": "Silsbee Propane Fuels",
+      "hqCity": "Silsbee",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Silsbee",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "SE Texas propane serving Jasper, Newton, Hemphill and surrounding counties."
+    },
+    {
+      "name": "Alliant Gas LLC",
+      "hqCity": "Austin",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Austin",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Texas RRC retailer with 26 neighborhood propane systems in Travis, Kendall, Comal, Palo Pinto counties."
+    },
+    {
+      "name": "Direct Propane",
+      "hqCity": "Austin",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Austin",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Texas RRC retailer with 5 neighborhood systems in Travis and Williamson including Rough Hollow-Lakeway."
+    },
+    {
+      "name": "Texas Community Propane",
+      "hqCity": "Austin",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Austin",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Largest RRC neighborhood propane operator, 17 systems in Bastrop, Hays, Travis, Williamson."
+    },
+    {
+      "name": "Metropolitan Propane",
+      "hqCity": "Hutto",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hutto",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX RRC retailer at Enclave at Brushy Creek-Hutto."
+    },
+    {
+      "name": "Farmers Cooperative Elevator",
+      "hqCity": "Levelland",
+      "hqState": "TX",
+      "website": "https://www.fcelevelland.com/",
+      "knownLocations": [
+        {
+          "city": "Levelland",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Levelland-area farmer cooperative offering propane delivery and service."
+    },
+    {
+      "name": "Heart of Texas Propane Brownwood",
+      "hqCity": "Brownwood",
+      "hqState": "TX",
+      "website": "https://www.hotpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Brownwood",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Brownwood branch location of HOT Propane serving Brown, Callahan, Coleman, Comanche, Eastland, Mills."
+    },
+    {
+      "name": "Heart of Texas Propane Brady",
+      "hqCity": "Brady",
+      "hqState": "TX",
+      "website": "https://www.hotpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Brady",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Brady branch serving Concho, McCulloch, Menard counties."
+    },
+    {
+      "name": "Heart of Texas Propane Mason",
+      "hqCity": "Mason",
+      "hqState": "TX",
+      "website": "https://www.hotpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Mason",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Mason branch serving Mason and Menard counties."
+    },
+    {
+      "name": "Angelina Propane",
+      "hqCity": "Lufkin",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lufkin",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local propane dealer in Lufkin, East Texas."
+    }
+  ]
+}

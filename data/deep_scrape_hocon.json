@@ -1,0 +1,13 @@
+{
+  "source": "https://www.hocongas.com/",
+  "scraped": "2026-04-11",
+  "company": "Hocon Gas",
+  "parent": "Energy Distribution Partners (EDP)",
+  "locations": [
+    {"name": "Hocon Gas - Danbury", "street": "86 Payne Road", "city": "Danbury", "state": "CT", "zip": "06810", "phone": "203-744-4000"},
+    {"name": "Hocon Gas - Guilford", "street": "736 Boston Post Road", "city": "Guilford", "state": "CT", "zip": "06437", "phone": "203-458-2790"},
+    {"name": "Hocon Gas - South Norwalk", "street": "33 Rockland Road", "city": "South Norwalk", "state": "CT", "zip": "06854", "phone": "203-853-1500"},
+    {"name": "Hocon Gas - Torrington", "street": "2407 Winsted Road", "city": "Torrington", "state": "CT", "zip": "06790", "phone": "860-626-0900"},
+    {"name": "Hocon Gas - Waterbury", "street": "20 Railroad Hill Street", "city": "Waterbury", "state": "CT", "zip": "06708", "phone": "203-754-7601"}
+  ]
+}

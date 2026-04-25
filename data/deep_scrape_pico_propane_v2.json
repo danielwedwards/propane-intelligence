@@ -1,0 +1,25 @@
+{
+  "source": "https://www.picopropane.com/locations/",
+  "scraped": "2026-04-11",
+  "company": "Pico Propane & Fuels",
+  "notes": "Texas/New Mexico propane distributor; Florida and NC affiliate brands operate under separate websites.",
+  "locations": [
+    {"name": "San Antonio HQ", "address": "19206 Huebner Road", "city": "San Antonio", "state": "TX", "zip": null, "phone": "(210) 876-3560"},
+    {"name": "Del Rio Corporate", "address": "307 East 10th Street", "city": "Del Rio", "state": "TX", "zip": null, "phone": "(830) 775-7761"},
+    {"name": "Alvin", "address": "3619 Farm Market 2403 Road", "city": "Alvin", "state": "TX", "zip": null, "phone": "(281) 585-0705"},
+    {"name": "Austin", "address": null, "city": "Austin", "state": "TX", "zip": null, "phone": "(512) 580-5773"},
+    {"name": "Beaumont", "address": "6315 Hwy 347", "city": "Beaumont", "state": "TX", "zip": null, "phone": "(409) 240-2122"},
+    {"name": "Bergheim", "address": "843 TX-46 Unit B", "city": "Bergheim", "state": "TX", "zip": null, "phone": "(830) 249-2416"},
+    {"name": "Caldwell", "address": "2080 TX-21", "city": "Caldwell", "state": "TX", "zip": null, "phone": "(979) 272-9203"},
+    {"name": "Carrizo Springs", "address": "2274 Hwy 83 South", "city": "Carrizo Springs", "state": "TX", "zip": null, "phone": "(830) 876-2527"},
+    {"name": "Del Rio", "address": "3821 Veterans Boulevard", "city": "Del Rio", "state": "TX", "zip": null, "phone": "(830) 774-4139"},
+    {"name": "Kenedy", "address": "323 South Sunset Strip", "city": "Kenedy", "state": "TX", "zip": null, "phone": "(830) 583-2421"},
+    {"name": "Laredo", "address": "6449 TX-359 Rear Building", "city": "Laredo", "state": "TX", "zip": null, "phone": "(956) 937-9010"},
+    {"name": "Mission", "address": "401 N. Shary", "city": "Mission", "state": "TX", "zip": null, "phone": "(956) 519-0622"},
+    {"name": "Odessa", "address": "701 W. 1st Street", "city": "Odessa", "state": "TX", "zip": null, "phone": "(432) 332-6821"},
+    {"name": "Uvalde", "address": "421 W Calera Street", "city": "Uvalde", "state": "TX", "zip": null, "phone": "(830) 278-5681"},
+    {"name": "Weslaco", "address": "809 S. International Boulevard", "city": "Weslaco", "state": "TX", "zip": null, "phone": "(956) 968-3154"},
+    {"name": "Carlsbad", "address": "4021 Iron Horse Drive, Suite F", "city": "Carlsbad", "state": "NM", "zip": null, "phone": "(575) 200-1290"},
+    {"name": "Roswell", "address": "1306 E. 2nd Street", "city": "Roswell", "state": "NM", "zip": null, "phone": "(575) 622-7921"}
+  ]
+}

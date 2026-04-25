@@ -1,0 +1,138 @@
+/* =====================================================================
+   ERGON PROPANE MARKET MAP — Colors & Type
+   Source of truth, derived from the production app.
+   ===================================================================== */
+
+/* -------- Fonts (web) --------------------------------------------------
+   Loaded from Google Fonts — matches the product. If you want to self-host,
+   drop ttf/woff2 in /fonts/ and rewrite these @import lines to @font-face.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ========== PRIMITIVE COLORS ========== */
+
+  /* Navy — marketing / print / deep-ink accent */
+  --navy:            #0D1B2A;
+  --navy-mid:        #1B2838;
+  --navy-light:      #243447;
+
+  /* Gold — Ergon legacy accent, used sparingly (toggles, focus, stars) */
+  --gold:            #C8A951;
+  --gold-light:      #E8D9A0;
+  --gold-muted:      rgba(200, 169, 81, 0.15);
+
+  /* Brand violet — primary SaaS action color */
+  --brand:           #7C5CFC;
+  --brand-light:     #EDE9FE;
+  --brand-dark:      #5B3FD1;
+  --brand-muted:     rgba(124, 92, 252, 0.10);
+
+  /* Neutral scale (Untitled-UI style slate) */
+  --slate:           #475467;
+  --light-bg:        #FAFBFC;
+  --white:           #FFFFFF;
+  --border:          #E4E7EC;
+  --border-subtle:   #F0F2F5;
+
+  /* Semantic colors (each with a tinted surface pair) */
+  --green:           #027A48;  --green-light:  #ECFDF3;
+  --amber:           #B54708;  --amber-light:  #FFFAEB;
+  --red:             #D92D20;  --red-light:    #FEF3F2;
+  --blue:            #175CD3;  --blue-light:   #EFF8FF;
+  --purple:          #6941C6;  --purple-light: #EDE9FE;
+
+  /* Foreground / text */
+  --text-primary:    #101828;
+  --text-secondary:  #475467;
+  --text-tertiary:   #98A2B3;
+
+  /* ========== ELEVATION ========== */
+  --shadow-xs:       0 1px 2px rgba(16,24,40,0.04);
+  --shadow:          0 4px 12px rgba(16,24,40,0.06), 0 1px 3px rgba(16,24,40,0.04);
+  --shadow-lg:       0 12px 40px rgba(16,24,40,0.08), 0 2px 8px rgba(16,24,40,0.04);
+
+  /* ========== SPACING (4px base grid) ========== */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  12px;
+  --space-lg:  16px;
+  --space-xl:  24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+
+  /* ========== RADIUS ========== */
+  --radius-sm:   6px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-full: 9999px;
+
+  /* ========== MOTION ========== */
+  --tr:       0.2s ease;
+  --tr-fast:  0.12s ease;
+  --tr-slow:  0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ========== TYPE SCALE ========== */
+  --font-sans:  Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono:  'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Dense app-UI scale — the product skews small/data-heavy */
+  --text-2xs:  10px;
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 13px;
+  --text-md:   14px;
+  --text-lg:   16px;
+  --text-xl:   20px;
+  --text-2xl:  28px;
+
+  /* ========== SEMANTIC TYPE ========== */
+  --fg1: var(--text-primary);
+  --fg2: var(--text-secondary);
+  --fg3: var(--text-tertiary);
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(124, 92, 252, 0.10);
+
+  --touch-min: 44px;
+}
+
+/* ========== DARK MODE ==========
+   The app flips primitives on [data-theme="dark"] rather than using separate
+   semantic tokens. Kept here for fidelity.
+*/
+[data-theme="dark"] {
+  --navy:       #e0e4ea;
+  --navy-mid:   #c0c8d4;
+  --navy-light: #a0aabb;
+  --slate:      #8899AA;
+  --light-bg:   #0e1620;
+  --white:      #16202e;
+  --border:     #2a3a4e;
+  --border-subtle: #1e2e3e;
+  --gold-muted: rgba(200, 169, 81, 0.20);
+  --text-primary:   #e0e4ea;
+  --text-secondary: #8899AA;
+  --text-tertiary:  #5a6a7a;
+  --shadow:    0 2px 12px rgba(0,0,0,0.40);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.50);
+}
+
+/* =====================================================================
+   SEMANTIC TYPE CLASSES
+   Use these in prototypes instead of re-declaring font-size everywhere.
+   ===================================================================== */
+
+.t-display  { font-family: var(--font-serif); font-size: 28px; font-weight: 400; line-height: 1.15; letter-spacing: -0.2px; color: var(--text-primary); }
+.t-h1       { font-family: var(--font-sans);  font-size: 20px; font-weight: 600; line-height: 1.2; letter-spacing: -0.3px; color: var(--text-primary); }
+.t-h2       { font-family: var(--font-sans);  font-size: 16px; font-weight: 600; line-height: 1.3; color: var(--text-primary); }
+.t-h3       { font-family: var(--font-sans);  font-size: 14px; font-weight: 600; line-height: 1.4; color: var(--text-primary); }
+.t-body     { font-family: var(--font-sans);  font-size: 13px; font-weight: 400; line-height: 1.6; color: var(--text-secondary); }
+.t-body-sm  { font-family: var(--font-sans);  font-size: 12px; font-weight: 400; line-height: 1.5; color: var(--text-secondary); }
+.t-label    { font-family: var(--font-sans);  font-size: 11px; font-weight: 600; line-height: 1.4; color: var(--text-secondary); }
+.t-eyebrow  { font-family: var(--font-sans);  font-size: 10px; font-weight: 700; line-height: 1.2; letter-spacing: 1.2px; text-transform: uppercase; color: var(--text-secondary); }
+.t-num      { font-family: var(--font-mono);  font-variant-numeric: tabular-nums; font-size: 13px; font-weight: 600; color: var(--text-primary); }
+.t-metric   { font-family: var(--font-mono);  font-variant-numeric: tabular-nums; font-size: 28px; font-weight: 700; line-height: 1.1; letter-spacing: -0.5px; color: var(--text-primary); }
+.t-caption  { font-family: var(--font-sans);  font-size: 10px; font-weight: 400; line-height: 1.4; color: var(--text-tertiary); }
+.t-code     { font-family: var(--font-mono);  font-size: 12px; color: var(--text-primary); background: #F5F6F8; padding: 1px 5px; border-radius: 3px; }

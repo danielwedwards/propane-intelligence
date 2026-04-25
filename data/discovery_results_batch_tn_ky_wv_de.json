@@ -1,0 +1,531 @@
+{
+  "batch": "tn_ky_wv_de",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "nexAir Jackson",
+      "hqCity": "Jackson",
+      "hqState": "TN",
+      "website": "https://www.nexair.com/locations/jackson/",
+      "knownLocations": [
+        {
+          "city": "Jackson",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "West Tennessee industrial gas and propane dealer serving Jackson, Martin, Paris, Union City, Dresden, Humboldt."
+    },
+    {
+      "name": "Clark Gas Company",
+      "hqCity": "Waynesboro",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Waynesboro",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Lawrenceburg",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Wayne County propane dealer acquired by ThompsonGas, serves South-Central TN/Northern AL in 20+ counties."
+    },
+    {
+      "name": "Woodstock Gas",
+      "hqCity": "Ducktown",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ducktown",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Polk County propane dealer serving Copper Basin area: Ducktown, Turtletown, Copperhill, Farner."
+    },
+    {
+      "name": "Keene Gas",
+      "hqCity": "Sevierville",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sevierville",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "East Tennessee propane dealer serving Sevierville, Pigeon Forge, Gatlinburg, Newport, Townsend."
+    },
+    {
+      "name": "Smoky Mountain Farmers Coop",
+      "hqCity": "Sevierville",
+      "hqState": "TN",
+      "website": "https://www.smfc.coop/",
+      "knownLocations": [
+        {
+          "city": "Sevierville",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farmer cooperative offering propane tank refill and fuel services in Sevier County."
+    },
+    {
+      "name": "Woodstock Propane Gas",
+      "hqCity": "Ducktown",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ducktown",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Polk/Monroe County dealer in Copper Basin serving Tellico Plains, Madisonville, Sweetwater, Vonore."
+    },
+    {
+      "name": "Marsh Propane Greeneville",
+      "hqCity": "Greeneville",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Greeneville",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Greene County satellite of Marsh Propane serving Greeneville, Rogersville, Erwin, Mosheim, Church Hill."
+    },
+    {
+      "name": "Perry Oil Company",
+      "hqCity": "Hazard",
+      "hqState": "KY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hazard",
+          "state": "KY",
+          "street": "51 Century Cir"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-run Perry County propane and fuel oil dealer (Perry family); serves Eastern KY coalfields Perry/Letcher/Knott/Harlan."
+    },
+    {
+      "name": "Shelby Propane Plus",
+      "hqCity": "Shelbyville",
+      "hqState": "KY",
+      "website": "https://www.shelbypropaneplus.com/",
+      "knownLocations": [
+        {
+          "city": "Shelbyville",
+          "state": "KY",
+          "street": "1891 Isaac Shelby Dr"
+        }
+      ],
+      "ownership": "private",
+      "notes": "Shelby County propane dealer offering residential/commercial propane, tank sets, grills, fireplaces."
+    },
+    {
+      "name": "Shelby County Cooperative",
+      "hqCity": "Ekron",
+      "hqState": "KY",
+      "website": "https://www.shelbycountyco-op.com/",
+      "knownLocations": [
+        {
+          "city": "Ekron",
+          "state": "KY",
+          "street": ""
+        },
+        {
+          "city": "Pendleton",
+          "state": "KY",
+          "street": ""
+        },
+        {
+          "city": "Shepherdsville",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farmer cooperative offering residential, commercial, agricultural propane across KY, IN, OH."
+    },
+    {
+      "name": "Arricks Propane",
+      "hqCity": "Grayson",
+      "hqState": "KY",
+      "website": "https://www.arrickspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Grayson",
+          "state": "KY",
+          "street": "841 S State Highway 7"
+        },
+        {
+          "city": "South Portsmouth",
+          "state": "KY",
+          "street": "2520 State Route 8"
+        },
+        {
+          "city": "Flemingsburg",
+          "state": "KY",
+          "street": "154 Industrial Park Dr"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned leading independent propane retailer in tri-state area since 1952; serves Greenup, Carter, Lewis, Boyd, Lawrence, Pike, Jackson counties."
+    },
+    {
+      "name": "MG Propane",
+      "hqCity": "Ashland",
+      "hqState": "KY",
+      "website": "http://mgpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Ashland",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned Ashland-area propane dealer serving KY/WV/OH residential and commercial."
+    },
+    {
+      "name": "Wise Choice Propane",
+      "hqCity": "Paintsville",
+      "hqState": "KY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Paintsville",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Eastern KY propane dealer serving Paintsville, Louisa, Inez, Prestonsburg coalfields region."
+    },
+    {
+      "name": "Propane Energy Partners PEP",
+      "hqCity": "Bowling Green",
+      "hqState": "KY",
+      "website": "https://www.pepgas.com/",
+      "knownLocations": [
+        {
+          "city": "Bowling Green",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Bowling Green-based propane distributor serving southern Kentucky."
+    },
+    {
+      "name": "Benton Hardware",
+      "hqCity": "Benton",
+      "hqState": "KY",
+      "website": "https://bentonhardware.com/",
+      "knownLocations": [
+        {
+          "city": "Benton",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Marshall County retailer offering propane alongside hardware since 2013, serves Paducah, Hardin, Murray, Mayfield."
+    },
+    {
+      "name": "Porco Propane",
+      "hqCity": "Albany",
+      "hqState": "KY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Albany",
+          "state": "KY",
+          "street": "708 Burkesville Rd"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Clinton County propane and fertilizer dealer serving Clinton, Pickett, Cumberland, Overton, Russell, Wayne, Adair, Fentress, Monroe, McCreary counties."
+    },
+    {
+      "name": "Hunley Gas Company",
+      "hqCity": "Albany",
+      "hqState": "KY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Albany",
+          "state": "KY",
+          "street": "115 Burkesville Rd"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Clinton County propane dealer serving south-central KY and northern TN border counties."
+    },
+    {
+      "name": "RT Rogers Oil Hinton",
+      "hqCity": "Hinton",
+      "hqState": "WV",
+      "website": "https://www.rtrogers.com/",
+      "knownLocations": [
+        {
+          "city": "Hinton",
+          "state": "WV",
+          "street": "300 Grace Street"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Summers County energy distributor supplying propane and heating oil to southern WV (Hinton, Alderson, Union, Peterstown, Rainelle)."
+    },
+    {
+      "name": "Blue Flame Propane Princeton",
+      "hqCity": "Princeton",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Princeton",
+          "state": "WV",
+          "street": "102 Roseland Ave"
+        }
+      ],
+      "ownership": "private",
+      "notes": "Southern WV coalfields propane dealer serving Princeton, Bluefield, Welch in Mercer/McDowell/Wyoming counties."
+    },
+    {
+      "name": "Hardmans Supply",
+      "hqCity": "Spencer",
+      "hqState": "WV",
+      "website": "https://hardmans.com/",
+      "knownLocations": [
+        {
+          "city": "Spencer",
+          "state": "WV",
+          "street": ""
+        },
+        {
+          "city": "Ripley",
+          "state": "WV",
+          "street": ""
+        },
+        {
+          "city": "Grantsville",
+          "state": "WV",
+          "street": ""
+        },
+        {
+          "city": "Glenville",
+          "state": "WV",
+          "street": ""
+        },
+        {
+          "city": "Moorefield",
+          "state": "WV",
+          "street": ""
+        },
+        {
+          "city": "Summersville",
+          "state": "WV",
+          "street": ""
+        },
+        {
+          "city": "Mineral Wells",
+          "state": "WV",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "WV hardware/supply company founded 1907 with seven locations offering propane across Roane, Jackson, Calhoun, Gilmer, Hardy, Nicholas, Wood counties."
+    },
+    {
+      "name": "Southern States Buckhannon",
+      "hqCity": "Buckhannon",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Buckhannon",
+          "state": "WV",
+          "street": "60 N Spring St"
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Upshur County full-service propane dealer under Southern States cooperative."
+    },
+    {
+      "name": "Marshall County Cooperative",
+      "hqCity": "Moundsville",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Moundsville",
+          "state": "WV",
+          "street": ""
+        },
+        {
+          "city": "New Martinsville",
+          "state": "WV",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farmer cooperative under Southern States since 1941 with Wetzel County satellite plant serving Northern Panhandle."
+    },
+    {
+      "name": "BFS Foods",
+      "hqCity": "Morgantown",
+      "hqState": "WV",
+      "website": "https://www.bfscompanies.com/",
+      "knownLocations": [
+        {
+          "city": "Morgantown",
+          "state": "WV",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Multi-state convenience store and fuel provider offering propane throughout WV/PA/MD/OH."
+    },
+    {
+      "name": "Roach Energy",
+      "hqCity": "Martinsburg",
+      "hqState": "WV",
+      "website": "https://www.roachenergy.com/",
+      "knownLocations": [
+        {
+          "city": "Martinsburg",
+          "state": "WV",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Eastern Panhandle propane and heating oil dealer serving Berkeley, Morgan, Jefferson counties."
+    },
+    {
+      "name": "Rutland Bottle Gas",
+      "hqCity": "",
+      "hqState": "WV",
+      "website": "https://www.rutlandbottlegas.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "WV",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "One of the largest independent propane dealers with 9 locations in southeastern OH and northern WV along Ohio River."
+    },
+    {
+      "name": "Southern States Philippi",
+      "hqCity": "Philippi",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Philippi",
+          "state": "WV",
+          "street": "110 Wood and Depot Streets"
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Barbour County cooperative propane dealer serving Philippi, Grafton, Kingwood area."
+    },
+    {
+      "name": "Parco Propane Grafton",
+      "hqCity": "Grafton",
+      "hqState": "WV",
+      "website": "https://www.parcopropane.com/",
+      "knownLocations": [
+        {
+          "city": "Grafton",
+          "state": "WV",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Taylor County storage location added 2020 by Parco serving North Central WV and western PA."
+    },
+    {
+      "name": "Peninsula Oil Propane",
+      "hqCity": "Seaford",
+      "hqState": "DE",
+      "website": "http://penoil.com/",
+      "knownLocations": [
+        {
+          "city": "Seaford",
+          "state": "DE",
+          "street": "40 S Market St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Delmarva Peninsula heating oil and propane dealer since 1935 serving Sussex and Kent counties plus Maryland."
+    },
+    {
+      "name": "Compass Energy",
+      "hqCity": "Laurel",
+      "hqState": "DE",
+      "website": "https://www.compassenergyinc.com/",
+      "knownLocations": [
+        {
+          "city": "Laurel",
+          "state": "DE",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Sussex County heating oil and propane contractor serving Milton, Ocean View, Seaford, Laurel."
+    },
+    {
+      "name": "Service Energy",
+      "hqCity": "Georgetown",
+      "hqState": "DE",
+      "website": "https://serviceenergy.com/",
+      "knownLocations": [
+        {
+          "city": "Georgetown",
+          "state": "DE",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Delmarva heating fuel and propane dealer since 1954."
+    },
+    {
+      "name": "Mrohs Gas",
+      "hqCity": "",
+      "hqState": "DE",
+      "website": "https://www.mrohsgas.com/delaware",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "DE",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Third-generation family-owned eastern shore propane dealer since 1948 serving lower Sussex County DE plus Wicomico, Worcester, Somerset MD."
+    }
+  ]
+}

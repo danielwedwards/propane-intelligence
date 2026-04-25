@@ -1,0 +1,16 @@
+{
+  "source": "https://www.propaneresources.com/",
+  "scraped": "2026-04-11",
+  "company": "Propane Resources",
+  "notes": "Wholesale propane marketer and broker (not a retail distributor). Operates a single corporate office serving customers via storage hubs at Mt. Belvieu TX, Conway KS, Hattiesburg MS.",
+  "locations": [
+    {
+      "name": "Headquarters",
+      "address": "8400 W 110 St, #400",
+      "city": "Overland Park",
+      "state": "KS",
+      "zip": "66210",
+      "phone": "913-262-8345"
+    }
+  ]
+}

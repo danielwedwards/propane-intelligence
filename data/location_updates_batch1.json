@@ -1,0 +1,535 @@
+[
+  {
+    "id": "kellys_propane",
+    "name": "Kelly's Propane",
+    "location": {
+      "name": "Kelly's Propane",
+      "city": "Dayton",
+      "state": "OH",
+      "county": "Montgomery County, OH",
+      "lat": 39.7812172,
+      "lng": -84.2081163,
+      "address": "1925 N Main St, OH"
+    }
+  },
+  {
+    "id": "blue_star_gas",
+    "name": "Blue Star Gas",
+    "location": {
+      "name": "Blue Star Gas",
+      "city": "Phoenix",
+      "state": "AZ",
+      "county": "Maricopa County, AZ",
+      "lat": 33.4257803,
+      "lng": -112.0799253,
+      "address": "447 W Watkins St, AZ"
+    }
+  },
+  {
+    "id": "godfrey_propane_co",
+    "name": "Godfrey Propane Co",
+    "location": {
+      "name": "Godfrey Propane Co",
+      "city": "Arlington",
+      "state": "TX",
+      "county": "Tarrant County, TX",
+      "lat": 32.7361076,
+      "lng": -97.1553593,
+      "address": "2947 W Division St, TX"
+    }
+  },
+  {
+    "id": "propane_depot_inc",
+    "name": "Propane Depot Inc",
+    "location": {
+      "name": "Propane Depot Inc",
+      "city": "State Highway 16 South",
+      "state": "TX",
+      "county": "Bandera County, TX",
+      "lat": 29.7298491,
+      "lng": -98.954773,
+      "address": "8550 TX-16, TX"
+    }
+  },
+  {
+    "id": "henderson_propane_inc",
+    "name": "Henderson Propane Inc",
+    "location": {
+      "name": "Henderson Propane Inc",
+      "city": "Palmetto",
+      "state": "TX",
+      "county": "Fort Bend County, TX",
+      "lat": 29.535842,
+      "lng": -95.470367,
+      "address": "1202 Trammel-Fresno Rd, TX"
+    }
+  },
+  {
+    "id": "aaa_propane_sales_rentals",
+    "name": "AAA Propane Sales & Rentals",
+    "location": {
+      "name": "AAA Propane Sales & Rentals",
+      "city": "Wheat Ridge",
+      "state": "CO",
+      "county": "Jefferson County, CO",
+      "lat": 39.7767139,
+      "lng": -105.078513,
+      "address": "7405 W 44th Ave, CO"
+    }
+  },
+  {
+    "id": "englewood_propane",
+    "name": "Englewood Propane",
+    "location": {
+      "name": "Englewood Propane",
+      "city": "Englewood",
+      "state": "CO",
+      "county": "Arapahoe County, CO",
+      "lat": 39.6623646,
+      "lng": -105.0102154,
+      "address": "1917 W Cornell Ave, CO"
+    }
+  },
+  {
+    "id": "apollo_propane_inc",
+    "name": "Apollo Propane Inc",
+    "location": {
+      "name": "Apollo Propane Inc",
+      "city": "Colorado",
+      "state": "CO",
+      "county": "El Paso County, CO",
+      "lat": 38.9001865,
+      "lng": -104.5162124,
+      "address": "4825 Slocum Rd, CO"
+    }
+  },
+  {
+    "id": "anderson_propane_services",
+    "name": "Anderson Propane Services",
+    "location": {
+      "name": "Anderson Propane Services",
+      "city": "Moundsville",
+      "state": "OH",
+      "county": "Noble County, OH",
+      "lat": 39.672301,
+      "lng": -81.4861957,
+      "address": "39720 Marietta Rd, OH"
+    }
+  },
+  {
+    "id": "four_seasons_lp_gas",
+    "name": "Four Seasons LP Gas",
+    "location": {
+      "name": "Four Seasons LP Gas",
+      "city": "Blendon Corner",
+      "state": "OH",
+      "county": "Franklin County, OH",
+      "lat": 40.080872,
+      "lng": -82.928617,
+      "address": "5375 Westerville Rd, OH"
+    }
+  },
+  {
+    "id": "northfield_propane",
+    "name": "Northfield Propane",
+    "location": {
+      "name": "Northfield Propane",
+      "city": "Macedonia",
+      "state": "OH",
+      "county": "Summit County, OH",
+      "lat": 41.3233371,
+      "lng": -81.5267507,
+      "address": "10377 Valley View Rd, OH"
+    }
+  },
+  {
+    "id": "king_of_the_hill_propane",
+    "name": "King of the Hill Propane",
+    "location": {
+      "name": "King of the Hill Propane",
+      "city": "Village of Cedarhurst",
+      "state": "NY",
+      "county": "Nassau County, NY",
+      "lat": 40.6243066,
+      "lng": -73.7271,
+      "address": "487 Court Ave, NY"
+    }
+  },
+  {
+    "id": "avery_energy",
+    "name": "Avery Energy",
+    "location": {
+      "name": "Avery Energy",
+      "city": "Buffalo",
+      "state": "NY",
+      "county": "Erie County, NY",
+      "lat": 42.9416201,
+      "lng": -78.8360785,
+      "address": "2747 Main St, NY"
+    }
+  },
+  {
+    "id": "johnston_s_propane_service",
+    "name": "Johnston's Propane Service",
+    "location": {
+      "name": "Johnston's Propane Service",
+      "city": "City of Fulton",
+      "state": "NY",
+      "county": "Oswego County, NY",
+      "lat": 43.3177921,
+      "lng": -76.4367411,
+      "address": "913 Phillips St, NY"
+    }
+  },
+  {
+    "id": "maz_propane",
+    "name": "MAZ Propane",
+    "location": {
+      "name": "MAZ Propane",
+      "city": "East Whiteland Township",
+      "state": "PA",
+      "county": "Chester County, PA",
+      "lat": 40.0366755,
+      "lng": -75.5460854,
+      "address": "380 Three Tun Rd, PA"
+    }
+  },
+  {
+    "id": "w_c_eshenaur_son_inc",
+    "name": "W.C. Eshenaur & Son Inc",
+    "location": {
+      "name": "W.C. Eshenaur & Son Inc",
+      "city": "Swatara Township",
+      "state": "PA",
+      "county": "Dauphin County, PA",
+      "lat": 40.2504984,
+      "lng": -76.8201285,
+      "address": "3815 Tecport Dr, PA"
+    }
+  },
+  {
+    "id": "countryside_propane_llc",
+    "name": "Countryside Propane LLC",
+    "location": {
+      "name": "Countryside Propane LLC",
+      "city": "Upper Tulpehocken Township",
+      "state": "PA",
+      "county": "Berks County, PA",
+      "lat": 40.468857,
+      "lng": -76.213939,
+      "address": "372 E Rehrersburg Rd, PA"
+    }
+  },
+  {
+    "id": "best_price_propane",
+    "name": "Best Price Propane",
+    "location": {
+      "name": "Best Price Propane",
+      "city": "Philadelphia",
+      "state": "PA",
+      "county": "Philadelphia County, PA",
+      "lat": 39.9532879,
+      "lng": -75.1457882,
+      "address": "322 Cherry St, PA"
+    }
+  },
+  {
+    "id": "nolts_propane_connections",
+    "name": "Nolts Propane Connections",
+    "location": {
+      "name": "Nolts Propane Connections",
+      "city": "Earl Township",
+      "state": "PA",
+      "county": "Lancaster County, PA",
+      "lat": 40.1340769,
+      "lng": -76.1219472,
+      "address": "676 N Shirk Rd, PA"
+    }
+  },
+  {
+    "id": "propane_lane",
+    "name": "Propane Lane",
+    "location": {
+      "name": "Propane Lane",
+      "city": "Belmont",
+      "state": "MI",
+      "county": "Kent County, MI",
+      "lat": 43.0456285,
+      "lng": -85.656792,
+      "address": "4564 W River Dr NE, MI"
+    }
+  },
+  {
+    "id": "california_propane",
+    "name": "California Propane",
+    "location": {
+      "name": "California Propane",
+      "city": "Stockton",
+      "state": "CA",
+      "county": "San Joaquin County, CA",
+      "lat": 37.999709,
+      "lng": -121.3263335,
+      "address": "5665 N Pershing Ave, CA"
+    }
+  },
+  {
+    "id": "ez_pz_propane",
+    "name": "Ez Pz Propane",
+    "location": {
+      "name": "Ez Pz Propane",
+      "city": "San Diego",
+      "state": "CA",
+      "county": "San Diego County, CA",
+      "lat": 32.835247,
+      "lng": -117.140076,
+      "address": "5596 Kearny Mesa Rd, CA"
+    }
+  },
+  {
+    "id": "westair_propane",
+    "name": "WestAir Propane",
+    "location": {
+      "name": "WestAir Propane",
+      "city": "Garden Grove",
+      "state": "CA",
+      "county": "Orange County, CA",
+      "lat": 33.7789603,
+      "lng": -118.0012038,
+      "address": "12600 Western Ave, CA"
+    }
+  },
+  {
+    "id": "downeast_energy",
+    "name": "Downeast Energy",
+    "location": {
+      "name": "Downeast Energy",
+      "city": "Scarborough",
+      "state": "ME",
+      "county": "Cumberland County, ME",
+      "lat": 43.6041907,
+      "lng": -70.3029811,
+      "address": "86 Pleasant Hill Rd, ME"
+    }
+  },
+  {
+    "id": "sail_energy",
+    "name": "Sail Energy",
+    "location": {
+      "name": "Sail Energy",
+      "city": "Turner",
+      "state": "ME",
+      "county": "Androscoggin County, ME",
+      "lat": 44.1861235,
+      "lng": -70.2349915,
+      "address": "3 Conant Rd, ME"
+    }
+  },
+  {
+    "id": "colby_gale",
+    "name": "Colby & Gale",
+    "location": {
+      "name": "Colby & Gale",
+      "city": "Damariscotta",
+      "state": "ME",
+      "county": "Lincoln County, ME",
+      "lat": 44.037179,
+      "lng": -69.49741,
+      "address": "154 Biscay Rd, ME"
+    }
+  },
+  {
+    "id": "irving_energy",
+    "name": "Irving Energy",
+    "location": {
+      "name": "Irving Energy",
+      "city": "Concord",
+      "state": "NH",
+      "county": "Merrimack County, NH",
+      "lat": 43.2178335,
+      "lng": -71.4829774,
+      "address": "215 Sheep Davis Rd, NH"
+    }
+  },
+  {
+    "id": "huckleberry_propane_oil",
+    "name": "Huckleberry Propane & Oil",
+    "location": {
+      "name": "Huckleberry Propane & Oil",
+      "city": "Berlin",
+      "state": "NH",
+      "county": "Co\u00f6s County, NH",
+      "lat": 44.4667081,
+      "lng": -71.1692193,
+      "address": "166 King St, NH"
+    }
+  },
+  {
+    "id": "allied_fuels",
+    "name": "Allied Fuels",
+    "location": {
+      "name": "Allied Fuels",
+      "city": "Northwood",
+      "state": "NH",
+      "county": "Rockingham County, NH",
+      "lat": 43.1981842,
+      "lng": -71.1577568,
+      "address": "269 1st New Hampshire Turnpike, NH"
+    }
+  },
+  {
+    "id": "foley_oil_propane",
+    "name": "Foley Oil & Propane",
+    "location": {
+      "name": "Foley Oil & Propane",
+      "city": "Charlestown",
+      "state": "NH",
+      "county": "Sullivan County, NH",
+      "lat": 43.1790793,
+      "lng": -72.4388308,
+      "address": "39 Old State Rd, NH"
+    }
+  },
+  {
+    "id": "new_england_propane",
+    "name": "New England Propane",
+    "location": {
+      "name": "New England Propane",
+      "city": "Bethel",
+      "state": "CT",
+      "county": "Western Connecticut Planning Region, CT",
+      "lat": 41.3614609,
+      "lng": -73.4206755,
+      "address": "162 Grassy Plain St, CT"
+    }
+  },
+  {
+    "id": "standard_oil_of_connecticut",
+    "name": "Standard Oil of Connecticut",
+    "location": {
+      "name": "Standard Oil of Connecticut",
+      "city": "Bridgeport",
+      "state": "CT",
+      "county": "Greater Bridgeport Planning Region, CT",
+      "lat": 41.186079,
+      "lng": -73.156967,
+      "address": "299 Bishop Ave, CT"
+    }
+  },
+  {
+    "id": "delivermefuel",
+    "name": "DeliverMeFuel",
+    "location": {
+      "name": "DeliverMeFuel",
+      "city": "Cheshire",
+      "state": "CT",
+      "county": "Naugatuck Valley Planning Region, CT",
+      "lat": 41.5356728,
+      "lng": -72.9012889,
+      "address": "264 Sandbank Rd, CT"
+    }
+  },
+  {
+    "id": "levco_oil_propane",
+    "name": "Levco Oil & Propane",
+    "location": {
+      "name": "Levco Oil & Propane",
+      "city": "Trumbull",
+      "state": "CT",
+      "county": "Greater Bridgeport Planning Region, CT",
+      "lat": 41.2421839,
+      "lng": -73.1459846,
+      "address": "55 Merritt Blvd, CT"
+    }
+  },
+  {
+    "id": "sippin_energy_products",
+    "name": "Sippin Energy Products",
+    "location": {
+      "name": "Sippin Energy Products",
+      "city": "Newington",
+      "state": "CT",
+      "county": "Capitol Planning Region, CT",
+      "lat": 41.7143522,
+      "lng": -72.7263423,
+      "address": "234 Main St, CT"
+    }
+  },
+  {
+    "id": "rahway_propane",
+    "name": "Rahway Propane",
+    "location": {
+      "name": "Rahway Propane",
+      "city": "Rahway",
+      "state": "NJ",
+      "county": "Union County, NJ",
+      "lat": 40.6030883,
+      "lng": -74.2818302,
+      "address": "27 W Hazelwood Ave, NJ"
+    }
+  },
+  {
+    "id": "blue_flame_nj",
+    "name": "Blue Flame NJ",
+    "location": {
+      "name": "Blue Flame NJ",
+      "city": "Newfield",
+      "state": "NJ",
+      "county": "Gloucester County, NJ",
+      "lat": 39.5442072,
+      "lng": -75.012125,
+      "address": "28 Gorgo Ln, NJ"
+    }
+  },
+  {
+    "id": "gerner_energy",
+    "name": "Gerner Energy",
+    "location": {
+      "name": "Gerner Energy",
+      "city": "Hope Meadows",
+      "state": "MD",
+      "county": "Baltimore County, MD",
+      "lat": 39.5902782,
+      "lng": -76.6630132,
+      "address": "16951 York Rd, MD"
+    }
+  },
+  {
+    "id": "tevis_energy",
+    "name": "Tevis Energy",
+    "location": {
+      "name": "Tevis Energy",
+      "city": "Westminster Historic District",
+      "state": "MD",
+      "county": "Carroll County, MD",
+      "lat": 39.579332,
+      "lng": -76.99339,
+      "address": "82 John St, MD"
+    }
+  },
+  {
+    "id": "big_sky_propane",
+    "name": "Big Sky Propane",
+    "location": {
+      "name": "Big Sky Propane",
+      "city": "Bozeman",
+      "state": "MT",
+      "county": "Gallatin County, MT",
+      "lat": 45.679183,
+      "lng": -111.036113,
+      "address": "88 E Main St, MT"
+    }
+  },
+  {
+    "id": "american_distributing",
+    "name": "American Distributing",
+    "location": {
+      "name": "American Distributing",
+      "city": "Marysville",
+      "state": "WA",
+      "county": "Snohomish County, WA",
+      "lat": 48.1191142,
+      "lng": -122.1723955,
+      "address": "13618 45th Ave NE, WA"
+    }
+  }
+]

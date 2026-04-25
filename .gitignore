@@ -1,0 +1,18 @@
+# local dev
+.claude/
+.DS_Store
+*.log
+*.pyc
+__pycache__/
+.venv/
+node_modules/
+
+# scratch / scraping intermediates (regenerable)
+scrape_tmp/
+*.bak
+*.tmp
+
+# secrets
+.env
+.env.*
+!.env.example

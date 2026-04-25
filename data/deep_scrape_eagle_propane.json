@@ -1,0 +1,54 @@
+{
+  "source": "eaglepropaneandfuel.com/locations",
+  "scraped": "2026-04-11",
+  "company": "Eagle Propane & Fuel / Eagle Fuel & Oil",
+  "note": "West & East TX operator",
+  "location_count": 5,
+  "locations": [
+    {
+      "name": "Midland Yard",
+      "street": "11317 West CR 127",
+      "city": "Odessa",
+      "state": "TX",
+      "zip": "79765",
+      "phone": "432-617-4500",
+      "source_url": "https://www.eaglepropaneandfuel.com/locations"
+    },
+    {
+      "name": "West Odessa Yard",
+      "street": "7156 West University",
+      "city": "Odessa",
+      "state": "TX",
+      "zip": "79764",
+      "phone": "432-530-1100",
+      "source_url": "https://www.eaglepropaneandfuel.com/locations"
+    },
+    {
+      "name": "Pecos Yard",
+      "street": "152 Raul Flores Blvd",
+      "city": "Pecos",
+      "state": "TX",
+      "zip": "79772",
+      "phone": "432-445-1503",
+      "source_url": "https://www.eaglepropaneandfuel.com/locations"
+    },
+    {
+      "name": "Tyler Yard",
+      "street": "12426 Hwy 64 West",
+      "city": "Tyler",
+      "state": "TX",
+      "zip": "75704",
+      "phone": "903-596-7707",
+      "source_url": "https://www.eaglepropaneandfuel.com/locations"
+    },
+    {
+      "name": "Mineola Yard",
+      "street": "115 W Front Street",
+      "city": "Mineola",
+      "state": "TX",
+      "zip": "75773",
+      "phone": "903-638-6925",
+      "source_url": "https://www.eaglepropaneandfuel.com/locations"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "source": "https://heritagefs.com/",
+  "scraped": "2026-04-11",
+  "member_id": "heritagefs",
+  "locations": [
+    {
+      "name": "Rensselaer",
+      "street": "N Cullen St",
+      "city": "Rensselaer",
+      "state": "IN",
+      "zip": "47978",
+      "phone": "(219) 866-2718",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Goodland",
+      "street": "1665 South State Road 55",
+      "city": "Goodland",
+      "state": "IN",
+      "zip": "47948",
+      "phone": "(815) 265-4751",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Morocco",
+      "street": "5202 S Old US 41",
+      "city": "Morocco",
+      "state": "IN",
+      "zip": "47963",
+      "phone": "(219) 285-2667",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Milford",
+      "street": "1158 N State Route 1",
+      "city": "Milford",
+      "state": "IL",
+      "zip": "60953",
+      "phone": "(815) 370-5688",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Beaverville",
+      "street": "507 E Main St",
+      "city": "Beaverville",
+      "state": "IL",
+      "zip": "60912",
+      "phone": "(815) 435-2046",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Watseka",
+      "street": "313 E Walnut St",
+      "city": "Watseka",
+      "state": "IL",
+      "zip": "60970",
+      "phone": "(815) 432-3282",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Cissna Park",
+      "street": "424 N State Rte 49",
+      "city": "Cissna Park",
+      "state": "IL",
+      "zip": "60924",
+      "phone": "(815) 457-2148",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "St. George",
+      "street": "5833 E 5000 North Rd",
+      "city": "Bourbonnais",
+      "state": "IL",
+      "zip": "60914",
+      "phone": "(815) 937-3161",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Kankakee Fast Stop",
+      "street": "2201 Grinnell Rd",
+      "city": "Kankake",
+      "state": "IL",
+      "zip": "60901",
+      "phone": "(708) 258-3311",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Peotone",
+      "street": "30230 S Rte 50",
+      "city": "Peotone",
+      "state": "IL",
+      "zip": "60468",
+      "phone": "(708) 258-3311",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Corporate Office",
+      "street": "1381 S Crescent",
+      "city": "Gilman",
+      "state": "IL",
+      "zip": "60938",
+      "phone": "(815) 265-4751",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Gilman Agronomy",
+      "street": "1643 N US Hwy 45",
+      "city": "Gilman",
+      "state": "IL",
+      "zip": "60938",
+      "phone": "(815) 707-7020",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Onarga",
+      "street": "472 East State Route 54",
+      "city": "Onarga",
+      "state": "IL",
+      "zip": "60955",
+      "phone": "(815) 268-4030",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Melvin",
+      "street": "201 N Route 54",
+      "city": "Melvin",
+      "state": "IL",
+      "zip": "60952",
+      "phone": "(217) 388-7731",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Herscher",
+      "street": "596 S 12000 West Rd",
+      "city": "Herscher",
+      "state": "IL",
+      "zip": "60941",
+      "phone": "(815) 426-6556",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Symerton",
+      "street": "18251 W Commercial St.",
+      "city": "Wilmington",
+      "state": "IL",
+      "zip": "60481",
+      "phone": "(708) 258-3311",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Ritchie",
+      "street": "34511 Elevator Rd",
+      "city": "Wilmington",
+      "state": "IL",
+      "zip": "60481",
+      "phone": "(815) 476-7919",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Gibson City FAST STOP",
+      "street": "395 W First St",
+      "city": "Gibson City",
+      "state": "IL",
+      "zip": "60936",
+      "phone": "(217) 784-4259",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Gibson City",
+      "street": "301 S West St",
+      "city": "Gibson City",
+      "state": "IL",
+      "zip": "60936",
+      "phone": "(217) 784-4259",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Plainfield",
+      "street": "11127 S Heggs Rd",
+      "city": "Plainfield",
+      "state": "IL",
+      "zip": "60544",
+      "phone": "(630) 904-1055",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

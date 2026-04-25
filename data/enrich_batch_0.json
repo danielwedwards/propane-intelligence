@@ -1,0 +1,657 @@
+[
+  {
+    "id": "grill_gas_express",
+    "name": "Grill Gas Express",
+    "state": "AL"
+  },
+  {
+    "id": "allgas_inc_of_montgomery",
+    "name": "Allgas Inc. of Montgomery",
+    "state": "AL"
+  },
+  {
+    "id": "thompsongas",
+    "name": "ThompsonGas",
+    "state": "AL"
+  },
+  {
+    "id": "partridge_propane_philadelphia",
+    "name": "Partridge Propane - Philadelphia",
+    "state": "AL"
+  },
+  {
+    "id": "allgas_inc",
+    "name": "Allgas Inc.",
+    "state": "AL"
+  },
+  {
+    "id": "central_propane_hazel_green",
+    "name": "Central Propane - Hazel Green",
+    "state": "AL"
+  },
+  {
+    "id": "central_propane_gurley",
+    "name": "Central Propane - Gurley",
+    "state": "AL"
+  },
+  {
+    "id": "o_nealgas_inc_ar",
+    "name": "O'Nealgas Inc",
+    "state": "AR"
+  },
+  {
+    "id": "mfa_oil",
+    "name": "MFA Oil",
+    "state": "AR"
+  },
+  {
+    "id": "steveson_s_lp_gas",
+    "name": "Steveson's LP Gas",
+    "state": "AR"
+  },
+  {
+    "id": "scott_petroleum_anderson_s_gas_propane",
+    "name": "Scott Petroleum / Anderson's Gas & Propane",
+    "state": "AR"
+  },
+  {
+    "id": "sungas_propane_clarksville",
+    "name": "SunGas Propane Clarksville",
+    "state": "AR"
+  },
+  {
+    "id": "queen_city_gas",
+    "name": "Queen City Gas",
+    "state": "AR"
+  },
+  {
+    "id": "petrolane_gas_services",
+    "name": "Petrolane Gas Services",
+    "state": "AR"
+  },
+  {
+    "id": "affordable_propane_arkansas",
+    "name": "Affordable Propane Arkansas",
+    "state": "AR"
+  },
+  {
+    "id": "mountain_country_propane",
+    "name": "Mountain Country Propane",
+    "state": "AR"
+  },
+  {
+    "id": "west_plains_propane",
+    "name": "West Plains Propane",
+    "state": "AR"
+  },
+  {
+    "id": "propane_of_tucson",
+    "name": "Propane of Tucson",
+    "state": "AZ"
+  },
+  {
+    "id": "ape_fuels_inc",
+    "name": "APE Fuels Inc",
+    "state": "AZ"
+  },
+  {
+    "id": "union_gas",
+    "name": "UNION GAS",
+    "state": "AZ"
+  },
+  {
+    "id": "matlock_propane_equipment_co",
+    "name": "Matlock Propane & Equipment Co",
+    "state": "AZ"
+  },
+  {
+    "id": "cochise_county_farmers_association",
+    "name": "Cochise County Farmers Association",
+    "state": "AZ"
+  },
+  {
+    "id": "barrett_propane",
+    "name": "Barrett Propane",
+    "state": "AZ"
+  },
+  {
+    "id": "yavapai_bottle_gas",
+    "name": "YAVAPAI BOTTLE GAS",
+    "state": "AZ"
+  },
+  {
+    "id": "superior_propane",
+    "name": "Superior Propane",
+    "state": "AZ"
+  },
+  {
+    "id": "valley_veteran_gas_co",
+    "name": "Valley Veteran Gas Co.",
+    "state": "AZ"
+  },
+  {
+    "id": "alliant_gas_powered_by_pinnacle_propane",
+    "name": "Alliant Gas Powered by Pinnacle Propane",
+    "state": "AZ"
+  },
+  {
+    "id": "titan_propane",
+    "name": "Titan Propane",
+    "state": "AZ"
+  },
+  {
+    "id": "samco",
+    "name": "Samco",
+    "state": "AZ"
+  },
+  {
+    "id": "djb_gas_service_inc",
+    "name": "DJB Gas Service Inc",
+    "state": "AZ"
+  },
+  {
+    "id": "ramsay_oil_co",
+    "name": "Ramsay Oil Co",
+    "state": "AZ"
+  },
+  {
+    "id": "california_propane_1",
+    "name": "California propane 1",
+    "state": "CA"
+  },
+  {
+    "id": "fast_gas_propane_crazy_charlies",
+    "name": "Fast Gas & Propane (Crazy Charlies)",
+    "state": "CA"
+  },
+  {
+    "id": "gas_2_you_inc",
+    "name": "Gas 2 You Inc",
+    "state": "CA"
+  },
+  {
+    "id": "bay_area_propane",
+    "name": "Bay Area Propane",
+    "state": "CA"
+  },
+  {
+    "id": "san_leandro_propane_and_fuel_stop",
+    "name": "San Leandro Propane and Fuel Stop",
+    "state": "CA"
+  },
+  {
+    "id": "herger_gas",
+    "name": "Herger Gas",
+    "state": "CA"
+  },
+  {
+    "id": "american_river_gas_co_inc",
+    "name": "American River Gas Co Inc.",
+    "state": "CA"
+  },
+  {
+    "id": "woodland_propane_and_gasoline",
+    "name": "Woodland Propane and Gasoline",
+    "state": "CA"
+  },
+  {
+    "id": "blue_star_gas_crescent_city_co",
+    "name": "Blue Star Gas - Crescent City Co.",
+    "state": "CA"
+  },
+  {
+    "id": "blue_star_gas_medford_co",
+    "name": "Blue Star Gas - Medford Co.",
+    "state": "CA"
+  },
+  {
+    "id": "wilderville_country_store",
+    "name": "Wilderville Country Store",
+    "state": "CA"
+  },
+  {
+    "id": "inter_mountain_propane",
+    "name": "Inter-Mountain Propane",
+    "state": "CO"
+  },
+  {
+    "id": "oil_gas_equipment_corporation",
+    "name": "Oil & Gas Equipment Corporation",
+    "state": "CO"
+  },
+  {
+    "id": "south_fork_propane",
+    "name": "South Fork Propane",
+    "state": "CO"
+  },
+  {
+    "id": "rio_chama_propane_corp",
+    "name": "Rio Chama Propane Corp",
+    "state": "CO"
+  },
+  {
+    "id": "conejos_propane",
+    "name": "Conejos Propane",
+    "state": "CO"
+  },
+  {
+    "id": "norup_gas_inc",
+    "name": "Norup Gas Inc",
+    "state": "CO"
+  },
+  {
+    "id": "rocky_mountain_lp_gas",
+    "name": "Rocky Mountain LP Gas",
+    "state": "CO"
+  },
+  {
+    "id": "deluca_gas",
+    "name": "Deluca Gas",
+    "state": "CO"
+  },
+  {
+    "id": "glaser_energy_group_inc",
+    "name": "Glaser Energy Group, Inc.",
+    "state": "CO"
+  },
+  {
+    "id": "aaa_propane_sales_rentals_inc",
+    "name": "AAA Propane Sales & Rentals, Inc.",
+    "state": "CO"
+  },
+  {
+    "id": "enviro_gas",
+    "name": "Enviro Gas",
+    "state": "CO"
+  },
+  {
+    "id": "maddox_gas_oil",
+    "name": "Maddox Gas & Oil",
+    "state": "CO"
+  },
+  {
+    "id": "weld_lp_gas_co",
+    "name": "Weld LP Gas Co",
+    "state": "CO"
+  },
+  {
+    "id": "neal_oil",
+    "name": "Neal Oil",
+    "state": "CO"
+  },
+  {
+    "id": "legacy_coop_propane_fuel_kimball_ne_burns_cheyenne_laramie_wy",
+    "name": "Legacy Coop Propane & Fuel-Kimball, NE, Burns, Cheyenne, Laramie, WY",
+    "state": "CO"
+  },
+  {
+    "id": "sapp_bros_petroleum",
+    "name": "Sapp Bros. Petroleum",
+    "state": "CO"
+  },
+  {
+    "id": "quinlan_gas_inc",
+    "name": "Quinlan Gas, Inc.",
+    "state": "CT"
+  },
+  {
+    "id": "dutch_oil_propane",
+    "name": "Dutch Oil & Propane",
+    "state": "CT"
+  },
+  {
+    "id": "long_island_propane_inc",
+    "name": "Long Island Propane Inc.",
+    "state": "CT"
+  },
+  {
+    "id": "high_grade_gas_service_inc",
+    "name": "High Grade Gas Service Inc",
+    "state": "CT"
+  },
+  {
+    "id": "propane_lp_gas_at_sunoco_station",
+    "name": "Propane LP Gas at Sunoco Station",
+    "state": "CT"
+  },
+  {
+    "id": "ideal_bottle_gas",
+    "name": "Ideal Bottle Gas",
+    "state": "CT"
+  },
+  {
+    "id": "superior_plus_energy_services",
+    "name": "Superior Plus Energy Services",
+    "state": "CT"
+  },
+  {
+    "id": "superior_plus_propane",
+    "name": "Superior Plus Propane",
+    "state": "CT"
+  },
+  {
+    "id": "all_gas",
+    "name": "ALL-GAS",
+    "state": "CT"
+  },
+  {
+    "id": "osterman_propane",
+    "name": "Osterman Propane",
+    "state": "CT"
+  },
+  {
+    "id": "georgia_energy_propane_gas",
+    "name": "Georgia Energy Propane Gas",
+    "state": "GA"
+  },
+  {
+    "id": "gasco",
+    "name": "Gasco",
+    "state": "GA"
+  },
+  {
+    "id": "united_propane_gas_cleveland_tn",
+    "name": "United Propane Gas (Cleveland, TN)",
+    "state": "GA"
+  },
+  {
+    "id": "aa_bottled_gas_co",
+    "name": "AA BOTTLED GAS CO",
+    "state": "GA"
+  },
+  {
+    "id": "blossman_propane",
+    "name": "Blossman Propane",
+    "state": "GA"
+  },
+  {
+    "id": "mountain_top_propane",
+    "name": "Mountain Top Propane",
+    "state": "GA"
+  },
+  {
+    "id": "twin_rivers_propane",
+    "name": "TWIN RIVERS PROPANE",
+    "state": "GA"
+  },
+  {
+    "id": "freeman_gas_brevard_office",
+    "name": "Freeman Gas Brevard Office",
+    "state": "GA"
+  },
+  {
+    "id": "appalachian_propane_gas",
+    "name": "Appalachian Propane Gas",
+    "state": "GA"
+  },
+  {
+    "id": "palmetto_propane_fuels_ice",
+    "name": "Palmetto Propane, Fuels, & Ice",
+    "state": "GA"
+  },
+  {
+    "id": "baker_petroleum",
+    "name": "Baker Petroleum",
+    "state": "DE"
+  },
+  {
+    "id": "blue_flame",
+    "name": "Blue Flame",
+    "state": "DE"
+  },
+  {
+    "id": "poore_s_propane",
+    "name": "Poore's Propane",
+    "state": "DE"
+  },
+  {
+    "id": "countryside_fuel",
+    "name": "Countryside Fuel",
+    "state": "DE"
+  },
+  {
+    "id": "scully_propane",
+    "name": "Scully Propane",
+    "state": "DE"
+  },
+  {
+    "id": "asapropane",
+    "name": "Asapropane",
+    "state": "DE"
+  },
+  {
+    "id": "blue_flame_gas",
+    "name": "Blue Flame Gas",
+    "state": "DE"
+  },
+  {
+    "id": "ocean_city_supply",
+    "name": "Ocean City Supply",
+    "state": "DE"
+  },
+  {
+    "id": "sharp_energy",
+    "name": "Sharp Energy",
+    "state": "DE"
+  },
+  {
+    "id": "delaware_propane",
+    "name": "Delaware Propane",
+    "state": "DE"
+  },
+  {
+    "id": "first_choice_propane",
+    "name": "First Choice Propane",
+    "state": "FL"
+  },
+  {
+    "id": "prescott_gas_co",
+    "name": "Prescott Gas Co",
+    "state": "FL"
+  },
+  {
+    "id": "discount_propane",
+    "name": "Discount Propane",
+    "state": "FL"
+  },
+  {
+    "id": "thermotane_propane",
+    "name": "Thermotane Propane",
+    "state": "FL"
+  },
+  {
+    "id": "florida_public_utilities_propane_debary",
+    "name": "Florida Public Utilities Propane - Debary",
+    "state": "FL"
+  },
+  {
+    "id": "tri_county_gas",
+    "name": "Tri-County Gas",
+    "state": "FL"
+  },
+  {
+    "id": "propane_cowboy",
+    "name": "Propane Cowboy",
+    "state": "FL"
+  },
+  {
+    "id": "belleview_propane_inc_fl",
+    "name": "Belleview Propane Inc",
+    "state": "FL"
+  },
+  {
+    "id": "24_7_propane",
+    "name": "24/7 Propane",
+    "state": "FL"
+  },
+  {
+    "id": "miami_gas",
+    "name": "Miami Gas",
+    "state": "FL"
+  },
+  {
+    "id": "cooperative_propane",
+    "name": "Cooperative Propane",
+    "state": "FL"
+  },
+  {
+    "id": "burox_engineering",
+    "name": "Burox Engineering",
+    "state": "FL"
+  },
+  {
+    "id": "leon_propane",
+    "name": "Leon Propane",
+    "state": "FL"
+  },
+  {
+    "id": "kyle_frericks_propane",
+    "name": "Kyle Frericks Propane",
+    "state": "IA"
+  },
+  {
+    "id": "prairieland_fs_inc_taylor",
+    "name": "Prairieland FS, Inc. Taylor",
+    "state": "IA"
+  },
+  {
+    "id": "z_z_propane_llc",
+    "name": "Z & Z Propane LLC",
+    "state": "IA"
+  },
+  {
+    "id": "sanborn_propane_and_oil_service_inc",
+    "name": "Sanborn Propane and Oil Service, Inc.",
+    "state": "IA"
+  },
+  {
+    "id": "sam_annis_co",
+    "name": "Sam Annis & Co",
+    "state": "IA"
+  },
+  {
+    "id": "consolidated_energy",
+    "name": "Consolidated Energy",
+    "state": "IA"
+  },
+  {
+    "id": "nexus",
+    "name": "Nexus",
+    "state": "IA"
+  },
+  {
+    "id": "star_energy_fs",
+    "name": "Star Energy FS",
+    "state": "IA"
+  },
+  {
+    "id": "river_valley_energy",
+    "name": "River Valley Energy",
+    "state": "IA"
+  },
+  {
+    "id": "t_j_gas_co",
+    "name": "T-J Gas Co",
+    "state": "IA"
+  },
+  {
+    "id": "cooperative_energy_co",
+    "name": "Cooperative Energy Co",
+    "state": "IA"
+  },
+  {
+    "id": "a_1_propane_service_inc",
+    "name": "A-1 Propane & Service Inc",
+    "state": "IA"
+  },
+  {
+    "id": "consolidated_energy_company",
+    "name": "Consolidated Energy Company",
+    "state": "IA"
+  },
+  {
+    "id": "valley_wide_country_store_wendell",
+    "name": "Valley Wide Country Store | Wendell",
+    "state": "ID"
+  },
+  {
+    "id": "bear_lake_propane",
+    "name": "Bear Lake Propane",
+    "state": "ID"
+  },
+  {
+    "id": "proflame_propane",
+    "name": "Proflame Propane",
+    "state": "ID"
+  },
+  {
+    "id": "cangas_propane",
+    "name": "CanGas Propane",
+    "state": "ID"
+  },
+  {
+    "id": "the_co_op_gas_and_supply_co_inc_energy_department",
+    "name": "The CO-OP Gas and Supply Co., Inc. - Energy Department",
+    "state": "ID"
+  },
+  {
+    "id": "homestead_supply_store",
+    "name": "Homestead Supply Store",
+    "state": "ID"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_rexburg",
+    "name": "Valley Wide Cooperative Energy | Rexburg",
+    "state": "ID"
+  },
+  {
+    "id": "alpine_propane_sales_inc",
+    "name": "Alpine Propane Sales Inc",
+    "state": "ID"
+  },
+  {
+    "id": "energy_west_montana",
+    "name": "Energy West Montana",
+    "state": "ID"
+  },
+  {
+    "id": "aspen_valley_propane_llc",
+    "name": "Aspen Valley Propane, LLC",
+    "state": "ID"
+  },
+  {
+    "id": "salt_river_propane",
+    "name": "Salt River Propane",
+    "state": "ID"
+  },
+  {
+    "id": "kootenai_industries",
+    "name": "Kootenai Industries",
+    "state": "ID"
+  },
+  {
+    "id": "base_camp_warm_springs",
+    "name": "Base Camp Warm Springs",
+    "state": "ID"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_jerome",
+    "name": "Valley Wide Cooperative Energy | Jerome",
+    "state": "ID"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_thayne",
+    "name": "Valley Wide Cooperative Energy | Thayne",
+    "state": "ID"
+  },
+  {
+    "id": "j_peak_propane_inc",
+    "name": "J Peak Propane Inc",
+    "state": "ID"
+  },
+  {
+    "id": "united_propane_gas_paducah_ky",
+    "name": "United Propane Gas (Paducah, KY)",
+    "state": "IL"
+  }
+]

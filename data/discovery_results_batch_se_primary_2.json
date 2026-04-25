@@ -1,0 +1,751 @@
+{
+  "batch": "se_primary_2_ga_nc_al_tn",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Bates Gas Company",
+      "hqCity": "Albany",
+      "hqState": "GA",
+      "website": "https://batesgas.com/",
+      "knownLocations": [
+        {
+          "city": "Albany",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane provider serving Albany and SW Georgia."
+    },
+    {
+      "name": "Mark Heard Fuel Company",
+      "hqCity": "Cumming",
+      "hqState": "GA",
+      "website": "https://markheardfuel.com/",
+      "knownLocations": [
+        {
+          "city": "Cumming",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned full-service propane provider, 70+ years serving Fulton, Cherokee, Gwinnett, Hall, Forsyth, Lumpkin, Dawson, Pickens counties."
+    },
+    {
+      "name": "Mills Fuel Service",
+      "hqCity": "Cumming",
+      "hqState": "GA",
+      "website": "https://www.millsfuel.com/",
+      "knownLocations": [
+        {
+          "city": "Cumming",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned since 1964, supplies propane in Forsyth, Dawson, Lumpkin and surrounding North GA counties."
+    },
+    {
+      "name": "Conger LP Gas",
+      "hqCity": "Tifton",
+      "hqState": "GA",
+      "website": "https://www.congerlpgas.com/",
+      "knownLocations": [
+        {
+          "city": "Tifton",
+          "state": "GA",
+          "street": "146 S. Ridge Ave."
+        },
+        {
+          "city": "Sylvester",
+          "state": "GA",
+          "street": "306 S. Main St."
+        },
+        {
+          "city": "Vidalia",
+          "state": "GA",
+          "street": "604-B N. Broadfoot Blvd."
+        },
+        {
+          "city": "Moultrie",
+          "state": "GA",
+          "street": "3117 Veterans Pkwy S."
+        },
+        {
+          "city": "Valdosta",
+          "state": "GA",
+          "street": "2310 B Hwy 84 W"
+        },
+        {
+          "city": "Douglas",
+          "state": "GA",
+          "street": "271 Thompson Dr."
+        }
+      ],
+      "ownership": "family",
+      "notes": "Multi-location South Georgia propane retailer with six branches across the state."
+    },
+    {
+      "name": "Partners Propane",
+      "hqCity": "Newnan",
+      "hqState": "GA",
+      "website": "https://www.partnerspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Newnan",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Independent residential, commercial and agricultural propane provider."
+    },
+    {
+      "name": "Asheville Oil Company",
+      "hqCity": "Asheville",
+      "hqState": "NC",
+      "website": "https://www.ashevilleoil.com/",
+      "knownLocations": [
+        {
+          "city": "Asheville",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Founded 1930, family-dedicated WNC propane and fuel provider."
+    },
+    {
+      "name": "GandB Energy",
+      "hqCity": "Newton",
+      "hqState": "NC",
+      "website": "https://gbenergy.com/",
+      "knownLocations": [
+        {
+          "city": "Newton",
+          "state": "NC",
+          "street": null
+        },
+        {
+          "city": "Boone",
+          "state": "NC",
+          "street": "2228 Old US Hwy 421 S"
+        },
+        {
+          "city": "Asheville",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "89-year fuel delivery business with multiple WNC propane locations."
+    },
+    {
+      "name": "Wallace Propane",
+      "hqCity": "Boone",
+      "hqState": "NC",
+      "website": "https://www.wallacepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Boone",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent Boone-area propane dealer in High Country NC."
+    },
+    {
+      "name": "James Oxygen and Supply",
+      "hqCity": "Boone",
+      "hqState": "NC",
+      "website": "https://www.jameso2.com/",
+      "knownLocations": [
+        {
+          "city": "Boone",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "65+ years serving Boone area homes and businesses with propane delivery."
+    },
+    {
+      "name": "Frontier Natural Gas Company",
+      "hqCity": "Elkin",
+      "hqState": "NC",
+      "website": "https://www.frontiernaturalgas.com/",
+      "knownLocations": [
+        {
+          "city": "Elkin",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Serves Surry, Yadkin, Wilkes, Watauga, Ashe and Warren counties."
+    },
+    {
+      "name": "Yadkin Propane",
+      "hqCity": "Albemarle",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Albemarle",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Full-service local propane provider in greater Albemarle, NC."
+    },
+    {
+      "name": "M and J Gas Company",
+      "hqCity": "Lumberton",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lumberton",
+          "state": "NC",
+          "street": "1911 East 5th St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer in Lumberton/Robeson County."
+    },
+    {
+      "name": "KB Johnson Oil and Gas",
+      "hqCity": "Fuquay-Varina",
+      "hqState": "NC",
+      "website": "https://www.kbjohnson.com/",
+      "knownLocations": [
+        {
+          "city": "Fuquay-Varina",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane and fuel oil delivery services in central NC."
+    },
+    {
+      "name": "VanDerveer Gas Service",
+      "hqCity": "Williamston",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Williamston",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Acquired by AmeriGas; historically eastern NC propane marketer."
+    },
+    {
+      "name": "Sexton Propane Gas (Acme)",
+      "hqCity": "Highland Home",
+      "hqState": "AL",
+      "website": "https://www.acmegas.com/",
+      "knownLocations": [
+        {
+          "city": "Highland Home",
+          "state": "AL",
+          "street": null
+        },
+        {
+          "city": "Montgomery",
+          "state": "AL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Sexton Propane Gas Co Inc DBA Acme Propane Gas, serves Bullock, Butler, Crenshaw, Lowndes, Macon, Montgomery and Pike counties."
+    },
+    {
+      "name": "Central Propane Huntsville",
+      "hqCity": "Huntsville",
+      "hqState": "AL",
+      "website": "https://www.central-propane.com/",
+      "knownLocations": [
+        {
+          "city": "Huntsville",
+          "state": "AL",
+          "street": "6996 Memorial Pkwy NW"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Cornerstone NE Alabama propane provider for 45+ years."
+    },
+    {
+      "name": "Cullman Jefferson Gas",
+      "hqCity": "Cullman",
+      "hqState": "AL",
+      "website": "https://www.cjgas.com/",
+      "knownLocations": [
+        {
+          "city": "Cullman",
+          "state": "AL",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Independent N Alabama gas utility/propane provider."
+    },
+    {
+      "name": "Golden Propane Cullman",
+      "hqCity": "Cullman",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cullman",
+          "state": "AL",
+          "street": "914 County Road 1662"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Cullman-area propane dealer."
+    },
+    {
+      "name": "Superior Gas Roanoke",
+      "hqCity": "Roanoke",
+      "hqState": "AL",
+      "website": "https://www.superiorgas.biz/",
+      "knownLocations": [
+        {
+          "city": "Roanoke",
+          "state": "AL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "East Alabama propane provider serving residential, agricultural, commercial customers."
+    },
+    {
+      "name": "Allgas Inc Opelika",
+      "hqCity": "Opelika",
+      "hqState": "AL",
+      "website": "https://allgasinc.com/",
+      "knownLocations": [
+        {
+          "city": "Opelika",
+          "state": "AL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent Alabama propane company headquarters."
+    },
+    {
+      "name": "South Alabama Gas",
+      "hqCity": "Andalusia",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Andalusia",
+          "state": "AL",
+          "street": null
+        }
+      ],
+      "ownership": "municipal",
+      "notes": "Municipal gas utility now branded under ThompsonGas; serves S Alabama."
+    },
+    {
+      "name": "Heritage Propane Huntsville",
+      "hqCity": "Huntsville",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Huntsville",
+          "state": "AL",
+          "street": "7230 Governors W"
+        }
+      ],
+      "ownership": "private",
+      "notes": "Heritage-branded propane retailer in Huntsville."
+    },
+    {
+      "name": "TN Gas LLC Knoxville",
+      "hqCity": "Knoxville",
+      "hqState": "TN",
+      "website": "https://www.tngascompany.com/",
+      "knownLocations": [
+        {
+          "city": "Knoxville",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned and operated East Tennessee propane delivery company."
+    },
+    {
+      "name": "Sevier County Propane",
+      "hqCity": "Sevierville",
+      "hqState": "TN",
+      "website": "https://www.seviercountypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Sevierville",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local Sevier County propane delivery and refill independent."
+    },
+    {
+      "name": "Blue River Propane Memphis",
+      "hqCity": "Memphis",
+      "hqState": "TN",
+      "website": "https://blueriverpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Memphis",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Forklift, warehouse and distribution center propane services in Memphis area."
+    },
+    {
+      "name": "Marsh Propane Cookeville",
+      "hqCity": "Cookeville",
+      "hqState": "TN",
+      "website": "https://www.marshpet.com/",
+      "knownLocations": [
+        {
+          "city": "Cookeville",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Marsh Petroleum subsidiary; propane services in Upper Cumberland TN region."
+    },
+    {
+      "name": "Admiral Propane Kingsport",
+      "hqCity": "Kingsport",
+      "hqState": "TN",
+      "website": "https://www.admiralpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Kingsport",
+          "state": "TN",
+          "street": null
+        },
+        {
+          "city": "Greene County",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Tri-Cities propane provider since 1996 serving E Tennessee, S Virginia, NW NC."
+    },
+    {
+      "name": "United Propane Gas Clarksville",
+      "hqCity": "Clarksville",
+      "hqState": "TN",
+      "website": "https://upgas.com/",
+      "knownLocations": [
+        {
+          "city": "Clarksville",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Multi-state propane marketer with TN Clarksville-area branch."
+    },
+    {
+      "name": "Advanced Propane Cookeville",
+      "hqCity": "Cookeville",
+      "hqState": "TN",
+      "website": "https://www.advancedpropaneinc.com/",
+      "knownLocations": [
+        {
+          "city": "Cookeville",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned since 1992; propane delivery, tank install, appliances in Middle TN and S KY."
+    },
+    {
+      "name": "G and S Gas Service",
+      "hqCity": "Eatonton",
+      "hqState": "GA",
+      "website": "https://gsgasinc.com/",
+      "knownLocations": [
+        {
+          "city": "Eatonton",
+          "state": "GA",
+          "street": "113 Harmony Crossing"
+        },
+        {
+          "city": "Milledgeville",
+          "state": "GA",
+          "street": null
+        },
+        {
+          "city": "Greensboro",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Middle Georgia propane retailer serving Lake Oconee, Milledgeville and Greensboro thousands of customers."
+    },
+    {
+      "name": "Valley Propane Lake Oconee",
+      "hqCity": "Eatonton",
+      "hqState": "GA",
+      "website": "https://valleypropanegas.com/",
+      "knownLocations": [
+        {
+          "city": "Eatonton",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "20+ years serving Eatonton and Lake Oconee surrounding counties."
+    },
+    {
+      "name": "Southland Propane Service",
+      "hqCity": "LaGrange",
+      "hqState": "GA",
+      "website": "https://southlandpropaneservice.com/",
+      "knownLocations": [
+        {
+          "city": "LaGrange",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned LaGrange propane provider, 40+ years; multi-year LaGrange Daily News Reader's Choice winner."
+    },
+    {
+      "name": "Blue Flame Gas Company Griffin",
+      "hqCity": "Griffin",
+      "hqState": "GA",
+      "website": "https://www.blueflamegascompany.com/",
+      "knownLocations": [
+        {
+          "city": "Griffin",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned since 1966, serves 15 counties in south metro Atlanta area."
+    },
+    {
+      "name": "Ranger Propane Manchester",
+      "hqCity": "Manchester",
+      "hqState": "GA",
+      "website": "https://www.rangerpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Manchester",
+          "state": "GA",
+          "street": null
+        },
+        {
+          "city": "LaGrange",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent west-central Georgia propane provider."
+    },
+    {
+      "name": "Spalding Gas",
+      "hqCity": "Griffin",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Griffin",
+          "state": "GA",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Division of DCC Propane in Griffin."
+    },
+    {
+      "name": "Berico Fuels",
+      "hqCity": "Greensboro",
+      "hqState": "NC",
+      "website": "https://www.berico.com/",
+      "knownLocations": [
+        {
+          "city": "Greensboro",
+          "state": "NC",
+          "street": null
+        },
+        {
+          "city": "Eden",
+          "state": "NC",
+          "street": null
+        },
+        {
+          "city": "Burlington",
+          "state": "NC",
+          "street": null
+        },
+        {
+          "city": "Reidsville",
+          "state": "NC",
+          "street": null
+        },
+        {
+          "city": "High Point",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Greensboro-based fuel and propane company since 1924, with Berico of Eden and Berico of Burlington branches."
+    },
+    {
+      "name": "Pico Propane Yanceyville",
+      "hqCity": "Yanceyville",
+      "hqState": "NC",
+      "website": "https://thomasbrospropane.com/",
+      "knownLocations": [
+        {
+          "city": "Yanceyville",
+          "state": "NC",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned and operated 24-hour Yanceyville propane provider (Thomas Bros)."
+    },
+    {
+      "name": "Rentz Eden Oil Company",
+      "hqCity": "Eden",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Eden",
+          "state": "NC",
+          "street": "2507 Richardson Dr"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Founded 1939; provides propane, fuel and lubricants in Rockingham County NC."
+    },
+    {
+      "name": "Hunter Oil and Propane",
+      "hqCity": "Sanford",
+      "hqState": "NC",
+      "website": "https://www.hunteroilpro.com/",
+      "knownLocations": [
+        {
+          "city": "Sanford",
+          "state": "NC",
+          "street": "1203 S Horner Blvd"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned 65+ years serving Lee County and central NC fuel and propane needs."
+    },
+    {
+      "name": "Butane and Propane Gas Company Talladega",
+      "hqCity": "Talladega",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Talladega",
+          "state": "AL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent Talladega-area propane provider since 1954."
+    },
+    {
+      "name": "Economy Gas Service",
+      "hqCity": "Childersburg",
+      "hqState": "AL",
+      "website": "https://www.economygasservice.com/",
+      "knownLocations": [
+        {
+          "city": "Childersburg",
+          "state": "AL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serves Talladega, Shelby, Coosa, St. Clair, Jefferson, Tallapoosa, Elmore, Clay and Lee counties."
+    },
+    {
+      "name": "United Propane Gas Greenville AL",
+      "hqCity": "Greenville",
+      "hqState": "AL",
+      "website": "https://upgas.com/",
+      "knownLocations": [
+        {
+          "city": "Greenville",
+          "state": "AL",
+          "street": "168 S Mt Zion Rd"
+        }
+      ],
+      "ownership": "private",
+      "notes": "UPG branch serving Greenville AL central Alabama."
+    },
+    {
+      "name": "Legacy Propane Shelbyville",
+      "hqCity": "Shelbyville",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Shelbyville",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local family-owned and operated propane delivery service."
+    },
+    {
+      "name": "Keene Gas Pulaski",
+      "hqCity": "Pulaski",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pulaski",
+          "state": "TN",
+          "street": null
+        },
+        {
+          "city": "Lewisburg",
+          "state": "TN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent S Middle TN propane dealer also serving Pell City and Talladega AL area."
+    }
+  ]
+}

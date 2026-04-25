@@ -1,0 +1,217 @@
+{
+  "source": "https://www.conservfs.com/",
+  "scraped": "2026-04-11",
+  "member_id": "conservfs",
+  "locations": [
+    {
+      "name": "Greenfield Service Center",
+      "street": "3962 N700W",
+      "city": "Greenfield",
+      "state": "IN",
+      "zip": "46140",
+      "phone": "(317) 477-5879",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Tinley Park Service Center",
+      "street": "7851 183rd St",
+      "city": "Tinley Park",
+      "state": "IL",
+      "zip": "60477",
+      "phone": "(708) 532-4723",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Lisle Service Center",
+      "street": "4720 Yender Ave",
+      "city": "Lisle",
+      "state": "IL",
+      "zip": "60532",
+      "phone": "(630) 963-8787",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "St. Charles Service Center",
+      "street": "1500 Foundry St, #1",
+      "city": "St. Charles",
+      "state": "IL",
+      "zip": "60174",
+      "phone": "(630) 549-0170",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Wauconda Service Center",
+      "street": "27310 W Case Rd",
+      "city": "Wauconda",
+      "state": "IL",
+      "zip": "60084",
+      "phone": "(847) 526-0007",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Kansasville Service Center",
+      "street": "4304 S Beaumont Ave",
+      "city": "Kansasville",
+      "state": "WI",
+      "zip": "53139",
+      "phone": "(262) 878-2048",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Main Office",
+      "street": "1110 McConnell Rd",
+      "city": "Woodstock",
+      "state": "IL",
+      "zip": "60098",
+      "phone": "(815) 334-5950",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Waterman",
+      "street": "9391 State Route 23",
+      "city": "Waterman",
+      "state": "IL",
+      "zip": "60556",
+      "phone": "(815) 334-5950",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Waterman Service Center",
+      "street": "450 W Adams",
+      "city": "Waterman",
+      "state": "IL",
+      "zip": "60556",
+      "phone": "(815) 264-7709",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "DeKalb Service Center",
+      "street": "20048 Webster Rd",
+      "city": "DeKalb",
+      "state": "IL",
+      "zip": "60115",
+      "phone": "(815) 756-2739",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "FS Grain - Sycamore",
+      "street": "410 N Main St",
+      "city": "Sycamore",
+      "state": "IL",
+      "zip": "60178",
+      "phone": "(815) 895-8891",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "DeKalb",
+      "street": "880 Peace Rd",
+      "city": "DeKalb",
+      "state": "IL",
+      "zip": "60115",
+      "phone": "(800) 327-6427",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Marengo Service Center",
+      "street": "20515 Harmony Rd",
+      "city": "Marengo",
+      "state": "IL",
+      "zip": "60152",
+      "phone": "(815) 568-7211",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Zenda Service Center",
+      "street": "W4147 County Rd B",
+      "city": "Zenda",
+      "state": "WI",
+      "zip": "53195",
+      "phone": "(262) 275-6644",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Malta Service Center",
+      "street": "20606 Willrett Rd",
+      "city": "Malta",
+      "state": "IL",
+      "zip": "60150",
+      "phone": "(815) 825-2012",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "FS Grain - Creston, IL",
+      "street": "19560 E IL Rt 38",
+      "city": "Rochelle",
+      "state": "IL",
+      "zip": "61068",
+      "phone": "(815) 384-4011",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Complete Feeds",
+      "street": "3 Natural Way",
+      "city": "Sharon",
+      "state": "WI",
+      "zip": "53585",
+      "phone": "(262) 736-3333",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Caledonia Service Center",
+      "street": "14937 IL Route 76",
+      "city": "Caledonia",
+      "state": "IL",
+      "zip": "61011",
+      "phone": "(815) 765-2571",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Holcomb Service Center",
+      "street": "14063 E Holcomb Rd",
+      "city": "Davis Junction",
+      "state": "IL",
+      "zip": "61020",
+      "phone": "(815) 393-4287",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Rockford Service Center",
+      "street": "1925 S Meridian Rd",
+      "city": "Rockford",
+      "state": "IL",
+      "zip": "61102",
+      "phone": "(815) 963-7669",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Rockford - Cunningham Road Service Center",
+      "street": "7222 Cunningham Rd",
+      "city": "Rockford",
+      "state": "IL",
+      "zip": "61102",
+      "phone": "(815) 522-3521",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

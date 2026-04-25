@@ -1,0 +1,3471 @@
+{
+  "batch": "tx_rrc_cat_e_licensing",
+  "generated": "2026-04-12",
+  "companies": [
+    {
+      "name": "301 PROPANE HOLDINGS LP",
+      "hqCity": "Brady",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brady",
+          "state": "TX",
+          "street": "1501 SOUTH BRIDGE ST"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27378. Phone: 3253130884"
+    },
+    {
+      "name": "ADAMS SERVICE CENTER LLC",
+      "hqCity": "Ranger",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ranger",
+          "state": "TX",
+          "street": "6405 IH 20"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #17344. Phone: 2546471641"
+    },
+    {
+      "name": "AIRGAS USA, LLC",
+      "hqCity": "Pearland",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pearland",
+          "state": "TX",
+          "street": "4344 SOUTH MAIN STREET"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22974. Phone: 7135952030"
+    },
+    {
+      "name": "ALAMO PROPANE DELIVERY INC.",
+      "hqCity": "Helotes",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Helotes",
+          "state": "TX",
+          "street": "PO BOX 1013"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #09493. Phone: 2106951030"
+    },
+    {
+      "name": "ALANIZ PROPANE LLC",
+      "hqCity": "Grulla",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Grulla",
+          "state": "TX",
+          "street": "PO BOX 585"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #19909. Phone: 9564876595"
+    },
+    {
+      "name": "ALEXANDER & MEADOR LLC",
+      "hqCity": "Decatur",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Decatur",
+          "state": "TX",
+          "street": "PO BOX 2526"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30220. Phone: 9403936075"
+    },
+    {
+      "name": "ALLIANCE GAS PRODUCTS CORP.",
+      "hqCity": "Gainesville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Gainesville",
+          "state": "TX",
+          "street": "PO BOX 717"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #09047. Phone: 9406653457"
+    },
+    {
+      "name": "AMERICAN WELDING & GAS INC",
+      "hqCity": "Lexington",
+      "hqState": "KY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lexington",
+          "state": "KY",
+          "street": "1575 WINCHESTER ROAD, SUITE 160"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27863. Phone: 8597378140"
+    },
+    {
+      "name": "ANDY'S PROPANE SERVICE",
+      "hqCity": "Weslaco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weslaco",
+          "state": "TX",
+          "street": "7300 NORTH FM 88"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06989. Phone: 9569684286"
+    },
+    {
+      "name": "ARANSAS PROPANE GAS LLC",
+      "hqCity": "Rockport",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rockport",
+          "state": "TX",
+          "street": "401 W 10TH ST"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27846. Phone: 3617292111"
+    },
+    {
+      "name": "ARGUINDEGUI OIL CO. II LTD",
+      "hqCity": "Laredo",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Laredo",
+          "state": "TX",
+          "street": "P O BOX 1367"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22907. Phone: 9567225251"
+    },
+    {
+      "name": "ARMADILLO CYLINDER EXCHANGE LLC",
+      "hqCity": "Cleburne",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cleburne",
+          "state": "TX",
+          "street": "4112 E HWY 67"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30703. Phone: 8772924264"
+    },
+    {
+      "name": "ARMADILLO PROPANE LLC",
+      "hqCity": "San Saba",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "San Saba",
+          "state": "TX",
+          "street": "255 SOUTH HWY 16"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #19621. Phone: 3252485207"
+    },
+    {
+      "name": "ATTI CORP",
+      "hqCity": "Paris",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Paris",
+          "state": "TX",
+          "street": "PO BOX 1153"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10991. Phone: 9037856461"
+    },
+    {
+      "name": "AUTOMATIC PROPANE GAS & SUPPLY LLC",
+      "hqCity": "Mineola",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mineola",
+          "state": "TX",
+          "street": "1677 S US HWY 69"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #18023. Phone: 9035693839"
+    },
+    {
+      "name": "B&J WELDING SUPPLY, LLC",
+      "hqCity": "Lubbock",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lubbock",
+          "state": "TX",
+          "street": "P O BOX 3520"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #23080. Phone: 4328537683"
+    },
+    {
+      "name": "B & M SUPPLY & GAS COMPANY, LLC",
+      "hqCity": "Aspermont",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Aspermont",
+          "state": "TX",
+          "street": "PO BOX 296"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10854. Phone: 9409893515"
+    },
+    {
+      "name": "B & S PROPANE CO., INC.",
+      "hqCity": "New Waverly",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "New Waverly",
+          "state": "TX",
+          "street": "P. O. BOX 602"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04847. Phone: 9363446256"
+    },
+    {
+      "name": "BARTA PROPANE, LLC",
+      "hqCity": "Damon",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Damon",
+          "state": "TX",
+          "street": "PO BOX 98"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22380. Phone: 979742-3456"
+    },
+    {
+      "name": "BAY-TEC PROPANE SERVICE CO.",
+      "hqCity": "Bacliff",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bacliff",
+          "state": "TX",
+          "street": "P.O. BOX 838"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08204. Phone: 2815592334"
+    },
+    {
+      "name": "BERT SCHRANK, INC.",
+      "hqCity": "Hamilton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hamilton",
+          "state": "TX",
+          "street": "P. O. BOX 366"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04345. Phone: 2543868144"
+    },
+    {
+      "name": "BETTS 1 STOP INC",
+      "hqCity": "Weslaco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weslaco",
+          "state": "TX",
+          "street": "P.O. BOX 8381"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #07288. Phone: 9569686474"
+    },
+    {
+      "name": "BIG JOHN PROPANE GAS AND FUEL DISTRIBUTOR INC",
+      "hqCity": "Conroe",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Conroe",
+          "state": "TX",
+          "street": "10060 STIDHAM RD"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #18272. Phone: 2817021904"
+    },
+    {
+      "name": "BILL C. SMITH., INC.",
+      "hqCity": "Marble Falls",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Marble Falls",
+          "state": "TX",
+          "street": "PO BOX 1162"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #02258. Phone: 8306130488"
+    },
+    {
+      "name": "BOB BAZE PROPANE LLC",
+      "hqCity": "Grandview",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Grandview",
+          "state": "TX",
+          "street": "4341 CR 401"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #21142. Phone: 8177902146"
+    },
+    {
+      "name": "BRENHAM L-P GAS, INC.",
+      "hqCity": "Brenham",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brenham",
+          "state": "TX",
+          "street": "302 WEST MAIN"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01554. Phone: 9798362331"
+    },
+    {
+      "name": "BROWNFIELD FARMERS CO-OP STATION",
+      "hqCity": "Brownfield",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brownfield",
+          "state": "TX",
+          "street": "PO BOX 388"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #02156. Phone: 8066374517"
+    },
+    {
+      "name": "BUBBAS LONE STAR PROPANE & GAS CO",
+      "hqCity": "San Marcos",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "San Marcos",
+          "state": "TX",
+          "street": "4222 F.M. 621"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #09789. Phone: 5123929999"
+    },
+    {
+      "name": "BUBEZI ENTERPRISES, INC.",
+      "hqCity": "Conroe",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Conroe",
+          "state": "TX",
+          "street": "11392 WARD RD"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #23924. Phone: 2817017696"
+    },
+    {
+      "name": "BUSTAMANTE BARBA LLC",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": "5524 EL PASO DR"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #28779. Phone: 9158616054"
+    },
+    {
+      "name": "BUSTERS PROPANE LLC",
+      "hqCity": "Corpus Christi",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Corpus Christi",
+          "state": "TX",
+          "street": "5402 AYERS ST"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27424. Phone: 3618528161"
+    },
+    {
+      "name": "C. CLARK PROPANE, INC.",
+      "hqCity": "Pampa",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pampa",
+          "state": "TX",
+          "street": "PO BOX 1380"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06820. Phone: 8066654018"
+    },
+    {
+      "name": "CAYWOOD ENTERPRISES, INC.",
+      "hqCity": "Conroe",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Conroe",
+          "state": "TX",
+          "street": "P. O. BOX 313"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01266. Phone: 9367563389"
+    },
+    {
+      "name": "CBFS PROPANE LLC",
+      "hqCity": "Rocksprings",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rocksprings",
+          "state": "TX",
+          "street": "PO BOX 205"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31865. Phone: 8306833101"
+    },
+    {
+      "name": "CENTRAL TEXAS ENERGY SUPPLIERS, INC.",
+      "hqCity": "Comanche",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Comanche",
+          "state": "TX",
+          "street": "P.O. BOX 100"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04193. Phone: 3253565239"
+    },
+    {
+      "name": "CENTRAL TEXAS PLUMBING SOLUTIONS INC",
+      "hqCity": "Waco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Waco",
+          "state": "TX",
+          "street": "PO BOX 23624"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30083. Phone: 2547766500"
+    },
+    {
+      "name": "CHADWELL & SON GAS CO, INC",
+      "hqCity": "Springtown",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Springtown",
+          "state": "TX",
+          "street": "P O BOX 1327"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #02650. Phone: 8175234443"
+    },
+    {
+      "name": "CHARLES OIL & GAS, INC.",
+      "hqCity": "Farwell",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Farwell",
+          "state": "TX",
+          "street": "P.O. BOX 455"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #07917. Phone: 8062514813222"
+    },
+    {
+      "name": "CHEMTANE ENERGY, LLC",
+      "hqCity": "Moss Point",
+      "hqState": "MS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Moss Point",
+          "state": "MS",
+          "street": "10601 HWY 63"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #14513. Phone: 6016248709"
+    },
+    {
+      "name": "CHICO BUTANE GAS CO., LLC",
+      "hqCity": "Chico",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Chico",
+          "state": "TX",
+          "street": "BOX 286"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #25377. Phone: 9406442624"
+    },
+    {
+      "name": "CHILL PROPANE LLC (CAT E)",
+      "hqCity": "Hull",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hull",
+          "state": "TX",
+          "street": "PO BOX 356"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30898. Phone: 2817619191"
+    },
+    {
+      "name": "CHRIS`S GAS PLUMBING SERVICES",
+      "hqCity": "Mcgregor",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mcgregor",
+          "state": "TX",
+          "street": "674 LIFESTYLE LN."
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #25828. Phone: 2543152460"
+    },
+    {
+      "name": "CIRCLE L. ENTERPRISES, INC.",
+      "hqCity": "Hamilton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hamilton",
+          "state": "TX",
+          "street": "1310 S US HWY 281"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08760. Phone: 2543863114"
+    },
+    {
+      "name": "COLORADO COUNTY PROPANE LLC",
+      "hqCity": "El Campo",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Campo",
+          "state": "TX",
+          "street": "165 ASHDALE LANE"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #16685. Phone: 9797332300"
+    },
+    {
+      "name": "CONSUMERS LPG AND APPLIANCE COMPANY INC",
+      "hqCity": "Crockett",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Crockett",
+          "state": "TX",
+          "street": "P. O. BOX 459"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #00353. Phone: 9365449645"
+    },
+    {
+      "name": "CORTERA GAS LLC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "3262 WESTHEIMER RDNO. 222"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #29567. Phone: 7135686908"
+    },
+    {
+      "name": "CRIST PROPANE & FUEL, LLC",
+      "hqCity": "Wildorado",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wildorado",
+          "state": "TX",
+          "street": "PO BOX 37"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #16133. Phone: 8064263412"
+    },
+    {
+      "name": "CROSBY COUNTY FUEL ASSOCIATION",
+      "hqCity": "Ralls",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ralls",
+          "state": "TX",
+          "street": "PO BOX 1170"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01263. Phone: 8062531123"
+    },
+    {
+      "name": "CROSS TIMBERS PROPANE, INC.",
+      "hqCity": "Lipan",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lipan",
+          "state": "TX",
+          "street": "P. O. BOX 189"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #15940. Phone: 8004487803"
+    },
+    {
+      "name": "CTHT MANAGEMENT LLC",
+      "hqCity": "Buchanan Dam",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Buchanan Dam",
+          "state": "TX",
+          "street": "PO BOX 956"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #19398. Phone: 8302202455"
+    },
+    {
+      "name": "CYPERT BUTANE COMPANY",
+      "hqCity": "Garden City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Garden City",
+          "state": "TX",
+          "street": "P O BOX 172"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #05537. Phone: 4323542552"
+    },
+    {
+      "name": "D.E.D. PROPANE SERVICES LLC",
+      "hqCity": "Decatur",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Decatur",
+          "state": "TX",
+          "street": "2173 N FM 730"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #33013. Phone: 9402100124"
+    },
+    {
+      "name": "D.R.M. GAS INC",
+      "hqCity": "Groveton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Groveton",
+          "state": "TX",
+          "street": "1188 EAST HWY 287"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13008. Phone: 9366421131"
+    },
+    {
+      "name": "D & L PROPANE, INC.",
+      "hqCity": "Brazoria",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brazoria",
+          "state": "TX",
+          "street": "P.O. BOX 1737"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06040. Phone: 9797985252"
+    },
+    {
+      "name": "DANNYS PROPANE LLC",
+      "hqCity": "Weslaco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weslaco",
+          "state": "TX",
+          "street": "1912 N BIRDNEST LN"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32494. Phone: 9567566263"
+    },
+    {
+      "name": "DCJ HOLDINGS, LLC",
+      "hqCity": "Decatur",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Decatur",
+          "state": "TX",
+          "street": "PO BOX 1554"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27550. Phone: 9403932639"
+    },
+    {
+      "name": "DEBERRY BUTANE & GAS COMPANY",
+      "hqCity": "Ore City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ore City",
+          "state": "TX",
+          "street": "P O BOX 10"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08754. Phone: 9039682222"
+    },
+    {
+      "name": "DELL VALLEY PROPANE, LLC",
+      "hqCity": "Dell City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dell City",
+          "state": "TX",
+          "street": "PO BOX 575"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #15721. Phone: 9159642609"
+    },
+    {
+      "name": "DENSON ENTERPRISES INC",
+      "hqCity": "Bowie",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bowie",
+          "state": "TX",
+          "street": "BOX 1553"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #19180. Phone: 9408722331"
+    },
+    {
+      "name": "DONS BUTANE SERVICE, INC.",
+      "hqCity": "Loving",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Loving",
+          "state": "TX",
+          "street": "P. O. BOX 400"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08538. Phone: 9403782390"
+    },
+    {
+      "name": "DS BUTANE & PLUMBING INC",
+      "hqCity": "Dripping Springs",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dripping Springs",
+          "state": "TX",
+          "street": "P. O. BOX 370"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #05247. Phone: 5128944480"
+    },
+    {
+      "name": "DYNASTY ENTERPRISES, LLC.",
+      "hqCity": "Kenedy",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kenedy",
+          "state": "TX",
+          "street": "PO BOX 128"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #05571. Phone: 8305832212"
+    },
+    {
+      "name": "EAGLE FUELS LLC",
+      "hqCity": "Muenster",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Muenster",
+          "state": "TX",
+          "street": "PO BOX 123"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31330. Phone: 9405945906"
+    },
+    {
+      "name": "EARL F SCHACHERL LLC",
+      "hqCity": "Hallettsville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hallettsville",
+          "state": "TX",
+          "street": "385 US HWY 77 S"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #15916. Phone: 3617982581"
+    },
+    {
+      "name": "ENDURING BLOCK, LLC",
+      "hqCity": "Sugar Land",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sugar Land",
+          "state": "TX",
+          "street": "6515 LUSSIER DR"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22857. Phone: 7133643205"
+    },
+    {
+      "name": "ENLINK MIDSTREAM SERVICES LLC",
+      "hqCity": "Bridgeport",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bridgeport",
+          "state": "TX",
+          "street": "415 P.R. 3502"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #20937. Phone: 9406831184"
+    },
+    {
+      "name": "EPBB INVESTMENT HOLDINGS LP",
+      "hqCity": "Midland",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Midland",
+          "state": "TX",
+          "street": "PO BOX 61777"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #16128. Phone: 4326174500"
+    },
+    {
+      "name": "FARMERS COOP. ELEV. ASSO. OF LEVELL",
+      "hqCity": "Levelland",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Levelland",
+          "state": "TX",
+          "street": "PO BOX 1087"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04698. Phone: 8068948505"
+    },
+    {
+      "name": "FAYETTEVILLE PROPANE CO., INC.",
+      "hqCity": "Fayetteville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fayetteville",
+          "state": "TX",
+          "street": "P.O. BOX 218"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #00071. Phone: 8005492213"
+    },
+    {
+      "name": "FIFTY-FIFTY LLC",
+      "hqCity": "Granbury",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Granbury",
+          "state": "TX",
+          "street": "3222 GARDEN TERRACE COURT"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13566. Phone: 8172793994"
+    },
+    {
+      "name": "FILL-N-GO-PROPANE LLC",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": "303 N OREGON STE 1010"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #29201. Phone: 9152432514"
+    },
+    {
+      "name": "FIRE PHOENIX PROPANE LLC",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": "303 N OREGON ST"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32657. Phone: 9152432514"
+    },
+    {
+      "name": "FRED GARRISON OIL COMPANY",
+      "hqCity": "Plainview",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Plainview",
+          "state": "TX",
+          "street": "PO BOX 100"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01503. Phone: 8062966353"
+    },
+    {
+      "name": "GAS-TEX ENERGY, INC.",
+      "hqCity": "Royse City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Royse City",
+          "state": "TX",
+          "street": "5940 STATE HIGHWAY 276"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #05727. Phone: 9727718654"
+    },
+    {
+      "name": "GBS LOGISTICS LLC",
+      "hqCity": "Quanah",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Quanah",
+          "state": "TX",
+          "street": "PO BOX 148"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #21294. Phone: 9408397546"
+    },
+    {
+      "name": "GETAWELDER.COM, INC.",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "11924 N. HOUSTON-ROSSLYN ROAD"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #24385. Phone: 2819313511"
+    },
+    {
+      "name": "GLO-FLAME BUTANE, INC.",
+      "hqCity": "Bullard",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bullard",
+          "state": "TX",
+          "street": "P.O. BOX 790"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #00733. Phone: 9038947001"
+    },
+    {
+      "name": "GNETT ENTERPRISES LLC",
+      "hqCity": "La Vernia",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "La Vernia",
+          "state": "TX",
+          "street": "PO BOX 367"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27921. Phone: 2109973023"
+    },
+    {
+      "name": "GODFREY BUTANE CO.",
+      "hqCity": "Arlington",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Arlington",
+          "state": "TX",
+          "street": "2947 W DIVISION"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01290. Phone: 8172776328"
+    },
+    {
+      "name": "GOLDEN SPREAD SALES COMPANY",
+      "hqCity": "Spearman",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Spearman",
+          "state": "TX",
+          "street": "BOX 277"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01268. Phone: 8066593776"
+    },
+    {
+      "name": "GOODIN FUELS INC",
+      "hqCity": "Hereford",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hereford",
+          "state": "TX",
+          "street": "PO BOX 710"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #12733. Phone: 8063643366"
+    },
+    {
+      "name": "GORDON TODD INC",
+      "hqCity": "Rockdale",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rockdale",
+          "state": "TX",
+          "street": "PO BOX 429"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #14471. Phone: 5124464949"
+    },
+    {
+      "name": "GORE PROPANE LLC",
+      "hqCity": "Wallisville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wallisville",
+          "state": "TX",
+          "street": "PO BOX 76"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #12367. Phone: 4093892242"
+    },
+    {
+      "name": "GPM EMPIRE, LLC",
+      "hqCity": "Richmond",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Richmond",
+          "state": "VA",
+          "street": "8565 MAGELLAN PARKWAY SUITE 400_x000D_\nATTN: LICENSING DEPARTMENT"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30349. Phone: 8047301568"
+    },
+    {
+      "name": "GRANDE BUTANE COMPANY, INC.",
+      "hqCity": "Rio Grande City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rio Grande City",
+          "state": "TX",
+          "street": "2151 E. HWY. 83"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #05593. Phone: 9564872574"
+    },
+    {
+      "name": "GRANT MORELAND LP LLC",
+      "hqCity": "Gilmer",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Gilmer",
+          "state": "TX",
+          "street": "PO BOX 1171"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #15851. Phone: 9037972193"
+    },
+    {
+      "name": "GRAY FUEL & CHEMICAL, INC.",
+      "hqCity": "Rotan",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rotan",
+          "state": "TX",
+          "street": "207 S. MCKINLEY"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04891. Phone: 3257352381"
+    },
+    {
+      "name": "GREEN TRANSPORTATION, INC.",
+      "hqCity": "Seminole",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Seminole",
+          "state": "OK",
+          "street": "P.O. BOX 112"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #07366. Phone: 4053823356"
+    },
+    {
+      "name": "GREENVILLE AUTOMATIC GAS CO.",
+      "hqCity": "Greenville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Greenville",
+          "state": "TX",
+          "street": "P. O. BOX 28"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #00221. Phone: 9034554546"
+    },
+    {
+      "name": "GRUHLKEY PROPANE LLC",
+      "hqCity": "Adrian",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Adrian",
+          "state": "TX",
+          "street": "PO BOX 172_x000D_\n1725 I-40"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #15182. Phone: 8065387004"
+    },
+    {
+      "name": "GUADALUPE GAS CO.",
+      "hqCity": "New Braunfels",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "New Braunfels",
+          "state": "TX",
+          "street": "3720 S INTERSTATE 35"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #03855. Phone: 8306252121"
+    },
+    {
+      "name": "H.J.GARRISON OIL COMPANY, INC",
+      "hqCity": "Shamrock",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Shamrock",
+          "state": "TX",
+          "street": "P O BOX 231"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #23235. Phone: 8062563552"
+    },
+    {
+      "name": "HARVEY`S LP GAS, INC.",
+      "hqCity": "Los Fresnos",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Los Fresnos",
+          "state": "TX",
+          "street": "P. O. BOX 101"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04750. Phone: 9562334356"
+    },
+    {
+      "name": "HD 5 TRANSPORT LLC",
+      "hqCity": "Dripping Springs",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dripping Springs",
+          "state": "TX",
+          "street": "PO BOX 387"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #18547. Phone: 5128485891"
+    },
+    {
+      "name": "HIPER GAS LPG LLC",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": "303 N OREGON STE 1010"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #28307. Phone: 9155400220"
+    },
+    {
+      "name": "HOUSTON MFU SERVICES LLC",
+      "hqCity": "Cypress",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cypress",
+          "state": "TX",
+          "street": "17111 CYPRES GLADE DR"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30951. Phone: 281300"
+    },
+    {
+      "name": "HOUSTON PROPANE EXCHANGE LLC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "10603 TOWER OAKS BLVD"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30227. Phone: 7138566215"
+    },
+    {
+      "name": "HP PROPANE & FUEL",
+      "hqCity": "George West",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "George West",
+          "state": "TX",
+          "street": "PO BOX 1526"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #18600. Phone: 3614491414"
+    },
+    {
+      "name": "INDUSTRIAL GAS & LIQUIDS DISTRIBUTION COMPANY, LLC",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": "303 N. OREGON ST."
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31778. Phone: 9152432514"
+    },
+    {
+      "name": "IWS GAS AND SUPPLY OF TEXAS, LTD",
+      "hqCity": "Pasadena",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pasadena",
+          "state": "TX",
+          "street": "4117 FAIR DR"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31990. Phone: 2818420500"
+    },
+    {
+      "name": "JEC PROPANE LLC",
+      "hqCity": "Edna",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Edna",
+          "state": "TX",
+          "street": "P O BOX 1189"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #28623. Phone: 3617714400"
+    },
+    {
+      "name": "JIM BLACK OIL COMPANY",
+      "hqCity": "Hart",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hart",
+          "state": "TX",
+          "street": "P.O. BOX 488"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10501. Phone: 8069382165"
+    },
+    {
+      "name": "JNL PROPANE",
+      "hqCity": "Sinton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sinton",
+          "state": "TX",
+          "street": "P O BOX 1083"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08533. Phone: 3613643274"
+    },
+    {
+      "name": "JOE RIDER PROPANE LLC",
+      "hqCity": "Fort Worth",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fort Worth",
+          "state": "TX",
+          "street": "7808 JACKSBORO HWY"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #26428. Phone: 8172373325"
+    },
+    {
+      "name": "JOHN J. FIETSAM, INC.",
+      "hqCity": "Schulenburg",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Schulenburg",
+          "state": "TX",
+          "street": "BOX 11"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #05031. Phone: 9797433351"
+    },
+    {
+      "name": "JR'S TANK SERVICE LLC",
+      "hqCity": "New Braunfels",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "New Braunfels",
+          "state": "TX",
+          "street": "8121 OLD BASTROP RD"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #15784. Phone: 8323348686"
+    },
+    {
+      "name": "KENDRICK OIL CO",
+      "hqCity": "Friona",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Friona",
+          "state": "TX",
+          "street": "PO BOX 788_x000D_\n824 MAIN ST."
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #00226. Phone: 8062502751"
+    },
+    {
+      "name": "KP OPERATING LLC",
+      "hqCity": "Millsap",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Millsap",
+          "state": "TX",
+          "street": "150 E BLUFF LANE"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31410. Phone: 8179919518"
+    },
+    {
+      "name": "K W FUELS, INC.",
+      "hqCity": "Hobbs",
+      "hqState": "NM",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hobbs",
+          "state": "NM",
+          "street": "PO BOX 1288"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08742. Phone: 8005546023"
+    },
+    {
+      "name": "LAMB PROPANE LLC",
+      "hqCity": "Coldspring",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Coldspring",
+          "state": "TX",
+          "street": "PO BOX 975"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #19853. Phone: 9366533537"
+    },
+    {
+      "name": "LAMESA BUTANE COMPANY",
+      "hqCity": "Lamesa",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lamesa",
+          "state": "TX",
+          "street": "P.O. BOX 382"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01186. Phone: 8068725356"
+    },
+    {
+      "name": "LANCER PROPANE LLC",
+      "hqCity": "Porter",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Porter",
+          "state": "TX",
+          "street": "PO BOX 670"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #15837. Phone: 2813547044"
+    },
+    {
+      "name": "LA PASADITA  PROPANE, FEED & HARDWARE LLC",
+      "hqCity": "Mission",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mission",
+          "state": "TX",
+          "street": "9232 N BENTSEN PALM DR"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30082. Phone: 9564242447"
+    },
+    {
+      "name": "LEMENS GRILL GAS, INC.",
+      "hqCity": "Abilene",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Abilene",
+          "state": "TX",
+          "street": "P.O. BOX 1005"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #12789. Phone: 3256776200"
+    },
+    {
+      "name": "LEWIS PROPANE LLC",
+      "hqCity": "Jacksboro",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Jacksboro",
+          "state": "TX",
+          "street": "PO BOX 65"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32661. Phone: 9039186988"
+    },
+    {
+      "name": "LINDE GAS & EQUIPMENT INC.",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "10205 SWEETWATER LN"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10075. Phone: 7134126978"
+    },
+    {
+      "name": "LIQUID GAS COMPANY, INC.",
+      "hqCity": "Somerville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Somerville",
+          "state": "TX",
+          "street": "P.O. BOX 369"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06360. Phone: 9795961411"
+    },
+    {
+      "name": "LIQUIGAS, INC.",
+      "hqCity": "Lufkin",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lufkin",
+          "state": "TX",
+          "street": "P.O. BOX 413"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #03071. Phone: 9366342268"
+    },
+    {
+      "name": "LONE STAR GAS, INC.",
+      "hqCity": "Menard",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Menard",
+          "state": "TX",
+          "street": "PO BOX 313"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32703. Phone: 3254569455"
+    },
+    {
+      "name": "LONGHORN PROPANE, L.P.",
+      "hqCity": "Canyon Lake",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Canyon Lake",
+          "state": "TX",
+          "street": "P.O. BOX 2030"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13806. Phone: 8309642525"
+    },
+    {
+      "name": "LONGHORN PROPANE OF SOUTH TEXAS, LLC",
+      "hqCity": "Tilden",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Tilden",
+          "state": "TX",
+          "street": "PO BOX 243"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #17498. Phone: 3618778776"
+    },
+    {
+      "name": "LOUIS R. ESPARZA",
+      "hqCity": "Weslaco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weslaco",
+          "state": "TX",
+          "street": "PO BOX 8381"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #18715. Phone: 9569626474"
+    },
+    {
+      "name": "LYONS BUTANE GAS CO., INC.",
+      "hqCity": "Alto",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Alto",
+          "state": "TX",
+          "street": "P. O. BOX 250"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01280. Phone: 9368584567"
+    },
+    {
+      "name": "MAASS BUTANE COMPANY",
+      "hqCity": "Giddings",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Giddings",
+          "state": "TX",
+          "street": "491 SOUTH MAIN ST."
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01442. Phone: 9795423384"
+    },
+    {
+      "name": "MALLORY ENERGY, INC.",
+      "hqCity": "Mineola",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mineola",
+          "state": "TX",
+          "street": "1677 S US HWY 69"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13689. Phone: 9035692323"
+    },
+    {
+      "name": "MARIN PROPANE GAS, INC.",
+      "hqCity": "Missouri City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Missouri City",
+          "state": "TX",
+          "street": "3702 5TH ST."
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13091. Phone: 2814999755"
+    },
+    {
+      "name": "MARTINDALE GUADALUPE GAS CO",
+      "hqCity": "Martindale",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Martindale",
+          "state": "TX",
+          "street": "P. O. BOX 160"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08402. Phone: 5123576497"
+    },
+    {
+      "name": "MARTIN PRODUCT SALES LLC",
+      "hqCity": "Kilgore",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kilgore",
+          "state": "TX",
+          "street": "P.O. BOX 191"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #12742. Phone: 9039836200"
+    },
+    {
+      "name": "MARTIN TRANSPORT INC",
+      "hqCity": "Kilgore",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kilgore",
+          "state": "TX",
+          "street": "PO BOX 191_x000D_\nATTN: EMILY"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #05589. Phone: 9039848561"
+    },
+    {
+      "name": "MASON GAS CORPORATION",
+      "hqCity": "Mason",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mason",
+          "state": "TX",
+          "street": "P.O BOX 97"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06916. Phone: 3253472520"
+    },
+    {
+      "name": "MATADOR GAS LLC",
+      "hqCity": "Russellville",
+      "hqState": "AR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Russellville",
+          "state": "AR",
+          "street": "608 West Parkway Drive"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30458. Phone: 2108616545"
+    },
+    {
+      "name": "MATLOCK ENTERPRISES, INC.",
+      "hqCity": "Colorado City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Colorado City",
+          "state": "TX",
+          "street": "801 E. I-20"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #02218. Phone: 3257283430"
+    },
+    {
+      "name": "MCCORMICK MARKETING INC.",
+      "hqCity": "Snyder",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Snyder",
+          "state": "TX",
+          "street": "P O BOX 80"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #09649. Phone: 3255736365"
+    },
+    {
+      "name": "MCGILL GAS LLC",
+      "hqCity": "Azle",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Azle",
+          "state": "TX",
+          "street": "140 West Main Street"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32720. Phone: 6788143501"
+    },
+    {
+      "name": "MCMILLAN PROPANE",
+      "hqCity": "Donna",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Donna",
+          "state": "TX",
+          "street": "PO BOX 845"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #21259. Phone: 9564642522"
+    },
+    {
+      "name": "MCQUEEN PROPANE INC",
+      "hqCity": "Paris",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Paris",
+          "state": "TX",
+          "street": "PO BOX 98"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13112. Phone: 9037851575"
+    },
+    {
+      "name": "MCY CORPORATION",
+      "hqCity": "Sanderson",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sanderson",
+          "state": "TX",
+          "street": "PO BOX 88"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #20370. Phone: 4323452464"
+    },
+    {
+      "name": "MEREDITH GAS & SUPPLY",
+      "hqCity": "Roaring Springs",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Roaring Springs",
+          "state": "TX",
+          "street": "BOX 148755 SOUTH STATE HWY. 70"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10155. Phone: 8063487332"
+    },
+    {
+      "name": "MERITUM SUPPLY LLC (LPG)",
+      "hqCity": "San Antonio",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "San Antonio",
+          "state": "TX",
+          "street": "19206 HEUBNER, STE 100"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22926. Phone: 8307757761"
+    },
+    {
+      "name": "MERITUM SYSTEMS LLC (LPG)",
+      "hqCity": "San Antonio",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "San Antonio",
+          "state": "TX",
+          "street": "19206 HUEBNER, STE 100"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27566. Phone: 2108763560"
+    },
+    {
+      "name": "METROPLEX GAS SERVICES INC",
+      "hqCity": "Springtown",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Springtown",
+          "state": "TX",
+          "street": "PO BOX 1131"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #26302. Phone: 8179444255"
+    },
+    {
+      "name": "MIDSTREAM TRANSPORTATION COMPANY LLC (LPG)",
+      "hqCity": "Center",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Center",
+          "state": "TX",
+          "street": "PO BOX 642"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #20944. Phone: 9365987444"
+    },
+    {
+      "name": "MID TEX PROPANE INC",
+      "hqCity": "Luling",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Luling",
+          "state": "TX",
+          "street": "P.O. BOX 1168"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #11148. Phone: 8308750230"
+    },
+    {
+      "name": "MITCHELL WELDING SUPPLY LLC",
+      "hqCity": "Tyler",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Tyler",
+          "state": "TX",
+          "street": "PO BOX 4426"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30353. Phone: 9035960581"
+    },
+    {
+      "name": "MR. G PROPANE MANAGEMENT #1, LLC",
+      "hqCity": "Weslaco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weslaco",
+          "state": "TX",
+          "street": "9093 WEST MILE 16 N. RD."
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #12099. Phone: 9562623772"
+    },
+    {
+      "name": "MUSTANG PETROLEUM INC",
+      "hqCity": "Smiley",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Smiley",
+          "state": "TX",
+          "street": "PO BOX 122"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #18525. Phone: 8308573953"
+    },
+    {
+      "name": "NAVASOTA LP  GAS CO INC",
+      "hqCity": "Navasota",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Navasota",
+          "state": "TX",
+          "street": "P.O. BOX 466"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #00095. Phone: 9368253214"
+    },
+    {
+      "name": "NEXGEN PROPANE SERVICES",
+      "hqCity": "La Blanca",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "La Blanca",
+          "state": "TX",
+          "street": "PO BOX 1106"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32158. Phone: 9562899999"
+    },
+    {
+      "name": "NOREMAC GAS LLC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "5830 CLARA RD"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #17258. Phone: 3464105667"
+    },
+    {
+      "name": "O DONNELL OIL & BUTANE CO., INC.",
+      "hqCity": "Odonnell",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Odonnell",
+          "state": "TX",
+          "street": "BOX 517"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #02049. Phone: 8064283434"
+    },
+    {
+      "name": "OLD HGS, INCORPORATED",
+      "hqCity": "Harlingen",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Harlingen",
+          "state": "TX",
+          "street": "P O BOX 1910"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27125. Phone: 9564239178"
+    },
+    {
+      "name": "OLIVER PROPANE LLC",
+      "hqCity": "Austin",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Austin",
+          "state": "TX",
+          "street": "401 TOWNE PARK TRAIL"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27621. Phone: 5124820499"
+    },
+    {
+      "name": "OURLANDA LLC",
+      "hqCity": "Sterling City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sterling City",
+          "state": "TX",
+          "street": "P O BOX 134"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #26835. Phone: 3255005209"
+    },
+    {
+      "name": "P & R BUTANE, INC.",
+      "hqCity": "Liberty Hill",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Liberty Hill",
+          "state": "TX",
+          "street": "14251 W HWY 29"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #03688. Phone: 5122594710"
+    },
+    {
+      "name": "PALESTINE WELDING & INDUSTRIAL SUPPLY INC.",
+      "hqCity": "Palestine",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Palestine",
+          "state": "TX",
+          "street": "P.O.BOX 892_x000D_\n7870 S. US HWY. 79"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06148. Phone: 9035382445"
+    },
+    {
+      "name": "PANKEY PROPANE LLC.",
+      "hqCity": "Jacksboro",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Jacksboro",
+          "state": "TX",
+          "street": "P.O. BOX  458"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #14021. Phone: 9402291519"
+    },
+    {
+      "name": "PAT'S PROPANE, INC.",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "P.O. BOX 840797"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #02139. Phone: 2818902025"
+    },
+    {
+      "name": "PENMAN SERVICES, LTD.",
+      "hqCity": "Knox City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Knox City",
+          "state": "TX",
+          "street": "P.O. BOX 597"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #14676. Phone: 9406583513"
+    },
+    {
+      "name": "PEREZ PROPANE LLC",
+      "hqCity": "Tornillo",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Tornillo",
+          "state": "TX",
+          "street": "PO BOX 464"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #21010. Phone: 9157643382"
+    },
+    {
+      "name": "PERRY PROPANE & APPLIANCE LLC",
+      "hqCity": "Nacogdoches",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Nacogdoches",
+          "state": "TX",
+          "street": "PO BOX 631895"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #18396. Phone: 9365648448"
+    },
+    {
+      "name": "PERRYTON EQUITY EXCHANGE",
+      "hqCity": "Perryton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Perryton",
+          "state": "TX",
+          "street": "P.O.BOX 889"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04179. Phone: 8064354016"
+    },
+    {
+      "name": "PETTY BUTANE COMPANY",
+      "hqCity": "Vernon",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Vernon",
+          "state": "TX",
+          "street": "11428 HWY 287 W"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08540. Phone: 9405527072"
+    },
+    {
+      "name": "PFLUGERVILLE PROPANE INC.",
+      "hqCity": "Pflugerville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pflugerville",
+          "state": "TX",
+          "street": "P.O. BOX 767"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #00001. Phone: 5122513931"
+    },
+    {
+      "name": "PICO PROPANE OPERATING LLC",
+      "hqCity": "San Antonio",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "San Antonio",
+          "state": "TX",
+          "street": "19206 HEUBNER SUITE 100"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22149. Phone: 2108096443"
+    },
+    {
+      "name": "POTTS GAS COMPANY, INC.",
+      "hqCity": "Emory",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Emory",
+          "state": "TX",
+          "street": "P.O. BOX 141"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #05853. Phone: 9034732714"
+    },
+    {
+      "name": "PRECISIONBLEND INC.",
+      "hqCity": "League City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "League City",
+          "state": "TX",
+          "street": "2951 MARINA BAY DR STE 130"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13017. Phone: 2813390724"
+    },
+    {
+      "name": "PRODUCERS COOPERATIVE ELEVATOR",
+      "hqCity": "Floydada",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Floydada",
+          "state": "TX",
+          "street": "P.O. BOX 69"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #07346. Phone: 8069832821"
+    },
+    {
+      "name": "PROFESSIONAL WELDING SUPPLY, INC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "P.O. BOX 19811"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06450. Phone: 7136906888"
+    },
+    {
+      "name": "PROPANE SPECIALTY SERVICES LLC",
+      "hqCity": "Leesville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Leesville",
+          "state": "TX",
+          "street": "PO BOX 149"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #12577. Phone: 8304243702"
+    },
+    {
+      "name": "QUANAH OIL COMPANY, INC.",
+      "hqCity": "Quanah",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Quanah",
+          "state": "TX",
+          "street": "P.O. BOX 126"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10454. Phone: 9406632322"
+    },
+    {
+      "name": "RED RIVER TRANSPORT, INC.",
+      "hqCity": "Paris",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Paris",
+          "state": "TX",
+          "street": "P. O. BOX 1153"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04781. Phone: 9037855242"
+    },
+    {
+      "name": "RIO DELTA PROPANE CO. LLC",
+      "hqCity": "Elsa",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Elsa",
+          "state": "TX",
+          "street": "PO BOX 2670"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #19401. Phone: 9568674719"
+    },
+    {
+      "name": "RIO PROPANE COMPANY & SONS, INC.",
+      "hqCity": "Anthony",
+      "hqState": "NM",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Anthony",
+          "state": "NM",
+          "street": "PO BOX 468"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #14893. Phone: 9157273310"
+    },
+    {
+      "name": "ROADRUNNER ENERGY, INC.",
+      "hqCity": "Uvalde",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Uvalde",
+          "state": "TX",
+          "street": "2621 E. MAIN"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #00806. Phone: 8302785317"
+    },
+    {
+      "name": "ROBBINS PROPANE CO",
+      "hqCity": "Castroville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Castroville",
+          "state": "TX",
+          "street": "PO BOX 1309"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #19602. Phone: 8309313333"
+    },
+    {
+      "name": "ROCKIN PROPANE LPG LLC",
+      "hqCity": "Blanco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Blanco",
+          "state": "TX",
+          "street": "139 BARRETT VW"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31742. Phone: 8305548270"
+    },
+    {
+      "name": "ROMA LPG",
+      "hqCity": "Roma",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Roma",
+          "state": "TX",
+          "street": "P.O. BOX 357"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06134. Phone: 9568491417"
+    },
+    {
+      "name": "RURAL GAS SUPPLY CO.",
+      "hqCity": "Azle",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Azle",
+          "state": "TX",
+          "street": "140 W. MAIN"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08025. Phone: 8174444613"
+    },
+    {
+      "name": "RUSSELL OUTDOORS, INC.",
+      "hqCity": "Corpus Christi",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Corpus Christi",
+          "state": "TX",
+          "street": "9705 SOUTH PADRE ISLAND DR."
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #14287. Phone: 3619398970"
+    },
+    {
+      "name": "S.M. HERSCHAP CORPORATION",
+      "hqCity": "Orange Grove",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Orange Grove",
+          "state": "TX",
+          "street": "PO BOX 309"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #03880. Phone: 3613842355"
+    },
+    {
+      "name": "SALINAS PROPANE LLC",
+      "hqCity": "Weslaco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weslaco",
+          "state": "TX",
+          "street": "PO BOX 561"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32433. Phone: 9569750839"
+    },
+    {
+      "name": "SCARLETT BUTANE CO., INC.",
+      "hqCity": "Throckmorton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Throckmorton",
+          "state": "TX",
+          "street": "BOX 335"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06037. Phone: 9408493131"
+    },
+    {
+      "name": "SCHINDLER L.P.G., INC.",
+      "hqCity": "Eagle Lake",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Eagle Lake",
+          "state": "TX",
+          "street": "6072 HIGHWAY 90 A"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #01030. Phone: 9792343314"
+    },
+    {
+      "name": "SEALY APPLIANCE & BUTANE CO INC",
+      "hqCity": "Sealy",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sealy",
+          "state": "TX",
+          "street": "P.O. BOX 636"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #14018. Phone: 9798853388"
+    },
+    {
+      "name": "SEIFERT & SON, INC.",
+      "hqCity": "Weimar",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weimar",
+          "state": "TX",
+          "street": "P.O. BOX 696"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #07282. Phone: 9797256237"
+    },
+    {
+      "name": "SENOR MUFFLER INC",
+      "hqCity": "Mansfield",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mansfield",
+          "state": "TX",
+          "street": "1304 N MAIN ST"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #25730. Phone: 8174732653"
+    },
+    {
+      "name": "SHELTON WACO LLC",
+      "hqCity": "Waco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Waco",
+          "state": "TX",
+          "street": "PO BOX 24119"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31007. Phone: 2547519655"
+    },
+    {
+      "name": "SIMMONS PROPANE",
+      "hqCity": "Gorman",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Gorman",
+          "state": "TX",
+          "street": "P.O. BOX 352"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13286. Phone: 2547342517"
+    },
+    {
+      "name": "SIMPSON OIL COMPANY",
+      "hqCity": "Rule",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rule",
+          "state": "TX",
+          "street": "P.O. BOX 636"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04501. Phone: 9409972122"
+    },
+    {
+      "name": "SLATON GAS & EQUIPMENT CO., INC.",
+      "hqCity": "Slaton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Slaton",
+          "state": "TX",
+          "street": "P.O. BOX 598"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04733. Phone: 8068286501"
+    },
+    {
+      "name": "SNYDER INDEPENDENCE PROPANE CO. LLC",
+      "hqCity": "Snyder",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Snyder",
+          "state": "TX",
+          "street": "P.O. BOX 1067"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10880. Phone: 3255730963"
+    },
+    {
+      "name": "SOTEX PROPANE PLUMBING & INSTALLATIONS",
+      "hqCity": "Los Fresnos",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Los Fresnos",
+          "state": "TX",
+          "street": "401 E 10TH ST"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30334. Phone: 9565643240"
+    },
+    {
+      "name": "SOUTH TEXAS PROPANE LLC",
+      "hqCity": "Edinburg",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Edinburg",
+          "state": "TX",
+          "street": "3803 EAST FM 2812"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #20811. Phone: 9567840130"
+    },
+    {
+      "name": "SOUTHWEST MARKETERS, INC.",
+      "hqCity": "Fort Stockton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fort Stockton",
+          "state": "TX",
+          "street": "BOX 400"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #02061. Phone: 4323365254"
+    },
+    {
+      "name": "SPACECITY GMW LLC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "4145 Gessner Road STE B #400"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30177. Phone: 6193067749"
+    },
+    {
+      "name": "SPRINGTOWN GAS COMPANY, INC.",
+      "hqCity": "Springtown",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Springtown",
+          "state": "TX",
+          "street": "P.O. BOX 68"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04468. Phone: 8172204051"
+    },
+    {
+      "name": "STANFIELD PROPANE GAS INC.",
+      "hqCity": "Cleveland",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cleveland",
+          "state": "TX",
+          "street": "388 FM 2025"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10154. Phone: 2815922749"
+    },
+    {
+      "name": "STIX GAS COMPANY, INC.",
+      "hqCity": "Sinton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sinton",
+          "state": "TX",
+          "street": "P. O. BOX 847"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #03720. Phone: 3613642284"
+    },
+    {
+      "name": "STRAIGHT A'S TRUCKING LLC",
+      "hqCity": "College Station",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "College Station",
+          "state": "TX",
+          "street": "PO BOX 11894"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #29498. Phone: 9794362385"
+    },
+    {
+      "name": "SUMRALL DISTRIBUTING CO., INC.",
+      "hqCity": "Palestine",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Palestine",
+          "state": "TX",
+          "street": "P.O. BOX 1697"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08983. Phone: 9037292223"
+    },
+    {
+      "name": "SUN COAST RESOURCES LLC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "6405 CAVALCADE ST"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27877. Phone: 5126393288"
+    },
+    {
+      "name": "T. NEALE ENTERPRISES, INC.",
+      "hqCity": "Dayton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dayton",
+          "state": "TX",
+          "street": "P.O. BOX 1973"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #08595. Phone: 9362584500"
+    },
+    {
+      "name": "TALCO PROPANE GAS COMPANY LLC",
+      "hqCity": "Talco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Talco",
+          "state": "TX",
+          "street": "15595 US HWY 271 N"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22170. Phone: 9033795462"
+    },
+    {
+      "name": "TARGA TRANSPORT LLC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "811 LOUISIANA ST STE 2100"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #17455. Phone: 7135841311"
+    },
+    {
+      "name": "TAYLOR BUTANE CO., INC.",
+      "hqCity": "Taylor",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Taylor",
+          "state": "TX",
+          "street": "ATTN STEPHANIE PATSCHKEPO BOX 911"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #02023. Phone: 5123525248"
+    },
+    {
+      "name": "TEXAS BEST PROPANE, SERIES LLC",
+      "hqCity": "Bonham",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bonham",
+          "state": "TX",
+          "street": "5159 S HWY 121"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22670. Phone: 9032273304"
+    },
+    {
+      "name": "TEXAS GAS & LIQUIDS DOWNSTREAM SERVICES LLC",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": "303 N OREGONSUITE 1010"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31105. Phone: 9154718971"
+    },
+    {
+      "name": "TEXAS GAS & LIQUIDS TRANSPORATION SERVICES LLC",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": "303 N OREGON ST"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32167. Phone: 9154718971"
+    },
+    {
+      "name": "TEXAS INDUSTRIAL GAS LLC",
+      "hqCity": "Kemah",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kemah",
+          "state": "TX",
+          "street": "PO BOX 1332"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30707. Phone: 2814133454"
+    },
+    {
+      "name": "TEXAS INTERNATIONAL GAS & OIL COMPANY",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": "4855 N MESA STE 107"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06248. Phone: 9158608803"
+    },
+    {
+      "name": "TEXAS PRIDE FUELS LTD",
+      "hqCity": "Springtown",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Springtown",
+          "state": "TX",
+          "street": "1300 E HWY 199"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #29711. Phone: 8172211200"
+    },
+    {
+      "name": "TEXAS PROPANE TANKS LLC",
+      "hqCity": "Pittsburg",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pittsburg",
+          "state": "TX",
+          "street": "11588 FM 2454"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #30693. Phone: 9037677077"
+    },
+    {
+      "name": "TEXAS ROSE CONSTRUCTION SERVICES LLC",
+      "hqCity": "Ganado",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ganado",
+          "state": "TX",
+          "street": "PO BOX 664"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #25074. Phone: 3614846007"
+    },
+    {
+      "name": "TEXON MIDSTREAM LLC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "11757 KATY FREEWAY #1400"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #31756. Phone: 2813862610"
+    },
+    {
+      "name": "TODD FAMILY ENTERPRISES LLC",
+      "hqCity": "Rockdale",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rockdale",
+          "state": "TX",
+          "street": "PO BOX 429"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27375. Phone: 5127606126"
+    },
+    {
+      "name": "TRI-SYNC PROPANE GAS LLC",
+      "hqCity": "Brownsville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brownsville",
+          "state": "TX",
+          "street": "3519 WARWICK GLENN"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #27464. Phone: 9564432313"
+    },
+    {
+      "name": "TUCKER OIL COMPANY, INC.",
+      "hqCity": "Slaton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Slaton",
+          "state": "TX",
+          "street": "BOX 160"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04465. Phone: 8068286277"
+    },
+    {
+      "name": "UNITED ENERGY TRADING LLC",
+      "hqCity": "Bismarck",
+      "hqState": "ND",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bismarck",
+          "state": "ND",
+          "street": "PO BOX 837"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #29227. Phone: 7012146463"
+    },
+    {
+      "name": "VACEK BUTANE CO LLC",
+      "hqCity": "East Bernard",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "East Bernard",
+          "state": "TX",
+          "street": "PO BOX 388"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #22331. Phone: 9793354273"
+    },
+    {
+      "name": "VAPO BUTANE CO., INC.",
+      "hqCity": "Fredericksburg",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fredericksburg",
+          "state": "TX",
+          "street": "1201 E. MAIN"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #04466. Phone: 8309972659"
+    },
+    {
+      "name": "VERATEX GAS GROUP LLC",
+      "hqCity": "Houston",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Houston",
+          "state": "TX",
+          "street": "PO BOX 590467"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #28759. Phone: 8324024017"
+    },
+    {
+      "name": "VP RACING FUELS INC",
+      "hqCity": "Elmendorf",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Elmendorf",
+          "state": "TX",
+          "street": "7124 RICHTER RD"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #28375. Phone: 2106357744"
+    },
+    {
+      "name": "WADE`S MINERAL WELLS PROPANE CO.",
+      "hqCity": "Mineral Wells",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mineral Wells",
+          "state": "TX",
+          "street": "P.O. BOX 549"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10876. Phone: 9403252361"
+    },
+    {
+      "name": "WALKER SIMS OIL COMPANY, INC.",
+      "hqCity": "Lubbock",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lubbock",
+          "state": "TX",
+          "street": "P.O. BOX 54077"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06953. Phone: 8067451668"
+    },
+    {
+      "name": "WEBBERVILLE PROPANE INC",
+      "hqCity": "Manor",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Manor",
+          "state": "TX",
+          "street": "P.O. BOX 619"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #06517. Phone: 5122767800"
+    },
+    {
+      "name": "WESTERN INTERNATIONAL GAS & CYLINDERS INC",
+      "hqCity": "Bellville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bellville",
+          "state": "TX",
+          "street": "P.O. BOX 668"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #10694. Phone: 9794132120"
+    },
+    {
+      "name": "WHOLESALE FUELS INC",
+      "hqCity": "Canadian",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Canadian",
+          "state": "TX",
+          "street": "10920 US HWY 60"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #23088. Phone: 8063239413"
+    },
+    {
+      "name": "WICHITA FALLS PROPANE LLC",
+      "hqCity": "Iowa Park",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Iowa Park",
+          "state": "TX",
+          "street": "410 West Daisy Street"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32871. Phone: 9286602819"
+    },
+    {
+      "name": "WILLINGHAM WELDING SOLUTIONS INC",
+      "hqCity": "La Porte",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "La Porte",
+          "state": "TX",
+          "street": "18005 E HIGHWAY 225"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #13028. Phone: 2814712200"
+    },
+    {
+      "name": "WOODSBORO PROPANE LLC",
+      "hqCity": "Woodsboro",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Woodsboro",
+          "state": "TX",
+          "street": "143 FM 136"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #24863. Phone: 3612906065"
+    },
+    {
+      "name": "XPRESS PROPANE TEXAS LLC",
+      "hqCity": "Brownsville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brownsville",
+          "state": "TX",
+          "street": "4901 Capt Donald L Foust Road"
+        }
+      ],
+      "ownership": "private",
+      "notes": "TX Railroad Commission Category E (retail dealer) licensee #32084. Phone: 9564078183"
+    }
+  ]
+}

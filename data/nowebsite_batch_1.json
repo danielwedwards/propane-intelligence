@@ -1,0 +1,152 @@
+[
+  {
+    "id": "great_plains_propane_service_inc",
+    "name": "Great Plains Propane Service, Inc.",
+    "state": "NE",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "NE regional propane service"
+  },
+  {
+    "id": "appalachian_propane_supply",
+    "name": "Appalachian Propane & Supply",
+    "state": "WV",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WV operator"
+  },
+  {
+    "id": "buckeye_propane_co_inc",
+    "name": "Buckeye Propane Co., Inc.",
+    "state": "OH",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "OH regional propane"
+  },
+  {
+    "id": "spencer_mountain_propane",
+    "name": "SPENCER MOUNTAIN PROPANE",
+    "state": "TN",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "TN small operator"
+  },
+  {
+    "id": "b_l_propane_co_inc",
+    "name": "B & L Propane Co., Inc.",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT operator"
+  },
+  {
+    "id": "almighty_propane_llc",
+    "name": "Almighty Propane LLC",
+    "state": "TX",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "TX small operator"
+  },
+  {
+    "id": "fulfer_propane_inc",
+    "name": "Fulfer Propane, Inc",
+    "state": "TX",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "West TX operator"
+  },
+  {
+    "id": "wolf_river_propane",
+    "name": "Wolf River Propane",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WI operator"
+  },
+  {
+    "id": "new_flame_propane",
+    "name": "New Flame Propane",
+    "state": "WA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WA operator"
+  },
+  {
+    "id": "barker_s_propane",
+    "name": "Barker's propane",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT small operator"
+  },
+  {
+    "id": "seven_is_enough",
+    "name": "Seven is Enough",
+    "state": "VA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "VA small operator"
+  },
+  {
+    "id": "luke_s_propane",
+    "name": "Luke's Propane",
+    "state": "WA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WA operator"
+  },
+  {
+    "id": "northwoods_lp",
+    "name": "Northwoods LP",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Northern WI operator"
+  },
+  {
+    "id": "asapropane",
+    "name": "Asapropane",
+    "state": "DE",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Delaware regional dealer"
+  },
+  {
+    "id": "lp_plus",
+    "name": "LP Plus",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WI operator"
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "source": "woodfordoil.com/contact-us/",
+  "scraped": "2026-04-11",
+  "company": "Woodford Oil Company",
+  "note": "Fuel/lubricant/propane distributor - WV/PA/KY/VA/OH/MD",
+  "location_count": 12,
+  "locations": [
+    {
+      "name": "Elkins (Headquarters)",
+      "street": "1 Thirteenth St.",
+      "city": "Elkins",
+      "state": "WV",
+      "zip": "26241",
+      "phone": "304-636-2688",
+      "type": "Headquarters",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Marlinton Regional Office",
+      "street": "802 4th Ave.",
+      "city": "Marlinton",
+      "state": "WV",
+      "zip": "24954",
+      "phone": "304-799-4503",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Marlinton Bulk Plant",
+      "street": "409 2nd Ave.",
+      "city": "Marlinton",
+      "state": "WV",
+      "zip": "24954",
+      "phone": "",
+      "type": "Bulk Plant",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Moorefield",
+      "street": "1660 Fish Pond Rd.",
+      "city": "Moorefield",
+      "state": "WV",
+      "zip": "26836",
+      "phone": "304-358-0445",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Clarksburg",
+      "street": "9851 Cost Ave.",
+      "city": "Clarksburg",
+      "state": "WV",
+      "zip": "26301",
+      "phone": "304-622-6843",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Morgantown",
+      "street": "89 Corporate Drive",
+      "city": "Morgantown",
+      "state": "WV",
+      "zip": "26501",
+      "phone": "304-296-3835",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Markleysburg",
+      "street": "5103 National Pike",
+      "city": "Markleysburg",
+      "state": "PA",
+      "zip": "15459",
+      "phone": "814-702-0992",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Reedsville",
+      "street": "14573 Veterans Memorial Hwy.",
+      "city": "Reedsville",
+      "state": "WV",
+      "zip": "26547",
+      "phone": "304-864-6970",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Summersville",
+      "street": "3428 Turnpike Road",
+      "city": "Summersville",
+      "state": "WV",
+      "zip": "26651",
+      "phone": "304-306-8197",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Webster Springs (Satellite)",
+      "street": "220 Wood Plant Road",
+      "city": "Webster Springs",
+      "state": "WV",
+      "zip": "26288",
+      "phone": "",
+      "type": "Satellite Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Danville",
+      "street": "650 David Ave.",
+      "city": "Danville",
+      "state": "KY",
+      "zip": "40422",
+      "phone": "859-236-6071",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    },
+    {
+      "name": "Ashland",
+      "street": "12355 Virginia Blvd.",
+      "city": "Ashland",
+      "state": "KY",
+      "zip": "41102",
+      "phone": "606-928-2744",
+      "type": "Regional Office",
+      "source_url": "https://woodfordoil.com/contact-us/"
+    }
+  ]
+}

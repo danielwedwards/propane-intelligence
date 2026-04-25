@@ -1,0 +1,248 @@
+[
+  {
+    "id": "arrowwood_prairie_co_op_cooperstown_office",
+    "name": "Arrowwood Prairie Co-op - Cooperstown Office",
+    "website": "https://www.arrowwoodprairie.com",
+    "locations_found": [
+      {"name": "Wimbledon (Main Office)", "address": "355 Highway 9", "city": "Wimbledon", "state": "ND", "zip": "58492", "phone": "(701) 435-2406"},
+      {"name": "Cooperstown", "address": "401 4th St SW", "city": "Cooperstown", "state": "ND", "zip": "58425", "phone": "(701) 797-2040"},
+      {"name": "Carrington - Energy Office", "address": "6710 Highway 200", "city": "Carrington", "state": "ND", "zip": "58421", "phone": "(701) 652-3172"},
+      {"name": "Carrington - C-Store", "address": "77 4th Ave S", "city": "Carrington", "state": "ND", "zip": "58421", "phone": "(701) 652-3949"},
+      {"name": "Carrington - Agronomy", "address": "760 4th Ave S", "city": "Carrington", "state": "ND", "zip": "58421", "phone": "(701) 652-2913"},
+      {"name": "Sutton", "address": "120 99th Ave SE, County Road 3", "city": "Sutton", "state": "ND", "zip": "58484", "phone": "(701) 769-2334"}
+    ],
+    "notes": "Official website redirects to farmersunionoil.com. Multi-facility ND ag coop with Wimbledon HQ and 3 branch towns (Cooperstown, Carrington, Sutton)."
+  },
+  {
+    "id": "sequachee_valley_electric_cooperative",
+    "name": "Sequachee Valley Electric Cooperative",
+    "website": "https://svalleyec.com",
+    "locations_found": [
+      {"name": "Sequatchie County Service Center", "address": "97 Resource Road", "city": "Dunlap", "state": "TN", "zip": "37327", "phone": "(423) 949-2198"},
+      {"name": "Grundy County Service Center", "address": "14002 Highway 41", "city": "Tracy City", "state": "TN", "zip": "37387", "phone": ""},
+      {"name": "Marion County Service Center (HQ)", "address": "512 S Cedar Ave", "city": "South Pittsburg", "state": "TN", "zip": "37380", "phone": ""},
+      {"name": "Bledsoe County Service Center", "address": "", "city": "Pikeville", "state": "TN", "zip": "", "phone": ""},
+      {"name": "Whitwell Service Center", "address": "", "city": "Whitwell", "state": "TN", "zip": "", "phone": ""}
+    ],
+    "notes": "Rural electric coop (not propane dealer). 5 service centers across Marion, Grundy, Sequatchie, Bledsoe counties TN. Complete addresses for Bledsoe/Whitwell not captured in WebFetch results."
+  },
+  {
+    "id": "united_propane_gas_henagar_al",
+    "name": "United Propane Gas (Henagar, AL)",
+    "website": "https://unitedpropanegas.com",
+    "locations_found": [
+      {"name": "UPG Corporate Office", "address": "1001 Warrenville Road, Suite 350", "city": "Lisle", "state": "IL", "zip": "60532", "phone": ""},
+      {"name": "UPG Paducah (operational HQ)", "address": "4200 Cairo Road", "city": "Paducah", "state": "KY", "zip": "", "phone": ""}
+    ],
+    "notes": "Company states '77 Locations in 10 states' but individual branch directory is behind an interactive locator at upgas.com/find-a-location/ not accessible via WebFetch. Known brand names include Cumberland River Propane (Springfield TN), Highland Rim Propane (Manchester TN), Natchez Trace Propane (Waynesboro TN), Obion County Propane (Union City TN), Quality Propane (Lebanon TN), Southern Propane (Columbia TN), Stewart County Propane (Dover TN), Volunteer Propane. Official website was unitedpropanegas.com but upgas.com is the verified domain."
+  },
+  {
+    "id": "cleveland_petroleum_products",
+    "name": "Cleveland Petroleum Products",
+    "website": "https://clevelandpetroleum.com",
+    "locations_found": [
+      {"name": "Cleveland Petroleum Products (HQ)", "address": "2420 E Highway 64", "city": "Cleveland", "state": "OK", "zip": "74020", "phone": "(918) 358-3310"}
+    ],
+    "notes": "Website redirects to okfuels.net. Company operates across ~20 Oklahoma towns (Cleveland, Hallett, Terlton, Osage, Hominy, Jennings, Prue, Maramec, Pawnee, Mannford, Oilton, Yale, Ralston, Wynona, Sand Springs, Drumright, Fairfax, Glencoe, Sperry, Tulsa, Skiatook, Avant, Cushing, Barnsdall, Morrison, Sapulpa) per company description, but individual branch addresses behind dynamic store locator. Only HQ confirmed."
+  },
+  {
+    "id": "sungas_propane_clarksville",
+    "name": "SunGas Propane Clarksville",
+    "website": "https://sungaspropane.com/",
+    "locations_found": [
+      {"name": "Gas Incorporated / Superior Plus Propane - Newnan", "address": "1776 South Highway 29", "city": "Newnan", "state": "GA", "zip": "30263", "phone": "(770) 253-2162"}
+    ],
+    "notes": "Domain sungaspropane.com redirects to superiorpluspropane.com (acquired by Superior Plus Propane / operating as Gas Incorporated in GA). SunGas Clarksville AR branch is now part of Superior Plus footprint; individual AR locations not confirmed via WebFetch."
+  },
+  {
+    "id": "blumont_energy_lynchburg",
+    "name": "Blumont Energy - Lynchburg",
+    "website": "https://blumontenergy.com",
+    "locations_found": [
+      {"name": "Lynchburg", "address": "1505 Rutherford Street", "city": "Lynchburg", "state": "VA", "zip": "24501", "phone": "(434) 846-6509"},
+      {"name": "Martinsville", "address": "910 Stultz Road", "city": "Martinsville", "state": "VA", "zip": "24112", "phone": "(276) 632-9808"},
+      {"name": "Radford", "address": "111 Harrison Street", "city": "Radford", "state": "VA", "zip": "24141", "phone": "(540) 639-1611"}
+    ],
+    "notes": "Three VA offices confirmed via company homepage."
+  },
+  {
+    "id": "corrigan_oil_and_propane",
+    "name": "Corrigan Oil and Propane",
+    "website": "https://corriganoil.com",
+    "locations_found": [
+      {"name": "Battle Creek", "address": "420 W Dickman Road", "city": "Battle Creek", "state": "MI", "zip": "49017", "phone": "(269) 962-8549"},
+      {"name": "Brighton (2nd St)", "address": "775 N Second St", "city": "Brighton", "state": "MI", "zip": "48116", "phone": "(810) 229-6323"},
+      {"name": "Brighton (Borderline)", "address": "9984 Borderline Drive", "city": "Brighton", "state": "MI", "zip": "48116", "phone": "(810) 229-6323"},
+      {"name": "Detroit", "address": "11800 Pleasant Street", "city": "Detroit", "state": "MI", "zip": "48217", "phone": "(313) 357-2330"},
+      {"name": "Greenville", "address": "5688 Vining Rd", "city": "Greenville", "state": "MI", "zip": "48838", "phone": "(616) 754-3254"},
+      {"name": "Ionia", "address": "75 E Grand River Ave", "city": "Ionia", "state": "MI", "zip": "48846", "phone": "(616) 527-4370"},
+      {"name": "Jackson (Napoleon)", "address": "7925 Napoleon Road", "city": "Jackson", "state": "MI", "zip": "49201", "phone": "(517) 536-8310"},
+      {"name": "Jackson (Enterprise)", "address": "2200 Enterprise Street", "city": "Jackson", "state": "MI", "zip": "49203", "phone": "(517) 782-8259"},
+      {"name": "Manchester", "address": "9050 MI State Road 52", "city": "Manchester", "state": "MI", "zip": "48158", "phone": "(734) 428-8366"},
+      {"name": "Milan", "address": "11204 Cone Road", "city": "Milan", "state": "MI", "zip": "48160", "phone": "(800) 327-8645"},
+      {"name": "Modoc", "address": "245 N Elm Street", "city": "Modoc", "state": "IN", "zip": "47358", "phone": "(765) 853-5381"},
+      {"name": "Muncie", "address": "3919 E McGalliard Road", "city": "Muncie", "state": "IN", "zip": "47303", "phone": "(765) 284-7374"},
+      {"name": "New Baltimore", "address": "37280 Green Street", "city": "New Baltimore", "state": "MI", "zip": "48047", "phone": "(586) 725-6300"},
+      {"name": "Rogers City", "address": "285 S Bradley Hwy", "city": "Rogers City", "state": "MI", "zip": "49779", "phone": "(989) 734-3835"},
+      {"name": "Sturgis", "address": "1100 N Clay Street", "city": "Sturgis", "state": "MI", "zip": "49091", "phone": "(269) 651-9674"},
+      {"name": "Toledo", "address": "3015 Hill Avenue", "city": "Toledo", "state": "OH", "zip": "43607", "phone": "(419) 491-2641"},
+      {"name": "Wheeler", "address": "8057 Monroe Road", "city": "Wheeler", "state": "MI", "zip": "48662", "phone": "(989) 546-4337"},
+      {"name": "Whitmore Lake", "address": "11818 Whitmore Lake Road", "city": "Whitmore Lake", "state": "MI", "zip": "48189", "phone": "(734) 449-0944"}
+    ],
+    "notes": "18 locations across MI, IN, OH. Full list pulled from corriganoil.com/locations."
+  },
+  {
+    "id": "superior_fuel_company",
+    "name": "Superior Fuel Company",
+    "website": "https://superiorfuels.com",
+    "locations_found": [
+      {"name": "Superior Fuel - Duluth", "address": "5102 S Cant Rd", "city": "Duluth", "state": "MN", "zip": "55804", "phone": "(218) 722-2050"},
+      {"name": "Superior Fuel - Superior WI", "address": "1330 Tower Ave", "city": "Superior", "state": "WI", "zip": "54880", "phone": ""}
+    ],
+    "notes": "Correct domain is superiorfuelcompany.com (not superiorfuels.com). Serves St. Louis, Douglas, Carlton, and Lake counties in northern MN/WI."
+  },
+  {
+    "id": "woodford_oil_company",
+    "name": "Woodford Oil Company",
+    "website": "https://www.woodfordoil.com",
+    "locations_found": [
+      {"name": "Elkins (HQ)", "address": "1 Thirteenth St", "city": "Elkins", "state": "WV", "zip": "26241", "phone": "(304) 636-2688"},
+      {"name": "Marlinton", "address": "802 4th Ave", "city": "Marlinton", "state": "WV", "zip": "24954", "phone": "(304) 799-4503"},
+      {"name": "Moorefield", "address": "1660 Fish Pond Rd", "city": "Moorefield", "state": "WV", "zip": "26836", "phone": "(304) 358-0445"},
+      {"name": "Clarksburg", "address": "9851 Cost Ave", "city": "Clarksburg", "state": "WV", "zip": "26301", "phone": "(304) 622-6843"},
+      {"name": "Morgantown", "address": "89 Corporate Drive", "city": "Morgantown", "state": "WV", "zip": "26501", "phone": "(304) 296-3835"},
+      {"name": "Reedsville", "address": "14573 Veterans Memorial Hwy", "city": "Reedsville", "state": "WV", "zip": "26547", "phone": "(304) 864-6970"}
+    ],
+    "notes": "6 offices/bulk plants confirmed in WV. Company operates 10 regional bulk plants and 11 Woodford Express stations across WV, OH, PA, VA, KY, MD; remaining plant addresses not available via WebFetch."
+  },
+  {
+    "id": "quality_oil_company",
+    "name": "Quality Oil Company",
+    "website": "https://www.qualityoilnc.com",
+    "locations_found": [
+      {"name": "Quality Oil Company HQ", "address": "1540 Silas Creek Pkwy", "city": "Winston-Salem", "state": "NC", "zip": "27127", "phone": "(336) 722-3441"}
+    ],
+    "notes": "Only HQ address confirmed. Serves Forsyth, Davidson and other NC Triad counties (High Point, Lexington, Silver Valley, Thomasville, Wallburg, Welcome). Operates branded c-stores (Quality Mart, Quality Plus, GOGAS) but branch/propane plant addresses not listed on website."
+  },
+  {
+    "id": "fall_river_propane",
+    "name": "Fall River Propane",
+    "website": "https://fallriverpropane.com/",
+    "locations_found": [
+      {"name": "Fall River Propane HQ", "address": "1150 N 3400 E", "city": "Ashton", "state": "ID", "zip": "83420", "phone": "(833) 682-3671"}
+    ],
+    "notes": "Appears to operate from a single office in Ashton, ID, servicing eastern ID, southwestern MT, and western WY (Afton, Thayne, Star Valley Ranch, Alpine, Jackson, Driggs, Rexburg, West Yellowstone). No separate branch offices identified."
+  },
+  {
+    "id": "como_oil_propane",
+    "name": "Como Oil & Propane",
+    "website": "https://www.comooil.com",
+    "locations_found": [
+      {"name": "Duluth (main)", "address": "5820 Old Highway 61", "city": "Duluth", "state": "MN", "zip": "55810", "phone": "(218) 722-2060"},
+      {"name": "Duluth (alt)", "address": "4330 W 1st Street", "city": "Duluth", "state": "MN", "zip": "55807", "phone": ""},
+      {"name": "Hibbing", "address": "202 1st Ave N", "city": "Hibbing", "state": "MN", "zip": "55746", "phone": ""}
+    ],
+    "notes": "Correct domain is comooilandpropane.com (comooil.com parked/for sale). Serves Duluth, Cloquet, Barnum, Cable, Grand Marais, Hibbing, Minong, Tower, Two Harbors MN; Superior, Ashland WI. Customer line 866-918-3454."
+  },
+  {
+    "id": "lin_gas_propane",
+    "name": "Lin-Gas Propane",
+    "website": "https://lin-gas.com",
+    "locations_found": [
+      {"name": "Evansville HQ", "address": "406 S Barker Avenue", "city": "Evansville", "state": "IN", "zip": "47712", "phone": "(800) 850-4380"},
+      {"name": "Evansville Distribution", "address": "3718 Upper Mt Vernon Road", "city": "Evansville", "state": "IN", "zip": "47712", "phone": "(800) 850-4380"},
+      {"name": "Bicknell", "address": "7323 N State Road 159", "city": "Bicknell", "state": "IN", "zip": "47512", "phone": "(800) 850-4380"},
+      {"name": "Dale", "address": "533 E Medcalf Street", "city": "Dale", "state": "IN", "zip": "47523", "phone": "(800) 850-4380"},
+      {"name": "Princeton", "address": "1490 W 225 N", "city": "Princeton", "state": "IN", "zip": "47670", "phone": "(800) 850-4380"},
+      {"name": "Elkton", "address": "1784 Guthrie Road", "city": "Elkton", "state": "KY", "zip": "42220", "phone": "(800) 850-4380"},
+      {"name": "Henderson", "address": "2270 S Green Street", "city": "Henderson", "state": "KY", "zip": "42420", "phone": "(800) 850-4380"},
+      {"name": "Livermore", "address": "4075 US 431 North", "city": "Livermore", "state": "KY", "zip": "42352", "phone": "(800) 850-4380"}
+    ],
+    "notes": "Correct domain is lingas.com (lin-gas.com did not resolve). Serves IN, IL, KY, TN. 8 facilities confirmed across IN and KY."
+  },
+  {
+    "id": "cangas_propane",
+    "name": "CanGas Propane",
+    "website": "https://cangaspropane.com/",
+    "locations_found": [],
+    "notes": "CanGas Propane is a Canadian company (18 facilities in BC, AB, SK, NWT) — NOT Idaho-based. Original input appears to have a misclassification. US domain cangaspropane.com did not resolve; Canadian site is cangaspropane.ca. No Idaho locations exist."
+  },
+  {
+    "id": "sem_stream_lp",
+    "name": "Sem Stream LP",
+    "website": "",
+    "locations_found": [],
+    "notes": "Original input had invalid website ('They barely even have a location on google'). SemStream LP was a midstream propane subsidiary of SemGroup that operated SemStream Arizona Propane LLC (HQ in Page, AZ). SemGroup was acquired by Energy Transfer in 2019. No Arkansas location identified; likely a terminal rather than retail branches. Not a retail multi-location propane dealer."
+  },
+  {
+    "id": "valley_energy",
+    "name": "Valley Energy",
+    "website": "https://valleyenergyinc.com",
+    "locations_found": [],
+    "notes": "Website valleyenergyinc.com did not resolve (ECONNREFUSED). Name is shared by multiple unrelated companies: (1) Valley Energy (valleyenergy.org) — heating oil/propane in MD/VA/WV, based Purcellville VA (117 N Bailey Ln); (2) Valley Energy (valley-energy.com) — natural gas distributor in Sayre PA (523 S Keystone Ave) serving Bradford County PA and NY. Unable to identify which entity is intended, or confirm branch directory."
+  },
+  {
+    "id": "sharp_energy",
+    "name": "Sharp Energy",
+    "website": "https://www.sharpenergy.com/",
+    "locations_found": [
+      {"name": "Dover DE", "address": "5011 North Dupont Hwy", "city": "Dover", "state": "DE", "zip": "19901", "phone": "(302) 678-2400"},
+      {"name": "Georgetown DE (HQ)", "address": "22945 E Piney Grove Rd", "city": "Georgetown", "state": "DE", "zip": "19947", "phone": "(302) 316-7000"},
+      {"name": "Newark DE", "address": "250 Corporate Blvd Suite B", "city": "Newark", "state": "DE", "zip": "19702", "phone": "(302) 273-7060"},
+      {"name": "DeBary FL", "address": "450 S Charles Richard Beall Blvd", "city": "DeBary", "state": "FL", "zip": "32713", "phone": "(386) 668-3201"},
+      {"name": "Hernando FL", "address": "PO Box 467", "city": "Hernando", "state": "FL", "zip": "34441", "phone": "(352) 447-2790"},
+      {"name": "Jacksonville FL", "address": "4613 Philips Hwy Suite 208B", "city": "Jacksonville", "state": "FL", "zip": "32207", "phone": "(904) 661-7590"},
+      {"name": "Lantana FL", "address": "360 Hillbrath Drive", "city": "Lantana", "state": "FL", "zip": "33462", "phone": "(561) 838-1814"},
+      {"name": "Okeechobee FL", "address": "802 North Parrott Ave", "city": "Okeechobee", "state": "FL", "zip": "34972", "phone": "(863) 763-2115"},
+      {"name": "Winter Haven FL", "address": "1705 7th Street SW", "city": "Winter Haven", "state": "FL", "zip": "33880", "phone": "(863) 733-7032"},
+      {"name": "Ahoskie NC", "address": "1525 US Hwy 13 South", "city": "Ahoskie", "state": "NC", "zip": "27910", "phone": "(252) 332-3330"},
+      {"name": "Dunn NC", "address": "17220 US Hwy 421 South", "city": "Dunn", "state": "NC", "zip": "28334", "phone": "(910) 892-8111"},
+      {"name": "Greensboro NC", "address": "400 Kivett Dairy Rd", "city": "McLeansville", "state": "NC", "zip": "27301", "phone": "(336) 697-3141"},
+      {"name": "Rich Square NC", "address": "136 S Main St", "city": "Rich Square", "state": "NC", "zip": "27869", "phone": "(252) 539-2850"},
+      {"name": "Sanford NC", "address": "2416 S Horner Blvd", "city": "Sanford", "state": "NC", "zip": "27330", "phone": "(252) 539-2850"},
+      {"name": "Shallotte NC", "address": "6 Red Bug Rd SW", "city": "Shallotte", "state": "NC", "zip": "28470", "phone": "(910) 776-6910"},
+      {"name": "Wallace NC", "address": "1525 N Norwood St", "city": "Wallace", "state": "NC", "zip": "28466", "phone": "(910) 285-2471"},
+      {"name": "Wilmington NC", "address": "3340 US Hwy 421 North Unit B", "city": "Wilmington", "state": "NC", "zip": "28401", "phone": "(910) 794-4053"},
+      {"name": "Easton MD", "address": "9387 Ocean Gateway", "city": "Easton", "state": "MD", "zip": "21601", "phone": "(410) 822-8261"},
+      {"name": "Pocomoke City MD", "address": "648 Ocean Hwy", "city": "Pocomoke City", "state": "MD", "zip": "21851", "phone": "(410) 957-1501"},
+      {"name": "Salisbury MD", "address": "520 Commerce St", "city": "Salisbury", "state": "MD", "zip": "21084", "phone": "(410) 749-4147"},
+      {"name": "Manheim PA", "address": "236 S Cherry St Suite 101", "city": "Manheim", "state": "PA", "zip": "17545", "phone": "(717) 492-1880"},
+      {"name": "Orefield PA", "address": "7205 Kernsville Rd", "city": "Orefield", "state": "PA", "zip": "18069", "phone": "(610) 530-1535"},
+      {"name": "Pocono Lake PA", "address": "906 Route 940", "city": "Pocono Lake", "state": "PA", "zip": "18347", "phone": "(570) 646-5626"},
+      {"name": "Belle Haven VA", "address": "36292 Lankford Hwy Suite 11", "city": "Belle Haven", "state": "VA", "zip": "23306", "phone": "(757) 442-4328"},
+      {"name": "Mattaponi VA", "address": "6560 Lewis B Puller Memorial Hwy", "city": "Mattaponi", "state": "VA", "zip": "23110", "phone": "(804) 294-7001"}
+    ],
+    "notes": "25 locations across DE, FL, NC, MD, PA, VA. Subsidiary of Chesapeake Utilities Corp. Complete list pulled from sharpenergy.com/locations."
+  },
+  {
+    "id": "acadia_fuel",
+    "name": "Acadia Fuel",
+    "website": "https://acadiafuel.com",
+    "locations_found": [
+      {"name": "Acadia Fuel (HQ)", "address": "77 Seal Cove Rd", "city": "Southwest Harbor", "state": "ME", "zip": "04679", "phone": "(207) 244-9664"}
+    ],
+    "notes": "Official website acadiafuel.com appears to be a 'coming soon' placeholder. BBB lists 'Acadia Fuel & Marine LLC' with 2 locations but only the Southwest Harbor primary was confirmed. Maine marine/home fuel and propane provider on Mount Desert Island."
+  },
+  {
+    "id": "hino_gas",
+    "name": "Hino Gas",
+    "website": "https://www.hinogas.com",
+    "locations_found": [
+      {"name": "Hino Gas - Harlingen (HQ)", "address": "2759 W Business 83", "city": "Harlingen", "state": "TX", "zip": "78552", "phone": "(956) 423-9178"}
+    ],
+    "notes": "Company states 3 locations serving Rio Grande Valley (Harlingen, Brownsville, Port Isabel) with ~9,000 customers in Cameron, Willacy, Hidalgo counties. Only Harlingen HQ address confirmed via web search. Other branch addresses not listed on company website."
+  },
+  {
+    "id": "mfa_oil_propane",
+    "name": "MFA Oil Propane",
+    "website": "https://mfaoil.com",
+    "locations_found": [
+      {"name": "Rogersville MO", "address": "7007 E US Hwy 60", "city": "Rogersville", "state": "MO", "zip": "", "phone": "(417) 753-9055"},
+      {"name": "Butler MO", "address": "975 Elks Dr", "city": "Butler", "state": "MO", "zip": "", "phone": "(660) 679-3532"},
+      {"name": "Eldon MO", "address": "704 Industrial Dr", "city": "Eldon", "state": "MO", "zip": "", "phone": ""},
+      {"name": "Pevely MO", "address": "8647 Commercial Blvd", "city": "Pevely", "state": "MO", "zip": "", "phone": ""},
+      {"name": "Shell Knob MO", "address": "20654 FR 1250", "city": "Shell Knob", "state": "MO", "zip": "65747", "phone": ""}
+    ],
+    "notes": "MFA Oil is a large Midwest farmer cooperative HQ in Columbia, MO. Operates hundreds of MFA Oil Propane stores, Break Time c-stores, Big O Tires, and Petro-Card 24 across multiple Midwest states. Full store locator is dynamic API-driven and not crawlable via WebFetch; only a handful of sample Missouri propane locations captured here. Known service area includes MO, KS, IA, IL, IN, AR, OK, TN, TX and more."
+  }
+]

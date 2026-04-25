@@ -1,0 +1,16 @@
+{
+  "source": "https://www.davenportenergy.com/locations",
+  "scraped": "2026-04-11",
+  "company": "Davenport Energy",
+  "locations": [
+    {"name": "Davenport Energy - Gretna", "street": "413 Vaden Drive", "city": "Gretna", "state": "VA", "zip": "24557", "phone": "434-656-2271"},
+    {"name": "Davenport Energy - Rocky Mount", "street": "40 Diamond Avenue", "city": "Rocky Mount", "state": "VA", "zip": "24151", "phone": "540-483-5146"},
+    {"name": "Davenport Energy - Chatham", "street": "120 S. Main Street", "city": "Chatham", "state": "VA", "zip": "24531", "phone": "434-432-0251"},
+    {"name": "Davenport Energy - Martinsville", "street": "8720 Philpott Highway", "city": "Martinsville", "state": "VA", "zip": "24112", "phone": "276-632-5788"},
+    {"name": "Davenport Energy - South Boston", "street": "7 Edmunds Street", "city": "South Boston", "state": "VA", "zip": "24592", "phone": "434-572-4981"},
+    {"name": "Davenport Energy - Roanoke", "street": "4939 Starkey Road", "city": "Roanoke", "state": "VA", "zip": "24018", "phone": "540-774-4401"},
+    {"name": "Davenport Energy - Covington", "street": "610 W Locust Street", "city": "Covington", "state": "VA", "zip": "24426", "phone": "540-962-1176"},
+    {"name": "Davenport Energy - Danville", "street": "200 River Street", "city": "Danville", "state": "VA", "zip": "24540", "phone": "434-793-5811"},
+    {"name": "Davenport Energy - Greensboro", "street": "5910 W Market Street", "city": "Greensboro", "state": "NC", "zip": "27409", "phone": "336-378-0400"}
+  ]
+}

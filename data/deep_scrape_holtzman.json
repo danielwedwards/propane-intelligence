@@ -1,0 +1,111 @@
+{
+  "source": "holtzmancorp.com/locations/*",
+  "scraped": "2026-04-11",
+  "company": "Holtzman Corporation",
+  "note": "Shenandoah Valley VA propane/heating oil/fuel distributor; also 150+ gas station/c-store network (not scraped here)",
+  "location_count": 10,
+  "locations": [
+    {
+      "name": "Lanexa Propane",
+      "street": "2220 S Waterside Dr.",
+      "city": "Lanexa",
+      "state": "VA",
+      "zip": "23089",
+      "phone": "804-557-5350",
+      "type": "Propane",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Mt Jackson Propane (HQ / Fireplace Store)",
+      "street": "5534 N. Main St",
+      "city": "Mt Jackson",
+      "state": "VA",
+      "zip": "22842",
+      "phone": "540-477-4450",
+      "type": "Propane",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Purcellville Propane",
+      "street": "1201 Wolf Rock Dr",
+      "city": "Purcellville",
+      "state": "VA",
+      "zip": "20132",
+      "phone": "540-751-9292",
+      "type": "Propane",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Strasburg Propane",
+      "street": "671 Borden Mowery Dr",
+      "city": "Strasburg",
+      "state": "VA",
+      "zip": "22657",
+      "phone": "540-465-9200",
+      "type": "Propane",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Tappahannock Propane",
+      "street": "845-A S. Church Ln",
+      "city": "Tappahannock",
+      "state": "VA",
+      "zip": "22560",
+      "phone": "804-250-2007",
+      "type": "Propane",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Verona Propane",
+      "street": "340 Lee Highway",
+      "city": "Verona",
+      "state": "VA",
+      "zip": "24482",
+      "phone": "540-490-4928",
+      "type": "Propane",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Holly Ridge Propane",
+      "street": "954 US Highway 17 S",
+      "city": "Holly Ridge",
+      "state": "NC",
+      "zip": "28445",
+      "phone": "910-803-2407",
+      "type": "Propane",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Bucks County Propane (Coming Soon)",
+      "street": "",
+      "city": "Bucks County",
+      "state": "PA",
+      "zip": "",
+      "phone": "215-547-7400",
+      "type": "Propane",
+      "note": "Formerly Bruce's Propane; coming soon",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Leesburg Oil",
+      "street": "148 Catoctin Cir SE #A",
+      "city": "Leesburg",
+      "state": "VA",
+      "zip": "20175",
+      "phone": "540-477-3131",
+      "type": "Heating Oil",
+      "source_url": "https://holtzmancorp.com/locations/"
+    },
+    {
+      "name": "Luray Oil",
+      "street": "191 S Court St",
+      "city": "Luray",
+      "state": "VA",
+      "zip": "22835",
+      "phone": "540-743-5191",
+      "type": "Heating Oil",
+      "source_url": "https://holtzmancorp.com/locations/"
+    }
+  ],
+  "additional": "Heating oil also listed at Mt Jackson (5534 N. Main St) and Verona (340 Lee Highway) per /heating-oil-locations/ page, colocated with propane offices. Gas station network of 150+ stores served via store-locator tool not enumerated in this scrape."
+}

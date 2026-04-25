@@ -1,0 +1,30 @@
+{
+  "source": "https://upgas.com/ (formerly unitedpropanegas.com); aggregated via UPG DBA directory listings",
+  "scraped": "2026-04-11",
+  "company": "United Propane Gas (UPG)",
+  "parent": "United Propane Gas, Inc. (Lisle, IL HQ)",
+  "notes": "UPG reports 77 locations across 10 states. The 'find-a-location' page is JS-rendered and not extractable via static fetch. The 22 locations below were identified by name on upgas.com's BBQ refill directory and cross-referenced against public listings (Yelp/YP/Chamber/BBB) for street addresses. Remaining ~55 branches not extracted. 10-state footprint includes KY, TN, MO, IL, IN, and 5 others.",
+  "corporate_hq": {"name": "UPG Corporate HQ", "street": "1001 Warrenville Road, Suite 350", "city": "Lisle", "state": "IL", "zip": "60532"},
+  "locations": [
+    {"name": "Calloway County Propane (UPG)", "street": "3040 State Route 94 E", "city": "Murray", "state": "KY", "zip": "42071", "phone": "270-753-8011"},
+    {"name": "Gasper River Propane (UPG)", "street": "365 E Main St", "city": "Auburn", "state": "KY", "zip": "42206", "phone": "270-542-7077"},
+    {"name": "Green River Propane (UPG)", "street": "730 US Highway 431 N", "city": "Livermore", "state": "KY", "zip": "42352", "phone": "270-278-5164"},
+    {"name": "Graves County Propane (UPG)", "street": "400 W Powell Rd", "city": "Mayfield", "state": "KY", "zip": "42066", "phone": "270-247-1268"},
+    {"name": "West Kentucky Propane (UPG)", "street": "4208 Cairo Rd", "city": "Paducah", "state": "KY", "zip": "42001", "phone": "270-442-0183"},
+    {"name": "Cumberland River Propane (UPG)", "street": "4855 Highway 431 N", "city": "Springfield", "state": "TN", "zip": "37172", "phone": "615-384-0126"},
+    {"name": "Highland Rim Propane (UPG)", "street": "5437 McMinnville Hwy", "city": "Manchester", "state": "TN", "zip": "37355", "phone": "931-728-6500"},
+    {"name": "Natchez Trace Propane (UPG)", "street": "1114 Highway 99", "city": "Waynesboro", "state": "TN", "zip": "38485", "phone": "931-722-7092"},
+    {"name": "Obion County Propane (UPG)", "street": "2680 Section Line Rd", "city": "Union City", "state": "TN", "zip": "38261", "phone": "731-885-2499"},
+    {"name": "Quality Propane (UPG)", "street": "209 Knoxville Ave", "city": "Lebanon", "state": "TN", "zip": "37087", "phone": null},
+    {"name": "Southern Propane (UPG)", "street": "1222 Impact Dr", "city": "Columbia", "state": "TN", "zip": "38401", "phone": "931-540-0600"},
+    {"name": "Stewart County Propane (UPG)", "street": "1571 Highway 79", "city": "Dover", "state": "TN", "zip": "37058", "phone": "931-232-4632"},
+    {"name": "Midwest Propane (UPG)", "street": "4010 Pleasant Pl", "city": "Trenton", "state": "MO", "zip": "64683", "phone": "660-359-4982"},
+    {"name": "MO Energy Propane (UPG)", "street": "18112 State Highway 5", "city": "Unionville", "state": "MO", "zip": "63565", "phone": "660-947-2899"},
+    {"name": "Small Bootheel Propane (UPG)", "street": "109 County Highway 539", "city": "Sikeston", "state": "MO", "zip": "63801", "phone": "573-472-3311"},
+    {"name": "Heartland Propane (UPG)", "street": "721 W Herrin St", "city": "Herrin", "state": "IL", "zip": "62948", "phone": "618-988-8803"},
+    {"name": "South Illinois Propane (UPG)", "street": "606 E Vine Street", "city": "Vienna", "state": "IL", "zip": "62995", "phone": null},
+    {"name": "Eastern Illinois Propane (UPG)", "street": "607 W State St", "city": "Charleston", "state": "IL", "zip": "61920", "phone": null},
+    {"name": "Big 3 Propane (UPG)", "street": "545 SW 1st St", "city": "Shelbyville", "state": "IL", "zip": "62565", "phone": null},
+    {"name": "South Indiana Propane (UPG)", "street": "1677 N Henderson Park Rd", "city": "Salem", "state": "IN", "zip": "47167", "phone": "812-883-3357"}
+  ]
+}

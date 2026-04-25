@@ -1,0 +1,67 @@
+{
+  "source": "https://www.parkergas.com/locations/",
+  "scraped": "2026-04-11",
+  "notes": "Parker Gas Company operates 6 branches in Eastern North Carolina. Only city and phone available from website; no street addresses published publicly. Sitemap references locations.kml but KML file is empty (only name/website, no address/coordinates).",
+  "locations": [
+    {
+      "name": "Parker Gas - Smithfield",
+      "street": null,
+      "city": "Smithfield",
+      "state": "NC",
+      "zip": null,
+      "phone": "919-300-4311",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Parker Gas - Newton Grove",
+      "street": null,
+      "city": "Newton Grove",
+      "state": "NC",
+      "zip": null,
+      "phone": "910-249-4088",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Parker Gas - Fayetteville",
+      "street": null,
+      "city": "Fayetteville",
+      "state": "NC",
+      "zip": null,
+      "phone": "910-359-3141",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Parker Gas - Clinton",
+      "street": null,
+      "city": "Clinton",
+      "state": "NC",
+      "zip": null,
+      "phone": "910-682-3151",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Parker Gas - Wilmington",
+      "street": null,
+      "city": "Wilmington",
+      "state": "NC",
+      "zip": null,
+      "phone": "910-319-4070",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Parker Gas - Mt. Olive",
+      "street": null,
+      "city": "Mt. Olive",
+      "state": "NC",
+      "zip": null,
+      "phone": "919-551-4170",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

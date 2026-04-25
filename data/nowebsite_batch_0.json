@@ -1,0 +1,152 @@
+[
+  {
+    "id": "cromwell_s_convenience_petroleum_propane",
+    "name": "Cromwell's Convenience Petroleum & Propane",
+    "state": "MT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small MT c-store/propane operator"
+  },
+  {
+    "id": "north_cascade_propane_service",
+    "name": "North Cascade Propane Service",
+    "state": "WA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Northern WA operator"
+  },
+  {
+    "id": "ontime_petroleum_propane",
+    "name": "OnTime Petroleum & Propane",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "SD regional operator"
+  },
+  {
+    "id": "fischer_oil_propane_co",
+    "name": "Fischer Oil & Propane Co",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Family-owned SD operator"
+  },
+  {
+    "id": "nebraska_iowa_supply_co",
+    "name": "Nebraska Iowa Supply Co",
+    "state": "NE",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "NE/IA regional wholesaler"
+  },
+  {
+    "id": "thunder_basin_propane",
+    "name": "Thunder Basin Propane",
+    "state": "WY",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WY (Powder River Basin) operator"
+  },
+  {
+    "id": "gale_s_gas_services",
+    "name": "Gale's Gas Services",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small SD operator"
+  },
+  {
+    "id": "blue_flame_propane",
+    "name": "Blue Flame Propane",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT operator"
+  },
+  {
+    "id": "steveson_s_lp_gas",
+    "name": "Steveson's LP Gas",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  },
+  {
+    "id": "champion_propane",
+    "name": "Champion Propane",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "SD operator"
+  },
+  {
+    "id": "sandhill_oil_co",
+    "name": "Sandhill Oil Co",
+    "state": "NE",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "NE Sandhills regional fuel distributor"
+  },
+  {
+    "id": "enterprise_gas",
+    "name": "Enterprise Gas",
+    "state": "VA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "VA operator"
+  },
+  {
+    "id": "bob_s_gas_inc",
+    "name": "Bob's Gas Inc",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small SD operator"
+  },
+  {
+    "id": "lake_philgas",
+    "name": "Lake Philgas",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT operator"
+  },
+  {
+    "id": "hill_gas",
+    "name": "Hill Gas",
+    "state": "TX",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "TX operator"
+  }
+]

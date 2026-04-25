@@ -1,0 +1,58 @@
+{
+  "source": "https://www.tigerfuel.com/ (locations confirmed via web search and Yelp)",
+  "scraped": "2026-04-11",
+  "company": "Tiger Fuel Company",
+  "notes": "Central Virginia petroleum energy distributor (propane, heating oil, gasoline). Main site location pages could not be parsed (WordPress/Divi theme with dynamic content), so addresses pulled from confirmed public listings.",
+  "locations": [
+    {
+      "name": "Charlottesville HQ / Main Office",
+      "address": "200 Carlton Road",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zip": "22902",
+      "phone": "(434) 293-6157"
+    },
+    {
+      "name": "Charlottesville Propane Filling - Long St",
+      "address": "1315 Long St",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zip": "22901",
+      "phone": "(434) 817-2608"
+    },
+    {
+      "name": "Appomattox",
+      "address": "266 Harrell Street",
+      "city": "Appomattox",
+      "state": "VA",
+      "zip": "24522",
+      "phone": null
+    },
+    {
+      "name": "Lovingston",
+      "address": "242 Front Street",
+      "city": "Lovingston",
+      "state": "VA",
+      "zip": "22949",
+      "phone": null
+    },
+    {
+      "name": "Orange",
+      "address": null,
+      "city": "Orange",
+      "state": "VA",
+      "zip": null,
+      "phone": null,
+      "notes": "Listed as Tiger Fuel branch; street address not located in public sources"
+    },
+    {
+      "name": "Fredericksburg (ex-Anderson Oil & Propane)",
+      "address": null,
+      "city": "Fredericksburg",
+      "state": "VA",
+      "zip": null,
+      "phone": null,
+      "notes": "Acquired Anderson Oil & Propane of Fredericksburg; operating as Tiger Fuel branch"
+    }
+  ]
+}

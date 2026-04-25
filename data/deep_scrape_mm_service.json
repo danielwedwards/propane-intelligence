@@ -1,0 +1,237 @@
+{
+  "source": "https://www.mmservice.com/",
+  "scraped": "2026-04-11",
+  "member_id": "mmservice",
+  "locations": [
+    {
+      "name": "Nokomis Elevator",
+      "street": "301 E State St",
+      "city": "Nokomis",
+      "state": "IL",
+      "zip": "62075",
+      "phone": "(217) 563-8612",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Fillmore Elevator",
+      "street": "320 S Main",
+      "city": "Fillmore",
+      "state": "IL",
+      "zip": "62032",
+      "phone": "(217) 538-2015",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Witt Elevator",
+      "street": "605 N Talmadge St",
+      "city": "Witt",
+      "state": "IL",
+      "zip": "62094",
+      "phone": "(217) 594-2223",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Irving Fertilizer",
+      "street": "511 E State Street",
+      "city": "Irving",
+      "state": "IL",
+      "zip": "62051",
+      "phone": "(217) 533-4331",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Irving Elevator",
+      "street": "203 E State St",
+      "city": "Irving",
+      "state": "IL",
+      "zip": "62051",
+      "phone": "(217) 533-4331",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Litchfield Elevator",
+      "street": "1601 N Washington St",
+      "city": "Litchfield",
+      "state": "IL",
+      "zip": "62056",
+      "phone": "(217) 324-5931",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Litchfield Office, Fertilizer, Seed Center",
+      "street": "1600 N Old Route 66",
+      "city": "Litchfield",
+      "state": "IL",
+      "zip": "62056",
+      "phone": "(217) 324-2524",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Barnett Elevator",
+      "street": "119 N 18th Ave",
+      "city": "Litchfield",
+      "state": "IL",
+      "zip": "62056",
+      "phone": "(217) 324-6151",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Virden Elevator (Seasonal)",
+      "street": "200 N Bissel",
+      "city": "Virden",
+      "state": "IL",
+      "zip": "62690",
+      "phone": "(217) 965-3314",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Girard Elevator",
+      "street": "152 E South St",
+      "city": "Girard",
+      "state": "IL",
+      "zip": "62640",
+      "phone": "(217) 627-3117",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Girard Crop Protection Center",
+      "street": "147 E Madison",
+      "city": "Girard",
+      "state": "IL",
+      "zip": "62640",
+      "phone": "(217) 627-2151",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Mt. Olive",
+      "street": "701 W Main St",
+      "city": "Mt. Olive",
+      "state": "IL",
+      "zip": "62069",
+      "phone": "(217) 999-4409",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Alhambra",
+      "street": "401 Elm",
+      "city": "Alhambra",
+      "state": "IL",
+      "zip": "62001",
+      "phone": "(618) 488-2265",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Carlinville North Elevator",
+      "street": "21814 Route 4",
+      "city": "Carlinville",
+      "state": "IL",
+      "zip": "62626",
+      "phone": "(217) 854-2101",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Corporate Office",
+      "street": "130 N Chiles St.",
+      "city": "Carlinville",
+      "state": "IL",
+      "zip": "62626",
+      "phone": "(217) 854-4516",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Carlinville Central",
+      "street": "130 N Chiles St",
+      "city": "Carlinville",
+      "state": "IL",
+      "zip": "62626",
+      "phone": "(217) 854-3148",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Marine Plant",
+      "street": "411 E Division St",
+      "city": "Marine",
+      "state": "IL",
+      "zip": "62061",
+      "phone": "(618) 887-4275",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Marine",
+      "street": "411 E Division St",
+      "city": "Marine",
+      "state": "IL",
+      "zip": "62061",
+      "phone": "(618) 887-4275",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Palmyra",
+      "street": "275 State St",
+      "city": "Palmyra",
+      "state": "IL",
+      "zip": "62674",
+      "phone": "(217) 436-2492",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Energy Department",
+      "street": "1032 S Washington St",
+      "city": "Bunker Hill",
+      "state": "IL",
+      "zip": "62014",
+      "phone": "(618) 585-4484",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Bunker Hill Plant",
+      "street": "309 N Clinton",
+      "city": "Bunker Hill",
+      "state": "IL",
+      "zip": "62014",
+      "phone": "(618) 585-3608",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Chesterfield Plant",
+      "street": "101 W Depot St",
+      "city": "Chesterfield",
+      "state": "IL",
+      "zip": "62630",
+      "phone": "(618) 753-3127",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Roxana",
+      "street": "4237 Industrial Drive",
+      "city": "Roxana",
+      "state": "IL",
+      "zip": "62084",
+      "phone": "(618) 585-4484",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

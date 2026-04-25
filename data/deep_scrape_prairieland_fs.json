@@ -1,0 +1,387 @@
+{
+  "source": "https://prairielandfs.com/",
+  "scraped": "2026-04-11",
+  "member_id": "prairielandfs",
+  "locations": [
+    {
+      "name": "Illiopolis",
+      "street": "3688 N. Mt. Pulaski Rd",
+      "city": "Illiopolis",
+      "state": "IL",
+      "zip": "62539",
+      "phone": "(217) 486-2811",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Riverton",
+      "street": "8507 Old Decatur Rd.",
+      "city": "Riverton",
+      "state": "IL",
+      "zip": "62561",
+      "phone": "(217) 243-6561",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Williamsville",
+      "street": "10921 Farmers Lane",
+      "city": "Williamsville",
+      "state": "IL",
+      "zip": "62693",
+      "phone": "(217) 566-3898",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Greenview",
+      "street": "24580 Jellystone Ave.",
+      "city": "Greenview",
+      "state": "IL",
+      "zip": "62642",
+      "phone": "(217) 968-2282",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Auburn",
+      "street": "407 E. Jackson St.",
+      "city": "Auburn",
+      "state": "IL",
+      "zip": "62615",
+      "phone": "(217) 438-3318",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "New Berlin",
+      "street": "16500 Old Rt 54 | PO Box 167",
+      "city": "New Berlin",
+      "state": "IL",
+      "zip": "62670",
+      "phone": "(217) 488-6037",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Prentice",
+      "street": "2929 Literberry Prentice Rd.",
+      "city": "Ashland",
+      "state": "IL",
+      "zip": "62612",
+      "phone": "(217) 476-8864",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Franklin",
+      "street": "2950 Illinois Highway 104",
+      "city": "Franklin",
+      "state": "IL",
+      "zip": "62638",
+      "phone": "(217) 675-2315",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Rees Station",
+      "street": "765 Rees Station Road",
+      "city": "Franklin",
+      "state": "IL",
+      "zip": "62638",
+      "phone": "(217) 675-2288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Lewistown",
+      "street": "13075 N Us 24 Hwy.",
+      "city": "Lewistown",
+      "state": "IL",
+      "zip": "61542",
+      "phone": "(309) 547-2896",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Fulton",
+      "street": "13075 N Us 24 Hwy.",
+      "city": "Lewistown",
+      "state": "IL",
+      "zip": "61542",
+      "phone": "(309) 547-2896",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Jacksonville Crops/Store",
+      "street": "701 Henry Street",
+      "city": "Jacksonville",
+      "state": "IL",
+      "zip": "62650",
+      "phone": "(217) 243-6562",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Jacksonville Corporate",
+      "street": "1132 Veterans Drive",
+      "city": "Jacksonville",
+      "state": "IL",
+      "zip": "62650",
+      "phone": "(217) 243-6561",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Murrayville",
+      "street": "302 Main St.",
+      "city": "Murrayville",
+      "state": "IL",
+      "zip": "62668",
+      "phone": "(217) 882-5221",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Ipava",
+      "street": "985 E Main | PO Box 93",
+      "city": "Ipava",
+      "state": "IL",
+      "zip": "61441",
+      "phone": "(309) 753-8253",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Astoria",
+      "street": "2452 N. Bader Road",
+      "city": "Astoria",
+      "state": "IL",
+      "zip": "61501",
+      "phone": "(309) 329-2162",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Bethel",
+      "street": "1720 Bethel Lane (Rt 104)",
+      "city": "Bethel",
+      "state": "IL",
+      "zip": "62628",
+      "phone": "(217) 472-6311",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Winchester",
+      "street": "97 N. Commercial",
+      "city": "Winchester",
+      "state": "IL",
+      "zip": "62694",
+      "phone": "(217) 742-3125",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Rushville",
+      "street": "551B Macomb Rd",
+      "city": "Rushville",
+      "state": "IL",
+      "zip": "62681",
+      "phone": "(217) 322-2028",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Meredosia",
+      "street": "State Hwy 104",
+      "city": "Meredosia",
+      "state": "IL",
+      "zip": "62665",
+      "phone": "(217) 723-4319",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Milton",
+      "street": "20749 State Hwy 100",
+      "city": "Pearl",
+      "state": "IL",
+      "zip": "62361",
+      "phone": "(217) 723-4319",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Mt Sterling",
+      "street": "104 W. Railroad | PO Box 212",
+      "city": "Mt Sterling",
+      "state": "IL",
+      "zip": "62353",
+      "phone": "(217) 773-3911",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Camden",
+      "street": "6299 LaPrairie Rd.",
+      "city": "Huntsville",
+      "state": "IL",
+      "zip": "62344",
+      "phone": "(217) 667-2111",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Pittsfield",
+      "street": "1201 E Washington",
+      "city": "Pittsfield",
+      "state": "IL",
+      "zip": "62363",
+      "phone": "(217) 285-5508",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Pleasant Hill",
+      "street": "901 S Main",
+      "city": "Pleasant Hill",
+      "state": "IL",
+      "zip": "62366",
+      "phone": "(217) 734-2393",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Golden",
+      "street": "908 Prairie Mills Rd",
+      "city": "Golden",
+      "state": "IL",
+      "zip": "62339",
+      "phone": "(217) 696-4432",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Troy, Missouri",
+      "street": "3750 N. Hwy. 61",
+      "city": "Silex",
+      "state": "MO",
+      "zip": "63379",
+      "phone": "(888) 978-7637",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Payson",
+      "street": "1706 N 550th Ave",
+      "city": "Payson",
+      "state": "IL",
+      "zip": "62360",
+      "phone": "(217) 656-3795",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Paloma",
+      "street": "1644 Hwy 24",
+      "city": "Paloma",
+      "state": "IL",
+      "zip": "62359",
+      "phone": "(217) 455-2811",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Kinderhook",
+      "street": "30157 State Hwy 96",
+      "city": "Kinderhook",
+      "state": "IL",
+      "zip": "62345",
+      "phone": "(217) 432-8397",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Ursa",
+      "street": "867 Hwy 61",
+      "city": "Ursa",
+      "state": "IL",
+      "zip": "62376",
+      "phone": "(217) 964-2311",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Taylor, MO",
+      "street": "614 Birch Lane",
+      "city": "Taylor",
+      "state": "MO",
+      "zip": "63471",
+      "phone": "(573) 769-4887",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Kahoka, MO",
+      "street": "202 Hwy 136 West | PO Box 76",
+      "city": "Kahoka",
+      "state": "MO",
+      "zip": "63445",
+      "phone": "(660) 727-2288",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "La Belle, MO",
+      "street": "20450 State Hwy DD",
+      "city": "La Belle",
+      "state": "MO",
+      "zip": "63447",
+      "phone": "(660) 213-3300",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Memphis, MO",
+      "street": "445 South Ridge",
+      "city": "Memphis",
+      "state": "MO",
+      "zip": "63555",
+      "phone": "(660) 465-8523",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Kirksville, MO",
+      "street": "26970 Glenview Trail",
+      "city": "Kirksville",
+      "state": "MO",
+      "zip": "63501",
+      "phone": "(660) 956-0802",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Glasgow, Missouri",
+      "street": "41096 Hwy. 5",
+      "city": "Glasgow",
+      "state": "MO",
+      "zip": "65254",
+      "phone": "(660) 338-2815",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Pilot Grove",
+      "street": "12302 Hwy 135 | PO Box 17",
+      "city": "Pilot Grove",
+      "state": "MO",
+      "zip": "65276",
+      "phone": "(660) 834-5412",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

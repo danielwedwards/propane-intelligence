@@ -1,0 +1,202 @@
+[
+  {
+    "id": "scott_petroleum_anderson_s_gas_propane",
+    "name": "Scott Petroleum / Anderson's Gas & Propane",
+    "state": "AR",
+    "website": "https://scottpetroleum.net/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Regional fuels/propane; acquired Anderson's Gas & Propane"
+  },
+  {
+    "id": "foster_fuels_hearth_home_showroom",
+    "name": "Foster Fuels Hearth & Home Showroom",
+    "state": "VA",
+    "website": "https://www.fosterfuels.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Brookneal, VA; large regional independent"
+  },
+  {
+    "id": "united_propane_gas_vienna_il",
+    "name": "United Propane Gas (Vienna, IL)",
+    "state": "IL",
+    "website": "https://unitedpropanegas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Branch of United Propane Gas, multi-state operator"
+  },
+  {
+    "id": "r_h_foster_energy_machias",
+    "name": "R.H. Foster Energy - Machias",
+    "state": "ME",
+    "website": "https://rhfoster.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Maine multi-location"
+  },
+  {
+    "id": "freeman_gas_brevard_office",
+    "name": "Freeman Gas Brevard Office",
+    "state": "GA",
+    "website": "https://freemangas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state operator based in Spartanburg, SC"
+  },
+  {
+    "id": "propane_northwest_tacoma",
+    "name": "Propane Northwest - Tacoma",
+    "state": "WA",
+    "website": "https://www.propanenw.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Tacoma, WA; multi-location PNW"
+  },
+  {
+    "id": "cross_petroleum_services",
+    "name": "Cross Petroleum Services",
+    "state": "MT",
+    "website": "https://www.crosspetroleum.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MT regional petroleum and propane distributor"
+  },
+  {
+    "id": "sapp_bros_petroleum",
+    "name": "Sapp Bros. Petroleum",
+    "state": "CO",
+    "website": "https://sappbrospetroleum.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state petroleum and propane distributor HQ in Omaha, NE"
+  },
+  {
+    "id": "ngl_energy_partners",
+    "name": "NGL Energy Partners",
+    "state": "AR",
+    "website": "http://www.nglep.com/",
+    "ownership": "public",
+    "nlocs": 1,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "chs_southwest_grain",
+    "name": "CHS Southwest Grain",
+    "state": "ND",
+    "website": "https://www.chsinc.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Part of CHS Inc., largest US ag coop; energy division includes propane"
+  },
+  {
+    "id": "ak_energy_gallia",
+    "name": "AK Energy - Gallia",
+    "state": "OH",
+    "website": "https://www.akenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "OH multi-location propane/fuel; Gallia branch"
+  },
+  {
+    "id": "blossman_propane",
+    "name": "Blossman Propane",
+    "state": "GA",
+    "website": "https://www.blossmangas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "9th largest US propane dealer; 75+ branches across Southeast; HQ in Ocean Springs, MS"
+  },
+  {
+    "id": "mrohs_gas_inc",
+    "name": "Mrohs Gas, Inc.",
+    "state": "MD",
+    "website": "https://mrohsgas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MD regional"
+  },
+  {
+    "id": "premier_energy",
+    "name": "Premier Energy",
+    "state": "KY",
+    "website": "https://premierenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "KY/regional"
+  },
+  {
+    "id": "o_nealgas_inc_ar",
+    "name": "O'Nealgas Inc",
+    "state": "AR",
+    "website": "https://onealgas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Arkansas-based regional propane company"
+  },
+  {
+    "id": "butler_lp_gas",
+    "name": "Butler LP Gas",
+    "state": "SC",
+    "website": "https://butlerlpgas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "South Carolina operator"
+  },
+  {
+    "id": "utah_propane",
+    "name": "Utah Propane",
+    "state": "UT",
+    "website": "https://utahpropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "UT statewide operator"
+  },
+  {
+    "id": "v_1_propane",
+    "name": "V-1 Propane",
+    "state": "WY",
+    "website": "https://www.v1propane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state western operator (WY/CO/ID/MT)"
+  },
+  {
+    "id": "mfa_oil",
+    "name": "MFA Oil",
+    "state": "AR",
+    "website": "https://www.mfaoil.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Large multi-state cooperative HQ in Columbia, MO"
+  },
+  {
+    "id": "ceres_solutions",
+    "name": "Ceres Solutions",
+    "state": "IN",
+    "website": "https://ceres.coop",
+    "ownership": "coop",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Large Indiana farmer cooperative"
+  }
+]

@@ -1,0 +1,1929 @@
+{
+  "source": "https://www.cvacoop.com/api/find-a-location",
+  "scraped": "2026-04-11",
+  "locations": [
+    {
+      "company": "Central Valley Ag",
+      "name": "York Fuel Site",
+      "code": "88",
+      "city": "York",
+      "county": "York",
+      "phone": "(402) 362-0253",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 40.875365,
+      "lng": -97.594144,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "York East",
+      "code": "87",
+      "city": "York",
+      "county": "York",
+      "phone": "(402) 362-0253",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 40.8855339,
+      "lng": -97.5766959,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "York Office",
+      "code": "89",
+      "city": "York",
+      "county": "York",
+      "phone": "(402) 362-0253",
+      "hours": "",
+      "types": [
+        "Admin"
+      ],
+      "lat": 40.8913256,
+      "lng": -97.5918969,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Waco Grain, Feed &amp; Fuel Site",
+      "code": "83",
+      "city": "Waco",
+      "county": "York",
+      "phone": "(402) 728-5252",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 40.8948203,
+      "lng": -97.4599442,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Waco Agronomy",
+      "code": "82",
+      "city": "Waco",
+      "county": "York",
+      "phone": "(402) 728-5252",
+      "hours": "",
+      "types": [
+        "Agronomy"
+      ],
+      "lat": 40.896368,
+      "lng": -97.45462,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Bradshaw Fuel Site",
+      "code": "94",
+      "city": "Bradshaw",
+      "county": "York",
+      "phone": "(402) 736-4333",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 40.882078,
+      "lng": -97.74428,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Bradshaw",
+      "code": "18",
+      "city": "Bradshaw",
+      "county": "York",
+      "phone": "(402) 736-4315",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 40.881648,
+      "lng": -97.744667,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Bradshaw Fuel Site",
+      "code": "93",
+      "city": "Bradshaw",
+      "county": "York",
+      "phone": "(402) 736-4333",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 40.8819228,
+      "lng": -97.74665,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Benedict",
+      "code": "14",
+      "city": "Benedict",
+      "county": "York",
+      "phone": "(402) 732-6622",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.0071377,
+      "lng": -97.6064235,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Henderson Fuel Site",
+      "code": "37",
+      "city": "Henderson",
+      "county": "York",
+      "phone": "(402) 723-4438",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 40.7811697,
+      "lng": -97.8114091,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Henderson Agronomy",
+      "code": "102",
+      "city": "Henderson",
+      "county": "York",
+      "phone": "(402) 723-5744",
+      "hours": "",
+      "types": [
+        "Agronomy"
+      ],
+      "lat": 40.786436,
+      "lng": -97.816296,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Utica",
+      "code": "79",
+      "city": "Utica",
+      "county": "Seward",
+      "phone": "(402) 534-2411",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 40.8948428,
+      "lng": -97.3417897,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Utica Fuel Site",
+      "code": "80",
+      "city": "Utica",
+      "county": "Seward",
+      "phone": "(402) 534-2411",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 40.901825,
+      "lng": -97.33449,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hampton Agronomy",
+      "code": "35",
+      "city": "Hampton",
+      "county": "Hamilton",
+      "phone": "(402) 725-3456",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 40.872353,
+      "lng": -97.8643005,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Gresham C-Store",
+      "code": "92",
+      "city": "Gresham",
+      "county": "York",
+      "phone": "(402) 735-7351",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 41.027728,
+      "lng": -97.4055016,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Gresham",
+      "code": "95",
+      "city": "Gresham",
+      "county": "York",
+      "phone": "(402) 735-7266",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Grain"
+      ],
+      "lat": 41.029927,
+      "lng": -97.40267,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hampton Corn Cleaning Plant",
+      "code": "117",
+      "city": "Hampton",
+      "county": "Hamilton",
+      "phone": "(402) 725-3456",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 40.8785169,
+      "lng": -97.8830728,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hampton Grain/feed",
+      "code": "113",
+      "city": "Hampton",
+      "county": "Hamilton",
+      "phone": "(402) 725-3456",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 40.876826,
+      "lng": -97.88587,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hampton C-Store",
+      "code": "105",
+      "city": "Hampton",
+      "county": "Hamilton",
+      "phone": "(402) 725-3333",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 40.88302,
+      "lng": -97.889214,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Stromsburg",
+      "code": "72",
+      "city": "Stromsburg",
+      "county": "Polk",
+      "phone": "(402) 764-2571",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.1097149,
+      "lng": -97.595515,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Stromsburg Fuel Site",
+      "code": "74",
+      "city": "Stromsburg",
+      "county": "Polk",
+      "phone": "(402) 764-2571",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 41.112329,
+      "lng": -97.597847,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Polk",
+      "code": "99",
+      "city": "Polk",
+      "county": "Polk",
+      "phone": "(402) 765-2201",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.0797815,
+      "lng": -97.7824951,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Tamora",
+      "code": "103",
+      "city": "Tamora",
+      "county": "Seward",
+      "phone": "(402) 523-4225",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 40.8946722,
+      "lng": -97.2243993,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hordville Fuel Site",
+      "code": "42",
+      "city": "Hordville",
+      "county": "Hamilton",
+      "phone": "(888) 343-0323",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 41.075729,
+      "lng": -97.885892,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hordville",
+      "code": "41",
+      "city": "Hordville",
+      "county": "Hamilton",
+      "phone": "(402) 757-3251",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.0775281,
+      "lng": -97.8876057,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Stockham",
+      "code": "71",
+      "city": "Stockham",
+      "county": "Hamilton",
+      "phone": "(402) 737-3387",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 40.7154998,
+      "lng": -97.9453603,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Marquette",
+      "code": "98",
+      "city": "Marquette",
+      "county": "Hamilton",
+      "phone": "(402) 854-2265",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 41.0257846,
+      "lng": -97.9965854,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Shelby",
+      "code": "67",
+      "city": "Shelby",
+      "county": "Polk",
+      "phone": "(402) 527-5511",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.1942645,
+      "lng": -97.4221234,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Ulysses &amp; Fuel Site",
+      "code": "100",
+      "city": "Ulysses",
+      "county": "Butler",
+      "phone": "(402) 549-2115",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.0708379,
+      "lng": -97.2020129,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Rising City &amp; Fuel Site",
+      "code": "64",
+      "city": "Rising City",
+      "county": "York",
+      "phone": "(402) 542-2131",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.1985579,
+      "lng": -97.2955323,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Garland Fuel Site",
+      "code": "109",
+      "city": "Garland",
+      "county": "Seward",
+      "phone": "(888) 343-0323",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 40.9453199,
+      "lng": -96.9867953,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Duncan",
+      "code": "29",
+      "city": "Duncan",
+      "county": "Platte",
+      "phone": "(402) 897-3315",
+      "hours": "",
+      "types": [
+        "Feed"
+      ],
+      "lat": 41.393348,
+      "lng": -97.485503,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Fullerton",
+      "code": "30",
+      "city": "Fullerton",
+      "county": "Nance",
+      "phone": "(308) 536-2424",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 41.3722179,
+      "lng": -97.9651503,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Daykin Milling Llc",
+      "code": "111",
+      "city": "Daykin",
+      "county": "Jefferson",
+      "phone": "(402) 745-6240",
+      "hours": "",
+      "types": [
+        "Feed"
+      ],
+      "lat": 40.3213991116,
+      "lng": -97.2541092733,
+      "description": "<p>&lt;p&gt; Welcome to Daykin Milling LLC, a strategic partnership between Central Valley Ag (CVA), and Livingston Enterprises, Inc., LLC. Established near Daykin,</p>\n<p>Nebraska in 2018, the state-of-the-art feed mill and grain facility offers premier feed and grain services designed to support agricultural growth and success. Managed by Central Valley Ag, Daykin Milling LLC provides high-quality operations and efficient grain sales, aligning with CVA\u2019s commitment to embrace the cooperative s"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Monroe Grain",
+      "code": "57",
+      "city": "Monroe",
+      "county": "Platte",
+      "phone": "(402) 495-3087",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 41.473548,
+      "lng": -97.59789,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Monroe Agronomy",
+      "code": "56",
+      "city": "Monroe",
+      "county": "Platte",
+      "phone": "(402) 495-3087",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 41.474303,
+      "lng": -97.5900776,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "St Edward",
+      "code": "77",
+      "city": "St Edward",
+      "county": "Boone",
+      "phone": "(402) 678-2251",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 41.5693773,
+      "lng": -97.8657581,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Humphrey Fuel Site",
+      "code": "43",
+      "city": "Humphrey",
+      "county": "Platte",
+      "phone": "(402) 923-9717",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 41.692582,
+      "lng": -97.484331,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Humphrey Agronomy &amp; Grain",
+      "code": "101",
+      "city": "Humphrey",
+      "county": "Platte",
+      "phone": "(402) 923-1455",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.6939516,
+      "lng": -97.4717212,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Humphrey Feed",
+      "code": "97",
+      "city": "Humphrey",
+      "county": "Platte",
+      "phone": "(402) 923-9717",
+      "hours": "",
+      "types": [
+        "Feed"
+      ],
+      "lat": 41.693952,
+      "lng": -97.47172,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Narka Grain",
+      "code": "118",
+      "city": "Narka",
+      "county": "Republic",
+      "phone": "(785) 358-2232",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.9599439,
+      "lng": -97.4286004,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Snyder Fuel Site",
+      "code": "110",
+      "city": "Snyder",
+      "county": "Dodge",
+      "phone": "(402) 568-2274",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 41.706722,
+      "lng": -96.790416,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Haddam",
+      "code": "34",
+      "city": "Haddam",
+      "county": "Washington",
+      "phone": "(785) 778-2164",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 39.8550568,
+      "lng": -97.3023761,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Petersburg",
+      "code": "73",
+      "city": "Petersburg",
+      "county": "Boone",
+      "phone": "(402) 386-5483",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 41.8531665,
+      "lng": -98.080959,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Belleville Agronomy &amp; Fuel Site",
+      "code": "8",
+      "city": "Belleville",
+      "county": "Republic",
+      "phone": "(785) 527-5417",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 39.813274,
+      "lng": -97.6157934,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Scribner",
+      "code": "66",
+      "city": "Scribner",
+      "county": "Dodge",
+      "phone": "(402) 664-2256",
+      "hours": "",
+      "types": [
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.6660435,
+      "lng": -96.6681395,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hooper Agronomy &amp; Fuel Site",
+      "code": "39",
+      "city": "Hooper",
+      "county": "Dodge",
+      "phone": "(402) 654-3367",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 41.5393917,
+      "lng": -96.4997709,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hooper Grain",
+      "code": "40",
+      "city": "Hooper",
+      "county": "Dodge",
+      "phone": "(402) 654-3367",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 41.611572,
+      "lng": -96.5525,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hooper Fuel Site",
+      "code": "96",
+      "city": "Hooper",
+      "county": "Dodge",
+      "phone": "(402) 654-3367",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 41.610646,
+      "lng": -96.548005,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Courtland Hub",
+      "code": "120",
+      "city": "Courtland",
+      "county": "Republic",
+      "phone": "(785) 374-4225",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.799053,
+      "lng": -97.9046675,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Courtland Agronomy",
+      "code": "26",
+      "city": "Courtland",
+      "county": "Republic",
+      "phone": "(785) 374-4225",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 39.785345,
+      "lng": -97.899025,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Courtland Grain",
+      "code": "27",
+      "city": "Courtland",
+      "county": "Republic",
+      "phone": "(785) 374-4225",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 39.780811,
+      "lng": -97.895011,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Tilden",
+      "code": "78",
+      "city": "Tilden",
+      "county": "Madison",
+      "phone": "(402) 368-5323",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 41.9875843,
+      "lng": -97.8361161,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Elgin Feed &amp; Grain",
+      "code": "108",
+      "city": "Elgin",
+      "county": "Antelope",
+      "phone": "(402) 843-2200",
+      "hours": "",
+      "types": [
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.984615,
+      "lng": -98.085194,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Norway Office",
+      "code": "116",
+      "city": "Norway",
+      "county": "Republic",
+      "phone": "(785) 335-2692",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.7,
+      "lng": -97.81,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Elgin Agronomy",
+      "code": "104",
+      "city": "Elgin",
+      "county": "Antelope",
+      "phone": "(402) 843-2200",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 41.9903226,
+      "lng": -98.0841444,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "West Point Feed  &amp; Fuel Site",
+      "code": "119",
+      "city": "West Point",
+      "county": "Cuming",
+      "phone": "(402) 372-5081",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 41.8514107,
+      "lng": -96.7137384,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "West Point Grain &amp; Agronomy",
+      "code": "121",
+      "city": "West Point",
+      "county": "Cuming",
+      "phone": "(402) 372-5303",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Grain"
+      ],
+      "lat": 41.8515658,
+      "lng": -96.7136275,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "The Junction &amp; Fuel Site",
+      "code": "112",
+      "city": "Linn",
+      "county": "Washington",
+      "phone": "(785) 747-2236 EXT 1",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.7117511,
+      "lng": -97.0681271,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Wisner",
+      "code": "85",
+      "city": "Wisner",
+      "county": "Cuming",
+      "phone": "(402) 529-3262",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 41.9749624,
+      "lng": -96.8965658,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Wisner Fuel Site",
+      "code": "86",
+      "city": "Wisner",
+      "county": "Cuming",
+      "phone": "(402) 529-3262",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 41.988805,
+      "lng": -96.917882,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Greenleaf Office",
+      "code": "115",
+      "city": "Greenleaf",
+      "county": "Washington",
+      "phone": "(785) 747-2236",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.7271376,
+      "lng": -96.9765763,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Oakland Fuel Site",
+      "code": "61",
+      "city": "Oakland",
+      "county": "Burt",
+      "phone": "(402) 685-5665",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 41.8278462,
+      "lng": -96.473032,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Concordia Office &amp; Fuel Site",
+      "code": "114",
+      "city": "Concordia",
+      "county": "Cloud",
+      "phone": "(785) 243-3394",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 39.5748612,
+      "lng": -97.6592853,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Norkan Fertilizer Terminal",
+      "code": "59",
+      "city": "Concordia",
+      "county": "Cloud",
+      "phone": "(785) 243-4109",
+      "hours": "",
+      "types": [
+        "Agronomy"
+      ],
+      "lat": 39.5752447,
+      "lng": -97.6864137,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Concordia Fuel Site",
+      "code": "25",
+      "city": "Concordia",
+      "county": "Cloud",
+      "phone": "(785) 243-3394",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.5724336,
+      "lng": -97.6596219,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Clifton",
+      "code": "23",
+      "city": "Clifton",
+      "county": "Washington",
+      "phone": "(785) 455-3315",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 39.5643379,
+      "lng": -97.2848444,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Oakland East Hub",
+      "code": "60",
+      "city": "Oakland",
+      "county": "Burt",
+      "phone": "(402) 685-5665",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 41.8868412,
+      "lng": -96.4632189,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Tekamah",
+      "code": "76",
+      "city": "Tekamah",
+      "county": "Burt",
+      "phone": "(402) 374-2180",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 41.7671513,
+      "lng": -96.2233542,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Pender",
+      "code": "24",
+      "city": "Pender",
+      "county": "THURSTON",
+      "phone": "(402) 385-3065",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 42.107971,
+      "lng": -96.706977,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Aurora Fuel Site",
+      "code": "5",
+      "city": "Aurora",
+      "county": "Cloud",
+      "phone": "(785) 392-3031",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.4522707,
+      "lng": -97.5296971,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Beloit Fuel Site",
+      "code": "11",
+      "city": "Beloit",
+      "county": "Mitchell",
+      "phone": "(785) 738-2241",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.4665635,
+      "lng": -98.1114464,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Beloit Distribution Center &amp; Fuel Site",
+      "code": "10",
+      "city": "Beloit",
+      "county": "Mitchell",
+      "phone": "(785) 738-9633",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 39.4557083,
+      "lng": -98.0900887,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Beloit Agronomy",
+      "code": "9",
+      "city": "Beloit",
+      "county": "Mitchell",
+      "phone": "(785) 738-2228",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 39.4581313,
+      "lng": -98.1086421,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Beloit Office",
+      "code": "13",
+      "city": "Beloit",
+      "county": "Mitchell",
+      "phone": "(785) 738-2241",
+      "hours": "",
+      "types": [
+        "Admin"
+      ],
+      "lat": 39.4581313,
+      "lng": -98.1086421,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Beloit Grain",
+      "code": "12",
+      "city": "Beloit",
+      "county": "Mitchell",
+      "phone": "(785) 738-2228",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 39.457155,
+      "lng": -98.109033,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Glen Elder Terminal",
+      "code": "33",
+      "city": "Glen Elder",
+      "county": "Mitchell",
+      "phone": "(785) 545-3321",
+      "hours": "",
+      "types": [
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.4971204,
+      "lng": -98.3057099,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Asherville",
+      "code": "4",
+      "city": "Beloit",
+      "county": "Mitchell",
+      "phone": "(785) 738-3244",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 39.406596,
+      "lng": -97.979001,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Cawker City Fuel Site",
+      "code": "19",
+      "city": "Cawker City",
+      "county": "Mitchell",
+      "phone": "(785) 545-3321",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.50930537,
+      "lng": -98.43415655,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Wakefield",
+      "code": "84",
+      "city": "Wakefield",
+      "county": "Wayne",
+      "phone": "(402) 287-2565",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 42.2757886,
+      "lng": -96.8620158,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Glasco Fuel Site",
+      "code": "31",
+      "city": "Glasco",
+      "county": "Mitchell",
+      "phone": "(785) 392-3031",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.3680709,
+      "lng": -97.8371563,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "81-20",
+      "code": "1",
+      "city": "Randolph",
+      "county": "Cedar",
+      "phone": "(402) 337-0063",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 42.3769254,
+      "lng": -97.421179,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Miltonvale Fuel Site",
+      "code": "53",
+      "city": "Miltonvale",
+      "county": "Cloud",
+      "phone": "(785) 427-2271",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.34639,
+      "lng": -97.448458,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Clay Center Fuel Site",
+      "code": "22",
+      "city": "Clay Center",
+      "county": "Clay",
+      "phone": "(785) 632-5632",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.3804468,
+      "lng": -97.1469596,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Clay Center Agronomy",
+      "code": "21",
+      "city": "Clay Center",
+      "county": "Clay",
+      "phone": "(785) 632-2216",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 39.3778505,
+      "lng": -97.1432315,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Clay Center 3rd Street Grain",
+      "code": "6",
+      "city": "Clay Center",
+      "county": "Clay",
+      "phone": "(785) 632-5632",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 39.37739,
+      "lng": -97.130341,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Royal",
+      "code": "65",
+      "city": "Orchard",
+      "county": "Antelope",
+      "phone": "(402) 893-2010",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 42.333475,
+      "lng": -98.1837774,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Clay Center Fuel Site",
+      "code": "107",
+      "city": "Clay Center",
+      "county": "Clay",
+      "phone": "(785) 632-2216",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.3748543,
+      "lng": -97.1246149,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Glen Elder Fuel Site",
+      "code": "32",
+      "city": "Glen Elder",
+      "county": "Mitchell",
+      "phone": "(785) 545-3321",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.437069,
+      "lng": -98.320912,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Clay Center 5th Street Grain",
+      "code": "20",
+      "city": "Clay Center",
+      "county": "Clay",
+      "phone": "(785) 632-5632",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 39.371204,
+      "lng": -97.126498,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Clay Center Fuel Site",
+      "code": "106",
+      "city": "Clay Center",
+      "county": "Clay",
+      "phone": "(785) 632-2216",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.3690203,
+      "lng": -97.126487,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Delphos Fuel Site",
+      "code": "28",
+      "city": "Delphos",
+      "county": "Ottawa",
+      "phone": "(785) 392-3031",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.2726679,
+      "lng": -97.7659277,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Leonardville Fuel Site",
+      "code": "49",
+      "city": "Leonardville",
+      "county": "Riley",
+      "phone": "(785) 293-5267",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.3641175,
+      "lng": -96.8601975,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Leonardville",
+      "code": "48",
+      "city": "Leonardville",
+      "county": "Riley",
+      "phone": "(785) 293-5267",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 39.3631425,
+      "lng": -96.8591823,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Laurel",
+      "code": "46",
+      "city": "Laurel",
+      "county": "Cedar",
+      "phone": "(402) 256-1200",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 42.4365909,
+      "lng": -97.1104851,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Tipton &amp; Fuel Site",
+      "code": "7",
+      "city": "Tipton",
+      "county": "Mitchell",
+      "phone": "(785) 373-4185",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.3376767,
+      "lng": -98.466542,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Bloomfield",
+      "code": "16",
+      "city": "Bloomfield",
+      "county": "Knox",
+      "phone": "(402) 373-4755",
+      "hours": "",
+      "types": [
+        "Agronomy"
+      ],
+      "lat": 42.5974388,
+      "lng": -97.6309738,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Minneapolis Fuel Site",
+      "code": "54",
+      "city": "Minneapolis",
+      "county": "Ottawa",
+      "phone": "(888) 343-0323",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.1320128,
+      "lng": -97.6861357,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hunter",
+      "code": "44",
+      "city": "Hunter",
+      "county": "Mitchell",
+      "phone": "(785) 373-4185",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.2330946,
+      "lng": -98.3952329,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hunter Fuel Site",
+      "code": "45",
+      "city": "Hunter",
+      "county": "Mitchell",
+      "phone": "(785) 373-4185",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.233098,
+      "lng": -98.3954,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Minneapolis Office &amp; Fuel Site",
+      "code": "55",
+      "city": "Minneapolis",
+      "county": "Ottawa",
+      "phone": "(785) 392-3031",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.1226045,
+      "lng": -97.706498,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Oneill",
+      "code": "62",
+      "city": "Oneill",
+      "county": "Holt",
+      "phone": "(402) 336-4177",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 42.4459378,
+      "lng": -98.6181075,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hartington",
+      "code": "36",
+      "city": "Hartington",
+      "county": "Cedar",
+      "phone": "(402) 254-3354",
+      "hours": "",
+      "types": [
+        "Agronomy"
+      ],
+      "lat": 42.6280408,
+      "lng": -97.2683271,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "South Sioux City",
+      "code": "68",
+      "city": "South Sioux City",
+      "county": "Chase",
+      "phone": "(402) 494-6748",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 42.4505354,
+      "lng": -96.4824637,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Bennington Fuel Site",
+      "code": "15",
+      "city": "Bennington",
+      "county": "Ottawa",
+      "phone": "(785) 392-3031",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.0303924,
+      "lng": -97.5913819,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Newcastle",
+      "code": "58",
+      "city": "Newcastle",
+      "county": "Dixon",
+      "phone": "(402) 355-2275",
+      "hours": "",
+      "types": [
+        "Agronomy"
+      ],
+      "lat": 42.648527,
+      "lng": -96.8633314,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Lincoln Fuel Site",
+      "code": "51",
+      "city": "Lincoln",
+      "county": "Marion",
+      "phone": "(785) 524-4179",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.0518985,
+      "lng": -98.1514166,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Lincoln",
+      "code": "50",
+      "city": "Lincoln",
+      "county": "Marion",
+      "phone": "(888) 343-0323",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Grain"
+      ],
+      "lat": 39.0359623,
+      "lng": -98.1430209,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Lincoln Fuel Site",
+      "code": "52",
+      "city": "Lincoln",
+      "county": "Marion",
+      "phone": "(785) 524-4179",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.0359623,
+      "lng": -98.1430209,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Bow Valley",
+      "code": "17",
+      "city": "Hartington",
+      "county": "Cedar",
+      "phone": "(402) 357-2381",
+      "hours": "",
+      "types": [
+        "Grain"
+      ],
+      "lat": 42.7441282,
+      "lng": -97.2561849,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Sylvan Grove Fuel Site",
+      "code": "75",
+      "city": "Sylvan Grove",
+      "county": "Lincoln",
+      "phone": "(785) 392-3031",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 39.015261,
+      "lng": -98.3936462,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Hinton",
+      "code": "38",
+      "city": "Hinton",
+      "county": "Plymouth",
+      "phone": "(712) 947-4212",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 42.6268463,
+      "lng": -96.2897147,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Akron",
+      "code": "3",
+      "city": "Akron",
+      "county": "Plymouth",
+      "phone": "(712) 568-2426",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Grain"
+      ],
+      "lat": 42.8261364,
+      "lng": -96.5628672,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Lemars",
+      "code": "47",
+      "city": "Lemars",
+      "county": "Plymouth",
+      "phone": "(712) 546-6382",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy"
+      ],
+      "lat": 42.8028049,
+      "lng": -96.1452051,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Oyens",
+      "code": "63",
+      "city": "Oyens",
+      "county": "Plymouth",
+      "phone": "(712) 546-4585",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 42.8190882,
+      "lng": -96.0576818,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Ainsworth East Agronomy",
+      "code": "2",
+      "city": "Ainsworth",
+      "county": "Brown",
+      "phone": "(402) 387-2811",
+      "hours": "",
+      "types": [
+        "Agronomy",
+        "Energy",
+        "Feed",
+        "Grain"
+      ],
+      "lat": 42.5503807,
+      "lng": -99.7550659,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Ainsworth Feed Mill",
+      "code": "90",
+      "city": "Ainsworth",
+      "county": "Brown",
+      "phone": "(402) 387-2810",
+      "hours": "",
+      "types": [
+        "Feed",
+        "Grain"
+      ],
+      "lat": 42.54545,
+      "lng": -99.86251,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Ainsworth Mr Tire &amp; Fuel Site",
+      "code": "91",
+      "city": "Ainsworth",
+      "county": "Brown",
+      "phone": "(402) 387-2533",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 42.5496,
+      "lng": -99.85721,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Springview Feed",
+      "code": "69",
+      "city": "Springview",
+      "county": "Keya Paha",
+      "phone": "(800) 233-6627",
+      "hours": "",
+      "types": [
+        "Feed",
+        "Grain"
+      ],
+      "lat": 42.8335671,
+      "lng": -99.7479824,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Springview Fuel Site",
+      "code": "70",
+      "city": "Springview",
+      "county": "Keya Paha",
+      "phone": "(888) 343-0323",
+      "hours": "",
+      "types": [
+        "Energy"
+      ],
+      "lat": 42.8335671,
+      "lng": -99.7479824,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    },
+    {
+      "company": "Central Valley Ag",
+      "name": "Valentine Feed",
+      "code": "81",
+      "city": "Valentine",
+      "county": "Cherry",
+      "phone": "(800) 233-6627",
+      "hours": "",
+      "types": [
+        "Feed"
+      ],
+      "lat": 42.8646023,
+      "lng": -100.5389723,
+      "description": "<p>&lt;p&gt;Central Valley Ag is a farmer-owned cooperative headquartered in York, Neb. CVA has locations in Iowa, Kansas, and Nebraska. CVA is an innovative leader providing products and services in grain, agronomy, feed, and energy. You can find more information about Central Valley Ag by visiting &lt;a href=&quot;<a href=\"http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt\">http://www.cvacoop.com&quot;&gt;www.cvacoop.com&lt;/a&gt;.&amp;nbsp;&lt;/p&amp;gt</a>;</p>"
+    }
+  ]
+}

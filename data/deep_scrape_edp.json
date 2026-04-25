@@ -1,0 +1,175 @@
+{
+  "source": "https://edplp.net/ (Energy Distribution Partners, Chicago IL)",
+  "scraped": "2026-04-11",
+  "notes": "EDP is a Chicago-based PE-backed propane roll-up founded 2012 by Tom Knauff. Serves 200,000+ customers across 24 states via 45+ acquired operating companies. HQ: Chicago IL. Website /acquisitions/ page was blocked (403). Data compiled from Butane-Propane News company profile, LP Gas press releases, and trade press. Individual branch-level addresses per subsidiary NOT published by EDP. Locations below represent known operating-company HQs identified from public sources — each company has multiple satellite branches not enumerated. This is a PARTIAL list (confirmed 15+ of ~45 acquisitions).",
+  "locations": [
+    {
+      "name": "Energy Distribution Partners (HQ)",
+      "street": null,
+      "city": "Chicago",
+      "state": "IL",
+      "zip": null,
+      "phone": null,
+      "parent_of": "all below",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Mount Perry Propane (EDP subsidiary)",
+      "street": null,
+      "city": "Mt. Perry",
+      "state": "OH",
+      "zip": null,
+      "phone": null,
+      "notes": "Serves 2,800 customers across 9 SE Ohio counties; acquired 2023",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "High Grade Gas Service (EDP subsidiary)",
+      "street": null,
+      "city": "Stafford Springs",
+      "state": "CT",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Harbor Point Energy Products (EDP subsidiary)",
+      "street": null,
+      "city": "Frankfort",
+      "state": "NY",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Barrett Propane (EDP subsidiary)",
+      "street": null,
+      "city": "Prescott",
+      "state": "AZ",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Liberty Propane (EDP subsidiary)",
+      "street": null,
+      "city": "Ottsville",
+      "state": "PA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Meadows Petroleum (EDP subsidiary)",
+      "street": null,
+      "city": "Georgetown",
+      "state": "DE",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "ProGas - Aliquippa (EDP subsidiary)",
+      "street": null,
+      "city": "Aliquippa",
+      "state": "PA",
+      "zip": null,
+      "phone": null,
+      "notes": "Greater Pittsburgh; 3,500+ customers; serves western PA, eastern OH, northern WV",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "ProGas - Zelienople (EDP subsidiary)",
+      "street": null,
+      "city": "Zelienople",
+      "state": "PA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Van Unen/Miersma Propane / Sierra Propane (EDP subsidiary)",
+      "street": null,
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Windmill Propane (EDP subsidiary)",
+      "street": null,
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Sullivan Oil & Propane (EDP subsidiary)",
+      "street": null,
+      "city": "Bath",
+      "state": "PA",
+      "zip": null,
+      "phone": null,
+      "notes": "EDP's 41st acquisition; acquired Oct 2024",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Hocon Gas (EDP subsidiary)",
+      "street": null,
+      "city": null,
+      "state": "CT",
+      "zip": null,
+      "phone": null,
+      "notes": "5 Connecticut locations; 35,000+ customers; acquired 2025",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "D&D Gas Company (EDP subsidiary)",
+      "street": null,
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip": null,
+      "phone": null,
+      "notes": "Acquired 2025; expanded EDP into FL as 24th state",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Green Propane / Summit Propane (EDP subsidiary)",
+      "street": null,
+      "city": "Hatfield",
+      "state": "PA",
+      "zip": null,
+      "phone": null,
+      "notes": "EDP's 40th acquisition",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Preferred Propane / Preferred Energy Group (EDP subsidiary)",
+      "street": null,
+      "city": "Vernon",
+      "state": "CT",
+      "zip": null,
+      "phone": null,
+      "notes": "Acquired Nov 2025",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

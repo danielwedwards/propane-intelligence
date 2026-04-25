@@ -1,0 +1,1032 @@
+{
+  "batch": "west1",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Jack Griggs, Inc.",
+      "hqCity": "Visalia",
+      "hqState": "CA",
+      "website": "https://jackgriggsinc.com/",
+      "knownLocations": [
+        {
+          "city": "Visalia",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Exeter",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Tulare",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned since 1933 supplying residential, commercial and ag customers with propane, diesel and gasoline in Central Valley."
+    },
+    {
+      "name": "Dorn's Gas",
+      "hqCity": "Fresno",
+      "hqState": "CA",
+      "website": "http://dornsgas.com/",
+      "knownLocations": [
+        {
+          "city": "Fresno",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Central Valley propane distributor serving residential, agricultural and commercial customers since 1942."
+    },
+    {
+      "name": "JS West Propane",
+      "hqCity": "Modesto",
+      "hqState": "CA",
+      "website": "https://jswestpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Modesto",
+          "state": "CA",
+          "street": "813 D St."
+        },
+        {
+          "city": "Fresno",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family owned and operated for over 100 years; multi-location Central Valley propane marketer."
+    },
+    {
+      "name": "Valley Propane Inc.",
+      "hqCity": "Madera",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Madera",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Mendota",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane marketer founded 1995 with two Central Valley locations."
+    },
+    {
+      "name": "Jack's Butane Services",
+      "hqCity": "Fresno",
+      "hqState": "CA",
+      "website": "https://www.jacksbutane.com/",
+      "knownLocations": [
+        {
+          "city": "Fresno",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned full-service propane operator in the Fresno area."
+    },
+    {
+      "name": "Mike Bispo & Son Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "https://www.mikebispoandsonpropane.com/",
+      "knownLocations": [],
+      "ownership": "family",
+      "notes": "Family-owned propane and HVAC company serving California Central Valley."
+    },
+    {
+      "name": "Red Triangle Oil",
+      "hqCity": "Fresno",
+      "hqState": "CA",
+      "website": "https://redtriangleoil.com/",
+      "knownLocations": [
+        {
+          "city": "Fresno",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Regional fuel and propane delivery company serving Fresno and surrounding Central Valley markets."
+    },
+    {
+      "name": "Wildhorse Propane & Appliance",
+      "hqCity": "Salinas",
+      "hqState": "CA",
+      "website": "https://wildhorsepropane.net/",
+      "knownLocations": [
+        {
+          "city": "Salinas",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "King City",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Soledad",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Greenfield",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Paso Robles",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Monterey/San Luis Obispo propane marketer serving Central Coast since 1980."
+    },
+    {
+      "name": "Central Coast Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [],
+      "ownership": "private",
+      "notes": "Full service propane for southern Monterey, SLO and northern Santa Barbara counties."
+    },
+    {
+      "name": "Kemgas",
+      "hqCity": "Ukiah",
+      "hqState": "CA",
+      "website": "https://kemgas.com/",
+      "knownLocations": [
+        {
+          "city": "Ukiah",
+          "state": "CA",
+          "street": "3600 N. State St."
+        },
+        {
+          "city": "Fort Bragg",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "North Coast California propane marketer serving Fort Bragg and Ukiah."
+    },
+    {
+      "name": "ER Energy Propane",
+      "hqCity": "Ukiah",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ukiah",
+          "state": "CA",
+          "street": "3371 N State St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned bulk propane operator serving Northern California for 30+ years."
+    },
+    {
+      "name": "All State Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "https://allstatepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Valley Center",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Temecula",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Hemet",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Full-service propane company covering Riverside, San Bernardino and San Diego counties."
+    },
+    {
+      "name": "Silver Valley Propane",
+      "hqCity": "Apple Valley",
+      "hqState": "CA",
+      "website": "https://svpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Apple Valley",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Yucca Valley",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Twentynine Palms",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Victorville",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Barstow",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "High Desert propane distributor covering Victorville, Barstow, Apple Valley and Yucca Valley."
+    },
+    {
+      "name": "Alliance Propane",
+      "hqCity": "Temecula",
+      "hqState": "CA",
+      "website": "https://alliancepropanelp.com/",
+      "knownLocations": [
+        {
+          "city": "Temecula",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Murrieta",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Locally owned propane delivery service covering Temecula, Murrieta, Valley Center and Fallbrook."
+    },
+    {
+      "name": "Hi-Desert Propane",
+      "hqCity": "Yucca Valley",
+      "hqState": "CA",
+      "website": "https://hidesertpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Yucca Valley",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Joshua Tree",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Twentynine Palms",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "High Desert propane supplier operating in Yucca Valley, Joshua Tree and Twentynine Palms."
+    },
+    {
+      "name": "Pickup Propane",
+      "hqCity": "El Centro",
+      "hqState": "CA",
+      "website": "https://pickuppropane.com/",
+      "knownLocations": [
+        {
+          "city": "El Centro",
+          "state": "CA",
+          "street": "1850 S. Imperial Ave"
+        }
+      ],
+      "ownership": "private",
+      "notes": "Imperial Valley propane marketer with multiple California locations."
+    },
+    {
+      "name": "Valley Center Propane",
+      "hqCity": "Valley Center",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Valley Center",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family owned and operated San Diego County propane distributor."
+    },
+    {
+      "name": "Propane Delivery Service PDS",
+      "hqCity": "Ramona",
+      "hqState": "CA",
+      "website": "http://propanedeliveryservice.com/",
+      "knownLocations": [
+        {
+          "city": "Ramona",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned San Diego County propane delivery company covering Ramona, Alpine, Escondido and Poway."
+    },
+    {
+      "name": "DeCarlis Propane",
+      "hqCity": "Petaluma",
+      "hqState": "CA",
+      "website": "http://www.decarlipropane.com/",
+      "knownLocations": [
+        {
+          "city": "Petaluma",
+          "state": "CA",
+          "street": "423 Wilson St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "DeCarli family-owned propane marketer since 1946 serving Marin and Sonoma counties."
+    },
+    {
+      "name": "McPhail Fuel",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "https://mcphails.com/",
+      "knownLocations": [],
+      "ownership": "family",
+      "notes": "Sonoma County propane and fuel distributor with 125+ year history."
+    },
+    {
+      "name": "Associated Propane Company",
+      "hqCity": "Petaluma",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Petaluma",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "North Bay propane distributor covering Sonoma, Marin, Napa and Solano counties."
+    },
+    {
+      "name": "Sierra Propane",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "https://sierrapropane.net/",
+      "knownLocations": [],
+      "ownership": "private",
+      "notes": "Northern California Sierra foothills propane marketer."
+    },
+    {
+      "name": "Gavinko Petroleum",
+      "hqCity": "Stockton",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Stockton",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "San Joaquin County propane and petroleum marketer based in Stockton."
+    },
+    {
+      "name": "Van Unen Miersma Propane",
+      "hqCity": "Stockton",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Stockton",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane marketer serving Stockton and San Joaquin Valley."
+    },
+    {
+      "name": "Eureka Oxygen",
+      "hqCity": "Eureka",
+      "hqState": "CA",
+      "website": "https://www.eurekaoxygencompany.com/",
+      "knownLocations": [
+        {
+          "city": "Eureka",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Ukiah",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Petaluma",
+          "state": "CA",
+          "street": ""
+        },
+        {
+          "city": "Lakeport",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "North Coast industrial gas and propane supplier with four California locations."
+    },
+    {
+      "name": "Mutual Liquid Gas and Equipment",
+      "hqCity": "",
+      "hqState": "CA",
+      "website": "https://www.mutualpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Temecula",
+          "state": "CA",
+          "street": "47055 Rainbow Canyon Rd"
+        },
+        {
+          "city": "Victorville",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Southern California propane marketer operating as Mutual Propane."
+    },
+    {
+      "name": "Kamps Ramona",
+      "hqCity": "Ramona",
+      "hqState": "CA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ramona",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Ramona branch of the Kamps family propane network serving San Diego County."
+    },
+    {
+      "name": "Pratum Co-op",
+      "hqCity": "Pratum",
+      "hqState": "OR",
+      "website": "https://pratumcoop.com/",
+      "knownLocations": [
+        {
+          "city": "Pratum",
+          "state": "OR",
+          "street": ""
+        },
+        {
+          "city": "Salem",
+          "state": "OR",
+          "street": ""
+        },
+        {
+          "city": "Albany",
+          "state": "OR",
+          "street": ""
+        },
+        {
+          "city": "Eugene",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farmer-owned cooperative serving Willamette Valley towns from Woodburn to Sweet Home."
+    },
+    {
+      "name": "Bassett-Hyland Energy",
+      "hqCity": "Coos Bay",
+      "hqState": "OR",
+      "website": "https://bassetthyland.com/",
+      "knownLocations": [
+        {
+          "city": "Coos Bay",
+          "state": "OR",
+          "street": ""
+        },
+        {
+          "city": "Roseburg",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned petroleum and propane distributor on Oregon coast since 1980."
+    },
+    {
+      "name": "Hays Oil",
+      "hqCity": "Grants Pass",
+      "hqState": "OR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Grants Pass",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned since 1938; southern Oregon propane and fuel marketer (rolled into Carson in 2024)."
+    },
+    {
+      "name": "Fitzgerald Gas Services",
+      "hqCity": "Medford",
+      "hqState": "OR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Medford",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Southern Oregon propane services provider in the Medford area."
+    },
+    {
+      "name": "The Gas Man",
+      "hqCity": "Grants Pass",
+      "hqState": "OR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Grants Pass",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane installation and service company with 25+ years in Grants Pass."
+    },
+    {
+      "name": "Fairgrounds Towing & Fuel",
+      "hqCity": "Grants Pass",
+      "hqState": "OR",
+      "website": "https://www.fairgroundstowing.com/",
+      "knownLocations": [
+        {
+          "city": "Grants Pass",
+          "state": "OR",
+          "street": "780 Union Ave"
+        },
+        {
+          "city": "Cave Junction",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane refill and fuel services operator in Grants Pass, Cave Junction and Rogue River."
+    },
+    {
+      "name": "Pacific Propane NW",
+      "hqCity": "Yakima",
+      "hqState": "WA",
+      "website": "https://www.pacificpropanenw.com/",
+      "knownLocations": [
+        {
+          "city": "Yakima",
+          "state": "WA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Central Washington propane distributor based in Yakima."
+    },
+    {
+      "name": "Pioneer Propane",
+      "hqCity": "",
+      "hqState": "WA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sequim",
+          "state": "WA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Also branded Wise Choice Propane; serves Sequim, Port Townsend, Port Angeles and the North Olympic Peninsula."
+    },
+    {
+      "name": "Sunshine Propane",
+      "hqCity": "",
+      "hqState": "WA",
+      "website": "https://sunshinepropane.com/",
+      "knownLocations": [],
+      "ownership": "private",
+      "notes": "Washington state propane sales and service company."
+    },
+    {
+      "name": "Wenatchee Petroleum",
+      "hqCity": "Wenatchee",
+      "hqState": "WA",
+      "website": "https://www.wenpetco.com/",
+      "knownLocations": [
+        {
+          "city": "Wenatchee",
+          "state": "WA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "North Central WA residential and commercial propane supplier covering Chelan, Douglas and Grant counties."
+    },
+    {
+      "name": "North Cascades Propane",
+      "hqCity": "Omak",
+      "hqState": "WA",
+      "website": "https://www.northcascadespropane.com/",
+      "knownLocations": [
+        {
+          "city": "Omak",
+          "state": "WA",
+          "street": ""
+        },
+        {
+          "city": "Twisp",
+          "state": "WA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Okanogan County propane marketer serving Omak and Twisp area."
+    },
+    {
+      "name": "Inland Oil and Propane",
+      "hqCity": "",
+      "hqState": "WA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Quincy",
+          "state": "WA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane supplier covering Grant, Douglas, Chelan and Kittitas counties."
+    },
+    {
+      "name": "Pacer Propane Washington",
+      "hqCity": "",
+      "hqState": "WA",
+      "website": "https://pacerpropanewashington.com/",
+      "knownLocations": [],
+      "ownership": "private",
+      "notes": "Eastern Washington propane sales and service company."
+    },
+    {
+      "name": "Double H Gas",
+      "hqCity": "Rexburg",
+      "hqState": "ID",
+      "website": "https://www.doublehgas.com/",
+      "knownLocations": [
+        {
+          "city": "Rexburg",
+          "state": "ID",
+          "street": ""
+        },
+        {
+          "city": "Idaho Falls",
+          "state": "ID",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane tank and delivery services in eastern Idaho."
+    },
+    {
+      "name": "Salmon River Propane",
+      "hqCity": "Salmon",
+      "hqState": "ID",
+      "website": "https://www.srpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Salmon",
+          "state": "ID",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned full-service propane marketer serving Lemhi, Custer and Butte counties."
+    },
+    {
+      "name": "Co-op Energy Gas and Supply",
+      "hqCity": "Sandpoint",
+      "hqState": "ID",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sandpoint",
+          "state": "ID",
+          "street": ""
+        },
+        {
+          "city": "Bonners Ferry",
+          "state": "ID",
+          "street": ""
+        },
+        {
+          "city": "Priest River",
+          "state": "ID",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farm cooperative based in Sandpoint providing propane bulk sales across North Idaho."
+    },
+    {
+      "name": "United Oil Idaho",
+      "hqCity": "Twin Falls",
+      "hqState": "ID",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Twin Falls",
+          "state": "ID",
+          "street": ""
+        },
+        {
+          "city": "Caldwell",
+          "state": "ID",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Third-generation Franklin family-owned Idaho fuel and propane distributor since 1939."
+    },
+    {
+      "name": "Comstock Propane",
+      "hqCity": "Reno",
+      "hqState": "NV",
+      "website": "https://comstockpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Reno",
+          "state": "NV",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Veteran- and family-owned propane company serving greater Reno and Carson Valley."
+    },
+    {
+      "name": "Shoshone Propane",
+      "hqCity": "Pahrump",
+      "hqState": "NV",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pahrump",
+          "state": "NV",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Southern Nevada propane supplier covering Pahrump, Tecopa, Beatty and Death Valley."
+    },
+    {
+      "name": "Jim Menesini Petroleum",
+      "hqCity": "Fallon",
+      "hqState": "NV",
+      "website": "https://jimmenesinipetro.com/",
+      "knownLocations": [
+        {
+          "city": "Fallon",
+          "state": "NV",
+          "street": ""
+        },
+        {
+          "city": "Yerington",
+          "state": "NV",
+          "street": ""
+        },
+        {
+          "city": "Lovelock",
+          "state": "NV",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned petroleum and propane distributor serving Yerington, Lovelock, Fallon and northern Nevada."
+    },
+    {
+      "name": "R and D Propane",
+      "hqCity": "Florence",
+      "hqState": "OR",
+      "website": "https://www.rdpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Florence",
+          "state": "OR",
+          "street": ""
+        },
+        {
+          "city": "Eugene",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane marketer serving Eugene, Florence, Springfield, Creswell and Lane County."
+    },
+    {
+      "name": "Tyree Oil",
+      "hqCity": "Eugene",
+      "hqState": "OR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Eugene",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Founded 1988 in Eugene, expanded to propane and fuel services across the Pacific Northwest."
+    },
+    {
+      "name": "Surefire Gas Service",
+      "hqCity": "Bend",
+      "hqState": "OR",
+      "website": "https://bendgasplumbing.com/",
+      "knownLocations": [
+        {
+          "city": "Bend",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Central Oregon gas plumbing and propane service contractor based in Bend."
+    },
+    {
+      "name": "Lynch Energy",
+      "hqCity": "Burley",
+      "hqState": "ID",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Burley",
+          "state": "ID",
+          "street": ""
+        },
+        {
+          "city": "Jerome",
+          "state": "ID",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Nearly 100-year-old Magic Valley oil and propane operator, including rail storage terminal in Jerome; sold retail to Parkland."
+    },
+    {
+      "name": "Christensen Rupert",
+      "hqCity": "Rupert",
+      "hqState": "ID",
+      "website": "https://christensenusa.com/rupert-service/",
+      "knownLocations": [
+        {
+          "city": "Rupert",
+          "state": "ID",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Christensen Magic Valley propane, fuel and lubricants service point serving Rupert and eastern Idaho."
+    },
+    {
+      "name": "OXARC Colville",
+      "hqCity": "Colville",
+      "hqState": "WA",
+      "website": "https://meritusgas.com/",
+      "knownLocations": [
+        {
+          "city": "Colville",
+          "state": "WA",
+          "street": "328 W 1st Ave"
+        }
+      ],
+      "ownership": "private",
+      "notes": "OXARC (Meritus Gas Partners) industrial gas and propane branch serving Colville, Newport, Deer Park and Chewelah."
+    },
+    {
+      "name": "Pacific Autogas",
+      "hqCity": "",
+      "hqState": "WA",
+      "website": "https://pacificautogas.com/",
+      "knownLocations": [],
+      "ownership": "private",
+      "notes": "Pacific Northwest autogas and propane fuel marketer."
+    },
+    {
+      "name": "Wise Choice Propane",
+      "hqCity": "",
+      "hqState": "WA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sequim",
+          "state": "WA",
+          "street": ""
+        },
+        {
+          "city": "Port Townsend",
+          "state": "WA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Olympic Peninsula propane marketer."
+    },
+    {
+      "name": "Pilot Thomas Logistics Las Vegas",
+      "hqCity": "Las Vegas",
+      "hqState": "NV",
+      "website": "https://www.pilotthomas.com/",
+      "knownLocations": [
+        {
+          "city": "Las Vegas",
+          "state": "NV",
+          "street": ""
+        },
+        {
+          "city": "Henderson",
+          "state": "NV",
+          "street": ""
+        },
+        {
+          "city": "Boulder City",
+          "state": "NV",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Bulk propane supplier for Southern Nevada commercial and industrial customers."
+    },
+    {
+      "name": "Blackburns Propane",
+      "hqCity": "",
+      "hqState": "NV",
+      "website": "https://blackburnspropane.com/",
+      "knownLocations": [],
+      "ownership": "family",
+      "notes": "Full-service propane company serving residential and commercial customers in Nevada and Utah."
+    },
+    {
+      "name": "Rural Propane Services",
+      "hqCity": "",
+      "hqState": "NV",
+      "website": "https://ruralpropane.net/",
+      "knownLocations": [],
+      "ownership": "private",
+      "notes": "Rural propane energy solutions provider for Nevada communities."
+    },
+    {
+      "name": "Campora Stockton",
+      "hqCity": "Stockton",
+      "hqState": "CA",
+      "website": "https://campora.com/",
+      "knownLocations": [
+        {
+          "city": "Stockton",
+          "state": "CA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Note: Campora may already be listed; Stockton branch covers San Joaquin County. Review dedup."
+    }
+  ]
+}

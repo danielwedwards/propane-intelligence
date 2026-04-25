@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "dcc",
+    "name": "DCC",
+    "state": "GA",
+    "website": "https://spaldinggas.com/",
+    "ownership": "public",
+    "nlocs": 2,
+    "score": 5,
+    "notes": ""
+  },
+  {
+    "id": "arrowwood_prairie_co_op_carrington_main_office",
+    "name": "Arrowwood Prairie Co-op - Carrington Main Office",
+    "state": "ND",
+    "website": "https://www.arrowwoodprairie.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Main office of multi-location ND ag coop"
+  },
+  {
+    "id": "arrowwood_prairie_co_op_cooperstown_office",
+    "name": "Arrowwood Prairie Co-op - Cooperstown Office",
+    "state": "ND",
+    "website": "https://www.arrowwoodprairie.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location ND ag coop; Cooperstown branch"
+  },
+  {
+    "id": "scott_petroleum_anderson_s_gas_propane",
+    "name": "Scott Petroleum / Anderson's Gas & Propane",
+    "state": "AR",
+    "website": "https://scottpetroleum.net/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Regional fuels/propane; acquired Anderson's Gas & Propane"
+  },
+  {
+    "id": "premier_energy_formerly_gaile_s_propane",
+    "name": "Premier Energy (Formerly Gaile's Propane)",
+    "state": "IN",
+    "website": "https://premierenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "IN regional marketer"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_salmon",
+    "name": "Valley Wide Cooperative Energy | Salmon",
+    "state": "MT",
+    "website": "https://www.valleywidecoop.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state Pacific NW ag cooperative; Salmon ID/MT branch"
+  },
+  {
+    "id": "sequachee_valley_electric_cooperative",
+    "name": "Sequachee Valley Electric Cooperative",
+    "state": "TN",
+    "website": "https://svalleyec.com",
+    "ownership": "pe",
+    "nlocs": 1,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "foster_fuels_hearth_home_showroom",
+    "name": "Foster Fuels Hearth & Home Showroom",
+    "state": "VA",
+    "website": "https://www.fosterfuels.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Brookneal, VA; large regional independent"
+  },
+  {
+    "id": "united_propane_gas_cleveland_tn",
+    "name": "United Propane Gas (Cleveland, TN)",
+    "state": "GA",
+    "website": "https://unitedpropanegas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state operator based in Paducah, KY"
+  },
+  {
+    "id": "blue_star_gas_crescent_city_co",
+    "name": "Blue Star Gas - Crescent City Co.",
+    "state": "CA",
+    "website": "https://bluestargas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location West Coast propane company based in Santa Rosa, CA"
+  },
+  {
+    "id": "united_propane_gas_henagar_al",
+    "name": "United Propane Gas (Henagar, AL)",
+    "state": "TN",
+    "website": "https://unitedpropanegas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state branch of UPG, large regional independent"
+  },
+  {
+    "id": "united_propane_gas_vienna_il",
+    "name": "United Propane Gas (Vienna, IL)",
+    "state": "IL",
+    "website": "https://unitedpropanegas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Branch of United Propane Gas, multi-state operator"
+  },
+  {
+    "id": "northern_new_mexico_gas_company",
+    "name": "Northern New Mexico Gas Company",
+    "state": "NM",
+    "website": "https://www.nnmgc.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "NM regional propane and natural gas"
+  },
+  {
+    "id": "superior_plus_energy_services",
+    "name": "Superior Plus Energy Services",
+    "state": "CT",
+    "website": "https://www.superiorpluspropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Canadian public company; one of largest North American propane distributors"
+  },
+  {
+    "id": "cleveland_petroleum_products",
+    "name": "Cleveland Petroleum Products",
+    "state": "KS",
+    "website": "https://clevelandpetroleum.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "KS regional"
+  },
+  {
+    "id": "r_h_foster_energy_machias",
+    "name": "R.H. Foster Energy - Machias",
+    "state": "ME",
+    "website": "https://rhfoster.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Maine multi-location"
+  },
+  {
+    "id": "rocky_mountain_supply_ennis",
+    "name": "Rocky Mountain Supply- Ennis",
+    "state": "MT",
+    "website": "https://www.rockymtnsupply.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location MT ag coop; Ennis branch"
+  },
+  {
+    "id": "consolidated_energy_company",
+    "name": "Consolidated Energy Company",
+    "state": "IA",
+    "website": "https://consolidatedenergyco.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Iowa regional fuels/propane company"
+  },
+  {
+    "id": "sungas_propane_clarksville",
+    "name": "SunGas Propane Clarksville",
+    "state": "AR",
+    "website": "https://sungaspropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location Arkansas propane dealer"
+  },
+  {
+    "id": "freeman_gas_brevard_office",
+    "name": "Freeman Gas Brevard Office",
+    "state": "GA",
+    "website": "https://freemangas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state operator based in Spartanburg, SC"
+  },
+  {
+    "id": "mulgrew_oil_and_propane_co",
+    "name": "Mulgrew Oil and Propane Co",
+    "state": "IL",
+    "website": "https://mulgrewoil.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "IA/IL regional distributor"
+  },
+  {
+    "id": "blue_star_gas_eugene_co",
+    "name": "Blue Star Gas - Eugene Co.",
+    "state": "OR",
+    "website": "https://www.bluestargas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Eugene, OR branch of Blue Star Gas chain"
+  },
+  {
+    "id": "blumont_energy_lynchburg",
+    "name": "Blumont Energy - Lynchburg",
+    "state": "VA",
+    "website": "https://blumontenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "VA multi-location fuel/propane"
+  },
+  {
+    "id": "propane_northwest_tacoma",
+    "name": "Propane Northwest - Tacoma",
+    "state": "WA",
+    "website": "https://www.propanenw.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Tacoma, WA; multi-location PNW"
+  },
+  {
+    "id": "south_georgia_propane_inc",
+    "name": "South Georgia Propane Inc",
+    "state": "GA",
+    "website": "https://www.southgapropane.com/",
+    "ownership": "private",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "South Georgia regional dealer"
+  },
+  {
+    "id": "ed_staub_sons_petroleum",
+    "name": "ED STAUB & SONS PETROLEUM",
+    "state": "OR",
+    "website": "https://www.edstaub.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location propane/petroleum distributor in OR/CA/NV"
+  },
+  {
+    "id": "corrigan_oil_and_propane",
+    "name": "Corrigan Oil and Propane",
+    "state": "IN",
+    "website": "https://corriganoil.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MI-based multi-state"
+  },
+  {
+    "id": "cross_petroleum_services",
+    "name": "Cross Petroleum Services",
+    "state": "MT",
+    "website": "https://www.crosspetroleum.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MT regional petroleum and propane distributor"
+  },
+  {
+    "id": "ed_staub_sons_propane",
+    "name": "Ed Staub & Sons Propane",
+    "state": "OR",
+    "website": "https://www.edstaub.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "OR/CA/NV regional propane and petroleum distributor, multi-location"
+  },
+  {
+    "id": "blakeman_propane_inc",
+    "name": "Blakeman Propane, Inc.",
+    "state": "WY",
+    "website": "https://www.blakemanpropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "WY family-owned, multi-location"
+  },
+  {
+    "id": "superior_fuel_company",
+    "name": "Superior Fuel Company",
+    "state": "MN",
+    "website": "https://superiorfuels.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MN/WI regional"
+  },
+  {
+    "id": "sapp_bros_petroleum",
+    "name": "Sapp Bros. Petroleum",
+    "state": "CO",
+    "website": "https://sappbrospetroleum.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state petroleum and propane distributor HQ in Omaha, NE"
+  },
+  {
+    "id": "rahn_s_oil_propane",
+    "name": "Rahn's Oil & Propane",
+    "state": "MN",
+    "website": "https://rahnsoil.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MN regional"
+  },
+  {
+    "id": "energy_north_propane",
+    "name": "Energy North Propane",
+    "state": "NH",
+    "website": "https://www.energynorthpropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "NH regional propane supplier"
+  },
+  {
+    "id": "woodford_oil_company",
+    "name": "Woodford Oil Company",
+    "state": "WV",
+    "website": "https://www.woodfordoil.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "WV/OH/PA multi-location distributor"
+  },
+  {
+    "id": "ngl_energy_partners",
+    "name": "NGL Energy Partners",
+    "state": "AR",
+    "website": "http://www.nglep.com/",
+    "ownership": "public",
+    "nlocs": 1,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "consolidated_energy",
+    "name": "Consolidated Energy",
+    "state": "IA",
+    "website": "https://consolidatedenergyco.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Iowa regional fuels/propane company"
+  },
+  {
+    "id": "energy_west_montana",
+    "name": "Energy West Montana",
+    "state": "ID",
+    "website": "https://energywestpropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state MT/ID propane operator"
+  },
+  {
+    "id": "quality_oil_company",
+    "name": "Quality Oil Company",
+    "state": "NC",
+    "website": "https://www.qualityoilnc.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Winston-Salem NC; petroleum distribution and propane, multi-location"
+  },
+  {
+    "id": "chs_southwest_grain",
+    "name": "CHS Southwest Grain",
+    "state": "ND",
+    "website": "https://www.chsinc.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Part of CHS Inc., largest US ag coop; energy division includes propane"
+  },
+  {
+    "id": "ak_energy_jackson",
+    "name": "AK Energy - Jackson",
+    "state": "OH",
+    "website": "https://www.akenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "OH multi-location propane/fuel; Jackson branch"
+  },
+  {
+    "id": "town___country_gas",
+    "name": "Town & Country Gas",
+    "state": "GA",
+    "website": "https://towncountrygas.com",
+    "ownership": "private",
+    "nlocs": 2,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "fall_river_propane",
+    "name": "Fall River Propane",
+    "state": "MT",
+    "website": "https://fallriverpropane.com/",
+    "ownership": "private",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Eastern Idaho regional propane dealer"
+  },
+  {
+    "id": "ak_energy_gallia",
+    "name": "AK Energy - Gallia",
+    "state": "OH",
+    "website": "https://www.akenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "OH multi-location propane/fuel; Gallia branch"
+  },
+  {
+    "id": "tiger_fuel_company",
+    "name": "Tiger Fuel Company",
+    "state": "VA",
+    "website": "https://www.tigerfuel.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Charlottesville, VA; multi-location"
+  },
+  {
+    "id": "burden_propane_inc",
+    "name": "Burden Propane Inc",
+    "state": "WA",
+    "website": "https://www.burdenpropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "WA operator"
+  },
+  {
+    "id": "como_oil_propane",
+    "name": "Como Oil & Propane",
+    "state": "WI",
+    "website": "https://www.comooil.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Duluth MN/WI area multi-location"
+  },
+  {
+    "id": "blossman_propane",
+    "name": "Blossman Propane",
+    "state": "GA",
+    "website": "https://www.blossmangas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "9th largest US propane dealer; 75+ branches across Southeast; HQ in Ocean Springs, MS"
+  },
+  {
+    "id": "proflame_propane",
+    "name": "Proflame Propane",
+    "state": "ID",
+    "website": "https://proflamepropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Idaho regional propane dealer"
+  },
+  {
+    "id": "davenport_energy",
+    "name": "Davenport Energy",
+    "state": "VA",
+    "website": "https://www.davenportenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Chatham, VA; large regional multi-location"
+  },
+  {
+    "id": "lin_gas_propane",
+    "name": "Lin-Gas Propane",
+    "state": "IL",
+    "website": "https://lin-gas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Indiana/Illinois multi-location independent"
+  },
+  {
+    "id": "mrohs_gas_inc",
+    "name": "Mrohs Gas, Inc.",
+    "state": "MD",
+    "website": "https://mrohsgas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MD regional"
+  },
+  {
+    "id": "prairie_ag_coop",
+    "name": "Prairie Ag Coop",
+    "state": "MT",
+    "website": "https://www.prairieagcoop.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location farm coop with energy division, MT"
+  },
+  {
+    "id": "enderby_gas_inc_ok",
+    "name": "Enderby Gas Inc",
+    "state": "OK",
+    "website": "https://www.enderbygas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "OK/TX regional propane distributor, multi-location"
+  },
+  {
+    "id": "cangas_propane",
+    "name": "CanGas Propane",
+    "state": "ID",
+    "website": "https://cangaspropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Idaho regional propane dealer"
+  },
+  {
+    "id": "premier_energy",
+    "name": "Premier Energy",
+    "state": "KY",
+    "website": "https://premierenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "KY/regional"
+  },
+  {
+    "id": "yankee_propane",
+    "name": "Yankee Propane",
+    "state": "NJ",
+    "website": "https://www.yankeepropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "NJ regional propane dealer"
+  },
+  {
+    "id": "marsh_propane",
+    "name": "Marsh Propane",
+    "state": "TN",
+    "website": "http://www.marshpet.com/",
+    "ownership": "private",
+    "nlocs": 2,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "sem_stream_lp",
+    "name": "Sem Stream LP",
+    "state": "AR",
+    "website": "https://They barely even have a location on google",
+    "ownership": "public",
+    "nlocs": 1,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "o_nealgas_inc_ar",
+    "name": "O'Nealgas Inc",
+    "state": "AR",
+    "website": "https://onealgas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Arkansas-based regional propane company"
+  },
+  {
+    "id": "titan_propane",
+    "name": "Titan Propane",
+    "state": "AZ",
+    "website": "https://titanpropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Regional AZ/CA operator"
+  },
+  {
+    "id": "norup_gas_inc",
+    "name": "Norup Gas Inc",
+    "state": "CO",
+    "website": "https://norupgas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Colorado regional propane dealer"
+  },
+  {
+    "id": "valley_energy",
+    "name": "Valley Energy",
+    "state": "MD",
+    "website": "https://valleyenergyinc.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "PA/MD/NY"
+  },
+  {
+    "id": "butler_lp_gas",
+    "name": "Butler LP Gas",
+    "state": "SC",
+    "website": "https://butlerlpgas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "South Carolina operator"
+  },
+  {
+    "id": "fred_s_energy",
+    "name": "Fred's Energy",
+    "state": "VT",
+    "website": "https://www.fredsenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "VT multi-location fuel/propane"
+  },
+  {
+    "id": "pico_propane",
+    "name": "Pico Propane",
+    "state": "NC",
+    "website": "https://www.pfmpropane.com/?utm_source=gmb&utm_medium=organic&utm_campaign=uberall",
+    "ownership": "family",
+    "nlocs": 2,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "sharp_energy",
+    "name": "Sharp Energy",
+    "state": "DE",
+    "website": "https://www.sharpenergy.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state propane subsidiary; HQ in Georgetown, DE"
+  },
+  {
+    "id": "utah_propane",
+    "name": "Utah Propane",
+    "state": "UT",
+    "website": "https://utahpropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "UT statewide operator"
+  },
+  {
+    "id": "thompsongas",
+    "name": "ThompsonGas",
+    "state": "AL",
+    "website": "https://thompsongas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "One of the largest private propane companies in the US; multi-state operator based in Frederick, MD"
+  },
+  {
+    "id": "ayer_goss",
+    "name": "Ayer & Goss",
+    "state": "MA",
+    "website": "https://ayergoss.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "NH/MA regional"
+  },
+  {
+    "id": "acadia_fuel",
+    "name": "Acadia Fuel",
+    "state": "ME",
+    "website": "https://acadiafuel.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Maine regional"
+  },
+  {
+    "id": "v_1_propane",
+    "name": "V-1 Propane",
+    "state": "WY",
+    "website": "https://www.v1propane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state western operator (WY/CO/ID/MT)"
+  },
+  {
+    "id": "parker_gas",
+    "name": "Parker Gas",
+    "state": "NC",
+    "website": "https://www.parkergas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Eastern NC multi-location propane; Clinton, Fayetteville, Wilmington, Smithfield, Newton Grove"
+  },
+  {
+    "id": "greco_gas",
+    "name": "Greco Gas",
+    "state": "PA",
+    "website": "https://www.grecogas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Jeannette, PA; multi-location western PA"
+  },
+  {
+    "id": "hino_gas",
+    "name": "Hino Gas",
+    "state": "TX",
+    "website": "https://www.hinogas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "South TX multi-location propane distributor"
+  },
+  {
+    "id": "mfa_oil",
+    "name": "MFA Oil",
+    "state": "AR",
+    "website": "https://www.mfaoil.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Large multi-state cooperative HQ in Columbia, MO"
+  },
+  {
+    "id": "pepup",
+    "name": "PepUp",
+    "state": "MD",
+    "website": "https://pepup.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MD/DE regional"
+  },
+  {
+    "id": "cromwell_s_convenience_petroleum_propane",
+    "name": "Cromwell's Convenience Petroleum & Propane",
+    "state": "MT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small MT c-store/propane operator"
+  },
+  {
+    "id": "great_plains_propane_service_inc",
+    "name": "Great Plains Propane Service, Inc.",
+    "state": "NE",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "NE regional propane service"
+  },
+  {
+    "id": "palmetto_propane_fuels_ice",
+    "name": "Palmetto Propane, Fuels, & Ice",
+    "state": "GA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Southeast regional fuels dealer"
+  },
+  {
+    "id": "central_propane_hazel_green",
+    "name": "Central Propane - Hazel Green",
+    "state": "AL",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Multi-location local operator in North Alabama"
+  },
+  {
+    "id": "north_cascade_propane_service",
+    "name": "North Cascade Propane Service",
+    "state": "WA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Northern WA operator"
+  },
+  {
+    "id": "appalachian_propane_supply",
+    "name": "Appalachian Propane & Supply",
+    "state": "WV",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WV operator"
+  },
+  {
+    "id": "affordable_propane_arkansas",
+    "name": "Affordable Propane Arkansas",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  },
+  {
+    "id": "penn_jersey_propane_gas_co",
+    "name": "Penn-Jersey Propane Gas Co",
+    "state": "NJ",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "PA/NJ regional propane"
+  },
+  {
+    "id": "ontime_petroleum_propane",
+    "name": "OnTime Petroleum & Propane",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "SD regional operator"
+  },
+  {
+    "id": "buckeye_propane_co_inc",
+    "name": "Buckeye Propane Co., Inc.",
+    "state": "OH",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "OH regional propane"
+  },
+  {
+    "id": "mountain_country_propane",
+    "name": "Mountain Country Propane",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Mountain region AR operator"
+  },
+  {
+    "id": "eagle_energy_corporation",
+    "name": "Eagle Energy Corporation",
+    "state": "NV",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "NV regional energy/propane"
+  },
+  {
+    "id": "fischer_oil_propane_co",
+    "name": "Fischer Oil & Propane Co",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Family-owned SD operator"
+  },
+  {
+    "id": "spencer_mountain_propane",
+    "name": "SPENCER MOUNTAIN PROPANE",
+    "state": "TN",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "TN small operator"
+  },
+  {
+    "id": "tumbleweed_propane_inc",
+    "name": "Tumbleweed Propane, Inc.",
+    "state": "WY",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WY operator"
+  },
+  {
+    "id": "dooleys_petroleum_inc",
+    "name": "Dooley's Petroleum Inc.",
+    "state": "MN",
+    "website": "",
+    "ownership": "private",
+    "nlocs": 1,
+    "score": 2,
+    "notes": ""
+  },
+  {
+    "id": "nebraska_iowa_supply_co",
+    "name": "Nebraska Iowa Supply Co",
+    "state": "NE",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "NE/IA regional wholesaler"
+  },
+  {
+    "id": "b_l_propane_co_inc",
+    "name": "B & L Propane Co., Inc.",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT operator"
+  },
+  {
+    "id": "red_flame_oil_propane",
+    "name": "Red Flame Oil & Propane",
+    "state": "WV",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WV operator"
+  },
+  {
+    "id": "rocky_mountain_lp_gas",
+    "name": "Rocky Mountain LP Gas",
+    "state": "CO",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Colorado regional propane"
+  },
+  {
+    "id": "thunder_basin_propane",
+    "name": "Thunder Basin Propane",
+    "state": "WY",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WY (Powder River Basin) operator"
+  },
+  {
+    "id": "almighty_propane_llc",
+    "name": "Almighty Propane LLC",
+    "state": "TX",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "TX small operator"
+  },
+  {
+    "id": "west_plains_propane",
+    "name": "West Plains Propane",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  },
+  {
+    "id": "twin_rivers_propane",
+    "name": "TWIN RIVERS PROPANE",
+    "state": "GA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Georgia regional dealer"
+  },
+  {
+    "id": "co_alliance_propane",
+    "name": "Co-Alliance Propane",
+    "state": "IN",
+    "website": "https://co-alliance.com",
+    "ownership": "coop",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Large Indiana farmer cooperative"
+  },
+  {
+    "id": "gale_s_gas_services",
+    "name": "Gale's Gas Services",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small SD operator"
+  },
+  {
+    "id": "fulfer_propane_inc",
+    "name": "Fulfer Propane, Inc",
+    "state": "TX",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "West TX operator"
+  },
+  {
+    "id": "south_fork_propane",
+    "name": "South Fork Propane",
+    "state": "CO",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "South Fork, CO local operator"
+  },
+  {
+    "id": "g_l_distributing",
+    "name": "G & L Distributing",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT operator"
+  },
+  {
+    "id": "blue_flame_propane",
+    "name": "Blue Flame Propane",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT operator"
+  },
+  {
+    "id": "wolf_river_propane",
+    "name": "Wolf River Propane",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WI operator"
+  },
+  {
+    "id": "duncan_service_inc",
+    "name": "Duncan Service Inc",
+    "state": "WV",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WV operator"
+  },
+  {
+    "id": "grill_gas_express",
+    "name": "Grill Gas Express",
+    "state": "AL",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator, no clear web presence"
+  },
+  {
+    "id": "steveson_s_lp_gas",
+    "name": "Steveson's LP Gas",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  },
+  {
+    "id": "new_flame_propane",
+    "name": "New Flame Propane",
+    "state": "WA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WA operator"
+  },
+  {
+    "id": "northwest_propane",
+    "name": "Northwest Propane",
+    "state": "WA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WA/PNW operator"
+  },
+  {
+    "id": "superior_propane",
+    "name": "Superior Propane",
+    "state": "AZ",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Local AZ operator"
+  },
+  {
+    "id": "champion_propane",
+    "name": "Champion Propane",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "SD operator"
+  },
+  {
+    "id": "barker_s_propane",
+    "name": "Barker's propane",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT small operator"
+  },
+  {
+    "id": "swva_gas_service",
+    "name": "SWVA Gas Service",
+    "state": "VA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Southwest VA operator"
+  },
+  {
+    "id": "pro_gas_propane",
+    "name": "Pro Gas Propane",
+    "state": "GA",
+    "website": "",
+    "ownership": "private",
+    "nlocs": 2,
+    "score": 2,
+    "notes": ""
+  },
+  {
+    "id": "mfa_oil_propane",
+    "name": "MFA Oil Propane",
+    "state": "IL",
+    "website": "https://mfaoil.com",
+    "ownership": "coop",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Large Midwest farmer cooperative"
+  },
+  {
+    "id": "ceres_solutions",
+    "name": "Ceres Solutions",
+    "state": "IN",
+    "website": "https://ceres.coop",
+    "ownership": "coop",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Large Indiana farmer cooperative"
+  },
+  {
+    "id": "sandhill_oil_co",
+    "name": "Sandhill Oil Co",
+    "state": "NE",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "NE Sandhills regional fuel distributor"
+  },
+  {
+    "id": "seven_is_enough",
+    "name": "Seven is Enough",
+    "state": "VA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "VA small operator"
+  },
+  {
+    "id": "queen_city_gas",
+    "name": "Queen City Gas",
+    "state": "AR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  },
+  {
+    "id": "tri_county_gas",
+    "name": "Tri-County Gas",
+    "state": "FL",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Florida regional dealer"
+  },
+  {
+    "id": "enterprise_gas",
+    "name": "Enterprise Gas",
+    "state": "VA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "VA operator"
+  },
+  {
+    "id": "luke_s_propane",
+    "name": "Luke's Propane",
+    "state": "WA",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WA operator"
+  },
+  {
+    "id": "ape_fuels_inc",
+    "name": "APE Fuels Inc",
+    "state": "AZ",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small AZ fuels operator"
+  },
+  {
+    "id": "r_d_propane",
+    "name": "R & D Propane",
+    "state": "OR",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small OR propane operator"
+  },
+  {
+    "id": "bob_s_gas_inc",
+    "name": "Bob's Gas Inc",
+    "state": "SD",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small SD operator"
+  },
+  {
+    "id": "northwoods_lp",
+    "name": "Northwoods LP",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Northern WI operator"
+  },
+  {
+    "id": "l_l_propane",
+    "name": "L & L Propane",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WI operator"
+  },
+  {
+    "id": "tricounty_gas",
+    "name": "TriCounty Gas",
+    "state": "WY",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WY operator"
+  },
+  {
+    "id": "evergreen_fs",
+    "name": "Evergreen FS",
+    "state": "IL",
+    "website": "https://evergreenfs.com",
+    "ownership": "coop",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Member of GROWMARK FS"
+  },
+  {
+    "id": "lake_philgas",
+    "name": "Lake Philgas",
+    "state": "UT",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "UT operator"
+  },
+  {
+    "id": "asapropane",
+    "name": "Asapropane",
+    "state": "DE",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Delaware regional dealer"
+  },
+  {
+    "id": "brummer_co",
+    "name": "Brummer Co",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WI operator"
+  },
+  {
+    "id": "reed_oil",
+    "name": "Reed Oil",
+    "state": "NC",
+    "website": "",
+    "ownership": "private",
+    "nlocs": 2,
+    "score": 2,
+    "notes": ""
+  },
+  {
+    "id": "hill_gas",
+    "name": "Hill Gas",
+    "state": "TX",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "TX operator"
+  },
+  {
+    "id": "lp_plus",
+    "name": "LP Plus",
+    "state": "WI",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "WI operator"
+  },
+  {
+    "id": "samco",
+    "name": "Samco",
+    "state": "AZ",
+    "website": "",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Small local operator"
+  }
+]

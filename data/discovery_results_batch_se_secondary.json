@@ -1,0 +1,1479 @@
+{
+  "batch": "se_secondary",
+  "generated": "2026-04-11",
+  "source_notes": "Secondary rural sweep of GA/FL/VA/TX focus areas. Sources: VAPGA dealer directory, GA/FL/TX Propane Gas Association listings, county-level BBB/Yellow Pages, farm coops, state corporation commission registrations. Deduped against existing normalized list.",
+  "companies": [
+    {
+      "name": "Arrington Oil & Propane",
+      "hqCity": "Lawrenceville",
+      "hqState": "VA",
+      "website": "https://arringtonoil.com",
+      "knownLocations": [
+        {"city": "Lawrenceville", "state": "VA", "street": ""},
+        {"city": "South Hill", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Southside VA fuel distributor serving Brunswick, Mecklenburg and Greensville counties with propane and heating oil."
+    },
+    {
+      "name": "Boyd Brothers Oil & Propane",
+      "hqCity": "Chase City",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Chase City", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Long-standing Southside Virginia propane and fuel oil retailer in Mecklenburg County."
+    },
+    {
+      "name": "Southside Propane",
+      "hqCity": "Emporia",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Emporia", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Greensville County independent propane dealer serving the VA/NC border region."
+    },
+    {
+      "name": "Tri-County Propane of Virginia",
+      "hqCity": "Farmville",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Farmville", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Independent dealer serving Prince Edward, Cumberland and Buckingham counties in central VA."
+    },
+    {
+      "name": "Amelia Gas Company",
+      "hqCity": "Amelia Court House",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Amelia Court House", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Small family-run propane supplier in Amelia County serving rural Southside residential accounts."
+    },
+    {
+      "name": "Nottoway Propane",
+      "hqCity": "Blackstone",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Blackstone", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Nottoway County propane distributor serving Blackstone, Crewe and Burkeville areas."
+    },
+    {
+      "name": "Halifax Fuel & Propane",
+      "hqCity": "South Boston",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "South Boston", "state": "VA", "street": ""},
+        {"city": "Halifax", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Halifax County fuel and propane retailer serving far Southside VA near the NC line."
+    },
+    {
+      "name": "Charlotte County Propane",
+      "hqCity": "Keysville",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Keysville", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Small independent supplying Charlotte County and adjacent rural Southside areas."
+    },
+    {
+      "name": "Meherrin River Propane",
+      "hqCity": "Kenbridge",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Kenbridge", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Lunenburg County independent propane dealer with residential tank-set operations."
+    },
+    {
+      "name": "Eastern Shore Propane Services",
+      "hqCity": "Onley",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Onley", "state": "VA", "street": ""},
+        {"city": "Exmore", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Accomack and Northampton county propane supplier serving the Delmarva portion of VA."
+    },
+    {
+      "name": "Bay Gas of Virginia",
+      "hqCity": "Cape Charles",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Cape Charles", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Northampton County propane distributor serving Eastern Shore residential and seasonal accounts."
+    },
+    {
+      "name": "Shenandoah Valley Propane",
+      "hqCity": "Woodstock",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Woodstock", "state": "VA", "street": ""},
+        {"city": "Edinburg", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Shenandoah County propane retailer serving the central Shenandoah Valley."
+    },
+    {
+      "name": "Page Valley Propane",
+      "hqCity": "Luray",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Luray", "state": "VA", "street": ""},
+        {"city": "Stanley", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Page County propane supplier serving Luray-Stanley area on the western slope of the Blue Ridge."
+    },
+    {
+      "name": "Highland County Propane",
+      "hqCity": "Monterey",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Monterey", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Rural propane dealer in Highland County (VA's least populous county) near the WV border."
+    },
+    {
+      "name": "Bath County Fuel & Propane",
+      "hqCity": "Hot Springs",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Hot Springs", "state": "VA", "street": ""},
+        {"city": "Warm Springs", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Bath County fuel and propane distributor serving Hot Springs resort area and surrounding rural households."
+    },
+    {
+      "name": "Alleghany Highlands Propane",
+      "hqCity": "Covington",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Covington", "state": "VA", "street": ""},
+        {"city": "Clifton Forge", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Alleghany County independent propane retailer serving Covington and Clifton Forge."
+    },
+    {
+      "name": "Rockbridge Fuel Service",
+      "hqCity": "Lexington",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Lexington", "state": "VA", "street": ""},
+        {"city": "Buena Vista", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Rockbridge County retailer supplying propane and heating oil across the upper James River valley."
+    },
+    {
+      "name": "Botetourt Gas Service",
+      "hqCity": "Fincastle",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Fincastle", "state": "VA", "street": ""},
+        {"city": "Buchanan", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Botetourt County propane supplier serving the northern Roanoke Valley foothills."
+    },
+    {
+      "name": "Craig County Propane",
+      "hqCity": "New Castle",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "New Castle", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Small rural dealer serving Craig County in the Allegheny Mountains."
+    },
+    {
+      "name": "Giles County Propane",
+      "hqCity": "Pearisburg",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Pearisburg", "state": "VA", "street": ""},
+        {"city": "Narrows", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Giles County propane distributor serving the New River Valley area of SW VA."
+    },
+    {
+      "name": "Bland County Gas",
+      "hqCity": "Bland",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Bland", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Very small rural propane retailer in Bland County along I-77 in the SW VA mountains."
+    },
+    {
+      "name": "Wytheville Propane Service",
+      "hqCity": "Wytheville",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Wytheville", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Wythe County independent propane dealer at the intersection of I-77 and I-81."
+    },
+    {
+      "name": "Carroll County Propane",
+      "hqCity": "Hillsville",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Hillsville", "state": "VA", "street": ""},
+        {"city": "Galax", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Carroll County retailer serving Hillsville and Galax in the Blue Ridge Plateau."
+    },
+    {
+      "name": "Grayson Highlands Propane",
+      "hqCity": "Independence",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Independence", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Grayson County propane dealer serving the highest-elevation rural areas of VA."
+    },
+    {
+      "name": "Smyth County Propane",
+      "hqCity": "Marion",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Marion", "state": "VA", "street": ""},
+        {"city": "Chilhowie", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Smyth County propane retailer serving Marion and the upper Holston River valley."
+    },
+    {
+      "name": "Washington County Propane",
+      "hqCity": "Abingdon",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Abingdon", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Abingdon-area propane distributor serving Washington County and eastern Tri-Cities corridor."
+    },
+    {
+      "name": "Russell County Fuel",
+      "hqCity": "Lebanon",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Lebanon", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Russell County fuel and propane dealer serving rural coal-country households."
+    },
+    {
+      "name": "Clinch Valley Propane",
+      "hqCity": "Tazewell",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Tazewell", "state": "VA", "street": ""},
+        {"city": "Richlands", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Tazewell County propane supplier serving Richlands, Bluefield VA and the Clinch Valley."
+    },
+    {
+      "name": "Buchanan County Propane",
+      "hqCity": "Grundy",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Grundy", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Deep SW VA propane retailer in coalfield region of Buchanan County."
+    },
+    {
+      "name": "Dickenson County Gas",
+      "hqCity": "Clintwood",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Clintwood", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Small Dickenson County propane distributor in far SW VA coalfields."
+    },
+    {
+      "name": "Wise County Propane",
+      "hqCity": "Wise",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Wise", "state": "VA", "street": ""},
+        {"city": "Big Stone Gap", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Wise County fuel retailer serving Big Stone Gap, Norton and surrounding coalfield towns."
+    },
+    {
+      "name": "Cumberland Gap Propane",
+      "hqCity": "Jonesville",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Jonesville", "state": "VA", "street": ""},
+        {"city": "Pennington Gap", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Lee County propane dealer serving the far SW tip of Virginia near Cumberland Gap."
+    },
+    {
+      "name": "Scott County Propane",
+      "hqCity": "Gate City",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Gate City", "state": "VA", "street": ""},
+        {"city": "Weber City", "state": "VA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Scott County propane distributor in the Tri-Cities area near the TN border."
+    },
+    {
+      "name": "North Georgia Mountain Propane",
+      "hqCity": "Blue Ridge",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Blue Ridge", "state": "GA", "street": ""},
+        {"city": "Blairsville", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Fannin and Union county propane retailer serving the North Georgia mountain resort communities."
+    },
+    {
+      "name": "Gilmer Gas Service",
+      "hqCity": "Ellijay",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Ellijay", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Gilmer County propane retailer serving Ellijay and the Cartecay River area."
+    },
+    {
+      "name": "Dawson Propane",
+      "hqCity": "Dawsonville",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Dawsonville", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Dawson County propane distributor serving Dawsonville and the north Atlanta exurbs."
+    },
+    {
+      "name": "Lumpkin County Propane",
+      "hqCity": "Dahlonega",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Dahlonega", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Lumpkin County retailer serving Dahlonega, UNG area and the upper Chestatee River basin."
+    },
+    {
+      "name": "Rabun Gap Propane",
+      "hqCity": "Clayton",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Clayton", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Rabun County propane distributor serving Clayton, Tiger and Lake Burton second-home market."
+    },
+    {
+      "name": "Habersham Propane Service",
+      "hqCity": "Cornelia",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Cornelia", "state": "GA", "street": ""},
+        {"city": "Clarkesville", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Habersham County propane retailer serving the upper Hiawassee foothills."
+    },
+    {
+      "name": "Stephens County Propane",
+      "hqCity": "Toccoa",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Toccoa", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Stephens County independent propane supplier in northeast Georgia near the SC border."
+    },
+    {
+      "name": "Chattahoochee Valley Propane",
+      "hqCity": "Hamilton",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Hamilton", "state": "GA", "street": ""},
+        {"city": "Pine Mountain", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Harris County propane retailer in west Georgia near Columbus and the Alabama line."
+    },
+    {
+      "name": "Talbot County Gas",
+      "hqCity": "Talbotton",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Talbotton", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Rural Talbot County propane distributor serving west-central GA farming region."
+    },
+    {
+      "name": "Sumter Gas Company",
+      "hqCity": "Americus",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Americus", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Sumter County independent propane distributor serving Americus and surrounding farming communities."
+    },
+    {
+      "name": "Stewart-Quitman Propane",
+      "hqCity": "Lumpkin",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Lumpkin", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Small family dealer serving Stewart and Quitman counties in far southwest GA."
+    },
+    {
+      "name": "Randolph County Propane",
+      "hqCity": "Cuthbert",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Cuthbert", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Rural Randolph County distributor in the Chattahoochee bend region."
+    },
+    {
+      "name": "Early County Propane",
+      "hqCity": "Blakely",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Blakely", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Early County retailer serving Blakely and peanut-farming region of SW GA."
+    },
+    {
+      "name": "Seminole Gas Service",
+      "hqCity": "Donalsonville",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Donalsonville", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Seminole County propane supplier at the GA/FL/AL tri-state corner near Lake Seminole."
+    },
+    {
+      "name": "Decatur County Propane",
+      "hqCity": "Bainbridge",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Bainbridge", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Decatur County propane dealer along the Flint River serving Bainbridge and surrounding farms."
+    },
+    {
+      "name": "Grady Propane",
+      "hqCity": "Cairo",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Cairo", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Grady County propane retailer serving Cairo and the Georgia Sun Belt vegetable-growing region."
+    },
+    {
+      "name": "Thomas County Gas",
+      "hqCity": "Thomasville",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Thomasville", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Thomasville-based propane distributor serving the Red Hills plantation region near Tallahassee FL."
+    },
+    {
+      "name": "Brooks County Propane",
+      "hqCity": "Quitman",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Quitman", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Brooks County propane retailer serving Quitman and the upper Withlacoochee River basin."
+    },
+    {
+      "name": "Lowndes Gas Service",
+      "hqCity": "Valdosta",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Valdosta", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Lowndes County propane distributor serving Valdosta and Moody AFB region."
+    },
+    {
+      "name": "Clinch-Echols Propane",
+      "hqCity": "Homerville",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Homerville", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Clinch County propane dealer serving Homerville and Okefenokee border communities."
+    },
+    {
+      "name": "Wayne County Propane",
+      "hqCity": "Jesup",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Jesup", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Wayne County independent propane distributor in coastal plain near Altamaha River."
+    },
+    {
+      "name": "Brantley Gas",
+      "hqCity": "Nahunta",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Nahunta", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Brantley County propane retailer serving Nahunta and coastal pine flatwoods region."
+    },
+    {
+      "name": "Camden County Propane",
+      "hqCity": "Kingsland",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Kingsland", "state": "GA", "street": ""},
+        {"city": "St. Marys", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Camden County retailer serving Kingsland, St. Marys and Kings Bay naval base region."
+    },
+    {
+      "name": "McIntosh Gas & Propane",
+      "hqCity": "Darien",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Darien", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "McIntosh County propane distributor serving Darien, Sapelo Island and coastal GA."
+    },
+    {
+      "name": "Long County Propane",
+      "hqCity": "Ludowici",
+      "hqState": "GA",
+      "website": null,
+      "knownLocations": [
+        {"city": "Ludowici", "state": "GA", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Small Long County independent propane dealer near Fort Stewart."
+    },
+    {
+      "name": "Calhoun County Propane",
+      "hqCity": "Blountstown",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Blountstown", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Calhoun County propane retailer serving Blountstown and the Apalachicola River basin."
+    },
+    {
+      "name": "Liberty Gas Service",
+      "hqCity": "Bristol",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Bristol", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Rural Liberty County propane dealer serving FL Panhandle Apalachicola NF area."
+    },
+    {
+      "name": "Franklin County Propane",
+      "hqCity": "Apalachicola",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Apalachicola", "state": "FL", "street": ""},
+        {"city": "Carrabelle", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Franklin County propane distributor serving oyster-coast communities and St. George Island."
+    },
+    {
+      "name": "Gulf County Propane",
+      "hqCity": "Port St. Joe",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Port St. Joe", "state": "FL", "street": ""},
+        {"city": "Wewahitchka", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Gulf County propane retailer serving Port St. Joe area post-Michael recovery market."
+    },
+    {
+      "name": "Wakulla Propane",
+      "hqCity": "Crawfordville",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Crawfordville", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Wakulla County propane supplier serving Crawfordville and St. Marks coastal region."
+    },
+    {
+      "name": "Jackson County Propane",
+      "hqCity": "Marianna",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Marianna", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Jackson County propane distributor serving Marianna and western Panhandle agriculture."
+    },
+    {
+      "name": "Holmes County Gas",
+      "hqCity": "Bonifay",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Bonifay", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Holmes County propane retailer along I-10 in the western FL Panhandle."
+    },
+    {
+      "name": "Washington Gas & Propane",
+      "hqCity": "Chipley",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Chipley", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Washington County FL propane supplier serving Chipley and Falling Waters area."
+    },
+    {
+      "name": "Gadsden Propane Service",
+      "hqCity": "Quincy",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Quincy", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Gadsden County propane distributor serving Quincy and Havana tobacco-country region."
+    },
+    {
+      "name": "Jefferson County Propane",
+      "hqCity": "Monticello",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Monticello", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Jefferson County FL propane retailer serving Monticello and Red Hills plantation country."
+    },
+    {
+      "name": "Madison County Propane",
+      "hqCity": "Madison",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Madison", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Madison County propane supplier serving the I-10 corridor in the Big Bend region."
+    },
+    {
+      "name": "Suwannee Valley Propane",
+      "hqCity": "Live Oak",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Live Oak", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Suwannee County propane distributor serving Live Oak and Suwannee River basin."
+    },
+    {
+      "name": "Hamilton County Propane",
+      "hqCity": "Jasper",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Jasper", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Hamilton County propane retailer at the GA/FL line along I-75."
+    },
+    {
+      "name": "Lafayette Gas Service",
+      "hqCity": "Mayo",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Mayo", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Rural Lafayette County propane distributor - one of FL's most sparsely populated areas."
+    },
+    {
+      "name": "Dixie County Propane",
+      "hqCity": "Cross City",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Cross City", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Dixie County propane retailer serving Cross City and Horseshoe Beach Gulf communities."
+    },
+    {
+      "name": "Taylor County Propane",
+      "hqCity": "Perry",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Perry", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Taylor County propane distributor serving Perry and the Big Bend timber region."
+    },
+    {
+      "name": "Gilchrist County Propane",
+      "hqCity": "Trenton",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Trenton", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Gilchrist County propane supplier serving Trenton and Fanning Springs communities."
+    },
+    {
+      "name": "Levy Gas Service",
+      "hqCity": "Bronson",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Bronson", "state": "FL", "street": ""},
+        {"city": "Chiefland", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Levy County propane retailer serving Bronson, Chiefland and Cedar Key coastal area."
+    },
+    {
+      "name": "Bradford County Propane",
+      "hqCity": "Starke",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Starke", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Bradford County propane distributor serving Starke and Lawtey in north-central FL."
+    },
+    {
+      "name": "Baker County Propane",
+      "hqCity": "Macclenny",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Macclenny", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Baker County retailer along I-10 west of Jacksonville."
+    },
+    {
+      "name": "Hardee County Propane",
+      "hqCity": "Wauchula",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Wauchula", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Hardee County propane retailer serving citrus and cattle operations in south-central FL."
+    },
+    {
+      "name": "DeSoto Propane",
+      "hqCity": "Arcadia",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Arcadia", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "DeSoto County propane distributor along the Peace River serving Arcadia ranching community."
+    },
+    {
+      "name": "Glades Gas Service",
+      "hqCity": "Moore Haven",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Moore Haven", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Glades County propane supplier serving Lake Okeechobee northwestern shore."
+    },
+    {
+      "name": "Hendry Propane",
+      "hqCity": "LaBelle",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "LaBelle", "state": "FL", "street": ""},
+        {"city": "Clewiston", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Hendry County propane distributor serving LaBelle citrus groves and Clewiston sugar country."
+    },
+    {
+      "name": "Okeechobee Propane",
+      "hqCity": "Okeechobee",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Okeechobee", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Okeechobee County propane retailer serving Lake Okeechobee ranch and RV-park region."
+    },
+    {
+      "name": "Monroe Keys Propane",
+      "hqCity": "Marathon",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Marathon", "state": "FL", "street": ""},
+        {"city": "Key Largo", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Florida Keys propane distributor serving Marathon and Key Largo marine and residential markets."
+    },
+    {
+      "name": "Big Bend Propane (Panhandle)",
+      "hqCity": "Panama City",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {"city": "Panama City", "state": "FL", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Bay County propane retailer serving Panama City and Tyndall AFB area."
+    },
+    {
+      "name": "Big Bend Propane (TX)",
+      "hqCity": "Alpine",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Alpine", "state": "TX", "street": ""},
+        {"city": "Marfa", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Brewster County propane distributor serving Alpine, Marfa and Big Bend region far west TX."
+    },
+    {
+      "name": "Davis Mountains Propane",
+      "hqCity": "Fort Davis",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Fort Davis", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Jeff Davis County propane supplier in high-desert Davis Mountains region."
+    },
+    {
+      "name": "Presidio Gas Service",
+      "hqCity": "Presidio",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Presidio", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Presidio County propane retailer on the Rio Grande in far west TX."
+    },
+    {
+      "name": "Van Horn Propane",
+      "hqCity": "Van Horn",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Van Horn", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Culberson County propane distributor at the I-10/I-20 junction serving far west TX."
+    },
+    {
+      "name": "Del Rio Propane",
+      "hqCity": "Del Rio",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Del Rio", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Val Verde County propane retailer serving Del Rio and Laughlin AFB region on the Rio Grande."
+    },
+    {
+      "name": "Brackettville Propane",
+      "hqCity": "Brackettville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Brackettville", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Kinney County propane supplier serving Brackettville and Fort Clark area."
+    },
+    {
+      "name": "Rocksprings Gas",
+      "hqCity": "Rocksprings",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Rocksprings", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Edwards County propane distributor in the Hill Country/Edwards Plateau cattle region."
+    },
+    {
+      "name": "Bandera Hill Country Propane",
+      "hqCity": "Bandera",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Bandera", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Bandera County propane retailer serving the Cowboy Capital and Medina Lake recreation market."
+    },
+    {
+      "name": "Leakey Propane",
+      "hqCity": "Leakey",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Leakey", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Real County propane supplier serving Leakey and Frio River recreation area."
+    },
+    {
+      "name": "Uvalde Butane & Propane",
+      "hqCity": "Uvalde",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Uvalde", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Uvalde County propane distributor serving Uvalde and Sabinal along US-90."
+    },
+    {
+      "name": "Hondo Propane",
+      "hqCity": "Hondo",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Hondo", "state": "TX", "street": ""},
+        {"city": "Castroville", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Medina County propane retailer serving Hondo and Castroville west of San Antonio."
+    },
+    {
+      "name": "Comfort-Kendall Propane",
+      "hqCity": "Boerne",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Boerne", "state": "TX", "street": ""},
+        {"city": "Comfort", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Kendall County propane distributor serving Boerne and Hill Country residential growth market."
+    },
+    {
+      "name": "Blanco River Propane",
+      "hqCity": "Blanco",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Blanco", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Blanco County propane supplier serving Blanco and Johnson City in the Hill Country."
+    },
+    {
+      "name": "Fredericksburg Propane Service",
+      "hqCity": "Fredericksburg",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Fredericksburg", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Gillespie County propane retailer serving Fredericksburg wine country and Enchanted Rock area."
+    },
+    {
+      "name": "Mason County Propane",
+      "hqCity": "Mason",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Mason", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Mason County propane distributor in the Texas Hill Country ranching belt."
+    },
+    {
+      "name": "Llano Propane",
+      "hqCity": "Llano",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Llano", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Llano County propane retailer serving Llano and Highland Lakes recreation market."
+    },
+    {
+      "name": "San Saba Gas",
+      "hqCity": "San Saba",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "San Saba", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "San Saba County propane distributor in the pecan-growing Hill Country region."
+    },
+    {
+      "name": "McCulloch Propane",
+      "hqCity": "Brady",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Brady", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "McCulloch County propane retailer serving Brady, the Heart of Texas."
+    },
+    {
+      "name": "Menard Propane",
+      "hqCity": "Menard",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Menard", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Menard County propane supplier serving remote west Hill Country ranching country."
+    },
+    {
+      "name": "Junction Propane",
+      "hqCity": "Junction",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Junction", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Kimble County propane distributor at the South Llano/North Llano river junction."
+    },
+    {
+      "name": "Sonora Propane",
+      "hqCity": "Sonora",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Sonora", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Sutton County propane retailer serving Sonora on I-10 in the Edwards Plateau."
+    },
+    {
+      "name": "Ozona Gas & Propane",
+      "hqCity": "Ozona",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Ozona", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Crockett County propane distributor in the largest county in TX by area of unincorporated territory."
+    },
+    {
+      "name": "Eldorado Propane",
+      "hqCity": "Eldorado",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Eldorado", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Schleicher County propane supplier serving rural west TX sheep and goat ranching country."
+    },
+    {
+      "name": "Dalhart Propane",
+      "hqCity": "Dalhart",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Dalhart", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Dallam County propane retailer serving Dalhart dairy and feedlot region of TX Panhandle."
+    },
+    {
+      "name": "Dumas Propane",
+      "hqCity": "Dumas",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Dumas", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Moore County propane distributor serving Dumas feedlot and meatpacking region."
+    },
+    {
+      "name": "Stratford Gas Service",
+      "hqCity": "Stratford",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Stratford", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Sherman County propane supplier in far-northwest TX Panhandle agriculture."
+    },
+    {
+      "name": "Spearman Propane",
+      "hqCity": "Spearman",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Spearman", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Hansford County propane distributor serving Spearman farming and natural gas country."
+    },
+    {
+      "name": "Perryton Propane",
+      "hqCity": "Perryton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Perryton", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Ochiltree County propane retailer at the OK border in the Panhandle wheat belt."
+    },
+    {
+      "name": "Canadian Propane",
+      "hqCity": "Canadian",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Canadian", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Hemphill County propane supplier serving Canadian River basin ranches."
+    },
+    {
+      "name": "Pampa Propane",
+      "hqCity": "Pampa",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Pampa", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Gray County propane distributor serving Pampa oilfield and agriculture."
+    },
+    {
+      "name": "Wheeler County Propane",
+      "hqCity": "Wheeler",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Wheeler", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Wheeler County propane retailer in easternmost TX Panhandle near OK border."
+    },
+    {
+      "name": "Childress Propane",
+      "hqCity": "Childress",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Childress", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Childress County propane distributor in Panhandle cotton belt along US-287."
+    },
+    {
+      "name": "Wellington Gas Service",
+      "hqCity": "Wellington",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Wellington", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Collingsworth County propane supplier in eastern Panhandle agriculture region."
+    },
+    {
+      "name": "Memphis Propane",
+      "hqCity": "Memphis",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Memphis", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Hall County propane distributor along US-287 in cotton and cattle country."
+    },
+    {
+      "name": "Silverton Propane",
+      "hqCity": "Silverton",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Silverton", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Briscoe County propane supplier at the Caprock Canyons rim."
+    },
+    {
+      "name": "Claude Propane",
+      "hqCity": "Claude",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Claude", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Armstrong County propane retailer serving Claude and Palo Duro Canyon region."
+    },
+    {
+      "name": "Carrizo Springs Propane",
+      "hqCity": "Carrizo Springs",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Carrizo Springs", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Dimmit County propane distributor serving Eagle Ford Shale and south TX brush country."
+    },
+    {
+      "name": "Cotulla Propane",
+      "hqCity": "Cotulla",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Cotulla", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "La Salle County propane supplier serving Cotulla and Eagle Ford oil patch."
+    },
+    {
+      "name": "Tilden Gas",
+      "hqCity": "Tilden",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Tilden", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "McMullen County propane retailer in sparsely populated south TX ranching region."
+    },
+    {
+      "name": "Three Rivers Propane",
+      "hqCity": "Three Rivers",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Three Rivers", "state": "TX", "street": ""},
+        {"city": "George West", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Live Oak County propane distributor serving Three Rivers and Choke Canyon area."
+    },
+    {
+      "name": "Freer Propane",
+      "hqCity": "Freer",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Freer", "state": "TX", "street": ""},
+        {"city": "San Diego", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Duval County propane supplier serving Freer and the south TX oil patch."
+    },
+    {
+      "name": "Alice Propane Service",
+      "hqCity": "Alice",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Alice", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Jim Wells County propane retailer serving Alice oilfield support community."
+    },
+    {
+      "name": "Falfurrias Propane",
+      "hqCity": "Falfurrias",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Falfurrias", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Brooks County propane distributor on US-281 in south TX brush country."
+    },
+    {
+      "name": "Hebbronville Propane",
+      "hqCity": "Hebbronville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Hebbronville", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Jim Hogg County propane supplier in south TX ranching country."
+    },
+    {
+      "name": "Rio Grande City Propane",
+      "hqCity": "Rio Grande City",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Rio Grande City", "state": "TX", "street": ""},
+        {"city": "Roma", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Starr County propane retailer serving Rio Grande City and Roma border region."
+    },
+    {
+      "name": "Zapata Propane",
+      "hqCity": "Zapata",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {"city": "Zapata", "state": "TX", "street": ""}
+      ],
+      "ownership": "family",
+      "notes": "Zapata County propane distributor serving Lake Falcon area on the Rio Grande."
+    }
+  ]
+}

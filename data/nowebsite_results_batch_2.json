@@ -1,0 +1,240 @@
+[
+  {
+    "id": "palmetto_propane_fuels_ice",
+    "name": "Palmetto Propane, Fuels, & Ice",
+    "locations_found": [
+      {
+        "name": "Palmetto Propane - Augusta Showroom",
+        "address": "133 Davis Rd",
+        "city": "Augusta",
+        "state": "GA",
+        "zip": "30907",
+        "phone": ""
+      },
+      {
+        "name": "Palmetto Propane - West Columbia",
+        "address": "2470 Fish Hatchery Rd",
+        "city": "West Columbia",
+        "state": "SC",
+        "zip": "",
+        "phone": ""
+      },
+      {
+        "name": "Palmetto Propane - Aiken",
+        "address": "1212 Whiskey Rd",
+        "city": "Aiken",
+        "state": "SC",
+        "zip": "",
+        "phone": ""
+      }
+    ],
+    "notes": "Actually has website at palmettopropane.com. Multi-location operator serving GA and SC; Augusta GA is one of several locations. Original record listed as no-website single-loc GA operator is incorrect."
+  },
+  {
+    "id": "affordable_propane_arkansas",
+    "name": "Affordable Propane Arkansas",
+    "locations_found": [
+      {
+        "name": "Affordable Propane Arkansas",
+        "address": "18468 Highway 311",
+        "city": "Oak Grove",
+        "state": "AR",
+        "zip": "",
+        "phone": "(870) 688-9488"
+      }
+    ],
+    "notes": "Single-location small operator. Active Facebook page (AffordablePropaneAR), no standalone website confirmed."
+  },
+  {
+    "id": "mountain_country_propane",
+    "name": "Mountain Country Propane",
+    "locations_found": [],
+    "notes": "Could not find Arkansas-based Mountain Country Propane. The known 'Mountain Country Propane' operates in southern Missouri (Sparta, Mountain Grove, Lebanon, Laurie, MO) at mtncountrypropane.com - not Arkansas. Original state hint may be incorrect; likely MO operator or defunct AR entity."
+  },
+  {
+    "id": "tumbleweed_propane_inc",
+    "name": "Tumbleweed Propane, Inc.",
+    "locations_found": [
+      {
+        "name": "Tumbleweed Propane Inc",
+        "address": "527 Warren St",
+        "city": "Thermopolis",
+        "state": "WY",
+        "zip": "82443",
+        "phone": "(307) 864-5454"
+      }
+    ],
+    "notes": "Single-location small operator, only locally owned in Hot Springs County WY. Serves Hot Springs, Fremont, Big Horn and Washakie Counties. Has website at tumbleweedpropane.com - original record as no-website may be incorrect."
+  },
+  {
+    "id": "red_flame_oil_propane",
+    "name": "Red Flame Oil & Propane",
+    "locations_found": [
+      {
+        "name": "Red Flame Oil & Propane",
+        "address": "403 Ripplemead Rd",
+        "city": "Ripplemead",
+        "state": "VA",
+        "zip": "24150",
+        "phone": ""
+      }
+    ],
+    "notes": "Single-location small operator. Located in VA (not WV as original hint suggested), though serves areas near WV border. Has website at redflame.co - original record incorrect on state and website status."
+  },
+  {
+    "id": "west_plains_propane",
+    "name": "West Plains Propane",
+    "locations_found": [
+      {
+        "name": "West Plains Propane - West Plains",
+        "address": "408 Lincoln",
+        "city": "West Plains",
+        "state": "MO",
+        "zip": "65775",
+        "phone": ""
+      },
+      {
+        "name": "West Plains Propane - Gainesville",
+        "address": "19237 US Highway 60",
+        "city": "Gainesville",
+        "state": "MO",
+        "zip": "65655",
+        "phone": ""
+      }
+    ],
+    "notes": "Located in Missouri, not Arkansas. 2 locations. Has website at westplainspropane.com - original record incorrect on state and website status."
+  },
+  {
+    "id": "south_fork_propane",
+    "name": "South Fork Propane",
+    "locations_found": [
+      {
+        "name": "South Fork Propane",
+        "address": "26046 West US Highway 160",
+        "city": "South Fork",
+        "state": "CO",
+        "zip": "81154",
+        "phone": "(719) 873-5857"
+      }
+    ],
+    "notes": "Single-location small operator in South Fork, CO. Has website at southforkpropane.com - original record incorrect on website status."
+  },
+  {
+    "id": "duncan_service_inc",
+    "name": "Duncan Service Inc",
+    "locations_found": [
+      {
+        "name": "Duncan Service Inc",
+        "address": "3354 Richey Rd",
+        "city": "Mount Pleasant",
+        "state": "PA",
+        "zip": "15666",
+        "phone": "(724) 628-1550"
+      }
+    ],
+    "notes": "Located in Pennsylvania, not West Virginia. Single location. Has website at duncanserviceincpa.com - original record incorrect on state and website status."
+  },
+  {
+    "id": "northwest_propane",
+    "name": "Northwest Propane",
+    "locations_found": [
+      {
+        "name": "Northwest Propane - Lynden (HQ)",
+        "address": "8450 Depot Rd",
+        "city": "Lynden",
+        "state": "WA",
+        "zip": "98264",
+        "phone": "(360) 354-4471"
+      },
+      {
+        "name": "Northwest Propane - Mount Vernon",
+        "address": "420 Suzanne Ln",
+        "city": "Mount Vernon",
+        "state": "WA",
+        "zip": "98273",
+        "phone": "(360) 424-4471"
+      },
+      {
+        "name": "Northwest Propane - Ferndale",
+        "address": "5494 Barrett Rd",
+        "city": "Ferndale",
+        "state": "WA",
+        "zip": "98248",
+        "phone": "(360) 354-4471"
+      }
+    ],
+    "notes": "Multi-location operator (3 branches) serving Whatcom, Skagit, Snohomish, and Island Counties since 1947. Has website at nwpropane.net - original record incorrect on both nlocs (3 not 1) and website status."
+  },
+  {
+    "id": "swva_gas_service",
+    "name": "SWVA Gas Service",
+    "locations_found": [
+      {
+        "name": "SWVA Gas Service",
+        "address": "111 Harrison Street",
+        "city": "Radford",
+        "state": "VA",
+        "zip": "24141",
+        "phone": "(540) 639-1611"
+      }
+    ],
+    "notes": "Single-location SW Virginia operator. Now reportedly operating under name Blumont Energy. Has website at swvagasservice.com - original record incorrect on website status."
+  },
+  {
+    "id": "queen_city_gas",
+    "name": "Queen City Gas",
+    "locations_found": [],
+    "notes": "Could not confirm Arkansas-based Queen City Gas. Known 'Queen City Gas' is located in Ozark, MO at 200 East South Street, Ozark, MO 65721, phone (417) 485-4300 - not Arkansas. Original state hint likely incorrect; may be MO operator or defunct AR entity."
+  },
+  {
+    "id": "ape_fuels_inc",
+    "name": "APE Fuels Inc",
+    "locations_found": [
+      {
+        "name": "APE Fuels Inc",
+        "address": "4250 N Sullinger Ave Ste 101",
+        "city": "Tucson",
+        "state": "AZ",
+        "zip": "85705",
+        "phone": "(520) 887-6061"
+      }
+    ],
+    "notes": "Single-location family-owned operator since 2001. Has website at apefuels.com - original record incorrect on website status."
+  },
+  {
+    "id": "l_l_propane",
+    "name": "L & L Propane",
+    "locations_found": [
+      {
+        "name": "L & L Propane",
+        "address": "N903 State Road 22",
+        "city": "Waupaca",
+        "state": "WI",
+        "zip": "54981",
+        "phone": "(800) 924-5975"
+      }
+    ],
+    "notes": "Single-location small operator since 1988. Has website at landlpropane.com - original record incorrect on website status."
+  },
+  {
+    "id": "brummer_co",
+    "name": "Brummer Co",
+    "locations_found": [
+      {
+        "name": "Brummer Company",
+        "address": "PO Box 67",
+        "city": "La Pointe",
+        "state": "WI",
+        "zip": "54850",
+        "phone": "(715) 747-3131"
+      }
+    ],
+    "notes": "Single-location small operator on Madeline Island (La Pointe, WI). Only a PO Box found - no confirmed street address. No website confirmed."
+  },
+  {
+    "id": "samco",
+    "name": "Samco",
+    "locations_found": [],
+    "notes": "Could not find any propane/butane operator named 'Samco' in Arizona. Named entities found were Samco FM (HVAC) and Samco Enterprises (compressor parts) - neither are propane suppliers. Likely defunct, acquired, or name is incorrect/incomplete."
+  }
+]

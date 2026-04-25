@@ -1,0 +1,207 @@
+{
+  "source": "https://wabashvalleyfs.com/",
+  "scraped": "2026-04-11",
+  "member_id": "wabashvalleyfs",
+  "locations": [
+    {
+      "name": "Russellville",
+      "street": "18041 Sugar Creek Road",
+      "city": "Flat Rock",
+      "state": "IL",
+      "zip": "62427",
+      "phone": "(618) 928-2157",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Oblong",
+      "street": "10154 N 450th Ave",
+      "city": "Oblong",
+      "state": "IL",
+      "zip": "62449",
+      "phone": "(618) 592-4413",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Allendale",
+      "street": "21546 Highway 1",
+      "city": "Allendale",
+      "state": "IL",
+      "zip": "62410",
+      "phone": "(618) 299-4131",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Sumner",
+      "street": "11240 Chauncey Rd",
+      "city": "Sumner",
+      "state": "IL",
+      "zip": "62466",
+      "phone": "(618) 936-2774",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Yale",
+      "street": "214 S. Range Street",
+      "city": "Yale",
+      "state": "IL",
+      "zip": "62481",
+      "phone": "(618) 793-2045",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Hidalgo",
+      "street": "21214 N. St. Hwy 130",
+      "city": "Hidalgo",
+      "state": "IL",
+      "zip": "62432",
+      "phone": "(618) 793-2355",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "West Liberty",
+      "street": "403 W Main St",
+      "city": "West Liberty",
+      "state": "IL",
+      "zip": "62475",
+      "phone": "(618) 754-3511",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Newton",
+      "street": "1305 Fairground Ave",
+      "city": "Newton",
+      "state": "IL",
+      "zip": "62448",
+      "phone": "(618) 783-2342",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Olney",
+      "street": "1201 South Whittle Ave",
+      "city": "Olney",
+      "state": "IL",
+      "zip": "62450",
+      "phone": "(618) 393-2971",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Poseyville",
+      "street": "217 S St Francis St",
+      "city": "Poseyville",
+      "state": "IN",
+      "zip": "47633",
+      "phone": "(812) 874-2716",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Browns",
+      "street": "917 IL Rte 15",
+      "city": "Browns",
+      "state": "IL",
+      "zip": "62818",
+      "phone": "(618) 446-5152",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "New Harmony",
+      "street": "1499 State Road 66",
+      "city": "New Harmony",
+      "state": "IN",
+      "zip": "47631",
+      "phone": "(618) 375-2311",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Grayville Office",
+      "street": "909 N. Court Street",
+      "city": "Grayville",
+      "state": "IL",
+      "zip": "62844",
+      "phone": "(618) 375-2311",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Noble",
+      "street": "220 West South Ave",
+      "city": "Noble",
+      "state": "IL",
+      "zip": "62868",
+      "phone": "(618) 732-2143",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Carmi",
+      "street": "1562 IL Highway 1",
+      "city": "Carmi",
+      "state": "IL",
+      "zip": "62821",
+      "phone": "(618) 384-5721",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Cisne",
+      "street": "1724 Hwy 45 South",
+      "city": "Cisne",
+      "state": "IL",
+      "zip": "62823",
+      "phone": "(618) 673-2167",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Fairfield",
+      "street": "607 SE 4th St",
+      "city": "Fairfield",
+      "state": "IL",
+      "zip": "62837",
+      "phone": "(618) 842-5631",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "New Haven",
+      "street": "1120 IL Hwy 141",
+      "city": "New Haven",
+      "state": "IL",
+      "zip": "62867",
+      "phone": "(618) 272-3551",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Ridgway",
+      "street": "207 E Sycamore",
+      "city": "Ridgway",
+      "state": "IL",
+      "zip": "62979",
+      "phone": "(618) 272-3551",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "McLeansboro",
+      "street": "10931 Coal Mine Rd",
+      "city": "McLeansboro",
+      "state": "IL",
+      "zip": "62859",
+      "phone": "(618) 643-3819",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

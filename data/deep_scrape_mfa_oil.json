@@ -1,0 +1,447 @@
+{
+  "id": "mfa_oil",
+  "name": "MFA Oil",
+  "locations_found": [
+    {
+      "name": "MFA Oil - Lenox, IA",
+      "street": "901 S. Brooks St.",
+      "city": "Lenox",
+      "state": "IA",
+      "zip": "50851",
+      "phone": "641-333-4460"
+    },
+    {
+      "name": "MFA Oil - Sullivan, MO",
+      "street": "951 E Springfield Rd",
+      "city": "Sullivan",
+      "state": "MO",
+      "zip": "63080",
+      "phone": "573-468-8311"
+    },
+    {
+      "name": "MFA Oil - Stroud, OK",
+      "street": "308 S. 8th Ave.",
+      "city": "Stroud",
+      "state": "OK",
+      "zip": "74079",
+      "phone": "918-968-2134"
+    },
+    {
+      "name": "MFA Oil - Paragould, AR",
+      "street": "400 Dennington St.",
+      "city": "Paragould",
+      "state": "AR",
+      "zip": "72450",
+      "phone": "870-239-8511"
+    },
+    {
+      "name": "MFA Oil - Murfreesboro, TN",
+      "street": "10970 Franklin Rd",
+      "city": "Murfreesboro",
+      "state": "TN",
+      "zip": "37128",
+      "phone": "615-890-8425"
+    },
+    {
+      "name": "MFA Oil - Mountain Home, AR",
+      "street": "3514 Hwy 5 North",
+      "city": "Mountain Home",
+      "state": "AR",
+      "zip": "72653",
+      "phone": "870-425-2737"
+    },
+    {
+      "name": "MFA Oil - Cadet, MO",
+      "street": "10018 Settle Mill Rd.",
+      "city": "Cadet",
+      "state": "MO",
+      "zip": "63630",
+      "phone": "573-438-3762"
+    },
+    {
+      "name": "MFA Oil - Pevely, MO",
+      "street": "8647 Commercial Blvd",
+      "city": "Pevely",
+      "state": "MO",
+      "zip": "63070",
+      "phone": "636-475-9450"
+    },
+    {
+      "name": "MFA Oil - Eldon, MO",
+      "street": "704 Industrial Dr.",
+      "city": "Eldon",
+      "state": "MO",
+      "zip": "65026",
+      "phone": "573-392-4231"
+    },
+    {
+      "name": "MFA Oil - Skiatook, OK",
+      "street": "4625 W C Rogers Blvd",
+      "city": "Skiatook",
+      "state": "OK",
+      "zip": "74070",
+      "phone": "918-396-4010"
+    },
+    {
+      "name": "MFA Oil - Sulphur, IN",
+      "street": "56 Hwy 62 East",
+      "city": "Sulphur",
+      "state": "IN",
+      "zip": "47174",
+      "phone": "812-739-4396"
+    },
+    {
+      "name": "MFA Oil - Troy, MO",
+      "street": "182 Thornhill Cemetery Rd",
+      "city": "Troy",
+      "state": "MO",
+      "zip": "63379",
+      "phone": "636-462-2427"
+    },
+    {
+      "name": "MFA Oil - Stockton, MO",
+      "street": "14025 E. Hwy 32",
+      "city": "Stockton",
+      "state": "MO",
+      "zip": "65785",
+      "phone": "417-276-3375"
+    },
+    {
+      "name": "MFA Oil - Pryor, OK",
+      "street": "4800 NE 1st St.",
+      "city": "Pryor",
+      "state": "OK",
+      "zip": "74361",
+      "phone": "918-782-2082"
+    },
+    {
+      "name": "MFA Oil - Nabb, IN",
+      "street": "8315 Carrol Rd.",
+      "city": "Nabb",
+      "state": "IN",
+      "zip": "47147",
+      "phone": "812-293-2337"
+    },
+    {
+      "name": "MFA Oil - Ottumwa, IA",
+      "street": "502 N. Forrest Ave.",
+      "city": "Ottumwa",
+      "state": "IA",
+      "zip": "52501",
+      "phone": "641-682-7531"
+    },
+    {
+      "name": "MFA Oil - Milan, MO",
+      "street": "601 N. Pearl St.",
+      "city": "Milan",
+      "state": "MO",
+      "zip": "63556",
+      "phone": "(660) 265-3822"
+    },
+    {
+      "name": "MFA Oil - Central City, KY",
+      "street": "821 N. 2nd St.",
+      "city": "Central City",
+      "state": "KY",
+      "zip": "42330",
+      "phone": "(270) 754-2575"
+    },
+    {
+      "name": "MFA Oil - La Plata, MO",
+      "street": "710 E. Clark St.",
+      "city": "La Plata",
+      "state": "MO",
+      "zip": "63549",
+      "phone": "660-332-4403"
+    },
+    {
+      "name": "MFA Oil - West Plains, MO",
+      "street": "1705 Porter Wagoner Blvd.",
+      "city": "West Plains",
+      "state": "MO",
+      "zip": "65775",
+      "phone": "417-256-2202"
+    },
+    {
+      "name": "MFA Oil - Hermann, MO",
+      "street": "1896 Hwy 100",
+      "city": "Hermann",
+      "state": "MO",
+      "zip": "65041",
+      "phone": "573-486-2862"
+    },
+    {
+      "name": "MFA Oil - St. Joseph, MO",
+      "street": "10331 SW Bluff Rd.",
+      "city": "St. Joseph",
+      "state": "MO",
+      "zip": "64504",
+      "phone": "816-238-0555"
+    },
+    {
+      "name": "MFA Oil - Stanberry, MO",
+      "street": "4506 U.S Highway 169",
+      "city": "Stanberry",
+      "state": "MO",
+      "zip": "64489",
+      "phone": "660-783-2023"
+    },
+    {
+      "name": "MFA Oil - Palmyra, MO",
+      "street": "4571 Business 61",
+      "city": "Palmyra",
+      "state": "MO",
+      "zip": "63461",
+      "phone": "573-769-4225"
+    },
+    {
+      "name": "MFA Oil - Nevada, MO",
+      "street": "17424 E. 54 Hwy",
+      "city": "Nevada",
+      "state": "MO",
+      "zip": "64772",
+      "phone": "417-667-3753"
+    },
+    {
+      "name": "MFA Oil - Mansfield, MO",
+      "street": "2545 Hwy 5",
+      "city": "Mansfield",
+      "state": "MO",
+      "zip": "65704",
+      "phone": "417-924-3314"
+    },
+    {
+      "name": "MFA Oil - Warrensburg, MO",
+      "street": "128 NW Hwy 50",
+      "city": "Warrensburg",
+      "state": "MO",
+      "zip": "64093",
+      "phone": "660-747-8895"
+    },
+    {
+      "name": "MFA Oil - Jackson, MO",
+      "street": "1606 Lee Ave.",
+      "city": "Jackson",
+      "state": "MO",
+      "zip": "63755",
+      "phone": "573-243-2414"
+    },
+    {
+      "name": "MFA Oil - Trenton, MO",
+      "street": "36 NE 20th St.",
+      "city": "Trenton",
+      "state": "MO",
+      "zip": "64683",
+      "phone": "660-359-6769"
+    },
+    {
+      "name": "MFA Oil - Garnett, KS",
+      "street": "704 N. Maple St.",
+      "city": "Garnett",
+      "state": "KS",
+      "zip": "66032",
+      "phone": "785-448-5512"
+    },
+    {
+      "name": "MFA Oil - Braymer, MO",
+      "street": "101 N. Richey Ave.",
+      "city": "Braymer",
+      "state": "MO",
+      "zip": "64624",
+      "phone": "660-645-2291"
+    },
+    {
+      "name": "MFA Oil - Steele, MO",
+      "street": "1557 Hwy 61",
+      "city": "Steele",
+      "state": "MO",
+      "zip": "63877",
+      "phone": ""
+    },
+    {
+      "name": "MFA Oil - Humeston, IA",
+      "street": "1009 N. Front St.",
+      "city": "Humeston",
+      "state": "IA",
+      "zip": "50123",
+      "phone": "641-877-4000"
+    },
+    {
+      "name": "MFA Oil - Lockwood, MO",
+      "street": "401 Main Street",
+      "city": "Lockwood",
+      "state": "MO",
+      "zip": "65682",
+      "phone": "417-232-4520"
+    },
+    {
+      "name": "MFA Oil - Sheridan, MO",
+      "street": "11235 Hwy 246 East",
+      "city": "Sheridan",
+      "state": "MO",
+      "zip": "64486",
+      "phone": "660-799-3645"
+    },
+    {
+      "name": "MFA Oil - Salisbury, MO",
+      "street": "29495 Hwy 129",
+      "city": "Salisbury",
+      "state": "MO",
+      "zip": "65281",
+      "phone": "660-388-6666"
+    },
+    {
+      "name": "MFA Oil - Rogersville, MO",
+      "street": "7007 E. Hwy 60",
+      "city": "Rogersville",
+      "state": "MO",
+      "zip": "65742",
+      "phone": "417-753-9055"
+    },
+    {
+      "name": "MFA Oil - Pilot Grove, MO",
+      "street": "13091 Hwy 135",
+      "city": "Pilot Grove",
+      "state": "MO",
+      "zip": "65276",
+      "phone": "(660) 834-6322"
+    },
+    {
+      "name": "MFA Oil - Stilwell, OK",
+      "street": "470929 E 810 Rd",
+      "city": "Stilwell",
+      "state": "OK",
+      "zip": "74960",
+      "phone": "(918) 696-4634"
+    },
+    {
+      "name": "MFA Oil - Deering, MO",
+      "street": "6253 Hwy J",
+      "city": "Deering",
+      "state": "MO",
+      "zip": "63840",
+      "phone": "573-757-6621"
+    },
+    {
+      "name": "MFA Oil - Grove, OK",
+      "street": "63216 E. 290 Rd.",
+      "city": "Grove",
+      "state": "OK",
+      "zip": "74344",
+      "phone": "918-786-2467"
+    },
+    {
+      "name": "MFA Oil - Piedmont, MO",
+      "street": "319 S. 2nd St.",
+      "city": "Piedmont",
+      "state": "MO",
+      "zip": "63957",
+      "phone": "573-223-2960"
+    },
+    {
+      "name": "MFA Oil - Lincolnville, KS",
+      "street": "205 Lincolnville Ave.",
+      "city": "Lincolnville",
+      "state": "KS",
+      "zip": "66858",
+      "phone": "(620) 924-5031"
+    },
+    {
+      "name": "MFA Oil - Chanute, KS",
+      "street": "4877 S. Santa Fe Ave.",
+      "city": "Chanute",
+      "state": "KS",
+      "zip": "66720",
+      "phone": "(620) 431-3777"
+    },
+    {
+      "name": "MFA Oil - Shelbina, MO",
+      "street": "701 N. Center St.",
+      "city": "Shelbina",
+      "state": "MO",
+      "zip": "63468",
+      "phone": ""
+    },
+    {
+      "name": "MFA Oil - West Helena, AR",
+      "street": "5301 Highway 49",
+      "city": "West Helena",
+      "state": "AR",
+      "zip": "72390",
+      "phone": "870-572-2191"
+    },
+    {
+      "name": "MFA Oil - Pocahontas, AR",
+      "street": "109 E. Broadway St.",
+      "city": "Pocahontas",
+      "state": "AR",
+      "zip": "72455",
+      "phone": "(870) 892-5273"
+    },
+    {
+      "name": "MFA Oil - Brunswick, MO",
+      "street": "28346 Hwy 11",
+      "city": "Brunswick",
+      "state": "MO",
+      "zip": "65236",
+      "phone": "660-548-3516"
+    },
+    {
+      "name": "MFA Oil - Peculiar, MO",
+      "street": "21524 N. Main St.",
+      "city": "Peculiar",
+      "state": "MO",
+      "zip": "64078",
+      "phone": "816-779-3400"
+    },
+    {
+      "name": "MFA Oil - Mammoth Spring, AR",
+      "street": "187 US Hwy 63 South",
+      "city": "Mammoth Spring",
+      "state": "AR",
+      "zip": "72554",
+      "phone": "(870) 625-7227"
+    },
+    {
+      "name": "MFA Oil - Emporia, KS",
+      "street": "2608 US Hwy 50",
+      "city": "Emporia",
+      "state": "KS",
+      "zip": "66801",
+      "phone": "620-342-2835"
+    },
+    {
+      "name": "MFA Oil - Macon, MO",
+      "street": "1805 N. Missouri St.",
+      "city": "Macon",
+      "state": "MO",
+      "zip": "63552",
+      "phone": "660-385-3216"
+    },
+    {
+      "name": "MFA Oil - Carrollton, MO",
+      "street": "900 S. Main St.",
+      "city": "Carrollton",
+      "state": "MO",
+      "zip": "64633",
+      "phone": "660-542-1235"
+    },
+    {
+      "name": "MFA Oil - Berryville, AR",
+      "street": "1005 S. Main St.",
+      "city": "Berryville",
+      "state": "AR",
+      "zip": "72616",
+      "phone": "(870) 423-3377"
+    },
+    {
+      "name": "MFA Oil - Moberly, MO",
+      "street": "1352 Hwy 24 East",
+      "city": "Moberly",
+      "state": "MO",
+      "zip": "65270",
+      "phone": "660-263-6328"
+    }
+  ],
+  "notes": "Recovered from hung agent log file (agent died before writing output). Source: www.mfaoil.com/store/{slug}/"
+}

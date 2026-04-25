@@ -1,0 +1,966 @@
+{
+  "batch": "northeast",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Buell Fuels",
+      "hqCity": "Cazenovia",
+      "hqState": "NY",
+      "website": "https://buellfuel.com",
+      "ownership": "family",
+      "notes": "Family-owned since 1985, operates Buell Fuels and Center State Propane with 7 offices across Central NY.",
+      "knownLocations": [
+        {
+          "city": "Cazenovia",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "NORCO Propane",
+      "hqCity": "Rochester",
+      "hqState": "NY",
+      "website": "https://norcopropane.com",
+      "ownership": "family",
+      "notes": "Family-owned regional propane supplier founded 1945, serving Western NY.",
+      "knownLocations": [
+        {
+          "city": "Rochester",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "TPS Fuel",
+      "hqCity": "Olean",
+      "hqState": "NY",
+      "website": "https://tpsfuel.com",
+      "ownership": "family",
+      "notes": "Propane, fuel and HVAC provider serving Olean to Clarence in the WNY region.",
+      "knownLocations": [
+        {
+          "city": "Olean",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Hometowne Energy",
+      "hqCity": "Geneva",
+      "hqState": "NY",
+      "website": "https://hometowneenergy.com",
+      "ownership": "family",
+      "notes": "Finger Lakes and Western NY fuel provider since the 1940s, propane and heating oil delivery.",
+      "knownLocations": [
+        {
+          "city": "Geneva",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Durkin Propane",
+      "hqCity": "Elmsford",
+      "hqState": "NY",
+      "website": "https://durkinpropane.com",
+      "ownership": "family",
+      "notes": "Family-owned propane and water service provider in the Lower Hudson Valley since 1926.",
+      "knownLocations": [
+        {
+          "city": "Elmsford",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Platinum Energy Services",
+      "hqCity": "Walden",
+      "hqState": "NY",
+      "website": "https://platinumenergyservices.com",
+      "ownership": "family",
+      "notes": "Family-owned oil, propane and HVAC provider serving Orange, Sullivan, Ulster counties.",
+      "knownLocations": [
+        {
+          "city": "Walden",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Henderson Oil & Propane",
+      "hqCity": "Catskill",
+      "hqState": "NY",
+      "website": "https://hendersonoilpropane.com",
+      "ownership": "family",
+      "notes": "Fifth-generation family-owned oil and propane delivery since 1896 in the Catskills.",
+      "knownLocations": [
+        {
+          "city": "Catskill",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Bottini Fuel",
+      "hqCity": "Wappingers Falls",
+      "hqState": "NY",
+      "website": "https://bottinifuel.com",
+      "ownership": "family",
+      "notes": "Largest heating oil and propane delivery provider in the Hudson Valley and Catskills.",
+      "knownLocations": [
+        {
+          "city": "Wappingers Falls",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Star Gas Products",
+      "hqCity": "Long Island City",
+      "hqState": "NY",
+      "website": "https://stargasproducts.com",
+      "ownership": "private",
+      "notes": "Hudson Valley NY propane gas distributor for home delivery and service.",
+      "knownLocations": [
+        {
+          "city": "Long Island City",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Propane Guys",
+      "hqCity": "Holbrook",
+      "hqState": "NY",
+      "website": "https://propaneguysny.com",
+      "ownership": "family",
+      "notes": "Family-owned propane and BBQ supplier since 2010, Suffolk, Nassau and NYC boroughs.",
+      "knownLocations": [
+        {
+          "city": "Holbrook",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Atlantic Bottle Gas",
+      "hqCity": "Farmingdale",
+      "hqState": "NY",
+      "website": "https://atlanticbottlegas.com",
+      "ownership": "family",
+      "notes": "Family-owned since 1956, full-service propane facility in Nassau County.",
+      "knownLocations": [
+        {
+          "city": "Farmingdale",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Peconic Propane",
+      "hqCity": "Southold",
+      "hqState": "NY",
+      "website": "https://peconicpropane.com",
+      "ownership": "family",
+      "notes": "Long Island North and South Forks propane delivery and installation since 1995.",
+      "knownLocations": [
+        {
+          "city": "Southold",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "E & V Energy",
+      "hqCity": "Cortland",
+      "hqState": "NY",
+      "website": "https://eandvenergy.com",
+      "ownership": "family",
+      "notes": "Finger Lakes, Central and Northern NY fuel delivery for homes, businesses and farms.",
+      "knownLocations": [
+        {
+          "city": "Cortland",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Finger Lakes Propane",
+      "hqCity": "Dundee",
+      "hqState": "NY",
+      "website": "https://fingerlakespropane.net",
+      "ownership": "private",
+      "notes": "Regional propane dealer based on Route 14 in Dundee, serving Finger Lakes area.",
+      "knownLocations": [
+        {
+          "city": "Dundee",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Adirondack Energy Products",
+      "hqCity": "Tupper Lake",
+      "hqState": "NY",
+      "website": "https://adirondackenergy.com",
+      "ownership": "family",
+      "notes": "Serving North Country NY since 1988 with propane and fuel delivery in Franklin, Clinton and St. Lawrence counties.",
+      "knownLocations": [
+        {
+          "city": "Tupper Lake",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Mountain Petroleum",
+      "hqCity": "Old Forge",
+      "hqState": "NY",
+      "website": "https://mountainpetroleum.com",
+      "ownership": "family",
+      "notes": "Adirondack heating fuel and propane delivery provider.",
+      "knownLocations": [
+        {
+          "city": "Old Forge",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Broedel Fuel Group",
+      "hqCity": "Buffalo",
+      "hqState": "NY",
+      "website": "https://broedelfuelgroup.com",
+      "ownership": "family",
+      "notes": "Full-service fuel group serving Western NY including propane delivery.",
+      "knownLocations": [
+        {
+          "city": "Buffalo",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Earlville Buyers Group",
+      "hqCity": "Earlville",
+      "hqState": "NY",
+      "website": "https://earlvillebuyersgrp.com",
+      "ownership": "coop",
+      "notes": "Propane delivery cooperative serving Broome, Madison, Oneida, Chenango and adjoining counties.",
+      "knownLocations": [
+        {
+          "city": "Earlville",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Blueox On Demand",
+      "hqCity": "Cortland",
+      "hqState": "NY",
+      "website": "https://blueoxondemand.com",
+      "ownership": "private",
+      "notes": "Fuel and propane delivery serving Central NY and the Southern Tier.",
+      "knownLocations": [
+        {
+          "city": "Cortland",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Combined Energy Services",
+      "hqCity": "Monticello",
+      "hqState": "NY",
+      "website": "https://combinedenergyservices.com",
+      "ownership": "family",
+      "notes": "Propane provider serving Sussex County NJ and lower NY; multi-state Northeast operator.",
+      "knownLocations": [
+        {
+          "city": "Monticello",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Advantage Propane",
+      "hqCity": "Califon",
+      "hqState": "NJ",
+      "website": null,
+      "ownership": "family",
+      "notes": "Locally owned propane dealer serving the Flemington NJ region and Bucks County PA.",
+      "knownLocations": [
+        {
+          "city": "Califon",
+          "state": "NJ",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Steenland's Gas Service",
+      "hqCity": "Cape May",
+      "hqState": "NJ",
+      "website": "https://steenlandsgas.com",
+      "ownership": "family",
+      "notes": "Family-owned since 1961, propane delivery in Cape May, Cumberland and Atlantic counties.",
+      "knownLocations": [
+        {
+          "city": "Cape May",
+          "state": "NJ",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Leahy's Fuels",
+      "hqCity": "Danbury",
+      "hqState": "CT",
+      "website": "https://leahys.com",
+      "ownership": "family",
+      "notes": "Century-old family-owned fuel oil, propane and HVAC company serving Western Connecticut.",
+      "knownLocations": [
+        {
+          "city": "Danbury",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Jennings Oil & Propane",
+      "hqCity": "Danbury",
+      "hqState": "CT",
+      "website": null,
+      "ownership": "family",
+      "notes": "Family-run 40+ year propane and oil provider serving CT and Westchester County NY.",
+      "knownLocations": [
+        {
+          "city": "Danbury",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Baribault Fuel",
+      "hqCity": "Middlebury",
+      "hqState": "CT",
+      "website": "https://baribaultfuel.com",
+      "ownership": "family",
+      "notes": "Fourth-generation family-owned propane and oil dealer in southern Litchfield and northern New Haven counties.",
+      "knownLocations": [
+        {
+          "city": "Middlebury",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Spicer Propane",
+      "hqCity": "Ledyard",
+      "hqState": "CT",
+      "website": "https://spiceradvanced.com",
+      "ownership": "family",
+      "notes": "Propane delivery and HVAC in Eastern CT and RI.",
+      "knownLocations": [
+        {
+          "city": "Ledyard",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Uncas Gas",
+      "hqCity": "Norwich",
+      "hqState": "CT",
+      "website": "https://uncasgas.com",
+      "ownership": "family",
+      "notes": "Propane delivery serving eastern CT and parts of MA including Willimantic, Putnam and Norwich.",
+      "knownLocations": [
+        {
+          "city": "Norwich",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Mitchell Fuel",
+      "hqCity": "Wethersfield",
+      "hqState": "CT",
+      "website": "https://nemitchell.com",
+      "ownership": "family",
+      "notes": "Residential and commercial propane, heating oil and HVAC provider in CT.",
+      "knownLocations": [
+        {
+          "city": "Wethersfield",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Fraticelli Oil & Propane",
+      "hqCity": "Worcester",
+      "hqState": "MA",
+      "website": "https://fraticellioilco.com",
+      "ownership": "family",
+      "notes": "Propane services in Central Massachusetts and Southern New England.",
+      "knownLocations": [
+        {
+          "city": "Worcester",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Propane Plus Heating & Cooling",
+      "hqCity": "Rehoboth",
+      "hqState": "MA",
+      "website": "https://propaneplus.com",
+      "ownership": "family",
+      "notes": "New England propane services and HVAC, serving MA and RI.",
+      "knownLocations": [
+        {
+          "city": "Rehoboth",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Lipton Energy",
+      "hqCity": "Pittsfield",
+      "hqState": "MA",
+      "website": "https://liptonenergy.com",
+      "ownership": "family",
+      "notes": "Independent, family-owned Berkshire County heating oil and propane provider with about 100 employees.",
+      "knownLocations": [
+        {
+          "city": "Pittsfield",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Pioneer Valley Oil & Propane",
+      "hqCity": "Agawam",
+      "hqState": "MA",
+      "website": "https://pioneervalleyoil.com",
+      "ownership": "family",
+      "notes": "Family-owned heating oil and propane dealer in the Pioneer Valley (Springfield area).",
+      "knownLocations": [
+        {
+          "city": "Agawam",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Scott Energy",
+      "hqCity": "Gloucester",
+      "hqState": "MA",
+      "website": "https://scottenergyco.com",
+      "ownership": "family",
+      "notes": "Cape Ann and North Shore propane, heating oil and diesel provider for 75+ years.",
+      "knownLocations": [
+        {
+          "city": "Gloucester",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Tasha Fuels and Propane",
+      "hqCity": "South Yarmouth",
+      "hqState": "MA",
+      "website": "https://tashafuelsandpropane.com",
+      "ownership": "family",
+      "notes": "Family-owned Cape Cod propane and fuel company founded 1994.",
+      "knownLocations": [
+        {
+          "city": "South Yarmouth",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Island Propane",
+      "hqCity": "Vineyard Haven",
+      "hqState": "MA",
+      "website": null,
+      "ownership": "family",
+      "notes": "Martha's Vineyard propane delivery company.",
+      "knownLocations": [
+        {
+          "city": "Vineyard Haven",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Star Propane",
+      "hqCity": "Edgartown",
+      "hqState": "MA",
+      "website": "https://starpropanemv.com",
+      "ownership": "family",
+      "notes": "Martha's Vineyard family-run propane delivery for 50+ years.",
+      "knownLocations": [
+        {
+          "city": "Edgartown",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Nantucket Energy",
+      "hqCity": "Nantucket",
+      "hqState": "MA",
+      "website": "https://nantucketenergy.com",
+      "ownership": "family",
+      "notes": "Family-owned Nantucket propane delivery since 2008.",
+      "knownLocations": [
+        {
+          "city": "Nantucket",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Supreme Energy",
+      "hqCity": "East Providence",
+      "hqState": "RI",
+      "website": "https://supremeenergy.com",
+      "ownership": "family",
+      "notes": "Family-owned 75+ years, heating oil and propane serving Norfolk, Suffolk, Plymouth MA and RI.",
+      "knownLocations": [
+        {
+          "city": "East Providence",
+          "state": "RI",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "No Frills Oil",
+      "hqCity": "Eastbrook",
+      "hqState": "ME",
+      "website": "https://nofrillsoil.com",
+      "ownership": "family",
+      "notes": "Downeast Maine fuel provider; propane and heating oil delivery.",
+      "knownLocations": [
+        {
+          "city": "Eastbrook",
+          "state": "ME",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Hometown Fuel",
+      "hqCity": "Eastbrook",
+      "hqState": "ME",
+      "website": "https://hometownfuelme.com",
+      "ownership": "family",
+      "notes": "Downeast coastal Maine propane, heating oil, kerosene and diesel delivery.",
+      "knownLocations": [
+        {
+          "city": "Eastbrook",
+          "state": "ME",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Crowley Energy",
+      "hqCity": "Winthrop",
+      "hqState": "ME",
+      "website": null,
+      "ownership": "family",
+      "notes": "Propane delivery across Central and Southern Maine including Augusta, Auburn, Portland area.",
+      "knownLocations": [
+        {
+          "city": "Winthrop",
+          "state": "ME",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Augusta Fuel Company",
+      "hqCity": "Augusta",
+      "hqState": "ME",
+      "website": "https://augustafuel.com",
+      "ownership": "family",
+      "notes": "Central Maine propane provider serving Augusta, Winslow, Clinton, Manchester and Belgrade.",
+      "knownLocations": [
+        {
+          "city": "Augusta",
+          "state": "ME",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Orion Propane Services",
+      "hqCity": "Searsport",
+      "hqState": "ME",
+      "website": "https://orionpropane.com",
+      "ownership": "private",
+      "notes": "Maine propane services provider.",
+      "knownLocations": [
+        {
+          "city": "Searsport",
+          "state": "ME",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "P.G. Willey & Co",
+      "hqCity": "Camden",
+      "hqState": "ME",
+      "website": "https://pgwilley.com",
+      "ownership": "family",
+      "notes": "Family-owned since 1948, home heating oil, bulk propane and diesel in Mid Coast Maine.",
+      "knownLocations": [
+        {
+          "city": "Camden",
+          "state": "ME",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "WFC Advantage",
+      "hqCity": "Waterville",
+      "hqState": "ME",
+      "website": "https://wfcadvantage.com",
+      "ownership": "family",
+      "notes": "Central Maine propane and heating oil services.",
+      "knownLocations": [
+        {
+          "city": "Waterville",
+          "state": "ME",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Prescott Oil",
+      "hqCity": "Concord",
+      "hqState": "NH",
+      "website": "https://prescottoil.com",
+      "ownership": "family",
+      "notes": "Heating oil and propane delivery for Concord NH and nearby areas.",
+      "knownLocations": [
+        {
+          "city": "Concord",
+          "state": "NH",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Jack F. Corse Inc",
+      "hqCity": "Whiting",
+      "hqState": "VT",
+      "website": "https://corsefuels.com",
+      "ownership": "family",
+      "notes": "Family-owned and operated since 1947, propane delivery in Northern Vermont.",
+      "knownLocations": [
+        {
+          "city": "Whiting",
+          "state": "VT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Haskins Gas",
+      "hqCity": "Wilmington",
+      "hqState": "VT",
+      "website": "http://haskinsgas.com",
+      "ownership": "family",
+      "notes": "Locally owned fuel delivery and heating services in Southern Vermont.",
+      "knownLocations": [
+        {
+          "city": "Wilmington",
+          "state": "VT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Energy Co-op of Vermont",
+      "hqCity": "South Burlington",
+      "hqState": "VT",
+      "website": "https://ecvt.net",
+      "ownership": "coop",
+      "notes": "Member-owned cooperative delivering heating oil and propane in Chittenden and surrounding counties.",
+      "knownLocations": [
+        {
+          "city": "South Burlington",
+          "state": "VT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Casey's Oil & Propane",
+      "hqCity": "Newport",
+      "hqState": "RI",
+      "website": "https://caseysoilpropane.com",
+      "ownership": "family",
+      "notes": "Family-owned Newport RI fuel, propane and lubricant provider since 1993.",
+      "knownLocations": [
+        {
+          "city": "Newport",
+          "state": "RI",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Santoro Oil",
+      "hqCity": "Providence",
+      "hqState": "RI",
+      "website": "https://santorooil.com",
+      "ownership": "family",
+      "notes": "Fuel delivery and HVAC services in RI and southeastern MA including propane.",
+      "knownLocations": [
+        {
+          "city": "Providence",
+          "state": "RI",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Blueox Energy",
+      "hqCity": "Oxford",
+      "hqState": "NY",
+      "website": "https://blueoxenergy.com",
+      "ownership": "family",
+      "notes": "Propane, heating oil and HVAC in Broome, Tioga, Chenango, Delaware, Otsego, Cortland and Madison counties.",
+      "knownLocations": [
+        {
+          "city": "Oxford",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Economy Heating",
+      "hqCity": "Binghamton",
+      "hqState": "NY",
+      "website": "https://economyheatingny.com",
+      "ownership": "family",
+      "notes": "Greater Binghamton NY home and business fuel oil and propane delivery.",
+      "knownLocations": [
+        {
+          "city": "Binghamton",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Cenco Heating Oil and Propane",
+      "hqCity": "Bound Brook",
+      "hqState": "NJ",
+      "website": "https://cencoheatingoil.com",
+      "ownership": "family",
+      "notes": "Home heating oil and propane delivery provider in central NJ.",
+      "knownLocations": [
+        {
+          "city": "Bound Brook",
+          "state": "NJ",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Bemer Petroleum",
+      "hqCity": "Glastonbury",
+      "hqState": "CT",
+      "website": "https://bemers.com",
+      "ownership": "family",
+      "notes": "Glastonbury CT distributor of propane, fuel oil and compressed gases.",
+      "knownLocations": [
+        {
+          "city": "Glastonbury",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "East River Energy",
+      "hqCity": "Guilford",
+      "hqState": "CT",
+      "website": "https://eastriverenergy.com",
+      "ownership": "family",
+      "notes": "Locally owned heating oil and propane provider serving CT since 1984.",
+      "knownLocations": [
+        {
+          "city": "Guilford",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Rural Fuels",
+      "hqCity": "Trumbull",
+      "hqState": "CT",
+      "website": "https://rural-fuels.com",
+      "ownership": "family",
+      "notes": "CT heating oil and propane provider with more than 75 years of service.",
+      "knownLocations": [
+        {
+          "city": "Trumbull",
+          "state": "CT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Jackman Fuels",
+      "hqCity": "Bristol",
+      "hqState": "VT",
+      "website": "https://jackmanfuels.com",
+      "ownership": "family",
+      "notes": "Family-owned since 1945, 4,000+ customers in Addison and Chittenden counties VT.",
+      "knownLocations": [
+        {
+          "city": "Bristol",
+          "state": "VT",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Drum Oil & Propane",
+      "hqCity": "Gasport",
+      "hqState": "NY",
+      "website": "https://drumoil.com",
+      "ownership": "family",
+      "notes": "Propane, heating oil and HVAC provider serving Wilson, East Amherst, Middleport and Western NY.",
+      "knownLocations": [
+        {
+          "city": "Gasport",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Scott Smith & Son",
+      "hqCity": "Owego",
+      "hqState": "NY",
+      "website": null,
+      "ownership": "family",
+      "notes": "In business since 1923, fuel and propane delivery plus HVAC for Tioga County NY.",
+      "knownLocations": [
+        {
+          "city": "Owego",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Warm Comfort",
+      "hqCity": "Syracuse",
+      "hqState": "NY",
+      "website": "https://warmcomfort.com",
+      "ownership": "family",
+      "notes": "Regional fuel and propane provider in Central NY.",
+      "knownLocations": [
+        {
+          "city": "Syracuse",
+          "state": "NY",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Frank Lamparelli Oil",
+      "hqCity": "Canton",
+      "hqState": "MA",
+      "website": "https://franklamparelli.com",
+      "ownership": "family",
+      "notes": "Bioheat heating oil, propane and HVAC provider for Canton and southeastern MA.",
+      "knownLocations": [
+        {
+          "city": "Canton",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Kerivan-Lane",
+      "hqCity": "Wellesley",
+      "hqState": "MA",
+      "website": "https://kerivanlane.com",
+      "ownership": "family",
+      "notes": "Propane, heating oil and HVAC provider for Wellesley, Newton, Needham and MetroWest MA.",
+      "knownLocations": [
+        {
+          "city": "Wellesley",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Peterson Oil",
+      "hqCity": "Worcester",
+      "hqState": "MA",
+      "website": "https://petersonoil.com",
+      "ownership": "family",
+      "notes": "Bioheat, bulk propane, diesel, gasoline and kerosene delivery in Central MA.",
+      "knownLocations": [
+        {
+          "city": "Worcester",
+          "state": "MA",
+          "street": null
+        }
+      ]
+    }
+  ]
+}

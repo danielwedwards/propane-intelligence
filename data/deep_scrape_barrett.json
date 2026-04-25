@@ -1,0 +1,10 @@
+{
+  "source": "EDP press releases (edplp.net); barrettpropane.com",
+  "scraped": "2026-04-11",
+  "company": "Barrett Propane",
+  "parent": "Energy Distribution Partners (EDP)",
+  "notes": "Brief referenced 'Barrett Fuel & Propane (NY)' but EDP's Barrett acquisition is Barrett Propane of Prescott, ARIZONA (~4,500 customers). No EDP-owned Barrett entity in NY was located. barrettfuelandpropane.com could not be reached.",
+  "locations": [
+    {"name": "Barrett Propane - Prescott", "city": "Prescott", "state": "AZ", "phone": null, "note": "EDP-acquired Barrett Propane; street address not extracted (site 403/blocked)."}
+  ]
+}

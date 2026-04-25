@@ -1,0 +1,3894 @@
+[
+  {
+    "id": "neal_oil",
+    "state": "CO",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "propane_lp_gas_at_sunoco_station",
+    "state": "CT",
+    "lat": 41.477,
+    "lng": -73.138,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ideal_bottle_gas",
+    "state": "CT",
+    "lat": null,
+    "lng": null,
+    "status": "reject_ocean"
+  },
+  {
+    "id": "mountain_top_propane",
+    "state": "GA",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "blue_flame",
+    "state": "DE",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "scully_propane",
+    "state": "DE",
+    "lat": null,
+    "lng": null,
+    "status": "reject_ocean"
+  },
+  {
+    "id": "nelson_propane",
+    "state": "IL",
+    "lat": 40.8333,
+    "lng": -88.4227,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "halter_gas_co",
+    "state": "IL",
+    "lat": 37.0869,
+    "lng": -89.6434,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "farm_home_lp",
+    "state": "IL",
+    "lat": 39.0552,
+    "lng": -90.1323,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "miami_gas",
+    "state": "FL",
+    "lat": 26.7133,
+    "lng": -80.4483,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "kyle_frericks_propane",
+    "state": "IA",
+    "lat": 42.816,
+    "lng": -95.9758,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "prairieland_fs_inc_taylor",
+    "state": "IA",
+    "lat": 40.2744,
+    "lng": -91.6613,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "sanborn_propane_and_oil_service_inc",
+    "state": "IA",
+    "lat": 43.1858,
+    "lng": -95.6589,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "sam_annis_co",
+    "state": "IA",
+    "lat": 42.5098,
+    "lng": -92.3802,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "consolidated_energy",
+    "state": "IA",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "star_energy_fs",
+    "state": "IA",
+    "lat": 43.2258,
+    "lng": -95.7221,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "river_valley_energy",
+    "state": "IA",
+    "lat": 42.2533,
+    "lng": -90.4221,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "t_j_gas_co",
+    "state": "IA",
+    "lat": 41.9591,
+    "lng": -91.5073,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cooperative_energy_co",
+    "state": "IA",
+    "lat": 42.2932,
+    "lng": -93.6355,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "a_1_propane_service_inc",
+    "state": "IA",
+    "lat": 41.6297,
+    "lng": -91.5722,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "valley_wide_country_store_wendell",
+    "state": "ID",
+    "lat": 42.7641,
+    "lng": -114.6997,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "bear_lake_propane",
+    "state": "ID",
+    "lat": 41.9497,
+    "lng": -111.3999,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "proflame_propane",
+    "state": "ID",
+    "lat": 42.7047,
+    "lng": -114.519,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "cangas_propane",
+    "state": "ID",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "the_co_op_gas_and_supply_co_inc_energy_department",
+    "state": "ID",
+    "lat": 46.1335,
+    "lng": -116.6957,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "homestead_supply_store",
+    "state": "ID",
+    "lat": 45.5544,
+    "lng": -115.7448,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_rexburg",
+    "state": "ID",
+    "lat": 43.8255,
+    "lng": -111.8168,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "alpine_propane_sales_inc",
+    "state": "ID",
+    "lat": 43.8263,
+    "lng": -111.8148,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "lin_gas_propane",
+    "state": "IN",
+    "lat": 38.293,
+    "lng": -87.3035,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "united_propane_gas_vienna_il",
+    "state": "IL",
+    "lat": 37.4167,
+    "lng": -88.8787,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tri_county_propane_llc",
+    "state": "IL",
+    "lat": 39.765,
+    "lng": -89.3014,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "synenergy_partners_llc",
+    "state": "IL",
+    "lat": 38.2692,
+    "lng": -88.5514,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "big_river_oil_co",
+    "state": "IL",
+    "lat": 39.6841,
+    "lng": -91.3975,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "mfa_oil_propane",
+    "state": "MO",
+    "lat": 38.5271,
+    "lng": -92.0171,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "mulgrew_oil_and_propane_co",
+    "state": "IA",
+    "lat": 42.1376,
+    "lng": -90.4391,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "yoder_oil_inc",
+    "state": "IL",
+    "lat": 40.7701,
+    "lng": -87.635,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "hicksgas_propane_sales_service",
+    "state": "IL",
+    "lat": 40.6397,
+    "lng": -88.8646,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "evergreen_fs",
+    "state": "IL",
+    "lat": 40.3879,
+    "lng": -88.8735,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "co_alliance_propane",
+    "state": "IN",
+    "lat": 39.4267,
+    "lng": -86.4399,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "franger_gas_company_inc",
+    "state": "IN",
+    "lat": 41.4719,
+    "lng": -85.9142,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "corrigan_oil_and_propane",
+    "state": "MI",
+    "lat": 42.6113,
+    "lng": -84.2832,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "indy_propane_llc",
+    "state": "IN",
+    "lat": 39.7609,
+    "lng": -86.6504,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ceres_solutions",
+    "state": "IN",
+    "lat": 40.1353,
+    "lng": -86.262,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "premier_energy_formerly_gaile_s_propane",
+    "state": "IN",
+    "lat": 38.8379,
+    "lng": -85.8525,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cleveland_petroleum_products",
+    "state": "KS",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "lykins_queen_city_propane",
+    "state": "OH",
+    "lat": 39.156,
+    "lng": -84.2536,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_propane_gas_murray_ky",
+    "state": "KY",
+    "lat": 36.6239,
+    "lng": -88.2652,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_propane_gas_mayfield_ky",
+    "state": "KY",
+    "lat": 36.8153,
+    "lng": -88.6572,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "premier_energy",
+    "state": "KY",
+    "lat": 38.1742,
+    "lng": -84.8275,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "w_h_riley_son",
+    "state": "MA",
+    "lat": 41.9444,
+    "lng": -71.2058,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ayer_goss",
+    "state": "NH",
+    "lat": 43.1804,
+    "lng": -71.8251,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "snow_s_fuel_company",
+    "state": "MA",
+    "lat": 41.7896,
+    "lng": -69.9926,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "valley_energy",
+    "state": "PA",
+    "lat": 41.8449,
+    "lng": -76.4708,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "mrohs_gas_inc",
+    "state": "MD",
+    "lat": 38.1017,
+    "lng": -75.6843,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "taylor_gas_heating_air",
+    "state": "MD",
+    "lat": 38.2559,
+    "lng": -76.4763,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "pepup",
+    "state": "MD",
+    "lat": 38.6901,
+    "lng": -76.0937,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "acadia_fuel",
+    "state": "ME",
+    "lat": 44.2881,
+    "lng": -68.3362,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "r_h_foster_energy_machias",
+    "state": "ME",
+    "lat": 44.7256,
+    "lng": -67.4417,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fick_sons_inc",
+    "state": "MI",
+    "lat": 44.4793,
+    "lng": -84.093,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "superior_fuel_company",
+    "state": "WI",
+    "lat": 46.2792,
+    "lng": -92.6217,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "rahn_s_oil_propane",
+    "state": "MN",
+    "lat": 45.6722,
+    "lng": -94.7941,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "farmers_union_oil_co",
+    "state": "MN",
+    "lat": 46.2754,
+    "lng": -95.0914,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "five_star_propane_co_op_oil",
+    "state": "IA",
+    "lat": 43.1824,
+    "lng": -92.879,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "red_lake_county_co_op",
+    "state": "MN",
+    "lat": 47.973,
+    "lng": -96.1386,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "palmer_gas_oil",
+    "state": "NH",
+    "lat": 42.8509,
+    "lng": -71.1983,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "irving_energy",
+    "state": "NH",
+    "lat": 43.3643,
+    "lng": -71.5224,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ciardelli_fuel_company",
+    "state": "NH",
+    "lat": 43.0051,
+    "lng": -71.9413,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "huckleberry_propane_oil",
+    "state": "NH",
+    "lat": 43.3131,
+    "lng": -71.6162,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "allied_fuels",
+    "state": "NH",
+    "lat": 43.1985,
+    "lng": -71.1594,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "foley_oil_propane",
+    "state": "NH",
+    "lat": 43.5139,
+    "lng": -71.4955,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "superior_energy_llc",
+    "state": "CT",
+    "lat": 41.7492,
+    "lng": -72.9334,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "standard_oil_of_connecticut",
+    "state": "CT",
+    "lat": 41.1858,
+    "lng": -73.1571,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "daniels_propane_llc",
+    "state": "CT",
+    "lat": 41.5858,
+    "lng": -72.5177,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "levco_oil_propane",
+    "state": "CT",
+    "lat": 41.2422,
+    "lng": -73.1463,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "sippin_energy_products",
+    "state": "CT",
+    "lat": 41.3099,
+    "lng": -73.2571,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "rahway_propane",
+    "state": "NJ",
+    "lat": 40.6031,
+    "lng": -74.2813,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "gerner_energy",
+    "state": "MD",
+    "lat": 39.5904,
+    "lng": -76.663,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "h_j_poist_gas_company",
+    "state": "MD",
+    "lat": 39.118,
+    "lng": -76.8325,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "economy_propane_llc",
+    "state": "MD",
+    "lat": 39.1751,
+    "lng": -76.5408,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "great_valley_propane",
+    "state": "MD",
+    "lat": 39.588,
+    "lng": -76.6624,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tevis_energy",
+    "state": "MD",
+    "lat": 39.8692,
+    "lng": -77.0339,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "montana_propane",
+    "state": "MT",
+    "lat": 46.5923,
+    "lng": -111.963,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "big_sky_propane",
+    "state": "MT",
+    "lat": 45.7738,
+    "lng": -111.1725,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "propane_northwest",
+    "state": "WA",
+    "lat": null,
+    "lng": null,
+    "status": "reject_ocean"
+  },
+  {
+    "id": "blue_star_gas_seattle",
+    "state": "WA",
+    "lat": 47.5065,
+    "lng": -122.2904,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "american_distributing",
+    "state": "WA",
+    "lat": 48.1191,
+    "lng": -122.1724,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "canyon_state_propane",
+    "state": "AZ",
+    "lat": 33.4372,
+    "lng": -112.183,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "arizona_propane",
+    "state": "AZ",
+    "lat": 33.2748,
+    "lng": -111.8918,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "blue_star_gas_phoenix",
+    "state": "AZ",
+    "lat": 33.4246,
+    "lng": -112.0801,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "pacific_coast_propane_phoenix",
+    "state": "AZ",
+    "lat": 33.4378,
+    "lng": -112.1178,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "northwest_propane_gas_company",
+    "state": "TX",
+    "lat": 33.0406,
+    "lng": -96.7168,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "godfrey_propane_co",
+    "state": "TX",
+    "lat": 32.4306,
+    "lng": -97.2767,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "texas_best_propane",
+    "state": "TX",
+    "lat": 33.5038,
+    "lng": -96.2373,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "texas_butane_co_inc",
+    "state": "TX",
+    "lat": 32.7332,
+    "lng": -97.7871,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "propane_depot_inc",
+    "state": "TX",
+    "lat": 31.4962,
+    "lng": -97.5518,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "henderson_propane_inc",
+    "state": "TX",
+    "lat": 33.6718,
+    "lng": -95.0151,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "aaa_propane_sales_rentals",
+    "state": "CO",
+    "lat": 39.777,
+    "lng": -105.0794,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "mile_high_propane",
+    "state": "CO",
+    "lat": 39.1095,
+    "lng": -104.7826,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "apollo_propane_inc",
+    "state": "CO",
+    "lat": 38.9006,
+    "lng": -104.5161,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "blue_flame_gas",
+    "state": "DE",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "discount_propane",
+    "state": "FL",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "24_7_propane",
+    "state": "FL",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "energy_west_montana",
+    "state": "ID",
+    "lat": 46.1277,
+    "lng": -113.2245,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "aspen_valley_propane_llc",
+    "state": "ID",
+    "lat": 46.0758,
+    "lng": -117.2109,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "salt_river_propane",
+    "state": "ID",
+    "lat": 43.7127,
+    "lng": -112.604,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "kootenai_industries",
+    "state": "ID",
+    "lat": 46.4834,
+    "lng": -114.4443,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_jerome",
+    "state": "ID",
+    "lat": 42.717,
+    "lng": -114.524,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_thayne",
+    "state": "WY",
+    "lat": 42.9283,
+    "lng": -111.0051,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_propane_gas_paducah_ky",
+    "state": "KY",
+    "lat": 37.101,
+    "lng": -88.671,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "united_propane_gas_corporate_office",
+    "state": "KY",
+    "lat": 37.1009,
+    "lng": -88.6705,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fall_river_propane",
+    "state": "ID",
+    "lat": 44.0507,
+    "lng": -111.4777,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "farm_home_lp",
+    "state": "IL",
+    "lat": 40.0795,
+    "lng": -89.856,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "allgas_inc_of_montgomery",
+    "state": "AL",
+    "lat": 32.4011,
+    "lng": -86.4013,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "thompsongas",
+    "state": "AL",
+    "lat": 33.1098,
+    "lng": -86.9031,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "o_nealgas_inc_ar",
+    "state": "AR",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "scott_petroleum_anderson_s_gas_propane",
+    "state": "AR",
+    "lat": 34.4707,
+    "lng": -91.8422,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "sungas_propane_clarksville",
+    "state": "AR",
+    "lat": 35.4523,
+    "lng": -93.4853,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ed_staub_sons_petroleum",
+    "state": "OR",
+    "lat": null,
+    "lng": null,
+    "status": "reject_ocean"
+  },
+  {
+    "id": "ron_s_oil_co_propane_division",
+    "state": "OR",
+    "lat": 43.1797,
+    "lng": -124.1887,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "coenergy_propane_llc",
+    "state": "OR",
+    "lat": 44.4416,
+    "lng": -122.1328,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "greco_gas",
+    "state": "PA",
+    "lat": 40.7277,
+    "lng": -79.7009,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "butler_gas_products_company",
+    "state": "PA",
+    "lat": 40.6043,
+    "lng": -80.076,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "jacobs_petroleum",
+    "state": "PA",
+    "lat": 39.9077,
+    "lng": -80.1233,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "gnagey_propane",
+    "state": "PA",
+    "lat": 39.913,
+    "lng": -79.6874,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "richgas_inc_pa",
+    "state": "PA",
+    "lat": 41.6682,
+    "lng": -78.8185,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "butler_lp_gas",
+    "state": "SC",
+    "lat": 32.9378,
+    "lng": -80.723,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "blue_flame_gas",
+    "state": "DE",
+    "lat": 38.5848,
+    "lng": -75.2988,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "sharp_energy",
+    "state": "DE",
+    "lat": 38.6211,
+    "lng": -75.3392,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "baker_petroleum",
+    "state": "DE",
+    "lat": 38.7773,
+    "lng": -75.3416,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "poore_s_propane",
+    "state": "DE",
+    "lat": 39.2859,
+    "lng": -75.6131,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "delaware_propane",
+    "state": "DE",
+    "lat": 39.2697,
+    "lng": -75.5879,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "florida_public_utilities_propane_debary",
+    "state": "FL",
+    "lat": 28.8645,
+    "lng": -81.3189,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "belleview_propane_inc",
+    "state": "FL",
+    "lat": 29.0575,
+    "lng": -82.0471,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "thermotane_propane",
+    "state": "FL",
+    "lat": 28.4114,
+    "lng": -81.574,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "blossman_propane",
+    "state": "GA",
+    "lat": 33.7459,
+    "lng": -84.1666,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "patoka_propane",
+    "state": "IL",
+    "lat": 38.4037,
+    "lng": -87.9366,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "united_propane_gas_equality_il",
+    "state": "IL",
+    "lat": 37.7482,
+    "lng": -88.3608,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "gateway_propane",
+    "state": "IL",
+    "lat": 39.5731,
+    "lng": -89.0803,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "lp_mart",
+    "state": "IL",
+    "lat": 39.6564,
+    "lng": -91.7233,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "heritage_propane",
+    "state": "IL",
+    "lat": 39.8824,
+    "lng": -88.3958,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "suhre_s_gas_co",
+    "state": "IL",
+    "lat": 38.8907,
+    "lng": -89.845,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "hub_city_propane",
+    "state": "IN",
+    "lat": 40.2128,
+    "lng": -84.8122,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_propane_gas_ferdinand_in",
+    "state": "IN",
+    "lat": 38.2469,
+    "lng": -86.8895,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "sagamore_gas_appliances_inc",
+    "state": "IN",
+    "lat": 40.1936,
+    "lng": -86.634,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "stump_lp_gas_inc",
+    "state": "IN",
+    "lat": 41.2067,
+    "lng": -85.711,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "shelby_county_co_op",
+    "state": "IN",
+    "lat": 39.5389,
+    "lng": -85.7824,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "frankfort_bottle_gas_inc",
+    "state": "IN",
+    "lat": 40.2788,
+    "lng": -86.5276,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "propane_people_inc",
+    "state": "IN",
+    "lat": 41.4389,
+    "lng": -85.0624,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "donahue_gas",
+    "state": "IN",
+    "lat": 40.3585,
+    "lng": -85.8237,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "tri_state_butane_co_inc_bot_l_gas",
+    "state": "IN",
+    "lat": 38.0829,
+    "lng": -88.1874,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "warford_silgas",
+    "state": "IN",
+    "lat": 39.2659,
+    "lng": -86.3346,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "southeast_coop_services",
+    "state": "IL",
+    "lat": 37.1536,
+    "lng": -89.4321,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "j_peak_propane_inc",
+    "state": "ID",
+    "lat": 42.1823,
+    "lng": -112.2522,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "mfa_oil",
+    "state": "AR",
+    "lat": 35.4094,
+    "lng": -92.3452,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "allgas_inc",
+    "state": "AL",
+    "lat": 33.5872,
+    "lng": -86.2419,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "barrett_propane",
+    "state": "AZ",
+    "lat": 34.5684,
+    "lng": -112.4958,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "yavapai_bottle_gas",
+    "state": "AZ",
+    "lat": 34.712,
+    "lng": -112.903,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "norup_gas_inc",
+    "state": "CO",
+    "lat": 38.1507,
+    "lng": -105.477,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "inter_mountain_propane",
+    "state": "CO",
+    "lat": 37.2673,
+    "lng": -107.033,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "glaser_energy_group_inc",
+    "state": "CO",
+    "lat": 38.8498,
+    "lng": -104.811,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "legacy_coop_propane_fuel_kimball_ne_burns_cheyenne_laramie_wy",
+    "state": "CO",
+    "lat": 41.6527,
+    "lng": -103.9296,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "sapp_bros_petroleum",
+    "state": "CO",
+    "lat": 40.4711,
+    "lng": -103.5832,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cook_oil_company",
+    "state": "KS",
+    "lat": 37.0321,
+    "lng": -95.6386,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "haswell_propane",
+    "state": "KS",
+    "lat": 38.4981,
+    "lng": -98.8745,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "jl_propane_llc",
+    "state": "KS",
+    "lat": 37.5763,
+    "lng": -101.3469,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "chief_lp_gas_co",
+    "state": "KS",
+    "lat": 39.3482,
+    "lng": -101.0556,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "wanklyn_oil_co_inc",
+    "state": "KS",
+    "lat": 39.718,
+    "lng": -96.4176,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "garden_city_propane",
+    "state": "KS",
+    "lat": 37.9779,
+    "lng": -100.8929,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "prater_s_propane_co",
+    "state": "KS",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "fronk_oil_co_inc",
+    "state": "KS",
+    "lat": 37.1717,
+    "lng": -101.3877,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "flatlanders_farm_home",
+    "state": "KS",
+    "lat": 37.169,
+    "lng": -101.3555,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "kramer_oil_co_inc",
+    "state": "KS",
+    "lat": 39.6352,
+    "lng": -96.809,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "maltsberger_industrial_propane",
+    "state": "KS",
+    "lat": 37.5673,
+    "lng": -96.9857,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "miller_bros_inc",
+    "state": "KS",
+    "lat": 37.2248,
+    "lng": -95.7218,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ralston_farmer_s_fuel_oil",
+    "state": "KS",
+    "lat": 36.8281,
+    "lng": -97.3923,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "hartland_propane",
+    "state": "KY",
+    "lat": 37.9401,
+    "lng": -84.5531,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "farmers_energy_propane_plus",
+    "state": "KY",
+    "lat": 37.1537,
+    "lng": -85.9329,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "miles_lp_gas_upton",
+    "state": "KY",
+    "lat": 37.4929,
+    "lng": -85.8859,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "bennett_s_gas",
+    "state": "KY",
+    "lat": 37.9354,
+    "lng": -85.5358,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "hardy_gas_co_inc",
+    "state": "KY",
+    "lat": 37.6955,
+    "lng": -83.9792,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "morgan_county_propane",
+    "state": "KY",
+    "lat": 37.875,
+    "lng": -83.2881,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "fortner_gas_co",
+    "state": "KY",
+    "lat": 36.9906,
+    "lng": -88.1132,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "propane_king",
+    "state": "KY",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "caney_valley_propane",
+    "state": "KY",
+    "lat": 37.85,
+    "lng": -83.2596,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "greenwell_propane",
+    "state": "KY",
+    "lat": 38.0346,
+    "lng": -85.3404,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tri_county_propane_inc",
+    "state": "KY",
+    "lat": 37.9569,
+    "lng": -84.7942,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "midwest_bottle_gas",
+    "state": "KY",
+    "lat": 38.8523,
+    "lng": -84.3941,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cincinnati_propane",
+    "state": "KY",
+    "lat": 38.4845,
+    "lng": -84.5911,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ekron_ky_miles_lp_gas",
+    "state": "KY",
+    "lat": 37.9294,
+    "lng": -86.1786,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "delta_fuel",
+    "state": "LA",
+    "lat": 31.1048,
+    "lng": -91.9337,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "jim_s_south_butane_propane_inc",
+    "state": "LA",
+    "lat": 31.9338,
+    "lng": -92.7893,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cajun_propane_of_lafayette_inc",
+    "state": "LA",
+    "lat": 30.2425,
+    "lng": -92.1054,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "metro_lift_propane",
+    "state": "LA",
+    "lat": 31.124,
+    "lng": -92.814,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "red_ball_oxygen",
+    "state": "LA",
+    "lat": 31.389,
+    "lng": -92.3915,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "aeropres_corporation",
+    "state": "LA",
+    "lat": 32.6673,
+    "lng": -93.5306,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "fick_sons_inc",
+    "state": "MI",
+    "lat": 44.6639,
+    "lng": -84.7199,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "excel_propane",
+    "state": "MI",
+    "lat": 42.8304,
+    "lng": -85.6059,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "coyne_oil_propane",
+    "state": "MI",
+    "lat": 43.9258,
+    "lng": -85.0355,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "fillmore_fuel_s",
+    "state": "MN",
+    "lat": 43.7254,
+    "lng": -93.0414,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "quality_propane_of_mn",
+    "state": "MN",
+    "lat": 44.5343,
+    "lng": -92.6552,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ron_s_lp_gas_service",
+    "state": "MN",
+    "lat": 45.4572,
+    "lng": -93.7722,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "country_propane_inc",
+    "state": "MN",
+    "lat": 45.4292,
+    "lng": -94.6,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "kruegel_gas_service",
+    "state": "MN",
+    "lat": 43.6914,
+    "lng": -92.397,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "hanson_lp_gas",
+    "state": "MN",
+    "lat": 46.1194,
+    "lng": -93.7213,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "stacyville_lp_gas_co",
+    "state": "MN",
+    "lat": 43.4331,
+    "lng": -92.7865,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_lp",
+    "state": "MN",
+    "lat": 44.9041,
+    "lng": -93.9684,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "bell_liquefied_gas_co",
+    "state": "MS",
+    "lat": 34.9358,
+    "lng": -88.5245,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "clark_gas_co",
+    "state": "MS",
+    "lat": 31.6381,
+    "lng": -89.7289,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "h_m_gas_co",
+    "state": "MS",
+    "lat": 32.329,
+    "lng": -90.6048,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "magnolia_gas_inc",
+    "state": "MS",
+    "lat": 30.6428,
+    "lng": -89.4101,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "coombs_gas_inc",
+    "state": "MS",
+    "lat": 34.2445,
+    "lng": -89.1782,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "starkville_lp_gas_co",
+    "state": "MS",
+    "lat": 33.435,
+    "lng": -88.8253,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "klondike_oil_gas",
+    "state": "MS",
+    "lat": 32.4604,
+    "lng": -90.1067,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ferguson_gas",
+    "state": "MS",
+    "lat": 32.7017,
+    "lng": -88.8954,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "gresham_petroleum_co",
+    "state": "MS",
+    "lat": 33.9236,
+    "lng": -90.4849,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "coop_s_propane",
+    "state": "MO",
+    "lat": 38.1205,
+    "lng": -92.0586,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "guier_fertilizer",
+    "state": "MO",
+    "lat": 38.8382,
+    "lng": -93.3931,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "schoonover_oil_co",
+    "state": "MO",
+    "lat": 40.1351,
+    "lng": -95.2346,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "big_horn_co_op_24hr_pumps",
+    "state": "WY",
+    "lat": 43.9166,
+    "lng": -107.7171,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "blakeman_propane_inc",
+    "state": "WY",
+    "lat": 43.1468,
+    "lng": -106.6573,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "v_1_propane",
+    "state": "WY",
+    "lat": 41.6179,
+    "lng": -109.2353,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "thunder_basin_propane",
+    "state": "WY",
+    "lat": 44.2779,
+    "lng": -105.4918,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "cbh_co_op_gillette_elevator",
+    "state": "WY",
+    "lat": 44.2849,
+    "lng": -105.4746,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "pinedale_natural_gas_inc",
+    "state": "WY",
+    "lat": 42.8678,
+    "lng": -109.8715,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "bumgarner_propane",
+    "state": "NC",
+    "lat": 35.3761,
+    "lng": -78.5535,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "berico_fuels_propane",
+    "state": "NC",
+    "lat": 36.2836,
+    "lng": -79.7482,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "parker_gas",
+    "state": "NC",
+    "lat": 34.8865,
+    "lng": -78.359,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "blue_ridge_energy",
+    "state": "NC",
+    "lat": 36.0263,
+    "lng": -81.8164,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "quality_oil_company",
+    "state": "NC",
+    "lat": 36.0666,
+    "lng": -80.2621,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "burke_oil_and_propane_company",
+    "state": "NC",
+    "lat": 35.7269,
+    "lng": -81.4729,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "general_distributing_co",
+    "state": "MT",
+    "lat": 46.6114,
+    "lng": -108.6111,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cross_petroleum_services",
+    "state": "MT",
+    "lat": 46.7497,
+    "lng": -106.3181,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "rocky_mountain_supply_ennis",
+    "state": "MT",
+    "lat": 45.3617,
+    "lng": -111.7321,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "prairie_ag_coop",
+    "state": "MT",
+    "lat": 47.3168,
+    "lng": -105.0349,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "arrowwood_prairie_co_op_carrington_main_office",
+    "state": "ND",
+    "lat": 47.4477,
+    "lng": -99.117,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "otte_oil_propane_inc",
+    "state": "NE",
+    "lat": 41.1225,
+    "lng": -96.6831,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "farmers_pride_cooperative",
+    "state": "NE",
+    "lat": 42.1729,
+    "lng": -97.5576,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "panhandle_coop_system",
+    "state": "NE",
+    "lat": 41.6166,
+    "lng": -102.7061,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "energy_north_propane",
+    "state": "NH",
+    "lat": 42.8944,
+    "lng": -71.3365,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "stiles_fuel",
+    "state": "NH",
+    "lat": 44.3435,
+    "lng": -71.6957,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "yankee_propane",
+    "state": "NJ",
+    "lat": 41.1848,
+    "lng": -74.4813,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "northern_new_mexico_gas_company",
+    "state": "NM",
+    "lat": 36.4208,
+    "lng": -105.2992,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ortega_s_propane_service_inc",
+    "state": "NM",
+    "lat": 35.1224,
+    "lng": -106.6407,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "vegas_propane_inc_nv",
+    "state": "NV",
+    "lat": 36.2602,
+    "lng": -114.9282,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "wendt_s_propane_oil",
+    "state": "NY",
+    "lat": 43.1349,
+    "lng": -78.8896,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "noco_hvac_fuels_and_energy",
+    "state": "NY",
+    "lat": 42.6462,
+    "lng": -78.4467,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "irish_propane",
+    "state": "NY",
+    "lat": 42.8601,
+    "lng": -78.8597,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "griffith_energy",
+    "state": "NY",
+    "lat": 41.7983,
+    "lng": -75.3685,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ehrhart_energy",
+    "state": "NY",
+    "lat": 42.5498,
+    "lng": -76.6744,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "corse_fuels",
+    "state": "VT",
+    "lat": 44.6495,
+    "lng": -72.817,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "red_hot_propane",
+    "state": "OH",
+    "lat": 39.8844,
+    "lng": -83.4424,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ak_energy_jackson",
+    "state": "OH",
+    "lat": 38.9931,
+    "lng": -82.5508,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "centerra_co_op_fuel_heating_oil",
+    "state": "OH",
+    "lat": 41.1983,
+    "lng": -81.5423,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "enderby_gas_inc_ok",
+    "state": "OK",
+    "lat": 33.4031,
+    "lng": -97.178,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "industrial_maltsberger_propane_okc",
+    "state": "OK",
+    "lat": 35.4166,
+    "lng": -97.3174,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "lakeland_petroleum_cpp_grove",
+    "state": "OK",
+    "lat": 36.5967,
+    "lng": -94.7118,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "red_river_farm_coop",
+    "state": "OK",
+    "lat": 33.8259,
+    "lng": -96.3373,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ed_staub_sons_propane",
+    "state": "OR",
+    "lat": 42.2241,
+    "lng": -121.7748,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "blue_star_gas_eugene_co",
+    "state": "OR",
+    "lat": 44.0592,
+    "lng": -123.1779,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "blue_star_gas_salem_co",
+    "state": "OR",
+    "lat": 44.9753,
+    "lng": -123.0015,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "morrow_county_grain_growers",
+    "state": "OR",
+    "lat": 45.6488,
+    "lng": -119.0384,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "blue_star_gas_crescent_city_co",
+    "state": "CA",
+    "lat": 41.7523,
+    "lng": -124.1983,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "hino_gas",
+    "state": "TX",
+    "lat": 26.1857,
+    "lng": -97.73,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "waller_county_butane_co",
+    "state": "TX",
+    "lat": 30.062,
+    "lng": -95.9321,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "cy_fair_propane_company",
+    "state": "TX",
+    "lat": 29.9452,
+    "lng": -95.6611,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "wheat_energy_services_inc",
+    "state": "TX",
+    "lat": 32.2035,
+    "lng": -99.846,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "utah_propane",
+    "state": "UT",
+    "lat": 37.7394,
+    "lng": -113.2189,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "hone_propane",
+    "state": "UT",
+    "lat": 41.3257,
+    "lng": -112.0347,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "foster_fuels_hearth_home_showroom",
+    "state": "VA",
+    "lat": 37.0748,
+    "lng": -78.9792,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tiger_fuel_company",
+    "state": "VA",
+    "lat": 38.0314,
+    "lng": -78.4745,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "davenport_energy",
+    "state": "VA",
+    "lat": 36.8242,
+    "lng": -79.3981,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "proctor_gas_inc",
+    "state": "VT",
+    "lat": 43.6612,
+    "lng": -73.0422,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fred_s_energy",
+    "state": "VT",
+    "lat": 44.725,
+    "lng": -72.3039,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "blue_flame_gas_company_inc",
+    "state": "VT",
+    "lat": 43.9083,
+    "lng": -72.7691,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "pacific_coast_energy",
+    "state": "WA",
+    "lat": 46.4312,
+    "lng": -122.7002,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "wenatchee_petroleum_co",
+    "state": "WA",
+    "lat": 47.4324,
+    "lng": -120.3163,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "colville_fuels_deep_water",
+    "state": "WA",
+    "lat": 47.8631,
+    "lng": -119.0179,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "burden_propane_inc",
+    "state": "WA",
+    "lat": 49.2365,
+    "lng": -121.7471,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "woodford_oil_company",
+    "state": "WV",
+    "lat": 38.9929,
+    "lng": -81.0997,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "meyer_oil_lp",
+    "state": "WI",
+    "lat": 43.5346,
+    "lng": -90.0171,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "zifko_gas",
+    "state": "WI",
+    "lat": 46.5036,
+    "lng": -90.9986,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "boehlke_bottled_gas",
+    "state": "WI",
+    "lat": 43.3231,
+    "lng": -88.0886,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "garrow_oil_propane",
+    "state": "WI",
+    "lat": 44.3169,
+    "lng": -88.4125,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "como_oil_propane",
+    "state": "MN",
+    "lat": 47.1456,
+    "lng": -91.6083,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "green_bay_gas_co",
+    "state": "WI",
+    "lat": 44.5626,
+    "lng": -88.1043,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "r_t_rogers_oil_co_inc",
+    "state": "WV",
+    "lat": 37.7472,
+    "lng": -80.7979,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "freedom_ag_energy_buckhannon_branch",
+    "state": "WV",
+    "lat": 39.0008,
+    "lng": -80.243,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "blumont_energy_lynchburg",
+    "state": "VA",
+    "lat": 37.3897,
+    "lng": -79.1648,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "francis_oil_propane_inc",
+    "state": "VA",
+    "lat": 37.056,
+    "lng": -78.949,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "appomattox_propane_services",
+    "state": "VA",
+    "lat": 37.357,
+    "lng": -78.8334,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "roach_energy",
+    "state": "VA",
+    "lat": 39.4535,
+    "lng": -77.962,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "bay_area_propane",
+    "state": "CA",
+    "lat": 37.7487,
+    "lng": -122.1919,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "blue_star_gas_medford_co",
+    "state": "OR",
+    "lat": 42.4048,
+    "lng": -122.8551,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "titan_propane",
+    "state": "AZ",
+    "lat": 36.13,
+    "lng": -111.2477,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "propane_of_tucson",
+    "state": "AZ",
+    "lat": 32.2497,
+    "lng": -110.9401,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "inland_propane",
+    "state": "WA",
+    "lat": 47.3283,
+    "lng": -119.5465,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "basin_propane_llc",
+    "state": "WA",
+    "lat": 47.137,
+    "lng": -119.2663,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ag_supply_petroleum_propane",
+    "state": "WA",
+    "lat": 47.4382,
+    "lng": -120.3216,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "chs_northwest_sumner",
+    "state": "WA",
+    "lat": 47.2039,
+    "lng": -122.2446,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "north_cascade_propane_service",
+    "state": "WA",
+    "lat": 48.3912,
+    "lng": -119.8006,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "the_glade_spring_co",
+    "state": "VA",
+    "lat": 36.7907,
+    "lng": -81.7752,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "arro_autogas",
+    "state": "NV",
+    "lat": 36.2472,
+    "lng": -115.2403,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "golden_gate_petro",
+    "state": "NV",
+    "lat": 40.265,
+    "lng": -117.3479,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "wolf_river_propane",
+    "state": "WI",
+    "lat": 44.3947,
+    "lng": -88.7419,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fond_du_lac_propane_co",
+    "state": "WI",
+    "lat": 43.7664,
+    "lng": -88.4752,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "van_s_gas_service_inc",
+    "state": "WI",
+    "lat": 42.6286,
+    "lng": -87.8362,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "wardway_fuels",
+    "state": "KY",
+    "lat": 39.1573,
+    "lng": -84.6292,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "propane_industrial_gases",
+    "state": "LA",
+    "lat": 30.8333,
+    "lng": -90.1763,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "dileo_gas_propane",
+    "state": "MA",
+    "lat": 42.2424,
+    "lng": -71.7423,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "liberty_propane_equipment_co",
+    "state": "MA",
+    "lat": 41.5262,
+    "lng": -73.017,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "sea_gas",
+    "state": "MA",
+    "lat": 41.6615,
+    "lng": -70.8206,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "simard_gas_oil_co",
+    "state": "MA",
+    "lat": 42.7644,
+    "lng": -71.1021,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "jaysan_gas_service_inc",
+    "state": "MA",
+    "lat": 41.7571,
+    "lng": -70.9465,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "phil_s_propane",
+    "state": "MA",
+    "lat": 41.8851,
+    "lng": -70.9744,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "newport_propane",
+    "state": "MA",
+    "lat": 41.5866,
+    "lng": -71.1547,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "e_p_wine_propane",
+    "state": "MA",
+    "lat": 42.4215,
+    "lng": -72.1128,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "dunlap_s_propane_inc",
+    "state": "MA",
+    "lat": 41.9288,
+    "lng": -70.6577,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "jfc_propane",
+    "state": "MA",
+    "lat": 42.1459,
+    "lng": -72.1116,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "hunt_country_propane",
+    "state": "MD",
+    "lat": 39.14,
+    "lng": -77.9833,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "blue_flame_inc",
+    "state": "MD",
+    "lat": 39.6023,
+    "lng": -78.2405,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "community_energy_co_inc",
+    "state": "ME",
+    "lat": 44.5463,
+    "lng": -70.5591,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "dodge_oil_propane",
+    "state": "ME",
+    "lat": 43.68,
+    "lng": -70.431,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "morin_fuel",
+    "state": "ME",
+    "lat": 44.908,
+    "lng": -68.6358,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "bot_l_gas_inc",
+    "state": "ME",
+    "lat": 43.3824,
+    "lng": -71.2103,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "lawler_gas_inc",
+    "state": "MN",
+    "lat": 44.0502,
+    "lng": -92.3377,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "mcmahon_oil",
+    "state": "MN",
+    "lat": 45.6582,
+    "lng": -95.3671,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "pirkl_gas",
+    "state": "MN",
+    "lat": 44.0901,
+    "lng": -93.2203,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "the_propane_express",
+    "state": "MN",
+    "lat": 44.7764,
+    "lng": -93.3713,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "land_o_lakes_oil_co",
+    "state": "MN",
+    "lat": 45.3108,
+    "lng": -94.3008,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "capital_energy_co",
+    "state": "MO",
+    "lat": 38.8722,
+    "lng": -91.9419,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "tarkio_lp_gas",
+    "state": "MO",
+    "lat": 40.4198,
+    "lng": -95.5274,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "southern_fs_inc",
+    "state": "IL",
+    "lat": 37.7072,
+    "lng": -88.9305,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "sherborn_fuel_and_propane_tank_refills",
+    "state": "MA",
+    "lat": 42.2401,
+    "lng": -71.3691,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "walter_s_propane",
+    "state": "MA",
+    "lat": 42.503,
+    "lng": -72.6087,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "perry_s_oil_service_and_patten_s_gas",
+    "state": "ME",
+    "lat": 44.1791,
+    "lng": -69.8305,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_salmon",
+    "state": "MT",
+    "lat": 45.1691,
+    "lng": -113.8894,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "guyette_s_lp_gas",
+    "state": "ME",
+    "lat": 43.9185,
+    "lng": -69.3786,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "northeastern_supply_co",
+    "state": "ME",
+    "lat": 46.8421,
+    "lng": -68.01,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "american_propane",
+    "state": "MA",
+    "lat": null,
+    "lng": null,
+    "status": "reject_ocean"
+  },
+  {
+    "id": "s_m_propane_sales_supplies",
+    "state": "NC",
+    "lat": 35.8689,
+    "lng": -80.3512,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "dakota_s_propane_gas_co_op",
+    "state": "ND",
+    "lat": 45.9099,
+    "lng": -98.4649,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "spirit_lake_propane",
+    "state": "ND",
+    "lat": 47.9851,
+    "lng": -99.0013,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "chs_southwest_grain",
+    "state": "ND",
+    "lat": 46.6568,
+    "lng": -102.3027,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "mutch_oil_co_grand_forks_inc",
+    "state": "ND",
+    "lat": 47.9121,
+    "lng": -97.3614,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "gray_oil_co",
+    "state": "ND",
+    "lat": 46.8069,
+    "lng": -100.8377,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "skip_s_petroleum_propane_co",
+    "state": "ND",
+    "lat": 47.7626,
+    "lng": -97.9455,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "rough_riders_propane_inc",
+    "state": "ND",
+    "lat": 48.1454,
+    "lng": -103.6337,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fitterer_gas_oil",
+    "state": "ND",
+    "lat": 46.4979,
+    "lng": -102.0458,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "farmers_union_oil_co_nd",
+    "state": "ND",
+    "lat": 47.3774,
+    "lng": -100.3056,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "gresham_petroleum_co",
+    "state": "MS",
+    "lat": 33.1793,
+    "lng": -90.4919,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "coombs_gas_co",
+    "state": "MS",
+    "lat": 34.6702,
+    "lng": -89.0268,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fair_propane_kosciusko",
+    "state": "MS",
+    "lat": 33.0675,
+    "lng": -89.5637,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "island_energy_inc",
+    "state": "MO",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "creative_energy",
+    "state": "MT",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "miller_oil_co",
+    "state": "MT",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "salmon_river_propane",
+    "state": "MT",
+    "lat": 45.4051,
+    "lng": -111.7246,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "plevna_propane",
+    "state": "MT",
+    "lat": 46.3673,
+    "lng": -104.2618,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "kavan_propane_oil_inc",
+    "state": "NE",
+    "lat": 41.3545,
+    "lng": -96.6737,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "knudsen_oil_feed",
+    "state": "NE",
+    "lat": 41.3982,
+    "lng": -96.2097,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "3d_oil_lp",
+    "state": "NE",
+    "lat": 43.3895,
+    "lng": -98.845,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "sandhill_oil_co",
+    "state": "NE",
+    "lat": 42.4253,
+    "lng": -101.1518,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "murphy_s_propane",
+    "state": "NE",
+    "lat": 41.835,
+    "lng": -97.9072,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cenco_heating_oil_propane",
+    "state": "NJ",
+    "lat": 40.0715,
+    "lng": -74.8634,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ortega_sons_propane_services",
+    "state": "NM",
+    "lat": 34.8185,
+    "lng": -106.6946,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "lopez_lp_gas_company_llc",
+    "state": "NM",
+    "lat": 34.6483,
+    "lng": -106.742,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "romero_s_rio_grande_propane",
+    "state": "NM",
+    "lat": 36.4017,
+    "lng": -105.5762,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "j_p_propane_gas_service_inc",
+    "state": "OH",
+    "lat": 41.3159,
+    "lng": -82.6659,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "northern_new_mexico_gas_company_raton",
+    "state": "NM",
+    "lat": 36.8773,
+    "lng": -104.4406,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "penn_jersey_propane_gas_co",
+    "state": "NJ",
+    "lat": 39.9797,
+    "lng": -74.8205,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ciardelli_fuel_company_inc",
+    "state": "NH",
+    "lat": 42.8277,
+    "lng": -71.6333,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "agland_coop_bulk_plant",
+    "state": "NE",
+    "lat": 43.3549,
+    "lng": -98.1634,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "arrowwood_prairie_co_op_cooperstown_office",
+    "state": "ND",
+    "lat": 47.4421,
+    "lng": -98.1307,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "best_propane_llc",
+    "state": "NE",
+    "lat": 41.6856,
+    "lng": -98.8771,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "country_gas",
+    "state": "NM",
+    "lat": 35.9169,
+    "lng": -107.2702,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "columbus_lp_gas",
+    "state": "NM",
+    "lat": 31.8482,
+    "lng": -107.6454,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "pendleton_propane",
+    "state": "NM",
+    "lat": 36.2291,
+    "lng": -105.0193,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "propane_network_inc",
+    "state": "UT",
+    "lat": 39.4828,
+    "lng": -112.0214,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "b_l_propane_co_inc",
+    "state": "UT",
+    "lat": 37.1853,
+    "lng": -113.2814,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "miller_gas_co",
+    "state": "UT",
+    "lat": 40.2313,
+    "lng": -112.3657,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "alpha_propane",
+    "state": "MT",
+    "lat": 46.3325,
+    "lng": -114.1507,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "herger_gas",
+    "state": "CA",
+    "lat": 38.9513,
+    "lng": -121.5379,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "woodland_propane_and_gasoline",
+    "state": "CA",
+    "lat": 38.6752,
+    "lng": -121.7484,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "american_river_gas_co_inc",
+    "state": "CA",
+    "lat": 38.8816,
+    "lng": -121.1114,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "conejos_propane",
+    "state": "CO",
+    "lat": 37.2311,
+    "lng": -105.979,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "rio_chama_propane_corp",
+    "state": "CO",
+    "lat": 38.0329,
+    "lng": -105.535,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "rocky_mountain_lp_gas",
+    "state": "CO",
+    "lat": 45.6524,
+    "lng": -109.5625,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_propane_gas_henagar_al",
+    "state": "TN",
+    "lat": 34.6758,
+    "lng": -85.6612,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_propane_gas_celina_tn",
+    "state": "TN",
+    "lat": 36.618,
+    "lng": -85.4174,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tankfarm",
+    "state": "TN",
+    "lat": 36.1618,
+    "lng": -86.7776,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_propane_gas_lafayette_ga",
+    "state": "TN",
+    "lat": 34.7369,
+    "lng": -85.2791,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ak_energy_gallia",
+    "state": "OH",
+    "lat": 38.8569,
+    "lng": -82.3337,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ashville_propane",
+    "state": "OH",
+    "lat": 39.7133,
+    "lng": -82.9549,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "acorn_lpg_propane",
+    "state": "OH",
+    "lat": 41.2058,
+    "lng": -81.2428,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "schilling_propane",
+    "state": "OH",
+    "lat": 40.6259,
+    "lng": -82.8861,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "buckeye_propane_co_inc",
+    "state": "OH",
+    "lat": 39.4805,
+    "lng": -83.3686,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "centerra_co_op_fuel_heating_oil",
+    "state": "OH",
+    "lat": 41.0216,
+    "lng": -82.2859,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "chs_farmers_alliance",
+    "state": "SD",
+    "lat": 44.4474,
+    "lng": -99.116,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "fronk_oil_co_inc_tx",
+    "state": "TX",
+    "lat": 36.1793,
+    "lng": -100.9855,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "affordable_propane_m_f_barcellos_inc",
+    "state": "NV",
+    "lat": 38.9859,
+    "lng": -119.1851,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "49_r_propane_inc",
+    "state": "NV",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "patriot_energy",
+    "state": "NV",
+    "lat": 36.1049,
+    "lng": -115.1933,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "eagle_energy_corporation",
+    "state": "NV",
+    "lat": 39.5206,
+    "lng": -119.6237,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "winnemucca_gas",
+    "state": "NV",
+    "lat": 40.96,
+    "lng": -117.7346,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "pit_stop_propane_sandy",
+    "state": "UT",
+    "lat": 40.583,
+    "lng": -111.8528,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "gastec_propane_refill_station",
+    "state": "NJ",
+    "lat": 40.3236,
+    "lng": -74.8566,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "pacific_coast_propane",
+    "state": "CA",
+    "lat": 33.6174,
+    "lng": -116.8684,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "base_camp_warm_springs",
+    "state": "ID",
+    "lat": 43.6844,
+    "lng": -114.3691,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "agland_cooperative",
+    "state": "MT",
+    "lat": 48.2138,
+    "lng": -105.5636,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "consolidated_energy_company_formerly_feils_oil_company",
+    "state": "MN",
+    "lat": 43.8596,
+    "lng": -92.1187,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cromwell_s_convenience_petroleum_propane",
+    "state": "MT",
+    "lat": 47.2787,
+    "lng": -109.5195,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "pinnacle_bulk_propane",
+    "state": "ND",
+    "lat": 48.2395,
+    "lng": -101.2708,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "nexus",
+    "state": "IA",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "blackburn_propane_service",
+    "state": "OK",
+    "lat": 33.9102,
+    "lng": -96.4596,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "lundy_s_propane_gas_co",
+    "state": "OK",
+    "lat": 35.4166,
+    "lng": -97.3173,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "morrison_propane",
+    "state": "OK",
+    "lat": 35.2865,
+    "lng": -97.9542,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "harris_lp_inc",
+    "state": "OK",
+    "lat": 36.5422,
+    "lng": -96.2943,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "steve_s_propane",
+    "state": "OK",
+    "lat": 35.2881,
+    "lng": -96.99,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "liberty_propane_company",
+    "state": "OK",
+    "lat": 35.5613,
+    "lng": -95.6066,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "froman_propane_co",
+    "state": "OK",
+    "lat": 35.309,
+    "lng": -98.7167,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "red_baker_propane_inc",
+    "state": "OK",
+    "lat": 35.3764,
+    "lng": -97.4414,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "burke_fuel_oil_propane_co",
+    "state": "SD",
+    "lat": 44.3514,
+    "lng": -100.151,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "provanta",
+    "state": "PA",
+    "lat": 41.406,
+    "lng": -79.7432,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "warren_energy_group_inc",
+    "state": "UT",
+    "lat": 37.1472,
+    "lng": -113.4626,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "stagner_propane",
+    "state": "NE",
+    "lat": 40.6848,
+    "lng": -97.5238,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "n_b_gas_co",
+    "state": "NE",
+    "lat": 41.9129,
+    "lng": -97.0239,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "nebraska_iowa_supply_co",
+    "state": "NE",
+    "lat": 41.3857,
+    "lng": -96.0717,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "linden_s_propane_inc",
+    "state": "OH",
+    "lat": 41.1726,
+    "lng": -82.334,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "walterville_propane",
+    "state": "OH",
+    "lat": 41.1005,
+    "lng": -81.643,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "consolidated_energy_company",
+    "state": "IA",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "spencer_mountain_propane",
+    "state": "TN",
+    "lat": 35.7329,
+    "lng": -85.454,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "brightstar_propane_fuels",
+    "state": "OH",
+    "lat": 40.1529,
+    "lng": -82.9185,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "the_gas_house",
+    "state": "OH",
+    "lat": 40.7856,
+    "lng": -82.264,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "montana_energy_alliance",
+    "state": "MT",
+    "lat": 45.2316,
+    "lng": -112.6061,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "psi_propane_services_innovated",
+    "state": "MT",
+    "lat": 45.606,
+    "lng": -112.5829,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "propane_northwest_tacoma",
+    "state": "WA",
+    "lat": 47.2461,
+    "lng": -122.2339,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "pitmon_oil_gas",
+    "state": "OK",
+    "lat": 34.4827,
+    "lng": -97.1307,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "bfs_propane_services_llc",
+    "state": "NM",
+    "lat": 35.0121,
+    "lng": -106.7157,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "cross_country_propane_feed_supply",
+    "state": "NM",
+    "lat": 34.7709,
+    "lng": -106.7153,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "a_x_propane",
+    "state": "NM",
+    "lat": 33.988,
+    "lng": -107.036,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "great_plains_propane_service_inc",
+    "state": "NE",
+    "lat": 41.0377,
+    "lng": -96.3592,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fischer_oil_propane_co",
+    "state": "SD",
+    "lat": 45.0177,
+    "lng": -100.9967,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "brooks_oil_co",
+    "state": "SD",
+    "lat": 43.8949,
+    "lng": -98.1322,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "friman_oil_gas_inc",
+    "state": "SD",
+    "lat": 44.3704,
+    "lng": -100.3607,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "slater_oil_lp_gas_co",
+    "state": "SD",
+    "lat": 45.5372,
+    "lng": -100.4209,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "bieglers_timber_lake_service",
+    "state": "SD",
+    "lat": 45.4301,
+    "lng": -101.0737,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "standing_rock_propane",
+    "state": "SD",
+    "lat": 45.9515,
+    "lng": -100.7196,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "fulfer_propane_inc",
+    "state": "TX",
+    "lat": 32.3459,
+    "lng": -98.3017,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "askins_propane_co",
+    "state": "TX",
+    "lat": 31.8882,
+    "lng": -100.4876,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "mr_g_propane_inc",
+    "state": "TX",
+    "lat": 26.2815,
+    "lng": -98.1749,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "jack_oldham_oil_co_inc",
+    "state": "TX",
+    "lat": 35.9478,
+    "lng": -101.9049,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "hill_gas",
+    "state": "TX",
+    "lat": 31.9056,
+    "lng": -98.5661,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ipes_family_propane",
+    "state": "TX",
+    "lat": 30.2166,
+    "lng": -95.1663,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "freedom_lp",
+    "state": "TX",
+    "lat": 26.1607,
+    "lng": -97.9924,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "dvp_gas_co",
+    "state": "TX",
+    "lat": 26.123,
+    "lng": -97.4761,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "almighty_propane_llc",
+    "state": "TX",
+    "lat": 26.169,
+    "lng": -97.8361,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "progas_inc",
+    "state": "NJ",
+    "lat": 39.8027,
+    "lng": -74.9453,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "frontier_fuel_co",
+    "state": "TX",
+    "lat": null,
+    "lng": null,
+    "status": "reject_ocean"
+  },
+  {
+    "id": "fyles_bros_inc_vt",
+    "state": "VT",
+    "lat": 43.7555,
+    "lng": -73.3084,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "four_seasons_farm_service",
+    "state": "WA",
+    "lat": 47.3063,
+    "lng": -119.5614,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "swva_gas_service",
+    "state": "VA",
+    "lat": 37.0583,
+    "lng": -80.0191,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ontime_petroleum_propane",
+    "state": "SD",
+    "lat": 44.3402,
+    "lng": -100.1512,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "prairie_fuels",
+    "state": "MT",
+    "lat": 46.3694,
+    "lng": -104.2722,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "olson_propane",
+    "state": "MT",
+    "lat": 46.6496,
+    "lng": -100.1528,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "affordable_propane_of_neosho",
+    "state": "OK",
+    "lat": 36.8126,
+    "lng": -94.3984,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "industrial_propane",
+    "state": "UT",
+    "lat": 41.2205,
+    "lng": -112.0243,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "blue_flame_propane",
+    "state": "UT",
+    "lat": 39.9848,
+    "lng": -111.8111,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "enterprise_gas",
+    "state": "VA",
+    "lat": 36.619,
+    "lng": -82.5675,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "gale_s_gas_services",
+    "state": "SD",
+    "lat": 44.398,
+    "lng": -100.3089,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tickle_oil_propane_inc",
+    "state": "WV",
+    "lat": 37.3209,
+    "lng": -80.6076,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_pinedale",
+    "state": "WY",
+    "lat": 42.8663,
+    "lng": -109.8901,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "appalachian_propane_supply",
+    "state": "WV",
+    "lat": 38.3137,
+    "lng": -80.8224,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tumbleweed_propane_inc",
+    "state": "WY",
+    "lat": 43.6446,
+    "lng": -108.2114,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tate_s_blue_flame_gas_co_il",
+    "state": "IL",
+    "lat": 37.8403,
+    "lng": -88.602,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "chrisman_lp_gas_oil_co_il",
+    "state": "IL",
+    "lat": 36.7981,
+    "lng": -89.95,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fortner_gas_co_paducah_il",
+    "state": "IL",
+    "lat": 37.0983,
+    "lng": -88.6817,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_propane_gas_livermore_ky_in",
+    "state": "IN",
+    "lat": 37.5036,
+    "lng": -87.12,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "farmers_union_co_op_oil",
+    "state": "ND",
+    "lat": 46.9023,
+    "lng": -98.6916,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "mcintosh_propane_bulk_plant",
+    "state": "ND",
+    "lat": 45.9225,
+    "lng": -101.3512,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "black_bear_outpost",
+    "state": "WA",
+    "lat": 47.2147,
+    "lng": -122.2123,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "agri_energy_inc",
+    "state": "SD",
+    "lat": 43.7009,
+    "lng": -97.184,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "bob_s_gas_inc",
+    "state": "SD",
+    "lat": 44.0541,
+    "lng": -101.0849,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "butch_s_propane_llc",
+    "state": "SD",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "dubois_county_l_p_gas_inc_in",
+    "state": "IN",
+    "lat": 38.3623,
+    "lng": -86.8946,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "fortner_lp_gas_co_in",
+    "state": "IN",
+    "lat": 37.3555,
+    "lng": -87.5446,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "myers_lp_gas_in",
+    "state": "IN",
+    "lat": 38.7397,
+    "lng": -87.1658,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "miles_lp_gas_in",
+    "state": "IN",
+    "lat": 37.7073,
+    "lng": -87.1604,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "butane_power_equipment_co",
+    "state": "WY",
+    "lat": 42.9509,
+    "lng": -107.6961,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "lodge_grass_propane_supplies",
+    "state": "WY",
+    "lat": 43.6763,
+    "lng": -108.2247,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "dale_gas_oil_co",
+    "state": "WI",
+    "lat": 44.2724,
+    "lng": -88.6901,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "may_s_lp_gas_services_in",
+    "state": "IN",
+    "lat": 38.6356,
+    "lng": -87.1788,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "franger_gas_company_goshen_allpro_gas_mi",
+    "state": "MI",
+    "lat": 41.5523,
+    "lng": -85.7709,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "lake_philgas",
+    "state": "UT",
+    "lat": 39.3537,
+    "lng": -112.5661,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "r_d_propane",
+    "state": "OR",
+    "lat": 43.9968,
+    "lng": -123.0123,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "gary_s",
+    "state": "LA",
+    "lat": 29.7883,
+    "lng": -90.8229,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "quality_propane_of_mn_mn",
+    "state": "MN",
+    "lat": 44.5343,
+    "lng": -92.6552,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "craft_propane_inc_mo",
+    "state": "MO",
+    "lat": 37.6204,
+    "lng": -92.4684,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "stacyville_lp_gas_co_mn",
+    "state": "MN",
+    "lat": 43.4331,
+    "lng": -92.7865,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "united_lp_mn",
+    "state": "MN",
+    "lat": 44.9041,
+    "lng": -93.9684,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "island_energy_propane_gas_mo",
+    "state": "MO",
+    "lat": 37.5917,
+    "lng": -91.0717,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ngl_energy_partners_lp_mo",
+    "state": "MO",
+    "lat": 36.0748,
+    "lng": -95.9253,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "spring_river_lp_gas_mo",
+    "state": "MO",
+    "lat": 36.2394,
+    "lng": -91.2622,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "eastern_rulane_sales_corporation_nc",
+    "state": "NC",
+    "lat": 34.7643,
+    "lng": -77.4088,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "cox_bottled_gas_oh",
+    "state": "OH",
+    "lat": 38.895,
+    "lng": -82.717,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ohio_valley_propane_oh",
+    "state": "OH",
+    "lat": 38.5525,
+    "lng": -85.1457,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "cline_energy_llc_oh",
+    "state": "OH",
+    "lat": 39.2753,
+    "lng": -82.8225,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "go_with_propane_inc_ny",
+    "state": "NY",
+    "lat": 40.8935,
+    "lng": -74.1182,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tony_s_lpg_inc_ny",
+    "state": "NY",
+    "lat": 40.7674,
+    "lng": -73.8986,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "atlantic_industrial_gas_inc_ny",
+    "state": "NY",
+    "lat": 40.6749,
+    "lng": -73.8984,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "country_lp_gas_nc",
+    "state": "NC",
+    "lat": 34.2537,
+    "lng": -78.0606,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "coastal_energy_nc",
+    "state": "NC",
+    "lat": null,
+    "lng": null,
+    "status": "reject_ocean"
+  },
+  {
+    "id": "calhoun_lp_gas_tn",
+    "state": "TN",
+    "lat": 34.4665,
+    "lng": -84.9339,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "acree_propane_inc_tn",
+    "state": "TN",
+    "lat": 35.6079,
+    "lng": -85.8752,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "ridge_propane_services_inc_tn",
+    "state": "TN",
+    "lat": 35.2322,
+    "lng": -85.1942,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "valley_propane_llc_tx",
+    "state": "TX",
+    "lat": 29.0425,
+    "lng": -101.5805,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "mid_valley_propane_tx",
+    "state": "TX",
+    "lat": 26.2399,
+    "lng": -97.9597,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "amc_propane_tx",
+    "state": "TX",
+    "lat": 26.1857,
+    "lng": -98.1408,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "nuestra_comunidad_propane_llc_tx",
+    "state": "TX",
+    "lat": 26.2735,
+    "lng": -98.3465,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "3_g_propane_services_llc_tx",
+    "state": "TX",
+    "lat": 26.2704,
+    "lng": -98.1698,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "pony_express_tx",
+    "state": "TX",
+    "lat": 26.2588,
+    "lng": -98.311,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "central_propane_rainsville_tn",
+    "state": "TN",
+    "lat": 34.4981,
+    "lng": -85.8449,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "woodford_propane_pa",
+    "state": "PA",
+    "lat": 39.764,
+    "lng": -79.4564,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "c_r_augenstein_inc_pa",
+    "state": "PA",
+    "lat": 40.1835,
+    "lng": -80.0854,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "west_penn_laco_northside_pa",
+    "state": "PA",
+    "lat": 40.4541,
+    "lng": -80.033,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "thomas_gas_service_oh",
+    "state": "OH",
+    "lat": 39.3535,
+    "lng": -82.9721,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "bottled_gas_services_pa",
+    "state": "PA",
+    "lat": 40.817,
+    "lng": -77.6308,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "gas_incorporated_tn",
+    "state": "TN",
+    "lat": 35.5584,
+    "lng": -85.9172,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "farmers_union_propane_bulk_plant",
+    "state": "MT",
+    "lat": 47.0454,
+    "lng": -109.1884,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "m_g_propane_resources_oh",
+    "state": "OH",
+    "lat": 38.4018,
+    "lng": -82.7378,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "1st_choice_energy_services",
+    "state": "WV",
+    "lat": 40.1585,
+    "lng": -81.2274,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "duncan_service_inc",
+    "state": "WV",
+    "lat": 38.6666,
+    "lng": -80.543,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "great_gas_and_oil_nc",
+    "state": "NC",
+    "lat": 34.7614,
+    "lng": -77.4138,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "brummer_co",
+    "state": "WI",
+    "lat": 46.777,
+    "lng": -90.7847,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "lp_plus",
+    "state": "WI",
+    "lat": 44.5185,
+    "lng": -88.0033,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "northwoods_lp",
+    "state": "WI",
+    "lat": 45.5606,
+    "lng": -88.6737,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "tricounty_gas",
+    "state": "WY",
+    "lat": 44.3354,
+    "lng": -106.6301,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "luke_s_propane",
+    "state": "WA",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "new_flame_propane",
+    "state": "WA",
+    "lat": 45.6866,
+    "lng": -122.5523,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "route_7_refills",
+    "state": "PA",
+    "lat": 41.117,
+    "lng": -77.6047,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "consumers_propane",
+    "state": "RI",
+    "lat": 42.0019,
+    "lng": -71.5012,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "red_flame_oil_propane",
+    "state": "WV",
+    "lat": 39.2659,
+    "lng": -80.2886,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "fritschle_s_lp_gas_in",
+    "state": "IN",
+    "lat": 38.7365,
+    "lng": -88.088,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "ron_s_lp_gas_service_mn",
+    "state": "MN",
+    "lat": 45.6487,
+    "lng": -93.4136,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "country_propane_inc_mn",
+    "state": "MN",
+    "lat": 45.6884,
+    "lng": -94.1312,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "kruegel_gas_service_mn",
+    "state": "MN",
+    "lat": 43.6914,
+    "lng": -92.397,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "hanson_lp_gas_mn",
+    "state": "MN",
+    "lat": 46.1194,
+    "lng": -93.7213,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "baker_gas_oil_co_llc_mo",
+    "state": "MO",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "progas_pa",
+    "state": "PA",
+    "lat": 39.8701,
+    "lng": -75.0726,
+    "source": "gmaps_search"
+  },
+  {
+    "id": "fields_store_propane_1385",
+    "state": "TX",
+    "lat": 30.1636,
+    "lng": -95.9151,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "c4_fuels_llc",
+    "state": "TX",
+    "lat": 32.3923,
+    "lng": -99.7414,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "barker_s_propane",
+    "state": "UT",
+    "lat": 41.7164,
+    "lng": -111.8354,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "g_l_distributing",
+    "state": "UT",
+    "lat": null,
+    "lng": null,
+    "status": "reject_wrong_state"
+  },
+  {
+    "id": "northwest_propane",
+    "state": "WA",
+    "lat": null,
+    "lng": null,
+    "status": "reject_ocean"
+  },
+  {
+    "id": "seven_is_enough",
+    "state": "VA",
+    "lat": 36.6327,
+    "lng": -81.784,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "l_p_gas_and_equipment",
+    "state": "WI",
+    "lat": 43.1148,
+    "lng": -88.0666,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "l_l_propane",
+    "state": "WI",
+    "lat": 44.2716,
+    "lng": -89.1898,
+    "source": "gmaps_place"
+  },
+  {
+    "id": "cleveland_petroleum_products",
+    "state": "KS",
+    "lat": 36.2884,
+    "lng": -96.4465,
+    "source": "gmaps_place"
+  }
+]

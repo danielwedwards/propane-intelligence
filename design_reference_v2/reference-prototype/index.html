@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ergon — Redesign Exploration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../design-tokens/tokens.css">
+  <style>
+    html, body { margin: 0; padding: 0; background: #f0eee9; font-family: "Inter", -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script src="mockData.js"></script>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="shared-ui.jsx"></script>
+  <script type="text/babel" src="Chrome.jsx"></script>
+  <script type="text/babel" src="Logins.jsx"></script>
+  <script type="text/babel" src="Views1.jsx"></script>
+  <script type="text/babel" src="Views2.jsx"></script>
+  <script type="text/babel" src="Views3.jsx"></script>
+  <script type="text/babel" src="News.jsx"></script>
+  <script type="text/babel" src="App.jsx"></script>
+
+  <script type="text/babel">
+    const { DesignCanvas, DCSection, DCArtboard, DCPostIt,
+            Dashboard, LoginV1, LoginV2 } = window;
+
+    function Root() {
+      return (
+        <DesignCanvas>
+          <DCSection id="intro" title="Ergon — Stripe-indigo redesign" subtitle="A premium enterprise SaaS direction: Stripe-ink typography, indigo primary, airy slate neutrals. Every view below is a live interactive prototype.">
+            <DCArtboard id="sys" label="System notes" width={780} height={440}>
+              <div style={{ padding: 36, fontFamily: 'Inter', fontSize: 14, lineHeight: 1.7, color: '#425466' }}>
+                <div style={{ fontSize: 11, fontWeight: 600, color: '#635BFF', letterSpacing: 0.8, textTransform: 'uppercase' }}>Direction</div>
+                <h1 style={{ fontSize: 28, letterSpacing: '-0.5px', color: '#0A2540', margin: '8px 0 14px', fontWeight: 600 }}>Premium Stripe-indigo — clean, airy, confident.</h1>
+                <p style={{ margin: 0 }}>Deep navy ink on off-white page (<code style={{ background: '#F7FAFC', padding: '1px 5px', borderRadius: 4, fontSize: 12, fontFamily: "'IBM Plex Mono'" }}>#F6F9FC</code>). Indigo <code style={{ background: '#F7FAFC', padding: '1px 5px', borderRadius: 4, fontSize: 12, fontFamily: "'IBM Plex Mono'" }}>#635BFF</code> as primary. IBM Plex Mono for metrics + identifiers.</p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6,1fr)', gap: 8, margin: '20px 0' }}>
+                  {[['#635BFF','Indigo'],['#0A2540','Ink'],['#F6F9FC','App bg'],['#009966','Green'],['#C4862D','Amber'],['#D83E4A','Red']].map(([c,l])=>(
+                    <div key={l}><div style={{height:40,background:c,borderRadius:6,border:'1px solid #E3E8EE'}}/><div style={{fontSize:11,marginTop:4,color:'#425466',fontWeight:500}}>{l}</div><div style={{fontSize:10,color:'#8B97A8',fontFamily:"'IBM Plex Mono'"}}>{c}</div></div>
+                  ))}
+                </div>
+                <div style={{ display: 'flex', gap: 28, marginTop: 12, fontSize: 12 }}>
+                  <div><b style={{ color: '#0A2540', fontSize: 20 }}>2</b> login options</div>
+                  <div><b style={{ color: '#0A2540', fontSize: 20 }}>8</b> dashboard views</div>
+                  <div><b style={{ color: '#0A2540', fontSize: 20 }}>1</b> live prototype</div>
+                </div>
+              </div>
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="login" title="Login — 2 variants" subtitle="Centered minimal card vs. split-screen with marketing panel.">
+            <DCArtboard id="v1" label="V1 · Centered card" width={1280} height={820}><LoginV1 /></DCArtboard>
+            <DCArtboard id="v2" label="V2 · Split screen" width={1280} height={820}><LoginV2 /></DCArtboard>
+          </DCSection>
+
+          <DCSection id="app" title="Dashboard prototype" subtitle="One interactive canvas — click nav items, rows, signals to explore all 9 views. ⌘K opens command palette.">
+            <DCArtboard id="live" label="Interactive · start on Market Map" width={1440} height={900}><Dashboard initialView="map"/></DCArtboard>
+          </DCSection>
+
+          <DCSection id="views" title="All 9 views · static previews" subtitle="Static captures of each primary view for side-by-side review.">
+            <DCArtboard id="map"       label="1 · Market Map"        width={1440} height={900}><Dashboard initialView="map"/></DCArtboard>
+            <DCArtboard id="list"      label="2 · Companies"         width={1440} height={900}><Dashboard initialView="list"/></DCArtboard>
+            <DCArtboard id="analytics" label="3 · Analytics"         width={1440} height={900}><Dashboard initialView="analytics"/></DCArtboard>
+            <DCArtboard id="signals"   label="4 · M&A Signals"       width={1440} height={900}><Dashboard initialView="signals"/></DCArtboard>
+            <DCArtboard id="news"      label="5 · News"              width={1440} height={900}><Dashboard initialView="news"/></DCArtboard>
+            <DCArtboard id="fit"       label="6 · Strategic Fit"     width={1440} height={900}><Dashboard initialView="fit"/></DCArtboard>
+            <DCArtboard id="overlap"   label="7 · Competitor Overlap" width={1440} height={900}><Dashboard initialView="overlap"/></DCArtboard>
+            <DCArtboard id="network"   label="8 · Relationship Graph" width={1440} height={900}><Dashboard initialView="network"/></DCArtboard>
+            <DCArtboard id="brief"     label="9 · Executive Brief"   width={1440} height={900}><Dashboard initialView="brief"/></DCArtboard>
+          </DCSection>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<Root/>);
+  </script>
+</body>
+</html>

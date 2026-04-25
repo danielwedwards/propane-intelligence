@@ -1,0 +1,411 @@
+{
+  "batch": "se_primary_3_va_ky_sc_ms_la_ar_wv",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Special Fleet Service",
+      "hqCity": "Harrisonburg",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Harrisonburg",
+          "state": "VA",
+          "street": "875 Waterman Drive"
+        }
+      ],
+      "ownership": "private",
+      "notes": "VAPGA member propane marketer in Harrisonburg, VA."
+    },
+    {
+      "name": "Redwood Fuel Oil and Propane",
+      "hqCity": "Rocky Mount",
+      "hqState": "VA",
+      "website": "https://redwoodfuel.com/",
+      "knownLocations": [
+        {
+          "city": "Rocky Mount",
+          "state": "VA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane and fuel oil distributor serving Franklin County and adjacent VA counties."
+    },
+    {
+      "name": "A and B Propane",
+      "hqCity": "Chesapeake",
+      "hqState": "VA",
+      "website": "https://abpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Chesapeake",
+          "state": "VA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Third-generation family business established 1974 serving Virginia and North Carolina."
+    },
+    {
+      "name": "Parker Oil Company",
+      "hqCity": "Emporia",
+      "hqState": "VA",
+      "website": "https://parkeroilcompany.com/",
+      "knownLocations": [
+        {
+          "city": "Emporia",
+          "state": "VA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Regional fuel and propane company with automatic propane delivery across southeastern VA and NC."
+    },
+    {
+      "name": "Hardy Petroleum",
+      "hqCity": "Danville",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Danville",
+          "state": "VA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent fuel and propane dealer in Danville, VA."
+    },
+    {
+      "name": "Glenwood Oil and Gas",
+      "hqCity": "Danville",
+      "hqState": "VA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Danville",
+          "state": "VA",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent oil and propane dealer serving the Danville VA area."
+    },
+    {
+      "name": "West Kentucky Propane",
+      "hqCity": "Paducah",
+      "hqState": "KY",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Paducah",
+          "state": "KY",
+          "street": "4200 Cairo Rd"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer serving western Kentucky from Paducah."
+    },
+    {
+      "name": "M and G Propane",
+      "hqCity": "Ashland",
+      "hqState": "KY",
+      "website": "http://mgpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Ashland",
+          "state": "KY",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned residential and commercial propane provider in eastern Kentucky."
+    },
+    {
+      "name": "Jackson Propane Plus",
+      "hqCity": "London",
+      "hqState": "KY",
+      "website": "https://www.jacksonpropaneplus.com/",
+      "knownLocations": [
+        {
+          "city": "London",
+          "state": "KY",
+          "street": null
+        },
+        {
+          "city": "Jackson",
+          "state": "KY",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Full service propane dealer with three locations in eastern Kentucky."
+    },
+    {
+      "name": "Irvington Gas",
+      "hqCity": "Irvington",
+      "hqState": "KY",
+      "website": "https://irvingtongas.com/",
+      "knownLocations": [
+        {
+          "city": "Irvington",
+          "state": "KY",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer in Breckinridge County serving western Kentucky."
+    },
+    {
+      "name": "Holston Gases Glasgow",
+      "hqCity": "Glasgow",
+      "hqState": "KY",
+      "website": "https://www.holstongases.com/glasgow-ky/",
+      "knownLocations": [
+        {
+          "city": "Glasgow",
+          "state": "KY",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Regional gas and propane distributor operating a Glasgow KY branch."
+    },
+    {
+      "name": "Thomlinson and McWhite Propane",
+      "hqCity": "Lake City",
+      "hqState": "SC",
+      "website": "https://www.tmpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Lake City",
+          "state": "SC",
+          "street": null
+        },
+        {
+          "city": "Bishopville",
+          "state": "SC",
+          "street": null
+        },
+        {
+          "city": "Sumter",
+          "state": "SC",
+          "street": null
+        },
+        {
+          "city": "Johnsonville",
+          "state": "SC",
+          "street": null
+        },
+        {
+          "city": "Kingstree",
+          "state": "SC",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane company operating since 1928 across east-central SC."
+    },
+    {
+      "name": "Carolina Propane SC",
+      "hqCity": "Columbia",
+      "hqState": "SC",
+      "website": "https://carolinapropane.net/",
+      "knownLocations": [
+        {
+          "city": "Columbia",
+          "state": "SC",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "South Carolina propane dealer serving central SC."
+    },
+    {
+      "name": "H and M Gas",
+      "hqCity": "Edwards",
+      "hqState": "MS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Edwards",
+          "state": "MS",
+          "street": null
+        },
+        {
+          "city": "Flora",
+          "state": "MS",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "MSPGA member; small independent central Mississippi propane dealer."
+    },
+    {
+      "name": "Airgas Lafayette",
+      "hqCity": "Lafayette",
+      "hqState": "LA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lafayette",
+          "state": "LA",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Lafayette LA propane and industrial gas branch listed in LAPGA directory."
+    },
+    {
+      "name": "Gammill Oil Company",
+      "hqCity": "Mountain View",
+      "hqState": "AR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mountain View",
+          "state": "AR",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "APGA associate member; oil and propane dealer in north-central Arkansas."
+    },
+    {
+      "name": "Gas Equipment Company",
+      "hqCity": "Bentonville",
+      "hqState": "AR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bentonville",
+          "state": "AR",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "APGA associate member supplier in northwest Arkansas."
+    },
+    {
+      "name": "Martin Gas Sales",
+      "hqCity": "Lincoln",
+      "hqState": "AR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lincoln",
+          "state": "AR",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "APGA associate member; Arkansas propane supplier."
+    },
+    {
+      "name": "Mountaineer Gas Company",
+      "hqCity": "Charleston",
+      "hqState": "WV",
+      "website": "https://mountaineergasonline.com/",
+      "knownLocations": [
+        {
+          "city": "Charleston",
+          "state": "WV",
+          "street": null
+        },
+        {
+          "city": "Wheeling",
+          "state": "WV",
+          "street": null
+        },
+        {
+          "city": "Weirton",
+          "state": "WV",
+          "street": null
+        },
+        {
+          "city": "Huntington",
+          "state": "WV",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "West Virginia gas distribution company with multi-city footprint across WV."
+    },
+    {
+      "name": "Holston Gases Lexington",
+      "hqCity": "Lexington",
+      "hqState": "KY",
+      "website": "https://www.holstongases.com/lexington-ky/",
+      "knownLocations": [
+        {
+          "city": "Lexington",
+          "state": "KY",
+          "street": "357 Blue Sky Parkway"
+        }
+      ],
+      "ownership": "private",
+      "notes": "Regional industrial and propane gas distributor; operates Lexington KY branch serving central Kentucky."
+    },
+    {
+      "name": "Holston Gases Greenwood",
+      "hqCity": "Greenwood",
+      "hqState": "SC",
+      "website": "https://www.holstongases.com/greenwood-sc/",
+      "knownLocations": [
+        {
+          "city": "Greenwood",
+          "state": "SC",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Regional industrial and propane gas distributor; operates a Greenwood SC branch."
+    },
+    {
+      "name": "Holston Gases Lexington SC",
+      "hqCity": "Lexington",
+      "hqState": "SC",
+      "website": "https://www.holstongases.com/lexington-sc/",
+      "knownLocations": [
+        {
+          "city": "Lexington",
+          "state": "SC",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Regional industrial and propane gas distributor; operates a Lexington SC branch."
+    },
+    {
+      "name": "Ferguson Gas",
+      "hqCity": "Ardmore",
+      "hqState": "MS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ardmore",
+          "state": "MS",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Gas dealer listed on the MSPGA dealer directory serving north Mississippi and the AL line."
+    },
+    {
+      "name": "Appalachian Natural Gas",
+      "hqCity": "Charleston",
+      "hqState": "WV",
+      "website": "https://appnatgas.com/",
+      "knownLocations": [
+        {
+          "city": "Charleston",
+          "state": "WV",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "West Virginia natural gas and propane distributor with operations across central WV."
+    }
+  ]
+}

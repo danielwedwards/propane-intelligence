@@ -1,0 +1,3098 @@
+[
+  {
+    "id": "thompsongas",
+    "name": "ThompsonGas",
+    "state": "AL",
+    "url": "https://www.google.com/maps/search/ThompsonGas%20Alabama%20propane"
+  },
+  {
+    "id": "allgas_inc",
+    "name": "Allgas Inc.",
+    "state": "AL",
+    "url": "https://www.google.com/maps/search/Allgas%20Inc.%20Alabama%20propane"
+  },
+  {
+    "id": "steveson_s_lp_gas",
+    "name": "Steveson's LP Gas",
+    "state": "AR",
+    "url": "https://www.google.com/maps/search/Steveson%27s%20LP%20Gas%20Arkansas%20propane"
+  },
+  {
+    "id": "scott_petroleum_anderson_s_gas_propane",
+    "name": "Scott Petroleum / Anderson's Gas & Propane",
+    "state": "AR",
+    "url": "https://www.google.com/maps/search/Scott%20Petroleum%20/%20Anderson%27s%20Gas%20and%20Propane%20Arkansas%20propane"
+  },
+  {
+    "id": "sungas_propane_clarksville",
+    "name": "SunGas Propane Clarksville",
+    "state": "AR",
+    "url": "https://www.google.com/maps/search/SunGas%20Propane%20Clarksville%20Arkansas%20propane"
+  },
+  {
+    "id": "queen_city_gas",
+    "name": "Queen City Gas",
+    "state": "AR",
+    "url": "https://www.google.com/maps/search/Queen%20City%20Gas%20Arkansas%20propane"
+  },
+  {
+    "id": "petrolane_gas_services",
+    "name": "Petrolane Gas Services",
+    "state": "AR",
+    "url": "https://www.google.com/maps/search/Petrolane%20Gas%20Services%20Arkansas%20propane"
+  },
+  {
+    "id": "affordable_propane_arkansas",
+    "name": "Affordable Propane Arkansas",
+    "state": "AR",
+    "url": "https://www.google.com/maps/search/Affordable%20Propane%20Arkansas%20Arkansas%20propane"
+  },
+  {
+    "id": "mountain_country_propane",
+    "name": "Mountain Country Propane",
+    "state": "AR",
+    "url": "https://www.google.com/maps/search/Mountain%20Country%20Propane%20Arkansas%20propane"
+  },
+  {
+    "id": "west_plains_propane",
+    "name": "West Plains Propane",
+    "state": "AR",
+    "url": "https://www.google.com/maps/search/West%20Plains%20Propane%20Arkansas%20propane"
+  },
+  {
+    "id": "propane_of_tucson",
+    "name": "Propane of Tucson",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Propane%20of%20Tucson%20Arizona%20propane"
+  },
+  {
+    "id": "ape_fuels_inc",
+    "name": "APE Fuels Inc",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/APE%20Fuels%20Inc%20Arizona%20propane"
+  },
+  {
+    "id": "union_gas",
+    "name": "UNION GAS",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/UNION%20GAS%20Arizona%20propane"
+  },
+  {
+    "id": "matlock_propane_equipment_co",
+    "name": "Matlock Propane & Equipment Co",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Matlock%20Propane%20and%20Equipment%20Co%20Arizona%20propane"
+  },
+  {
+    "id": "cochise_county_farmers_association",
+    "name": "Cochise County Farmers Association",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Cochise%20County%20Farmers%20Association%20Arizona%20propane"
+  },
+  {
+    "id": "barrett_propane",
+    "name": "Barrett Propane",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Barrett%20Propane%20Arizona%20propane"
+  },
+  {
+    "id": "yavapai_bottle_gas",
+    "name": "YAVAPAI BOTTLE GAS",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/YAVAPAI%20BOTTLE%20GAS%20Arizona%20propane"
+  },
+  {
+    "id": "superior_propane",
+    "name": "Superior Propane",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Superior%20Propane%20Arizona%20propane"
+  },
+  {
+    "id": "valley_veteran_gas_co",
+    "name": "Valley Veteran Gas Co.",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Valley%20Veteran%20Gas%20Co.%20Arizona%20propane"
+  },
+  {
+    "id": "alliant_gas_powered_by_pinnacle_propane",
+    "name": "Alliant Gas Powered by Pinnacle Propane",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Alliant%20Gas%20Powered%20by%20Pinnacle%20Propane%20Arizona%20propane"
+  },
+  {
+    "id": "titan_propane",
+    "name": "Titan Propane",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Titan%20Propane%20Arizona%20propane"
+  },
+  {
+    "id": "samco",
+    "name": "Samco",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Samco%20Arizona%20propane"
+  },
+  {
+    "id": "djb_gas_service_inc",
+    "name": "DJB Gas Service Inc",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/DJB%20Gas%20Service%20Inc%20Arizona%20propane"
+  },
+  {
+    "id": "ramsay_oil_co",
+    "name": "Ramsay Oil Co",
+    "state": "AZ",
+    "url": "https://www.google.com/maps/search/Ramsay%20Oil%20Co%20Arizona%20propane"
+  },
+  {
+    "id": "california_propane_1",
+    "name": "California propane 1",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/California%20propane%201%20California%20propane"
+  },
+  {
+    "id": "fast_gas_propane_crazy_charlies",
+    "name": "Fast Gas & Propane (Crazy Charlies)",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/Fast%20Gas%20and%20Propane%20%28Crazy%20Charlies%29%20California%20propane"
+  },
+  {
+    "id": "gas_2_you_inc",
+    "name": "Gas 2 You Inc",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/Gas%202%20You%20Inc%20California%20propane"
+  },
+  {
+    "id": "bay_area_propane",
+    "name": "Bay Area Propane",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/Bay%20Area%20Propane%20California%20propane"
+  },
+  {
+    "id": "san_leandro_propane_and_fuel_stop",
+    "name": "San Leandro Propane and Fuel Stop",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/San%20Leandro%20Propane%20and%20Fuel%20Stop%20California%20propane"
+  },
+  {
+    "id": "herger_gas",
+    "name": "Herger Gas",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/Herger%20Gas%20California%20propane"
+  },
+  {
+    "id": "american_river_gas_co_inc",
+    "name": "American River Gas Co Inc.",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/American%20River%20Gas%20Co%20Inc.%20California%20propane"
+  },
+  {
+    "id": "woodland_propane_and_gasoline",
+    "name": "Woodland Propane and Gasoline",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/Woodland%20Propane%20and%20Gasoline%20California%20propane"
+  },
+  {
+    "id": "blue_star_gas_crescent_city_co",
+    "name": "Blue Star Gas - Crescent City Co.",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/Blue%20Star%20Gas%20Crescent%20City%20Co.%20California%20propane"
+  },
+  {
+    "id": "blue_star_gas_medford_co",
+    "name": "Blue Star Gas - Medford Co.",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/Blue%20Star%20Gas%20Medford%20Co.%20California%20propane"
+  },
+  {
+    "id": "wilderville_country_store",
+    "name": "Wilderville Country Store",
+    "state": "CA",
+    "url": "https://www.google.com/maps/search/Wilderville%20Country%20Store%20California%20propane"
+  },
+  {
+    "id": "inter_mountain_propane",
+    "name": "Inter-Mountain Propane",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Inter-Mountain%20Propane%20Colorado%20propane"
+  },
+  {
+    "id": "oil_gas_equipment_corporation",
+    "name": "Oil & Gas Equipment Corporation",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Oil%20and%20Gas%20Equipment%20Corporation%20Colorado%20propane"
+  },
+  {
+    "id": "south_fork_propane",
+    "name": "South Fork Propane",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/South%20Fork%20Propane%20Colorado%20propane"
+  },
+  {
+    "id": "rio_chama_propane_corp",
+    "name": "Rio Chama Propane Corp",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Rio%20Chama%20Propane%20Corp%20Colorado%20propane"
+  },
+  {
+    "id": "conejos_propane",
+    "name": "Conejos Propane",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Conejos%20Propane%20Colorado%20propane"
+  },
+  {
+    "id": "norup_gas_inc",
+    "name": "Norup Gas Inc",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Norup%20Gas%20Inc%20Colorado%20propane"
+  },
+  {
+    "id": "rocky_mountain_lp_gas",
+    "name": "Rocky Mountain LP Gas",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Rocky%20Mountain%20LP%20Gas%20Colorado%20propane"
+  },
+  {
+    "id": "deluca_gas",
+    "name": "Deluca Gas",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Deluca%20Gas%20Colorado%20propane"
+  },
+  {
+    "id": "glaser_energy_group_inc",
+    "name": "Glaser Energy Group, Inc.",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Glaser%20Energy%20Group%2C%20Inc.%20Colorado%20propane"
+  },
+  {
+    "id": "aaa_propane_sales_rentals_inc",
+    "name": "AAA Propane Sales & Rentals, Inc.",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/AAA%20Propane%20Sales%20and%20Rentals%2C%20Inc.%20Colorado%20propane"
+  },
+  {
+    "id": "enviro_gas",
+    "name": "Enviro Gas",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Enviro%20Gas%20Colorado%20propane"
+  },
+  {
+    "id": "maddox_gas_oil",
+    "name": "Maddox Gas & Oil",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Maddox%20Gas%20and%20Oil%20Colorado%20propane"
+  },
+  {
+    "id": "weld_lp_gas_co",
+    "name": "Weld LP Gas Co",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Weld%20LP%20Gas%20Co%20Colorado%20propane"
+  },
+  {
+    "id": "neal_oil",
+    "name": "Neal Oil",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Neal%20Oil%20Colorado%20propane"
+  },
+  {
+    "id": "legacy_coop_propane_fuel_kimball_ne_burns_cheyenne_laramie_wy",
+    "name": "Legacy Coop Propane & Fuel-Kimball, NE, Burns, Cheyenne, Laramie, WY",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Legacy%20Coop%20Propane%20and%20Fuel-Kimball%2C%20NE%2C%20Burns%2C%20Cheyenne%2C%20Laramie%2C%20WY%20Colorado%20propane"
+  },
+  {
+    "id": "sapp_bros_petroleum",
+    "name": "Sapp Bros. Petroleum",
+    "state": "CO",
+    "url": "https://www.google.com/maps/search/Sapp%20Bros.%20Petroleum%20Colorado%20propane"
+  },
+  {
+    "id": "quinlan_gas_inc",
+    "name": "Quinlan Gas, Inc.",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/Quinlan%20Gas%2C%20Inc.%20Connecticut%20propane"
+  },
+  {
+    "id": "dutch_oil_propane",
+    "name": "Dutch Oil & Propane",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/Dutch%20Oil%20and%20Propane%20Connecticut%20propane"
+  },
+  {
+    "id": "long_island_propane_inc",
+    "name": "Long Island Propane Inc.",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/Long%20Island%20Propane%20Inc.%20Connecticut%20propane"
+  },
+  {
+    "id": "high_grade_gas_service_inc",
+    "name": "High Grade Gas Service Inc",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/High%20Grade%20Gas%20Service%20Inc%20Connecticut%20propane"
+  },
+  {
+    "id": "propane_lp_gas_at_sunoco_station",
+    "name": "Propane LP Gas at Sunoco Station",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/Propane%20LP%20Gas%20at%20Sunoco%20Station%20Connecticut%20propane"
+  },
+  {
+    "id": "ideal_bottle_gas",
+    "name": "Ideal Bottle Gas",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/Ideal%20Bottle%20Gas%20Connecticut%20propane"
+  },
+  {
+    "id": "superior_plus_energy_services",
+    "name": "Superior Plus Energy Services",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/Superior%20Plus%20Energy%20Services%20Connecticut%20propane"
+  },
+  {
+    "id": "superior_plus_propane",
+    "name": "Superior Plus Propane",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/Superior%20Plus%20Propane%20Connecticut%20propane"
+  },
+  {
+    "id": "all_gas",
+    "name": "ALL-GAS",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/ALL-GAS%20Connecticut%20propane"
+  },
+  {
+    "id": "osterman_propane",
+    "name": "Osterman Propane",
+    "state": "CT",
+    "url": "https://www.google.com/maps/search/Osterman%20Propane%20Connecticut%20propane"
+  },
+  {
+    "id": "georgia_energy_propane_gas",
+    "name": "Georgia Energy Propane Gas",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/Georgia%20Energy%20Propane%20Gas%20Georgia%20propane"
+  },
+  {
+    "id": "gasco",
+    "name": "Gasco",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/Gasco%20Georgia%20propane"
+  },
+  {
+    "id": "united_propane_gas_cleveland_tn",
+    "name": "United Propane Gas (Cleveland, TN)",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Cleveland%2C%20TN%29%20Georgia%20propane"
+  },
+  {
+    "id": "aa_bottled_gas_co",
+    "name": "AA BOTTLED GAS CO",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/AA%20BOTTLED%20GAS%20CO%20Georgia%20propane"
+  },
+  {
+    "id": "blossman_propane",
+    "name": "Blossman Propane",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/Blossman%20Propane%20Georgia%20propane"
+  },
+  {
+    "id": "mountain_top_propane",
+    "name": "Mountain Top Propane",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/Mountain%20Top%20Propane%20Georgia%20propane"
+  },
+  {
+    "id": "twin_rivers_propane",
+    "name": "TWIN RIVERS PROPANE",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/TWIN%20RIVERS%20PROPANE%20Georgia%20propane"
+  },
+  {
+    "id": "freeman_gas_brevard_office",
+    "name": "Freeman Gas Brevard Office",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/Freeman%20Gas%20Brevard%20Office%20Georgia%20propane"
+  },
+  {
+    "id": "appalachian_propane_gas",
+    "name": "Appalachian Propane Gas",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/Appalachian%20Propane%20Gas%20Georgia%20propane"
+  },
+  {
+    "id": "palmetto_propane_fuels_ice",
+    "name": "Palmetto Propane, Fuels, & Ice",
+    "state": "GA",
+    "url": "https://www.google.com/maps/search/Palmetto%20Propane%2C%20Fuels%2C%20and%20Ice%20Georgia%20propane"
+  },
+  {
+    "id": "baker_petroleum",
+    "name": "Baker Petroleum",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Baker%20Petroleum%20Delaware%20propane"
+  },
+  {
+    "id": "blue_flame",
+    "name": "Blue Flame",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Blue%20Flame%20Delaware%20propane"
+  },
+  {
+    "id": "poore_s_propane",
+    "name": "Poore's Propane",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Poore%27s%20Propane%20Delaware%20propane"
+  },
+  {
+    "id": "countryside_fuel",
+    "name": "Countryside Fuel",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Countryside%20Fuel%20Delaware%20propane"
+  },
+  {
+    "id": "scully_propane",
+    "name": "Scully Propane",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Scully%20Propane%20Delaware%20propane"
+  },
+  {
+    "id": "asapropane",
+    "name": "Asapropane",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Asapropane%20Delaware%20propane"
+  },
+  {
+    "id": "blue_flame_gas",
+    "name": "Blue Flame Gas",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Blue%20Flame%20Gas%20Delaware%20propane"
+  },
+  {
+    "id": "ocean_city_supply",
+    "name": "Ocean City Supply",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Ocean%20City%20Supply%20Delaware%20propane"
+  },
+  {
+    "id": "sharp_energy",
+    "name": "Sharp Energy",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Sharp%20Energy%20Delaware%20propane"
+  },
+  {
+    "id": "delaware_propane",
+    "name": "Delaware Propane",
+    "state": "DE",
+    "url": "https://www.google.com/maps/search/Delaware%20Propane%20Delaware%20propane"
+  },
+  {
+    "id": "first_choice_propane",
+    "name": "First Choice Propane",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/First%20Choice%20Propane%20Florida%20propane"
+  },
+  {
+    "id": "prescott_gas_co",
+    "name": "Prescott Gas Co",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Prescott%20Gas%20Co%20Florida%20propane"
+  },
+  {
+    "id": "discount_propane",
+    "name": "Discount Propane",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Discount%20Propane%20Florida%20propane"
+  },
+  {
+    "id": "thermotane_propane",
+    "name": "Thermotane Propane",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Thermotane%20Propane%20Florida%20propane"
+  },
+  {
+    "id": "florida_public_utilities_propane_debary",
+    "name": "Florida Public Utilities Propane - Debary",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Florida%20Public%20Utilities%20Propane%20Debary%20Florida%20propane"
+  },
+  {
+    "id": "tri_county_gas",
+    "name": "Tri-County Gas",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Tri-County%20Gas%20Florida%20propane"
+  },
+  {
+    "id": "propane_cowboy",
+    "name": "Propane Cowboy",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Propane%20Cowboy%20Florida%20propane"
+  },
+  {
+    "id": "belleview_propane_inc_fl",
+    "name": "Belleview Propane Inc",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Belleview%20Propane%20Inc%20Florida%20propane"
+  },
+  {
+    "id": "24_7_propane",
+    "name": "24/7 Propane",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/24/7%20Propane%20Florida%20propane"
+  },
+  {
+    "id": "miami_gas",
+    "name": "Miami Gas",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Miami%20Gas%20Florida%20propane"
+  },
+  {
+    "id": "cooperative_propane",
+    "name": "Cooperative Propane",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Cooperative%20Propane%20Florida%20propane"
+  },
+  {
+    "id": "burox_engineering",
+    "name": "Burox Engineering",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Burox%20Engineering%20Florida%20propane"
+  },
+  {
+    "id": "leon_propane",
+    "name": "Leon Propane",
+    "state": "FL",
+    "url": "https://www.google.com/maps/search/Leon%20Propane%20Florida%20propane"
+  },
+  {
+    "id": "kyle_frericks_propane",
+    "name": "Kyle Frericks Propane",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Kyle%20Frericks%20Propane%20Iowa%20propane"
+  },
+  {
+    "id": "prairieland_fs_inc_taylor",
+    "name": "Prairieland FS, Inc. Taylor",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Prairieland%20FS%2C%20Inc.%20Taylor%20Iowa%20propane"
+  },
+  {
+    "id": "z_z_propane_llc",
+    "name": "Z & Z Propane LLC",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Z%20and%20Z%20Propane%20LLC%20Iowa%20propane"
+  },
+  {
+    "id": "sanborn_propane_and_oil_service_inc",
+    "name": "Sanborn Propane and Oil Service, Inc.",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Sanborn%20Propane%20and%20Oil%20Service%2C%20Inc.%20Iowa%20propane"
+  },
+  {
+    "id": "sam_annis_co",
+    "name": "Sam Annis & Co",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Sam%20Annis%20and%20Co%20Iowa%20propane"
+  },
+  {
+    "id": "consolidated_energy",
+    "name": "Consolidated Energy",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Consolidated%20Energy%20Iowa%20propane"
+  },
+  {
+    "id": "nexus",
+    "name": "Nexus",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Nexus%20Iowa%20propane"
+  },
+  {
+    "id": "star_energy_fs",
+    "name": "Star Energy FS",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Star%20Energy%20FS%20Iowa%20propane"
+  },
+  {
+    "id": "river_valley_energy",
+    "name": "River Valley Energy",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/River%20Valley%20Energy%20Iowa%20propane"
+  },
+  {
+    "id": "t_j_gas_co",
+    "name": "T-J Gas Co",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/T-J%20Gas%20Co%20Iowa%20propane"
+  },
+  {
+    "id": "cooperative_energy_co",
+    "name": "Cooperative Energy Co",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Cooperative%20Energy%20Co%20Iowa%20propane"
+  },
+  {
+    "id": "a_1_propane_service_inc",
+    "name": "A-1 Propane & Service Inc",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/A-1%20Propane%20and%20Service%20Inc%20Iowa%20propane"
+  },
+  {
+    "id": "consolidated_energy_company",
+    "name": "Consolidated Energy Company",
+    "state": "IA",
+    "url": "https://www.google.com/maps/search/Consolidated%20Energy%20Company%20Iowa%20propane"
+  },
+  {
+    "id": "valley_wide_country_store_wendell",
+    "name": "Valley Wide Country Store | Wendell",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Valley%20Wide%20Country%20Store%20%7C%20Wendell%20Idaho%20propane"
+  },
+  {
+    "id": "bear_lake_propane",
+    "name": "Bear Lake Propane",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Bear%20Lake%20Propane%20Idaho%20propane"
+  },
+  {
+    "id": "proflame_propane",
+    "name": "Proflame Propane",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Proflame%20Propane%20Idaho%20propane"
+  },
+  {
+    "id": "cangas_propane",
+    "name": "CanGas Propane",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/CanGas%20Propane%20Idaho%20propane"
+  },
+  {
+    "id": "the_co_op_gas_and_supply_co_inc_energy_department",
+    "name": "The CO-OP Gas and Supply Co., Inc. - Energy Department",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/The%20CO-OP%20Gas%20and%20Supply%20Co.%2C%20Inc.%20Energy%20Department%20Idaho%20propane"
+  },
+  {
+    "id": "homestead_supply_store",
+    "name": "Homestead Supply Store",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Homestead%20Supply%20Store%20Idaho%20propane"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_rexburg",
+    "name": "Valley Wide Cooperative Energy | Rexburg",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Valley%20Wide%20Cooperative%20Energy%20%7C%20Rexburg%20Idaho%20propane"
+  },
+  {
+    "id": "alpine_propane_sales_inc",
+    "name": "Alpine Propane Sales Inc",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Alpine%20Propane%20Sales%20Inc%20Idaho%20propane"
+  },
+  {
+    "id": "energy_west_montana",
+    "name": "Energy West Montana",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Energy%20West%20Montana%20Idaho%20propane"
+  },
+  {
+    "id": "aspen_valley_propane_llc",
+    "name": "Aspen Valley Propane, LLC",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Aspen%20Valley%20Propane%2C%20LLC%20Idaho%20propane"
+  },
+  {
+    "id": "salt_river_propane",
+    "name": "Salt River Propane",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Salt%20River%20Propane%20Idaho%20propane"
+  },
+  {
+    "id": "kootenai_industries",
+    "name": "Kootenai Industries",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Kootenai%20Industries%20Idaho%20propane"
+  },
+  {
+    "id": "base_camp_warm_springs",
+    "name": "Base Camp Warm Springs",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Base%20Camp%20Warm%20Springs%20Idaho%20propane"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_jerome",
+    "name": "Valley Wide Cooperative Energy | Jerome",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Valley%20Wide%20Cooperative%20Energy%20%7C%20Jerome%20Idaho%20propane"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_thayne",
+    "name": "Valley Wide Cooperative Energy | Thayne",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/Valley%20Wide%20Cooperative%20Energy%20%7C%20Thayne%20Idaho%20propane"
+  },
+  {
+    "id": "j_peak_propane_inc",
+    "name": "J Peak Propane Inc",
+    "state": "ID",
+    "url": "https://www.google.com/maps/search/J%20Peak%20Propane%20Inc%20Idaho%20propane"
+  },
+  {
+    "id": "united_propane_gas_paducah_ky",
+    "name": "United Propane Gas (Paducah, KY)",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Paducah%2C%20KY%29%20Illinois%20propane"
+  },
+  {
+    "id": "halter_gas_co",
+    "name": "Halter Gas Co",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Halter%20Gas%20Co%20Illinois%20propane"
+  },
+  {
+    "id": "farm_home_lp",
+    "name": "Farm & Home LP",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Farm%20and%20Home%20LP%20Illinois%20propane"
+  },
+  {
+    "id": "lin_gas_propane",
+    "name": "Lin-Gas Propane",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Lin-Gas%20Propane%20Illinois%20propane"
+  },
+  {
+    "id": "united_propane_gas_vienna_il",
+    "name": "United Propane Gas (Vienna, IL)",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Vienna%2C%20IL%29%20Illinois%20propane"
+  },
+  {
+    "id": "tri_county_propane_llc",
+    "name": "Tri County Propane LLC",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Tri%20County%20Propane%20LLC%20Illinois%20propane"
+  },
+  {
+    "id": "synenergy_partners_llc",
+    "name": "SynEnergy Partners LLC",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/SynEnergy%20Partners%20LLC%20Illinois%20propane"
+  },
+  {
+    "id": "big_river_oil_co",
+    "name": "Big River Oil Co.",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Big%20River%20Oil%20Co.%20Illinois%20propane"
+  },
+  {
+    "id": "mfa_oil_propane",
+    "name": "MFA Oil Propane",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/MFA%20Oil%20Propane%20Illinois%20propane"
+  },
+  {
+    "id": "united_propane_gas_corporate_office",
+    "name": "United Propane Gas Corporate Office",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20Corporate%20Office%20Illinois%20propane"
+  },
+  {
+    "id": "patoka_propane",
+    "name": "Patoka Propane",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Patoka%20Propane%20Illinois%20propane"
+  },
+  {
+    "id": "yoder_oil_inc",
+    "name": "Yoder Oil Inc",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Yoder%20Oil%20Inc%20Illinois%20propane"
+  },
+  {
+    "id": "united_propane_gas_equality_il",
+    "name": "United Propane Gas (Equality, IL)",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Equality%2C%20IL%29%20Illinois%20propane"
+  },
+  {
+    "id": "gateway_propane",
+    "name": "Gateway Propane",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Gateway%20Propane%20Illinois%20propane"
+  },
+  {
+    "id": "lp_mart",
+    "name": "LP Mart",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/LP%20Mart%20Illinois%20propane"
+  },
+  {
+    "id": "heritage_propane",
+    "name": "Heritage Propane",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Heritage%20Propane%20Illinois%20propane"
+  },
+  {
+    "id": "southeast_coop_services",
+    "name": "Southeast COOP Services",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Southeast%20COOP%20Services%20Illinois%20propane"
+  },
+  {
+    "id": "evergreen_fs",
+    "name": "Evergreen FS",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Evergreen%20FS%20Illinois%20propane"
+  },
+  {
+    "id": "mulgrew_oil_and_propane_co",
+    "name": "Mulgrew Oil and Propane Co",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Mulgrew%20Oil%20and%20Propane%20Co%20Illinois%20propane"
+  },
+  {
+    "id": "suhre_s_gas_co",
+    "name": "Suhre's Gas Co.",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Suhre%27s%20Gas%20Co.%20Illinois%20propane"
+  },
+  {
+    "id": "hicksgas_propane_sales_service",
+    "name": "Hicksgas Propane Sales & Service",
+    "state": "IL",
+    "url": "https://www.google.com/maps/search/Hicksgas%20Propane%20Sales%20and%20Service%20Illinois%20propane"
+  },
+  {
+    "id": "hub_city_propane",
+    "name": "Hub City Propane",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Hub%20City%20Propane%20Indiana%20propane"
+  },
+  {
+    "id": "united_propane_gas_ferdinand_in",
+    "name": "United Propane Gas (Ferdinand, IN)",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Ferdinand%2C%20IN%29%20Indiana%20propane"
+  },
+  {
+    "id": "co_alliance_propane",
+    "name": "Co-Alliance Propane",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Co-Alliance%20Propane%20Indiana%20propane"
+  },
+  {
+    "id": "franger_gas_company_inc",
+    "name": "Franger Gas Company, Inc",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Franger%20Gas%20Company%2C%20Inc%20Indiana%20propane"
+  },
+  {
+    "id": "propane_people_inc",
+    "name": "Propane People Inc",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Propane%20People%20Inc%20Indiana%20propane"
+  },
+  {
+    "id": "corrigan_oil_and_propane",
+    "name": "Corrigan Oil and Propane",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Corrigan%20Oil%20and%20Propane%20Indiana%20propane"
+  },
+  {
+    "id": "indy_propane_llc",
+    "name": "Indy Propane LLC",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Indy%20Propane%20LLC%20Indiana%20propane"
+  },
+  {
+    "id": "sagamore_gas_appliances_inc",
+    "name": "Sagamore Gas & Appliances Inc",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Sagamore%20Gas%20and%20Appliances%20Inc%20Indiana%20propane"
+  },
+  {
+    "id": "donahue_gas",
+    "name": "Donahue Gas",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Donahue%20Gas%20Indiana%20propane"
+  },
+  {
+    "id": "stump_lp_gas_inc",
+    "name": "Stump LP Gas Inc",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Stump%20LP%20Gas%20Inc%20Indiana%20propane"
+  },
+  {
+    "id": "ceres_solutions",
+    "name": "Ceres Solutions",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Ceres%20Solutions%20Indiana%20propane"
+  },
+  {
+    "id": "premier_energy_formerly_gaile_s_propane",
+    "name": "Premier Energy (Formerly Gaile's Propane)",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Premier%20Energy%20%28Formerly%20Gaile%27s%20Propane%29%20Indiana%20propane"
+  },
+  {
+    "id": "warford_silgas",
+    "name": "Warford Silgas",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Warford%20Silgas%20Indiana%20propane"
+  },
+  {
+    "id": "shelby_county_co_op",
+    "name": "Shelby County Co-op",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Shelby%20County%20Co-op%20Indiana%20propane"
+  },
+  {
+    "id": "tri_state_butane_co_inc_bot_l_gas",
+    "name": "Tri-State Butane Co., Inc. BOT-L-GAS",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Tri-State%20Butane%20Co.%2C%20Inc.%20BOT-L-GAS%20Indiana%20propane"
+  },
+  {
+    "id": "frankfort_bottle_gas_inc",
+    "name": "Frankfort Bottle Gas Inc.",
+    "state": "IN",
+    "url": "https://www.google.com/maps/search/Frankfort%20Bottle%20Gas%20Inc.%20Indiana%20propane"
+  },
+  {
+    "id": "cook_oil_company",
+    "name": "Cook Oil Company",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Cook%20Oil%20Company%20Kansas%20propane"
+  },
+  {
+    "id": "cleveland_petroleum_products",
+    "name": "Cleveland Petroleum Products",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Cleveland%20Petroleum%20Products%20Kansas%20propane"
+  },
+  {
+    "id": "haswell_propane",
+    "name": "Haswell Propane",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Haswell%20Propane%20Kansas%20propane"
+  },
+  {
+    "id": "jl_propane_llc",
+    "name": "JL Propane LLC",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/JL%20Propane%20LLC%20Kansas%20propane"
+  },
+  {
+    "id": "chief_lp_gas_co",
+    "name": "Chief LP Gas Co",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Chief%20LP%20Gas%20Co%20Kansas%20propane"
+  },
+  {
+    "id": "wanklyn_oil_co_inc",
+    "name": "Wanklyn Oil Co Inc",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Wanklyn%20Oil%20Co%20Inc%20Kansas%20propane"
+  },
+  {
+    "id": "garden_city_propane",
+    "name": "Garden City Propane",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Garden%20City%20Propane%20Kansas%20propane"
+  },
+  {
+    "id": "prater_s_propane_co",
+    "name": "Prater's Propane Co",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Prater%27s%20Propane%20Co%20Kansas%20propane"
+  },
+  {
+    "id": "fronk_oil_co_inc",
+    "name": "Fronk Oil Co., Inc.",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Fronk%20Oil%20Co.%2C%20Inc.%20Kansas%20propane"
+  },
+  {
+    "id": "flatlanders_farm_home",
+    "name": "Flatlanders Farm & Home",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Flatlanders%20Farm%20and%20Home%20Kansas%20propane"
+  },
+  {
+    "id": "kramer_oil_co_inc",
+    "name": "Kramer Oil Co Inc",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Kramer%20Oil%20Co%20Inc%20Kansas%20propane"
+  },
+  {
+    "id": "maltsberger_industrial_propane",
+    "name": "Maltsberger Industrial Propane",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Maltsberger%20Industrial%20Propane%20Kansas%20propane"
+  },
+  {
+    "id": "miller_bros_inc",
+    "name": "Miller Bros Inc",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Miller%20Bros%20Inc%20Kansas%20propane"
+  },
+  {
+    "id": "ralston_farmer_s_fuel_oil",
+    "name": "Ralston Farmer's Fuel & Oil",
+    "state": "KS",
+    "url": "https://www.google.com/maps/search/Ralston%20Farmer%27s%20Fuel%20and%20Oil%20Kansas%20propane"
+  },
+  {
+    "id": "hartland_propane",
+    "name": "Hartland Propane",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Hartland%20Propane%20Kentucky%20propane"
+  },
+  {
+    "id": "lykins_queen_city_propane",
+    "name": "Lykins Queen City Propane",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Lykins%20Queen%20City%20Propane%20Kentucky%20propane"
+  },
+  {
+    "id": "farmers_energy_propane_plus",
+    "name": "Farmers Energy Propane Plus",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Farmers%20Energy%20Propane%20Plus%20Kentucky%20propane"
+  },
+  {
+    "id": "miles_lp_gas_upton",
+    "name": "Miles LP Gas - Upton",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Miles%20LP%20Gas%20Upton%20Kentucky%20propane"
+  },
+  {
+    "id": "ekron_ky_miles_lp_gas",
+    "name": "Ekron,Ky Miles LP Gas",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Ekron%2CKy%20Miles%20LP%20Gas%20Kentucky%20propane"
+  },
+  {
+    "id": "bennett_s_gas",
+    "name": "Bennett's Gas",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Bennett%27s%20Gas%20Kentucky%20propane"
+  },
+  {
+    "id": "hardy_gas_co_inc",
+    "name": "Hardy Gas Co Inc.",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Hardy%20Gas%20Co%20Inc.%20Kentucky%20propane"
+  },
+  {
+    "id": "united_propane_gas_murray_ky",
+    "name": "United Propane Gas (Murray, KY)",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Murray%2C%20KY%29%20Kentucky%20propane"
+  },
+  {
+    "id": "united_propane_gas_mayfield_ky",
+    "name": "United Propane Gas (Mayfield, KY)",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Mayfield%2C%20KY%29%20Kentucky%20propane"
+  },
+  {
+    "id": "premier_energy",
+    "name": "Premier Energy",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Premier%20Energy%20Kentucky%20propane"
+  },
+  {
+    "id": "morgan_county_propane",
+    "name": "Morgan County Propane",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Morgan%20County%20Propane%20Kentucky%20propane"
+  },
+  {
+    "id": "cincinnati_propane",
+    "name": "Cincinnati Propane",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Cincinnati%20Propane%20Kentucky%20propane"
+  },
+  {
+    "id": "propane_king",
+    "name": "Propane King",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Propane%20King%20Kentucky%20propane"
+  },
+  {
+    "id": "midwest_bottle_gas",
+    "name": "Midwest Bottle Gas",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Midwest%20Bottle%20Gas%20Kentucky%20propane"
+  },
+  {
+    "id": "fortner_gas_co",
+    "name": "Fortner Gas Co",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Fortner%20Gas%20Co%20Kentucky%20propane"
+  },
+  {
+    "id": "caney_valley_propane",
+    "name": "Caney Valley Propane",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Caney%20Valley%20Propane%20Kentucky%20propane"
+  },
+  {
+    "id": "tri_county_propane_inc",
+    "name": "Tri-County Propane Inc.",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Tri-County%20Propane%20Inc.%20Kentucky%20propane"
+  },
+  {
+    "id": "greenwell_propane",
+    "name": "Greenwell Propane",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Greenwell%20Propane%20Kentucky%20propane"
+  },
+  {
+    "id": "wardway_fuels",
+    "name": "Wardway Fuels",
+    "state": "KY",
+    "url": "https://www.google.com/maps/search/Wardway%20Fuels%20Kentucky%20propane"
+  },
+  {
+    "id": "gary_s",
+    "name": "Gary's",
+    "state": "LA",
+    "url": "https://www.google.com/maps/search/Gary%27s%20Louisiana%20propane"
+  },
+  {
+    "id": "propane_industrial_gases",
+    "name": "Propane Industrial Gases",
+    "state": "LA",
+    "url": "https://www.google.com/maps/search/Propane%20Industrial%20Gases%20Louisiana%20propane"
+  },
+  {
+    "id": "dileo_gas_propane",
+    "name": "DiLeo Gas Propane",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/DiLeo%20Gas%20Propane%20Massachusetts%20propane"
+  },
+  {
+    "id": "liberty_propane_equipment_co",
+    "name": "Liberty Propane Equipment Co",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Liberty%20Propane%20Equipment%20Co%20Massachusetts%20propane"
+  },
+  {
+    "id": "sea_gas",
+    "name": "Sea Gas",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Sea%20Gas%20Massachusetts%20propane"
+  },
+  {
+    "id": "simard_gas_oil_co",
+    "name": "Simard Gas & Oil Co",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Simard%20Gas%20and%20Oil%20Co%20Massachusetts%20propane"
+  },
+  {
+    "id": "jaysan_gas_service_inc",
+    "name": "JaySan Gas Service Inc.",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/JaySan%20Gas%20Service%20Inc.%20Massachusetts%20propane"
+  },
+  {
+    "id": "w_h_riley_son",
+    "name": "W.H. Riley & Son",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/W.H.%20Riley%20and%20Son%20Massachusetts%20propane"
+  },
+  {
+    "id": "phil_s_propane",
+    "name": "Phil's Propane",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Phil%27s%20Propane%20Massachusetts%20propane"
+  },
+  {
+    "id": "ayer_goss",
+    "name": "Ayer & Goss",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Ayer%20and%20Goss%20Massachusetts%20propane"
+  },
+  {
+    "id": "snow_s_fuel_company",
+    "name": "Snow's Fuel Company",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Snow%27s%20Fuel%20Company%20Massachusetts%20propane"
+  },
+  {
+    "id": "newport_propane",
+    "name": "Newport Propane",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Newport%20Propane%20Massachusetts%20propane"
+  },
+  {
+    "id": "american_propane",
+    "name": "American Propane",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/American%20Propane%20Massachusetts%20propane"
+  },
+  {
+    "id": "e_p_wine_propane",
+    "name": "E.P. Wine Propane",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/E.P.%20Wine%20Propane%20Massachusetts%20propane"
+  },
+  {
+    "id": "sherborn_fuel_and_propane_tank_refills",
+    "name": "Sherborn Fuel and Propane Tank Refills",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Sherborn%20Fuel%20and%20Propane%20Tank%20Refills%20Massachusetts%20propane"
+  },
+  {
+    "id": "dunlap_s_propane_inc",
+    "name": "Dunlap's Propane Inc",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Dunlap%27s%20Propane%20Inc%20Massachusetts%20propane"
+  },
+  {
+    "id": "walter_s_propane",
+    "name": "Walter's Propane",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/Walter%27s%20Propane%20Massachusetts%20propane"
+  },
+  {
+    "id": "jfc_propane",
+    "name": "JFC Propane",
+    "state": "MA",
+    "url": "https://www.google.com/maps/search/JFC%20Propane%20Massachusetts%20propane"
+  },
+  {
+    "id": "blue_flame_inc",
+    "name": "Blue Flame Inc.",
+    "state": "MD",
+    "url": "https://www.google.com/maps/search/Blue%20Flame%20Inc.%20Maryland%20propane"
+  },
+  {
+    "id": "valley_energy",
+    "name": "Valley Energy",
+    "state": "MD",
+    "url": "https://www.google.com/maps/search/Valley%20Energy%20Maryland%20propane"
+  },
+  {
+    "id": "hunt_country_propane",
+    "name": "Hunt Country Propane",
+    "state": "MD",
+    "url": "https://www.google.com/maps/search/Hunt%20Country%20Propane%20Maryland%20propane"
+  },
+  {
+    "id": "mrohs_gas_inc",
+    "name": "Mrohs Gas, Inc.",
+    "state": "MD",
+    "url": "https://www.google.com/maps/search/Mrohs%20Gas%2C%20Inc.%20Maryland%20propane"
+  },
+  {
+    "id": "taylor_gas_heating_air",
+    "name": "Taylor Gas Heating Air",
+    "state": "MD",
+    "url": "https://www.google.com/maps/search/Taylor%20Gas%20Heating%20Air%20Maryland%20propane"
+  },
+  {
+    "id": "pepup",
+    "name": "PepUp",
+    "state": "MD",
+    "url": "https://www.google.com/maps/search/PepUp%20Maryland%20propane"
+  },
+  {
+    "id": "acadia_fuel",
+    "name": "Acadia Fuel",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/Acadia%20Fuel%20Maine%20propane"
+  },
+  {
+    "id": "community_energy_co_inc",
+    "name": "Community Energy, Co., Inc.",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/Community%20Energy%2C%20Co.%2C%20Inc.%20Maine%20propane"
+  },
+  {
+    "id": "guyette_s_lp_gas",
+    "name": "Guyette's LP Gas",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/Guyette%27s%20LP%20Gas%20Maine%20propane"
+  },
+  {
+    "id": "r_h_foster_energy_machias",
+    "name": "R.H. Foster Energy - Machias",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/R.H.%20Foster%20Energy%20Machias%20Maine%20propane"
+  },
+  {
+    "id": "northeastern_supply_co",
+    "name": "Northeastern Supply Co",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/Northeastern%20Supply%20Co%20Maine%20propane"
+  },
+  {
+    "id": "dodge_oil_propane",
+    "name": "Dodge Oil & Propane",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/Dodge%20Oil%20and%20Propane%20Maine%20propane"
+  },
+  {
+    "id": "morin_fuel",
+    "name": "Morin Fuel",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/Morin%20Fuel%20Maine%20propane"
+  },
+  {
+    "id": "perry_s_oil_service_and_patten_s_gas",
+    "name": "Perry's Oil Service and Patten's Gas",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/Perry%27s%20Oil%20Service%20and%20Patten%27s%20Gas%20Maine%20propane"
+  },
+  {
+    "id": "bot_l_gas_inc",
+    "name": "Bot-L-Gas Inc",
+    "state": "ME",
+    "url": "https://www.google.com/maps/search/Bot-L-Gas%20Inc%20Maine%20propane"
+  },
+  {
+    "id": "long_s_propane_gas_llc",
+    "name": "Long's Propane Gas LLC",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Long%27s%20Propane%20Gas%20LLC%20Michigan%20propane"
+  },
+  {
+    "id": "jb_propane_tackle",
+    "name": "JB Propane & Tackle",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/JB%20Propane%20and%20Tackle%20Michigan%20propane"
+  },
+  {
+    "id": "rp_fuel",
+    "name": "RP Fuel",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/RP%20Fuel%20Michigan%20propane"
+  },
+  {
+    "id": "kohler_s_propane_co",
+    "name": "Kohler's Propane Co",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Kohler%27s%20Propane%20Co%20Michigan%20propane"
+  },
+  {
+    "id": "van_dyke_gas",
+    "name": "Van Dyke Gas",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Van%20Dyke%20Gas%20Michigan%20propane"
+  },
+  {
+    "id": "hamilton_s_propane",
+    "name": "Hamilton's propane",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Hamilton%27s%20propane%20Michigan%20propane"
+  },
+  {
+    "id": "motor_city_propane_services_inc",
+    "name": "Motor City Propane Services Inc.",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Motor%20City%20Propane%20Services%20Inc.%20Michigan%20propane"
+  },
+  {
+    "id": "parker_s_propane_gas_co",
+    "name": "Parker's Propane Gas Co",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Parker%27s%20Propane%20Gas%20Co%20Michigan%20propane"
+  },
+  {
+    "id": "holton_s_lp_gas_co",
+    "name": "Holton's LP Gas Co.",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Holton%27s%20LP%20Gas%20Co.%20Michigan%20propane"
+  },
+  {
+    "id": "d_and_m_propane_llc",
+    "name": "D And M Propane Llc",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/D%20And%20M%20Propane%20Llc%20Michigan%20propane"
+  },
+  {
+    "id": "keweenaw_petroleum_services",
+    "name": "Keweenaw Petroleum Services",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Keweenaw%20Petroleum%20Services%20Michigan%20propane"
+  },
+  {
+    "id": "u_p_propane",
+    "name": "U.P. Propane",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/U.P.%20Propane%20Michigan%20propane"
+  },
+  {
+    "id": "lacourt_bottled_gas",
+    "name": "Lacourt Bottled Gas",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Lacourt%20Bottled%20Gas%20Michigan%20propane"
+  },
+  {
+    "id": "ashland_propane_inc",
+    "name": "Ashland Propane, Inc.",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Ashland%20Propane%2C%20Inc.%20Michigan%20propane"
+  },
+  {
+    "id": "hlo_propane",
+    "name": "HLO Propane",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/HLO%20Propane%20Michigan%20propane"
+  },
+  {
+    "id": "fischer_lp_gas",
+    "name": "Fischer LP Gas",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Fischer%20LP%20Gas%20Michigan%20propane"
+  },
+  {
+    "id": "fick_sons_inc",
+    "name": "Fick & Sons, Inc.",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Fick%20and%20Sons%2C%20Inc.%20Michigan%20propane"
+  },
+  {
+    "id": "schmucker_s_lp_gas_store",
+    "name": "Schmucker's LP Gas & Store",
+    "state": "MI",
+    "url": "https://www.google.com/maps/search/Schmucker%27s%20LP%20Gas%20and%20Store%20Michigan%20propane"
+  },
+  {
+    "id": "lawler_gas_inc",
+    "name": "Lawler Gas Inc",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Lawler%20Gas%20Inc%20Minnesota%20propane"
+  },
+  {
+    "id": "consolidated_energy_company_formerly_feils_oil_company",
+    "name": "Consolidated Energy Company (Formerly Feils Oil Company)",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Consolidated%20Energy%20Company%20%28Formerly%20Feils%20Oil%20Company%29%20Minnesota%20propane"
+  },
+  {
+    "id": "superior_fuel_company",
+    "name": "Superior Fuel Company",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Superior%20Fuel%20Company%20Minnesota%20propane"
+  },
+  {
+    "id": "mcmahon_oil",
+    "name": "McMahon Oil",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/McMahon%20Oil%20Minnesota%20propane"
+  },
+  {
+    "id": "pirkl_gas",
+    "name": "Pirkl Gas",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Pirkl%20Gas%20Minnesota%20propane"
+  },
+  {
+    "id": "farmers_union_oil_co",
+    "name": "Farmers Union Oil Co.",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Farmers%20Union%20Oil%20Co.%20Minnesota%20propane"
+  },
+  {
+    "id": "the_propane_express",
+    "name": "The Propane Express",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/The%20Propane%20Express%20Minnesota%20propane"
+  },
+  {
+    "id": "five_star_propane_co_op_oil",
+    "name": "Five Star Propane Co-Op Oil",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Five%20Star%20Propane%20Co-Op%20Oil%20Minnesota%20propane"
+  },
+  {
+    "id": "red_lake_county_co_op",
+    "name": "Red Lake County Co-Op",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Red%20Lake%20County%20Co-Op%20Minnesota%20propane"
+  },
+  {
+    "id": "rahn_s_oil_propane",
+    "name": "Rahn's Oil & Propane",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Rahn%27s%20Oil%20and%20Propane%20Minnesota%20propane"
+  },
+  {
+    "id": "fillmore_fuel_s",
+    "name": "Fillmore Fuel's",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Fillmore%20Fuel%27s%20Minnesota%20propane"
+  },
+  {
+    "id": "land_o_lakes_oil_co",
+    "name": "Land O'Lakes Oil Co",
+    "state": "MN",
+    "url": "https://www.google.com/maps/search/Land%20O%27Lakes%20Oil%20Co%20Minnesota%20propane"
+  },
+  {
+    "id": "coop_s_propane",
+    "name": "Coop's Propane",
+    "state": "MO",
+    "url": "https://www.google.com/maps/search/Coop%27s%20Propane%20Missouri%20propane"
+  },
+  {
+    "id": "guier_fertilizer",
+    "name": "Guier Fertilizer",
+    "state": "MO",
+    "url": "https://www.google.com/maps/search/Guier%20Fertilizer%20Missouri%20propane"
+  },
+  {
+    "id": "capital_energy_co",
+    "name": "Capital Energy Co",
+    "state": "MO",
+    "url": "https://www.google.com/maps/search/Capital%20Energy%20Co%20Missouri%20propane"
+  },
+  {
+    "id": "tarkio_lp_gas",
+    "name": "Tarkio LP Gas",
+    "state": "MO",
+    "url": "https://www.google.com/maps/search/Tarkio%20LP%20Gas%20Missouri%20propane"
+  },
+  {
+    "id": "schoonover_oil_co",
+    "name": "Schoonover Oil Co",
+    "state": "MO",
+    "url": "https://www.google.com/maps/search/Schoonover%20Oil%20Co%20Missouri%20propane"
+  },
+  {
+    "id": "island_energy_inc",
+    "name": "Island Energy Inc.",
+    "state": "MO",
+    "url": "https://www.google.com/maps/search/Island%20Energy%20Inc.%20Missouri%20propane"
+  },
+  {
+    "id": "southern_fs_inc",
+    "name": "Southern FS, Inc.",
+    "state": "MO",
+    "url": "https://www.google.com/maps/search/Southern%20FS%2C%20Inc.%20Missouri%20propane"
+  },
+  {
+    "id": "klondike_oil_gas",
+    "name": "Klondike Oil & Gas",
+    "state": "MS",
+    "url": "https://www.google.com/maps/search/Klondike%20Oil%20and%20Gas%20Mississippi%20propane"
+  },
+  {
+    "id": "coombs_gas_co",
+    "name": "Coombs Gas, Co.",
+    "state": "MS",
+    "url": "https://www.google.com/maps/search/Coombs%20Gas%2C%20Co.%20Mississippi%20propane"
+  },
+  {
+    "id": "fair_propane_kosciusko",
+    "name": "Fair Propane Kosciusko",
+    "state": "MS",
+    "url": "https://www.google.com/maps/search/Fair%20Propane%20Kosciusko%20Mississippi%20propane"
+  },
+  {
+    "id": "prairie_fuels",
+    "name": "Prairie Fuels",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Prairie%20Fuels%20Montana%20propane"
+  },
+  {
+    "id": "prairie_ag_coop",
+    "name": "Prairie Ag Coop",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Prairie%20Ag%20Coop%20Montana%20propane"
+  },
+  {
+    "id": "general_distributing_co",
+    "name": "General Distributing Co",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/General%20Distributing%20Co%20Montana%20propane"
+  },
+  {
+    "id": "a_a_stieg_wholesale_inc",
+    "name": "A & A Stieg Wholesale Inc",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/A%20and%20A%20Stieg%20Wholesale%20Inc%20Montana%20propane"
+  },
+  {
+    "id": "olson_propane",
+    "name": "Olson Propane",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Olson%20Propane%20Montana%20propane"
+  },
+  {
+    "id": "creative_energy",
+    "name": "Creative Energy",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Creative%20Energy%20Montana%20propane"
+  },
+  {
+    "id": "farmers_union_propane_bulk_plant",
+    "name": "Farmers Union propane bulk plant",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Farmers%20Union%20propane%20bulk%20plant%20Montana%20propane"
+  },
+  {
+    "id": "psi_propane_services_innovated",
+    "name": "PSI Propane Services Innovated",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/PSI%20Propane%20Services%20Innovated%20Montana%20propane"
+  },
+  {
+    "id": "cross_petroleum_services",
+    "name": "Cross Petroleum Services",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Cross%20Petroleum%20Services%20Montana%20propane"
+  },
+  {
+    "id": "rocky_mountain_supply_ennis",
+    "name": "Rocky Mountain Supply- Ennis",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Rocky%20Mountain%20Supply-%20Ennis%20Montana%20propane"
+  },
+  {
+    "id": "j_r_services",
+    "name": "J & R Services",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/J%20and%20R%20Services%20Montana%20propane"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_salmon",
+    "name": "Valley Wide Cooperative Energy | Salmon",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Valley%20Wide%20Cooperative%20Energy%20%7C%20Salmon%20Montana%20propane"
+  },
+  {
+    "id": "montana_energy_alliance",
+    "name": "Montana Energy Alliance",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Montana%20Energy%20Alliance%20Montana%20propane"
+  },
+  {
+    "id": "miller_oil_co",
+    "name": "Miller Oil Co",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Miller%20Oil%20Co%20Montana%20propane"
+  },
+  {
+    "id": "plevna_propane",
+    "name": "Plevna Propane",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Plevna%20Propane%20Montana%20propane"
+  },
+  {
+    "id": "salmon_river_propane",
+    "name": "Salmon River Propane",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Salmon%20River%20Propane%20Montana%20propane"
+  },
+  {
+    "id": "cromwell_s_convenience_petroleum_propane",
+    "name": "Cromwell's Convenience Petroleum & Propane",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Cromwell%27s%20Convenience%20Petroleum%20and%20Propane%20Montana%20propane"
+  },
+  {
+    "id": "agland_cooperative",
+    "name": "Agland Cooperative",
+    "state": "MT",
+    "url": "https://www.google.com/maps/search/Agland%20Cooperative%20Montana%20propane"
+  },
+  {
+    "id": "bumgarner_propane",
+    "name": "Bumgarner Propane",
+    "state": "NC",
+    "url": "https://www.google.com/maps/search/Bumgarner%20Propane%20North%20Carolina%20propane"
+  },
+  {
+    "id": "s_m_propane_sales_supplies",
+    "name": "S & M Propane Sales & Supplies",
+    "state": "NC",
+    "url": "https://www.google.com/maps/search/S%20and%20M%20Propane%20Sales%20and%20Supplies%20North%20Carolina%20propane"
+  },
+  {
+    "id": "parker_gas",
+    "name": "Parker Gas",
+    "state": "NC",
+    "url": "https://www.google.com/maps/search/Parker%20Gas%20North%20Carolina%20propane"
+  },
+  {
+    "id": "berico_fuels_propane",
+    "name": "Berico Fuels & Propane",
+    "state": "NC",
+    "url": "https://www.google.com/maps/search/Berico%20Fuels%20and%20Propane%20North%20Carolina%20propane"
+  },
+  {
+    "id": "burke_oil_and_propane_company",
+    "name": "Burke Oil and Propane Company",
+    "state": "NC",
+    "url": "https://www.google.com/maps/search/Burke%20Oil%20and%20Propane%20Company%20North%20Carolina%20propane"
+  },
+  {
+    "id": "blue_ridge_energy",
+    "name": "Blue Ridge Energy",
+    "state": "NC",
+    "url": "https://www.google.com/maps/search/Blue%20Ridge%20Energy%20North%20Carolina%20propane"
+  },
+  {
+    "id": "quality_oil_company",
+    "name": "Quality Oil Company",
+    "state": "NC",
+    "url": "https://www.google.com/maps/search/Quality%20Oil%20Company%20North%20Carolina%20propane"
+  },
+  {
+    "id": "spirit_lake_propane",
+    "name": "Spirit Lake Propane",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Spirit%20Lake%20Propane%20North%20Dakota%20propane"
+  },
+  {
+    "id": "arrowwood_prairie_co_op_cooperstown_office",
+    "name": "Arrowwood Prairie Co-op - Cooperstown Office",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Arrowwood%20Prairie%20Co-op%20Cooperstown%20Office%20North%20Dakota%20propane"
+  },
+  {
+    "id": "farmers_union_oil_co_nd",
+    "name": "Farmers Union Oil Co",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Farmers%20Union%20Oil%20Co%20North%20Dakota%20propane"
+  },
+  {
+    "id": "chs_southwest_grain",
+    "name": "CHS Southwest Grain",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/CHS%20Southwest%20Grain%20North%20Dakota%20propane"
+  },
+  {
+    "id": "dakota_s_propane_gas_co_op",
+    "name": "Dakota's Propane Gas Co-Op",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Dakota%27s%20Propane%20Gas%20Co-Op%20North%20Dakota%20propane"
+  },
+  {
+    "id": "pinnacle_bulk_propane",
+    "name": "Pinnacle bulk propane",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Pinnacle%20bulk%20propane%20North%20Dakota%20propane"
+  },
+  {
+    "id": "gray_oil_co",
+    "name": "Gray Oil Co",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Gray%20Oil%20Co%20North%20Dakota%20propane"
+  },
+  {
+    "id": "mutch_oil_co_grand_forks_inc",
+    "name": "Mutch Oil Co-Grand Forks Inc",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Mutch%20Oil%20Co-Grand%20Forks%20Inc%20North%20Dakota%20propane"
+  },
+  {
+    "id": "farmers_union_co_op_oil",
+    "name": "Farmers Union Co-Op Oil",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Farmers%20Union%20Co-Op%20Oil%20North%20Dakota%20propane"
+  },
+  {
+    "id": "skip_s_petroleum_propane_co",
+    "name": "Skip's Petroleum & Propane Co",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Skip%27s%20Petroleum%20and%20Propane%20Co%20North%20Dakota%20propane"
+  },
+  {
+    "id": "mcintosh_propane_bulk_plant",
+    "name": "Mcintosh Propane Bulk Plant",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Mcintosh%20Propane%20Bulk%20Plant%20North%20Dakota%20propane"
+  },
+  {
+    "id": "arrowwood_prairie_co_op_carrington_main_office",
+    "name": "Arrowwood Prairie Co-op - Carrington Main Office",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Arrowwood%20Prairie%20Co-op%20Carrington%20Main%20Office%20North%20Dakota%20propane"
+  },
+  {
+    "id": "rough_riders_propane_inc",
+    "name": "Rough Riders Propane, Inc.",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Rough%20Riders%20Propane%2C%20Inc.%20North%20Dakota%20propane"
+  },
+  {
+    "id": "fitterer_gas_oil",
+    "name": "Fitterer Gas & Oil",
+    "state": "ND",
+    "url": "https://www.google.com/maps/search/Fitterer%20Gas%20and%20Oil%20North%20Dakota%20propane"
+  },
+  {
+    "id": "kavan_propane_oil_inc",
+    "name": "Kavan Propane & Oil Inc",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Kavan%20Propane%20and%20Oil%20Inc%20Nebraska%20propane"
+  },
+  {
+    "id": "agland_coop_bulk_plant",
+    "name": "Agland Coop Bulk Plant",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Agland%20Coop%20Bulk%20Plant%20Nebraska%20propane"
+  },
+  {
+    "id": "murphy_s_propane",
+    "name": "Murphy's Propane",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Murphy%27s%20Propane%20Nebraska%20propane"
+  },
+  {
+    "id": "knudsen_oil_feed",
+    "name": "Knudsen Oil & Feed",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Knudsen%20Oil%20and%20Feed%20Nebraska%20propane"
+  },
+  {
+    "id": "otte_oil_propane_inc",
+    "name": "Otte Oil & Propane, Inc",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Otte%20Oil%20and%20Propane%2C%20Inc%20Nebraska%20propane"
+  },
+  {
+    "id": "3d_oil_lp",
+    "name": "3D Oil & LP",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/3D%20Oil%20and%20LP%20Nebraska%20propane"
+  },
+  {
+    "id": "farmers_pride_cooperative",
+    "name": "Farmers Pride Cooperative",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Farmers%20Pride%20Cooperative%20Nebraska%20propane"
+  },
+  {
+    "id": "sandhill_oil_co",
+    "name": "Sandhill Oil Co",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Sandhill%20Oil%20Co%20Nebraska%20propane"
+  },
+  {
+    "id": "stagner_propane",
+    "name": "Stagner Propane",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Stagner%20Propane%20Nebraska%20propane"
+  },
+  {
+    "id": "nebraska_iowa_supply_co",
+    "name": "Nebraska Iowa Supply Co",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Nebraska%20Iowa%20Supply%20Co%20Nebraska%20propane"
+  },
+  {
+    "id": "n_b_gas_co",
+    "name": "N & B Gas Co.",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/N%20and%20B%20Gas%20Co.%20Nebraska%20propane"
+  },
+  {
+    "id": "best_propane_llc",
+    "name": "Best Propane LLC",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Best%20Propane%20LLC%20Nebraska%20propane"
+  },
+  {
+    "id": "great_plains_propane_service_inc",
+    "name": "Great Plains Propane Service, Inc.",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Great%20Plains%20Propane%20Service%2C%20Inc.%20Nebraska%20propane"
+  },
+  {
+    "id": "panhandle_coop_system",
+    "name": "Panhandle Coop System",
+    "state": "NE",
+    "url": "https://www.google.com/maps/search/Panhandle%20Coop%20System%20Nebraska%20propane"
+  },
+  {
+    "id": "energy_north_propane",
+    "name": "Energy North Propane",
+    "state": "NH",
+    "url": "https://www.google.com/maps/search/Energy%20North%20Propane%20New%20Hampshire%20propane"
+  },
+  {
+    "id": "stiles_fuel",
+    "name": "Stiles Fuel",
+    "state": "NH",
+    "url": "https://www.google.com/maps/search/Stiles%20Fuel%20New%20Hampshire%20propane"
+  },
+  {
+    "id": "ciardelli_fuel_company_inc",
+    "name": "Ciardelli Fuel Company, Inc.",
+    "state": "NH",
+    "url": "https://www.google.com/maps/search/Ciardelli%20Fuel%20Company%2C%20Inc.%20New%20Hampshire%20propane"
+  },
+  {
+    "id": "gastec_propane_refill_station",
+    "name": "Gastec Propane & Refill Station",
+    "state": "NJ",
+    "url": "https://www.google.com/maps/search/Gastec%20Propane%20and%20Refill%20Station%20New%20Jersey%20propane"
+  },
+  {
+    "id": "yankee_propane",
+    "name": "Yankee Propane",
+    "state": "NJ",
+    "url": "https://www.google.com/maps/search/Yankee%20Propane%20New%20Jersey%20propane"
+  },
+  {
+    "id": "penn_jersey_propane_gas_co",
+    "name": "Penn-Jersey Propane Gas Co",
+    "state": "NJ",
+    "url": "https://www.google.com/maps/search/Penn-Jersey%20Propane%20Gas%20Co%20New%20Jersey%20propane"
+  },
+  {
+    "id": "progas_inc",
+    "name": "ProGas Inc",
+    "state": "NJ",
+    "url": "https://www.google.com/maps/search/ProGas%20Inc%20New%20Jersey%20propane"
+  },
+  {
+    "id": "cenco_heating_oil_propane",
+    "name": "Cenco Heating Oil & Propane",
+    "state": "NJ",
+    "url": "https://www.google.com/maps/search/Cenco%20Heating%20Oil%20and%20Propane%20New%20Jersey%20propane"
+  },
+  {
+    "id": "northern_new_mexico_gas_company",
+    "name": "Northern New Mexico Gas Company",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Northern%20New%20Mexico%20Gas%20Company%20New%20Mexico%20propane"
+  },
+  {
+    "id": "northern_new_mexico_gas_company_raton",
+    "name": "Northern New Mexico Gas Company - Raton",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Northern%20New%20Mexico%20Gas%20Company%20Raton%20New%20Mexico%20propane"
+  },
+  {
+    "id": "country_gas",
+    "name": "Country Gas",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Country%20Gas%20New%20Mexico%20propane"
+  },
+  {
+    "id": "bfs_propane_services_llc",
+    "name": "BFS Propane Services LLC",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/BFS%20Propane%20Services%20LLC%20New%20Mexico%20propane"
+  },
+  {
+    "id": "ortega_s_propane_service_inc",
+    "name": "Ortega's Propane Service Inc.",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Ortega%27s%20Propane%20Service%20Inc.%20New%20Mexico%20propane"
+  },
+  {
+    "id": "cross_country_propane_feed_supply",
+    "name": "Cross Country Propane Feed & Supply",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Cross%20Country%20Propane%20Feed%20and%20Supply%20New%20Mexico%20propane"
+  },
+  {
+    "id": "ortega_sons_propane_services",
+    "name": "Ortega & Sons Propane Services",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Ortega%20and%20Sons%20Propane%20Services%20New%20Mexico%20propane"
+  },
+  {
+    "id": "a_x_propane",
+    "name": "A-X Propane",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/A-X%20Propane%20New%20Mexico%20propane"
+  },
+  {
+    "id": "columbus_lp_gas",
+    "name": "Columbus LP Gas",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Columbus%20LP%20Gas%20New%20Mexico%20propane"
+  },
+  {
+    "id": "pendleton_propane",
+    "name": "Pendleton Propane.",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Pendleton%20Propane.%20New%20Mexico%20propane"
+  },
+  {
+    "id": "lopez_lp_gas_company_llc",
+    "name": "Lopez LP Gas Company LLC.",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Lopez%20LP%20Gas%20Company%20LLC.%20New%20Mexico%20propane"
+  },
+  {
+    "id": "g_m_propane",
+    "name": "G M Propane",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/G%20M%20Propane%20New%20Mexico%20propane"
+  },
+  {
+    "id": "romero_s_rio_grande_propane",
+    "name": "Romero's Rio Grande Propane",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Romero%27s%20Rio%20Grande%20Propane%20New%20Mexico%20propane"
+  },
+  {
+    "id": "high_plains_lp_services",
+    "name": "High Plains LP Services",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/High%20Plains%20LP%20Services%20New%20Mexico%20propane"
+  },
+  {
+    "id": "griffin_s_fuel_center_plus",
+    "name": "Griffin's Fuel Center Plus",
+    "state": "NM",
+    "url": "https://www.google.com/maps/search/Griffin%27s%20Fuel%20Center%20Plus%20New%20Mexico%20propane"
+  },
+  {
+    "id": "arro_autogas",
+    "name": "ARRO AUTOGAS",
+    "state": "NV",
+    "url": "https://www.google.com/maps/search/ARRO%20AUTOGAS%20Nevada%20propane"
+  },
+  {
+    "id": "49_r_propane_inc",
+    "name": "49'R Propane, Inc.",
+    "state": "NV",
+    "url": "https://www.google.com/maps/search/49%27R%20Propane%2C%20Inc.%20Nevada%20propane"
+  },
+  {
+    "id": "golden_gate_petro",
+    "name": "Golden Gate Petro",
+    "state": "NV",
+    "url": "https://www.google.com/maps/search/Golden%20Gate%20Petro%20Nevada%20propane"
+  },
+  {
+    "id": "affordable_propane_m_f_barcellos_inc",
+    "name": "Affordable Propane (M F Barcellos Inc)",
+    "state": "NV",
+    "url": "https://www.google.com/maps/search/Affordable%20Propane%20%28M%20F%20Barcellos%20Inc%29%20Nevada%20propane"
+  },
+  {
+    "id": "vegas_propane_inc_nv",
+    "name": "Vegas Propane Inc",
+    "state": "NV",
+    "url": "https://www.google.com/maps/search/Vegas%20Propane%20Inc%20Nevada%20propane"
+  },
+  {
+    "id": "patriot_energy",
+    "name": "Patriot Energy",
+    "state": "NV",
+    "url": "https://www.google.com/maps/search/Patriot%20Energy%20Nevada%20propane"
+  },
+  {
+    "id": "eagle_energy_corporation",
+    "name": "Eagle Energy Corporation",
+    "state": "NV",
+    "url": "https://www.google.com/maps/search/Eagle%20Energy%20Corporation%20Nevada%20propane"
+  },
+  {
+    "id": "winnemucca_gas",
+    "name": "Winnemucca Gas",
+    "state": "NV",
+    "url": "https://www.google.com/maps/search/Winnemucca%20Gas%20Nevada%20propane"
+  },
+  {
+    "id": "wendt_s_propane_oil",
+    "name": "Wendt's Propane & Oil",
+    "state": "NY",
+    "url": "https://www.google.com/maps/search/Wendt%27s%20Propane%20and%20Oil%20New%20York%20propane"
+  },
+  {
+    "id": "ehrhart_energy",
+    "name": "Ehrhart Energy",
+    "state": "NY",
+    "url": "https://www.google.com/maps/search/Ehrhart%20Energy%20New%20York%20propane"
+  },
+  {
+    "id": "bruces_liberty_gas_and_propane_tank_filling_station",
+    "name": "Bruces liberty gas and propane tank filling station",
+    "state": "NY",
+    "url": "https://www.google.com/maps/search/Bruces%20liberty%20gas%20and%20propane%20tank%20filling%20station%20New%20York%20propane"
+  },
+  {
+    "id": "noco_hvac_fuels_and_energy",
+    "name": "NOCO HVAC, Fuels, and Energy",
+    "state": "NY",
+    "url": "https://www.google.com/maps/search/NOCO%20HVAC%2C%20Fuels%2C%20and%20Energy%20New%20York%20propane"
+  },
+  {
+    "id": "corse_fuels",
+    "name": "Corse Fuels",
+    "state": "NY",
+    "url": "https://www.google.com/maps/search/Corse%20Fuels%20New%20York%20propane"
+  },
+  {
+    "id": "hilltop_energy_buyer_s_group",
+    "name": "Hilltop Energy Buyer's Group",
+    "state": "NY",
+    "url": "https://www.google.com/maps/search/Hilltop%20Energy%20Buyer%27s%20Group%20New%20York%20propane"
+  },
+  {
+    "id": "irish_propane",
+    "name": "Irish Propane",
+    "state": "NY",
+    "url": "https://www.google.com/maps/search/Irish%20Propane%20New%20York%20propane"
+  },
+  {
+    "id": "griffith_energy",
+    "name": "Griffith Energy",
+    "state": "NY",
+    "url": "https://www.google.com/maps/search/Griffith%20Energy%20New%20York%20propane"
+  },
+  {
+    "id": "red_hot_propane",
+    "name": "Red Hot Propane",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/Red%20Hot%20Propane%20Ohio%20propane"
+  },
+  {
+    "id": "j_p_propane_gas_service_inc",
+    "name": "J.P. Propane Gas Service, Inc.",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/J.P.%20Propane%20Gas%20Service%2C%20Inc.%20Ohio%20propane"
+  },
+  {
+    "id": "ak_energy_jackson",
+    "name": "AK Energy - Jackson",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/AK%20Energy%20Jackson%20Ohio%20propane"
+  },
+  {
+    "id": "schilling_propane",
+    "name": "Schilling Propane",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/Schilling%20Propane%20Ohio%20propane"
+  },
+  {
+    "id": "linden_s_propane_inc",
+    "name": "Linden's Propane, Inc",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/Linden%27s%20Propane%2C%20Inc%20Ohio%20propane"
+  },
+  {
+    "id": "brightstar_propane_fuels",
+    "name": "BrightStar Propane & Fuels",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/BrightStar%20Propane%20and%20Fuels%20Ohio%20propane"
+  },
+  {
+    "id": "the_gas_house",
+    "name": "The Gas House",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/The%20Gas%20House%20Ohio%20propane"
+  },
+  {
+    "id": "walterville_propane",
+    "name": "Walterville Propane",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/Walterville%20Propane%20Ohio%20propane"
+  },
+  {
+    "id": "buckeye_propane_co_inc",
+    "name": "Buckeye Propane Co., Inc.",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/Buckeye%20Propane%20Co.%2C%20Inc.%20Ohio%20propane"
+  },
+  {
+    "id": "ak_energy_gallia",
+    "name": "AK Energy - Gallia",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/AK%20Energy%20Gallia%20Ohio%20propane"
+  },
+  {
+    "id": "centerra_co_op_fuel_heating_oil",
+    "name": "Centerra Co-Op Fuel & Heating Oil",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/Centerra%20Co-Op%20Fuel%20and%20Heating%20Oil%20Ohio%20propane"
+  },
+  {
+    "id": "ashville_propane",
+    "name": "Ashville Propane",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/Ashville%20Propane%20Ohio%20propane"
+  },
+  {
+    "id": "acorn_lpg_propane",
+    "name": "Acorn LPG Propane",
+    "state": "OH",
+    "url": "https://www.google.com/maps/search/Acorn%20LPG%20Propane%20Ohio%20propane"
+  },
+  {
+    "id": "enderby_gas_inc_ok",
+    "name": "Enderby Gas Inc",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Enderby%20Gas%20Inc%20Oklahoma%20propane"
+  },
+  {
+    "id": "froman_propane_co",
+    "name": "Froman Propane Co",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Froman%20Propane%20Co%20Oklahoma%20propane"
+  },
+  {
+    "id": "red_baker_propane_inc",
+    "name": "Red Baker Propane Inc",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Red%20Baker%20Propane%20Inc%20Oklahoma%20propane"
+  },
+  {
+    "id": "liberty_propane_company",
+    "name": "Liberty Propane Company",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Liberty%20Propane%20Company%20Oklahoma%20propane"
+  },
+  {
+    "id": "red_river_farm_coop",
+    "name": "Red River Farm Coop",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Red%20River%20Farm%20Coop%20Oklahoma%20propane"
+  },
+  {
+    "id": "blackburn_propane_service",
+    "name": "Blackburn Propane Service",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Blackburn%20Propane%20Service%20Oklahoma%20propane"
+  },
+  {
+    "id": "pitmon_oil_gas",
+    "name": "Pitmon Oil & Gas",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Pitmon%20Oil%20and%20Gas%20Oklahoma%20propane"
+  },
+  {
+    "id": "morrison_propane",
+    "name": "Morrison Propane",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Morrison%20Propane%20Oklahoma%20propane"
+  },
+  {
+    "id": "harris_lp_inc",
+    "name": "Harris LP Inc",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Harris%20LP%20Inc%20Oklahoma%20propane"
+  },
+  {
+    "id": "steve_s_propane",
+    "name": "Steve's Propane",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Steve%27s%20Propane%20Oklahoma%20propane"
+  },
+  {
+    "id": "industrial_maltsberger_propane_okc",
+    "name": "Industrial Maltsberger Propane OKC",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Industrial%20Maltsberger%20Propane%20OKC%20Oklahoma%20propane"
+  },
+  {
+    "id": "lundy_s_propane_gas_co",
+    "name": "Lundy's Propane Gas Co",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Lundy%27s%20Propane%20Gas%20Co%20Oklahoma%20propane"
+  },
+  {
+    "id": "affordable_propane_of_neosho",
+    "name": "Affordable Propane of Neosho",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Affordable%20Propane%20of%20Neosho%20Oklahoma%20propane"
+  },
+  {
+    "id": "lakeland_petroleum_cpp_grove",
+    "name": "Lakeland Petroleum CPP Grove",
+    "state": "OK",
+    "url": "https://www.google.com/maps/search/Lakeland%20Petroleum%20CPP%20Grove%20Oklahoma%20propane"
+  },
+  {
+    "id": "ed_staub_sons_propane",
+    "name": "Ed Staub & Sons Propane",
+    "state": "OR",
+    "url": "https://www.google.com/maps/search/Ed%20Staub%20and%20Sons%20Propane%20Oregon%20propane"
+  },
+  {
+    "id": "blue_star_gas_eugene_co",
+    "name": "Blue Star Gas - Eugene Co.",
+    "state": "OR",
+    "url": "https://www.google.com/maps/search/Blue%20Star%20Gas%20Eugene%20Co.%20Oregon%20propane"
+  },
+  {
+    "id": "ed_staub_sons_petroleum",
+    "name": "ED STAUB & SONS PETROLEUM",
+    "state": "OR",
+    "url": "https://www.google.com/maps/search/ED%20STAUB%20and%20SONS%20PETROLEUM%20Oregon%20propane"
+  },
+  {
+    "id": "ron_s_oil_co_propane_division",
+    "name": "Ron's Oil Co. Propane Division",
+    "state": "OR",
+    "url": "https://www.google.com/maps/search/Ron%27s%20Oil%20Co.%20Propane%20Division%20Oregon%20propane"
+  },
+  {
+    "id": "r_d_propane",
+    "name": "R & D Propane",
+    "state": "OR",
+    "url": "https://www.google.com/maps/search/R%20and%20D%20Propane%20Oregon%20propane"
+  },
+  {
+    "id": "coenergy_propane_llc",
+    "name": "CoEnergy Propane, LLC",
+    "state": "OR",
+    "url": "https://www.google.com/maps/search/CoEnergy%20Propane%2C%20LLC%20Oregon%20propane"
+  },
+  {
+    "id": "morrow_county_grain_growers",
+    "name": "MORROW COUNTY GRAIN GROWERS",
+    "state": "OR",
+    "url": "https://www.google.com/maps/search/MORROW%20COUNTY%20GRAIN%20GROWERS%20Oregon%20propane"
+  },
+  {
+    "id": "blue_star_gas_salem_co",
+    "name": "Blue Star Gas - Salem Co.",
+    "state": "OR",
+    "url": "https://www.google.com/maps/search/Blue%20Star%20Gas%20Salem%20Co.%20Oregon%20propane"
+  },
+  {
+    "id": "provanta",
+    "name": "Provanta",
+    "state": "PA",
+    "url": "https://www.google.com/maps/search/Provanta%20Pennsylvania%20propane"
+  },
+  {
+    "id": "greco_gas",
+    "name": "Greco Gas",
+    "state": "PA",
+    "url": "https://www.google.com/maps/search/Greco%20Gas%20Pennsylvania%20propane"
+  },
+  {
+    "id": "butler_gas_products_company",
+    "name": "Butler Gas Products Company",
+    "state": "PA",
+    "url": "https://www.google.com/maps/search/Butler%20Gas%20Products%20Company%20Pennsylvania%20propane"
+  },
+  {
+    "id": "gnagey_propane",
+    "name": "Gnagey Propane",
+    "state": "PA",
+    "url": "https://www.google.com/maps/search/Gnagey%20Propane%20Pennsylvania%20propane"
+  },
+  {
+    "id": "jacobs_petroleum",
+    "name": "Jacobs Petroleum",
+    "state": "PA",
+    "url": "https://www.google.com/maps/search/Jacobs%20Petroleum%20Pennsylvania%20propane"
+  },
+  {
+    "id": "route_7_refills",
+    "name": "Route 7 Refills",
+    "state": "PA",
+    "url": "https://www.google.com/maps/search/Route%207%20Refills%20Pennsylvania%20propane"
+  },
+  {
+    "id": "richgas_inc_pa",
+    "name": "Richgas Inc",
+    "state": "PA",
+    "url": "https://www.google.com/maps/search/Richgas%20Inc%20Pennsylvania%20propane"
+  },
+  {
+    "id": "consumers_propane",
+    "name": "Consumers Propane",
+    "state": "RI",
+    "url": "https://www.google.com/maps/search/Consumers%20Propane%20Rhode%20Island%20propane"
+  },
+  {
+    "id": "butler_lp_gas",
+    "name": "Butler LP Gas",
+    "state": "SC",
+    "url": "https://www.google.com/maps/search/Butler%20LP%20Gas%20South%20Carolina%20propane"
+  },
+  {
+    "id": "farm_gas_co_op_association",
+    "name": "Farm Gas Co-op Association",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Farm%20Gas%20Co-op%20Association%20South%20Dakota%20propane"
+  },
+  {
+    "id": "butch_s_propane_llc",
+    "name": "Butch's Propane, LLC",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Butch%27s%20Propane%2C%20LLC%20South%20Dakota%20propane"
+  },
+  {
+    "id": "agri_energy_inc",
+    "name": "Agri-Energy Inc",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Agri-Energy%20Inc%20South%20Dakota%20propane"
+  },
+  {
+    "id": "fischer_oil_propane_co",
+    "name": "Fischer Oil & Propane Co",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Fischer%20Oil%20and%20Propane%20Co%20South%20Dakota%20propane"
+  },
+  {
+    "id": "brooks_oil_co",
+    "name": "Brooks Oil Co",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Brooks%20Oil%20Co%20South%20Dakota%20propane"
+  },
+  {
+    "id": "bob_s_gas_inc",
+    "name": "Bob's Gas Inc",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Bob%27s%20Gas%20Inc%20South%20Dakota%20propane"
+  },
+  {
+    "id": "d_r_propane",
+    "name": "D & R Propane",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/D%20and%20R%20Propane%20South%20Dakota%20propane"
+  },
+  {
+    "id": "burke_fuel_oil_propane_co",
+    "name": "Burke Fuel Oil & Propane Co",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Burke%20Fuel%20Oil%20and%20Propane%20Co%20South%20Dakota%20propane"
+  },
+  {
+    "id": "gale_s_gas_services",
+    "name": "Gale's Gas Services",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Gale%27s%20Gas%20Services%20South%20Dakota%20propane"
+  },
+  {
+    "id": "standing_rock_propane",
+    "name": "Standing Rock Propane",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Standing%20Rock%20Propane%20South%20Dakota%20propane"
+  },
+  {
+    "id": "friman_oil_gas_inc",
+    "name": "Friman Oil & Gas Inc",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Friman%20Oil%20and%20Gas%20Inc%20South%20Dakota%20propane"
+  },
+  {
+    "id": "ontime_petroleum_propane",
+    "name": "OnTime Petroleum & Propane",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/OnTime%20Petroleum%20and%20Propane%20South%20Dakota%20propane"
+  },
+  {
+    "id": "slater_oil_lp_gas_co",
+    "name": "Slater Oil & LP Gas Co",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Slater%20Oil%20and%20LP%20Gas%20Co%20South%20Dakota%20propane"
+  },
+  {
+    "id": "bieglers_timber_lake_service",
+    "name": "Bieglers Timber Lake Service",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Bieglers%20Timber%20Lake%20Service%20South%20Dakota%20propane"
+  },
+  {
+    "id": "champion_propane",
+    "name": "Champion Propane",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/Champion%20Propane%20South%20Dakota%20propane"
+  },
+  {
+    "id": "chs_farmers_alliance",
+    "name": "CHS Farmers Alliance",
+    "state": "SD",
+    "url": "https://www.google.com/maps/search/CHS%20Farmers%20Alliance%20South%20Dakota%20propane"
+  },
+  {
+    "id": "united_propane_gas_henagar_al",
+    "name": "United Propane Gas (Henagar, AL)",
+    "state": "TN",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Henagar%2C%20AL%29%20Tennessee%20propane"
+  },
+  {
+    "id": "united_propane_gas_celina_tn",
+    "name": "United Propane Gas (Celina, TN)",
+    "state": "TN",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28Celina%2C%20TN%29%20Tennessee%20propane"
+  },
+  {
+    "id": "tankfarm",
+    "name": "Tankfarm",
+    "state": "TN",
+    "url": "https://www.google.com/maps/search/Tankfarm%20Tennessee%20propane"
+  },
+  {
+    "id": "spencer_mountain_propane",
+    "name": "SPENCER MOUNTAIN PROPANE",
+    "state": "TN",
+    "url": "https://www.google.com/maps/search/SPENCER%20MOUNTAIN%20PROPANE%20Tennessee%20propane"
+  },
+  {
+    "id": "united_propane_gas_lafayette_ga",
+    "name": "United Propane Gas (LaFayette, GA)",
+    "state": "TN",
+    "url": "https://www.google.com/maps/search/United%20Propane%20Gas%20%28LaFayette%2C%20GA%29%20Tennessee%20propane"
+  },
+  {
+    "id": "frontier_fuel_co",
+    "name": "Frontier Fuel Co",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Frontier%20Fuel%20Co%20Texas%20propane"
+  },
+  {
+    "id": "hino_gas",
+    "name": "Hino Gas",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Hino%20Gas%20Texas%20propane"
+  },
+  {
+    "id": "freedom_lp",
+    "name": "Freedom LP",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Freedom%20LP%20Texas%20propane"
+  },
+  {
+    "id": "askins_propane_co",
+    "name": "Askins Propane Co",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Askins%20Propane%20Co%20Texas%20propane"
+  },
+  {
+    "id": "mr_g_propane_inc",
+    "name": "Mr. G. Propane, Inc.",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Mr.%20G.%20Propane%2C%20Inc.%20Texas%20propane"
+  },
+  {
+    "id": "fulfer_propane_inc",
+    "name": "Fulfer Propane, Inc",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Fulfer%20Propane%2C%20Inc%20Texas%20propane"
+  },
+  {
+    "id": "dvp_gas_co",
+    "name": "DVP Gas Co.",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/DVP%20Gas%20Co.%20Texas%20propane"
+  },
+  {
+    "id": "waller_county_butane_co",
+    "name": "Waller County Butane Co.",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Waller%20County%20Butane%20Co.%20Texas%20propane"
+  },
+  {
+    "id": "cy_fair_propane_company",
+    "name": "Cy-Fair Propane Company",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Cy-Fair%20Propane%20Company%20Texas%20propane"
+  },
+  {
+    "id": "almighty_propane_llc",
+    "name": "Almighty Propane LLC",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Almighty%20Propane%20LLC%20Texas%20propane"
+  },
+  {
+    "id": "fields_store_propane_1385",
+    "name": "Fields Store Propane 1385",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Fields%20Store%20Propane%201385%20Texas%20propane"
+  },
+  {
+    "id": "hill_gas",
+    "name": "Hill Gas",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Hill%20Gas%20Texas%20propane"
+  },
+  {
+    "id": "fronk_oil_co_inc_tx",
+    "name": "Fronk Oil Co Inc",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Fronk%20Oil%20Co%20Inc%20Texas%20propane"
+  },
+  {
+    "id": "jack_oldham_oil_co_inc",
+    "name": "Jack Oldham Oil Co Inc",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Jack%20Oldham%20Oil%20Co%20Inc%20Texas%20propane"
+  },
+  {
+    "id": "wheat_energy_services_inc",
+    "name": "Wheat Energy Services, Inc.",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Wheat%20Energy%20Services%2C%20Inc.%20Texas%20propane"
+  },
+  {
+    "id": "ipes_family_propane",
+    "name": "Ipes Family Propane",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/Ipes%20Family%20Propane%20Texas%20propane"
+  },
+  {
+    "id": "c4_fuels_llc",
+    "name": "C4 Fuels, LLC",
+    "state": "TX",
+    "url": "https://www.google.com/maps/search/C4%20Fuels%2C%20LLC%20Texas%20propane"
+  },
+  {
+    "id": "hone_propane",
+    "name": "Hone Propane",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Hone%20Propane%20Utah%20propane"
+  },
+  {
+    "id": "b_l_propane_co_inc",
+    "name": "B & L Propane Co., Inc.",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/B%20and%20L%20Propane%20Co.%2C%20Inc.%20Utah%20propane"
+  },
+  {
+    "id": "barker_s_propane",
+    "name": "Barker's propane",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Barker%27s%20propane%20Utah%20propane"
+  },
+  {
+    "id": "propane_network_inc",
+    "name": "Propane Network Inc.",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Propane%20Network%20Inc.%20Utah%20propane"
+  },
+  {
+    "id": "g_l_distributing",
+    "name": "G & L Distributing",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/G%20and%20L%20Distributing%20Utah%20propane"
+  },
+  {
+    "id": "pit_stop_propane_sandy",
+    "name": "Pit Stop Propane Sandy",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Pit%20Stop%20Propane%20Sandy%20Utah%20propane"
+  },
+  {
+    "id": "warren_energy_group_inc",
+    "name": "Warren Energy Group Inc",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Warren%20Energy%20Group%20Inc%20Utah%20propane"
+  },
+  {
+    "id": "miller_gas_co",
+    "name": "Miller Gas Co",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Miller%20Gas%20Co%20Utah%20propane"
+  },
+  {
+    "id": "lake_philgas",
+    "name": "Lake Philgas",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Lake%20Philgas%20Utah%20propane"
+  },
+  {
+    "id": "utah_propane",
+    "name": "Utah Propane",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Utah%20Propane%20Utah%20propane"
+  },
+  {
+    "id": "blue_flame_propane",
+    "name": "Blue Flame Propane",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Blue%20Flame%20Propane%20Utah%20propane"
+  },
+  {
+    "id": "industrial_propane",
+    "name": "Industrial Propane",
+    "state": "UT",
+    "url": "https://www.google.com/maps/search/Industrial%20Propane%20Utah%20propane"
+  },
+  {
+    "id": "enterprise_gas",
+    "name": "Enterprise Gas",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Enterprise%20Gas%20Virginia%20propane"
+  },
+  {
+    "id": "seven_is_enough",
+    "name": "Seven is Enough",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Seven%20is%20Enough%20Virginia%20propane"
+  },
+  {
+    "id": "appomattox_propane_services",
+    "name": "Appomattox Propane Services",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Appomattox%20Propane%20Services%20Virginia%20propane"
+  },
+  {
+    "id": "blumont_energy_lynchburg",
+    "name": "Blumont Energy - Lynchburg",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Blumont%20Energy%20Lynchburg%20Virginia%20propane"
+  },
+  {
+    "id": "the_glade_spring_co",
+    "name": "The Glade Spring Co.",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/The%20Glade%20Spring%20Co.%20Virginia%20propane"
+  },
+  {
+    "id": "foster_fuels_hearth_home_showroom",
+    "name": "Foster Fuels Hearth & Home Showroom",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Foster%20Fuels%20Hearth%20and%20Home%20Showroom%20Virginia%20propane"
+  },
+  {
+    "id": "tiger_fuel_company",
+    "name": "Tiger Fuel Company",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Tiger%20Fuel%20Company%20Virginia%20propane"
+  },
+  {
+    "id": "francis_oil_propane_inc",
+    "name": "Francis Oil & Propane, Inc",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Francis%20Oil%20and%20Propane%2C%20Inc%20Virginia%20propane"
+  },
+  {
+    "id": "swva_gas_service",
+    "name": "SWVA Gas Service",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/SWVA%20Gas%20Service%20Virginia%20propane"
+  },
+  {
+    "id": "roach_energy",
+    "name": "Roach Energy",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Roach%20Energy%20Virginia%20propane"
+  },
+  {
+    "id": "davenport_energy",
+    "name": "Davenport Energy",
+    "state": "VA",
+    "url": "https://www.google.com/maps/search/Davenport%20Energy%20Virginia%20propane"
+  },
+  {
+    "id": "proctor_gas_inc",
+    "name": "Proctor Gas Inc.",
+    "state": "VT",
+    "url": "https://www.google.com/maps/search/Proctor%20Gas%20Inc.%20Vermont%20propane"
+  },
+  {
+    "id": "blue_flame_gas_company_inc",
+    "name": "Blue Flame Gas Company, Inc.",
+    "state": "VT",
+    "url": "https://www.google.com/maps/search/Blue%20Flame%20Gas%20Company%2C%20Inc.%20Vermont%20propane"
+  },
+  {
+    "id": "fred_s_energy",
+    "name": "Fred's Energy",
+    "state": "VT",
+    "url": "https://www.google.com/maps/search/Fred%27s%20Energy%20Vermont%20propane"
+  },
+  {
+    "id": "fyles_bros_inc_vt",
+    "name": "Fyles Bros Inc",
+    "state": "VT",
+    "url": "https://www.google.com/maps/search/Fyles%20Bros%20Inc%20Vermont%20propane"
+  },
+  {
+    "id": "pacific_coast_energy",
+    "name": "Pacific Coast Energy",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Pacific%20Coast%20Energy%20Washington%20propane"
+  },
+  {
+    "id": "luke_s_propane",
+    "name": "Luke's Propane",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Luke%27s%20Propane%20Washington%20propane"
+  },
+  {
+    "id": "basin_propane_llc",
+    "name": "Basin Propane LLC",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Basin%20Propane%20LLC%20Washington%20propane"
+  },
+  {
+    "id": "propane_northwest_tacoma",
+    "name": "Propane Northwest - Tacoma",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Propane%20Northwest%20Tacoma%20Washington%20propane"
+  },
+  {
+    "id": "wenatchee_petroleum_co",
+    "name": "Wenatchee Petroleum Co",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Wenatchee%20Petroleum%20Co%20Washington%20propane"
+  },
+  {
+    "id": "north_cascade_propane_service",
+    "name": "North Cascade Propane Service",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/North%20Cascade%20Propane%20Service%20Washington%20propane"
+  },
+  {
+    "id": "inland_propane",
+    "name": "Inland Propane",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Inland%20Propane%20Washington%20propane"
+  },
+  {
+    "id": "new_flame_propane",
+    "name": "New Flame Propane",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/New%20Flame%20Propane%20Washington%20propane"
+  },
+  {
+    "id": "four_seasons_farm_service",
+    "name": "Four Seasons Farm Service",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Four%20Seasons%20Farm%20Service%20Washington%20propane"
+  },
+  {
+    "id": "northwest_propane",
+    "name": "Northwest Propane",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Northwest%20Propane%20Washington%20propane"
+  },
+  {
+    "id": "colville_fuels_deep_water",
+    "name": "Colville Fuels Deep Water",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Colville%20Fuels%20Deep%20Water%20Washington%20propane"
+  },
+  {
+    "id": "ag_supply_petroleum_propane",
+    "name": "Ag Supply Petroleum & Propane",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Ag%20Supply%20Petroleum%20and%20Propane%20Washington%20propane"
+  },
+  {
+    "id": "chs_northwest_sumner",
+    "name": "CHS Northwest Sumner",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/CHS%20Northwest%20Sumner%20Washington%20propane"
+  },
+  {
+    "id": "burden_propane_inc",
+    "name": "Burden Propane Inc",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Burden%20Propane%20Inc%20Washington%20propane"
+  },
+  {
+    "id": "black_bear_outpost",
+    "name": "Black Bear Outpost",
+    "state": "WA",
+    "url": "https://www.google.com/maps/search/Black%20Bear%20Outpost%20Washington%20propane"
+  },
+  {
+    "id": "meyer_oil_lp",
+    "name": "Meyer Oil & LP",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Meyer%20Oil%20and%20LP%20Wisconsin%20propane"
+  },
+  {
+    "id": "zifko_gas",
+    "name": "Zifko Gas",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Zifko%20Gas%20Wisconsin%20propane"
+  },
+  {
+    "id": "boehlke_bottled_gas",
+    "name": "Boehlke Bottled Gas",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Boehlke%20Bottled%20Gas%20Wisconsin%20propane"
+  },
+  {
+    "id": "green_bay_gas_co",
+    "name": "Green Bay Gas Co",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Green%20Bay%20Gas%20Co%20Wisconsin%20propane"
+  },
+  {
+    "id": "brummer_co",
+    "name": "Brummer Co",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Brummer%20Co%20Wisconsin%20propane"
+  },
+  {
+    "id": "garrow_oil_propane",
+    "name": "Garrow Oil & Propane",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Garrow%20Oil%20and%20Propane%20Wisconsin%20propane"
+  },
+  {
+    "id": "lp_plus",
+    "name": "LP Plus",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/LP%20Plus%20Wisconsin%20propane"
+  },
+  {
+    "id": "l_p_gas_and_equipment",
+    "name": "L. P. Gas and Equipment",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/L.%20P.%20Gas%20and%20Equipment%20Wisconsin%20propane"
+  },
+  {
+    "id": "wolf_river_propane",
+    "name": "Wolf River Propane",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Wolf%20River%20Propane%20Wisconsin%20propane"
+  },
+  {
+    "id": "como_oil_propane",
+    "name": "Como Oil & Propane",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Como%20Oil%20and%20Propane%20Wisconsin%20propane"
+  },
+  {
+    "id": "dale_gas_oil_co",
+    "name": "Dale Gas & Oil Co",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Dale%20Gas%20and%20Oil%20Co%20Wisconsin%20propane"
+  },
+  {
+    "id": "fond_du_lac_propane_co",
+    "name": "Fond Du Lac Propane Co",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Fond%20Du%20Lac%20Propane%20Co%20Wisconsin%20propane"
+  },
+  {
+    "id": "northwoods_lp",
+    "name": "Northwoods LP",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Northwoods%20LP%20Wisconsin%20propane"
+  },
+  {
+    "id": "l_l_propane",
+    "name": "L & L Propane",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/L%20and%20L%20Propane%20Wisconsin%20propane"
+  },
+  {
+    "id": "van_s_gas_service_inc",
+    "name": "Van's Gas Service Inc",
+    "state": "WI",
+    "url": "https://www.google.com/maps/search/Van%27s%20Gas%20Service%20Inc%20Wisconsin%20propane"
+  },
+  {
+    "id": "freedom_ag_energy_buckhannon_branch",
+    "name": "Freedom Ag & Energy - Buckhannon Branch",
+    "state": "WV",
+    "url": "https://www.google.com/maps/search/Freedom%20Ag%20and%20Energy%20Buckhannon%20Branch%20West%20Virginia%20propane"
+  },
+  {
+    "id": "appalachian_propane_supply",
+    "name": "Appalachian Propane & Supply",
+    "state": "WV",
+    "url": "https://www.google.com/maps/search/Appalachian%20Propane%20and%20Supply%20West%20Virginia%20propane"
+  },
+  {
+    "id": "tickle_oil_propane_inc",
+    "name": "Tickle Oil & Propane Inc",
+    "state": "WV",
+    "url": "https://www.google.com/maps/search/Tickle%20Oil%20and%20Propane%20Inc%20West%20Virginia%20propane"
+  },
+  {
+    "id": "red_flame_oil_propane",
+    "name": "Red Flame Oil & Propane",
+    "state": "WV",
+    "url": "https://www.google.com/maps/search/Red%20Flame%20Oil%20and%20Propane%20West%20Virginia%20propane"
+  },
+  {
+    "id": "woodford_oil_company",
+    "name": "Woodford Oil Company",
+    "state": "WV",
+    "url": "https://www.google.com/maps/search/Woodford%20Oil%20Company%20West%20Virginia%20propane"
+  },
+  {
+    "id": "duncan_service_inc",
+    "name": "Duncan Service Inc",
+    "state": "WV",
+    "url": "https://www.google.com/maps/search/Duncan%20Service%20Inc%20West%20Virginia%20propane"
+  },
+  {
+    "id": "r_t_rogers_oil_co_inc",
+    "name": "R.T. Rogers Oil Co., Inc.",
+    "state": "WV",
+    "url": "https://www.google.com/maps/search/R.T.%20Rogers%20Oil%20Co.%2C%20Inc.%20West%20Virginia%20propane"
+  },
+  {
+    "id": "1st_choice_energy_services",
+    "name": "1st Choice Energy Services",
+    "state": "WV",
+    "url": "https://www.google.com/maps/search/1st%20Choice%20Energy%20Services%20West%20Virginia%20propane"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_pinedale",
+    "name": "Valley Wide Cooperative Energy | Pinedale",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/Valley%20Wide%20Cooperative%20Energy%20%7C%20Pinedale%20Wyoming%20propane"
+  },
+  {
+    "id": "lodge_grass_propane_supplies",
+    "name": "Lodge Grass Propane & Supplies",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/Lodge%20Grass%20Propane%20and%20Supplies%20Wyoming%20propane"
+  },
+  {
+    "id": "v_1_propane",
+    "name": "V-1 Propane",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/V-1%20Propane%20Wyoming%20propane"
+  },
+  {
+    "id": "big_horn_co_op_24hr_pumps",
+    "name": "Big Horn Co-op- 24HR Pumps",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/Big%20Horn%20Co-op-%2024HR%20Pumps%20Wyoming%20propane"
+  },
+  {
+    "id": "butane_power_equipment_co",
+    "name": "Butane Power & Equipment Co",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/Butane%20Power%20and%20Equipment%20Co%20Wyoming%20propane"
+  },
+  {
+    "id": "tricounty_gas",
+    "name": "TriCounty Gas",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/TriCounty%20Gas%20Wyoming%20propane"
+  },
+  {
+    "id": "thunder_basin_propane",
+    "name": "Thunder Basin Propane",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/Thunder%20Basin%20Propane%20Wyoming%20propane"
+  },
+  {
+    "id": "blakeman_propane_inc",
+    "name": "Blakeman Propane, Inc.",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/Blakeman%20Propane%2C%20Inc.%20Wyoming%20propane"
+  },
+  {
+    "id": "tumbleweed_propane_inc",
+    "name": "Tumbleweed Propane, Inc.",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/Tumbleweed%20Propane%2C%20Inc.%20Wyoming%20propane"
+  },
+  {
+    "id": "cbh_co_op_gillette_elevator",
+    "name": "CBH CO-OP Gillette Elevator",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/CBH%20CO-OP%20Gillette%20Elevator%20Wyoming%20propane"
+  },
+  {
+    "id": "pinedale_natural_gas_inc",
+    "name": "Pinedale Natural Gas Inc",
+    "state": "WY",
+    "url": "https://www.google.com/maps/search/Pinedale%20Natural%20Gas%20Inc%20Wyoming%20propane"
+  }
+]

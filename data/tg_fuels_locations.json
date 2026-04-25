@@ -1,0 +1,83 @@
+[
+  {
+    "name": "TG Fuels",
+    "city": "Cisco",
+    "state": "TX",
+    "lat": 32.3881293,
+    "lng": -98.9793386,
+    "address": "811 W 18th St, Cisco, TX",
+    "county": "Eastland County, TX"
+  },
+  {
+    "name": "TG Fuels",
+    "city": "Abilene",
+    "state": "TX",
+    "lat": 32.44645,
+    "lng": -99.7475905,
+    "address": "4000 Pine St, Abilene, TX",
+    "county": "Taylor County, TX"
+  },
+  {
+    "name": "TG Fuels",
+    "city": "Alpine",
+    "state": "TX",
+    "lat": 30.3602181,
+    "lng": -103.6628596,
+    "address": "3001 TX-118, Alpine, TX",
+    "county": "Brewster County, TX"
+  },
+  {
+    "name": "TG Fuels",
+    "city": "Wolfforth",
+    "state": "TX",
+    "lat": 33.5059189,
+    "lng": -102.009057,
+    "address": "475 Highway 62, Wolfforth, TX",
+    "county": "Lubbock County, TX"
+  },
+  {
+    "name": "TG Fuels",
+    "city": "Midland",
+    "state": "TX",
+    "lat": 31.83688,
+    "lng": -102.0103767,
+    "address": "4610 N Garfield St # B12, Midland, TX",
+    "county": "Midland County, TX"
+  },
+  {
+    "name": "TG Fuels",
+    "city": "Abilene",
+    "state": "TX",
+    "lat": 32.44645,
+    "lng": -99.7475905,
+    "address": "509 S IH 20 S Access Rd, Abilene, TX",
+    "county": "Taylor County, TX"
+  },
+  {
+    "name": "TG Fuels",
+    "city": "Denver City",
+    "state": "TX",
+    "lat": 32.9679571,
+    "lng": -102.8293851,
+    "address": "704 TX-214, Denver City, TX",
+    "county": "Yoakum County, TX"
+  },
+  {
+    "name": "TG Fuels",
+    "city": "Fort Stockton",
+    "state": "TX",
+    "lat": 30.891901,
+    "lng": -102.883662,
+    "address": "300 US-385, Fort Stockton, TX",
+    "county": "Pecos County, TX"
+  },
+  {
+    "name": "TG Fuels",
+    "city": "Coleman",
+    "state": "TX",
+    "lat": 31.7766863,
+    "lng": -99.4461098,
+    "address": "10548 TX-206, Coleman, TX",
+    "county": "Coleman County, TX"
+  }
+]

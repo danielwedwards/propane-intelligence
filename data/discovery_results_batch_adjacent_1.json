@@ -1,0 +1,681 @@
+{
+  "batch": "adjacent_1_ok_mo_in_oh",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "LaFerry's Propane",
+      "hqCity": "Pryor",
+      "hqState": "OK",
+      "website": "https://www.laferryspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Pryor",
+          "state": "OK",
+          "street": null
+        },
+        {
+          "city": "Tulsa",
+          "state": "OK",
+          "street": null
+        },
+        {
+          "city": "Muskogee",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Founded 1955, third-generation family business serving NE Oklahoma including Tulsa and Muskogee areas."
+    },
+    {
+      "name": "MCP Propane",
+      "hqCity": "Muskogee",
+      "hqState": "OK",
+      "website": "https://www.propanemcp.com/",
+      "knownLocations": [
+        {
+          "city": "Muskogee",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane exchange and refill services in Muskogee, Tulsa, and Okmulgee counties."
+    },
+    {
+      "name": "OLG Propane",
+      "hqCity": "Oklahoma City",
+      "hqState": "OK",
+      "website": "https://www.olgpropaneok.com/",
+      "knownLocations": [
+        {
+          "city": "Oklahoma City",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Oklahoma propane company since 1937, serving homes, farms, and businesses statewide."
+    },
+    {
+      "name": "Lawton LP Gas",
+      "hqCity": "Walters",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Walters",
+          "state": "OK",
+          "street": null
+        },
+        {
+          "city": "Lawton",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Serves Lawton area including Cotton and Comanche counties."
+    },
+    {
+      "name": "Earnheart Propane",
+      "hqCity": "Oklahoma City",
+      "hqState": "OK",
+      "website": "https://earnheartpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Oklahoma City",
+          "state": "OK",
+          "street": null
+        },
+        {
+          "city": "Enid",
+          "state": "OK",
+          "street": null
+        },
+        {
+          "city": "Stillwater",
+          "state": "OK",
+          "street": null
+        },
+        {
+          "city": "Ponca City",
+          "state": "OK",
+          "street": null
+        },
+        {
+          "city": "Weatherford",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Central Oklahoma propane equipment and fuel delivery company serving numerous cities."
+    },
+    {
+      "name": "Platform Fuels",
+      "hqCity": "Oklahoma City",
+      "hqState": "OK",
+      "website": "https://platformfuels.com/",
+      "knownLocations": [
+        {
+          "city": "Oklahoma City",
+          "state": "OK",
+          "street": null
+        },
+        {
+          "city": "Idabel",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "pe",
+      "notes": "Propane distributor throughout central, eastern and southeastern Oklahoma; operates Kiamichi Propane as subsidiary."
+    },
+    {
+      "name": "Kiamichi Propane",
+      "hqCity": "Idabel",
+      "hqState": "OK",
+      "website": "https://platformfuels.com/locations/kiamichi-propane/",
+      "knownLocations": [
+        {
+          "city": "Idabel",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "pe",
+      "notes": "Leading residential propane distributor in Idabel, OK; subsidiary of Platform Fuels."
+    },
+    {
+      "name": "Propane Sales",
+      "hqCity": "Crescent",
+      "hqState": "OK",
+      "website": "https://www.propanesales.net/",
+      "knownLocations": [
+        {
+          "city": "Crescent",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned business established in the late 1950s, Crescent, OK."
+    },
+    {
+      "name": "Payne Propane",
+      "hqCity": "Stillwater",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Stillwater",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned and operated Oklahoma propane company since 1991."
+    },
+    {
+      "name": "W.E. Allford Propane",
+      "hqCity": "McAlester",
+      "hqState": "OK",
+      "website": "https://weallfordpropane.com/",
+      "knownLocations": [
+        {
+          "city": "McAlester",
+          "state": "OK",
+          "street": "106 S 6th St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serves McAlester, Muskogee, Eufaula, Sapulpa and surrounding areas; specializes in propane sales and equipment."
+    },
+    {
+      "name": "Circle A Propane",
+      "hqCity": "Pauls Valley",
+      "hqState": "OK",
+      "website": "https://circleapropane.com/",
+      "knownLocations": [
+        {
+          "city": "Pauls Valley",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned and operated since 2008; serves Pontotoc, Murray, Garvin and surrounding OK counties."
+    },
+    {
+      "name": "Oklahoma Propane",
+      "hqCity": "Oklahoma City",
+      "hqState": "OK",
+      "website": "https://oklahomapropane.us/",
+      "knownLocations": [
+        {
+          "city": "Oklahoma City",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma-based propane distributor."
+    },
+    {
+      "name": "OKFuels",
+      "hqCity": "Oklahoma City",
+      "hqState": "OK",
+      "website": "https://okfuels.net/",
+      "knownLocations": [
+        {
+          "city": "Oklahoma City",
+          "state": "OK",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma fuel and propane distributor with multiple locations."
+    },
+    {
+      "name": "AA Propane",
+      "hqCity": "California",
+      "hqState": "MO",
+      "website": "https://aapropanellc.com/",
+      "knownLocations": [
+        {
+          "city": "California",
+          "state": "MO",
+          "street": null
+        },
+        {
+          "city": "Stover",
+          "state": "MO",
+          "street": null
+        },
+        {
+          "city": "Warsaw",
+          "state": "MO",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane company in Central Missouri with three locations."
+    },
+    {
+      "name": "MS Propane",
+      "hqCity": "Mt. Vernon",
+      "hqState": "MO",
+      "website": "https://mspropanegas.com/",
+      "knownLocations": [
+        {
+          "city": "Mt. Vernon",
+          "state": "MO",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Local propane delivery company in Southwest Missouri."
+    },
+    {
+      "name": "J.J. Propane",
+      "hqCity": "Seneca",
+      "hqState": "MO",
+      "website": "https://www.jjpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Seneca",
+          "state": "MO",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned and trusted for 45+ years; propane delivery and tank rental in SW Missouri."
+    },
+    {
+      "name": "Hoods Propane",
+      "hqCity": "Monett",
+      "hqState": "MO",
+      "website": "https://www.hoodspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Monett",
+          "state": "MO",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane supplier in Missouri."
+    },
+    {
+      "name": "Al's Gas Company",
+      "hqCity": "Neosho",
+      "hqState": "MO",
+      "website": "http://www.alsgas.com/",
+      "knownLocations": [
+        {
+          "city": "Neosho",
+          "state": "MO",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Oldest locally owned propane dealer in SW Missouri since 1960; serves SW Missouri and NE Oklahoma."
+    },
+    {
+      "name": "Mountain Country Propane",
+      "hqCity": "Mountain Grove",
+      "hqState": "MO",
+      "website": "https://www.mtncountrypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Mountain Grove",
+          "state": "MO",
+          "street": null
+        },
+        {
+          "city": "Sparta",
+          "state": "MO",
+          "street": null
+        },
+        {
+          "city": "Camdenton",
+          "state": "MO",
+          "street": null
+        },
+        {
+          "city": "Ozark",
+          "state": "MO",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Operating since 1951; serves south central Missouri and the Lake of the Ozarks."
+    },
+    {
+      "name": "C and J Propane",
+      "hqCity": "Lamar",
+      "hqState": "MO",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lamar",
+          "state": "MO",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serves Liberal, Jasper, Carthage, Lamar, Ft Scott, Pittsburg and SW Missouri/E Kansas areas."
+    },
+    {
+      "name": "Guier Gas",
+      "hqCity": "Houstonia",
+      "hqState": "MO",
+      "website": "https://guiergas.com/",
+      "knownLocations": [
+        {
+          "city": "Houstonia",
+          "state": "MO",
+          "street": "13992 Highway K"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Houstonia, MO-based propane dealer."
+    },
+    {
+      "name": "Keystone Cooperative",
+      "hqCity": "Lafayette",
+      "hqState": "IN",
+      "website": "https://www.keystonecoop.com/",
+      "knownLocations": [
+        {
+          "city": "Lafayette",
+          "state": "IN",
+          "street": null
+        },
+        {
+          "city": "Kokomo",
+          "state": "IN",
+          "street": null
+        },
+        {
+          "city": "Richmond",
+          "state": "IN",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Formed March 2024 from merger of Co-Alliance and Ceres Solutions; ~$3.1B revenue, 195 locations, propane across IN/OH/MI."
+    },
+    {
+      "name": "Indiana Oxygen",
+      "hqCity": "Indianapolis",
+      "hqState": "IN",
+      "website": "https://www.indianaoxygen.com/",
+      "knownLocations": [
+        {
+          "city": "Indianapolis",
+          "state": "IN",
+          "street": null
+        },
+        {
+          "city": "Lafayette",
+          "state": "IN",
+          "street": null
+        },
+        {
+          "city": "Muncie",
+          "state": "IN",
+          "street": null
+        },
+        {
+          "city": "Richmond",
+          "state": "IN",
+          "street": null
+        },
+        {
+          "city": "Bloomington",
+          "state": "IN",
+          "street": null
+        },
+        {
+          "city": "Elkhart",
+          "state": "IN",
+          "street": null
+        },
+        {
+          "city": "Seymour",
+          "state": "IN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Indiana-based industrial gas and propane distributor with multiple locations."
+    },
+    {
+      "name": "Apache Propane",
+      "hqCity": "Indianapolis",
+      "hqState": "IN",
+      "website": "https://apachepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Indianapolis",
+          "state": "IN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned and operated Indiana propane dealer."
+    },
+    {
+      "name": "Kova Silgas",
+      "hqCity": "Bloomington",
+      "hqState": "IN",
+      "website": "https://www.kovasilgas.com/",
+      "knownLocations": [
+        {
+          "city": "Bloomington",
+          "state": "IN",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane delivery and services in South Central Indiana."
+    },
+    {
+      "name": "Southern Indiana Propane",
+      "hqCity": "Jasper",
+      "hqState": "IN",
+      "website": "https://lpgas.net/",
+      "knownLocations": [
+        {
+          "city": "Jasper",
+          "state": "IN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Located in Jasper, IN near US 231; purchases only HD-5 grade propane."
+    },
+    {
+      "name": "Murphy's Gas Co",
+      "hqCity": "Oxford",
+      "hqState": "OH",
+      "website": "https://www.murphysgas.net/",
+      "knownLocations": [
+        {
+          "city": "Oxford",
+          "state": "OH",
+          "street": null
+        },
+        {
+          "city": "Harrison",
+          "state": "OH",
+          "street": null
+        },
+        {
+          "city": "Connersville",
+          "state": "IN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane services within 100 miles of Connersville IN and Oxford OH."
+    },
+    {
+      "name": "Pearce Bottled Gas",
+      "hqCity": "Greenville",
+      "hqState": "IN",
+      "website": "https://www.pearcepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Greenville",
+          "state": "IN",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Southern Indiana propane dealer serving the Louisville area and southern IN."
+    },
+    {
+      "name": "Sunrise Cooperative",
+      "hqCity": "Fremont",
+      "hqState": "OH",
+      "website": "https://www.sunriseco-op.com/",
+      "knownLocations": [
+        {
+          "city": "Bucyrus",
+          "state": "OH",
+          "street": null
+        },
+        {
+          "city": "Kettlersville",
+          "state": "OH",
+          "street": null
+        },
+        {
+          "city": "Norwalk",
+          "state": "OH",
+          "street": null
+        },
+        {
+          "city": "Springfield",
+          "state": "OH",
+          "street": null
+        },
+        {
+          "city": "Wilmington",
+          "state": "OH",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farmer-owned cooperative with six energy offices across north central Ohio."
+    },
+    {
+      "name": "Mount Perry Propane",
+      "hqCity": "Mount Perry",
+      "hqState": "OH",
+      "website": "https://mountperrypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Mount Perry",
+          "state": "OH",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane provider serving Southeastern Ohio for homes, farms, and businesses."
+    },
+    {
+      "name": "Ludwig Propane",
+      "hqCity": "Sandusky",
+      "hqState": "OH",
+      "website": "https://ludwigpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Sandusky",
+          "state": "OH",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Full-service propane supplier across Northwest Ohio including Sandusky County."
+    },
+    {
+      "name": "Santmyer",
+      "hqCity": "Wooster",
+      "hqState": "OH",
+      "website": "https://www.santmyer.com/",
+      "knownLocations": [
+        {
+          "city": "Wooster",
+          "state": "OH",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Ohio-based fuel supply services company including propane delivery; Wooster HQ."
+    },
+    {
+      "name": "Cincinnati Propane",
+      "hqCity": "Miamiville",
+      "hqState": "OH",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Miamiville",
+          "state": "OH",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "BBB-rated Cincinnati-area propane supplies dealer with multiple locations."
+    },
+    {
+      "name": "Specialty Gas House",
+      "hqCity": "Columbus",
+      "hqState": "OH",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Columbus",
+          "state": "OH",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Columbus, OH sales, service and installation of gas lights, fireplaces and propane accessories."
+    },
+    {
+      "name": "NW Ohio Propane",
+      "hqCity": "Napoleon",
+      "hqState": "OH",
+      "website": "https://nwohiopropane.com/",
+      "knownLocations": [
+        {
+          "city": "Napoleon",
+          "state": "OH",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Residential, agricultural, industrial and commercial propane in northwest Ohio."
+    },
+    {
+      "name": "Centerra Co-Op",
+      "hqCity": "Ashland",
+      "hqState": "OH",
+      "website": "https://www.centerracoop.com/",
+      "knownLocations": [
+        {
+          "city": "Ashland",
+          "state": "OH",
+          "street": null
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farmer-owned cooperative providing propane services to Northeast Ohio, Western Pennsylvania."
+    }
+  ]
+}

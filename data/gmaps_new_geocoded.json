@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Northwest Propane Gas Company",
+    "address": "1515 W Belt Line Rd",
+    "state": "TX",
+    "phone": "(972) 247-6121",
+    "lat": 32.951798,
+    "lng": -96.9180252,
+    "city": "Carrollton",
+    "county": "Dallas County, TX"
+  },
+  {
+    "name": "Texas Propane",
+    "address": "6825 Mumford Rd",
+    "state": "TX",
+    "phone": "(800) 646-4949",
+    "lat": 30.7140962,
+    "lng": -96.4418351,
+    "city": "",
+    "county": "Brazos County, TX"
+  },
+  {
+    "name": "Bailey Propane Co",
+    "address": "60786 US Hwy 285",
+    "state": "CO",
+    "phone": "(303) 838-5411",
+    "lat": 39.5055673,
+    "lng": -105.3164994,
+    "city": "",
+    "county": "Jefferson County, CO"
+  },
+  {
+    "name": "Propane Depot NY",
+    "address": "159 W Montauk Hwy",
+    "state": "NY",
+    "phone": "(631) 400-7283",
+    "lat": 40.8323147,
+    "lng": -72.5902622,
+    "city": "Town of Southampton",
+    "county": "Suffolk County, NY"
+  },
+  {
+    "name": "Reliable Propane Corporation",
+    "address": "10140 County Rd",
+    "state": "NY",
+    "phone": "(716) 741-3000",
+    "lat": 42.246728,
+    "lng": -77.0901095,
+    "city": "Town of Hornby",
+    "county": "Steuben County, NY"
+  },
+  {
+    "name": "Keystone Propane Service",
+    "address": "",
+    "state": "PA",
+    "phone": "(800) 598-5047",
+    "lat": 41.3244805,
+    "lng": -75.3068992,
+    "city": "Greene Township",
+    "county": "Pike County, PA"
+  },
+  {
+    "name": "Propane Express",
+    "address": "",
+    "state": "PA",
+    "phone": "(267) 424-9759",
+    "lat": 39.9527237,
+    "lng": -75.1635262,
+    "city": "Philadelphia",
+    "county": "Philadelphia County, PA"
+  },
+  {
+    "name": "Coyne Oil & Propane",
+    "address": "8039 N Ransom Rd",
+    "state": "MI",
+    "phone": "(989) 715-2040",
+    "lat": 43.3354079,
+    "lng": -84.4497555,
+    "city": "Lafayette Township",
+    "county": "Gratiot County, MI"
+  },
+  {
+    "name": "Propane Services",
+    "address": "27481 Beverly Rd",
+    "state": "MI",
+    "phone": "(313) 292-9100",
+    "lat": 42.2608821,
+    "lng": -83.3096308,
+    "city": "Romulus",
+    "county": "Wayne County, MI"
+  },
+  {
+    "name": "Ciardelli Fuel Company",
+    "address": "467 Nashua St",
+    "state": "NH",
+    "phone": "(603) 673-1336",
+    "lat": 42.8272739,
+    "lng": -71.6320378,
+    "city": "Milford",
+    "county": "Hillsborough County, NH"
+  },
+  {
+    "name": "Connecticut Propane",
+    "address": "21 Austin Dr",
+    "state": "CT",
+    "phone": "(860) 365-5218",
+    "lat": 41.6486788,
+    "lng": -72.4795116,
+    "city": "Marlborough",
+    "county": "Capitol Planning Region, CT"
+  },
+  {
+    "name": "Great Valley Propane",
+    "address": "16905 York Rd",
+    "state": "MD",
+    "phone": "(410) 598-4180",
+    "lat": 39.5879502,
+    "lng": -76.6624552,
+    "city": "",
+    "county": "Baltimore County, MD"
+  },
+  {
+    "name": "Rocky Mountain Propane MT",
+    "address": "",
+    "state": "MT",
+    "phone": "(406) 839-7259",
+    "lat": 45.9649865,
+    "lng": -108.1636168,
+    "city": "Worden",
+    "county": "Yellowstone County, MT"
+  },
+  {
+    "name": "Blue Star Gas Seattle",
+    "address": "",
+    "state": "WA",
+    "phone": "(206) 762-2583",
+    "lat": 47.6038321,
+    "lng": -122.330062,
+    "city": "Seattle",
+    "county": "King County, WA"
+  },
+  {
+    "name": "Blue Star Gas Phoenix",
+    "address": "447 W Watkins St",
+    "state": "AZ",
+    "phone": "(602) 253-7827",
+    "lat": 33.4257803,
+    "lng": -112.0799253,
+    "city": "Phoenix",
+    "county": "Maricopa County, AZ"
+  },
+  {
+    "name": "Pacific Coast Propane Phoenix",
+    "address": "1018 S 27th Ave",
+    "state": "AZ",
+    "phone": "(844) 351-1075",
+    "lat": 33.4384677,
+    "lng": -112.1174354,
+    "city": "Phoenix",
+    "county": "Maricopa County, AZ"
+  }
+]

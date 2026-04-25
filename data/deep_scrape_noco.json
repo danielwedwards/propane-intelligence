@@ -1,0 +1,25 @@
+{
+  "source": "https://noco.com/location and noco.com/location/<city>-ny subpages",
+  "scraped": "2026-04-11",
+  "company": "NOCO Energy",
+  "notes": "NOCO operates propane and heating-oil branches across Western and Central NY. Branches listed on /location include Akron, Albany (served from Rensselaer), Arcade, Bath, Cato, Cherry Creek, Cohocton, Freedom, Jamestown, Lima, Lockport, Randolph, Ransomville, Romulus, Syracuse, Tonawanda. Street addresses captured where available via public listings.",
+  "locations": [
+    {"name": "NOCO - Tonawanda (James Ave) HQ", "street": "100 James Ave", "city": "Tonawanda", "state": "NY", "zip": "14150", "phone": "716-875-3472"},
+    {"name": "NOCO - Tonawanda (Sheridan Dr)", "street": "2440 Sheridan Dr", "city": "Tonawanda", "state": "NY", "zip": "14150", "phone": "716-833-6626"},
+    {"name": "NOCO - Lockport", "street": "63 Richfield Street", "city": "Lockport", "state": "NY", "zip": "14094", "phone": "716-434-7563"},
+    {"name": "NOCO - Arcade", "street": "472 West Main St", "city": "Arcade", "state": "NY", "zip": "14009", "phone": "585-492-2770"},
+    {"name": "NOCO - Bath", "street": "7624 State Route 53", "city": "Bath", "state": "NY", "zip": "14810", "phone": "607-260-0870"},
+    {"name": "NOCO - Cohocton", "street": "8 McKay St", "city": "Cohocton", "state": "NY", "zip": "14826", "phone": "800-662-6776"},
+    {"name": "NOCO - Romulus", "street": "1975 State Route 336", "city": "Romulus", "state": "NY", "zip": "14541", "phone": "800-662-6776"},
+    {"name": "NOCO - Syracuse", "street": "1300 Wolf St", "city": "Syracuse", "state": "NY", "zip": "13208", "phone": "800-662-6776"},
+    {"name": "NOCO - Cherry Creek", "street": "6804 Main St", "city": "Cherry Creek", "state": "NY", "zip": "14723", "phone": "716-296-5221"},
+    {"name": "NOCO - Freedom", "street": "11951 Route 98", "city": "Freedom", "state": "NY", "zip": "14065", "phone": "585-492-2770"},
+    {"name": "NOCO - Jamestown", "street": "3255 Fluvanna Ave", "city": "Jamestown", "state": "NY", "zip": "14701", "phone": "800-662-6776"},
+    {"name": "NOCO - Randolph", "street": "12477 State Route 394", "city": "Randolph", "state": "NY", "zip": "14772", "phone": "800-662-6776"},
+    {"name": "NOCO - Lima", "street": "7334 E Main St", "city": "Lima", "state": "NY", "zip": "14485", "phone": "585-582-1820"},
+    {"name": "NOCO - Ransomville", "street": "2799 Ransomville Rd", "city": "Ransomville", "state": "NY", "zip": "14131", "phone": "800-662-6776"},
+    {"name": "NOCO - Cato", "street": "2688 Main St", "city": "Cato", "state": "NY", "zip": "13033", "phone": null},
+    {"name": "NOCO - Akron", "city": "Akron", "state": "NY", "phone": null, "note": "Listed as service location on noco.com/location; street address not published."},
+    {"name": "NOCO - Albany (served from Rensselaer)", "city": "Rensselaer", "state": "NY", "phone": null, "note": "Serves Albany/Troy/Schenectady/Mechanicville; physical depot in Rensselaer."}
+  ]
+}

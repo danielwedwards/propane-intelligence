@@ -1,0 +1,926 @@
+{
+  "batch": "se_primary_1_tx_fl",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Fuelmark Inc",
+      "hqCity": "Odessa",
+      "hqState": "TX",
+      "website": "https://fuelmarkinc.net/",
+      "knownLocations": [
+        {
+          "city": "Odessa",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane and fuel operator serving Odessa, Midland and the Permian Basin."
+    },
+    {
+      "name": "Eagle Propane and Fuel LP",
+      "hqCity": "Odessa",
+      "hqState": "TX",
+      "website": "https://eaglepropaneandfuels.com/",
+      "knownLocations": [
+        {
+          "city": "Odessa",
+          "state": "TX",
+          "street": "11317 W CR 127"
+        },
+        {
+          "city": "Odessa",
+          "state": "TX",
+          "street": "7156 W University"
+        },
+        {
+          "city": "Pecos",
+          "state": "TX",
+          "street": "152 Raul Flores Blvd"
+        },
+        {
+          "city": "Tyler",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Mineola",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane and petroleum fuel distributor with branches across West and East Texas."
+    },
+    {
+      "name": "Smith LP Gas Co",
+      "hqCity": "Lubbock",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lubbock",
+          "state": "TX",
+          "street": "601 N Interstate 27"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane delivery serving the Lubbock area since 1999."
+    },
+    {
+      "name": "Tri-Co Propane",
+      "hqCity": "Rogers",
+      "hqState": "TX",
+      "website": "https://tricopropane.com/",
+      "knownLocations": [
+        {
+          "city": "Rogers",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Waco",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Temple",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Killeen",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Georgetown",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family business established 1992 serving the central Texas Waco-Temple-Killeen-Georgetown corridor."
+    },
+    {
+      "name": "Symank Energy",
+      "hqCity": "Waco",
+      "hqState": "TX",
+      "website": "https://www.symankenergy.com/",
+      "knownLocations": [
+        {
+          "city": "Waco",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane delivery serving Waco and McLennan County."
+    },
+    {
+      "name": "Tyler County Propane",
+      "hqCity": "Woodville",
+      "hqState": "TX",
+      "website": "https://tylercountypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Woodville",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Hometown propane provider serving Tyler County in deep East Texas."
+    },
+    {
+      "name": "Walker County LP-Gas Inc",
+      "hqCity": "Huntsville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Huntsville",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned full-service propane company serving Walker County since 1994."
+    },
+    {
+      "name": "Lyons LP Gas Inc",
+      "hqCity": "Lufkin",
+      "hqState": "TX",
+      "website": "https://www.lyonspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Lufkin",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Nacogdoches",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned East Texas propane operator with 50-plus year history serving Lufkin, Nacogdoches and Piney Woods."
+    },
+    {
+      "name": "West Texas Propane",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": "https://westtexaspropane.com/",
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane company serving El Paso area with tank installation and refills."
+    },
+    {
+      "name": "Bobs Propane",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent El Paso propane dealer with 30-plus years of operation."
+    },
+    {
+      "name": "Hiper Gas",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": "https://www.hiper-gas.com/",
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "El Paso area propane tank installation and maintenance provider."
+    },
+    {
+      "name": "DAE Propane",
+      "hqCity": "El Paso",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "El Paso",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent El Paso propane dealer serving West Texas border region."
+    },
+    {
+      "name": "Wheat Energy",
+      "hqCity": "Abilene",
+      "hqState": "TX",
+      "website": "https://wheatenergy.net/",
+      "knownLocations": [
+        {
+          "city": "Abilene",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Premier fuel, propane, and lubricant services in the Abilene area."
+    },
+    {
+      "name": "Hardwick LPG",
+      "hqCity": "Abilene",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Abilene",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer in the Abilene area."
+    },
+    {
+      "name": "Hill Country Hydro Gas",
+      "hqCity": "Blanco",
+      "hqState": "TX",
+      "website": "https://hillcountryhydrogas.com/",
+      "knownLocations": [
+        {
+          "city": "Blanco",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Canyon Lake",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Wimberley",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Klepac family-owned retail propane dealer since 1982 with three Hill Country locations."
+    },
+    {
+      "name": "Hill Country Propane Inc",
+      "hqCity": "Fredericksburg",
+      "hqState": "TX",
+      "website": "https://hillcountrypropaneinc.com/",
+      "knownLocations": [
+        {
+          "city": "Fredericksburg",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned full-service propane provider in Fredericksburg for over 36 years."
+    },
+    {
+      "name": "Direct Propane Services",
+      "hqCity": "Dripping Springs",
+      "hqState": "TX",
+      "website": "https://directpropaneservices.com/",
+      "knownLocations": [
+        {
+          "city": "Dripping Springs",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Georgetown",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Lakeway",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Bastrop",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Austin",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned central Texas propane delivery since 1985 serving Austin metro and Hill Country."
+    },
+    {
+      "name": "Vapo Propane",
+      "hqCity": "Fredericksburg",
+      "hqState": "TX",
+      "website": "https://www.vapo-propane.com/",
+      "knownLocations": [
+        {
+          "city": "Fredericksburg",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane sales and service in Fredericksburg for over 70 years."
+    },
+    {
+      "name": "Chaparral Propane",
+      "hqCity": "Kerrville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kerrville",
+          "state": "TX",
+          "street": "PO Box 335"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent dealer covering Kerr, Kendall, Gillespie and Bandera counties."
+    },
+    {
+      "name": "Mission Gas Co",
+      "hqCity": "Bandera",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bandera",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane company serving Bandera area."
+    },
+    {
+      "name": "Bell Hydrogas Propane",
+      "hqCity": "Boerne",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Boerne",
+          "state": "TX",
+          "street": "36975 Interstate 10 W"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer in Boerne, Texas Hill Country."
+    },
+    {
+      "name": "Kerrville Butane Co Inc",
+      "hqCity": "Kerrville",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kerrville",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Long-running independent propane and butane dealer in Kerrville."
+    },
+    {
+      "name": "Sandifers LP Gas and Service Co",
+      "hqCity": "Beaumont",
+      "hqState": "TX",
+      "website": "https://sandiferslp.com/",
+      "knownLocations": [
+        {
+          "city": "Beaumont",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Port Arthur",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Orange",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer serving Southeast Texas Golden Triangle."
+    },
+    {
+      "name": "TREST LP Gas",
+      "hqCity": "Beaumont",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Beaumont",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer in the Beaumont area."
+    },
+    {
+      "name": "Vickery Propane",
+      "hqCity": "Beaumont",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Beaumont",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer in Beaumont."
+    },
+    {
+      "name": "CWS Propane",
+      "hqCity": "Conroe",
+      "hqState": "TX",
+      "website": "https://cwspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Conroe",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Porter",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Tomball",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "New Caney",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane provider serving Montgomery County and north Houston metro."
+    },
+    {
+      "name": "A and D Propane",
+      "hqCity": "New Caney",
+      "hqState": "TX",
+      "website": "http://www.propane.us/",
+      "knownLocations": [
+        {
+          "city": "New Caney",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Conroe",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent dealer serving Montgomery County and surrounding areas."
+    },
+    {
+      "name": "Automatic LP Gas Co",
+      "hqCity": "Conroe",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Conroe",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Long-running independent propane dealer in Conroe area."
+    },
+    {
+      "name": "Collins Propane",
+      "hqCity": "Tyler",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Tyler",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "East Texas propane dealer in Tyler area now affiliated with Pinnacle."
+    },
+    {
+      "name": "Enderby Gas Inc (Bishop Energy)",
+      "hqCity": "Gainesville",
+      "hqState": "TX",
+      "website": "https://enderbygas.com/",
+      "knownLocations": [
+        {
+          "city": "Gainesville",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Sherman",
+          "state": "TX",
+          "street": "3101 US-82"
+        },
+        {
+          "city": "Princeton",
+          "state": "TX",
+          "street": null
+        },
+        {
+          "city": "Paris",
+          "state": "TX",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Founded 1945 with 7 outlets serving 19,500 customers across North Central Texas (likely already in DB as Enderby)."
+    },
+    {
+      "name": "D and D Gas",
+      "hqCity": "Jacksonville",
+      "hqState": "FL",
+      "website": "https://dndgas.com/",
+      "knownLocations": [
+        {
+          "city": "Jacksonville",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "St. Augustine",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Atlantic Beach",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Neptune Beach",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-run full-service propane provider serving Jacksonville beaches and St. Augustine."
+    },
+    {
+      "name": "Wilford Propane Gas",
+      "hqCity": "Orange Park",
+      "hqState": "FL",
+      "website": "http://www.wilfordpropane.net/",
+      "knownLocations": [
+        {
+          "city": "Orange Park",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Jacksonville",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Green Cove Springs",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Ponte Vedra Beach",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned North Florida propane service since 1957 (likely already in DB as Wilford)."
+    },
+    {
+      "name": "Webb Brothers Propane",
+      "hqCity": "Tallahassee",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Tallahassee",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned independent propane dealer in Tallahassee."
+    },
+    {
+      "name": "J and J Gas Service",
+      "hqCity": "Mayo",
+      "hqState": "FL",
+      "website": "https://www.jjgasservice.com/",
+      "knownLocations": [
+        {
+          "city": "Mayo",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned independent LP gas company serving North Central Florida since 1974."
+    },
+    {
+      "name": "Jacobs Total Gas Services",
+      "hqCity": "Naples",
+      "hqState": "FL",
+      "website": "https://jacobsgas.com/",
+      "knownLocations": [
+        {
+          "city": "Naples",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Marco Island",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Bonita Springs",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Fort Myers",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Cape Coral",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Southwest Florida gas business with 20-plus years specializing in Naples, Marco Island, Fort Myers."
+    },
+    {
+      "name": "Paradise Propane",
+      "hqCity": "Fort Myers",
+      "hqState": "FL",
+      "website": "https://www.paradisepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Fort Myers",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Fort Myers-based propane delivery and tank inspection company in business 50-plus years."
+    },
+    {
+      "name": "Southern Quality Propane",
+      "hqCity": "Panama City",
+      "hqState": "FL",
+      "website": "https://www.southernqualitypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Panama City",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Panama City Beach",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent regional propane delivery serving Panama City and Florida Panhandle Gulf coast."
+    },
+    {
+      "name": "A1 Propane Gas Services",
+      "hqCity": "Panama City",
+      "hqState": "FL",
+      "website": "https://a1propanegas.com/",
+      "knownLocations": [
+        {
+          "city": "Panama City",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane gas services provider in Florida Panhandle."
+    },
+    {
+      "name": "Florida Gas Express LLC",
+      "hqCity": "Port St. Lucie",
+      "hqState": "FL",
+      "website": "https://getfloridagas.online/",
+      "knownLocations": [
+        {
+          "city": "Port St. Lucie",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Vero Beach",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Full-service residential and commercial propane company serving Treasure Coast with 24x7 emergency service."
+    },
+    {
+      "name": "C and C Diversified Services",
+      "hqCity": "Stuart",
+      "hqState": "FL",
+      "website": "https://www.ccdiversifiedgas.com/",
+      "knownLocations": [
+        {
+          "city": "Stuart",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Gas specialists in Martin and Palm Beach County offering LP gas delivery."
+    },
+    {
+      "name": "Rack Electric Gas Services",
+      "hqCity": "Boca Raton",
+      "hqState": "FL",
+      "website": "https://rackelectric.com/gas-services/",
+      "knownLocations": [
+        {
+          "city": "Boca Raton",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "South Florida propane delivery service with emergency deliveries and flexible payment."
+    },
+    {
+      "name": "Okaloosa Gas District",
+      "hqCity": "Crestview",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Crestview",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Niceville",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "municipal",
+      "notes": "Municipal/district gas utility serving Okaloosa County including propane operations."
+    },
+    {
+      "name": "R and S Gas of NW FL",
+      "hqCity": "Crestview",
+      "hqState": "FL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Crestview",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent Northwest Florida Panhandle propane provider."
+    },
+    {
+      "name": "Gasworks Florida",
+      "hqCity": "Niceville",
+      "hqState": "FL",
+      "website": "https://gasworksfl.com/",
+      "knownLocations": [
+        {
+          "city": "Niceville",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Destin",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Crestview",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Licensed gas line installer with 20-plus years specializing in propane and fireplaces in Panhandle beaches."
+    },
+    {
+      "name": "Farmers Cooperative Inc",
+      "hqCity": "Live Oak",
+      "hqState": "FL",
+      "website": "https://farmerscooperative.org/",
+      "knownLocations": [
+        {
+          "city": "Live Oak",
+          "state": "FL",
+          "street": null
+        },
+        {
+          "city": "Madison",
+          "state": "FL",
+          "street": "748 SW Horry Ave"
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Agricultural cooperative serving North Florida with residential LP gas since 1946 across Madison, Suwannee, Hamilton, Lafayette and Taylor counties (likely existing as Cooperative)."
+    },
+    {
+      "name": "Palmdale Oil Company",
+      "hqCity": "Wauchula",
+      "hqState": "FL",
+      "website": "https://comoflorida.com/",
+      "knownLocations": [
+        {
+          "city": "Wauchula",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "family",
+      "notes": "Central Florida petroleum and propane distributor (may exist as Como of Florida)."
+    },
+    {
+      "name": "Florida Gas (getfloridagas.com)",
+      "hqCity": "Miami",
+      "hqState": "FL",
+      "website": "http://www.getfloridagas.com/",
+      "knownLocations": [
+        {
+          "city": "Miami",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Full-service residential and commercial propane company operating across Florida."
+    },
+    {
+      "name": "ThompsonGas Port St Lucie",
+      "hqCity": "Port St. Lucie",
+      "hqState": "FL",
+      "website": "https://thompsongas.com/",
+      "knownLocations": [
+        {
+          "city": "Port St. Lucie",
+          "state": "FL",
+          "street": null
+        }
+      ],
+      "ownership": "private",
+      "notes": "Regional propane provider with Port St. Lucie branch."
+    }
+  ]
+}

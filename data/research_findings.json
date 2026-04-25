@@ -1,0 +1,100 @@
+{
+  "research_date": "2026-04-09",
+  "sources": {
+    "lp_gas_magazine": {
+      "url": "https://www.lpgasmagazine.com/top-retailers/",
+      "companies": 80,
+      "access": "public",
+      "status": "extracted - 22 missing companies already added"
+    },
+    "mississippi_pga": {
+      "url": "https://www.mspropane.com/dealers/",
+      "companies": 28,
+      "access": "public, scrapeable",
+      "status": "extracted - needs cross-reference"
+    },
+    "louisiana_pga": {
+      "url": "https://lapropane.org/find-a-propane-dealer/",
+      "companies": 27,
+      "access": "public, scrapeable",
+      "status": "extracted - needs cross-reference"
+    },
+    "arkansas_pga": {
+      "url": "https://arkansaspropane.com/wp-content/uploads/sites/22/2019/06/2018-APGA-List-of-Arkansas-Propane-Dealers-by-City.pdf",
+      "companies": 35,
+      "access": "public PDF",
+      "status": "extracted - needs cross-reference"
+    },
+    "alabama_lp_gas_board": {
+      "url": "https://www.lpgb.alabama.gov/PermitSearch.aspx",
+      "companies": "unknown - all licensed operators",
+      "access": "public searchable database",
+      "status": "not yet searched"
+    },
+    "southeast_propane_alliance": {
+      "url": "https://southeastpropane.org/",
+      "companies": 173,
+      "access": "2024 directory - contact 919-787-8485",
+      "status": "not yet obtained"
+    },
+    "reqodata": {
+      "url": "https://reqodata.com/en/independent-propane-distributors-united-states",
+      "companies": 2000,
+      "access": "paid/waitlist",
+      "status": "not purchased"
+    },
+    "npga_directory": {
+      "url": "https://www.npga.org/",
+      "companies": 3200,
+      "access": "paid mailing list",
+      "status": "not purchased"
+    },
+    "perc_where_to_buy": {
+      "url": "https://propane.com/where-to-buy/",
+      "companies": "unknown",
+      "access": "zip-by-zip search, labor intensive",
+      "status": "not yet searched"
+    }
+  },
+  "state_directory_companies": {
+    "mississippi": [
+      "Bell Liquefied Gas Co.", "C.P. House Gas Co.", "Clark Gas Co.",
+      "Coombs Gas Inc.", "Fair Propane Gas LLC", "Farmers Inc.",
+      "Ferguson Gas", "Gresham Petroleum Co.", "Guntown LP Gas",
+      "H&M Gas Co.", "Local L.P. Gas Co.", "Magnolia Gas Inc.",
+      "McDonald-Hill Inc.", "Neill Gas Inc.", "Northeast Miss L.P. Gas Co.",
+      "Partridge Propane", "Pittman Propane", "Rogers Propane Gas LLC",
+      "Sanders Gas Co.", "Sayle Propane LLC", "Slate Spring LP Gas Co.",
+      "Southern Propane Inc.", "Starkville LP Gas Co.",
+      "Tallahatchie Farmers Supply", "Thomas LP Gas", "TNT Lewis Inc.",
+      "Trace Propane Gas LLC"
+    ],
+    "louisiana": [
+      "Jim's South Butane-Propane Inc.", "O'NealGas Inc.", "Sabine Butane Gas Co.",
+      "Harrell Gas Inc.", "Lacox Propane Gas Co.", "Propane Industrial Gases Ltd.",
+      "Delta Fuel", "Marcello Distributors", "Vacherie Fuel Corp",
+      "Cajun Propane of Lafayette Inc.", "Lassalle Gas Co.",
+      "National Welding Supply Co.", "Reed Inc.", "Buddy's Home Gas",
+      "Cypress Propane Co.", "Farmer's Gas Co.", "Hercules Transport Inc.",
+      "Lake Arthur Butane Co.", "Atkinson Propane Co.", "Leon's Propane",
+      "Shawson Gas LLC", "Gulf South LP-Gas Co.", "Tait Service",
+      "Metro Lift Propane", "Universal Services & Associates",
+      "Aeropres Corporation", "Red Ball Oxygen", "SPS Propane LLC"
+    ],
+    "arkansas": [
+      "Arkansas County Coop", "Reeves Propane Inc.", "Southern LP Gas Inc.",
+      "Arkansas Liquefied Gas Co.", "Tri-County Propane", "Littlefield Propane LLC",
+      "EZE Cook Gas Company", "Danmar Propane Inc.", "S&B Rural Propane Inc.",
+      "Sun Gas Inc.", "Simmons Energy Solutions Inc.", "Alice Sidney Dryer & Seed Co.",
+      "Blue Seal Petroleum Co.", "Anderson Gas and Propane Inc.", "Thrash Propane Inc.",
+      "Ozark Mountain Propane Co.", "Centergas Fuels Inc.", "Tri-State Propane",
+      "CEBA Gas Inc.", "Reliable Propane LLC", "Craft Propane Inc.",
+      "Island Energy Inc.", "River Valley Oil & Propane", "Arkansas Gas Distributors",
+      "Rick's LP Gas Inc.", "O'Neal Gas Inc.", "Izard County Propane Inc.",
+      "Graves Propane Inc.", "Stone County Propane Gas Co.", "Farmers Oil Corporation",
+      "Farmers Supply Association", "Tyson Gas Company", "Spring River LP Gas",
+      "Victor Welding Supply Co.", "Winston Inc.", "Fricks Butane Gas Inc.",
+      "Thayer LP Gas LLC", "Stephens Propane Company LLC", "Alliance Propane & Petro"
+    ]
+  }
+}

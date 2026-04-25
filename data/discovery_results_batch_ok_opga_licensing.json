@@ -1,0 +1,351 @@
+{
+  "batch": "ok_opga_licensing",
+  "generated": "2026-04-12",
+  "companies": [
+    {
+      "name": "Boden Oil Company",
+      "hqCity": "Oakwood",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Oakwood",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Oakwood, OK."
+    },
+    {
+      "name": "Boise City Farmers Co-op",
+      "hqCity": "Boise City",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Boise City",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Boise City, OK."
+    },
+    {
+      "name": "C and I Gas Company",
+      "hqCity": "Indiahoma",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Indiahoma",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Indiahoma, OK."
+    },
+    {
+      "name": "Clayton Propane LLC",
+      "hqCity": "Seiling",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Seiling",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Seiling, OK."
+    },
+    {
+      "name": "Cross Petroleum Products",
+      "hqCity": "Ponca City",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ponca City",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Ponca City, OK."
+    },
+    {
+      "name": "Froman Oil and Propane dba Reliable Propane",
+      "hqCity": "Claremore",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Claremore",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Claremore, OK."
+    },
+    {
+      "name": "Gann and Gann dba Stevesons Propane",
+      "hqCity": "Kansas",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kansas",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Kansas, OK."
+    },
+    {
+      "name": "Garber Coop Association",
+      "hqCity": "Garber",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Garber",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Garber, OK."
+    },
+    {
+      "name": "Gills Lawton LP Gas Company",
+      "hqCity": "Lawton",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lawton",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Lawton, OK."
+    },
+    {
+      "name": "Hampel Oil",
+      "hqCity": "Chickasha",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Chickasha",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Chickasha, OK."
+    },
+    {
+      "name": "Home Propane Inc",
+      "hqCity": "Calvin",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Calvin",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Calvin, OK."
+    },
+    {
+      "name": "Kelle Oil Company",
+      "hqCity": "Braman",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Braman",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Braman, OK."
+    },
+    {
+      "name": "Leedey Gas and Oil",
+      "hqCity": "Leedey",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Leedey",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Leedey, OK."
+    },
+    {
+      "name": "Lincoln Liquefied Gas Company",
+      "hqCity": "Chandler",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Chandler",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Chandler, OK."
+    },
+    {
+      "name": "Major Gas Company",
+      "hqCity": "Fairview",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fairview",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Fairview, OK."
+    },
+    {
+      "name": "Mayes County Propane",
+      "hqCity": "Pryor",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pryor",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Pryor, OK."
+    },
+    {
+      "name": "McClain Propane Co",
+      "hqCity": "Purcell",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Purcell",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Purcell, OK."
+    },
+    {
+      "name": "Miami Butane Co Inc",
+      "hqCity": "North Miami",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "North Miami",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in North Miami, OK."
+    },
+    {
+      "name": "Miller Brothers Propane",
+      "hqCity": "Dewey",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dewey",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Dewey, OK."
+    },
+    {
+      "name": "Miller Petroleum Co LLC",
+      "hqCity": "Wapanucka",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wapanucka",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Wapanucka, OK."
+    },
+    {
+      "name": "Oklahoma Kansas Cooperative",
+      "hqCity": "Burlington",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Burlington",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Burlington, OK."
+    },
+    {
+      "name": "Stutzman Propane LLC",
+      "hqCity": "Weatherford",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Weatherford",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Weatherford, OK."
+    },
+    {
+      "name": "Western Fuel Co LLC",
+      "hqCity": "Lindsay",
+      "hqState": "OK",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lindsay",
+          "state": "OK",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Oklahoma Propane Gas Association (OPGA) 2025 member. LP gas dealer in Lindsay, OK."
+    }
+  ]
+}

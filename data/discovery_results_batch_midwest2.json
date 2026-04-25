@@ -1,0 +1,831 @@
+{
+  "batch": "midwest2",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Blarney Castle Oil & Propane",
+      "hqCity": "Bear Lake",
+      "hqState": "MI",
+      "website": "https://blarneycastleoil.com",
+      "knownLocations": [
+        {
+          "city": "Bear Lake",
+          "state": "MI",
+          "street": "12218 W St"
+        },
+        {
+          "city": "Cheboygan",
+          "state": "MI",
+          "street": "6416 Riggsville Rd"
+        },
+        {
+          "city": "Traverse City",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Alpena",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Petoskey",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Cadillac",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Mancelona",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Muskegon",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Reed City",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Scottville",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Mesick",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Michigan-based family-owned business since 1933 with 9+ Northern Michigan offices, operating oil, propane and EZ Mart convenience stores."
+    },
+    {
+      "name": "Johnson's Oil & Propane Company",
+      "hqCity": "Gaylord",
+      "hqState": "MI",
+      "website": "https://johnsonspropane.com",
+      "knownLocations": [
+        {
+          "city": "Gaylord",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane and fuel oil dealer serving Northern Michigan since 1954, based in Gaylord."
+    },
+    {
+      "name": "Boyne Country Propane",
+      "hqCity": "Boyne City",
+      "hqState": "MI",
+      "website": "https://www.boynepropane.com",
+      "knownLocations": [
+        {
+          "city": "Boyne City",
+          "state": "MI",
+          "street": "1701 M-75"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent local propane supplier covering Charlevoix, Antrim, Otsego, Cheboygan, and Emmet counties in Northern Michigan."
+    },
+    {
+      "name": "Derrer Oil & Propane Co (Keene Gas)",
+      "hqCity": "Petoskey",
+      "hqState": "MI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Petoskey",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serves Emmet, Charlevoix, Cheboygan, Antrim and Otsego counties including Boyne City, Harbor Springs, and Charlevoix."
+    },
+    {
+      "name": "Midway Rentals and Sales",
+      "hqCity": "Negaunee",
+      "hqState": "MI",
+      "website": "https://catalog.mrmqt.com",
+      "knownLocations": [
+        {
+          "city": "Negaunee",
+          "state": "MI",
+          "street": "43 Industrial Park Dr"
+        },
+        {
+          "city": "Marquette",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane tank rentals and sales serving Marquette County and Upper Peninsula communities including Sault Ste. Marie, Escanaba, Menominee, Houghton, Iron Mountain."
+    },
+    {
+      "name": "Fairgrove Oil & Propane",
+      "hqCity": "Fairgrove",
+      "hqState": "MI",
+      "website": "https://fairgroveoil.com",
+      "knownLocations": [
+        {
+          "city": "Fairgrove",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Thumb area Michigan oil and propane dealer serving Bay City, Caro, Cass City and surrounding communities."
+    },
+    {
+      "name": "Cass City Oil & Gas Co",
+      "hqCity": "Cass City",
+      "hqState": "MI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cass City",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned full-service petroleum and propane company in Michigan's Thumb region."
+    },
+    {
+      "name": "Marlette Oil & Gas",
+      "hqCity": "Marlette",
+      "hqState": "MI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Marlette",
+          "state": "MI",
+          "street": ""
+        },
+        {
+          "city": "Sandusky",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Serves Michigan Thumb region including Sandusky and surrounding communities with propane and fuel delivery."
+    },
+    {
+      "name": "Greene's Gas",
+      "hqCity": "Bay City",
+      "hqState": "MI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bay City",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Local propane supplier in the Bay City, Michigan area."
+    },
+    {
+      "name": "Blight Propane",
+      "hqCity": "Bay City",
+      "hqState": "MI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bay City",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Bay City area Michigan propane dealer."
+    },
+    {
+      "name": "Scotland Oil Company",
+      "hqCity": "Bay City",
+      "hqState": "MI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bay City",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Bay City area Michigan oil and propane provider."
+    },
+    {
+      "name": "National Oil",
+      "hqCity": "Bluffton",
+      "hqState": "IN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bluffton",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Decatur",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Berne",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Huntington",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Warsaw",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Monroeville",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Farm and home fuel deliveries in and around Bluffton, Decatur, Berne, Huntington, Warsaw, and Monroeville, Indiana."
+    },
+    {
+      "name": "White River Co-op",
+      "hqCity": "Loogootee",
+      "hqState": "IN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Loogootee",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Jasper",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Huntingburg",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Ferdinand",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Tell City",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Petersburg",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Agricultural cooperative serving south-central Indiana with propane and energy products."
+    },
+    {
+      "name": "Murphy's Gas Co",
+      "hqCity": "Connersville",
+      "hqState": "IN",
+      "website": "https://www.murphysgas.net",
+      "knownLocations": [
+        {
+          "city": "Connersville",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Oxford",
+          "state": "OH",
+          "street": ""
+        },
+        {
+          "city": "Harrison",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Residential and commercial propane dealer serving Connersville, IN and SW Ohio within 100 miles."
+    },
+    {
+      "name": "Columbus Silgas",
+      "hqCity": "Columbus",
+      "hqState": "IN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Columbus",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer serving Columbus Indiana area for over 60 years."
+    },
+    {
+      "name": "Dubois County LP Gas Inc",
+      "hqCity": "Jasper",
+      "hqState": "IN",
+      "website": "https://www.duboiscountylpgas.com",
+      "knownLocations": [
+        {
+          "city": "Jasper",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Huntingburg",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Ferdinand",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Petersburg",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Boonville",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serving Jasper, Indiana since 1974 with propane services to south central Indiana communities."
+    },
+    {
+      "name": "Clark's LP Gas",
+      "hqCity": "Bloomington",
+      "hqState": "IN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bloomington",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Residential, agricultural, and commercial propane provider for Monroe County and surrounding areas."
+    },
+    {
+      "name": "Superior Ag Resources Co-Op",
+      "hqCity": "Huntingburg",
+      "hqState": "IN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Huntingburg",
+          "state": "IN",
+          "street": "998 W Phoenix Dr"
+        },
+        {
+          "city": "Ferdinand",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Petersburg",
+          "state": "IN",
+          "street": ""
+        },
+        {
+          "city": "Boonville",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Agricultural cooperative in Huntingburg providing propane and energy services to Southern Indiana."
+    },
+    {
+      "name": "Boonville Natural Gas Corp",
+      "hqCity": "Boonville",
+      "hqState": "IN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Boonville",
+          "state": "IN",
+          "street": "1425 N Rockport Rd"
+        },
+        {
+          "city": "Rockport",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "municipal",
+      "notes": "Gas utility and propane provider serving Boonville and Rockport, Indiana."
+    },
+    {
+      "name": "Premier Companies",
+      "hqCity": "Seymour",
+      "hqState": "IN",
+      "website": "https://premierag.com",
+      "knownLocations": [
+        {
+          "city": "Seymour",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Agricultural cooperative providing propane, fuel, and agronomy services throughout Central and Southern Indiana."
+    },
+    {
+      "name": "Stump's LP Gas",
+      "hqCity": "",
+      "hqState": "IN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "IN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane supplier for Northern Indiana communities."
+    },
+    {
+      "name": "B&B Propane",
+      "hqCity": "Burlington",
+      "hqState": "IA",
+      "website": "https://bbpropane.com",
+      "knownLocations": [
+        {
+          "city": "Burlington",
+          "state": "IA",
+          "street": ""
+        },
+        {
+          "city": "Fairfield",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Residential, commercial, and agricultural propane provider for Burlington and Southeast Iowa."
+    },
+    {
+      "name": "WIN Propane",
+      "hqCity": "",
+      "hqState": "IA",
+      "website": "https://win-propane.com",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Bulk propane, forklift cylinder, and cylinder exchange delivery across Southeast Iowa, Western Illinois, Southwest Wisconsin and Northeast Missouri."
+    },
+    {
+      "name": "Farmers Union Cooperative",
+      "hqCity": "",
+      "hqState": "IA",
+      "website": "https://www.farmerunion.net",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Cooperative serving Northeast Iowa and Southeast Minnesota with propane, refined fuels, and lubricants."
+    },
+    {
+      "name": "Joines Propane and Service",
+      "hqCity": "Sioux City",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sioux City",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local Sioux City, Iowa propane dealer."
+    },
+    {
+      "name": "Wiese Oil & Supply",
+      "hqCity": "Sioux City",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sioux City",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Sioux City-based oil and supply company providing propane."
+    },
+    {
+      "name": "First Coop Association",
+      "hqCity": "Sioux City",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sioux City",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Regional agricultural cooperative serving Sioux City area with propane."
+    },
+    {
+      "name": "Johnson Propane / Cylinder Express",
+      "hqCity": "",
+      "hqState": "IA",
+      "website": "https://www.johnsonpropane.net",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Iowa propane and cylinder exchange provider."
+    },
+    {
+      "name": "Fred's Feed & Supply",
+      "hqCity": "Fairfield",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Fairfield",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local Fairfield, Iowa feed, supply, and propane dealer."
+    },
+    {
+      "name": "Vetter Equipment",
+      "hqCity": "",
+      "hqState": "IA",
+      "website": "https://www.vetterequip.com",
+      "knownLocations": [
+        {
+          "city": "Clarinda",
+          "state": "IA",
+          "street": ""
+        },
+        {
+          "city": "Shenandoah",
+          "state": "IA",
+          "street": ""
+        },
+        {
+          "city": "Mount Ayr",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Equipment dealer with locations in southwest Iowa offering propane and agricultural services."
+    },
+    {
+      "name": "Redigas Inc",
+      "hqCity": "McPherson",
+      "hqState": "KS",
+      "website": "https://www.redigasonline.com",
+      "knownLocations": [
+        {
+          "city": "McPherson",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Galva",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Lindsborg",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Inman",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Hutchinson",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Moundridge",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Canton",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Little River",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Marquette",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Hesston",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Buhler",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Salina",
+          "state": "KS",
+          "street": ""
+        },
+        {
+          "city": "Kanopolis Lake",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent propane dealer based in McPherson, Kansas providing propane service across Central Kansas since 1981."
+    },
+    {
+      "name": "Bridgman Oil Company",
+      "hqCity": "Hutchinson",
+      "hqState": "KS",
+      "website": "https://www.bridgmanoil.com",
+      "knownLocations": [
+        {
+          "city": "Hutchinson",
+          "state": "KS",
+          "street": "109 Clay St"
+        },
+        {
+          "city": "Burrton",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Residential, commercial and agricultural propane supplier serving Hutchinson and Burrton, Kansas for over 40 years."
+    },
+    {
+      "name": "Ramsey Propane",
+      "hqCity": "Hutchinson",
+      "hqState": "KS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hutchinson",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local Hutchinson, Kansas propane dealer."
+    },
+    {
+      "name": "Bartlett Co-op Association",
+      "hqCity": "Bartlett",
+      "hqState": "KS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bartlett",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Southeast Kansas agricultural cooperative with propane service."
+    },
+    {
+      "name": "Wanklyn Oil Company",
+      "hqCity": "",
+      "hqState": "KS",
+      "website": "https://wanklynoil.com",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned Kansas fuel and propane dealer since 1926; gasoline, diesel, propane, lubricants."
+    },
+    {
+      "name": "Lettermens Propane KC",
+      "hqCity": "Gardner",
+      "hqState": "KS",
+      "website": "https://www.lettermenskc.com",
+      "knownLocations": [
+        {
+          "city": "Gardner",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Kansas City area propane provider based in Gardner, Kansas."
+    },
+    {
+      "name": "Home Oil Services",
+      "hqCity": "Salina",
+      "hqState": "KS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Salina",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Salina, Kansas local propane and oil dealer."
+    },
+    {
+      "name": "K & R Propane",
+      "hqCity": "Salina",
+      "hqState": "KS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Salina",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local Salina area Kansas propane dealer."
+    },
+    {
+      "name": "Alma Co-Op Oil Association",
+      "hqCity": "Alma",
+      "hqState": "KS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Alma",
+          "state": "KS",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Cooperative oil and propane association in Alma, Kansas."
+    }
+  ]
+}

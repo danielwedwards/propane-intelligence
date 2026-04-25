@@ -1,0 +1,307 @@
+{
+  "source": "https://illinifs.com/ (redirects to Sunrise FS)",
+  "scraped": "2026-04-11",
+  "member_id": "sunrisefs",
+  "locations": [
+    {
+      "name": "Alvin",
+      "street": "1001 S. Main",
+      "city": "Alvin",
+      "state": "IL",
+      "zip": "61811",
+      "phone": "(217) 765-2055",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Chrisman",
+      "street": "15725 US Hwy 36",
+      "city": "Chrisman",
+      "state": "IL",
+      "zip": "61924",
+      "phone": "",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Danville",
+      "street": "Route 150 and Henning RD",
+      "city": "Danville",
+      "state": "IL",
+      "zip": "61832",
+      "phone": "(217) 465-1560",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Paris",
+      "street": "102 McMillan St",
+      "city": "Paris",
+      "state": "IL",
+      "zip": "61944",
+      "phone": "(217) 465-1560",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Potomac",
+      "street": "6637 E 3050 N Rd",
+      "city": "Potomac",
+      "state": "IL",
+      "zip": "61865",
+      "phone": "(217) 987-6115",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Sidell",
+      "street": "3044 N 470 E CR",
+      "city": "Sidell",
+      "state": "IL",
+      "zip": "61876",
+      "phone": "(217) 288-9361",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Kansas",
+      "street": "3240 State Hwy 16",
+      "city": "Kansas",
+      "state": "IL",
+      "zip": "61933",
+      "phone": "(217) 837-2051",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Newman",
+      "street": "998 N State Rte 49",
+      "city": "Newman",
+      "state": "IL",
+      "zip": "61942",
+      "phone": "(217) 837-2051",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Seed Warehouse",
+      "street": "113 S Main St",
+      "city": "Gifford",
+      "state": "IL",
+      "zip": "61847",
+      "phone": "",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Rantoul",
+      "street": "315 N Gerrard",
+      "city": "Rantoul",
+      "state": "IL",
+      "zip": "61866",
+      "phone": "(217) 384-8300",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Main Office - Urbana",
+      "street": "1509 E. University Avenue PO Box 17670",
+      "city": "Urbana",
+      "state": "IL",
+      "zip": "61803",
+      "phone": "(217) 384-8300",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Urbana Tire Shop",
+      "street": "1509 E. University Ave",
+      "city": "Urbana",
+      "state": "IL",
+      "zip": "61880",
+      "phone": "(217) 384-8307",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Kemp",
+      "street": "300 IL-130",
+      "city": "Arcola",
+      "state": "IL",
+      "zip": "61910",
+      "phone": "(217) 268-4984",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Leverett",
+      "street": "1806 E Leverett Rd",
+      "city": "Champaign",
+      "state": "IL",
+      "zip": "61822",
+      "phone": "(217) 643-7878",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Tolono",
+      "street": "103 S. Long St",
+      "city": "Tolono",
+      "state": "IL",
+      "zip": "61880",
+      "phone": "(217) 485-6810",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Hayes",
+      "street": "1004 N 1450 East Rd",
+      "city": "Tuscola",
+      "state": "IL",
+      "zip": "61953",
+      "phone": "(217) 485-6810",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Dewey",
+      "street": "1009 CR 3000 N",
+      "city": "Dewey",
+      "state": "IL",
+      "zip": "61840",
+      "phone": "(217) 897-1156",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Mason City",
+      "street": "9490 State Route 29",
+      "city": "Mason City",
+      "state": "IL",
+      "zip": "62664",
+      "phone": "(217) 482-3818",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Manito",
+      "street": "1350 S. East Ave.",
+      "city": "Manito",
+      "state": "IL",
+      "zip": "61546",
+      "phone": "(309) 968-6954",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Easton Warehouse",
+      "street": "P.O. Box 79",
+      "city": "Easton",
+      "state": "IL",
+      "zip": "62633",
+      "phone": "(309) 562-7254",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Easton West Plant",
+      "street": "26590 E. County Rd. 1200 N",
+      "city": "Easton",
+      "state": "IL",
+      "zip": "62633",
+      "phone": "(309) 562-7296",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Valley Irrigation",
+      "street": "21923 US Hwy 136",
+      "city": "Havana",
+      "state": "IL",
+      "zip": "62644",
+      "phone": "(309) 535-3610",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Imperial Valley Terminal",
+      "street": "1216 S. Water St",
+      "city": "Havana",
+      "state": "IL",
+      "zip": "62644",
+      "phone": "(309) 543-2600",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Kilbourne",
+      "street": "14050 CR 600 N",
+      "city": "Kilbourne",
+      "state": "IL",
+      "zip": "62655",
+      "phone": "(309) 538-4287",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Virginia",
+      "street": "20354 Gridley Road",
+      "city": "Virginia",
+      "state": "IL",
+      "zip": "62691",
+      "phone": "(217) 836-0763",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Virginia Service Center",
+      "street": "5667 IL Route 78",
+      "city": "Virginia",
+      "state": "IL",
+      "zip": "62691",
+      "phone": "(217) 452-3621",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Energy Team",
+      "street": "20735 IL Highway 125",
+      "city": "Virginia",
+      "state": "IL",
+      "zip": "62691",
+      "phone": "(217) 452-3936",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Main Office - Virginia",
+      "street": "20735 IL Highway 125",
+      "city": "Virginia",
+      "state": "IL",
+      "zip": "62691",
+      "phone": "(217) 452-7751",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Bluff Springs",
+      "street": "7517 S Bluff Springs Rd",
+      "city": "Virginia",
+      "state": "IL",
+      "zip": "62691",
+      "phone": "(217) 323-2815",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Arenzville",
+      "street": "501 West Main St.",
+      "city": "Arenzville",
+      "state": "IL",
+      "zip": "62611",
+      "phone": "(217) 997-5533",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

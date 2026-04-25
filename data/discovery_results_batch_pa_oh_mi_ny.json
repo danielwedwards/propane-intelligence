@@ -1,0 +1,696 @@
+{
+  "batch": "pa_oh_mi_ny",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Locklins Bottled Gas Inc.",
+      "hqCity": "",
+      "hqState": "PA",
+      "website": "https://www.locklinsbottledgas.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Small family-owned propane dealer serving Lackawanna, Wayne, and Pike counties in NEPA."
+    },
+    {
+      "name": "Pennywise Fuel Co",
+      "hqCity": "Henryville",
+      "hqState": "PA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Henryville",
+          "state": "PA",
+          "street": "219 Shine Hill Rd"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Pocono region dealer serving Monroe, Pike, Carbon, Northampton and Wayne counties."
+    },
+    {
+      "name": "WOC Energy",
+      "hqCity": "",
+      "hqState": "PA",
+      "website": "https://www.wocenergyonline.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Fuel dealer serving Bradford, Sullivan, Susquehanna, Tioga and Wyoming counties PA and southern NY."
+    },
+    {
+      "name": "Mountain View Fuel",
+      "hqCity": "Bethel",
+      "hqState": "PA",
+      "website": "https://www.mountainviewfuel.com/",
+      "knownLocations": [
+        {
+          "city": "Bethel",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane and fuel services in Berks County rural PA dealer."
+    },
+    {
+      "name": "Sauder Fuel",
+      "hqCity": "",
+      "hqState": "PA",
+      "website": "https://sauderfuel.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane supplier in Lancaster County PA Amish region."
+    },
+    {
+      "name": "Bambergers Inc.",
+      "hqCity": "Lebanon",
+      "hqState": "PA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lebanon",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane dealer located in Lebanon, PA."
+    },
+    {
+      "name": "Beco Propane",
+      "hqCity": "Mifflinburg",
+      "hqState": "PA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mifflinburg",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Small propane dealer in Union County PA serving Central PA rural area."
+    },
+    {
+      "name": "Southall Gas",
+      "hqCity": "Centerville",
+      "hqState": "PA",
+      "website": "https://www.southallgas.com/",
+      "knownLocations": [
+        {
+          "city": "Centerville",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Small rural propane dealer in Centerville, PA."
+    },
+    {
+      "name": "Holtzman Corp",
+      "hqCity": "",
+      "hqState": "PA",
+      "website": "https://holtzmancorp.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Multi-state family fuel dealer with Bucks County PA coverage."
+    },
+    {
+      "name": "Flynn Energy and Propane",
+      "hqCity": "Mansfield",
+      "hqState": "PA",
+      "website": "https://flynn-energy.com/",
+      "knownLocations": [
+        {
+          "city": "Mansfield",
+          "state": "PA",
+          "street": ""
+        },
+        {
+          "city": "Towanda",
+          "state": "PA",
+          "street": ""
+        },
+        {
+          "city": "Wyalusing",
+          "state": "PA",
+          "street": ""
+        },
+        {
+          "city": "Montrose",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned serving Bradford, Tioga, Sullivan, Wyoming, Susquehanna, Chemung, Schuyler counties in PA Northern Tier / Endless Mountains."
+    },
+    {
+      "name": "Button Energy Wellsboro Propane",
+      "hqCity": "Wellsboro",
+      "hqState": "PA",
+      "website": "https://buttonoil.com/",
+      "knownLocations": [
+        {
+          "city": "Wellsboro",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "4th-generation family-owned 93-year-old dealer in Tioga County (Wellsboro, PA Northern Tier)."
+    },
+    {
+      "name": "Litter Quality Propane",
+      "hqCity": "Chillicothe",
+      "hqState": "OH",
+      "website": "https://www.litterpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Chillicothe",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family dealer serving Athens, Gallia, Ross and surrounding SE Ohio counties."
+    },
+    {
+      "name": "Tri-County Propane",
+      "hqCity": "Loveland",
+      "hqState": "OH",
+      "website": "https://www.tricountypropaneinc.com/",
+      "knownLocations": [
+        {
+          "city": "Loveland",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "SW Ohio family-owned propane company."
+    },
+    {
+      "name": "TMK Valley Propane",
+      "hqCity": "Bakersville",
+      "hqState": "OH",
+      "website": "https://www.tmkvalleypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Bakersville",
+          "state": "OH",
+          "street": "28646 CR 97"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent family-owned since 1999 serving Tuscarawas, Coshocton, Holmes, Wayne, Stark, Knox, Harrison, Carroll, Guernsey counties (Amish country)."
+    },
+    {
+      "name": "Bakers Propane",
+      "hqCity": "Defiance",
+      "hqState": "OH",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Defiance",
+          "state": "OH",
+          "street": "1914 Spruce Street"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned and operated since 1936 serving NW Ohio and SE Michigan (Defiance, Paulding, Henry, Putnam, Williams, Fulton, Wood, Allen, Lucas, Van Wert, DeKalb, Hancock counties)."
+    },
+    {
+      "name": "Van Wert Propane",
+      "hqCity": "Van Wert",
+      "hqState": "OH",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Van Wert",
+          "state": "OH",
+          "street": "10763 US-127"
+        }
+      ],
+      "ownership": "family",
+      "notes": "60+ year family operator serving Allen, Auglaize, Mercer, Paulding, Putnam, Van Wert counties."
+    },
+    {
+      "name": "TJ Propane",
+      "hqCity": "",
+      "hqState": "OH",
+      "website": "https://tjpropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned NW Ohio propane dealer since 1991 serving 11 counties."
+    },
+    {
+      "name": "Orwell Oil Company",
+      "hqCity": "Orwell",
+      "hqState": "OH",
+      "website": "https://new.21stcenturyenergygroup.com/orwell.html",
+      "knownLocations": [
+        {
+          "city": "Orwell",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Serves Ashtabula, Trumbull, Portage, and Geauga counties in NE Ohio."
+    },
+    {
+      "name": "Ullman Oil Inc.",
+      "hqCity": "",
+      "hqState": "OH",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "NE Ohio family fuel dealer serving Geauga, Trumbull, Ashtabula counties 40+ years."
+    },
+    {
+      "name": "Melzers Fuel Service Inc",
+      "hqCity": "",
+      "hqState": "OH",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Small NE Ohio propane and heating oil dealer in Geauga County area."
+    },
+    {
+      "name": "Big Oats Oil Field Supply",
+      "hqCity": "",
+      "hqState": "OH",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serves Lake, Cuyahoga, Geauga, Ashtabula, Summit, Portage, Trumbull counties NE Ohio."
+    },
+    {
+      "name": "Harvey Oil and Propane",
+      "hqCity": "Marquette",
+      "hqState": "MI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Marquette",
+          "state": "MI",
+          "street": "3166 US Hwy 41 W"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Residential, commercial, marine propane services for Marquette County MI UP area."
+    },
+    {
+      "name": "Krist LP Gas",
+      "hqCity": "",
+      "hqState": "MI",
+      "website": "https://kristhomeheating.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family LP dealer covering UP Michigan and Northern Wisconsin."
+    },
+    {
+      "name": "Alpine Propane",
+      "hqCity": "Gaylord",
+      "hqState": "MI",
+      "website": "https://alpine-propane.com/",
+      "knownLocations": [
+        {
+          "city": "Gaylord",
+          "state": "MI",
+          "street": "2121 Dickerson Rd"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent Northern Michigan propane dealer, locally owned (not part of national chain)."
+    },
+    {
+      "name": "Tri-Gas",
+      "hqCity": "Traverse City",
+      "hqState": "MI",
+      "website": "https://www.trigasco.com/",
+      "knownLocations": [
+        {
+          "city": "Traverse City",
+          "state": "MI",
+          "street": "1660 Barlow Street"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Northern Lower Michigan propane dealer based in Traverse City."
+    },
+    {
+      "name": "Johnson Oil and Propane",
+      "hqCity": "",
+      "hqState": "MI",
+      "website": "https://johnsonspropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Northern Michigan family-owned since 1954 serving rural counties."
+    },
+    {
+      "name": "Harmon Oil and Propane",
+      "hqCity": "North Branch",
+      "hqState": "MI",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "North Branch",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned serving Lapeer, Tuscola, and parts of Sanilac counties in MI Thumb region."
+    },
+    {
+      "name": "Parsch Oil and Propane",
+      "hqCity": "",
+      "hqState": "MI",
+      "website": "https://www.parschoil.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Local hometown propane supplier since 1956 serving Southern Tuscola and Southern Sanilac counties in MI Thumb."
+    },
+    {
+      "name": "Hirschman Oil Supply",
+      "hqCity": "",
+      "hqState": "MI",
+      "website": "https://www.hirschmaninc.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Michigan family fuel and lube dealer serving rural Thumb area."
+    },
+    {
+      "name": "Becks Propane",
+      "hqCity": "",
+      "hqState": "MI",
+      "website": "https://www.beckspropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Central Michigan family propane dealer."
+    },
+    {
+      "name": "Energy Brothers",
+      "hqCity": "Malone",
+      "hqState": "NY",
+      "website": "https://www.ebpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Malone",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane delivery in Malone and North Country NY (Adirondacks)."
+    },
+    {
+      "name": "Henderson Oil and Propane",
+      "hqCity": "",
+      "hqState": "NY",
+      "website": "https://hendersonoilpropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "5th-generation family heating company serving Catskill region since 1896."
+    },
+    {
+      "name": "Grantier Oil Co.",
+      "hqCity": "Cobleskill",
+      "hqState": "NY",
+      "website": "https://www.grantieroil.com/",
+      "knownLocations": [
+        {
+          "city": "Cobleskill",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "50+ year family dealer serving Schoharie, Montgomery, Otsego, Schenectady, Delaware counties NY."
+    },
+    {
+      "name": "Valley Energy",
+      "hqCity": "Birdsall",
+      "hqState": "NY",
+      "website": "https://www.valley-fuels.com/",
+      "knownLocations": [
+        {
+          "city": "Birdsall",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned propane dealer serving Allegany, Genesee, Livingston, Monroe, Ontario, Orleans, Steuben, Wayne, Wyoming, Yates counties NY."
+    },
+    {
+      "name": "Countryside Energy",
+      "hqCity": "Pine Valley",
+      "hqState": "NY",
+      "website": "https://www.countryside-propane.com/",
+      "knownLocations": [
+        {
+          "city": "Pine Valley",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned serving Chemung, Schuyler, Steuben, Tioga, Tompkins and Yates counties in NY Southern Tier/Finger Lakes."
+    },
+    {
+      "name": "Klasen McQuiston Energy Co.",
+      "hqCity": "",
+      "hqState": "PA",
+      "website": "http://klasenmcquistonenergyco.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane and multi-fuel dealer in NW PA."
+    },
+    {
+      "name": "21st Century Energy Group (Reno)",
+      "hqCity": "Reno",
+      "hqState": "PA",
+      "website": "https://www.21stcenturyenergygroup.com/",
+      "knownLocations": [
+        {
+          "city": "Reno",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Regional propane platform with locations in NW PA rural counties."
+    },
+    {
+      "name": "Erie Crawford Co-Op",
+      "hqCity": "",
+      "hqState": "PA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farmer cooperative serving Erie and Crawford counties NW PA with propane and fuel."
+    },
+    {
+      "name": "Eddinger Hardware and LP Gas, Inc.",
+      "hqCity": "",
+      "hqState": "PA",
+      "website": "https://eddingerpropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "PA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned hardware and LP gas dealer in Lancaster/Berks/Dauphin area PA since 1890."
+    },
+    {
+      "name": "Autore Oil and Propane",
+      "hqCity": "",
+      "hqState": "MI",
+      "website": "https://autoreoil.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family dealer since 1955 serving Chippewa and Mackinac counties in Eastern Upper Peninsula MI."
+    },
+    {
+      "name": "Bowman Gas Co.",
+      "hqCity": "Gulliver",
+      "hqState": "MI",
+      "website": "https://bowmangas.com/",
+      "knownLocations": [
+        {
+          "city": "Gulliver",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally-owned family-run propane service in MI Upper Peninsula."
+    },
+    {
+      "name": "Shute Oil and Propane",
+      "hqCity": "",
+      "hqState": "MI",
+      "website": "https://shuteoilandpropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "MI",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family propane and oil dealer in Michigan."
+    },
+    {
+      "name": "Glider Oil",
+      "hqCity": "Pulaski",
+      "hqState": "NY",
+      "website": "https://glideroil.com/",
+      "knownLocations": [
+        {
+          "city": "Pulaski",
+          "state": "NY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned since 1942 serving Oneida, Herkimer, Lewis, Oswego, Jefferson, St. Lawrence counties in rural NY."
+    },
+    {
+      "name": "Ashland Propane",
+      "hqCity": "",
+      "hqState": "OH",
+      "website": "https://www.ashlandpropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned serving Ashland County OH since 1983."
+    },
+    {
+      "name": "Town and Country / Centera Co-Op Inc",
+      "hqCity": "Ashland",
+      "hqState": "OH",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ashland",
+          "state": "OH",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Cooperative serving Ashland, Wayne, Richland, Huron, Medina, Holmes, Lorain, Crawford, Morrow and Knox counties OH."
+    }
+  ]
+}

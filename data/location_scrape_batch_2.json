@@ -1,0 +1,202 @@
+[
+  {
+    "id": "arrowwood_prairie_co_op_cooperstown_office",
+    "name": "Arrowwood Prairie Co-op - Cooperstown Office",
+    "state": "ND",
+    "website": "https://www.arrowwoodprairie.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location ND ag coop; Cooperstown branch"
+  },
+  {
+    "id": "sequachee_valley_electric_cooperative",
+    "name": "Sequachee Valley Electric Cooperative",
+    "state": "TN",
+    "website": "https://svalleyec.com",
+    "ownership": "pe",
+    "nlocs": 1,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "united_propane_gas_henagar_al",
+    "name": "United Propane Gas (Henagar, AL)",
+    "state": "TN",
+    "website": "https://unitedpropanegas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state branch of UPG, large regional independent"
+  },
+  {
+    "id": "cleveland_petroleum_products",
+    "name": "Cleveland Petroleum Products",
+    "state": "KS",
+    "website": "https://clevelandpetroleum.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "KS regional"
+  },
+  {
+    "id": "sungas_propane_clarksville",
+    "name": "SunGas Propane Clarksville",
+    "state": "AR",
+    "website": "https://sungaspropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location Arkansas propane dealer"
+  },
+  {
+    "id": "blumont_energy_lynchburg",
+    "name": "Blumont Energy - Lynchburg",
+    "state": "VA",
+    "website": "https://blumontenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "VA multi-location fuel/propane"
+  },
+  {
+    "id": "corrigan_oil_and_propane",
+    "name": "Corrigan Oil and Propane",
+    "state": "IN",
+    "website": "https://corriganoil.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MI-based multi-state"
+  },
+  {
+    "id": "superior_fuel_company",
+    "name": "Superior Fuel Company",
+    "state": "MN",
+    "website": "https://superiorfuels.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "MN/WI regional"
+  },
+  {
+    "id": "woodford_oil_company",
+    "name": "Woodford Oil Company",
+    "state": "WV",
+    "website": "https://www.woodfordoil.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "WV/OH/PA multi-location distributor"
+  },
+  {
+    "id": "quality_oil_company",
+    "name": "Quality Oil Company",
+    "state": "NC",
+    "website": "https://www.qualityoilnc.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Winston-Salem NC; petroleum distribution and propane, multi-location"
+  },
+  {
+    "id": "fall_river_propane",
+    "name": "Fall River Propane",
+    "state": "MT",
+    "website": "https://fallriverpropane.com/",
+    "ownership": "private",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Eastern Idaho regional propane dealer"
+  },
+  {
+    "id": "como_oil_propane",
+    "name": "Como Oil & Propane",
+    "state": "WI",
+    "website": "https://www.comooil.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Duluth MN/WI area multi-location"
+  },
+  {
+    "id": "lin_gas_propane",
+    "name": "Lin-Gas Propane",
+    "state": "IL",
+    "website": "https://lin-gas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Indiana/Illinois multi-location independent"
+  },
+  {
+    "id": "cangas_propane",
+    "name": "CanGas Propane",
+    "state": "ID",
+    "website": "https://cangaspropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Idaho regional propane dealer"
+  },
+  {
+    "id": "sem_stream_lp",
+    "name": "Sem Stream LP",
+    "state": "AR",
+    "website": "https://They barely even have a location on google",
+    "ownership": "public",
+    "nlocs": 1,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "valley_energy",
+    "name": "Valley Energy",
+    "state": "MD",
+    "website": "https://valleyenergyinc.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "PA/MD/NY"
+  },
+  {
+    "id": "sharp_energy",
+    "name": "Sharp Energy",
+    "state": "DE",
+    "website": "https://www.sharpenergy.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state propane subsidiary; HQ in Georgetown, DE"
+  },
+  {
+    "id": "acadia_fuel",
+    "name": "Acadia Fuel",
+    "state": "ME",
+    "website": "https://acadiafuel.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Maine regional"
+  },
+  {
+    "id": "hino_gas",
+    "name": "Hino Gas",
+    "state": "TX",
+    "website": "https://www.hinogas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "South TX multi-location propane distributor"
+  },
+  {
+    "id": "mfa_oil_propane",
+    "name": "MFA Oil Propane",
+    "state": "IL",
+    "website": "https://mfaoil.com",
+    "ownership": "coop",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Large Midwest farmer cooperative"
+  }
+]

@@ -1,0 +1,219 @@
+{
+  "source": "herringgas.com/contact-*",
+  "scraped": "2026-04-11",
+  "company": "Herring Gas Company",
+  "note": "Propane distributor LA/MS - scraped per-branch contact pages from sitemap",
+  "location_count": 21,
+  "locations": [
+    {
+      "branch": "Brookhaven",
+      "street": "693 Industrial Park Road NE",
+      "city": "Brookhaven",
+      "state": "MS",
+      "zip": "39601",
+      "full_address": "693 Industrial Park Road NE Brookhaven, MS 39601",
+      "phone": "(601) 833-2481",
+      "source_url": "https://www.herringgas.com/contact-brookhaven"
+    },
+    {
+      "branch": "Carthage",
+      "street": "627 Highway 35 South",
+      "city": "Carthage",
+      "state": "MS",
+      "zip": "39051",
+      "full_address": "627 Highway 35 South Carthage, MS 39051",
+      "phone": "(601) 833-2481",
+      "source_url": "https://www.herringgas.com/contact-carthage"
+    },
+    {
+      "branch": "Clinton",
+      "street": "13470 Highway 10",
+      "city": "Clinton",
+      "state": "LA",
+      "zip": "70722",
+      "full_address": "13470 Highway 10 Clinton, LA 70722",
+      "phone": "(800) 826-2782",
+      "source_url": "https://www.herringgas.com/contact-clinton"
+    },
+    {
+      "branch": "Columbia",
+      "street": "1117 Highway 98 Bypass",
+      "city": "Columbia",
+      "state": "MS",
+      "zip": "39429",
+      "full_address": "1117 Highway 98 Bypass Columbia, MS 39429",
+      "phone": "(800) 844-8701",
+      "source_url": "https://www.herringgas.com/contact-columbia"
+    },
+    {
+      "branch": "Ferriday",
+      "street": "1603 EE Wallace Blvd North",
+      "city": "Ferriday",
+      "state": "LA",
+      "zip": "71334",
+      "full_address": "1603 EE Wallace Blvd North Ferriday, LA 71334",
+      "phone": "(800) 273-8655",
+      "source_url": "https://www.herringgas.com/contact-ferriday"
+    },
+    {
+      "branch": "Forest",
+      "street": "1016 Highway 35 South",
+      "city": "Forest",
+      "state": "MS",
+      "zip": "39074",
+      "full_address": "1016 Highway 35 South Forest, MS 39074",
+      "phone": "(800) 977-4758",
+      "source_url": "https://www.herringgas.com/contact-forest"
+    },
+    {
+      "branch": "Franklinton",
+      "street": "925 John D. Woods Road",
+      "city": "Franklinton",
+      "state": "LA",
+      "zip": "70438",
+      "full_address": "925 John D. Woods Road Franklinton, LA 70438",
+      "phone": "(800) 826-5320",
+      "source_url": "https://www.herringgas.com/contact-franklinton"
+    },
+    {
+      "branch": "Hazlehurst",
+      "street": "28167 Highway 28 East",
+      "city": "Hazlehurst",
+      "state": "MS",
+      "zip": "39083",
+      "full_address": "28167 Highway 28 East Hazlehurst, MS 39083",
+      "phone": "(800) 843-5850",
+      "source_url": "https://www.herringgas.com/contact-hazlehurst"
+    },
+    {
+      "branch": "Jena",
+      "street": "3657 West Oak Street",
+      "city": "Jena",
+      "state": "LA",
+      "zip": "71342",
+      "full_address": "3657 West Oak Street Jena, LA 71342",
+      "phone": "(800) 225-6698",
+      "source_url": "https://www.herringgas.com/contact-jena"
+    },
+    {
+      "branch": "Laurel",
+      "street": "1519 Bush Dairy Rd",
+      "city": "Laurel",
+      "state": "MS",
+      "zip": "39443",
+      "full_address": "1519 Bush Dairy Rd Laurel, MS 39443",
+      "phone": "(800) 624-7930",
+      "source_url": "https://www.herringgas.com/contact-laurel"
+    },
+    {
+      "branch": "Liberty",
+      "street": "4123 Mississippi Highway 24",
+      "city": "Liberty",
+      "state": "MS",
+      "zip": "39645",
+      "full_address": "4123 Mississippi Highway 24 Liberty, MS 39645",
+      "phone": "(800) 273-2312",
+      "source_url": "https://www.herringgas.com/contact-liberty"
+    },
+    {
+      "branch": "Mccomb",
+      "street": "315 West Presley Blvd.",
+      "city": "McComb",
+      "state": "MS",
+      "zip": "39648",
+      "full_address": "315 West Presley Blvd. McComb, MS 39648",
+      "phone": "(800) 843-1129",
+      "source_url": "https://www.herringgas.com/contact-mccomb"
+    },
+    {
+      "branch": "Meadville",
+      "street": "175 Main Street West",
+      "city": "Meadville",
+      "state": "MS",
+      "zip": "39653",
+      "full_address": "175 Main Street West Meadville, MS 39653",
+      "phone": "(601) 833-2481",
+      "source_url": "https://www.herringgas.com/contact-meadville"
+    },
+    {
+      "branch": "Monticello",
+      "street": "477 West Broad Street",
+      "city": "Monticello",
+      "state": "MS",
+      "zip": "39654",
+      "full_address": "477 West Broad Street Monticello, MS 39654",
+      "phone": "(800) 356-3096",
+      "source_url": "https://www.herringgas.com/contact-monticello"
+    },
+    {
+      "branch": "Natchez",
+      "street": "31 Col. John Pitchford Parkway",
+      "city": "Natchez",
+      "state": "MS",
+      "zip": "39120",
+      "full_address": "31 Col. John Pitchford Parkway Natchez, MS 39120",
+      "phone": "(800) 247-8781",
+      "source_url": "https://www.herringgas.com/contact-natchez"
+    },
+    {
+      "branch": "Philadelphia",
+      "street": "346 West Main Street",
+      "city": "Philadelphia",
+      "state": "MS",
+      "zip": "39350",
+      "full_address": "346 West Main Street Philadelphia, MS 39350",
+      "phone": "(800) 523-2078",
+      "source_url": "https://www.herringgas.com/contact-philadelphia"
+    },
+    {
+      "branch": "Port Gibson",
+      "street": "2080 Highway 61 North",
+      "city": "Port Gibson",
+      "state": "MS",
+      "zip": "39150",
+      "full_address": "2080 Highway 61 North Port Gibson, MS 39150",
+      "phone": "(800) 543-9047",
+      "source_url": "https://www.herringgas.com/contact-port-gibson"
+    },
+    {
+      "branch": "Prentiss",
+      "street": "1480 S. Frontage Road",
+      "city": "Prentiss",
+      "state": "MS",
+      "zip": "39474",
+      "full_address": "1480 S. Frontage Road Prentiss, MS 39474",
+      "phone": "(800) 423-9148",
+      "source_url": "https://www.herringgas.com/contact-prentiss"
+    },
+    {
+      "branch": "Purvis",
+      "street": "594 Highway 589",
+      "city": "Purvis",
+      "state": "MS",
+      "zip": "39475",
+      "full_address": "594 Highway 589 Purvis, MS 39475",
+      "phone": "(800) 423-2496",
+      "source_url": "https://www.herringgas.com/contact-purvis"
+    },
+    {
+      "branch": "Tylertown",
+      "street": "249 Old Highway 98 East",
+      "city": "Tylertown",
+      "state": "MS",
+      "zip": "39667",
+      "full_address": "249 Old Highway 98 East Tylertown, MS 39667",
+      "phone": "(866) 615-4375",
+      "source_url": "https://www.herringgas.com/contact-tylertown"
+    },
+    {
+      "branch": "Winnsboro",
+      "street": "4877 Highway 15 South",
+      "city": "Winnsboro",
+      "state": "LA",
+      "zip": "71295",
+      "full_address": "4877 Highway 15 South Winnsboro, LA 71295",
+      "phone": "(800) 994-6074",
+      "source_url": "https://www.herringgas.com/contact-winnsboro"
+    }
+  ]
+}

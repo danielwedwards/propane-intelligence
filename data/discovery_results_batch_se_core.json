@@ -1,0 +1,506 @@
+{
+  "batch": "se_core",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "CMC Gas (Clarke-Mobile Counties Gas District)",
+      "hqCity": "Jackson",
+      "hqState": "AL",
+      "website": "https://cmcgas.com/",
+      "knownLocations": [
+        {
+          "city": "Jackson",
+          "state": "AL",
+          "street": "2003 College Avenue"
+        },
+        {
+          "city": "Grove Hill",
+          "state": "AL",
+          "street": "119 Main Street"
+        },
+        {
+          "city": "Thomasville",
+          "state": "AL",
+          "street": "215 Alabama Ave West"
+        },
+        {
+          "city": "Orange Beach",
+          "state": "AL",
+          "street": "24831 Canal Road"
+        }
+      ],
+      "ownership": "municipal",
+      "notes": "Public corporation (1953) jointly owned by Jackson, Grove Hill, Thomasville serving Clarke, Washington, Choctaw, Escambia, Wilcox, Baldwin, and N. Mobile counties in SW Alabama. Primarily natural gas with propane service."
+    },
+    {
+      "name": "Riviera Utilities",
+      "hqCity": "Foley",
+      "hqState": "AL",
+      "website": "https://www.rivierautilities.com/",
+      "knownLocations": [
+        {
+          "city": "Foley",
+          "state": "AL",
+          "street": "413 E Laurel Ave"
+        }
+      ],
+      "ownership": "municipal",
+      "notes": "Not-for-profit municipal utility serving S. Baldwin County (Foley, Magnolia Springs, Summerdale, Elberta, Gulf Shores, Silverhill, Loxley) since 1916. Natural gas with propane adjacency."
+    },
+    {
+      "name": "Dowdle Butane Gas Co., Inc.",
+      "hqCity": "Andalusia",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Andalusia",
+          "state": "AL",
+          "street": "Florala Rd Hwy 55 S"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Long-established independent LP-gas dealer in Covington County, SE Alabama (distinct from dedup 'dowdleco' AL entry covering related Dowdle operations \u2014 confirmed distinct by address and normalization)."
+    },
+    {
+      "name": "Hy Temp Gas",
+      "hqCity": "",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "AL",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Legacy south Alabama propane brand; customer book later absorbed into ThompsonGas rollup."
+    },
+    {
+      "name": "Kountry Propane",
+      "hqCity": "",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "AL",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Former south Alabama propane brand rolled up into ThompsonGas."
+    },
+    {
+      "name": "Central Propane Co",
+      "hqCity": "Albertville",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Albertville",
+          "state": "AL",
+          "street": ""
+        },
+        {
+          "city": "Rainsville",
+          "state": "AL",
+          "street": ""
+        },
+        {
+          "city": "Gurley",
+          "state": "AL",
+          "street": ""
+        },
+        {
+          "city": "Hazel Green",
+          "state": "AL",
+          "street": ""
+        },
+        {
+          "city": "Huntsville",
+          "state": "AL",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "NE Alabama / Tennessee Valley multi-branch propane marketer (Marshall, DeKalb, Madison, Jackson counties)."
+    },
+    {
+      "name": "Ozark Propane Gas",
+      "hqCity": "Ozark",
+      "hqState": "AL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Ozark",
+          "state": "AL",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Bottle filling plant and retail dealer in Ozark, Dale County, SE Alabama Wiregrass."
+    },
+    {
+      "name": "Alliance Propane & Petroleum",
+      "hqCity": "Waldron",
+      "hqState": "AR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Waldron",
+          "state": "AR",
+          "street": "656 Hwy 71 Bypass North"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Hunsucker family operator in Scott County, west-central Arkansas (Ouachita National Forest region)."
+    },
+    {
+      "name": "Matador Gas Arkansas",
+      "hqCity": "",
+      "hqState": "AR",
+      "website": "https://matadorgasar.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "AR",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent Arkansas propane operator (Matador Gas AR) \u2014 distinct from standalone 'matador' normalization."
+    },
+    {
+      "name": "Andersons Propane of Bergman",
+      "hqCity": "Bergman",
+      "hqState": "AR",
+      "website": "https://www.andersonspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Bergman",
+          "state": "AR",
+          "street": "8563 Hwy 7"
+        },
+        {
+          "city": "Harrison",
+          "state": "AR",
+          "street": ""
+        },
+        {
+          "city": "Lepanto",
+          "state": "AR",
+          "street": "501 Greenwood Avenue"
+        },
+        {
+          "city": "Salem",
+          "state": "AR",
+          "street": "2900 Wheeling Road"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Doug Anderson family since 1988; covers 22 counties across northern Arkansas and southern Missouri (Ozarks and NE Arkansas Delta). Distinct from dedup short-form variants."
+    },
+    {
+      "name": "Cypress Propane Co., Inc.",
+      "hqCity": "Mamou",
+      "hqState": "LA",
+      "website": "https://www.cypresspropane.com/",
+      "knownLocations": [
+        {
+          "city": "Mamou",
+          "state": "LA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Acadiana independent serving Evangeline, Vermilion, Acadia, St. Landry parishes."
+    },
+    {
+      "name": "Menard Oil Co., Inc.",
+      "hqCity": "Abbeville",
+      "hqState": "LA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Abbeville",
+          "state": "LA",
+          "street": ""
+        },
+        {
+          "city": "Franklin",
+          "state": "LA",
+          "street": "1034 Lee Charles St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Vermilion / St. Mary parish wholesale fuel distributor also serving propane to Acadiana farms and retail. Exxon/Mobil branded jobber."
+    },
+    {
+      "name": "Blue Flame Gas Co of LA, LLC",
+      "hqCity": "Franklinton",
+      "hqState": "LA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Franklinton",
+          "state": "LA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Washington Parish Florida-parishes propane dealer."
+    },
+    {
+      "name": "Guntown LP Gas",
+      "hqCity": "Guntown",
+      "hqState": "MS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Guntown",
+          "state": "MS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Lee County NE Mississippi hill-country dealer (distinct from 'guntownco' DB entry)."
+    },
+    {
+      "name": "Slate Spring LP Gas Company, Inc.",
+      "hqCity": "Calhoun City",
+      "hqState": "MS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Calhoun City",
+          "state": "MS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Calhoun City independent (Calhoun County NE MS hill-country) \u2014 distinct from 'slatespringco' partial-match DB entry."
+    },
+    {
+      "name": "Local L.P. Gas Company",
+      "hqCity": "Buckatunna",
+      "hqState": "MS",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Buckatunna",
+          "state": "MS",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Wayne County SE Mississippi pine belt dealer."
+    },
+    {
+      "name": "O'Dell Oil Company",
+      "hqCity": "",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Upstate SC / NE Georgia fuels and propane distributor covering Anderson, Pickens, Oconee, Abbeville counties."
+    },
+    {
+      "name": "Southern Propane Services, Inc.",
+      "hqCity": "Orangeburg",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Orangeburg",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Orangeburg County Midlands propane service provider."
+    },
+    {
+      "name": "Carolina Propane Gas Corp.",
+      "hqCity": "Orangeburg",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Orangeburg",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Propane delivery and HVAC services; Orangeburg, Calhoun, Bamberg, Aiken, Barnwell counties."
+    },
+    {
+      "name": "Lower State Gas Company",
+      "hqCity": "Denmark",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Denmark",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Breland family; 58+ years serving Barnwell, Bamberg, Aiken, Orangeburg counties."
+    },
+    {
+      "name": "Palmetto Propane & Fuels",
+      "hqCity": "",
+      "hqState": "SC",
+      "website": "https://www.palmettopropane.com/",
+      "knownLocations": [
+        {
+          "city": "Aiken",
+          "state": "SC",
+          "street": ""
+        },
+        {
+          "city": "Bamberg",
+          "state": "SC",
+          "street": ""
+        },
+        {
+          "city": "Barnwell",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Multi-location SC/GA propane and commercial fuels marketer (distinct from 'palmetto' / 'palmettosice' partial-match DB entries)."
+    },
+    {
+      "name": "Keenan Energy",
+      "hqCity": "Columbia",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Columbia",
+          "state": "SC",
+          "street": ""
+        },
+        {
+          "city": "Holly Hill",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Midlands SC multi-location propane dealer (29203/29059)."
+    },
+    {
+      "name": "Reid Gas Inc",
+      "hqCity": "Rock Hill",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rock Hill",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "York County NC-border independent propane dealer (29730)."
+    },
+    {
+      "name": "Freeman Gas Co",
+      "hqCity": "Gaffney",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Gaffney",
+          "state": "SC",
+          "street": ""
+        },
+        {
+          "city": "Spartanburg",
+          "state": "SC",
+          "street": ""
+        },
+        {
+          "city": "Union",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Upstate SC multi-branch (Cherokee, Spartanburg, Union counties) \u2014 distinct from 'freemanbrevardoffice' DB entry."
+    },
+    {
+      "name": "Southern Gas Co",
+      "hqCity": "York",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "York",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "York County SC independent LP marketer (29745) now partially under AmeriGas brand."
+    },
+    {
+      "name": "Clarendon Gas",
+      "hqCity": "Manning",
+      "hqState": "SC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Manning",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Clarendon County Midlands SC propane marketer (29102); partially co-branded with AmeriGas."
+    },
+    {
+      "name": "Sun Coast Energy",
+      "hqCity": "",
+      "hqState": "SC",
+      "website": "https://suncoastenergy.net/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "SC",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Baldwin County AL / SC coastal HVAC + propane provider."
+    },
+    {
+      "name": "Spade Propane",
+      "hqCity": "",
+      "hqState": "LA",
+      "website": "https://spadegaspiping.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "LA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Louisiana residential / commercial propane gas piping, appliance hookups and fuel delivery operator."
+    }
+  ]
+}

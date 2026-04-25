@@ -1,0 +1,58 @@
+{
+  "source": "rhoadsenergy.com",
+  "scraped": "2026-04-11",
+  "company": "Rhoads Energy Corporation",
+  "note": "Lancaster-area PA diversified fuel/propane; service area includes Cecil & Harford counties MD",
+  "location_count": 5,
+  "locations": [
+    {
+      "name": "Lancaster (Main)",
+      "street": "624 South Prince Street",
+      "city": "Lancaster",
+      "state": "PA",
+      "zip": "17603",
+      "phone": "717-397-5277",
+      "note": "Main office",
+      "source_url": "https://www.rhoadsenergy.com/"
+    },
+    {
+      "name": "Lebanon",
+      "street": "45 Guilford Street",
+      "city": "Lebanon",
+      "state": "PA",
+      "zip": "17046",
+      "phone": "717-272-4881",
+      "note": "Formerly Vincent R. Boltz",
+      "source_url": "https://www.rhoadsenergy.com/"
+    },
+    {
+      "name": "Parkesburg",
+      "street": "130 S Church St",
+      "city": "Parkesburg",
+      "state": "PA",
+      "zip": "19365",
+      "phone": "610-857-1650",
+      "source_url": "https://www.rhoadsenergy.com/"
+    },
+    {
+      "name": "Boyertown",
+      "street": "865 North Reading Road",
+      "city": "New Berlinville",
+      "state": "PA",
+      "zip": "19545",
+      "phone": "610-367-2356",
+      "note": "Formerly Boyertown Oil and Propane",
+      "source_url": "https://www.rhoadsenergy.com/"
+    },
+    {
+      "name": "Sinking Spring",
+      "street": "1 Corporate Blvd",
+      "city": "Sinking Spring",
+      "state": "PA",
+      "zip": "19608",
+      "phone": "610-670-1000",
+      "note": "Formerly E.G. Smith, Inc.",
+      "source_url": "https://www.rhoadsenergy.com/"
+    }
+  ]
+}

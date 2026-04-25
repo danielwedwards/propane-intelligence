@@ -1,0 +1,2451 @@
+{
+  "batch": "nc_lpgas_licensing",
+  "generated": "2026-04-12",
+  "companies": [
+    {
+      "name": "A-Z Propane Gas Services, LLC",
+      "hqCity": "Randolph",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Randolph",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #4013. County: Randolph."
+    },
+    {
+      "name": "AAA Gas and Appliance Company",
+      "hqCity": "Vance",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Vance",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #461. County: Vance."
+    },
+    {
+      "name": "Abbott Gas Company, Inc.",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #922. County: .."
+    },
+    {
+      "name": "Affordable Communities Group, LLC",
+      "hqCity": "Henderson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Henderson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3475. County: Henderson."
+    },
+    {
+      "name": "AJ Transport",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3942. County: .."
+    },
+    {
+      "name": "Alligood Owens, Inc.",
+      "hqCity": "Beaufort",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Beaufort",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #17. County: Beaufort."
+    },
+    {
+      "name": "AmeriGas LP & Subsidiaries",
+      "hqCity": "Columbus",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Columbus",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2010. County: Columbus."
+    },
+    {
+      "name": "AMPCO, Inc.",
+      "hqCity": "New Hanover",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "New Hanover",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #32. County: New Hanover."
+    },
+    {
+      "name": "Andy Oxy Company, Inc",
+      "hqCity": "Buncombe",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Buncombe",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #101. County: Buncombe."
+    },
+    {
+      "name": "Arrow Midstream LLC",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3490. County: .."
+    },
+    {
+      "name": "Associated Petroleum  Carriers  Inc",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2314. County: Wake."
+    },
+    {
+      "name": "Atlantic Gas",
+      "hqCity": "Pitt",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pitt",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #334. County: Pitt."
+    },
+    {
+      "name": "Atlantic Propane dba Stokes and Congleton, Inc.",
+      "hqCity": "Pitt",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pitt",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #36. County: Pitt."
+    },
+    {
+      "name": "Ayers, Harold J.",
+      "hqCity": "Henderson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Henderson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3857. County: Henderson."
+    },
+    {
+      "name": "Beard RV, LLC",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3933. County: Wake."
+    },
+    {
+      "name": "Berico / Gateco Oil Company",
+      "hqCity": "Guilford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Guilford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2096. County: Guilford."
+    },
+    {
+      "name": "Berico Fuels / S.H. Knight",
+      "hqCity": "Rockingham",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rockingham",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #724. County: Rockingham."
+    },
+    {
+      "name": "Blount Petroleum Corporation",
+      "hqCity": "Pitt",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pitt",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #614. County: Pitt."
+    },
+    {
+      "name": "Blue Oil Company",
+      "hqCity": "Richmond",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Richmond",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1233. County: Richmond."
+    },
+    {
+      "name": "Blue Ridge Energies, LLC",
+      "hqCity": "Burke",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Burke",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3218. County: Burke."
+    },
+    {
+      "name": "Blumont Energy Corporation",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #494. County: .."
+    },
+    {
+      "name": "Boren's, Inc.",
+      "hqCity": "Chatham",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Chatham",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2241. County: Chatham."
+    },
+    {
+      "name": "Brown's LP Gas, Inc.",
+      "hqCity": "Wilkes",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wilkes",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1015. County: Wilkes."
+    },
+    {
+      "name": "BT Energy",
+      "hqCity": "Bladen",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bladen",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2638. County: Bladen."
+    },
+    {
+      "name": "Burrell's Fuel, Inc.",
+      "hqCity": "Polk",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Polk",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2439. County: Polk."
+    },
+    {
+      "name": "C.A. Wilson Electric Service, Inc.",
+      "hqCity": "Jackson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Jackson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1066. County: Jackson."
+    },
+    {
+      "name": "Carolina Bulk Fuel and Lube, LLC",
+      "hqCity": "Lincoln",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lincoln",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3988. County: Lincoln."
+    },
+    {
+      "name": "Carolina Carbonic & Hydrotesting, Inc.",
+      "hqCity": "Guilford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Guilford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1198. County: Guilford."
+    },
+    {
+      "name": "Clean Harbors Reidsville LLC",
+      "hqCity": "Rockingham",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rockingham",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3748. County: Rockingham."
+    },
+    {
+      "name": "Cooke Rentals, Inc.",
+      "hqCity": "Mecklenburg",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mecklenburg",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2203. County: Mecklenburg."
+    },
+    {
+      "name": "Couch Oil Company of Durham, Inc.",
+      "hqCity": "Durham",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Durham",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3759. County: Durham."
+    },
+    {
+      "name": "Cox Transport and Oil Company",
+      "hqCity": "Wilkes",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wilkes",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1515. County: Wilkes."
+    },
+    {
+      "name": "Creedmoor Fuel Service, Inc.",
+      "hqCity": "Granville",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Granville",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1051. County: Granville."
+    },
+    {
+      "name": "Crossroads Fuel Service, Inc",
+      "hqCity": "Tyrrell",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Tyrrell",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #667. County: Tyrrell."
+    },
+    {
+      "name": "Cumberland  Harnett Oil and  Gas Company",
+      "hqCity": "Cumberland",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cumberland",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #367. County: Cumberland."
+    },
+    {
+      "name": "D.K. Taylor Oil Company, Inc.",
+      "hqCity": "Cumberland",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cumberland",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #407. County: Cumberland."
+    },
+    {
+      "name": "D.S. Swain Gas Company, Inc.",
+      "hqCity": "Washington",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Washington",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #631. County: Washington."
+    },
+    {
+      "name": "Dan River Propane Co, Inc.",
+      "hqCity": "Rockingham",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rockingham",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3418. County: Rockingham."
+    },
+    {
+      "name": "Dew Transport Company Inc",
+      "hqCity": "Columbus",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Columbus",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #653. County: Columbus."
+    },
+    {
+      "name": "Dixie Denning Supply Company, Inc.",
+      "hqCity": "Johnston",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Johnston",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #477. County: Johnston."
+    },
+    {
+      "name": "Durham Charter Schools",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3960. County: .."
+    },
+    {
+      "name": "Eastern Petroleum Corporation",
+      "hqCity": "Halifax",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Halifax",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #374. County: Halifax."
+    },
+    {
+      "name": "Eastrans, Inc.",
+      "hqCity": "Pamlico",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pamlico",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3357. County: Pamlico."
+    },
+    {
+      "name": "Ecco Propane, Inc.",
+      "hqCity": "Person",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Person",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #124. County: Person."
+    },
+    {
+      "name": "Elite Power & Energy Corporation",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3990. County: .."
+    },
+    {
+      "name": "Energy Partners of Mebane",
+      "hqCity": "Orange",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Orange",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2064. County: Orange."
+    },
+    {
+      "name": "Energy Partners of Pittsboro",
+      "hqCity": "Alamance",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Alamance",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2648. County: Alamance."
+    },
+    {
+      "name": "Enterprise Products Operating, LLC",
+      "hqCity": "Jackson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Jackson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2836. County: Jackson."
+    },
+    {
+      "name": "Equity LifeStyle Properties",
+      "hqCity": "Carteret",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Carteret",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2112. County: Carteret."
+    },
+    {
+      "name": "Faith Flowers and Garden Center",
+      "hqCity": "Robeson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Robeson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #4003. County: Robeson."
+    },
+    {
+      "name": "Falling Creek Service Center",
+      "hqCity": "Lenoir",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lenoir",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #349. County: Lenoir."
+    },
+    {
+      "name": "Ferrellgas - Aberdeen",
+      "hqCity": "Moore",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Moore",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3795. County: Moore."
+    },
+    {
+      "name": "Ferrellgas - Ahoskie",
+      "hqCity": "Hertford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hertford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #66. County: Hertford."
+    },
+    {
+      "name": "Ferrellgas - Angier",
+      "hqCity": "Harnett",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Harnett",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3161. County: Harnett."
+    },
+    {
+      "name": "Ferrellgas - Elizabeth City",
+      "hqCity": "Pasquotank",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pasquotank",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #98. County: Pasquotank."
+    },
+    {
+      "name": "Ferrellgas - Fayetteville",
+      "hqCity": "Cumberland",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cumberland",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #505. County: Cumberland."
+    },
+    {
+      "name": "Ferrellgas - Lumberton",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #369. County: Wake."
+    },
+    {
+      "name": "FerrellGas - Plymouth",
+      "hqCity": "Washington",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Washington",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3190. County: Washington."
+    },
+    {
+      "name": "Ferrellgas - Raleigh",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2620. County: Wake."
+    },
+    {
+      "name": "Ferrellgas - Smithfield",
+      "hqCity": "Johnston",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Johnston",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #25. County: Johnston."
+    },
+    {
+      "name": "Ferrellgas - Winterville",
+      "hqCity": "Pitt",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pitt",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #289. County: Pitt."
+    },
+    {
+      "name": "Freeman Gas and Electric Company",
+      "hqCity": "Transylvania",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Transylvania",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3635. County: Transylvania."
+    },
+    {
+      "name": "G & B Energy - Weaverville",
+      "hqCity": "Buncombe",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Buncombe",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2938. County: Buncombe."
+    },
+    {
+      "name": "G & B Oil Company, Inc. - Advance",
+      "hqCity": "Davie",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Davie",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2017. County: Davie."
+    },
+    {
+      "name": "G & B Oil Company, Inc. - Statesville",
+      "hqCity": "Iredell",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Iredell",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2886. County: Iredell."
+    },
+    {
+      "name": "Gardner Marsh Gas Equipment Co.",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #649. County: Wake."
+    },
+    {
+      "name": "Gibson Oil and Gas Inc",
+      "hqCity": "Scotland",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Scotland",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #843. County: Scotland."
+    },
+    {
+      "name": "Goose Creek Resort",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #830. County: .."
+    },
+    {
+      "name": "Grammer Logistics, Inc.",
+      "hqCity": "Nash",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Nash",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3320. County: Nash."
+    },
+    {
+      "name": "Granville County Schools",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3959. County: .."
+    },
+    {
+      "name": "Greenwood RSST, LLC",
+      "hqCity": "Hertford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hertford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3446. County: Hertford."
+    },
+    {
+      "name": "Gregory Poole",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3962. County: .."
+    },
+    {
+      "name": "Groendyke Transport, Inc.",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1659. County: Wake."
+    },
+    {
+      "name": "GT Cylinder Exchange & Truck Repair, Inc.",
+      "hqCity": "Wayne",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wayne",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3775. County: Wayne."
+    },
+    {
+      "name": "H.T. Medlin Propane, LLC",
+      "hqCity": "Johnston",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Johnston",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3940. County: Johnston."
+    },
+    {
+      "name": "Hall Oil and Propane, Inc. - Clemmons",
+      "hqCity": "Sampson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sampson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2024. County: Sampson."
+    },
+    {
+      "name": "Harvey Fertilizer & Gas Co.",
+      "hqCity": "Washington",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Washington",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3424. County: Washington."
+    },
+    {
+      "name": "Hicks Propane, Inc. - Aurora",
+      "hqCity": "Beaufort",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Beaufort",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #771. County: Beaufort."
+    },
+    {
+      "name": "Hicks Propane, Inc. - Vanceboro",
+      "hqCity": "Craven",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Craven",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3198. County: Craven."
+    },
+    {
+      "name": "Hilco Liquid Transport, LLC",
+      "hqCity": "Guilford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Guilford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3812. County: Guilford."
+    },
+    {
+      "name": "Hilco Transport, Inc.",
+      "hqCity": "Guilford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Guilford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2679. County: Guilford."
+    },
+    {
+      "name": "Huffman Oil Company, Inc.",
+      "hqCity": "Person",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Person",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #302. County: Person."
+    },
+    {
+      "name": "J T Jones Gas Appliances, Inc.",
+      "hqCity": "Currituck",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Currituck",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1432. County: Currituck."
+    },
+    {
+      "name": "James Dudley High School",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3954. County: .."
+    },
+    {
+      "name": "Jet Gas, Inc.",
+      "hqCity": "Pasquotank",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pasquotank",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3112. County: Pasquotank."
+    },
+    {
+      "name": "JMC Beach Services, LLC",
+      "hqCity": "Currituck",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Currituck",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3983. County: Currituck."
+    },
+    {
+      "name": "KAG Energy, LLC",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3774. County: Wake."
+    },
+    {
+      "name": "Laurinburg & Southern Railroad Co, Inc.",
+      "hqCity": "Scotland",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Scotland",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2696. County: Scotland."
+    },
+    {
+      "name": "Lenoir County Schools",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3958. County: .."
+    },
+    {
+      "name": "LGT Transport, LLC",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #4000. County: .."
+    },
+    {
+      "name": "Liberty Oil Company of Liberty  Inc",
+      "hqCity": "Randolph",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Randolph",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #504. County: Randolph."
+    },
+    {
+      "name": "Linton's Gas Piping and Service, Inc.",
+      "hqCity": "Haywood",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Haywood",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3388. County: Haywood."
+    },
+    {
+      "name": "Lutz Petroleum, Inc.",
+      "hqCity": "Rutherford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rutherford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3374. County: Rutherford."
+    },
+    {
+      "name": "M&M Mini Mart Tobacco Vape, Inc.",
+      "hqCity": "Pitt",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pitt",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3987. County: Pitt."
+    },
+    {
+      "name": "Machine & Welding Supply Company, Inc",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3513. County: .."
+    },
+    {
+      "name": "Mansfield Brothers Heating & Air Conditioning, Inc.",
+      "hqCity": "Brunswick",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Brunswick",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1109. County: Brunswick."
+    },
+    {
+      "name": "Massey, Wood & West, Inc.",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2163. County: Wake."
+    },
+    {
+      "name": "McLeod LP Gas Sales, Inc.",
+      "hqCity": "Person",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Person",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2647. County: Person."
+    },
+    {
+      "name": "McNeil Oil Co., Inc.",
+      "hqCity": "Hoke",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hoke",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #775. County: Hoke."
+    },
+    {
+      "name": "Mineral City Oil Co.",
+      "hqCity": "Mitchell",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mitchell",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3520. County: Mitchell."
+    },
+    {
+      "name": "Mizell Propane, LLC",
+      "hqCity": "Pitt",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pitt",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3993. County: Pitt."
+    },
+    {
+      "name": "Moseley Seafood, Inc.",
+      "hqCity": "Dare",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Dare",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1265. County: Dare."
+    },
+    {
+      "name": "Mount Airy Oil Company, Inc.",
+      "hqCity": "Surry",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Surry",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #731. County: Surry."
+    },
+    {
+      "name": "Nash County Public Schools",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3961. County: .."
+    },
+    {
+      "name": "New Dixie Oil Corp. & New Dixie Transports, Inc.",
+      "hqCity": "Halifax",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Halifax",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #160. County: Halifax."
+    },
+    {
+      "name": "New Edge Propane, LLC",
+      "hqCity": "Lenoir",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lenoir",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3890. County: Lenoir."
+    },
+    {
+      "name": "Nichols Propane, Inc.",
+      "hqCity": "Scotland",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Scotland",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3307. County: Scotland."
+    },
+    {
+      "name": "NRG Dynamics, LLC",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3991. County: .."
+    },
+    {
+      "name": "Paragon Propane",
+      "hqCity": "Mecklenburg",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mecklenburg",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3550. County: Mecklenburg."
+    },
+    {
+      "name": "Parker Enterprise of Carteret County, LLC",
+      "hqCity": "Carteret",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Carteret",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1492. County: Carteret."
+    },
+    {
+      "name": "Parker Oil Company, Inc. - Boykins",
+      "hqCity": "Pitt",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pitt",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #714. County: Pitt."
+    },
+    {
+      "name": "Parker Oil Company, Inc. - Suffolk",
+      "hqCity": "Pitt",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pitt",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2578. County: Pitt."
+    },
+    {
+      "name": "Parkway Ag Center, Inc.",
+      "hqCity": "Martin",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Martin",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2318. County: Martin."
+    },
+    {
+      "name": "Petroleum Tank Corp.",
+      "hqCity": "Johnston",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Johnston",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #877. County: Johnston."
+    },
+    {
+      "name": "PME Rentals, LLC",
+      "hqCity": "Guilford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Guilford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2571. County: Guilford."
+    },
+    {
+      "name": "Prince Oil Company, Inc. & Prince Const. Co., Inc.",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #970. County: Wake."
+    },
+    {
+      "name": "Pro Care Gas Services, LLC",
+      "hqCity": "Cumberland",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Cumberland",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3994. County: Cumberland."
+    },
+    {
+      "name": "Propane Trucks & Tanks, Inc.",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #851. County: Wake."
+    },
+    {
+      "name": "Pruett Gas Service",
+      "hqCity": "Jackson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Jackson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3420. County: Jackson."
+    },
+    {
+      "name": "Puryear Tank Lines, Inc.",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3553. County: Wake."
+    },
+    {
+      "name": "Raeford Oil Company, Inc.",
+      "hqCity": "Hoke",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hoke",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #259. County: Hoke."
+    },
+    {
+      "name": "Rental Works LLC",
+      "hqCity": "Guilford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Guilford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3722. County: Guilford."
+    },
+    {
+      "name": "River Bend Propane, LLC",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3881. County: Wake."
+    },
+    {
+      "name": "Sanders Auto Parts and Service, Inc.",
+      "hqCity": "Onslow",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Onslow",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #553. County: Onslow."
+    },
+    {
+      "name": "Sandhill Gas and Supply, Ltd",
+      "hqCity": "Wayne",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wayne",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #400. County: Wayne."
+    },
+    {
+      "name": "Sandlin's LP Gas Co, Inc.",
+      "hqCity": "Duplin",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Duplin",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3106. County: Duplin."
+    },
+    {
+      "name": "Sharpgas, Inc. - Ahoskie",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3718. County: .."
+    },
+    {
+      "name": "Sharpgas, Inc. - Dunn",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3675. County: .."
+    },
+    {
+      "name": "Sharpgas, Inc. - McLeansville",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3673. County: .."
+    },
+    {
+      "name": "Sharpgas, Inc. - Rich Square",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3677. County: .."
+    },
+    {
+      "name": "Sharpgas, Inc. - Sanford",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3678. County: .."
+    },
+    {
+      "name": "Sharpgas, Inc. - Shallotte",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3670. County: .."
+    },
+    {
+      "name": "Sharpgas, Inc. - Wallace",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3671. County: .."
+    },
+    {
+      "name": "Sharpgas, Inc. - Wilmington",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3668. County: .."
+    },
+    {
+      "name": "Sharpgas, Inc. - Youngsville",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3669. County: .."
+    },
+    {
+      "name": "Sifford Oil Company, LLC",
+      "hqCity": "Rowan",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rowan",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #321. County: Rowan."
+    },
+    {
+      "name": "Smith Brothers Gas Company, Inc.",
+      "hqCity": "Duplin",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Duplin",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #615. County: Duplin."
+    },
+    {
+      "name": "Southern States Cooperative - Mebane Service",
+      "hqCity": "Alamance",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Alamance",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #421. County: Alamance."
+    },
+    {
+      "name": "Southwestern VA Gas Service",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3026. County: .."
+    },
+    {
+      "name": "Stallings Brothers Holdings, Inc.",
+      "hqCity": "Nash",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Nash",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #617. County: Nash."
+    },
+    {
+      "name": "Stallings Propane",
+      "hqCity": "Duplin",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Duplin",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #912. County: Duplin."
+    },
+    {
+      "name": "Stone Road Energy, LLC",
+      "hqCity": "Caswell",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Caswell",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #266. County: Caswell."
+    },
+    {
+      "name": "Stoney Creek Ace Hardware, LLC",
+      "hqCity": "Guilford",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Guilford",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3771. County: Guilford."
+    },
+    {
+      "name": "Stoveman, Inc.",
+      "hqCity": "Jackson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Jackson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3866. County: Jackson."
+    },
+    {
+      "name": "Summerlin Oil Company  Inc",
+      "hqCity": "Wilson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wilson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1712. County: Wilson."
+    },
+    {
+      "name": "Sunbelt Rentals, Inc.",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1242. County: .."
+    },
+    {
+      "name": "Sunoco Partners Marketing & Terminals LP",
+      "hqCity": "Montgomery",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Montgomery",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2043. County: Montgomery."
+    },
+    {
+      "name": "Super Flame Gas Company",
+      "hqCity": "Nash",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Nash",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #507. County: Nash."
+    },
+    {
+      "name": "T.R. Lee Oil & LP Gas Company, Inc.",
+      "hqCity": "Johnston",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Johnston",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #814. County: Johnston."
+    },
+    {
+      "name": "Thomas Equipment & Party Rentals",
+      "hqCity": "Mecklenburg",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mecklenburg",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #624. County: Mecklenburg."
+    },
+    {
+      "name": "Tidewater Energy - Alliance",
+      "hqCity": "Lenoir",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Lenoir",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3741. County: Lenoir."
+    },
+    {
+      "name": "Tractor Supply Company - Store #2237",
+      "hqCity": "Duplin",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Duplin",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3363. County: Duplin."
+    },
+    {
+      "name": "Triad Propane Gas Company, Inc.",
+      "hqCity": "Randolph",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Randolph",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #361. County: Randolph."
+    },
+    {
+      "name": "Viking Transport, Inc.",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3819. County: .."
+    },
+    {
+      "name": "W. Henry Hardy, Inc.",
+      "hqCity": "Wake",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Wake",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #2056. County: Wake."
+    },
+    {
+      "name": "Waccamaw Transport, Inc.",
+      "hqCity": "Johnston",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Johnston",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1592. County: Johnston."
+    },
+    {
+      "name": "Wake County Schools",
+      "hqCity": ".",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": ".",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3957. County: .."
+    },
+    {
+      "name": "Wallace Propane and Appliance, Inc.",
+      "hqCity": "Watauga",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Watauga",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1296. County: Watauga."
+    },
+    {
+      "name": "Wellman Oil Company, Inc",
+      "hqCity": "Sampson",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sampson",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #871. County: Sampson."
+    },
+    {
+      "name": "Whatever Rents, Inc.",
+      "hqCity": "Buncombe",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Buncombe",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #567. County: Buncombe."
+    },
+    {
+      "name": "Wolfpack Transportation, LLC",
+      "hqCity": "Bladen",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Bladen",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #3872. County: Bladen."
+    },
+    {
+      "name": "Yam City Oil and Gas Company",
+      "hqCity": "Columbus",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Columbus",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #763. County: Columbus."
+    },
+    {
+      "name": "Young's Fuel Service, Inc.",
+      "hqCity": "Mitchell",
+      "hqState": "NC",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Mitchell",
+          "state": "NC",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "NC Dept of Agriculture LP Gas Class A dealer license #1196. County: Mitchell."
+    }
+  ]
+}

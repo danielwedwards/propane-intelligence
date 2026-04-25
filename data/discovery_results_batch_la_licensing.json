@@ -1,0 +1,51 @@
+{
+  "batch": "la_lpg_commission_licensing",
+  "generated": "2026-04-12",
+  "companies": [
+    {
+      "name": "Macon Ridge Propane",
+      "hqCity": "Rayville",
+      "hqState": "LA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Rayville",
+          "state": "LA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "LA LP Gas Commission Code 01 retail dealer. Richland Parish."
+    },
+    {
+      "name": "N I Welding Supply LLC",
+      "hqCity": "New Iberia",
+      "hqState": "LA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "New Iberia",
+          "state": "LA",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "LA LP Gas Commission Code 01 retail dealer. Iberia Parish."
+    },
+    {
+      "name": "Martin Operating Partnership LP",
+      "hqCity": "Kilgore",
+      "hqState": "TX",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kilgore",
+          "state": "TX",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "LA LP Gas Commission Code 01 retail dealer. Also Code 04 transport."
+    }
+  ]
+}

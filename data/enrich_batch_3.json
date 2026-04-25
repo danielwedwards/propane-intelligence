@@ -1,0 +1,652 @@
+[
+  {
+    "id": "blue_star_gas_eugene_co",
+    "name": "Blue Star Gas - Eugene Co.",
+    "state": "OR"
+  },
+  {
+    "id": "ed_staub_sons_petroleum",
+    "name": "ED STAUB & SONS PETROLEUM",
+    "state": "OR"
+  },
+  {
+    "id": "ron_s_oil_co_propane_division",
+    "name": "Ron's Oil Co. Propane Division",
+    "state": "OR"
+  },
+  {
+    "id": "r_d_propane",
+    "name": "R & D Propane",
+    "state": "OR"
+  },
+  {
+    "id": "coenergy_propane_llc",
+    "name": "CoEnergy Propane, LLC",
+    "state": "OR"
+  },
+  {
+    "id": "morrow_county_grain_growers",
+    "name": "MORROW COUNTY GRAIN GROWERS",
+    "state": "OR"
+  },
+  {
+    "id": "blue_star_gas_salem_co",
+    "name": "Blue Star Gas - Salem Co.",
+    "state": "OR"
+  },
+  {
+    "id": "provanta",
+    "name": "Provanta",
+    "state": "PA"
+  },
+  {
+    "id": "greco_gas",
+    "name": "Greco Gas",
+    "state": "PA"
+  },
+  {
+    "id": "butler_gas_products_company",
+    "name": "Butler Gas Products Company",
+    "state": "PA"
+  },
+  {
+    "id": "gnagey_propane",
+    "name": "Gnagey Propane",
+    "state": "PA"
+  },
+  {
+    "id": "jacobs_petroleum",
+    "name": "Jacobs Petroleum",
+    "state": "PA"
+  },
+  {
+    "id": "route_7_refills",
+    "name": "Route 7 Refills",
+    "state": "PA"
+  },
+  {
+    "id": "richgas_inc_pa",
+    "name": "Richgas Inc",
+    "state": "PA"
+  },
+  {
+    "id": "consumers_propane",
+    "name": "Consumers Propane",
+    "state": "RI"
+  },
+  {
+    "id": "butler_lp_gas",
+    "name": "Butler LP Gas",
+    "state": "SC"
+  },
+  {
+    "id": "farm_gas_co_op_association",
+    "name": "Farm Gas Co-op Association",
+    "state": "SD"
+  },
+  {
+    "id": "butch_s_propane_llc",
+    "name": "Butch's Propane, LLC",
+    "state": "SD"
+  },
+  {
+    "id": "agri_energy_inc",
+    "name": "Agri-Energy Inc",
+    "state": "SD"
+  },
+  {
+    "id": "fischer_oil_propane_co",
+    "name": "Fischer Oil & Propane Co",
+    "state": "SD"
+  },
+  {
+    "id": "brooks_oil_co",
+    "name": "Brooks Oil Co",
+    "state": "SD"
+  },
+  {
+    "id": "bob_s_gas_inc",
+    "name": "Bob's Gas Inc",
+    "state": "SD"
+  },
+  {
+    "id": "d_r_propane",
+    "name": "D & R Propane",
+    "state": "SD"
+  },
+  {
+    "id": "burke_fuel_oil_propane_co",
+    "name": "Burke Fuel Oil & Propane Co",
+    "state": "SD"
+  },
+  {
+    "id": "gale_s_gas_services",
+    "name": "Gale's Gas Services",
+    "state": "SD"
+  },
+  {
+    "id": "standing_rock_propane",
+    "name": "Standing Rock Propane",
+    "state": "SD"
+  },
+  {
+    "id": "friman_oil_gas_inc",
+    "name": "Friman Oil & Gas Inc",
+    "state": "SD"
+  },
+  {
+    "id": "ontime_petroleum_propane",
+    "name": "OnTime Petroleum & Propane",
+    "state": "SD"
+  },
+  {
+    "id": "slater_oil_lp_gas_co",
+    "name": "Slater Oil & LP Gas Co",
+    "state": "SD"
+  },
+  {
+    "id": "bieglers_timber_lake_service",
+    "name": "Bieglers Timber Lake Service",
+    "state": "SD"
+  },
+  {
+    "id": "champion_propane",
+    "name": "Champion Propane",
+    "state": "SD"
+  },
+  {
+    "id": "chs_farmers_alliance",
+    "name": "CHS Farmers Alliance",
+    "state": "SD"
+  },
+  {
+    "id": "united_propane_gas_henagar_al",
+    "name": "United Propane Gas (Henagar, AL)",
+    "state": "TN"
+  },
+  {
+    "id": "united_propane_gas_celina_tn",
+    "name": "United Propane Gas (Celina, TN)",
+    "state": "TN"
+  },
+  {
+    "id": "tankfarm",
+    "name": "Tankfarm",
+    "state": "TN"
+  },
+  {
+    "id": "spencer_mountain_propane",
+    "name": "SPENCER MOUNTAIN PROPANE",
+    "state": "TN"
+  },
+  {
+    "id": "united_propane_gas_lafayette_ga",
+    "name": "United Propane Gas (LaFayette, GA)",
+    "state": "TN"
+  },
+  {
+    "id": "frontier_fuel_co",
+    "name": "Frontier Fuel Co",
+    "state": "TX"
+  },
+  {
+    "id": "hino_gas",
+    "name": "Hino Gas",
+    "state": "TX"
+  },
+  {
+    "id": "freedom_lp",
+    "name": "Freedom LP",
+    "state": "TX"
+  },
+  {
+    "id": "askins_propane_co",
+    "name": "Askins Propane Co",
+    "state": "TX"
+  },
+  {
+    "id": "mr_g_propane_inc",
+    "name": "Mr. G. Propane, Inc.",
+    "state": "TX"
+  },
+  {
+    "id": "fulfer_propane_inc",
+    "name": "Fulfer Propane, Inc",
+    "state": "TX"
+  },
+  {
+    "id": "dvp_gas_co",
+    "name": "DVP Gas Co.",
+    "state": "TX"
+  },
+  {
+    "id": "waller_county_butane_co",
+    "name": "Waller County Butane Co.",
+    "state": "TX"
+  },
+  {
+    "id": "cy_fair_propane_company",
+    "name": "Cy-Fair Propane Company",
+    "state": "TX"
+  },
+  {
+    "id": "almighty_propane_llc",
+    "name": "Almighty Propane LLC",
+    "state": "TX"
+  },
+  {
+    "id": "fields_store_propane_1385",
+    "name": "Fields Store Propane 1385",
+    "state": "TX"
+  },
+  {
+    "id": "hill_gas",
+    "name": "Hill Gas",
+    "state": "TX"
+  },
+  {
+    "id": "fronk_oil_co_inc_tx",
+    "name": "Fronk Oil Co Inc",
+    "state": "TX"
+  },
+  {
+    "id": "jack_oldham_oil_co_inc",
+    "name": "Jack Oldham Oil Co Inc",
+    "state": "TX"
+  },
+  {
+    "id": "wheat_energy_services_inc",
+    "name": "Wheat Energy Services, Inc.",
+    "state": "TX"
+  },
+  {
+    "id": "ipes_family_propane",
+    "name": "Ipes Family Propane",
+    "state": "TX"
+  },
+  {
+    "id": "c4_fuels_llc",
+    "name": "C4 Fuels, LLC",
+    "state": "TX"
+  },
+  {
+    "id": "hone_propane",
+    "name": "Hone Propane",
+    "state": "UT"
+  },
+  {
+    "id": "b_l_propane_co_inc",
+    "name": "B & L Propane Co., Inc.",
+    "state": "UT"
+  },
+  {
+    "id": "barker_s_propane",
+    "name": "Barker's propane",
+    "state": "UT"
+  },
+  {
+    "id": "propane_network_inc",
+    "name": "Propane Network Inc.",
+    "state": "UT"
+  },
+  {
+    "id": "g_l_distributing",
+    "name": "G & L Distributing",
+    "state": "UT"
+  },
+  {
+    "id": "pit_stop_propane_sandy",
+    "name": "Pit Stop Propane Sandy",
+    "state": "UT"
+  },
+  {
+    "id": "warren_energy_group_inc",
+    "name": "Warren Energy Group Inc",
+    "state": "UT"
+  },
+  {
+    "id": "miller_gas_co",
+    "name": "Miller Gas Co",
+    "state": "UT"
+  },
+  {
+    "id": "lake_philgas",
+    "name": "Lake Philgas",
+    "state": "UT"
+  },
+  {
+    "id": "utah_propane",
+    "name": "Utah Propane",
+    "state": "UT"
+  },
+  {
+    "id": "blue_flame_propane",
+    "name": "Blue Flame Propane",
+    "state": "UT"
+  },
+  {
+    "id": "industrial_propane",
+    "name": "Industrial Propane",
+    "state": "UT"
+  },
+  {
+    "id": "enterprise_gas",
+    "name": "Enterprise Gas",
+    "state": "VA"
+  },
+  {
+    "id": "seven_is_enough",
+    "name": "Seven is Enough",
+    "state": "VA"
+  },
+  {
+    "id": "appomattox_propane_services",
+    "name": "Appomattox Propane Services",
+    "state": "VA"
+  },
+  {
+    "id": "blumont_energy_lynchburg",
+    "name": "Blumont Energy - Lynchburg",
+    "state": "VA"
+  },
+  {
+    "id": "the_glade_spring_co",
+    "name": "The Glade Spring Co.",
+    "state": "VA"
+  },
+  {
+    "id": "foster_fuels_hearth_home_showroom",
+    "name": "Foster Fuels Hearth & Home Showroom",
+    "state": "VA"
+  },
+  {
+    "id": "tiger_fuel_company",
+    "name": "Tiger Fuel Company",
+    "state": "VA"
+  },
+  {
+    "id": "francis_oil_propane_inc",
+    "name": "Francis Oil & Propane, Inc",
+    "state": "VA"
+  },
+  {
+    "id": "swva_gas_service",
+    "name": "SWVA Gas Service",
+    "state": "VA"
+  },
+  {
+    "id": "roach_energy",
+    "name": "Roach Energy",
+    "state": "VA"
+  },
+  {
+    "id": "davenport_energy",
+    "name": "Davenport Energy",
+    "state": "VA"
+  },
+  {
+    "id": "proctor_gas_inc",
+    "name": "Proctor Gas Inc.",
+    "state": "VT"
+  },
+  {
+    "id": "blue_flame_gas_company_inc",
+    "name": "Blue Flame Gas Company, Inc.",
+    "state": "VT"
+  },
+  {
+    "id": "fred_s_energy",
+    "name": "Fred's Energy",
+    "state": "VT"
+  },
+  {
+    "id": "fyles_bros_inc_vt",
+    "name": "Fyles Bros Inc",
+    "state": "VT"
+  },
+  {
+    "id": "pacific_coast_energy",
+    "name": "Pacific Coast Energy",
+    "state": "WA"
+  },
+  {
+    "id": "luke_s_propane",
+    "name": "Luke's Propane",
+    "state": "WA"
+  },
+  {
+    "id": "basin_propane_llc",
+    "name": "Basin Propane LLC",
+    "state": "WA"
+  },
+  {
+    "id": "propane_northwest_tacoma",
+    "name": "Propane Northwest - Tacoma",
+    "state": "WA"
+  },
+  {
+    "id": "wenatchee_petroleum_co",
+    "name": "Wenatchee Petroleum Co",
+    "state": "WA"
+  },
+  {
+    "id": "north_cascade_propane_service",
+    "name": "North Cascade Propane Service",
+    "state": "WA"
+  },
+  {
+    "id": "inland_propane",
+    "name": "Inland Propane",
+    "state": "WA"
+  },
+  {
+    "id": "new_flame_propane",
+    "name": "New Flame Propane",
+    "state": "WA"
+  },
+  {
+    "id": "four_seasons_farm_service",
+    "name": "Four Seasons Farm Service",
+    "state": "WA"
+  },
+  {
+    "id": "northwest_propane",
+    "name": "Northwest Propane",
+    "state": "WA"
+  },
+  {
+    "id": "colville_fuels_deep_water",
+    "name": "Colville Fuels Deep Water",
+    "state": "WA"
+  },
+  {
+    "id": "ag_supply_petroleum_propane",
+    "name": "Ag Supply Petroleum & Propane",
+    "state": "WA"
+  },
+  {
+    "id": "chs_northwest_sumner",
+    "name": "CHS Northwest Sumner",
+    "state": "WA"
+  },
+  {
+    "id": "burden_propane_inc",
+    "name": "Burden Propane Inc",
+    "state": "WA"
+  },
+  {
+    "id": "black_bear_outpost",
+    "name": "Black Bear Outpost",
+    "state": "WA"
+  },
+  {
+    "id": "meyer_oil_lp",
+    "name": "Meyer Oil & LP",
+    "state": "WI"
+  },
+  {
+    "id": "zifko_gas",
+    "name": "Zifko Gas",
+    "state": "WI"
+  },
+  {
+    "id": "boehlke_bottled_gas",
+    "name": "Boehlke Bottled Gas",
+    "state": "WI"
+  },
+  {
+    "id": "green_bay_gas_co",
+    "name": "Green Bay Gas Co",
+    "state": "WI"
+  },
+  {
+    "id": "brummer_co",
+    "name": "Brummer Co",
+    "state": "WI"
+  },
+  {
+    "id": "garrow_oil_propane",
+    "name": "Garrow Oil & Propane",
+    "state": "WI"
+  },
+  {
+    "id": "lp_plus",
+    "name": "LP Plus",
+    "state": "WI"
+  },
+  {
+    "id": "l_p_gas_and_equipment",
+    "name": "L. P. Gas and Equipment",
+    "state": "WI"
+  },
+  {
+    "id": "wolf_river_propane",
+    "name": "Wolf River Propane",
+    "state": "WI"
+  },
+  {
+    "id": "como_oil_propane",
+    "name": "Como Oil & Propane",
+    "state": "WI"
+  },
+  {
+    "id": "dale_gas_oil_co",
+    "name": "Dale Gas & Oil Co",
+    "state": "WI"
+  },
+  {
+    "id": "fond_du_lac_propane_co",
+    "name": "Fond Du Lac Propane Co",
+    "state": "WI"
+  },
+  {
+    "id": "northwoods_lp",
+    "name": "Northwoods LP",
+    "state": "WI"
+  },
+  {
+    "id": "l_l_propane",
+    "name": "L & L Propane",
+    "state": "WI"
+  },
+  {
+    "id": "van_s_gas_service_inc",
+    "name": "Van's Gas Service Inc",
+    "state": "WI"
+  },
+  {
+    "id": "freedom_ag_energy_buckhannon_branch",
+    "name": "Freedom Ag & Energy - Buckhannon Branch",
+    "state": "WV"
+  },
+  {
+    "id": "appalachian_propane_supply",
+    "name": "Appalachian Propane & Supply",
+    "state": "WV"
+  },
+  {
+    "id": "tickle_oil_propane_inc",
+    "name": "Tickle Oil & Propane Inc",
+    "state": "WV"
+  },
+  {
+    "id": "red_flame_oil_propane",
+    "name": "Red Flame Oil & Propane",
+    "state": "WV"
+  },
+  {
+    "id": "woodford_oil_company",
+    "name": "Woodford Oil Company",
+    "state": "WV"
+  },
+  {
+    "id": "duncan_service_inc",
+    "name": "Duncan Service Inc",
+    "state": "WV"
+  },
+  {
+    "id": "r_t_rogers_oil_co_inc",
+    "name": "R.T. Rogers Oil Co., Inc.",
+    "state": "WV"
+  },
+  {
+    "id": "1st_choice_energy_services",
+    "name": "1st Choice Energy Services",
+    "state": "WV"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_pinedale",
+    "name": "Valley Wide Cooperative Energy | Pinedale",
+    "state": "WY"
+  },
+  {
+    "id": "lodge_grass_propane_supplies",
+    "name": "Lodge Grass Propane & Supplies",
+    "state": "WY"
+  },
+  {
+    "id": "v_1_propane",
+    "name": "V-1 Propane",
+    "state": "WY"
+  },
+  {
+    "id": "big_horn_co_op_24hr_pumps",
+    "name": "Big Horn Co-op- 24HR Pumps",
+    "state": "WY"
+  },
+  {
+    "id": "butane_power_equipment_co",
+    "name": "Butane Power & Equipment Co",
+    "state": "WY"
+  },
+  {
+    "id": "tricounty_gas",
+    "name": "TriCounty Gas",
+    "state": "WY"
+  },
+  {
+    "id": "thunder_basin_propane",
+    "name": "Thunder Basin Propane",
+    "state": "WY"
+  },
+  {
+    "id": "blakeman_propane_inc",
+    "name": "Blakeman Propane, Inc.",
+    "state": "WY"
+  },
+  {
+    "id": "tumbleweed_propane_inc",
+    "name": "Tumbleweed Propane, Inc.",
+    "state": "WY"
+  },
+  {
+    "id": "cbh_co_op_gillette_elevator",
+    "name": "CBH CO-OP Gillette Elevator",
+    "state": "WY"
+  },
+  {
+    "id": "pinedale_natural_gas_inc",
+    "name": "Pinedale Natural Gas Inc",
+    "state": "WY"
+  }
+]

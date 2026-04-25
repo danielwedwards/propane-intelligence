@@ -1,0 +1,3428 @@
+{
+  "propane_delivery": [
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@30.6592,-87.7461,9z",
+      "state": "AL",
+      "county": "Baldwin County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@32.2476,-87.7911,9z",
+      "state": "AL",
+      "county": "Marengo County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@33.5534,-86.8965,9z",
+      "state": "AL",
+      "county": "Jefferson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@34.9042,-87.6511,9z",
+      "state": "AL",
+      "county": "Lauderdale County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@33.1682,-92.5981,9z",
+      "state": "AR",
+      "county": "Union County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@34.4237,-90.8556,9z",
+      "state": "AR",
+      "county": "Phillips County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.5734,-93.4663,9z",
+      "state": "AR",
+      "county": "Johnson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.3813,-91.8193,9z",
+      "state": "AR",
+      "county": "Fulton County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@31.5257,-110.8452,9z",
+      "state": "AZ",
+      "county": "Santa Cruz County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@32.9318,-109.8783,9z",
+      "state": "AZ",
+      "county": "Graham County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@34.6311,-112.5772,9z",
+      "state": "AZ",
+      "county": "Yavapai County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.8297,-111.7737,9z",
+      "state": "AZ",
+      "county": "Coconino County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@33.0236,-116.7761,9z",
+      "state": "CA",
+      "county": "San Diego County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.2216,-121.6895,9z",
+      "state": "CA",
+      "county": "Santa Clara County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.7856,-120.5342,9z",
+      "state": "CA",
+      "county": "El Dorado County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.7499,-123.981,9z",
+      "state": "CA",
+      "county": "Del Norte County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.2024,-107.0509,9z",
+      "state": "CO",
+      "county": "Archuleta County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.1628,-104.4847,9z",
+      "state": "CO",
+      "county": "Pueblo County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.621,-106.1376,9z",
+      "state": "CO",
+      "county": "Summit County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.8716,-102.3554,9z",
+      "state": "CO",
+      "county": "Sedgwick County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.1846,-73.2094,9z",
+      "state": "CT",
+      "county": "Greater Bridgeport Planning Region",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.4203,-72.4935,9z",
+      "state": "CT",
+      "county": "Lower Connecticut River Valley Planning Region",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.817,-72.5759,9z",
+      "state": "CT",
+      "county": "Capitol Planning Region",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.8548,-73.2215,9z",
+      "state": "CT",
+      "county": "Northwest Hills Planning Region",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.6732,-75.337,9z",
+      "state": "DE",
+      "county": "Sussex County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.0971,-75.503,9z",
+      "state": "DE",
+      "county": "Kent County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.5759,-75.6441,9z",
+      "state": "DE",
+      "county": "New Castle County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@25.5861,-81.0226,9z",
+      "state": "FL",
+      "county": "Monroe County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@28.2983,-80.7003,9z",
+      "state": "FL",
+      "county": "Brevard County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@29.9901,-83.1785,9z",
+      "state": "FL",
+      "county": "Lafayette County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@30.862,-85.8159,9z",
+      "state": "FL",
+      "county": "Holmes County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@30.714,-82.8974,9z",
+      "state": "GA",
+      "county": "Echols County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@32.1178,-82.3306,9z",
+      "state": "GA",
+      "county": "Toombs County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@33.4806,-82.4796,9z",
+      "state": "GA",
+      "county": "McDuffie County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@34.9025,-83.7323,9z",
+      "state": "GA",
+      "county": "Towns County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.6476,-91.4772,9z",
+      "state": "IA",
+      "county": "Lee County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.6707,-91.5905,9z",
+      "state": "IA",
+      "county": "Johnson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.4703,-91.8387,9z",
+      "state": "IA",
+      "county": "Buchanan County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.3896,-95.1961,9z",
+      "state": "IA",
+      "county": "Dickinson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.1736,-111.823,9z",
+      "state": "ID",
+      "county": "Franklin County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.3942,-113.9554,9z",
+      "state": "ID",
+      "county": "Blaine County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.2902,-112.3546,9z",
+      "state": "ID",
+      "county": "Clark County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@48.7731,-116.5247,9z",
+      "state": "ID",
+      "county": "Boundary County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.1837,-89.3495,9z",
+      "state": "IL",
+      "county": "Alexander County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.0802,-90.3614,9z",
+      "state": "IL",
+      "county": "Jersey County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.5965,-88.2246,9z",
+      "state": "IL",
+      "county": "Ford County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.3624,-90.2115,9z",
+      "state": "IL",
+      "county": "Jo Daviess County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.0097,-87.0104,9z",
+      "state": "IN",
+      "county": "Spencer County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.2058,-85.898,9z",
+      "state": "IN",
+      "county": "Bartholomew County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.435,-85.0023,9z",
+      "state": "IN",
+      "county": "Jay County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.6435,-85.0024,9z",
+      "state": "IN",
+      "county": "Steuben County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.1543,-96.2454,9z",
+      "state": "KS",
+      "county": "Chautauqua County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.9952,-101.7937,9z",
+      "state": "KS",
+      "county": "Hamilton County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.9266,-101.7711,9z",
+      "state": "KS",
+      "county": "Wallace County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.8289,-97.6509,9z",
+      "state": "KS",
+      "county": "Republic County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.5525,-89.1877,9z",
+      "state": "KY",
+      "county": "Fulton County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.2781,-85.5379,9z",
+      "state": "KY",
+      "county": "Green County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.9229,-83.2589,9z",
+      "state": "KY",
+      "county": "Morgan County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.9589,-84.7364,9z",
+      "state": "KY",
+      "county": "Boone County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@29.2824,-89.5761,9z",
+      "state": "LA",
+      "county": "Plaquemines Parish",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@30.41,-89.952,9z",
+      "state": "LA",
+      "county": "St. Tammany Parish",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@31.6801,-92.1616,9z",
+      "state": "LA",
+      "county": "LaSalle Parish",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@32.8293,-92.3756,9z",
+      "state": "LA",
+      "county": "Union Parish",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.2934,-70.1022,9z",
+      "state": "MA",
+      "county": "Nantucket County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.9872,-70.7419,9z",
+      "state": "MA",
+      "county": "Plymouth County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.3395,-72.6637,9z",
+      "state": "MA",
+      "county": "Hampshire County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.6427,-70.8649,9z",
+      "state": "MA",
+      "county": "Essex County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.0744,-75.8533,9z",
+      "state": "MD",
+      "county": "Somerset County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.8293,-76.8482,9z",
+      "state": "MD",
+      "county": "Prince George's County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.4432,-76.6166,9z",
+      "state": "MD",
+      "county": "Baltimore County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.6123,-78.7031,9z",
+      "state": "MD",
+      "county": "Allegany County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.426,-70.6684,9z",
+      "state": "ME",
+      "county": "York County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.1677,-70.2074,9z",
+      "state": "ME",
+      "county": "Androscoggin County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.967,-67.6094,9z",
+      "state": "ME",
+      "county": "Washington County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@46.7092,-68.6124,9z",
+      "state": "ME",
+      "county": "Aroostook County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.7914,-86.7425,9z",
+      "state": "MI",
+      "county": "Berrien County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.0886,-83.2243,9z",
+      "state": "MI",
+      "county": "Lapeer County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.6789,-85.089,9z",
+      "state": "MI",
+      "county": "Kalkaska County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@47.3673,-88.3513,9z",
+      "state": "MI",
+      "county": "Keweenaw County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.6662,-92.7595,9z",
+      "state": "MN",
+      "county": "Mower County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.6518,-93.5337,9z",
+      "state": "MN",
+      "county": "Scott County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@46.0205,-94.2666,9z",
+      "state": "MN",
+      "county": "Morrison County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@48.776,-96.7803,9z",
+      "state": "MN",
+      "county": "Kittson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.153,-90.0623,9z",
+      "state": "MO",
+      "county": "Dunklin County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.7111,-89.8021,9z",
+      "state": "MO",
+      "county": "Perry County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.1358,-93.2042,9z",
+      "state": "MO",
+      "county": "Saline County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.4805,-94.4192,9z",
+      "state": "MO",
+      "county": "Worth County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@30.3916,-89.4828,9z",
+      "state": "MS",
+      "county": "Hancock County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@32.0167,-89.1192,9z",
+      "state": "MS",
+      "county": "Jasper County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@33.5498,-90.2949,9z",
+      "state": "MS",
+      "county": "Leflore County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@34.8866,-88.5811,9z",
+      "state": "MS",
+      "county": "Alcorn County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@45.1339,-112.8929,9z",
+      "state": "MT",
+      "county": "Beaverhead County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@46.3182,-104.4057,9z",
+      "state": "MT",
+      "county": "Fallon County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@47.6296,-105.7572,9z",
+      "state": "MT",
+      "county": "McCone County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@48.7944,-105.5417,9z",
+      "state": "MT",
+      "county": "Daniels County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@34.0388,-78.2278,9z",
+      "state": "NC",
+      "county": "Brunswick County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.3484,-83.8309,9z",
+      "state": "NC",
+      "county": "Graham County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.9294,-80.5426,9z",
+      "state": "NC",
+      "county": "Davie County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.4894,-81.1323,9z",
+      "state": "NC",
+      "county": "Alleghany County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@46.0968,-102.5332,9z",
+      "state": "ND",
+      "county": "Adams County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@46.9383,-99.7312,9z",
+      "state": "ND",
+      "county": "Kidder County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@47.9187,-98.2044,9z",
+      "state": "ND",
+      "county": "Nelson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@48.8148,-103.5093,9z",
+      "state": "ND",
+      "county": "Divide County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.1237,-95.7186,9z",
+      "state": "NE",
+      "county": "Richardson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.8719,-97.1404,9z",
+      "state": "NE",
+      "county": "Seward County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.7322,-102.9906,9z",
+      "state": "NE",
+      "county": "Morrill County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.8944,-98.773,9z",
+      "state": "NE",
+      "county": "Boyd County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.9115,-71.7231,9z",
+      "state": "NH",
+      "county": "Hillsborough County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.2933,-71.0356,9z",
+      "state": "NH",
+      "county": "Strafford County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.5191,-71.4254,9z",
+      "state": "NH",
+      "county": "Belknap County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.6525,-71.2894,9z",
+      "state": "NH",
+      "county": "Coos County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.0858,-74.8464,9z",
+      "state": "NJ",
+      "county": "Cape May County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.8758,-74.663,9z",
+      "state": "NJ",
+      "county": "Burlington County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.7314,-74.0786,9z",
+      "state": "NJ",
+      "county": "Hudson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.1375,-74.6919,9z",
+      "state": "NJ",
+      "county": "Sussex County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@31.8981,-108.7519,9z",
+      "state": "NM",
+      "county": "Hidalgo County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@33.9917,-106.9391,9z",
+      "state": "NM",
+      "county": "Socorro County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.5145,-105.964,9z",
+      "state": "NM",
+      "county": "Santa Fe County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.613,-104.6401,9z",
+      "state": "NM",
+      "county": "Colfax County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.2141,-115.0144,9z",
+      "state": "NV",
+      "county": "Clark County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.9051,-119.609,9z",
+      "state": "NV",
+      "county": "Douglas County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.9002,-117.0472,9z",
+      "state": "NV",
+      "county": "Lander County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.4079,-118.1276,9z",
+      "state": "NV",
+      "county": "Humboldt County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.5613,-74.1399,9z",
+      "state": "NY",
+      "county": "Richmond County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.2479,-78.0262,9z",
+      "state": "NY",
+      "county": "Allegany County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.0009,-78.1928,9z",
+      "state": "NY",
+      "county": "Genesee County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.7527,-73.7056,9z",
+      "state": "NY",
+      "county": "Clinton County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.6039,-82.5172,9z",
+      "state": "OH",
+      "county": "Lawrence County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.8966,-83.4009,9z",
+      "state": "OH",
+      "county": "Madison County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.8141,-81.3657,9z",
+      "state": "OH",
+      "county": "Stark County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.9066,-80.7456,9z",
+      "state": "OH",
+      "county": "Ashtabula County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@33.9578,-97.2451,9z",
+      "state": "OK",
+      "county": "Love County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.0164,-97.4498,9z",
+      "state": "OK",
+      "county": "McClain County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.9634,-95.5142,9z",
+      "state": "OK",
+      "county": "Wagoner County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.8358,-94.8027,9z",
+      "state": "OK",
+      "county": "Ottawa County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.387,-123.5716,9z",
+      "state": "OR",
+      "county": "Josephine County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.4889,-122.5372,9z",
+      "state": "OR",
+      "county": "Linn County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@45.3041,-117.9991,9z",
+      "state": "OR",
+      "county": "Union County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@46.0245,-123.705,9z",
+      "state": "OR",
+      "county": "Clatsop County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.8477,-80.2257,9z",
+      "state": "PA",
+      "county": "Greene County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.4698,-79.9805,9z",
+      "state": "PA",
+      "county": "Allegheny County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.138,-79.0124,9z",
+      "state": "PA",
+      "county": "Jefferson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.118,-80.0964,9z",
+      "state": "PA",
+      "county": "Erie County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.3968,-71.6203,9z",
+      "state": "RI",
+      "county": "Washington County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.6751,-71.5803,9z",
+      "state": "RI",
+      "county": "Kent County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.8698,-71.5786,9z",
+      "state": "RI",
+      "county": "Providence County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@32.3581,-80.6894,9z",
+      "state": "SC",
+      "county": "Beaufort County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@33.6748,-80.7803,9z",
+      "state": "SC",
+      "county": "Calhoun County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@34.3384,-80.5909,9z",
+      "state": "SC",
+      "county": "Kershaw County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.0498,-81.6076,9z",
+      "state": "SC",
+      "county": "Cherokee County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.8311,-96.6508,9z",
+      "state": "SD",
+      "county": "Union County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.7247,-98.5776,9z",
+      "state": "SD",
+      "county": "Aurora County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.7223,-100.1314,9z",
+      "state": "SD",
+      "county": "Sully County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@45.7856,-100.0021,9z",
+      "state": "SD",
+      "county": "Campbell County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.1094,-84.5411,9z",
+      "state": "TN",
+      "county": "Polk County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@35.6157,-87.0778,9z",
+      "state": "TN",
+      "county": "Maury County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.1691,-86.7848,9z",
+      "state": "TN",
+      "county": "Davidson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.5594,-85.0757,9z",
+      "state": "TN",
+      "county": "Pickett County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@26.1029,-97.479,9z",
+      "state": "TX",
+      "county": "Cameron County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@30.7432,-95.5698,9z",
+      "state": "TX",
+      "county": "Walker County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@32.7438,-99.347,9z",
+      "state": "TX",
+      "county": "Shackelford County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.2864,-102.594,9z",
+      "state": "TX",
+      "county": "Dallam County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.2625,-113.4878,9z",
+      "state": "UT",
+      "county": "Washington County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.9567,-113.1331,9z",
+      "state": "UT",
+      "county": "Millard County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.4678,-113.124,9z",
+      "state": "UT",
+      "county": "Tooele County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.7341,-111.7454,9z",
+      "state": "UT",
+      "county": "Cache County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@36.5833,-79.4081,9z",
+      "state": "VA",
+      "county": "Danville city",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.1367,-82.3492,9z",
+      "state": "VA",
+      "county": "Dickenson County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.7823,-79.4443,9z",
+      "state": "VA",
+      "county": "Lexington city",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.2037,-78.2638,9z",
+      "state": "VA",
+      "county": "Frederick County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.9953,-72.7219,9z",
+      "state": "VT",
+      "county": "Windham County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.0034,-72.3696,9z",
+      "state": "VT",
+      "county": "Orange County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.6112,-72.6327,9z",
+      "state": "VT",
+      "county": "Lamoille County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.859,-72.9094,9z",
+      "state": "VT",
+      "county": "Franklin County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@45.7717,-122.486,9z",
+      "state": "WA",
+      "county": "Clark County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@46.5801,-122.3774,9z",
+      "state": "WA",
+      "county": "Lewis County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@47.7418,-119.6946,9z",
+      "state": "WA",
+      "county": "Douglas County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@48.8427,-121.8364,9z",
+      "state": "WA",
+      "county": "Whatcom County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.5875,-87.88,9z",
+      "state": "WI",
+      "county": "Kenosha County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.9082,-91.1118,9z",
+      "state": "WI",
+      "county": "La Crosse County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.9913,-88.6693,9z",
+      "state": "WI",
+      "county": "Menominee County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@46.6342,-91.1773,9z",
+      "state": "WI",
+      "county": "Bayfield County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@37.3828,-81.6582,9z",
+      "state": "WV",
+      "county": "McDowell County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@38.4835,-80.4491,9z",
+      "state": "WV",
+      "county": "Webster County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@39.2116,-81.5162,9z",
+      "state": "WV",
+      "county": "Wood County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@40.517,-80.5702,9z",
+      "state": "WV",
+      "county": "Hancock County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@41.2847,-110.5589,9z",
+      "state": "WY",
+      "county": "Uinta County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@42.23,-110.683,9z",
+      "state": "WY",
+      "county": "Lincoln County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@43.8788,-107.6691,9z",
+      "state": "WY",
+      "county": "Washakie County",
+      "term": "propane_delivery"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+delivery/@44.7814,-106.8812,9z",
+      "state": "WY",
+      "county": "Sheridan County",
+      "term": "propane_delivery"
+    }
+  ],
+  "lp_gas": [
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@30.6592,-87.7461,9z",
+      "state": "AL",
+      "county": "Baldwin County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@32.2476,-87.7911,9z",
+      "state": "AL",
+      "county": "Marengo County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@33.5534,-86.8965,9z",
+      "state": "AL",
+      "county": "Jefferson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@34.9042,-87.6511,9z",
+      "state": "AL",
+      "county": "Lauderdale County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@33.1682,-92.5981,9z",
+      "state": "AR",
+      "county": "Union County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@34.4237,-90.8556,9z",
+      "state": "AR",
+      "county": "Phillips County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.5734,-93.4663,9z",
+      "state": "AR",
+      "county": "Johnson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.3813,-91.8193,9z",
+      "state": "AR",
+      "county": "Fulton County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@31.5257,-110.8452,9z",
+      "state": "AZ",
+      "county": "Santa Cruz County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@32.9318,-109.8783,9z",
+      "state": "AZ",
+      "county": "Graham County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@34.6311,-112.5772,9z",
+      "state": "AZ",
+      "county": "Yavapai County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.8297,-111.7737,9z",
+      "state": "AZ",
+      "county": "Coconino County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@33.0236,-116.7761,9z",
+      "state": "CA",
+      "county": "San Diego County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.2216,-121.6895,9z",
+      "state": "CA",
+      "county": "Santa Clara County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.7856,-120.5342,9z",
+      "state": "CA",
+      "county": "El Dorado County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.7499,-123.981,9z",
+      "state": "CA",
+      "county": "Del Norte County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.2024,-107.0509,9z",
+      "state": "CO",
+      "county": "Archuleta County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.1628,-104.4847,9z",
+      "state": "CO",
+      "county": "Pueblo County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.621,-106.1376,9z",
+      "state": "CO",
+      "county": "Summit County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.8716,-102.3554,9z",
+      "state": "CO",
+      "county": "Sedgwick County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.1846,-73.2094,9z",
+      "state": "CT",
+      "county": "Greater Bridgeport Planning Region",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.4203,-72.4935,9z",
+      "state": "CT",
+      "county": "Lower Connecticut River Valley Planning Region",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.817,-72.5759,9z",
+      "state": "CT",
+      "county": "Capitol Planning Region",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.8548,-73.2215,9z",
+      "state": "CT",
+      "county": "Northwest Hills Planning Region",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.6732,-75.337,9z",
+      "state": "DE",
+      "county": "Sussex County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.0971,-75.503,9z",
+      "state": "DE",
+      "county": "Kent County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.5759,-75.6441,9z",
+      "state": "DE",
+      "county": "New Castle County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@25.5861,-81.0226,9z",
+      "state": "FL",
+      "county": "Monroe County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@28.2983,-80.7003,9z",
+      "state": "FL",
+      "county": "Brevard County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@29.9901,-83.1785,9z",
+      "state": "FL",
+      "county": "Lafayette County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@30.862,-85.8159,9z",
+      "state": "FL",
+      "county": "Holmes County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@30.714,-82.8974,9z",
+      "state": "GA",
+      "county": "Echols County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@32.1178,-82.3306,9z",
+      "state": "GA",
+      "county": "Toombs County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@33.4806,-82.4796,9z",
+      "state": "GA",
+      "county": "McDuffie County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@34.9025,-83.7323,9z",
+      "state": "GA",
+      "county": "Towns County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.6476,-91.4772,9z",
+      "state": "IA",
+      "county": "Lee County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.6707,-91.5905,9z",
+      "state": "IA",
+      "county": "Johnson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.4703,-91.8387,9z",
+      "state": "IA",
+      "county": "Buchanan County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.3896,-95.1961,9z",
+      "state": "IA",
+      "county": "Dickinson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.1736,-111.823,9z",
+      "state": "ID",
+      "county": "Franklin County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.3942,-113.9554,9z",
+      "state": "ID",
+      "county": "Blaine County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.2902,-112.3546,9z",
+      "state": "ID",
+      "county": "Clark County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@48.7731,-116.5247,9z",
+      "state": "ID",
+      "county": "Boundary County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.1837,-89.3495,9z",
+      "state": "IL",
+      "county": "Alexander County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.0802,-90.3614,9z",
+      "state": "IL",
+      "county": "Jersey County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.5965,-88.2246,9z",
+      "state": "IL",
+      "county": "Ford County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.3624,-90.2115,9z",
+      "state": "IL",
+      "county": "Jo Daviess County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.0097,-87.0104,9z",
+      "state": "IN",
+      "county": "Spencer County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.2058,-85.898,9z",
+      "state": "IN",
+      "county": "Bartholomew County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.435,-85.0023,9z",
+      "state": "IN",
+      "county": "Jay County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.6435,-85.0024,9z",
+      "state": "IN",
+      "county": "Steuben County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.1543,-96.2454,9z",
+      "state": "KS",
+      "county": "Chautauqua County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.9952,-101.7937,9z",
+      "state": "KS",
+      "county": "Hamilton County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.9266,-101.7711,9z",
+      "state": "KS",
+      "county": "Wallace County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.8289,-97.6509,9z",
+      "state": "KS",
+      "county": "Republic County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.5525,-89.1877,9z",
+      "state": "KY",
+      "county": "Fulton County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.2781,-85.5379,9z",
+      "state": "KY",
+      "county": "Green County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.9229,-83.2589,9z",
+      "state": "KY",
+      "county": "Morgan County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.9589,-84.7364,9z",
+      "state": "KY",
+      "county": "Boone County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@29.2824,-89.5761,9z",
+      "state": "LA",
+      "county": "Plaquemines Parish",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@30.41,-89.952,9z",
+      "state": "LA",
+      "county": "St. Tammany Parish",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@31.6801,-92.1616,9z",
+      "state": "LA",
+      "county": "LaSalle Parish",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@32.8293,-92.3756,9z",
+      "state": "LA",
+      "county": "Union Parish",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.2934,-70.1022,9z",
+      "state": "MA",
+      "county": "Nantucket County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.9872,-70.7419,9z",
+      "state": "MA",
+      "county": "Plymouth County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.3395,-72.6637,9z",
+      "state": "MA",
+      "county": "Hampshire County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.6427,-70.8649,9z",
+      "state": "MA",
+      "county": "Essex County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.0744,-75.8533,9z",
+      "state": "MD",
+      "county": "Somerset County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.8293,-76.8482,9z",
+      "state": "MD",
+      "county": "Prince George's County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.4432,-76.6166,9z",
+      "state": "MD",
+      "county": "Baltimore County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.6123,-78.7031,9z",
+      "state": "MD",
+      "county": "Allegany County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.426,-70.6684,9z",
+      "state": "ME",
+      "county": "York County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.1677,-70.2074,9z",
+      "state": "ME",
+      "county": "Androscoggin County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.967,-67.6094,9z",
+      "state": "ME",
+      "county": "Washington County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@46.7092,-68.6124,9z",
+      "state": "ME",
+      "county": "Aroostook County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.7914,-86.7425,9z",
+      "state": "MI",
+      "county": "Berrien County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.0886,-83.2243,9z",
+      "state": "MI",
+      "county": "Lapeer County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.6789,-85.089,9z",
+      "state": "MI",
+      "county": "Kalkaska County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@47.3673,-88.3513,9z",
+      "state": "MI",
+      "county": "Keweenaw County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.6662,-92.7595,9z",
+      "state": "MN",
+      "county": "Mower County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.6518,-93.5337,9z",
+      "state": "MN",
+      "county": "Scott County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@46.0205,-94.2666,9z",
+      "state": "MN",
+      "county": "Morrison County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@48.776,-96.7803,9z",
+      "state": "MN",
+      "county": "Kittson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.153,-90.0623,9z",
+      "state": "MO",
+      "county": "Dunklin County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.7111,-89.8021,9z",
+      "state": "MO",
+      "county": "Perry County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.1358,-93.2042,9z",
+      "state": "MO",
+      "county": "Saline County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.4805,-94.4192,9z",
+      "state": "MO",
+      "county": "Worth County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@30.3916,-89.4828,9z",
+      "state": "MS",
+      "county": "Hancock County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@32.0167,-89.1192,9z",
+      "state": "MS",
+      "county": "Jasper County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@33.5498,-90.2949,9z",
+      "state": "MS",
+      "county": "Leflore County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@34.8866,-88.5811,9z",
+      "state": "MS",
+      "county": "Alcorn County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@45.1339,-112.8929,9z",
+      "state": "MT",
+      "county": "Beaverhead County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@46.3182,-104.4057,9z",
+      "state": "MT",
+      "county": "Fallon County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@47.6296,-105.7572,9z",
+      "state": "MT",
+      "county": "McCone County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@48.7944,-105.5417,9z",
+      "state": "MT",
+      "county": "Daniels County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@34.0388,-78.2278,9z",
+      "state": "NC",
+      "county": "Brunswick County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.3484,-83.8309,9z",
+      "state": "NC",
+      "county": "Graham County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.9294,-80.5426,9z",
+      "state": "NC",
+      "county": "Davie County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.4894,-81.1323,9z",
+      "state": "NC",
+      "county": "Alleghany County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@46.0968,-102.5332,9z",
+      "state": "ND",
+      "county": "Adams County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@46.9383,-99.7312,9z",
+      "state": "ND",
+      "county": "Kidder County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@47.9187,-98.2044,9z",
+      "state": "ND",
+      "county": "Nelson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@48.8148,-103.5093,9z",
+      "state": "ND",
+      "county": "Divide County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.1237,-95.7186,9z",
+      "state": "NE",
+      "county": "Richardson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.8719,-97.1404,9z",
+      "state": "NE",
+      "county": "Seward County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.7322,-102.9906,9z",
+      "state": "NE",
+      "county": "Morrill County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.8944,-98.773,9z",
+      "state": "NE",
+      "county": "Boyd County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.9115,-71.7231,9z",
+      "state": "NH",
+      "county": "Hillsborough County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.2933,-71.0356,9z",
+      "state": "NH",
+      "county": "Strafford County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.5191,-71.4254,9z",
+      "state": "NH",
+      "county": "Belknap County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.6525,-71.2894,9z",
+      "state": "NH",
+      "county": "Coos County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.0858,-74.8464,9z",
+      "state": "NJ",
+      "county": "Cape May County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.8758,-74.663,9z",
+      "state": "NJ",
+      "county": "Burlington County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.7314,-74.0786,9z",
+      "state": "NJ",
+      "county": "Hudson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.1375,-74.6919,9z",
+      "state": "NJ",
+      "county": "Sussex County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@31.8981,-108.7519,9z",
+      "state": "NM",
+      "county": "Hidalgo County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@33.9917,-106.9391,9z",
+      "state": "NM",
+      "county": "Socorro County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.5145,-105.964,9z",
+      "state": "NM",
+      "county": "Santa Fe County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.613,-104.6401,9z",
+      "state": "NM",
+      "county": "Colfax County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.2141,-115.0144,9z",
+      "state": "NV",
+      "county": "Clark County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.9051,-119.609,9z",
+      "state": "NV",
+      "county": "Douglas County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.9002,-117.0472,9z",
+      "state": "NV",
+      "county": "Lander County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.4079,-118.1276,9z",
+      "state": "NV",
+      "county": "Humboldt County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.5613,-74.1399,9z",
+      "state": "NY",
+      "county": "Richmond County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.2479,-78.0262,9z",
+      "state": "NY",
+      "county": "Allegany County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.0009,-78.1928,9z",
+      "state": "NY",
+      "county": "Genesee County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.7527,-73.7056,9z",
+      "state": "NY",
+      "county": "Clinton County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.6039,-82.5172,9z",
+      "state": "OH",
+      "county": "Lawrence County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.8966,-83.4009,9z",
+      "state": "OH",
+      "county": "Madison County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.8141,-81.3657,9z",
+      "state": "OH",
+      "county": "Stark County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.9066,-80.7456,9z",
+      "state": "OH",
+      "county": "Ashtabula County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@33.9578,-97.2451,9z",
+      "state": "OK",
+      "county": "Love County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.0164,-97.4498,9z",
+      "state": "OK",
+      "county": "McClain County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.9634,-95.5142,9z",
+      "state": "OK",
+      "county": "Wagoner County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.8358,-94.8027,9z",
+      "state": "OK",
+      "county": "Ottawa County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.387,-123.5716,9z",
+      "state": "OR",
+      "county": "Josephine County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.4889,-122.5372,9z",
+      "state": "OR",
+      "county": "Linn County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@45.3041,-117.9991,9z",
+      "state": "OR",
+      "county": "Union County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@46.0245,-123.705,9z",
+      "state": "OR",
+      "county": "Clatsop County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.8477,-80.2257,9z",
+      "state": "PA",
+      "county": "Greene County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.4698,-79.9805,9z",
+      "state": "PA",
+      "county": "Allegheny County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.138,-79.0124,9z",
+      "state": "PA",
+      "county": "Jefferson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.118,-80.0964,9z",
+      "state": "PA",
+      "county": "Erie County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.3968,-71.6203,9z",
+      "state": "RI",
+      "county": "Washington County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.6751,-71.5803,9z",
+      "state": "RI",
+      "county": "Kent County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.8698,-71.5786,9z",
+      "state": "RI",
+      "county": "Providence County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@32.3581,-80.6894,9z",
+      "state": "SC",
+      "county": "Beaufort County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@33.6748,-80.7803,9z",
+      "state": "SC",
+      "county": "Calhoun County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@34.3384,-80.5909,9z",
+      "state": "SC",
+      "county": "Kershaw County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.0498,-81.6076,9z",
+      "state": "SC",
+      "county": "Cherokee County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.8311,-96.6508,9z",
+      "state": "SD",
+      "county": "Union County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.7247,-98.5776,9z",
+      "state": "SD",
+      "county": "Aurora County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.7223,-100.1314,9z",
+      "state": "SD",
+      "county": "Sully County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@45.7856,-100.0021,9z",
+      "state": "SD",
+      "county": "Campbell County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.1094,-84.5411,9z",
+      "state": "TN",
+      "county": "Polk County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@35.6157,-87.0778,9z",
+      "state": "TN",
+      "county": "Maury County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.1691,-86.7848,9z",
+      "state": "TN",
+      "county": "Davidson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.5594,-85.0757,9z",
+      "state": "TN",
+      "county": "Pickett County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@26.1029,-97.479,9z",
+      "state": "TX",
+      "county": "Cameron County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@30.7432,-95.5698,9z",
+      "state": "TX",
+      "county": "Walker County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@32.7438,-99.347,9z",
+      "state": "TX",
+      "county": "Shackelford County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.2864,-102.594,9z",
+      "state": "TX",
+      "county": "Dallam County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.2625,-113.4878,9z",
+      "state": "UT",
+      "county": "Washington County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.9567,-113.1331,9z",
+      "state": "UT",
+      "county": "Millard County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.4678,-113.124,9z",
+      "state": "UT",
+      "county": "Tooele County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.7341,-111.7454,9z",
+      "state": "UT",
+      "county": "Cache County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@36.5833,-79.4081,9z",
+      "state": "VA",
+      "county": "Danville city",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.1367,-82.3492,9z",
+      "state": "VA",
+      "county": "Dickenson County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.7823,-79.4443,9z",
+      "state": "VA",
+      "county": "Lexington city",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.2037,-78.2638,9z",
+      "state": "VA",
+      "county": "Frederick County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.9953,-72.7219,9z",
+      "state": "VT",
+      "county": "Windham County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.0034,-72.3696,9z",
+      "state": "VT",
+      "county": "Orange County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.6112,-72.6327,9z",
+      "state": "VT",
+      "county": "Lamoille County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.859,-72.9094,9z",
+      "state": "VT",
+      "county": "Franklin County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@45.7717,-122.486,9z",
+      "state": "WA",
+      "county": "Clark County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@46.5801,-122.3774,9z",
+      "state": "WA",
+      "county": "Lewis County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@47.7418,-119.6946,9z",
+      "state": "WA",
+      "county": "Douglas County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@48.8427,-121.8364,9z",
+      "state": "WA",
+      "county": "Whatcom County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.5875,-87.88,9z",
+      "state": "WI",
+      "county": "Kenosha County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.9082,-91.1118,9z",
+      "state": "WI",
+      "county": "La Crosse County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.9913,-88.6693,9z",
+      "state": "WI",
+      "county": "Menominee County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@46.6342,-91.1773,9z",
+      "state": "WI",
+      "county": "Bayfield County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@37.3828,-81.6582,9z",
+      "state": "WV",
+      "county": "McDowell County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@38.4835,-80.4491,9z",
+      "state": "WV",
+      "county": "Webster County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@39.2116,-81.5162,9z",
+      "state": "WV",
+      "county": "Wood County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@40.517,-80.5702,9z",
+      "state": "WV",
+      "county": "Hancock County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@41.2847,-110.5589,9z",
+      "state": "WY",
+      "county": "Uinta County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@42.23,-110.683,9z",
+      "state": "WY",
+      "county": "Lincoln County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@43.8788,-107.6691,9z",
+      "state": "WY",
+      "county": "Washakie County",
+      "term": "lp_gas"
+    },
+    {
+      "url": "https://www.google.com/maps/search/LP+gas/@44.7814,-106.8812,9z",
+      "state": "WY",
+      "county": "Sheridan County",
+      "term": "lp_gas"
+    }
+  ],
+  "propane_company": [
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@30.6592,-87.7461,9z",
+      "state": "AL",
+      "county": "Baldwin County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@32.2476,-87.7911,9z",
+      "state": "AL",
+      "county": "Marengo County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@33.5534,-86.8965,9z",
+      "state": "AL",
+      "county": "Jefferson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@34.9042,-87.6511,9z",
+      "state": "AL",
+      "county": "Lauderdale County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@33.1682,-92.5981,9z",
+      "state": "AR",
+      "county": "Union County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@34.4237,-90.8556,9z",
+      "state": "AR",
+      "county": "Phillips County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.5734,-93.4663,9z",
+      "state": "AR",
+      "county": "Johnson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.3813,-91.8193,9z",
+      "state": "AR",
+      "county": "Fulton County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@31.5257,-110.8452,9z",
+      "state": "AZ",
+      "county": "Santa Cruz County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@32.9318,-109.8783,9z",
+      "state": "AZ",
+      "county": "Graham County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@34.6311,-112.5772,9z",
+      "state": "AZ",
+      "county": "Yavapai County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.8297,-111.7737,9z",
+      "state": "AZ",
+      "county": "Coconino County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@33.0236,-116.7761,9z",
+      "state": "CA",
+      "county": "San Diego County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.2216,-121.6895,9z",
+      "state": "CA",
+      "county": "Santa Clara County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.7856,-120.5342,9z",
+      "state": "CA",
+      "county": "El Dorado County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.7499,-123.981,9z",
+      "state": "CA",
+      "county": "Del Norte County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.2024,-107.0509,9z",
+      "state": "CO",
+      "county": "Archuleta County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.1628,-104.4847,9z",
+      "state": "CO",
+      "county": "Pueblo County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.621,-106.1376,9z",
+      "state": "CO",
+      "county": "Summit County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.8716,-102.3554,9z",
+      "state": "CO",
+      "county": "Sedgwick County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.1846,-73.2094,9z",
+      "state": "CT",
+      "county": "Greater Bridgeport Planning Region",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.4203,-72.4935,9z",
+      "state": "CT",
+      "county": "Lower Connecticut River Valley Planning Region",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.817,-72.5759,9z",
+      "state": "CT",
+      "county": "Capitol Planning Region",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.8548,-73.2215,9z",
+      "state": "CT",
+      "county": "Northwest Hills Planning Region",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.6732,-75.337,9z",
+      "state": "DE",
+      "county": "Sussex County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.0971,-75.503,9z",
+      "state": "DE",
+      "county": "Kent County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.5759,-75.6441,9z",
+      "state": "DE",
+      "county": "New Castle County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@25.5861,-81.0226,9z",
+      "state": "FL",
+      "county": "Monroe County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@28.2983,-80.7003,9z",
+      "state": "FL",
+      "county": "Brevard County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@29.9901,-83.1785,9z",
+      "state": "FL",
+      "county": "Lafayette County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@30.862,-85.8159,9z",
+      "state": "FL",
+      "county": "Holmes County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@30.714,-82.8974,9z",
+      "state": "GA",
+      "county": "Echols County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@32.1178,-82.3306,9z",
+      "state": "GA",
+      "county": "Toombs County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@33.4806,-82.4796,9z",
+      "state": "GA",
+      "county": "McDuffie County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@34.9025,-83.7323,9z",
+      "state": "GA",
+      "county": "Towns County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.6476,-91.4772,9z",
+      "state": "IA",
+      "county": "Lee County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.6707,-91.5905,9z",
+      "state": "IA",
+      "county": "Johnson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.4703,-91.8387,9z",
+      "state": "IA",
+      "county": "Buchanan County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.3896,-95.1961,9z",
+      "state": "IA",
+      "county": "Dickinson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.1736,-111.823,9z",
+      "state": "ID",
+      "county": "Franklin County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.3942,-113.9554,9z",
+      "state": "ID",
+      "county": "Blaine County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.2902,-112.3546,9z",
+      "state": "ID",
+      "county": "Clark County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@48.7731,-116.5247,9z",
+      "state": "ID",
+      "county": "Boundary County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.1837,-89.3495,9z",
+      "state": "IL",
+      "county": "Alexander County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.0802,-90.3614,9z",
+      "state": "IL",
+      "county": "Jersey County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.5965,-88.2246,9z",
+      "state": "IL",
+      "county": "Ford County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.3624,-90.2115,9z",
+      "state": "IL",
+      "county": "Jo Daviess County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.0097,-87.0104,9z",
+      "state": "IN",
+      "county": "Spencer County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.2058,-85.898,9z",
+      "state": "IN",
+      "county": "Bartholomew County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.435,-85.0023,9z",
+      "state": "IN",
+      "county": "Jay County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.6435,-85.0024,9z",
+      "state": "IN",
+      "county": "Steuben County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.1543,-96.2454,9z",
+      "state": "KS",
+      "county": "Chautauqua County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.9952,-101.7937,9z",
+      "state": "KS",
+      "county": "Hamilton County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.9266,-101.7711,9z",
+      "state": "KS",
+      "county": "Wallace County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.8289,-97.6509,9z",
+      "state": "KS",
+      "county": "Republic County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.5525,-89.1877,9z",
+      "state": "KY",
+      "county": "Fulton County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.2781,-85.5379,9z",
+      "state": "KY",
+      "county": "Green County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.9229,-83.2589,9z",
+      "state": "KY",
+      "county": "Morgan County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.9589,-84.7364,9z",
+      "state": "KY",
+      "county": "Boone County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@29.2824,-89.5761,9z",
+      "state": "LA",
+      "county": "Plaquemines Parish",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@30.41,-89.952,9z",
+      "state": "LA",
+      "county": "St. Tammany Parish",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@31.6801,-92.1616,9z",
+      "state": "LA",
+      "county": "LaSalle Parish",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@32.8293,-92.3756,9z",
+      "state": "LA",
+      "county": "Union Parish",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.2934,-70.1022,9z",
+      "state": "MA",
+      "county": "Nantucket County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.9872,-70.7419,9z",
+      "state": "MA",
+      "county": "Plymouth County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.3395,-72.6637,9z",
+      "state": "MA",
+      "county": "Hampshire County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.6427,-70.8649,9z",
+      "state": "MA",
+      "county": "Essex County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.0744,-75.8533,9z",
+      "state": "MD",
+      "county": "Somerset County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.8293,-76.8482,9z",
+      "state": "MD",
+      "county": "Prince George's County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.4432,-76.6166,9z",
+      "state": "MD",
+      "county": "Baltimore County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.6123,-78.7031,9z",
+      "state": "MD",
+      "county": "Allegany County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.426,-70.6684,9z",
+      "state": "ME",
+      "county": "York County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.1677,-70.2074,9z",
+      "state": "ME",
+      "county": "Androscoggin County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.967,-67.6094,9z",
+      "state": "ME",
+      "county": "Washington County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@46.7092,-68.6124,9z",
+      "state": "ME",
+      "county": "Aroostook County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.7914,-86.7425,9z",
+      "state": "MI",
+      "county": "Berrien County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.0886,-83.2243,9z",
+      "state": "MI",
+      "county": "Lapeer County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.6789,-85.089,9z",
+      "state": "MI",
+      "county": "Kalkaska County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@47.3673,-88.3513,9z",
+      "state": "MI",
+      "county": "Keweenaw County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.6662,-92.7595,9z",
+      "state": "MN",
+      "county": "Mower County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.6518,-93.5337,9z",
+      "state": "MN",
+      "county": "Scott County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@46.0205,-94.2666,9z",
+      "state": "MN",
+      "county": "Morrison County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@48.776,-96.7803,9z",
+      "state": "MN",
+      "county": "Kittson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.153,-90.0623,9z",
+      "state": "MO",
+      "county": "Dunklin County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.7111,-89.8021,9z",
+      "state": "MO",
+      "county": "Perry County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.1358,-93.2042,9z",
+      "state": "MO",
+      "county": "Saline County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.4805,-94.4192,9z",
+      "state": "MO",
+      "county": "Worth County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@30.3916,-89.4828,9z",
+      "state": "MS",
+      "county": "Hancock County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@32.0167,-89.1192,9z",
+      "state": "MS",
+      "county": "Jasper County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@33.5498,-90.2949,9z",
+      "state": "MS",
+      "county": "Leflore County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@34.8866,-88.5811,9z",
+      "state": "MS",
+      "county": "Alcorn County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@45.1339,-112.8929,9z",
+      "state": "MT",
+      "county": "Beaverhead County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@46.3182,-104.4057,9z",
+      "state": "MT",
+      "county": "Fallon County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@47.6296,-105.7572,9z",
+      "state": "MT",
+      "county": "McCone County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@48.7944,-105.5417,9z",
+      "state": "MT",
+      "county": "Daniels County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@34.0388,-78.2278,9z",
+      "state": "NC",
+      "county": "Brunswick County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.3484,-83.8309,9z",
+      "state": "NC",
+      "county": "Graham County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.9294,-80.5426,9z",
+      "state": "NC",
+      "county": "Davie County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.4894,-81.1323,9z",
+      "state": "NC",
+      "county": "Alleghany County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@46.0968,-102.5332,9z",
+      "state": "ND",
+      "county": "Adams County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@46.9383,-99.7312,9z",
+      "state": "ND",
+      "county": "Kidder County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@47.9187,-98.2044,9z",
+      "state": "ND",
+      "county": "Nelson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@48.8148,-103.5093,9z",
+      "state": "ND",
+      "county": "Divide County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.1237,-95.7186,9z",
+      "state": "NE",
+      "county": "Richardson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.8719,-97.1404,9z",
+      "state": "NE",
+      "county": "Seward County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.7322,-102.9906,9z",
+      "state": "NE",
+      "county": "Morrill County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.8944,-98.773,9z",
+      "state": "NE",
+      "county": "Boyd County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.9115,-71.7231,9z",
+      "state": "NH",
+      "county": "Hillsborough County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.2933,-71.0356,9z",
+      "state": "NH",
+      "county": "Strafford County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.5191,-71.4254,9z",
+      "state": "NH",
+      "county": "Belknap County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.6525,-71.2894,9z",
+      "state": "NH",
+      "county": "Coos County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.0858,-74.8464,9z",
+      "state": "NJ",
+      "county": "Cape May County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.8758,-74.663,9z",
+      "state": "NJ",
+      "county": "Burlington County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.7314,-74.0786,9z",
+      "state": "NJ",
+      "county": "Hudson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.1375,-74.6919,9z",
+      "state": "NJ",
+      "county": "Sussex County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@31.8981,-108.7519,9z",
+      "state": "NM",
+      "county": "Hidalgo County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@33.9917,-106.9391,9z",
+      "state": "NM",
+      "county": "Socorro County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.5145,-105.964,9z",
+      "state": "NM",
+      "county": "Santa Fe County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.613,-104.6401,9z",
+      "state": "NM",
+      "county": "Colfax County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.2141,-115.0144,9z",
+      "state": "NV",
+      "county": "Clark County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.9051,-119.609,9z",
+      "state": "NV",
+      "county": "Douglas County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.9002,-117.0472,9z",
+      "state": "NV",
+      "county": "Lander County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.4079,-118.1276,9z",
+      "state": "NV",
+      "county": "Humboldt County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.5613,-74.1399,9z",
+      "state": "NY",
+      "county": "Richmond County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.2479,-78.0262,9z",
+      "state": "NY",
+      "county": "Allegany County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.0009,-78.1928,9z",
+      "state": "NY",
+      "county": "Genesee County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.7527,-73.7056,9z",
+      "state": "NY",
+      "county": "Clinton County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.6039,-82.5172,9z",
+      "state": "OH",
+      "county": "Lawrence County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.8966,-83.4009,9z",
+      "state": "OH",
+      "county": "Madison County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.8141,-81.3657,9z",
+      "state": "OH",
+      "county": "Stark County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.9066,-80.7456,9z",
+      "state": "OH",
+      "county": "Ashtabula County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@33.9578,-97.2451,9z",
+      "state": "OK",
+      "county": "Love County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.0164,-97.4498,9z",
+      "state": "OK",
+      "county": "McClain County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.9634,-95.5142,9z",
+      "state": "OK",
+      "county": "Wagoner County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.8358,-94.8027,9z",
+      "state": "OK",
+      "county": "Ottawa County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.387,-123.5716,9z",
+      "state": "OR",
+      "county": "Josephine County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.4889,-122.5372,9z",
+      "state": "OR",
+      "county": "Linn County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@45.3041,-117.9991,9z",
+      "state": "OR",
+      "county": "Union County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@46.0245,-123.705,9z",
+      "state": "OR",
+      "county": "Clatsop County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.8477,-80.2257,9z",
+      "state": "PA",
+      "county": "Greene County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.4698,-79.9805,9z",
+      "state": "PA",
+      "county": "Allegheny County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.138,-79.0124,9z",
+      "state": "PA",
+      "county": "Jefferson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.118,-80.0964,9z",
+      "state": "PA",
+      "county": "Erie County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.3968,-71.6203,9z",
+      "state": "RI",
+      "county": "Washington County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.6751,-71.5803,9z",
+      "state": "RI",
+      "county": "Kent County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.8698,-71.5786,9z",
+      "state": "RI",
+      "county": "Providence County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@32.3581,-80.6894,9z",
+      "state": "SC",
+      "county": "Beaufort County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@33.6748,-80.7803,9z",
+      "state": "SC",
+      "county": "Calhoun County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@34.3384,-80.5909,9z",
+      "state": "SC",
+      "county": "Kershaw County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.0498,-81.6076,9z",
+      "state": "SC",
+      "county": "Cherokee County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.8311,-96.6508,9z",
+      "state": "SD",
+      "county": "Union County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.7247,-98.5776,9z",
+      "state": "SD",
+      "county": "Aurora County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.7223,-100.1314,9z",
+      "state": "SD",
+      "county": "Sully County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@45.7856,-100.0021,9z",
+      "state": "SD",
+      "county": "Campbell County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.1094,-84.5411,9z",
+      "state": "TN",
+      "county": "Polk County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@35.6157,-87.0778,9z",
+      "state": "TN",
+      "county": "Maury County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.1691,-86.7848,9z",
+      "state": "TN",
+      "county": "Davidson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.5594,-85.0757,9z",
+      "state": "TN",
+      "county": "Pickett County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@26.1029,-97.479,9z",
+      "state": "TX",
+      "county": "Cameron County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@30.7432,-95.5698,9z",
+      "state": "TX",
+      "county": "Walker County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@32.7438,-99.347,9z",
+      "state": "TX",
+      "county": "Shackelford County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.2864,-102.594,9z",
+      "state": "TX",
+      "county": "Dallam County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.2625,-113.4878,9z",
+      "state": "UT",
+      "county": "Washington County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.9567,-113.1331,9z",
+      "state": "UT",
+      "county": "Millard County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.4678,-113.124,9z",
+      "state": "UT",
+      "county": "Tooele County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.7341,-111.7454,9z",
+      "state": "UT",
+      "county": "Cache County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@36.5833,-79.4081,9z",
+      "state": "VA",
+      "county": "Danville city",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.1367,-82.3492,9z",
+      "state": "VA",
+      "county": "Dickenson County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.7823,-79.4443,9z",
+      "state": "VA",
+      "county": "Lexington city",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.2037,-78.2638,9z",
+      "state": "VA",
+      "county": "Frederick County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.9953,-72.7219,9z",
+      "state": "VT",
+      "county": "Windham County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.0034,-72.3696,9z",
+      "state": "VT",
+      "county": "Orange County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.6112,-72.6327,9z",
+      "state": "VT",
+      "county": "Lamoille County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.859,-72.9094,9z",
+      "state": "VT",
+      "county": "Franklin County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@45.7717,-122.486,9z",
+      "state": "WA",
+      "county": "Clark County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@46.5801,-122.3774,9z",
+      "state": "WA",
+      "county": "Lewis County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@47.7418,-119.6946,9z",
+      "state": "WA",
+      "county": "Douglas County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@48.8427,-121.8364,9z",
+      "state": "WA",
+      "county": "Whatcom County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.5875,-87.88,9z",
+      "state": "WI",
+      "county": "Kenosha County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.9082,-91.1118,9z",
+      "state": "WI",
+      "county": "La Crosse County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.9913,-88.6693,9z",
+      "state": "WI",
+      "county": "Menominee County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@46.6342,-91.1773,9z",
+      "state": "WI",
+      "county": "Bayfield County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@37.3828,-81.6582,9z",
+      "state": "WV",
+      "county": "McDowell County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@38.4835,-80.4491,9z",
+      "state": "WV",
+      "county": "Webster County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@39.2116,-81.5162,9z",
+      "state": "WV",
+      "county": "Wood County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@40.517,-80.5702,9z",
+      "state": "WV",
+      "county": "Hancock County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@41.2847,-110.5589,9z",
+      "state": "WY",
+      "county": "Uinta County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@42.23,-110.683,9z",
+      "state": "WY",
+      "county": "Lincoln County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@43.8788,-107.6691,9z",
+      "state": "WY",
+      "county": "Washakie County",
+      "term": "propane_company"
+    },
+    {
+      "url": "https://www.google.com/maps/search/propane+company/@44.7814,-106.8812,9z",
+      "state": "WY",
+      "county": "Sheridan County",
+      "term": "propane_company"
+    }
+  ]
+}

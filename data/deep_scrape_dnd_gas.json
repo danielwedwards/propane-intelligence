@@ -1,0 +1,10 @@
+{
+  "source": "dndgas.com and public listings",
+  "scraped": "2026-04-11",
+  "company": "D & D Gas",
+  "parent": "Energy Distribution Partners (EDP)",
+  "notes": "EDP acquired D&D Gas of Jacksonville, FL. Single-location operator serving Jacksonville, Neptune Beach, St. Augustine, Atlantic Beach, Orange Park, Jacksonville Beach, Ponte Vedra, Doctors Lake.",
+  "locations": [
+    {"name": "D & D Gas - Jacksonville", "street": "7709 Alton Ave", "city": "Jacksonville", "state": "FL", "zip": "32211", "phone": "904-725-9144"}
+  ]
+}

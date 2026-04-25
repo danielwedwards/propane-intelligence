@@ -1,0 +1,11 @@
+{
+  "source": "https://www.fickandsons.com/contact/",
+  "scraped": "2026-04-11",
+  "company": "Fick & Sons",
+  "locations": [
+    {"name": "Fick & Sons - Grayling (HQ)", "street": "113 Fig St", "city": "Grayling", "state": "MI", "zip": "49738", "phone": "989-348-7647"},
+    {"name": "Fick & Sons - Houghton Lake", "street": "8148 W Houghton Lake Dr", "city": "Houghton Lake", "state": "MI", "zip": "48629", "phone": "989-422-6647"},
+    {"name": "Fick & Sons - West Branch", "street": "3259 W M76", "city": "West Branch", "state": "MI", "zip": "48661", "phone": "989-345-7551"},
+    {"name": "Fick & Sons - Mikado", "street": "2339 S F41", "city": "Mikado", "state": "MI", "zip": "48745", "phone": "989-736-7777"}
+  ]
+}

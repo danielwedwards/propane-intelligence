@@ -1,0 +1,18 @@
+{
+  "source": "https://www.tankfarm.io/",
+  "scraped": "2026-04-11",
+  "note": "Tankfarm is a technology-enabled propane marketplace/platform (Public Benefit Corporation, not a traditional multi-branch retailer). Operates via a network of supplier partners rather than owned branches. Serves 500+ ZIP codes across CT, MA, RI, NH. Only one physical headquarters.",
+  "locations": [
+    {
+      "name": "Tankfarm HQ",
+      "street": "780 James P. Casey Road",
+      "city": "Bristol",
+      "state": "CT",
+      "zip": "06010",
+      "phone": "1-855-239-8674",
+      "lat": null,
+      "lng": null,
+      "type": "headquarters_only"
+    }
+  ]
+}

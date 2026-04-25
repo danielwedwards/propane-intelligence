@@ -1,0 +1,1521 @@
+{
+  "batch": "adjacent_2_md_de_pa_il",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "3eight Energy",
+      "hqCity": "Latrobe",
+      "hqState": "PA",
+      "website": "https://3eightenergy.com",
+      "ownership": "private",
+      "notes": "PAPGA member propane retailer serving western Pennsylvania.",
+      "knownLocations": [
+        {
+          "city": "Latrobe",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Ace-Robbins, Inc.",
+      "hqCity": "Tunkhannock",
+      "hqState": "PA",
+      "website": "https://acerobbins.com",
+      "ownership": "family",
+      "notes": "Northeast PA multi-service energy provider including propane delivery.",
+      "knownLocations": [
+        {
+          "city": "Tunkhannock",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Algas Company",
+      "hqCity": "Gallitzin",
+      "hqState": "PA",
+      "website": "https://algaspropane.com",
+      "ownership": "family",
+      "notes": "Independent propane dealer in west-central Pennsylvania.",
+      "knownLocations": [
+        {
+          "city": "Gallitzin",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Barber Oil and Propane",
+      "hqCity": "Ebensburg",
+      "hqState": "PA",
+      "website": "https://barberoil.com",
+      "ownership": "family",
+      "notes": "Cambria County family propane and heating oil provider.",
+      "knownLocations": [
+        {
+          "city": "Ebensburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Bedford Valley Petroleum",
+      "hqCity": "Everett",
+      "hqState": "PA",
+      "website": "https://bvpetroleum.com",
+      "ownership": "family",
+      "notes": "South-central Pennsylvania fuel and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Everett",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Berwick Gas Sales",
+      "hqCity": "Berwick",
+      "hqState": "PA",
+      "website": "https://berwickgasinc.net",
+      "ownership": "family",
+      "notes": "Columbia County propane retailer.",
+      "knownLocations": [
+        {
+          "city": "Berwick",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Blackhorse Propane",
+      "hqCity": "Parkesburg",
+      "hqState": "PA",
+      "website": "https://blackhorsepropane.com",
+      "ownership": "family",
+      "notes": "Chester County independent propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Parkesburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Bluhms Gas Sales, Inc.",
+      "hqCity": "Wyalusing",
+      "hqState": "PA",
+      "website": "https://bluhms.com",
+      "ownership": "family",
+      "notes": "Bradford County family propane company.",
+      "knownLocations": [
+        {
+          "city": "Wyalusing",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Boligs Propane",
+      "hqCity": "Millersburg",
+      "hqState": "PA",
+      "website": "https://boligspropane.com",
+      "ownership": "family",
+      "notes": "Dauphin County independent propane retailer.",
+      "knownLocations": [
+        {
+          "city": "Millersburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Buckeye Energy Services, LLC",
+      "hqCity": "Allentown",
+      "hqState": "PA",
+      "website": "https://buckeyeenergyservices.com",
+      "ownership": "private",
+      "notes": "Lehigh Valley fuel and propane services provider.",
+      "knownLocations": [
+        {
+          "city": "Allentown",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Button Energy",
+      "hqCity": "Mountaintop",
+      "hqState": "PA",
+      "website": "https://buttonoil.com",
+      "ownership": "family",
+      "notes": "90-plus year family-owned propane and oil in Wilkes-Barre/Scranton area.",
+      "knownLocations": [
+        {
+          "city": "Mountaintop",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Carlisle Petroleum",
+      "hqCity": "Carlisle",
+      "hqState": "PA",
+      "website": "https://carlislepetroleum.com",
+      "ownership": "family",
+      "notes": "Cumberland County fuel distributor including propane.",
+      "knownLocations": [
+        {
+          "city": "Carlisle",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Clyde S. Walton",
+      "hqCity": "Lansdale",
+      "hqState": "PA",
+      "website": "https://waltoninc.com",
+      "ownership": "family",
+      "notes": "Montgomery County heating and propane service provider.",
+      "knownLocations": [
+        {
+          "city": "Lansdale",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Community Propane, LLC",
+      "hqCity": "Quarryville",
+      "hqState": "PA",
+      "website": "https://peoplescommunitypropane.com",
+      "ownership": "family",
+      "notes": "Lancaster County independent propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Quarryville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "County Propane",
+      "hqCity": "Downingtown",
+      "hqState": "PA",
+      "website": "https://countypropaneonline.com",
+      "ownership": "family",
+      "notes": "Chester County residential and commercial propane.",
+      "knownLocations": [
+        {
+          "city": "Downingtown",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Desousa Oil and Service Corporation",
+      "hqCity": "Palmerton",
+      "hqState": "PA",
+      "website": "https://desousaoil.com",
+      "ownership": "family",
+      "notes": "Carbon County fuel and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Palmerton",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Dolan Oil Service",
+      "hqCity": "York Haven",
+      "hqState": "PA",
+      "website": "https://dolanoilservice.com",
+      "ownership": "family",
+      "notes": "York County fuel oil and propane retailer.",
+      "knownLocations": [
+        {
+          "city": "York Haven",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Donaldsons Alternative Energy Solutions, LLC",
+      "hqCity": "Peach Bottom",
+      "hqState": "PA",
+      "website": "https://donaldsonshvac.com",
+      "ownership": "family",
+      "notes": "Southern York County HVAC, oil and propane provider.",
+      "knownLocations": [
+        {
+          "city": "Peach Bottom",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "E. F. Laudenslager, Inc.",
+      "hqCity": "Orefield",
+      "hqState": "PA",
+      "website": "https://eflaud.com",
+      "ownership": "family",
+      "notes": "Lehigh Valley family propane and oil dealer.",
+      "knownLocations": [
+        {
+          "city": "Orefield",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "E. L. Heard and Son, Inc.",
+      "hqCity": "Waterford",
+      "hqState": "PA",
+      "website": null,
+      "ownership": "family",
+      "notes": "Erie County family propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Waterford",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "East Coast Propane",
+      "hqCity": "Hulmeville",
+      "hqState": "PA",
+      "website": "https://eastcoastpropane.com",
+      "ownership": "private",
+      "notes": "Bucks County propane delivery company.",
+      "knownLocations": [
+        {
+          "city": "Hulmeville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Elite Fuel Service, LLC",
+      "hqCity": "Reading",
+      "hqState": "PA",
+      "website": "https://elitefuelservice.com",
+      "ownership": "family",
+      "notes": "Berks County propane and fuel oil dealer.",
+      "knownLocations": [
+        {
+          "city": "Reading",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Fegley Oil Company",
+      "hqCity": "Tamaqua",
+      "hqState": "PA",
+      "website": "https://fegleyoil.com",
+      "ownership": "family",
+      "notes": "Schuylkill County family oil and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Tamaqua",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Ferro Propane, LLC",
+      "hqCity": "Boothwyn",
+      "hqState": "PA",
+      "website": "https://ferrofueloil.com",
+      "ownership": "family",
+      "notes": "Delaware County independent propane and oil dealer.",
+      "knownLocations": [
+        {
+          "city": "Boothwyn",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Fogels Fuel Service",
+      "hqCity": "Nazareth",
+      "hqState": "PA",
+      "website": "https://fogelsfuel.com",
+      "ownership": "family",
+      "notes": "Northampton County fuel and propane service.",
+      "knownLocations": [
+        {
+          "city": "Nazareth",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Friday Gas and Oil Company",
+      "hqCity": "Weedville",
+      "hqState": "PA",
+      "website": "https://fridaygasandoil.com",
+      "ownership": "family",
+      "notes": "Elk County family propane and oil dealer.",
+      "knownLocations": [
+        {
+          "city": "Weedville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "GasTec Enterprises, Inc.",
+      "hqCity": "Ivyland",
+      "hqState": "PA",
+      "website": "https://gasteconline.com",
+      "ownership": "private",
+      "notes": "Bucks County propane equipment and supply.",
+      "knownLocations": [
+        {
+          "city": "Ivyland",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Greenleaf Propane",
+      "hqCity": "Wayne",
+      "hqState": "PA",
+      "website": "https://greenleafpropane.com",
+      "ownership": "private",
+      "notes": "Main Line Pennsylvania propane retailer.",
+      "knownLocations": [
+        {
+          "city": "Wayne",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Highhouse Oil Operations",
+      "hqCity": "Uniondale",
+      "hqState": "PA",
+      "website": "https://highhouseenergy.com",
+      "ownership": "family",
+      "notes": "Northeast PA oil and propane distributor.",
+      "knownLocations": [
+        {
+          "city": "Uniondale",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Hiltz Propane Systems",
+      "hqCity": "Marietta",
+      "hqState": "PA",
+      "website": "https://hiltzpropanesystems.com",
+      "ownership": "private",
+      "notes": "Propane systems and retail services in Lancaster County.",
+      "knownLocations": [
+        {
+          "city": "Marietta",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Hinds Energy",
+      "hqCity": "Montrose",
+      "hqState": "PA",
+      "website": "https://hindsenergy.com",
+      "ownership": "family",
+      "notes": "Susquehanna County propane and fuel dealer.",
+      "knownLocations": [
+        {
+          "city": "Montrose",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Holtzman Propane, LC",
+      "hqCity": "Levittown",
+      "hqState": "PA",
+      "website": "https://holtzmancorp.com",
+      "ownership": "family",
+      "notes": "Bucks County propane dealer part of Holtzman Corp.",
+      "knownLocations": [
+        {
+          "city": "Levittown",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Ingram Fuels",
+      "hqCity": "Howard",
+      "hqState": "PA",
+      "website": "https://ingram-fuels.com",
+      "ownership": "family",
+      "notes": "Central PA propane and fuel retailer.",
+      "knownLocations": [
+        {
+          "city": "Howard",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "JJ Powell, Inc.",
+      "hqCity": "Philipsburg",
+      "hqState": "PA",
+      "website": "https://jjpowell.com",
+      "ownership": "family",
+      "notes": "Central PA petroleum and propane distributor.",
+      "knownLocations": [
+        {
+          "city": "Philipsburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "John H. Murray and Son, Inc.",
+      "hqCity": "Sayre",
+      "hqState": "PA",
+      "website": "https://johnhmurray.com",
+      "ownership": "family",
+      "notes": "Bradford County family propane and fuel dealer.",
+      "knownLocations": [
+        {
+          "city": "Sayre",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Keehn Service Corporation",
+      "hqCity": "Coatesville",
+      "hqState": "PA",
+      "website": "https://keehnservice.com",
+      "ownership": "family",
+      "notes": "Chester County HVAC and propane provider.",
+      "knownLocations": [
+        {
+          "city": "Coatesville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Lenox Propane",
+      "hqCity": "Clifford Township",
+      "hqState": "PA",
+      "website": "https://lenoxpropane.net",
+      "ownership": "family",
+      "notes": "Susquehanna County independent propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Clifford Township",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "LP Cylinder Service, Inc.",
+      "hqCity": "Shohola",
+      "hqState": "PA",
+      "website": "https://lpcylinder.com",
+      "ownership": "family",
+      "notes": "Pike County propane cylinder and bulk dealer.",
+      "knownLocations": [
+        {
+          "city": "Shohola",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Luther P. Miller, Inc.",
+      "hqCity": "Somerset",
+      "hqState": "PA",
+      "website": "https://lutherpmiller.com",
+      "ownership": "family",
+      "notes": "Somerset County fuel and propane distributor.",
+      "knownLocations": [
+        {
+          "city": "Somerset",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Martindale Propane",
+      "hqCity": "New Holland",
+      "hqState": "PA",
+      "website": "https://martindalepropane.com",
+      "ownership": "family",
+      "notes": "Lancaster County family propane retailer.",
+      "knownLocations": [
+        {
+          "city": "New Holland",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "McCleary Oil Company",
+      "hqCity": "Chambersburg",
+      "hqState": "PA",
+      "website": "https://mcclearyoil.com",
+      "ownership": "family",
+      "notes": "Franklin County oil and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Chambersburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "McLaughlin Oil and Propane",
+      "hqCity": "Duncansville",
+      "hqState": "PA",
+      "website": "https://mcloilpropane.com",
+      "ownership": "family",
+      "notes": "Blair County (Altoona area) fuel and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Duncansville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "McLaughlins Energy Service",
+      "hqCity": "Waynesboro",
+      "hqState": "PA",
+      "website": "https://mclheat.com",
+      "ownership": "family",
+      "notes": "Franklin County propane and oil family dealer.",
+      "knownLocations": [
+        {
+          "city": "Waynesboro",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Millers Gas and Oil Service, Inc",
+      "hqCity": "Shamokin",
+      "hqState": "PA",
+      "website": "https://millergasandoil.com",
+      "ownership": "family",
+      "notes": "Northumberland County family propane and oil dealer.",
+      "knownLocations": [
+        {
+          "city": "Shamokin",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Moyer Indoor Outdoor",
+      "hqCity": "Souderton",
+      "hqState": "PA",
+      "website": "https://emoyer.com",
+      "ownership": "family",
+      "notes": "Montgomery County multi-service energy provider including propane.",
+      "knownLocations": [
+        {
+          "city": "Souderton",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Moyers Gas Service, Inc.",
+      "hqCity": "Freeburg",
+      "hqState": "PA",
+      "website": "https://moyersgas.com",
+      "ownership": "family",
+      "notes": "Snyder County family propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Freeburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Nevco Fuel Service, LLC",
+      "hqCity": "Lititz",
+      "hqState": "PA",
+      "website": "https://nevcofuelservice.com",
+      "ownership": "family",
+      "notes": "Lancaster County propane and fuel service.",
+      "knownLocations": [
+        {
+          "city": "Lititz",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "OBriens Fuel and Service, LLC",
+      "hqCity": "York",
+      "hqState": "PA",
+      "website": "https://obriensfuelandservice.com",
+      "ownership": "family",
+      "notes": "York County fuel and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "York",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Penn Valley Gas, Inc.",
+      "hqCity": "Telford",
+      "hqState": "PA",
+      "website": "https://pennvalleygas.com",
+      "ownership": "family",
+      "notes": "Montgomery/Bucks border propane retailer.",
+      "knownLocations": [
+        {
+          "city": "Telford",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Pennsylvania Propane Gas Company, Inc.",
+      "hqCity": "Rockwood",
+      "hqState": "PA",
+      "website": "https://papropanegas.com",
+      "ownership": "family",
+      "notes": "Somerset County independent propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Rockwood",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Penny Wise Fuel",
+      "hqCity": "Henryville",
+      "hqState": "PA",
+      "website": "https://pennywisefuel.com",
+      "ownership": "family",
+      "notes": "Pocono region propane and fuel dealer.",
+      "knownLocations": [
+        {
+          "city": "Henryville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Plociniak Oil Company, Inc.",
+      "hqCity": "Covington Twp",
+      "hqState": "PA",
+      "website": "https://plociniakfuel.com",
+      "ownership": "family",
+      "notes": "Lackawanna County family oil and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Covington Twp",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Ressler Propane",
+      "hqCity": "Mountville",
+      "hqState": "PA",
+      "website": "https://resslerpropane.com",
+      "ownership": "family",
+      "notes": "Lancaster County propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Mountville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Rhoads Energy Corporation",
+      "hqCity": "Lancaster",
+      "hqState": "PA",
+      "website": "https://rhoadsenergy.com",
+      "ownership": "family",
+      "notes": "Large Lancaster-based family energy firm including propane.",
+      "knownLocations": [
+        {
+          "city": "Lancaster",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "SAC Energy",
+      "hqCity": "Bedford",
+      "hqState": "PA",
+      "website": "https://sacenergy.com",
+      "ownership": "family",
+      "notes": "Bedford County propane and fuel dealer.",
+      "knownLocations": [
+        {
+          "city": "Bedford",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Salters Propane, Inc.",
+      "hqCity": "Eagleville",
+      "hqState": "PA",
+      "website": "https://salterspropane.com",
+      "ownership": "family",
+      "notes": "Montgomery County propane retailer.",
+      "knownLocations": [
+        {
+          "city": "Eagleville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Schwanger Brothers and Company",
+      "hqCity": "Lancaster",
+      "hqState": "PA",
+      "website": "https://schwangerbros.com",
+      "ownership": "family",
+      "notes": "Lancaster County family propane and fuel dealer.",
+      "knownLocations": [
+        {
+          "city": "Lancaster",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Shaffers Bottled Gas",
+      "hqCity": "Hooversville",
+      "hqState": "PA",
+      "website": "https://sbgcomfort.com",
+      "ownership": "family",
+      "notes": "Somerset County family propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Hooversville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Sharkeys Fuels Sales",
+      "hqCity": "Waymart",
+      "hqState": "PA",
+      "website": "https://sharkeyfuels.com",
+      "ownership": "family",
+      "notes": "Wayne County fuel and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Waymart",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Shipley Energy",
+      "hqCity": "Hanover",
+      "hqState": "PA",
+      "website": "https://shipleyenergy.com",
+      "ownership": "family",
+      "notes": "Large York-area multi-fuel provider including propane.",
+      "knownLocations": [
+        {
+          "city": "Hanover",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Snedeker Energy, LLC",
+      "hqCity": "Lewistown",
+      "hqState": "PA",
+      "website": "https://snedoil.com",
+      "ownership": "family",
+      "notes": "Mifflin County family propane and oil dealer.",
+      "knownLocations": [
+        {
+          "city": "Lewistown",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Smith Propane and Oil",
+      "hqCity": "Loyalhanna",
+      "hqState": "PA",
+      "website": "https://smithpropaneandoil.com",
+      "ownership": "family",
+      "notes": "Westmoreland County family propane/fuel dealer serving Altoona, Johnstown, Indiana PA.",
+      "knownLocations": [
+        {
+          "city": "Loyalhanna",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Smucker Propane",
+      "hqCity": "Gap",
+      "hqState": "PA",
+      "website": "https://smuckerpropane.com",
+      "ownership": "family",
+      "notes": "Lancaster County independent propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Gap",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Stuck Enterprises, Inc.",
+      "hqCity": "Waynesburg",
+      "hqState": "PA",
+      "website": "https://jacobspetro.com",
+      "ownership": "family",
+      "notes": "Greene County propane and petroleum dealer.",
+      "knownLocations": [
+        {
+          "city": "Waynesburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Styer Propane",
+      "hqCity": "Uwchland",
+      "hqState": "PA",
+      "website": "https://styerpropane.com",
+      "ownership": "family",
+      "notes": "Chester County propane retailer.",
+      "knownLocations": [
+        {
+          "city": "Uwchland",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Sullivan Oil and Propane",
+      "hqCity": "Bath",
+      "hqState": "PA",
+      "website": "https://sullivanoilandpropane.com",
+      "ownership": "family",
+      "notes": "Northampton County family propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Bath",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Susquehanna Oil and Propane",
+      "hqCity": "Dillsburg",
+      "hqState": "PA",
+      "website": "https://susquehannaoilandpropane.com",
+      "ownership": "family",
+      "notes": "York County oil and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Dillsburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Sweetwater Propane",
+      "hqCity": "Ephrata",
+      "hqState": "PA",
+      "website": "https://sweetwaterpropane.com",
+      "ownership": "family",
+      "notes": "Lancaster County independent propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Ephrata",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Tanner Home and Energy",
+      "hqCity": "Shippensburg",
+      "hqState": "PA",
+      "website": "https://thebestheat.com",
+      "ownership": "family",
+      "notes": "Cumberland/Franklin propane and HVAC provider.",
+      "knownLocations": [
+        {
+          "city": "Shippensburg",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Taylor Oil and Propane, Inc.",
+      "hqCity": "Kennett Square",
+      "hqState": "PA",
+      "website": "https://tayloroilandpropane.com",
+      "ownership": "family",
+      "notes": "Chester County family fuel and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Kennett Square",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Tolinos Fuel Service, Inc.",
+      "hqCity": "Bangor",
+      "hqState": "PA",
+      "website": "https://tolinosfuel.com",
+      "ownership": "family",
+      "notes": "Northampton County family fuel and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Bangor",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Union Petroleum Company",
+      "hqCity": "Luzerne",
+      "hqState": "PA",
+      "website": "https://unionpetroleum.net",
+      "ownership": "family",
+      "notes": "Luzerne County fuel and propane distributor.",
+      "knownLocations": [
+        {
+          "city": "Luzerne",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Venezia LPG Services, Inc.",
+      "hqCity": "Pottstown",
+      "hqState": "PA",
+      "website": "https://veneziainc.com",
+      "ownership": "family",
+      "notes": "Montgomery County LP gas services provider.",
+      "knownLocations": [
+        {
+          "city": "Pottstown",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Whitelock and Woerth, Inc.",
+      "hqCity": "Christiana",
+      "hqState": "PA",
+      "website": "https://whitelockandwoerth.com",
+      "ownership": "family",
+      "notes": "Lancaster County fuel and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Christiana",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Wilson Oil and Propane",
+      "hqCity": "Wallingford",
+      "hqState": "PA",
+      "website": "https://wilsonoilandpropane.com",
+      "ownership": "family",
+      "notes": "Delaware County family oil and propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Wallingford",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "WOC Energy Services",
+      "hqCity": "Towanda",
+      "hqState": "PA",
+      "website": "https://wocenergy.com",
+      "ownership": "private",
+      "notes": "Bradford County fuel and propane services.",
+      "knownLocations": [
+        {
+          "city": "Towanda",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "X-Press Energy",
+      "hqCity": "Phoenixville",
+      "hqState": "PA",
+      "website": "https://xpressenergypa.com",
+      "ownership": "private",
+      "notes": "Chester County propane and energy provider.",
+      "knownLocations": [
+        {
+          "city": "Phoenixville",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Flynn Energy Transport, Inc.",
+      "hqCity": "Towanda",
+      "hqState": "PA",
+      "website": "https://flynnenergy1.com",
+      "ownership": "private",
+      "notes": "Bradford County energy transport and propane distribution.",
+      "knownLocations": [
+        {
+          "city": "Towanda",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Tri-Gas and Oil",
+      "hqCity": "Federalsburg",
+      "hqState": "MD",
+      "website": "https://trigas-oil.com",
+      "ownership": "family",
+      "notes": "Family-owned propane and fuel dealer on Maryland Eastern Shore (also PAPGA member).",
+      "knownLocations": [
+        {
+          "city": "Federalsburg",
+          "state": "MD",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "W. L. Zimmerman and Sons, Inc.",
+      "hqCity": "Intercourse",
+      "hqState": "PA",
+      "website": "https://wlzimmerman.com",
+      "ownership": "family",
+      "notes": "Lancaster County family propane and fuel supplier.",
+      "knownLocations": [
+        {
+          "city": "Intercourse",
+          "state": "PA",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "AC and T Co., Inc.",
+      "hqCity": "Hagerstown",
+      "hqState": "MD",
+      "website": "https://www.acandt.com",
+      "ownership": "family",
+      "notes": "Western Maryland family propane, fuel and convenience store operator.",
+      "knownLocations": [
+        {
+          "city": "Hagerstown",
+          "state": "MD",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Shawleys L.P. Gas",
+      "hqCity": "Hagerstown",
+      "hqState": "MD",
+      "website": null,
+      "ownership": "family",
+      "notes": "Washington County family propane dealer.",
+      "knownLocations": [
+        {
+          "city": "Hagerstown",
+          "state": "MD",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Griffith Energy Services, Inc.",
+      "hqCity": "Columbia",
+      "hqState": "MD",
+      "website": "https://www.griffithenergyservices.com",
+      "ownership": "private",
+      "notes": "Major Mid-Atlantic full-service fuel and propane provider serving Hagerstown and DC metro.",
+      "knownLocations": [
+        {
+          "city": "Columbia",
+          "state": "MD",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Callahans Gas",
+      "hqCity": "Preston",
+      "hqState": "MD",
+      "website": "https://www.callahangas.com",
+      "ownership": "family",
+      "notes": "Eastern Shore propane retailer with Caroline/Talbot/Dorchester coverage.",
+      "knownLocations": [
+        {
+          "city": "Preston",
+          "state": "MD",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Bob Willey and Sons",
+      "hqCity": "Milton",
+      "hqState": "DE",
+      "website": "https://bobwilleyandsons.net",
+      "ownership": "family",
+      "notes": "Kent/Sussex Delaware family fuel and propane dealer, 27-truck fleet since 1972.",
+      "knownLocations": [
+        {
+          "city": "Milton",
+          "state": "DE",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Kent Oil and Propane Co.",
+      "hqCity": "Camden",
+      "hqState": "DE",
+      "website": "https://www.kentoilandpropane.com",
+      "ownership": "family",
+      "notes": "Kent County Delaware family propane and fuel dealer.",
+      "knownLocations": [
+        {
+          "city": "Camden",
+          "state": "DE",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Hicksgas",
+      "hqCity": "Robinson",
+      "hqState": "IL",
+      "website": "https://hicksgas.com",
+      "ownership": "family",
+      "notes": "Large independent propane retailer with many Illinois and Indiana locations.",
+      "knownLocations": [
+        {
+          "city": "Robinson",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "ILMO Products Company",
+      "hqCity": "Jacksonville",
+      "hqState": "IL",
+      "website": "https://www.ilmoproducts.com",
+      "ownership": "family",
+      "notes": "Family-owned since 1913; ILMO Propane division serving Illinois and Missouri.",
+      "knownLocations": [
+        {
+          "city": "Jacksonville",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Dibble Propane",
+      "hqCity": "Gardner",
+      "hqState": "IL",
+      "website": "http://www.dibbleenterprises.com",
+      "ownership": "family",
+      "notes": "Family-owned propane dealer serving 14 counties in northeast/central Illinois including Kankakee area.",
+      "knownLocations": [
+        {
+          "city": "Gardner",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Conserv FS",
+      "hqCity": "Woodstock",
+      "hqState": "IL",
+      "website": "https://www.conservfs.com",
+      "ownership": "coop",
+      "notes": "GROWMARK FS member cooperative with 15 service centers in northern Illinois and southern Wisconsin; propane division.",
+      "knownLocations": [
+        {
+          "city": "Woodstock",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "GRAINCO FS, Inc.",
+      "hqCity": "Ottawa",
+      "hqState": "IL",
+      "website": "https://www.graincofs.com",
+      "ownership": "coop",
+      "notes": "Farmer-owned FS cooperative covering LaSalle, Kendall, Grundy counties with energy hub in Newark.",
+      "knownLocations": [
+        {
+          "city": "Ottawa",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Prairieland FS",
+      "hqCity": "Jacksonville",
+      "hqState": "IL",
+      "website": "https://www.prairielandfs.com",
+      "ownership": "coop",
+      "notes": "GROWMARK FS member serving west-central Illinois and NE/central Missouri; propane services.",
+      "knownLocations": [
+        {
+          "city": "Jacksonville",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Heritage FS",
+      "hqCity": "Bourbonnais",
+      "hqState": "IL",
+      "website": "https://www.heritagefs.com",
+      "ownership": "coop",
+      "notes": "GROWMARK FS cooperative serving northeast Illinois and northwest Indiana with propane.",
+      "knownLocations": [
+        {
+          "city": "Bourbonnais",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Wabash Valley Service Company",
+      "hqCity": "Grayville",
+      "hqState": "IL",
+      "website": "https://www.wabashvalleyfs.com",
+      "ownership": "coop",
+      "notes": "GROWMARK FS coop; propane in Crawford, Edwards, Gallatin, Hamilton, Jasper, Lawrence, Richland, Wabash, Wayne, White counties.",
+      "knownLocations": [
+        {
+          "city": "Grayville",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "South Central FS, Inc.",
+      "hqCity": "Effingham",
+      "hqState": "IL",
+      "website": "https://www.southcentralfs.com",
+      "ownership": "coop",
+      "notes": "GROWMARK FS coop covering Bond, Clark, Clay, Coles, Cumberland, Effingham, Fayette, Marion, Moultrie, Shelby counties.",
+      "knownLocations": [
+        {
+          "city": "Effingham",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Ag-Land FS, Inc.",
+      "hqCity": "Morton",
+      "hqState": "IL",
+      "website": "https://www.aglandfs.com",
+      "ownership": "coop",
+      "notes": "GROWMARK FS coop serving Logan, Peoria, Tazewell counties with propane services.",
+      "knownLocations": [
+        {
+          "city": "Morton",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Illini FS",
+      "hqCity": "Urbana",
+      "hqState": "IL",
+      "website": "https://www.illinifs.com",
+      "ownership": "coop",
+      "notes": "GROWMARK FS coop serving Cass, Champaign, Douglas, Edgar, Mason, Vermilion counties.",
+      "knownLocations": [
+        {
+          "city": "Urbana",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "M and M Service Company",
+      "hqCity": "Carlinville",
+      "hqState": "IL",
+      "website": "https://www.mmservice.com",
+      "ownership": "coop",
+      "notes": "FS cooperative providing propane in Montgomery, Macoupin, Madison counties.",
+      "knownLocations": [
+        {
+          "city": "Carlinville",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Chem Gro",
+      "hqCity": "Dallas City",
+      "hqState": "IL",
+      "website": null,
+      "ownership": "coop",
+      "notes": "Western Illinois agricultural coop providing propane in Hancock County area.",
+      "knownLocations": [
+        {
+          "city": "Dallas City",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Updikes Jerseyville Gas Service",
+      "hqCity": "Jerseyville",
+      "hqState": "IL",
+      "website": null,
+      "ownership": "family",
+      "notes": "Jersey County family propane retailer.",
+      "knownLocations": [
+        {
+          "city": "Jerseyville",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    },
+    {
+      "name": "Midwestern Propane Gas Company",
+      "hqCity": "Pana",
+      "hqState": "IL",
+      "website": "https://midwesternpropane.com",
+      "ownership": "family",
+      "notes": "Christian County propane dealer serving Illinois and Missouri.",
+      "knownLocations": [
+        {
+          "city": "Pana",
+          "state": "IL",
+          "street": null
+        }
+      ]
+    }
+  ]
+}

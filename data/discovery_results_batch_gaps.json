@@ -1,0 +1,672 @@
+{
+  "batch": "gaps",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "T.H. Malloy and Sons",
+      "hqCity": "Cumberland",
+      "hqState": "RI",
+      "website": "https://www.thmalloy.com/",
+      "knownLocations": [{"city": "Cumberland", "state": "RI", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned Rhode Island heating oil and propane dealer."
+    },
+    {
+      "name": "Propane Plus Heating and Cooling",
+      "hqCity": "Rehoboth",
+      "hqState": "MA",
+      "website": "https://www.propaneplus.com/",
+      "knownLocations": [{"city": "Rehoboth", "state": "MA", "street": ""}, {"city": "Providence", "state": "RI", "street": ""}],
+      "ownership": "family",
+      "notes": "Serves homes and businesses in MA and RI since 1990 with propane and HVAC."
+    },
+    {
+      "name": "Dupuis Energy",
+      "hqCity": "Pawtucket",
+      "hqState": "RI",
+      "website": "https://dupuisenergy.com/",
+      "knownLocations": [{"city": "Pawtucket", "state": "RI", "street": ""}],
+      "ownership": "family",
+      "notes": "RI fuel delivery company with 125+ years of history; propane and HVAC services."
+    },
+    {
+      "name": "Caseys Oil and Propane",
+      "hqCity": "Newport",
+      "hqState": "RI",
+      "website": "https://caseysoilpropane.com/",
+      "knownLocations": [{"city": "Newport", "state": "RI", "street": ""}],
+      "ownership": "family",
+      "notes": "Newport Rhode Island fuel provider since 1993; heating oil, propane, and commercial fuels."
+    },
+    {
+      "name": "Woods Heating Service",
+      "hqCity": "Tiverton",
+      "hqState": "RI",
+      "website": "https://www.woodsheating.com/",
+      "knownLocations": [{"city": "Tiverton", "state": "RI", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned since 1923; propane delivery and HVAC across RI and SE Massachusetts."
+    },
+    {
+      "name": "Kauffman LP Gas",
+      "hqCity": "Hockessin",
+      "hqState": "DE",
+      "website": "https://www.kauffmangas.com/",
+      "knownLocations": [{"city": "Hockessin", "state": "DE", "street": ""}, {"city": "Newark", "state": "DE", "street": ""}, {"city": "Wilmington", "state": "DE", "street": ""}],
+      "ownership": "family",
+      "notes": "Propane delivery in northern Delaware including Hockessin, Newark, Wilmington, Bear, and Glasgow."
+    },
+    {
+      "name": "Wilson Oil and Propane",
+      "hqCity": "Newtown Square",
+      "hqState": "PA",
+      "website": "https://www.wilsonoilandpropane.com/",
+      "knownLocations": [{"city": "Newtown Square", "state": "PA", "street": ""}, {"city": "Wilmington", "state": "DE", "street": ""}],
+      "ownership": "family",
+      "notes": "Propane and heating oil delivery in Delaware County PA and northern Delaware."
+    },
+    {
+      "name": "Dead River",
+      "hqCity": "Portland",
+      "hqState": "ME",
+      "website": "https://www.deadriver.com/",
+      "knownLocations": [{"city": "Portland", "state": "ME", "street": ""}, {"city": "St. Johnsbury", "state": "VT", "street": "189 Railroad St"}, {"city": "Brattleboro", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Large regional propane and heating oil dealer serving northern New England with multiple Vermont locations."
+    },
+    {
+      "name": "Corse Fuels and Propane",
+      "hqCity": "Newport",
+      "hqState": "VT",
+      "website": "https://www.corsefuels.com/",
+      "knownLocations": [{"city": "Newport", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned and operated since 1947; propane delivery in Northern Vermont."
+    },
+    {
+      "name": "OnSite Propane Vermont",
+      "hqCity": "Morrisville",
+      "hqState": "VT",
+      "website": "https://onsitepropane.com/",
+      "knownLocations": [{"city": "Morrisville", "state": "VT", "street": ""}, {"city": "Stowe", "state": "VT", "street": ""}, {"city": "Waterbury", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Locally owned propane supplier for Northern Vermont including Stowe and Waterbury."
+    },
+    {
+      "name": "Hawaii Gas",
+      "hqCity": "Honolulu",
+      "hqState": "HI",
+      "website": "https://www.hawaiigas.com/",
+      "knownLocations": [{"city": "Honolulu", "state": "HI", "street": ""}, {"city": "Hilo", "state": "HI", "street": ""}, {"city": "Kahului", "state": "HI", "street": ""}, {"city": "Lihue", "state": "HI", "street": ""}],
+      "ownership": "private",
+      "notes": "Only franchised gas utility in Hawaii since 1904; state's major propane distributor covering all islands."
+    },
+    {
+      "name": "Alii Gas",
+      "hqCity": "Kailua-Kona",
+      "hqState": "HI",
+      "website": "http://www.aliigas.com/",
+      "knownLocations": [{"city": "Kailua-Kona", "state": "HI", "street": ""}],
+      "ownership": "family",
+      "notes": "Propane service to Hawaii Island Big Island consumers."
+    },
+    {
+      "name": "Aloha Gas Hawaii",
+      "hqCity": "Honolulu",
+      "hqState": "HI",
+      "website": "https://www.alohagas.com/",
+      "knownLocations": [{"city": "Honolulu", "state": "HI", "street": ""}],
+      "ownership": "private",
+      "notes": "Hawaii-based fuel supplier offering reliable fuel solutions including propane."
+    },
+    {
+      "name": "Hawaii Propane Man",
+      "hqCity": "Kailua",
+      "hqState": "HI",
+      "website": "https://www.propaneman.com/",
+      "knownLocations": [{"city": "Kailua", "state": "HI", "street": ""}],
+      "ownership": "family",
+      "notes": "Propane gas delivery and refill service in Kailua on Oahu."
+    },
+    {
+      "name": "Hardware Hawaii Propane",
+      "hqCity": "Kailua",
+      "hqState": "HI",
+      "website": "https://www.hardwarehawaii.com/propane",
+      "knownLocations": [{"city": "Kailua", "state": "HI", "street": ""}, {"city": "Kapolei", "state": "HI", "street": ""}, {"city": "Koloa", "state": "HI", "street": ""}],
+      "ownership": "private",
+      "notes": "Propane refills available at Kailua Kapolei Oahu and Koloa Kauai retail locations."
+    },
+    {
+      "name": "Hawaii Petroleum",
+      "hqCity": "Kahului",
+      "hqState": "HI",
+      "website": "https://www.hawaiipetroleum.com/",
+      "knownLocations": [{"city": "Kahului", "state": "HI", "street": ""}],
+      "ownership": "private",
+      "notes": "Hawaii petroleum distributor with propane operations across the islands."
+    },
+    {
+      "name": "Town and Country Supply Charleston",
+      "hqCity": "Charleston",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [{"city": "Charleston", "state": "WV", "street": ""}],
+      "ownership": "private",
+      "notes": "Propane supplier serving the Charleston WV area."
+    },
+    {
+      "name": "Matheson Valley Propane",
+      "hqCity": "Charleston",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [{"city": "Charleston", "state": "WV", "street": ""}],
+      "ownership": "private",
+      "notes": "Propane dealer listed among Charleston WV area providers."
+    },
+    {
+      "name": "Thomas Gas Charleston WV",
+      "hqCity": "Charleston",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [{"city": "Charleston", "state": "WV", "street": ""}],
+      "ownership": "family",
+      "notes": "Local propane service provider in Charleston WV."
+    },
+    {
+      "name": "Glenwood Oil and Gas",
+      "hqCity": "Lewisburg",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [{"city": "Lewisburg", "state": "WV", "street": ""}],
+      "ownership": "private",
+      "notes": "Propane dealer serving the Lewisburg WV area."
+    },
+    {
+      "name": "Appalachian Propane and Supply",
+      "hqCity": "Summersville",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [{"city": "Summersville", "state": "WV", "street": "Webster Rd"}],
+      "ownership": "family",
+      "notes": "Propane and supply dealer on Webster Rd in Summersville WV."
+    },
+    {
+      "name": "Red Flame Propane Lewisburg",
+      "hqCity": "Lewisburg",
+      "hqState": "WV",
+      "website": null,
+      "knownLocations": [{"city": "Lewisburg", "state": "WV", "street": ""}],
+      "ownership": "family",
+      "notes": "Local propane supplier serving the Lewisburg WV area."
+    },
+    {
+      "name": "Mountaineer RV and Outdoor Center",
+      "hqCity": "Jane Lew",
+      "hqState": "WV",
+      "website": "https://www.mymountaineerrv.com/",
+      "knownLocations": [{"city": "Jane Lew", "state": "WV", "street": ""}],
+      "ownership": "family",
+      "notes": "RV dealer in Jane Lew WV offering propane refill and sales services."
+    },
+    {
+      "name": "All Star Rents Propane",
+      "hqCity": "Reno",
+      "hqState": "NV",
+      "website": "https://reno.allstarrents.com/",
+      "knownLocations": [{"city": "Reno", "state": "NV", "street": ""}, {"city": "Sparks", "state": "NV", "street": ""}],
+      "ownership": "private",
+      "notes": "Propane refills for grills and forklift tanks in Reno Sparks Truckee Lake Tahoe and Carson City."
+    },
+    {
+      "name": "Delta Liquid Energy Nevada",
+      "hqCity": "North Las Vegas",
+      "hqState": "NV",
+      "website": "https://deltaliquidenergy.com/",
+      "knownLocations": [{"city": "North Las Vegas", "state": "NV", "street": "13995 Grand Valley Parkway"}, {"city": "Pahrump", "state": "NV", "street": ""}],
+      "ownership": "family",
+      "notes": "Providing propane service since 1936; operations in North Las Vegas and Pahrump NV."
+    },
+    {
+      "name": "GreenWorks Propane",
+      "hqCity": "Hackettstown",
+      "hqState": "NJ",
+      "website": "https://greenworkspropane.com/",
+      "knownLocations": [{"city": "Hackettstown", "state": "NJ", "street": ""}, {"city": "Flemington", "state": "NJ", "street": ""}, {"city": "Phillipsburg", "state": "NJ", "street": ""}],
+      "ownership": "private",
+      "notes": "Propane delivery to NJ and PA including Hackettstown Flemington and Phillipsburg; emergency service available."
+    },
+    {
+      "name": "Region Energy",
+      "hqCity": "Hackettstown",
+      "hqState": "NJ",
+      "website": "https://www.regionenergy.com/",
+      "knownLocations": [{"city": "Hackettstown", "state": "NJ", "street": ""}],
+      "ownership": "family",
+      "notes": "Premier heating oil and home services company in Morris Sussex and Warren County NJ; offers propane and HVAC."
+    },
+    {
+      "name": "Fairclough Propane",
+      "hqCity": "Sussex",
+      "hqState": "NJ",
+      "website": "https://faircloughpropane.com/",
+      "knownLocations": [{"city": "Sussex", "state": "NJ", "street": ""}],
+      "ownership": "family",
+      "notes": "Serving community since 1860; propane delivery across Sussex Warren Passaic Morris Bergen Hunterdon and Somerset counties in NJ."
+    },
+    {
+      "name": "SOS Xtreme Comfort",
+      "hqCity": "Sussex",
+      "hqState": "NJ",
+      "website": "https://sosxtremecomfort.com/",
+      "knownLocations": [{"city": "Sussex", "state": "NJ", "street": ""}],
+      "ownership": "family",
+      "notes": "80+ years supplying heating oil propane and HVAC in Sussex County NJ."
+    },
+    {
+      "name": "Prime Propane Tanks NJ",
+      "hqCity": "Cherry Hill",
+      "hqState": "NJ",
+      "website": "http://www.primepropanetanks.com/nj/",
+      "knownLocations": [{"city": "Cherry Hill", "state": "NJ", "street": ""}],
+      "ownership": "private",
+      "notes": "Propane tank sales and services in New Jersey."
+    },
+    {
+      "name": "Wyoming Gas Company",
+      "hqCity": "Thermopolis",
+      "hqState": "WY",
+      "website": "https://www.wyogas.com/",
+      "knownLocations": [{"city": "Thermopolis", "state": "WY", "street": ""}, {"city": "Worland", "state": "WY", "street": ""}, {"city": "Basin", "state": "WY", "street": ""}, {"city": "Greybull", "state": "WY", "street": ""}],
+      "ownership": "private",
+      "notes": "Serving Big Horn Basin since 1909; gas and propane distribution to Basin Burlington Byron Greybull Manderson Thermopolis and Worland."
+    },
+    {
+      "name": "Big Horn Coop Energy",
+      "hqCity": "Greybull",
+      "hqState": "WY",
+      "website": "https://www.bighorncoop.com/energy",
+      "knownLocations": [{"city": "Greybull", "state": "WY", "street": ""}],
+      "ownership": "coop",
+      "notes": "Wyoming farmer-owned cooperative delivering bulk fuel and propane to farms and job sites."
+    },
+    {
+      "name": "Quality Propane Service Powell",
+      "hqCity": "Powell",
+      "hqState": "WY",
+      "website": "https://www.qualitypropaneservice.com/",
+      "knownLocations": [{"city": "Powell", "state": "WY", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned Wyoming propane business since 2009; serves the Big Horn Basin area."
+    },
+    {
+      "name": "High Country Propane Wyoming",
+      "hqCity": "Jackson",
+      "hqState": "WY",
+      "website": "https://www.highcountrypropanewyo.com/",
+      "knownLocations": [{"city": "Jackson", "state": "WY", "street": ""}],
+      "ownership": "family",
+      "notes": "Propane services for Wyoming homes and businesses in the Jackson Hole region."
+    },
+    {
+      "name": "Westco Cooperative",
+      "hqCity": "Alliance",
+      "hqState": "NE",
+      "website": "https://www.westco.coop/",
+      "knownLocations": [{"city": "Alliance", "state": "NE", "street": ""}, {"city": "Kimball", "state": "NE", "street": ""}, {"city": "Bridgeport", "state": "NE", "street": ""}],
+      "ownership": "coop",
+      "notes": "Petroleum division with ten refined fuel and propane plants in Western Nebraska and Eastern Wyoming."
+    },
+    {
+      "name": "Sandhill Oil",
+      "hqCity": "Thedford",
+      "hqState": "NE",
+      "website": "https://sandhilloil.com/",
+      "knownLocations": [{"city": "Thedford", "state": "NE", "street": ""}, {"city": "Hyannis", "state": "NE", "street": ""}, {"city": "Valentine", "state": "NE", "street": ""}],
+      "ownership": "family",
+      "notes": "Founded 1961 in Nebraska Sandhills; three locations with propane safety and livestock pipeline systems."
+    },
+    {
+      "name": "Pump and Pantry Nebraska",
+      "hqCity": "Kearney",
+      "hqState": "NE",
+      "website": "https://pumpandpantry.com/",
+      "knownLocations": [{"city": "Kearney", "state": "NE", "street": "1616 2nd Avenue"}, {"city": "Kearney", "state": "NE", "street": "1212 East 56th Street"}],
+      "ownership": "family",
+      "notes": "Bosselman convenience chain with propane refill across Nebraska."
+    },
+    {
+      "name": "CHS Holdrege",
+      "hqCity": "Holdrege",
+      "hqState": "NE",
+      "website": "https://www.chsholdrege.com/",
+      "knownLocations": [{"city": "Holdrege", "state": "NE", "street": ""}],
+      "ownership": "coop",
+      "notes": "Delivers propane to ag residential and commercial customers with 24-hr emergency service across central NE."
+    },
+    {
+      "name": "Country Partners Cooperative Energy",
+      "hqCity": "Gothenburg",
+      "hqState": "NE",
+      "website": "https://www.countrypartnerscoop.com/",
+      "knownLocations": [{"city": "Gothenburg", "state": "NE", "street": ""}],
+      "ownership": "coop",
+      "notes": "Nebraska farmer cooperative offering propane and fuel services across central Nebraska."
+    },
+    {
+      "name": "Otte Oil and Propane",
+      "hqCity": "Beatrice",
+      "hqState": "NE",
+      "website": "https://www.otteoil.com/",
+      "knownLocations": [{"city": "Beatrice", "state": "NE", "street": ""}, {"city": "Lincoln", "state": "NE", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned for 50+ years; ag-sector propane services across Southeast Nebraska."
+    },
+    {
+      "name": "Central Valley Ag Cooperative",
+      "hqCity": "York",
+      "hqState": "NE",
+      "website": "https://www.cvacoop.com/",
+      "knownLocations": [{"city": "York", "state": "NE", "street": ""}],
+      "ownership": "coop",
+      "notes": "Agricultural cooperative offering propane with pricing programs across Nebraska."
+    },
+    {
+      "name": "Mountain West Propane Uintah",
+      "hqCity": "Roosevelt",
+      "hqState": "UT",
+      "website": "https://www.mountainwestpropane.com/",
+      "knownLocations": [{"city": "Roosevelt", "state": "UT", "street": ""}, {"city": "Vernal", "state": "UT", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned since 1982 by the Duncan family; offices in Roosevelt and Vernal covering Uintah Basin to Park City and Heber."
+    },
+    {
+      "name": "Peters Propane Moab",
+      "hqCity": "Moab",
+      "hqState": "UT",
+      "website": "https://peterspropane.com/",
+      "knownLocations": [{"city": "Moab", "state": "UT", "street": ""}],
+      "ownership": "family",
+      "notes": "Local propane delivery in Moab UT serving Grand and San Juan Counties."
+    },
+    {
+      "name": "Sav On Propane Vernal",
+      "hqCity": "Vernal",
+      "hqState": "UT",
+      "website": null,
+      "knownLocations": [{"city": "Vernal", "state": "UT", "street": "1150 W 500 N"}],
+      "ownership": "private",
+      "notes": "Propane dealer serving Vernal UT."
+    },
+    {
+      "name": "Utah Propane Services Cedar City",
+      "hqCity": "Cedar City",
+      "hqState": "UT",
+      "website": "https://utahpropane.com/",
+      "knownLocations": [{"city": "Cedar City", "state": "UT", "street": "3425 Iron Springs Rd"}],
+      "ownership": "private",
+      "notes": "Propane services company in Cedar City UT."
+    },
+    {
+      "name": "Rhinehart Oil",
+      "hqCity": "Roosevelt",
+      "hqState": "UT",
+      "website": "https://rhinehartoil.com/",
+      "knownLocations": [{"city": "Roosevelt", "state": "UT", "street": ""}],
+      "ownership": "family",
+      "notes": "Fuel and lubricant solutions across Utah with propane operations."
+    },
+    {
+      "name": "Wasatch Propane SLC",
+      "hqCity": "South Salt Lake",
+      "hqState": "UT",
+      "website": "https://wasatchpropaneslc.com/",
+      "knownLocations": [{"city": "South Salt Lake", "state": "UT", "street": "201 W 2700 S"}],
+      "ownership": "family",
+      "notes": "Propane sales and service business in Salt Lake City carrying tanks and appliances."
+    },
+    {
+      "name": "Pitcher Propane",
+      "hqCity": "Lewiston",
+      "hqState": "UT",
+      "website": null,
+      "knownLocations": [{"city": "Lewiston", "state": "UT", "street": ""}],
+      "ownership": "family",
+      "notes": "Local Utah propane dealer selling to residences businesses and farmers in Cache Valley."
+    },
+    {
+      "name": "T-7 Propane",
+      "hqCity": "Logan",
+      "hqState": "UT",
+      "website": "https://www.t7propane.com/",
+      "knownLocations": [{"city": "Logan", "state": "UT", "street": ""}],
+      "ownership": "family",
+      "notes": "Serving Northeastern Utah Southeastern Idaho and Southwestern Wyoming with propane delivery and gas appliance installation."
+    },
+    {
+      "name": "Hone Propane",
+      "hqCity": "Logan",
+      "hqState": "UT",
+      "website": null,
+      "knownLocations": [{"city": "Logan", "state": "UT", "street": ""}],
+      "ownership": "family",
+      "notes": "Local propane dealer in Logan UT serving Cache Valley."
+    },
+    {
+      "name": "Newport Propane RI",
+      "hqCity": "Tiverton",
+      "hqState": "RI",
+      "website": "https://www.newportpropane.com/",
+      "knownLocations": [{"city": "Tiverton", "state": "RI", "street": ""}, {"city": "Newport", "state": "RI", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned propane dealer serving Newport County and coastal Rhode Island."
+    },
+    {
+      "name": "Phils Propane RI",
+      "hqCity": "Tiverton",
+      "hqState": "RI",
+      "website": "https://www.philspropane.com/",
+      "knownLocations": [{"city": "Tiverton", "state": "RI", "street": ""}],
+      "ownership": "family",
+      "notes": "Serving all of Rhode Island and SE Massachusetts since 1952; installation and 24/7 emergency propane service."
+    },
+    {
+      "name": "Baker Petroleum DE",
+      "hqCity": "Milton",
+      "hqState": "DE",
+      "website": "https://www.bakerpetroleumde.com/",
+      "knownLocations": [{"city": "Milton", "state": "DE", "street": "15046 Gravel Hill Rd"}, {"city": "Lewes", "state": "DE", "street": ""}, {"city": "Georgetown", "state": "DE", "street": ""}],
+      "ownership": "family",
+      "notes": "Family owned and operated since 1951; major Southern Delaware propane and heating oil dealer."
+    },
+    {
+      "name": "Parco Propane Bridgeport WV",
+      "hqCity": "Bridgeport",
+      "hqState": "WV",
+      "website": "https://www.parcopropane.com/",
+      "knownLocations": [{"city": "Bridgeport", "state": "WV", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned propane delivery with deep roots centered in Bridgeport WV for 70+ years."
+    },
+    {
+      "name": "Woodford Oil Company WV",
+      "hqCity": "Clarksburg",
+      "hqState": "WV",
+      "website": "https://woodfordoil.com/",
+      "knownLocations": [{"city": "Clarksburg", "state": "WV", "street": ""}],
+      "ownership": "family",
+      "notes": "Locally owned propane supplier serving central WV and the Tri-State area; ten bulk plants."
+    },
+    {
+      "name": "RT Rogers Oil Company",
+      "hqCity": "Hinton",
+      "hqState": "WV",
+      "website": "https://www.rtrogers.com/",
+      "knownLocations": [{"city": "Hinton", "state": "WV", "street": ""}],
+      "ownership": "family",
+      "notes": "Energy distribution company in southern West Virginia offering propane and heating oil."
+    },
+    {
+      "name": "Rutland Bottle Gas OH WV",
+      "hqCity": "Rutland",
+      "hqState": "OH",
+      "website": "https://www.rutlandbottlegas.com/",
+      "knownLocations": [{"city": "Rutland", "state": "OH", "street": ""}, {"city": "Charleston", "state": "WV", "street": ""}],
+      "ownership": "family",
+      "notes": "One of the largest independent propane dealers with nine locations across SE Ohio and northern WV."
+    },
+    {
+      "name": "Bosselman Energy",
+      "hqCity": "Grand Island",
+      "hqState": "NE",
+      "website": "https://bosselmanenergy.com/",
+      "knownLocations": [{"city": "Grand Island", "state": "NE", "street": ""}],
+      "ownership": "family",
+      "notes": "Delivers propane to industrial commercial residential and agricultural customers from five Nebraska bulk facilities."
+    },
+    {
+      "name": "Panhandle Cooperative Association",
+      "hqCity": "Scottsbluff",
+      "hqState": "NE",
+      "website": null,
+      "knownLocations": [{"city": "Scottsbluff", "state": "NE", "street": "401 South Beltline Hwy West"}, {"city": "Kimball", "state": "NE", "street": ""}, {"city": "Bridgeport", "state": "NE", "street": ""}],
+      "ownership": "coop",
+      "notes": "LP dealer 50+ years; delivers from Western Nebraska to Eastern Wyoming including Torrington WY."
+    },
+    {
+      "name": "Farmers Pride Coop NE",
+      "hqCity": "Yankton",
+      "hqState": "SD",
+      "website": "https://www.farmerspridecoop.com/",
+      "knownLocations": [{"city": "Yankton", "state": "SD", "street": ""}, {"city": "Norfolk", "state": "NE", "street": ""}, {"city": "Fremont", "state": "NE", "street": ""}, {"city": "Columbus", "state": "NE", "street": ""}],
+      "ownership": "coop",
+      "notes": "Propane delivery from Yankton SD to Columbus NE serving Norfolk Fremont and other NE communities."
+    },
+    {
+      "name": "Frontier Cooperative NE",
+      "hqCity": "Lincoln",
+      "hqState": "NE",
+      "website": "https://www.frontiercooperative.com/",
+      "knownLocations": [{"city": "Lincoln", "state": "NE", "street": ""}, {"city": "Columbus", "state": "NE", "street": ""}],
+      "ownership": "coop",
+      "notes": "Full-service propane dealer and Cenex distributor for ag business and residential clients in eastern Nebraska."
+    },
+    {
+      "name": "Blackburns Propane Cedar City",
+      "hqCity": "Cedar City",
+      "hqState": "UT",
+      "website": "https://blackburnspropane.com/",
+      "knownLocations": [{"city": "Cedar City", "state": "UT", "street": ""}, {"city": "Bicknell", "state": "UT", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-operated Utah propane since 1988 serving Southern Utah and parts of Nevada."
+    },
+    {
+      "name": "Fyles Brothers VT",
+      "hqCity": "Montpelier",
+      "hqState": "VT",
+      "website": "https://fylesbrothers.com/",
+      "knownLocations": [{"city": "Montpelier", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Local Vermont-owned propane and HVAC company for 35+ years."
+    },
+    {
+      "name": "Steenlands Gas Service",
+      "hqCity": "Cape May Court House",
+      "hqState": "NJ",
+      "website": "https://www.steenlandsgas.com/",
+      "knownLocations": [{"city": "Cape May Court House", "state": "NJ", "street": ""}],
+      "ownership": "family",
+      "notes": "Family-owned since 1961; propane delivery in greater Cape May County and southern Cumberland/Atlantic Counties."
+    },
+    {
+      "name": "Blue Flame Gas NJ",
+      "hqCity": "Vineland",
+      "hqState": "NJ",
+      "website": "https://www.blueflamedelivers.com/",
+      "knownLocations": [{"city": "Vineland", "state": "NJ", "street": ""}, {"city": "Cape May", "state": "NJ", "street": ""}, {"city": "Toms River", "state": "NJ", "street": ""}],
+      "ownership": "family",
+      "notes": "Residential and commercial propane for South Jersey and Eastern PA for 50+ years."
+    },
+    {
+      "name": "SJ Fuel and Propane",
+      "hqCity": "Vineland",
+      "hqState": "NJ",
+      "website": "https://www.sjfuelandpropane.com/",
+      "knownLocations": [{"city": "Vineland", "state": "NJ", "street": ""}, {"city": "Toms River", "state": "NJ", "street": ""}, {"city": "Medford", "state": "NJ", "street": ""}],
+      "ownership": "family",
+      "notes": "Fuel and equipment services provider in Vineland Toms River Medford and surrounding South Jersey communities."
+    },
+    {
+      "name": "Proctor Gas Vermont",
+      "hqCity": "Proctor",
+      "hqState": "VT",
+      "website": "https://proctorgas.com/",
+      "knownLocations": [{"city": "Proctor", "state": "VT", "street": ""}, {"city": "Rutland", "state": "VT", "street": ""}, {"city": "Bennington", "state": "VT", "street": ""}, {"city": "Middlebury", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Only locally owned propane company in Rutland County VT; family-owned with 100+ years combined experience."
+    },
+    {
+      "name": "Gillespie Fuels Vermont",
+      "hqCity": "Northfield",
+      "hqState": "VT",
+      "website": "http://gillespiefuels.com/",
+      "knownLocations": [{"city": "Northfield", "state": "VT", "street": ""}, {"city": "Randolph", "state": "VT", "street": ""}, {"city": "Waitsfield", "state": "VT", "street": ""}, {"city": "Montpelier", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Keeping Vermonters warm since 1962; serves Montpelier Barre Berlin and central Vermont with propane fuel oil diesel kerosene."
+    },
+    {
+      "name": "Central Vermont Oil",
+      "hqCity": "Montpelier",
+      "hqState": "VT",
+      "website": "https://www.cvoil.com/",
+      "knownLocations": [{"city": "Montpelier", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Delivering propane for 40+ years to central Vermont communities."
+    },
+    {
+      "name": "Bournes Energy",
+      "hqCity": "Morrisville",
+      "hqState": "VT",
+      "website": "https://bournesenergy.com/",
+      "knownLocations": [{"city": "Morrisville", "state": "VT", "street": ""}, {"city": "Milton", "state": "VT", "street": ""}, {"city": "Montpelier", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Vermont heating and cooling company with biofuels propane and wood pellets; offices in Milton Montpelier and Morrisville."
+    },
+    {
+      "name": "Patterson Fuels Vermont",
+      "hqCity": "St. Albans",
+      "hqState": "VT",
+      "website": "https://pattersonfuels.com/",
+      "knownLocations": [{"city": "St. Albans", "state": "VT", "street": ""}, {"city": "Waterbury", "state": "VT", "street": ""}],
+      "ownership": "family",
+      "notes": "Propane and heating services for homes and businesses in Northwestern Vermont; Waterbury one-stop shop."
+    },
+    {
+      "name": "Kauffman Chesapeake",
+      "hqCity": "Dover",
+      "hqState": "DE",
+      "website": "https://www.kauffmangas.com/propane-delivery-delaware/",
+      "knownLocations": [{"city": "Dover", "state": "DE", "street": ""}],
+      "ownership": "family",
+      "notes": "Delaware propane delivery and maintenance."
+    },
+    {
+      "name": "Wells Propane Elko",
+      "hqCity": "Wells",
+      "hqState": "NV",
+      "website": "https://wellspropane.net/",
+      "knownLocations": [{"city": "Wells", "state": "NV", "street": ""}, {"city": "Elko", "state": "NV", "street": ""}],
+      "ownership": "family",
+      "notes": "Services Elko County; delivery appliance installs and cylinder refills."
+    },
+    {
+      "name": "Blakeman Propane Wyoming",
+      "hqCity": "Cody",
+      "hqState": "WY",
+      "website": "https://blakemanpropane.com/",
+      "knownLocations": [{"city": "Cody", "state": "WY", "street": ""}, {"city": "Casper", "state": "WY", "street": ""}, {"city": "Cheyenne", "state": "WY", "street": ""}],
+      "ownership": "family",
+      "notes": "Wyoming propane utility provider since 1953; business residential and recreational sales."
+    }
+  ]
+}

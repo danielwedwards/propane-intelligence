@@ -1,0 +1,181 @@
+{
+  "source": "holstongases.com",
+  "scraped": "2026-04-11",
+  "locations": [
+    {
+      "source_url": "https://www.holstongases.com/propane/chattanooga-tn/",
+      "street": "1105 Stuart St.",
+      "city": "Chattanooga",
+      "state": "TN",
+      "zip": "37406"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/scottsville-ky/",
+      "street": "130 Turner Court",
+      "city": "Bowling Green",
+      "state": "KY",
+      "zip": "42101"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/henderson-ky/",
+      "street": "7549 Iceland Rd.",
+      "city": "Maceo",
+      "state": "KY",
+      "zip": "42355"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/johnson-city-tn/",
+      "street": "1150 Spratlin Park Dr.",
+      "city": "Gray",
+      "state": "TN",
+      "zip": "37615"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/summerville-sc/",
+      "street": "1021 Bankton Circle",
+      "city": "Hanahan",
+      "state": "SC",
+      "zip": "29410"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/athens-ga/",
+      "street": "1775 Winterville Rd.",
+      "city": "Athens",
+      "state": "GA",
+      "zip": "30605"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/murfreesboro-tn/",
+      "street": "1186 Murfreesboro Hwy.",
+      "city": "Manchester",
+      "state": "TN",
+      "zip": "37355"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/cleveland-tn/",
+      "street": "917 N. Congress Pkwy",
+      "city": "Athens",
+      "state": "TN",
+      "zip": "37303"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/goodlettsville-tn/",
+      "street": "1209 Longleaf Dr.",
+      "city": "Gallatin",
+      "state": "TN",
+      "zip": "37066"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/mount-vernon-ky/",
+      "street": "530 Enterprise Dr.",
+      "city": "Somerset",
+      "state": "KY",
+      "zip": "42501"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/whitley-city-ky/",
+      "street": "25 Hummingbird Ave.",
+      "city": "Monticello",
+      "state": "KY",
+      "zip": "42633"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/winchester-ky/",
+      "street": "357 Blue Sky Parkway",
+      "city": "Lexington",
+      "state": "KY",
+      "zip": "40509"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/bremen-ga/",
+      "street": "25 Brightwave Blvd",
+      "city": "Carrollton",
+      "state": "GA",
+      "zip": "30117"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/whitesburg-ga/",
+      "street": "329 Pearce St.",
+      "city": "Franklin",
+      "state": "GA",
+      "zip": "30217"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/nashville-tn/",
+      "street": "109 Centennial Circle",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37209"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/greeneville-tn/",
+      "street": "1967 Thomas R. James Dr.",
+      "city": "Morristown",
+      "state": "TN",
+      "zip": "37814"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/anderson-county-tn/",
+      "street": "121 School St.",
+      "city": "Jacksboro",
+      "state": "TN",
+      "zip": "37757"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/sevierville-tn/",
+      "street": "545 W. Baxter Ave",
+      "city": "Knoxville",
+      "state": "TN",
+      "zip": "37921"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/montgomery-al/",
+      "street": "524 Galloway Cir",
+      "city": "Alabaster",
+      "state": "AL",
+      "zip": "35007"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/blue-ridge-ga/",
+      "street": "380 Hollywood Dr.",
+      "city": "Dalton",
+      "state": "GA",
+      "zip": "30721"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/clinton-tn/",
+      "street": "545 W Baxter Ave",
+      "city": "Knoxville",
+      "state": "TN",
+      "zip": "37921"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/morristown-tn/",
+      "street": "1967 Thomas R. James Dr",
+      "city": "Morristown",
+      "state": "TN",
+      "zip": "37813"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/louisville-ky/",
+      "street": "368 Terry Blvd.",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40229"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/jamestown-ky/",
+      "street": "104 Industrial Dr.",
+      "city": "Jamestown",
+      "state": "KY",
+      "zip": "42629"
+    },
+    {
+      "source_url": "https://www.holstongases.com/propane/harriman-tn/",
+      "street": "1981 S. Roane St.",
+      "city": "Harriman",
+      "state": "TN",
+      "zip": "37748"
+    }
+  ]
+}

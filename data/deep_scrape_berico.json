@@ -1,0 +1,18 @@
+{
+  "source": "https://www.berico.com/",
+  "scraped": "2026-04-11",
+  "notes": "Berico Fuels headquartered in Greensboro NC. Website lists only one physical branch (main office) with full address. Service territory covers Greensboro, Eden, Burlington (NC Piedmont / Triad region). Associated brands: Carolina Fuels, Alamance Oil, GateCo Oil (wholesale). Individual branch addresses for these subsidiaries not published.",
+  "locations": [
+    {
+      "name": "Berico Fuels - Greensboro (HQ)",
+      "street": "2200 E Bessemer Ave",
+      "city": "Greensboro",
+      "state": "NC",
+      "zip": "27405",
+      "phone": "336-273-8663",
+      "email": "inforequest@berico.com",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

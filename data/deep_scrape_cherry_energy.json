@@ -1,0 +1,151 @@
+{
+  "source": "cherryenergy.com/contact-us/",
+  "scraped": "2026-04-11",
+  "company": "Cherry Energy",
+  "note": "Eastern NC propane/fuel distributor (Kinston-based). Includes corporate and branded dealer locations.",
+  "location_count": 14,
+  "owned_count": 2,
+  "dealer_count": 12,
+  "locations": [
+    {
+      "name": "Kinston Plant",
+      "street": "2947 Hull Road",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28504",
+      "phone": "(252) 523-3874",
+      "type": "Plant",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "Kinston Showroom/Corporate",
+      "street": "2213 Hull Road",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28504",
+      "phone": "(252) 523-3874",
+      "type": "Corporate/Showroom",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "Tony's Friendly Mart #3",
+      "street": "601 Mitchell Street",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28501",
+      "phone": "(252) 523-0721",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "C-Mart #4",
+      "street": "801 Greenbriar Road",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28501",
+      "phone": "(252) 522-3616",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "Z-Mart of Kinston",
+      "street": "501 JP Harrison Blvd",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28501",
+      "phone": "(252) 523-0767",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "Tony's Friendly Mart #2",
+      "street": "319 South Queen Street",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28501",
+      "phone": "(252) 527-4968",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "Pure Mart #9",
+      "street": "3701 West Vernon Avenue",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28501",
+      "phone": "(252) 520-2143",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "C-Mart #10",
+      "street": "1523 Hull Road",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28501",
+      "phone": "(252) 208-0007",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "Tony's Friendly Mart",
+      "street": "801 Tiffany Street",
+      "city": "Kinston",
+      "state": "NC",
+      "zip": "28501",
+      "phone": "(252) 523-7022",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "R-Mart #13",
+      "street": "200 East Kinston Blvd",
+      "city": "Pink Hill",
+      "state": "NC",
+      "zip": "28572",
+      "phone": "(252) 568-2695",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "C-Mart #14",
+      "street": "346 West Jones Street",
+      "city": "Trenton",
+      "state": "NC",
+      "zip": "28585",
+      "phone": "(252) 448-7411",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "Galley Stores",
+      "street": "300 East Front Street",
+      "city": "New Bern",
+      "state": "NC",
+      "zip": "28562",
+      "phone": "(252) 633-4648",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "5110 NC Hwy 96 N. Market & Cafe",
+      "street": "5110 NC Hwy 96 North",
+      "city": "Selma",
+      "state": "NC",
+      "zip": "27576",
+      "phone": "(919) 965-3665",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    },
+    {
+      "name": "JD's Country Store",
+      "street": "4549 Wilson Mills Road",
+      "city": "Smithfield",
+      "state": "NC",
+      "zip": "27577",
+      "phone": "(919) 934-8939",
+      "type": "Dealer",
+      "source_url": "https://www.cherryenergy.com/contact-us/"
+    }
+  ]
+}

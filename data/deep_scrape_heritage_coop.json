@@ -1,0 +1,436 @@
+{
+  "source": "https://www.heritagecooperative.com/locations",
+  "scraped": "2026-04-11",
+  "locations": [
+    {
+      "name": "Kenton - Grain",
+      "street": "13118 OH-31",
+      "city": "Kenton",
+      "state": "OH",
+      "zip": "43326",
+      "phone": "419-674-4045",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/Kenton-Grain"
+    },
+    {
+      "name": "Ada",
+      "street": "332 West Lincoln Avenue",
+      "city": "Ada",
+      "state": "OH",
+      "zip": "45810",
+      "phone": "419.299.6099",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/ada-grain"
+    },
+    {
+      "name": "Alliance Gas Station (unmanned)",
+      "street": "2000 Beeson Street NE",
+      "city": "Alliance",
+      "state": "OH",
+      "zip": "44601",
+      "phone": "800-227-1062",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/alliance-gas-station-unmanned"
+    },
+    {
+      "name": "Arlington ",
+      "street": "301 Sumner Street",
+      "city": "Arlington",
+      "state": "OH",
+      "zip": "45814",
+      "phone": "419-365-5124",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/arlington"
+    },
+    {
+      "name": "Barnesville",
+      "street": "37065 Barnesville-Bethesda Road",
+      "city": "Barnesville",
+      "state": "OH",
+      "zip": "43713",
+      "phone": "740-425-3294",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/barnesville-feed"
+    },
+    {
+      "name": "Bellville",
+      "street": "32 Fitting Avenue",
+      "city": "Bellville",
+      "state": "OH",
+      "zip": "44813",
+      "phone": "800-227-1062",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/bellville"
+    },
+    {
+      "name": "Beloit",
+      "street": "26661 State Route 62",
+      "city": "Beloit",
+      "state": "OH",
+      "zip": "44609",
+      "phone": "330-938-9020",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/beloit"
+    },
+    {
+      "name": "Cairo",
+      "street": "100 Wall Street",
+      "city": "Cairo",
+      "state": "OH",
+      "zip": "45820",
+      "phone": "419-641-3261",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/cairo"
+    },
+    {
+      "name": "Caldwell",
+      "street": "815 Planing Mill Street",
+      "city": "Caldwell ",
+      "state": "OH",
+      "zip": "43724",
+      "phone": "740-732-2746",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/caldwell"
+    },
+    {
+      "name": "Canfield - Country Store",
+      "street": "364 Lisbon Street",
+      "city": "Canfield",
+      "state": "OH",
+      "zip": "44406",
+      "phone": "330-533-5551",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/canfield"
+    },
+    {
+      "name": "Carrollton - Gas Station",
+      "street": "258 Fifth Street NW",
+      "city": "Carrollton",
+      "state": "OH",
+      "zip": "44615",
+      "phone": "330-627-2515",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/carrollton"
+    },
+    {
+      "name": "Carrollton - Lubricants",
+      "street": "1541 Canton Road NW",
+      "city": "Carrollton",
+      "state": "OH",
+      "zip": "44615",
+      "phone": "330-627-6052",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/carrollton-lube"
+    },
+    {
+      "name": "Columbiana - Feed & Grain",
+      "street": "3770 Renkenberger Road",
+      "city": "Columbiana",
+      "state": "OH",
+      "zip": "44408",
+      "phone": "330-482-4321",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/columbiana"
+    },
+    {
+      "name": "Columbiana - Agronomy",
+      "street": "13800 Columbiana-Canfield Road",
+      "city": "Columbiana",
+      "state": "OH",
+      "zip": "44408",
+      "phone": "330-892-3025",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/columbiana-agronomy"
+    },
+    {
+      "name": "Corporate Office",
+      "street": "59 Greif Parkway",
+      "city": "Delaware",
+      "state": "OH",
+      "zip": "43015",
+      "phone": "877-240-4393",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/corporate-office"
+    },
+    {
+      "name": "DeGraff",
+      "street": "113 S Koke Street",
+      "city": "DeGraff",
+      "state": "OH",
+      "zip": "43318",
+      "phone": "937-303-1530",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/degraff"
+    },
+    {
+      "name": "East Liverpool",
+      "street": "600 River Road",
+      "city": "East Liverpool",
+      "state": "OH",
+      "zip": "43920",
+      "phone": "330-386-8229",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/east-liverpool"
+    },
+    {
+      "name": "Fletcher",
+      "street": "701 S Walnut Street",
+      "city": "Fletcher",
+      "state": "OH",
+      "zip": "45326",
+      "phone": "937-368-2364",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/fletcher"
+    },
+    {
+      "name": "Fresno",
+      "street": "23917 State Route 93",
+      "city": "Fresno",
+      "state": "OH",
+      "zip": "43824",
+      "phone": "740-545-9846",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/fresno"
+    },
+    {
+      "name": "Garfield",
+      "street": "15970 Front St",
+      "city": "Salem",
+      "state": "OH",
+      "zip": "44460",
+      "phone": "330-537-4631",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/garfield"
+    },
+    {
+      "name": "Harrisburg",
+      "street": "920 West Bauman Lane",
+      "city": "Harrisburg",
+      "state": "IL",
+      "zip": "62946",
+      "phone": "330-556-9778",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/harrisburg"
+    },
+    {
+      "name": "Harrisville",
+      "street": "47345 Stump Town Road",
+      "city": "Cadiz",
+      "state": "OH",
+      "zip": "43907",
+      "phone": "1-800-227-1062",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/harrisville"
+    },
+    {
+      "name": "Kenton - Energy",
+      "street": "1305 Main St",
+      "city": "Kenton",
+      "state": "OH",
+      "zip": "43326",
+      "phone": "800-424-2584",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/kenton-%E2%80%93-energy"
+    },
+    {
+      "name": "Lisbon - Grain",
+      "street": "330 S. Lincoln Avenue",
+      "city": "Lisbon",
+      "state": "OH",
+      "zip": "44432",
+      "phone": "330-424-7229",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/lisbon"
+    },
+    {
+      "name": "Marietta",
+      "street": "219 Third Street",
+      "city": "Marietta",
+      "state": "OH",
+      "zip": "45750",
+      "phone": "740-374-7741",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/marietta"
+    },
+    {
+      "name": "Marysville Ag Campus",
+      "street": "15090 Scottslawn Road",
+      "city": "Marysville",
+      "state": "OH",
+      "zip": "43040",
+      "phone": "937-553-2830",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/marysville-ag-campus"
+    },
+    {
+      "name": "McCutchenville",
+      "street": "8741 State Route 53 N",
+      "city": "McCutchenville",
+      "state": "OH",
+      "zip": "44844",
+      "phone": "419-301-0700",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/mccutchenville"
+    },
+    {
+      "name": "Mechanicsburg - Country Store",
+      "street": "140 S Main Street",
+      "city": "Mechanicsburg",
+      "state": "OH",
+      "zip": "43044",
+      "phone": "937-834-2598",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/mechanicsburg"
+    },
+    {
+      "name": "Mechanicsburg - Agronomy",
+      "street": "11589 State Route 29",
+      "city": "Mechanicsburg",
+      "state": "OH",
+      "zip": "43044",
+      "phone": "937-834-2288",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/mechanicsburg-agronomy"
+    },
+    {
+      "name": "Mechanicsburg - Grain",
+      "street": "140 South Main Street",
+      "city": "Mechanicsburg",
+      "state": "OH",
+      "zip": "43044",
+      "phone": "937-834-2416",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/mechanicsburg-grain"
+    },
+    {
+      "name": "Millstone - Country Store",
+      "street": "13788 Columbiana-Canfield Rd.",
+      "city": "Columbiana",
+      "state": "OH",
+      "zip": "44408",
+      "phone": "330-482-9840",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/millstone-country-store"
+    },
+    {
+      "name": "New Philadelphia",
+      "street": "1013 Front Avenue SW",
+      "city": "New Philadelphia",
+      "state": "OH",
+      "zip": "44663",
+      "phone": "330-339-1062",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/new-philadelphia"
+    },
+    {
+      "name": "New Philadelphia - Country Store",
+      "street": "1062 West High Avenue",
+      "city": "New Philadelphia",
+      "state": "OH",
+      "zip": "44663",
+      "phone": "330-339-1062",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/new-philadelphia-country-store"
+    },
+    {
+      "name": "Newark",
+      "street": "90 South Williams Street",
+      "city": "Newark",
+      "state": "OH",
+      "zip": "43055",
+      "phone": "800-227-1062",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/newark"
+    },
+    {
+      "name": "Newport",
+      "street": "7265 State Route 38 SE",
+      "city": "London",
+      "state": "OH",
+      "zip": "43140",
+      "phone": "740-852-1500",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/newport"
+    },
+    {
+      "name": "Richwood",
+      "street": "252 North Franklin Street",
+      "city": "Richwood",
+      "state": "OH",
+      "zip": "43344",
+      "phone": "937-834-4041",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/richwood"
+    },
+    {
+      "name": "ShurGrow Seed",
+      "street": "6239 State Route 187",
+      "city": "Mechanicsburg",
+      "state": "OH",
+      "zip": "43044",
+      "phone": "937-834-0188",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/shur-grow"
+    },
+    {
+      "name": "Sycamore",
+      "street": "2477 Township Highway 31",
+      "city": "Sycamore",
+      "state": "OH",
+      "zip": "44882",
+      "phone": "419-299-9899",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/sycamore"
+    },
+    {
+      "name": "Thackery",
+      "street": "8130 State Route 55",
+      "city": "Springfield",
+      "state": "OH",
+      "zip": "45502",
+      "phone": "937-508-4714",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/thackery"
+    },
+    {
+      "name": "Upper Sandusky - Agronomy",
+      "street": "11717 County Road 108",
+      "city": "Upper Sandusky",
+      "state": "OH",
+      "zip": "43351",
+      "phone": "419-294-1974",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/upper-sandusky-agronomy"
+    },
+    {
+      "name": "Upper Sandusky - Drive-Thru",
+      "street": "520 W Wyandot Avenue",
+      "city": "Upper Sandusky",
+      "state": "OH",
+      "zip": "43351",
+      "phone": "419-294-2371",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/upper-sandusky-drive-thru"
+    },
+    {
+      "name": "Urbana",
+      "street": "304 Bloomfield Avenue",
+      "city": "Urbana",
+      "state": "OH",
+      "zip": "43078",
+      "phone": "937-772-8140",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/urbana"
+    },
+    {
+      "name": "Vanlue",
+      "street": "400 Center Street",
+      "city": "Vanlue",
+      "state": "OH",
+      "zip": "45890",
+      "phone": "419-390-4399",
+      "company": "Heritage Cooperative",
+      "source_url": "https://www.heritagecooperative.com/locations/vanlue"
+    }
+  ]
+}

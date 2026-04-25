@@ -1,0 +1,32 @@
+{
+  "source": "paracogas.com",
+  "scraped": "2026-04-11",
+  "method": "HTML scrape of /locations page",
+  "locations": [
+    {"name": "Paraco Gas - Rye Brook (HQ)", "street": "50 Midland Avenue", "city": "Rye Brook", "state": "NY", "zip": "10573", "phone": "800-647-4427"},
+    {"name": "Paraco Gas - Woonsocket", "street": "139 Hamlet Avenue", "city": "Woonsocket", "state": "RI", "zip": "02895", "phone": "401-762-5461"},
+    {"name": "Paraco Gas - Gilbert", "street": "1202 US-209", "city": "Gilbert", "state": "PA", "zip": "18331", "phone": "610-681-4181"},
+    {"name": "Paraco Gas - Phoenicia", "street": "5582 New York 28", "city": "Phoenicia", "state": "NY", "zip": "12464", "phone": "800-647-4427"},
+    {"name": "Paraco Gas - High Falls", "street": "1409 NY-213", "city": "High Falls", "state": "NY", "zip": "12440", "phone": "800-647-4427"},
+    {"name": "Paraco Gas - Califon", "street": "412B Trimmer Rd", "city": "Califon", "state": "NJ", "zip": "07830", "phone": "908-824-7398"},
+    {"name": "Paraco Gas - Broad Brook", "street": "152 Broad Brook Road", "city": "Broad Brook", "state": "CT", "zip": "06016", "phone": "203-377-7171"},
+    {"name": "Paraco Gas - Essex", "street": "23 Saybrook Road", "city": "Essex", "state": "CT", "zip": "06426", "phone": "203-377-7171"},
+    {"name": "Paraco Gas - Waterbury", "street": "75 East Aurora St", "city": "Waterbury", "state": "CT", "zip": "06708", "phone": "203-377-7171"},
+    {"name": "Paraco Gas - Burrillville", "street": "138 Clear River Drive", "city": "Burrillville", "state": "RI", "zip": "02858", "phone": "401-762-5461"},
+    {"name": "Paraco Gas - Mt. Vernon", "street": "10 Edison Avenue", "city": "Mt. Vernon", "state": "NY", "zip": "10550", "phone": "914-664-5075"},
+    {"name": "Paraco Gas - Peekskill", "street": "14 Bayview Road", "city": "Cortlandt Manor", "state": "NY", "zip": "10567", "phone": "914-737-2340"},
+    {"name": "Paraco Gas - Pine Plains", "street": "2661 Route 199", "city": "Pine Plains", "state": "NY", "zip": "12567", "phone": "845-677-2312"},
+    {"name": "Paraco Gas - Riverhead", "street": "44 Kroemer Avenue", "city": "Riverhead", "state": "NY", "zip": "11901", "phone": "631-727-1890"},
+    {"name": "Paraco Gas - Saugerties", "street": "2926 Route 32", "city": "Saugerties", "state": "NY", "zip": "12477", "phone": "845-293-6200"},
+    {"name": "Paraco Gas - Shirley", "street": "29 McGraw Street", "city": "Shirley", "state": "NY", "zip": "11967", "phone": "631-586-6050"},
+    {"name": "Paraco Gas - Bay Shore", "street": "200 Corbin Avenue", "city": "Bay Shore", "state": "NY", "zip": "11706", "phone": "631-586-6050"},
+    {"name": "Paraco Gas - Wurtsboro", "street": "25 Sullivan Street", "city": "Wurtsboro", "state": "NY", "zip": "12790", "phone": "845-647-6300"},
+    {"name": "Paraco Gas - Brewster", "street": "4 Joes Hill Road", "city": "Brewster", "state": "NY", "zip": "10509", "phone": "845-279-8414"},
+    {"name": "Paraco Gas - Cooperstown", "street": "4871 State Highway 28", "city": "Cooperstown", "state": "NY", "zip": "13326", "phone": "607-547-9461"},
+    {"name": "Paraco Gas - Deposit", "street": "2956 Old Route 17", "city": "Deposit", "state": "NY", "zip": "13757", "phone": "570-874-6035"},
+    {"name": "Paraco Gas - Hoosick Falls", "street": "21990 Route 22", "city": "Hoosick Falls", "state": "NY", "zip": "12090", "phone": "845-647-6300"},
+    {"name": "Paraco Gas - Brackney/Friendsville", "street": "27034 State Route 267", "city": "Friendsville", "state": "PA", "zip": "18818", "phone": "570-874-6035"},
+    {"name": "Paraco Gas - Ashland", "street": "11325 Route 23", "city": "Ashland", "state": "NY", "zip": "12407", "phone": "800-647-4427"},
+    {"name": "Paraco Gas - Gardiner", "street": "40 Steves Lane", "city": "Gardiner", "state": "NY", "zip": "12525", "phone": "800-647-4427"}
+  ]
+}

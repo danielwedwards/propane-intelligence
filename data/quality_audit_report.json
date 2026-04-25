@@ -1,0 +1,70 @@
+{
+  "issues": {
+    "hq_city_equals_state": [
+      "Thompson Gas: hqCity='SC', hqState='SC'",
+      "United Propane Gas: hqCity='AL', hqState='AL'"
+    ],
+    "loc_city_equals_state": [
+      "Thompson Gas: location city='SC', state='SC'",
+      "United Propane Gas: location city='AL', state='AL'"
+    ],
+    "revenue_gallon_outlier": [
+      "SHV Energy: $5000M rev / 55M gal = $90.91/gal",
+      "Chesapeake Utilities (subsidiary/brand): $228M rev / 9M gal = $25.33/gal",
+      "NGL Energy Partners: $3470M rev / 170M gal = $20.41/gal"
+    ],
+    "potential_duplicates": [
+      "Dixie LP Gas Inc, Dixie Gas Co",
+      "Green's Propane Gas, Green's Propane Gas Co Inc",
+      "Mallard Oil & LP Gas, Mallard Oil & LP Gas Co.",
+      "Partners Propane of GA, Inc., Partners Propane of Ga Inc, Partners Propane of Ga, Inc.",
+      "Reed Gas Propane Co, Reed Gas Propane Co."
+    ],
+    "location_far_from_state": [
+      "Thompson Gas: loc at (40.702,-73.9424) claimed state=MO, dist=18.7 degrees from center",
+      "Thompson Gas: loc at (40.6887,-73.8229) claimed state=MN, dist=21.2 degrees from center",
+      "Thompson Gas: loc at (41.6725,-74.3716) claimed state=IL, dist=15.1 degrees from center",
+      "Thompson Gas: loc at (39.9777,-75.1459) claimed state=WA, dist=46.0 degrees from center",
+      "Thompson Gas: loc at (39.2072,-77.0547) claimed state=OR, dist=43.7 degrees from center",
+      "Thompson Gas: loc at (31.5455,-82.4407) claimed state=WA, dist=41.2 degrees from center",
+      "Thompson Gas: loc at (38.3343,-80.887) claimed state=MS, dist=10.5 degrees from center",
+      "United Propane Gas: loc at (43.0833,-74.1381) claimed state=IL, dist=15.6 degrees from center",
+      "United Propane Gas: loc at (42.8767,-75.9086) claimed state=TN, dist=12.7 degrees from center",
+      "Alabama Propane Exchange: loc at (43.452,-75.3554) claimed state=AL, dist=15.6 degrees from center"
+    ],
+    "high_confidence_missing_fields": [
+      "Suburban Propane Partners, L.P. (conf=5): missing website",
+      "Blossman Gas (conf=4): missing website",
+      "Lampton Love (conf=4): missing estRevenue",
+      "SHV Energy (conf=4): missing website",
+      "Chesapeake Utilities (subsidiary/brand) (conf=4): missing website",
+      "Lettermen's Energy (conf=3): missing employeeCount",
+      "Reed Oil (conf=3): missing website",
+      "Sem Stream LP (conf=3): missing estRevenue, employeeCount"
+    ],
+    "malformed_tier": [
+      "Herring Gas Company, Inc.: optBTier='Proximity\nScore'",
+      "Herring Gas Company, Inc.: optCTier='Proximity\nScore'",
+      "Parker Oil Company: optBTier='Proximity\nScore'",
+      "Parker Oil Company: optCTier='Proximity\nScore'",
+      "Battle Oil Company: optBTier='Proximity\nScore'",
+      "Battle Oil Company: optCTier='Proximity\nScore'",
+      "Mobile Bottle Gas Company: optBTier='Proximity\nScore'",
+      "Mobile Bottle Gas Company: optCTier='Proximity\nScore'",
+      "Wellbilt Gas Company: optBTier='Proximity\nScore'",
+      "Wellbilt Gas Company: optCTier='Proximity\nScore'"
+    ]
+  },
+  "p1_candidates": [],
+  "summary": {
+    "total_companies": 357,
+    "total_issues": 40,
+    "confidence_distribution": {
+      "4": 17,
+      "5": 4,
+      "3": 38,
+      "2": 21,
+      "1": 277
+    }
+  }
+}

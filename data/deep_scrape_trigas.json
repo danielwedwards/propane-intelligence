@@ -1,0 +1,14 @@
+{
+  "source": "trigas-oil.com (now pepupinc.com)",
+  "scraped": "2026-04-11",
+  "method": "Web search aggregation (site redirects to parent PepUp)",
+  "note": "Tri Gas & Oil acquired by PepUp Inc. Only 6 branches identified.",
+  "locations": [
+    {"name": "Tri Gas & Oil - Federalsburg (HQ)", "street": "3941 Federalsburg Hwy", "city": "Federalsburg", "state": "MD", "zip": "21632", "phone": "800-638-7802"},
+    {"name": "Tri Gas & Oil - Cambridge", "street": "2918 Old Route 50", "city": "Cambridge", "state": "MD", "zip": "21613", "phone": "410-228-8500"},
+    {"name": "Tri Gas & Oil - Galena", "street": "13255 Augustine Herman Hwy", "city": "Galena", "state": "MD", "zip": "21635", "phone": "410-648-5856"},
+    {"name": "Tri Gas & Oil - Georgetown", "street": "20501 DuPont Blvd", "city": "Georgetown", "state": "DE", "zip": "19947", "phone": "302-856-6300"},
+    {"name": "Tri Gas & Oil - Easton", "city": "Easton", "state": "MD", "phone": "800-638-7802"},
+    {"name": "Tri Gas & Oil - Williamsburg (rail terminal)", "city": "Williamsburg", "state": "MD", "phone": "800-638-7802"}
+  ]
+}

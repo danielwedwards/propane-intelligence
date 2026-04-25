@@ -1,0 +1,148 @@
+{
+  "source": "https://www.griffithenergyservices.com/locations/",
+  "scraped": "2026-04-11",
+  "company": "Griffith Energy Services",
+  "parent": "Superior Plus Propane (subsidiary)",
+  "notes": "Mid-Atlantic propane and heating oil distributor serving MD, VA, DE, WV, NJ, PA. Extracted via individual location pages.",
+  "locations": [
+    {
+      "name": "Corporate HQ - Columbia, MD",
+      "address": "6996 Columbia Gateway Dr STE 202",
+      "city": "Columbia",
+      "state": "MD",
+      "zip": "21046",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Damascus, MD",
+      "address": "10000 Lewis Drive",
+      "city": "Damascus",
+      "state": "MD",
+      "zip": "20872",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Dover, DE (Carl King division)",
+      "address": "1400 East Lebanon Road",
+      "city": "Dover",
+      "state": "DE",
+      "zip": "19901",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Frederick, MD",
+      "address": "200 East South Street",
+      "city": "Frederick",
+      "state": "MD",
+      "zip": "21701",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Hagerstown, MD",
+      "address": "260A Eastern Boulevard North",
+      "city": "Hagerstown",
+      "state": "MD",
+      "zip": "21740",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Fairfax, VA",
+      "address": "9685 Main Street",
+      "city": "Fairfax",
+      "state": "VA",
+      "zip": "22031",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Berryville, VA",
+      "address": "618 E Main Street",
+      "city": "Berryville",
+      "state": "VA",
+      "zip": "22611",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Cheverly, MD",
+      "address": "2510 Schuster Drive",
+      "city": "Cheverly",
+      "state": "MD",
+      "zip": "20781",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Easton, MD",
+      "address": "400 South Aurora Street",
+      "city": "Easton",
+      "state": "MD",
+      "zip": "21601",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Edgewater, MD",
+      "address": "3173 Solomons Island Road",
+      "city": "Edgewater",
+      "state": "MD",
+      "zip": "21037",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Westminster, MD",
+      "address": "8 Sullivan Avenue",
+      "city": "Westminster",
+      "state": "MD",
+      "zip": "21157",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Berlin, MD",
+      "address": "10535 Ocean Gateway",
+      "city": "Berlin",
+      "state": "MD",
+      "zip": "21811",
+      "phone": "(410) 641-2251"
+    },
+    {
+      "name": "Charles Town, WV",
+      "address": "11066 Middleway Pike",
+      "city": "Charles Town",
+      "state": "WV",
+      "zip": "25414",
+      "phone": "(888) 474-3391"
+    },
+    {
+      "name": "Hillsborough, NJ (Allied Oil division)",
+      "address": "25 Old Camplain Rd # 2",
+      "city": "Hillsborough",
+      "state": "NJ",
+      "zip": "08844",
+      "phone": "(908) 575-7577"
+    },
+    {
+      "name": "Baltimore, MD",
+      "address": null,
+      "city": "Baltimore",
+      "state": "MD",
+      "zip": null,
+      "phone": "(888) 474-3391",
+      "notes": "Service area page exists but street address not published; 404 on direct fetch"
+    },
+    {
+      "name": "Ocean City, MD",
+      "address": null,
+      "city": "Ocean City",
+      "state": "MD",
+      "zip": null,
+      "phone": "(888) 474-3391",
+      "notes": "Listed as service area; page returned 404"
+    },
+    {
+      "name": "Salisbury, MD",
+      "address": null,
+      "city": "Salisbury",
+      "state": "MD",
+      "zip": null,
+      "phone": "(888) 474-3391",
+      "notes": "Listed as service area; page returned 404"
+    }
+  ]
+}

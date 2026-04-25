@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Corsicana",
+    "state": "TX",
+    "lat": 32.121083,
+    "lng": -96.4656887,
+    "address": "2500 N Business 45, Corsicana, TX",
+    "county": "Navarro County, TX"
+  },
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Longview",
+    "state": "TX",
+    "lat": 32.5700578,
+    "lng": -94.8067155,
+    "address": "4803 Gilmer Rd, Longview, TX",
+    "county": "Gregg County, TX"
+  },
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Pittsburg",
+    "state": "TX",
+    "lat": 32.992639,
+    "lng": -94.9680266,
+    "address": "303 Rusk St, Pittsburg, TX",
+    "county": "Camp County, TX"
+  },
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Ennis",
+    "state": "TX",
+    "lat": 32.3514849,
+    "lng": -96.634253,
+    "address": "2505 N Kaufman St, Ennis, TX",
+    "county": "Ellis County, TX"
+  },
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Frankston",
+    "state": "TX",
+    "lat": 32.063611,
+    "lng": -95.5021169,
+    "address": "291 N Frankston Hwy, Frankston, TX",
+    "county": "Anderson County, TX"
+  },
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Palestine",
+    "state": "TX",
+    "lat": 31.7621153,
+    "lng": -95.6307891,
+    "address": "6010 TX-256 Loop, Palestine, TX",
+    "county": "Anderson County, TX"
+  },
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Huntsville",
+    "state": "TX",
+    "lat": 30.7235263,
+    "lng": -95.5507771,
+    "address": "1387 Hwy 75 N, Huntsville, TX",
+    "county": "Walker County, TX"
+  },
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Athens",
+    "state": "TX",
+    "lat": 32.2044416,
+    "lng": -95.854914,
+    "address": "2146 US Hwy 175 E, Athens, TX",
+    "county": "Henderson County, TX"
+  },
+  {
+    "name": "Nelson Propane Gas, Inc.",
+    "city": "Mexia",
+    "state": "TX",
+    "lat": 31.6816183,
+    "lng": -96.4783677,
+    "address": "1350 US Hwy 84 W, Mexia, TX",
+    "county": "Limestone County, TX"
+  }
+]

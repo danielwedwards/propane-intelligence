@@ -1,0 +1,187 @@
+{
+  "source": "https://southernfs.com/",
+  "scraped": "2026-04-11",
+  "member_id": "southernfs",
+  "locations": [
+    {
+      "name": "Eldorado, IL",
+      "street": "55 Bourland Rd",
+      "city": "Eldorado",
+      "state": "IL",
+      "zip": "62930",
+      "phone": "(618) 273-4615",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Macedonia, IL",
+      "street": "21795 St Hwy 14",
+      "city": "Macedonia",
+      "state": "IL",
+      "zip": "62860",
+      "phone": "(618) 728-4358",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Harrisburg, IL",
+      "street": "5 West Robinson St",
+      "city": "Harrisburg",
+      "state": "IL",
+      "zip": "62946",
+      "phone": "(618) 253-8977",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Corporate Office",
+      "street": "2002 E Main St.",
+      "city": "Marion",
+      "state": "IL",
+      "zip": "62959",
+      "phone": "(618) 993-2833",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Marion Warehouse",
+      "street": "1501 E Deyoung St.",
+      "city": "Marion",
+      "state": "IL",
+      "zip": "62959",
+      "phone": "(618) 997-5135",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Mulkeytown, IL",
+      "street": "1763 St Hwy 14",
+      "city": "Mulkeytown",
+      "state": "IL",
+      "zip": "62865",
+      "phone": "(618) 724-2454",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Big Bay (Grantsburg, IL)",
+      "street": "4 Big Bay Rd",
+      "city": "Grantsburg",
+      "state": "IL",
+      "zip": "62943",
+      "phone": "(618) 422-6806",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Southern FS Paducah",
+      "street": "115 Locust Drive",
+      "city": "Paducah",
+      "state": "KY",
+      "zip": "42003",
+      "phone": "(270) 217-9090",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Pinckneyville, IL",
+      "street": "3565 Blue Bunting Rd",
+      "city": "Pinckneyville",
+      "state": "IL",
+      "zip": "62274",
+      "phone": "(618) 357-5338",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Boles, IL (West Vienna)",
+      "street": "140 St Rt 37",
+      "city": "Boles",
+      "state": "IL",
+      "zip": "62909",
+      "phone": "(618) 658-8326",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Carbondale, IL",
+      "street": "1114 Marion Street",
+      "city": "Carbondale",
+      "state": "IL",
+      "zip": "62901",
+      "phone": "(618) 457-5919",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Murphysboro, IL",
+      "street": "17950 Hwy 127",
+      "city": "Murphysboro",
+      "state": "IL",
+      "zip": "62966",
+      "phone": "(618) 687-3032",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Jonesboro, IL",
+      "street": "400 South Main St",
+      "city": "Jonesboro",
+      "state": "IL",
+      "zip": "62952",
+      "phone": "(618) 833-2494",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Pulaski, IL",
+      "street": "200 Seed Corn",
+      "city": "Ullin",
+      "state": "IL",
+      "zip": "62992",
+      "phone": "(618) 845-3600",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Jacob, IL",
+      "street": "90 Buffalo Lane",
+      "city": "Jacob",
+      "state": "IL",
+      "zip": "62950",
+      "phone": "(618) 763-4453",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Hickman, KY",
+      "street": "345 Kentucky 166 West",
+      "city": "Hickman",
+      "state": "KY",
+      "zip": "42050",
+      "phone": "(270) 883-0001",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Whitewater, MO",
+      "street": "8759 St Hwy A",
+      "city": "Whitewater",
+      "state": "MO",
+      "zip": "63785",
+      "phone": "(573) 794-2211",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Dexter, MO",
+      "street": "13972 County Rd 717",
+      "city": "Dexter",
+      "state": "MO",
+      "zip": "63481",
+      "phone": "(573) 624-4160",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

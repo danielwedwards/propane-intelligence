@@ -1,0 +1,711 @@
+{
+  "batch": "il_mo_ky_tn",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "Arneson Oil & Propane Co.",
+      "hqCity": "Sheridan",
+      "hqState": "IL",
+      "website": "https://www.arnesonoil.com/",
+      "knownLocations": [
+        {
+          "city": "Sheridan",
+          "state": "IL",
+          "street": "110 S Robinson St"
+        },
+        {
+          "city": "Sandwich",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Somonauk",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned independent fuel, lubricant and propane distributor serving north-central Illinois since 1953."
+    },
+    {
+      "name": "Freeport Propane Service",
+      "hqCity": "Freeport",
+      "hqState": "IL",
+      "website": "https://freeportilpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Freeport",
+          "state": "IL",
+          "street": "1725 S Galena Ave"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane supplier in northwest Illinois (Stephenson County) serving residential and commercial customers since 1990."
+    },
+    {
+      "name": "Illini Propane LLC",
+      "hqCity": "Ashland",
+      "hqState": "IL",
+      "website": "https://www.illinipropanellc.com/",
+      "knownLocations": [
+        {
+          "city": "Ashland",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned local propane dealer in west-central Illinois, serving residential, agricultural, and commercial customers."
+    },
+    {
+      "name": "AG View FS Inc.",
+      "hqCity": "Princeton",
+      "hqState": "IL",
+      "website": "https://fscooperatives.com/agviewfs",
+      "knownLocations": [
+        {
+          "city": "Princeton",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Kewanee",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Rock Falls",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Dixon",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Walnut",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "FS agricultural cooperative serving Bureau, Lee, Marshall, Putnam, Stark, Carroll, and Ogle counties with fuel and propane distribution."
+    },
+    {
+      "name": "Gateway FS (Gateway Propane)",
+      "hqCity": "Red Bud",
+      "hqState": "IL",
+      "website": "https://www.gatewayfs.com/Products-Services/Propane",
+      "knownLocations": [
+        {
+          "city": "Red Bud",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Waterloo",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Sparta",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Chester",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Gateway FS agricultural cooperative propane operation serving southwestern Illinois (Monroe, Randolph, St. Clair counties)."
+    },
+    {
+      "name": "Select Propane & Fuel",
+      "hqCity": "Red Bud",
+      "hqState": "IL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Red Bud",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Sparta",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Independent propane operation launched in 1986 serving southwestern Illinois with residential, dryer gas, and commercial propane."
+    },
+    {
+      "name": "Heetco (Pinnacle Propane affiliate)",
+      "hqCity": "Quincy",
+      "hqState": "IL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Quincy",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Regional independent propane dealer operating in western Illinois; now operates under the Heetco/Pinnacle Propane brand."
+    },
+    {
+      "name": "D.B. Gray Oil Company",
+      "hqCity": "Hull",
+      "hqState": "IL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Hull",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Illinois subsidiary of Big River Oil serving Pike County and the Illinois side of the Tri-State region."
+    },
+    {
+      "name": "Priority Propane LLC",
+      "hqCity": "Aurora",
+      "hqState": "MO",
+      "website": "https://www.prioritypropane.com/",
+      "knownLocations": [
+        {
+          "city": "Aurora",
+          "state": "MO",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Independent propane delivery company in southwest Missouri serving Lawrence County and surrounding area."
+    },
+    {
+      "name": "R & R Propane",
+      "hqCity": "Festus",
+      "hqState": "MO",
+      "website": "https://www.rrpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Festus",
+          "state": "MO",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned propane company serving Jefferson, Washington, and St. Francois counties in eastern Missouri for over 15 years."
+    },
+    {
+      "name": "St. Joe Petroleum Co.",
+      "hqCity": "St. Joseph",
+      "hqState": "MO",
+      "website": "https://stjoepetroleum.com/",
+      "knownLocations": [
+        {
+          "city": "St. Joseph",
+          "state": "MO",
+          "street": "2520 S 2nd St"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Independent petroleum and propane distributor headquartered in northwest Missouri, serving northwest Missouri and parts of Kansas."
+    },
+    {
+      "name": "Bryan's Propane",
+      "hqCity": "Sedalia",
+      "hqState": "MO",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sedalia",
+          "state": "MO",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Locally owned propane provider in west-central Missouri serving the Sedalia/Pettis County area."
+    },
+    {
+      "name": "ThompsonGas - Cameron",
+      "hqCity": "Cameron",
+      "hqState": "MO",
+      "website": "https://thompsongas.com/locations/propane-supplier-cameron-mo",
+      "knownLocations": [
+        {
+          "city": "Cameron",
+          "state": "MO",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "ThompsonGas propane supplier branch in northwest Missouri (ThompsonGas HQ in Frederick, MD)."
+    },
+    {
+      "name": "Paul Tuemler LP Gas, Inc.",
+      "hqCity": "Walton",
+      "hqState": "KY",
+      "website": "https://www.paultuemlerlpgas.com/Home",
+      "knownLocations": [
+        {
+          "city": "Walton",
+          "state": "KY",
+          "street": "341 Old Nicholson Rd"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane dealer in northern Kentucky (Boone County) serving greater Cincinnati suburbs since 1971."
+    },
+    {
+      "name": "Clark Propane Plus",
+      "hqCity": "Flemingsburg",
+      "hqState": "KY",
+      "website": "https://www.clarkpropaneplus.com/",
+      "knownLocations": [
+        {
+          "city": "Flemingsburg",
+          "state": "KY",
+          "street": "2737 Morehead Road"
+        },
+        {
+          "city": "Winchester",
+          "state": "KY",
+          "street": "4911 Rockwell Road"
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane, fireplace, and grill dealer with 25+ years serving Morehead, Maysville, Owingsville, Flemingsburg and eastern/central Kentucky."
+    },
+    {
+      "name": "Southern States Cooperative - Kentucky Propane",
+      "hqCity": "Owingsville",
+      "hqState": "KY",
+      "website": "https://southernstates.com/pages/energy/propane",
+      "knownLocations": [
+        {
+          "city": "Owingsville",
+          "state": "KY",
+          "street": "409 N Brooks Alley"
+        },
+        {
+          "city": "Danville",
+          "state": "KY",
+          "street": "1244 Lebanon Road"
+        },
+        {
+          "city": "Harrodsburg",
+          "state": "KY",
+          "street": "1027 North College Street"
+        },
+        {
+          "city": "Richmond",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Southern States farmer cooperative propane operation with multiple Kentucky branches serving agricultural and residential customers."
+    },
+    {
+      "name": "AgCentral Cooperative",
+      "hqCity": "Athens",
+      "hqState": "TN",
+      "website": "https://www.agcentral.coop/locations",
+      "knownLocations": [
+        {
+          "city": "Athens",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Loudon",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Maryville",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Sweetwater",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Madisonville",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Farmer-owned cooperative with propane operations at multiple southeast Tennessee locations serving McMinn, Loudon, Blount, Monroe counties."
+    },
+    {
+      "name": "Greater Dickson Gas Authority",
+      "hqCity": "Dickson",
+      "hqState": "TN",
+      "website": "https://gdga.com/",
+      "knownLocations": [
+        {
+          "city": "Dickson",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "municipal",
+      "notes": "Municipal gas authority with propane division established in 1992 serving Dickson and surrounding Middle Tennessee communities."
+    },
+    {
+      "name": "The Gas Shack",
+      "hqCity": "",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Greeneville",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Kingsport",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Johnson City",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Independent propane dealer operating in the Tri-Cities region of upper East Tennessee."
+    },
+    {
+      "name": "J & J Ingas",
+      "hqCity": "Pulaski",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Pulaski",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Independent propane provider in Giles County serving southern Middle Tennessee."
+    },
+    {
+      "name": "Raceway Propane",
+      "hqCity": "Kingsport",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kingsport",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Independent propane provider serving Sullivan County and the Tri-Cities area of East Tennessee."
+    },
+    {
+      "name": "Cupboard Propane & Moving",
+      "hqCity": "",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kingsport",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Johnson City",
+          "state": "TN",
+          "street": ""
+        },
+        {
+          "city": "Greeneville",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Propane and moving/storage operator with multiple locations in the Tri-Cities region of upper East Tennessee."
+    },
+    {
+      "name": "Sim's Telstar Tire & Propane",
+      "hqCity": "",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Loudon",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned tire and propane operator serving the Loudon County, Tennessee area."
+    },
+    {
+      "name": "Valley National Gases",
+      "hqCity": "",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Johnson City",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Industrial gas and propane distributor with a Johnson City branch serving the Tri-Cities region."
+    },
+    {
+      "name": "Freeman Gas Company",
+      "hqCity": "",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned propane distributor (Spartanburg SC HQ) with Tennessee service branches in southeast and east TN."
+    },
+    {
+      "name": "Calloway County Propane (UPG)",
+      "hqCity": "Murray",
+      "hqState": "KY",
+      "website": "https://upgas.com/find-a-location/",
+      "knownLocations": [
+        {
+          "city": "Murray",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "United Propane Gas (UPG) affiliate serving Calloway County in far western Kentucky."
+    },
+    {
+      "name": "Graves County Propane (UPG)",
+      "hqCity": "Mayfield",
+      "hqState": "KY",
+      "website": "https://upgas.com/find-a-location/",
+      "knownLocations": [
+        {
+          "city": "Mayfield",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "United Propane Gas affiliate serving Graves County in far western Kentucky."
+    },
+    {
+      "name": "Green River Propane (UPG)",
+      "hqCity": "",
+      "hqState": "KY",
+      "website": "https://upgas.com/find-a-location/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "United Propane Gas affiliate serving the Green River region of western Kentucky."
+    },
+    {
+      "name": "Redhawk Propane",
+      "hqCity": "St. Elmo",
+      "hqState": "IL",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "St. Elmo",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Altamont",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Vandalia",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Greenville",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Ramsey",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Mulberry Grove",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Locally owned propane dealer in south-central Illinois serving Fayette, Bond, and Effingham counties since 1980."
+    },
+    {
+      "name": "The Equity",
+      "hqCity": "Effingham",
+      "hqState": "IL",
+      "website": "https://www.theequity.com/energy",
+      "knownLocations": [
+        {
+          "city": "Effingham",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Farina",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Lovington",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "Marshall",
+          "state": "IL",
+          "street": ""
+        },
+        {
+          "city": "West Liberty",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Grain, fuel, and propane cooperative (Equity Marketing Alliance) serving east-central Illinois with branded fuel and propane delivery."
+    },
+    {
+      "name": "South Central FS Inc.",
+      "hqCity": "Effingham",
+      "hqState": "IL",
+      "website": "https://www.southcentralfs.com/Products-Services/Propane",
+      "knownLocations": [
+        {
+          "city": "Effingham",
+          "state": "IL",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "FS agricultural cooperative serving Effingham, Fayette, Shelby, and surrounding south-central Illinois counties with propane and fuel distribution."
+    },
+    {
+      "name": "Bootheel Propane",
+      "hqCity": "Kennett",
+      "hqState": "MO",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Kennett",
+          "state": "MO",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Independent propane dealer serving the Missouri Bootheel region (Dunklin, Pemiscot, New Madrid counties)."
+    },
+    {
+      "name": "Lykins Energy Solutions",
+      "hqCity": "Milford",
+      "hqState": "OH",
+      "website": "https://www.lykinsenergy.com/",
+      "knownLocations": [
+        {
+          "city": "London",
+          "state": "KY",
+          "street": ""
+        },
+        {
+          "city": "Corbin",
+          "state": "KY",
+          "street": ""
+        },
+        {
+          "city": "Barbourville",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned regional fuel and propane distributor (Ohio HQ) with Kentucky operations serving Laurel, Whitley, and Knox counties."
+    },
+    {
+      "name": "Eastern Kentucky Propane (UPG)",
+      "hqCity": "London",
+      "hqState": "KY",
+      "website": "https://upgas.com/find-a-location/",
+      "knownLocations": [
+        {
+          "city": "London",
+          "state": "KY",
+          "street": ""
+        },
+        {
+          "city": "Corbin",
+          "state": "KY",
+          "street": ""
+        },
+        {
+          "city": "Barbourville",
+          "state": "KY",
+          "street": ""
+        },
+        {
+          "city": "Williamsburg",
+          "state": "KY",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "United Propane Gas (UPG) affiliate serving southeastern Kentucky including Laurel, Whitley, Knox, and Bell counties."
+    },
+    {
+      "name": "AmeriGas / Hydratane of Athens",
+      "hqCity": "Athens",
+      "hqState": "TN",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Athens",
+          "state": "TN",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "AmeriGas branch operating under Hydratane brand in McMinn County, serving southeast Tennessee residential and commercial customers."
+    }
+  ]
+}

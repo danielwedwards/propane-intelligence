@@ -1,0 +1,657 @@
+[
+  {
+    "id": "halter_gas_co",
+    "name": "Halter Gas Co",
+    "state": "IL"
+  },
+  {
+    "id": "farm_home_lp",
+    "name": "Farm & Home LP",
+    "state": "IL"
+  },
+  {
+    "id": "lin_gas_propane",
+    "name": "Lin-Gas Propane",
+    "state": "IL"
+  },
+  {
+    "id": "united_propane_gas_vienna_il",
+    "name": "United Propane Gas (Vienna, IL)",
+    "state": "IL"
+  },
+  {
+    "id": "tri_county_propane_llc",
+    "name": "Tri County Propane LLC",
+    "state": "IL"
+  },
+  {
+    "id": "synenergy_partners_llc",
+    "name": "SynEnergy Partners LLC",
+    "state": "IL"
+  },
+  {
+    "id": "big_river_oil_co",
+    "name": "Big River Oil Co.",
+    "state": "IL"
+  },
+  {
+    "id": "mfa_oil_propane",
+    "name": "MFA Oil Propane",
+    "state": "IL"
+  },
+  {
+    "id": "united_propane_gas_corporate_office",
+    "name": "United Propane Gas Corporate Office",
+    "state": "IL"
+  },
+  {
+    "id": "patoka_propane",
+    "name": "Patoka Propane",
+    "state": "IL"
+  },
+  {
+    "id": "yoder_oil_inc",
+    "name": "Yoder Oil Inc",
+    "state": "IL"
+  },
+  {
+    "id": "united_propane_gas_equality_il",
+    "name": "United Propane Gas (Equality, IL)",
+    "state": "IL"
+  },
+  {
+    "id": "gateway_propane",
+    "name": "Gateway Propane",
+    "state": "IL"
+  },
+  {
+    "id": "lp_mart",
+    "name": "LP Mart",
+    "state": "IL"
+  },
+  {
+    "id": "heritage_propane",
+    "name": "Heritage Propane",
+    "state": "IL"
+  },
+  {
+    "id": "southeast_coop_services",
+    "name": "Southeast COOP Services",
+    "state": "IL"
+  },
+  {
+    "id": "evergreen_fs",
+    "name": "Evergreen FS",
+    "state": "IL"
+  },
+  {
+    "id": "mulgrew_oil_and_propane_co",
+    "name": "Mulgrew Oil and Propane Co",
+    "state": "IL"
+  },
+  {
+    "id": "suhre_s_gas_co",
+    "name": "Suhre's Gas Co.",
+    "state": "IL"
+  },
+  {
+    "id": "hicksgas_propane_sales_service",
+    "name": "Hicksgas Propane Sales & Service",
+    "state": "IL"
+  },
+  {
+    "id": "hub_city_propane",
+    "name": "Hub City Propane",
+    "state": "IN"
+  },
+  {
+    "id": "united_propane_gas_ferdinand_in",
+    "name": "United Propane Gas (Ferdinand, IN)",
+    "state": "IN"
+  },
+  {
+    "id": "co_alliance_propane",
+    "name": "Co-Alliance Propane",
+    "state": "IN"
+  },
+  {
+    "id": "franger_gas_company_inc",
+    "name": "Franger Gas Company, Inc",
+    "state": "IN"
+  },
+  {
+    "id": "propane_people_inc",
+    "name": "Propane People Inc",
+    "state": "IN"
+  },
+  {
+    "id": "corrigan_oil_and_propane",
+    "name": "Corrigan Oil and Propane",
+    "state": "IN"
+  },
+  {
+    "id": "indy_propane_llc",
+    "name": "Indy Propane LLC",
+    "state": "IN"
+  },
+  {
+    "id": "sagamore_gas_appliances_inc",
+    "name": "Sagamore Gas & Appliances Inc",
+    "state": "IN"
+  },
+  {
+    "id": "donahue_gas",
+    "name": "Donahue Gas",
+    "state": "IN"
+  },
+  {
+    "id": "stump_lp_gas_inc",
+    "name": "Stump LP Gas Inc",
+    "state": "IN"
+  },
+  {
+    "id": "ceres_solutions",
+    "name": "Ceres Solutions",
+    "state": "IN"
+  },
+  {
+    "id": "premier_energy_formerly_gaile_s_propane",
+    "name": "Premier Energy (Formerly Gaile's Propane)",
+    "state": "IN"
+  },
+  {
+    "id": "warford_silgas",
+    "name": "Warford Silgas",
+    "state": "IN"
+  },
+  {
+    "id": "shelby_county_co_op",
+    "name": "Shelby County Co-op",
+    "state": "IN"
+  },
+  {
+    "id": "tri_state_butane_co_inc_bot_l_gas",
+    "name": "Tri-State Butane Co., Inc. BOT-L-GAS",
+    "state": "IN"
+  },
+  {
+    "id": "frankfort_bottle_gas_inc",
+    "name": "Frankfort Bottle Gas Inc.",
+    "state": "IN"
+  },
+  {
+    "id": "cook_oil_company",
+    "name": "Cook Oil Company",
+    "state": "KS"
+  },
+  {
+    "id": "cleveland_petroleum_products",
+    "name": "Cleveland Petroleum Products",
+    "state": "KS"
+  },
+  {
+    "id": "haswell_propane",
+    "name": "Haswell Propane",
+    "state": "KS"
+  },
+  {
+    "id": "jl_propane_llc",
+    "name": "JL Propane LLC",
+    "state": "KS"
+  },
+  {
+    "id": "chief_lp_gas_co",
+    "name": "Chief LP Gas Co",
+    "state": "KS"
+  },
+  {
+    "id": "wanklyn_oil_co_inc",
+    "name": "Wanklyn Oil Co Inc",
+    "state": "KS"
+  },
+  {
+    "id": "garden_city_propane",
+    "name": "Garden City Propane",
+    "state": "KS"
+  },
+  {
+    "id": "prater_s_propane_co",
+    "name": "Prater's Propane Co",
+    "state": "KS"
+  },
+  {
+    "id": "fronk_oil_co_inc",
+    "name": "Fronk Oil Co., Inc.",
+    "state": "KS"
+  },
+  {
+    "id": "flatlanders_farm_home",
+    "name": "Flatlanders Farm & Home",
+    "state": "KS"
+  },
+  {
+    "id": "kramer_oil_co_inc",
+    "name": "Kramer Oil Co Inc",
+    "state": "KS"
+  },
+  {
+    "id": "maltsberger_industrial_propane",
+    "name": "Maltsberger Industrial Propane",
+    "state": "KS"
+  },
+  {
+    "id": "miller_bros_inc",
+    "name": "Miller Bros Inc",
+    "state": "KS"
+  },
+  {
+    "id": "ralston_farmer_s_fuel_oil",
+    "name": "Ralston Farmer's Fuel & Oil",
+    "state": "KS"
+  },
+  {
+    "id": "hartland_propane",
+    "name": "Hartland Propane",
+    "state": "KY"
+  },
+  {
+    "id": "lykins_queen_city_propane",
+    "name": "Lykins Queen City Propane",
+    "state": "KY"
+  },
+  {
+    "id": "farmers_energy_propane_plus",
+    "name": "Farmers Energy Propane Plus",
+    "state": "KY"
+  },
+  {
+    "id": "miles_lp_gas_upton",
+    "name": "Miles LP Gas - Upton",
+    "state": "KY"
+  },
+  {
+    "id": "ekron_ky_miles_lp_gas",
+    "name": "Ekron,Ky Miles LP Gas",
+    "state": "KY"
+  },
+  {
+    "id": "bennett_s_gas",
+    "name": "Bennett's Gas",
+    "state": "KY"
+  },
+  {
+    "id": "hardy_gas_co_inc",
+    "name": "Hardy Gas Co Inc.",
+    "state": "KY"
+  },
+  {
+    "id": "united_propane_gas_murray_ky",
+    "name": "United Propane Gas (Murray, KY)",
+    "state": "KY"
+  },
+  {
+    "id": "united_propane_gas_mayfield_ky",
+    "name": "United Propane Gas (Mayfield, KY)",
+    "state": "KY"
+  },
+  {
+    "id": "premier_energy",
+    "name": "Premier Energy",
+    "state": "KY"
+  },
+  {
+    "id": "morgan_county_propane",
+    "name": "Morgan County Propane",
+    "state": "KY"
+  },
+  {
+    "id": "cincinnati_propane",
+    "name": "Cincinnati Propane",
+    "state": "KY"
+  },
+  {
+    "id": "propane_king",
+    "name": "Propane King",
+    "state": "KY"
+  },
+  {
+    "id": "midwest_bottle_gas",
+    "name": "Midwest Bottle Gas",
+    "state": "KY"
+  },
+  {
+    "id": "fortner_gas_co",
+    "name": "Fortner Gas Co",
+    "state": "KY"
+  },
+  {
+    "id": "caney_valley_propane",
+    "name": "Caney Valley Propane",
+    "state": "KY"
+  },
+  {
+    "id": "tri_county_propane_inc",
+    "name": "Tri-County Propane Inc.",
+    "state": "KY"
+  },
+  {
+    "id": "greenwell_propane",
+    "name": "Greenwell Propane",
+    "state": "KY"
+  },
+  {
+    "id": "wardway_fuels",
+    "name": "Wardway Fuels",
+    "state": "KY"
+  },
+  {
+    "id": "gary_s",
+    "name": "Gary's",
+    "state": "LA"
+  },
+  {
+    "id": "propane_industrial_gases",
+    "name": "Propane Industrial Gases",
+    "state": "LA"
+  },
+  {
+    "id": "dileo_gas_propane",
+    "name": "DiLeo Gas Propane",
+    "state": "MA"
+  },
+  {
+    "id": "liberty_propane_equipment_co",
+    "name": "Liberty Propane Equipment Co",
+    "state": "MA"
+  },
+  {
+    "id": "sea_gas",
+    "name": "Sea Gas",
+    "state": "MA"
+  },
+  {
+    "id": "simard_gas_oil_co",
+    "name": "Simard Gas & Oil Co",
+    "state": "MA"
+  },
+  {
+    "id": "jaysan_gas_service_inc",
+    "name": "JaySan Gas Service Inc.",
+    "state": "MA"
+  },
+  {
+    "id": "w_h_riley_son",
+    "name": "W.H. Riley & Son",
+    "state": "MA"
+  },
+  {
+    "id": "phil_s_propane",
+    "name": "Phil's Propane",
+    "state": "MA"
+  },
+  {
+    "id": "ayer_goss",
+    "name": "Ayer & Goss",
+    "state": "MA"
+  },
+  {
+    "id": "snow_s_fuel_company",
+    "name": "Snow's Fuel Company",
+    "state": "MA"
+  },
+  {
+    "id": "newport_propane",
+    "name": "Newport Propane",
+    "state": "MA"
+  },
+  {
+    "id": "american_propane",
+    "name": "American Propane",
+    "state": "MA"
+  },
+  {
+    "id": "e_p_wine_propane",
+    "name": "E.P. Wine Propane",
+    "state": "MA"
+  },
+  {
+    "id": "sherborn_fuel_and_propane_tank_refills",
+    "name": "Sherborn Fuel and Propane Tank Refills",
+    "state": "MA"
+  },
+  {
+    "id": "dunlap_s_propane_inc",
+    "name": "Dunlap's Propane Inc",
+    "state": "MA"
+  },
+  {
+    "id": "walter_s_propane",
+    "name": "Walter's Propane",
+    "state": "MA"
+  },
+  {
+    "id": "jfc_propane",
+    "name": "JFC Propane",
+    "state": "MA"
+  },
+  {
+    "id": "blue_flame_inc",
+    "name": "Blue Flame Inc.",
+    "state": "MD"
+  },
+  {
+    "id": "valley_energy",
+    "name": "Valley Energy",
+    "state": "MD"
+  },
+  {
+    "id": "hunt_country_propane",
+    "name": "Hunt Country Propane",
+    "state": "MD"
+  },
+  {
+    "id": "mrohs_gas_inc",
+    "name": "Mrohs Gas, Inc.",
+    "state": "MD"
+  },
+  {
+    "id": "taylor_gas_heating_air",
+    "name": "Taylor Gas Heating Air",
+    "state": "MD"
+  },
+  {
+    "id": "pepup",
+    "name": "PepUp",
+    "state": "MD"
+  },
+  {
+    "id": "acadia_fuel",
+    "name": "Acadia Fuel",
+    "state": "ME"
+  },
+  {
+    "id": "community_energy_co_inc",
+    "name": "Community Energy, Co., Inc.",
+    "state": "ME"
+  },
+  {
+    "id": "guyette_s_lp_gas",
+    "name": "Guyette's LP Gas",
+    "state": "ME"
+  },
+  {
+    "id": "r_h_foster_energy_machias",
+    "name": "R.H. Foster Energy - Machias",
+    "state": "ME"
+  },
+  {
+    "id": "northeastern_supply_co",
+    "name": "Northeastern Supply Co",
+    "state": "ME"
+  },
+  {
+    "id": "dodge_oil_propane",
+    "name": "Dodge Oil & Propane",
+    "state": "ME"
+  },
+  {
+    "id": "morin_fuel",
+    "name": "Morin Fuel",
+    "state": "ME"
+  },
+  {
+    "id": "perry_s_oil_service_and_patten_s_gas",
+    "name": "Perry's Oil Service and Patten's Gas",
+    "state": "ME"
+  },
+  {
+    "id": "bot_l_gas_inc",
+    "name": "Bot-L-Gas Inc",
+    "state": "ME"
+  },
+  {
+    "id": "long_s_propane_gas_llc",
+    "name": "Long's Propane Gas LLC",
+    "state": "MI"
+  },
+  {
+    "id": "jb_propane_tackle",
+    "name": "JB Propane & Tackle",
+    "state": "MI"
+  },
+  {
+    "id": "rp_fuel",
+    "name": "RP Fuel",
+    "state": "MI"
+  },
+  {
+    "id": "kohler_s_propane_co",
+    "name": "Kohler's Propane Co",
+    "state": "MI"
+  },
+  {
+    "id": "van_dyke_gas",
+    "name": "Van Dyke Gas",
+    "state": "MI"
+  },
+  {
+    "id": "hamilton_s_propane",
+    "name": "Hamilton's propane",
+    "state": "MI"
+  },
+  {
+    "id": "motor_city_propane_services_inc",
+    "name": "Motor City Propane Services Inc.",
+    "state": "MI"
+  },
+  {
+    "id": "parker_s_propane_gas_co",
+    "name": "Parker's Propane Gas Co",
+    "state": "MI"
+  },
+  {
+    "id": "holton_s_lp_gas_co",
+    "name": "Holton's LP Gas Co.",
+    "state": "MI"
+  },
+  {
+    "id": "d_and_m_propane_llc",
+    "name": "D And M Propane Llc",
+    "state": "MI"
+  },
+  {
+    "id": "keweenaw_petroleum_services",
+    "name": "Keweenaw Petroleum Services",
+    "state": "MI"
+  },
+  {
+    "id": "u_p_propane",
+    "name": "U.P. Propane",
+    "state": "MI"
+  },
+  {
+    "id": "lacourt_bottled_gas",
+    "name": "Lacourt Bottled Gas",
+    "state": "MI"
+  },
+  {
+    "id": "ashland_propane_inc",
+    "name": "Ashland Propane, Inc.",
+    "state": "MI"
+  },
+  {
+    "id": "hlo_propane",
+    "name": "HLO Propane",
+    "state": "MI"
+  },
+  {
+    "id": "fischer_lp_gas",
+    "name": "Fischer LP Gas",
+    "state": "MI"
+  },
+  {
+    "id": "fick_sons_inc",
+    "name": "Fick & Sons, Inc.",
+    "state": "MI"
+  },
+  {
+    "id": "schmucker_s_lp_gas_store",
+    "name": "Schmucker's LP Gas & Store",
+    "state": "MI"
+  },
+  {
+    "id": "lawler_gas_inc",
+    "name": "Lawler Gas Inc",
+    "state": "MN"
+  },
+  {
+    "id": "consolidated_energy_company_formerly_feils_oil_company",
+    "name": "Consolidated Energy Company (Formerly Feils Oil Company)",
+    "state": "MN"
+  },
+  {
+    "id": "superior_fuel_company",
+    "name": "Superior Fuel Company",
+    "state": "MN"
+  },
+  {
+    "id": "mcmahon_oil",
+    "name": "McMahon Oil",
+    "state": "MN"
+  },
+  {
+    "id": "pirkl_gas",
+    "name": "Pirkl Gas",
+    "state": "MN"
+  },
+  {
+    "id": "farmers_union_oil_co",
+    "name": "Farmers Union Oil Co.",
+    "state": "MN"
+  },
+  {
+    "id": "the_propane_express",
+    "name": "The Propane Express",
+    "state": "MN"
+  },
+  {
+    "id": "five_star_propane_co_op_oil",
+    "name": "Five Star Propane Co-Op Oil",
+    "state": "MN"
+  },
+  {
+    "id": "red_lake_county_co_op",
+    "name": "Red Lake County Co-Op",
+    "state": "MN"
+  },
+  {
+    "id": "rahn_s_oil_propane",
+    "name": "Rahn's Oil & Propane",
+    "state": "MN"
+  },
+  {
+    "id": "fillmore_fuel_s",
+    "name": "Fillmore Fuel's",
+    "state": "MN"
+  }
+]

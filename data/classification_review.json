@@ -1,0 +1,128 @@
+[
+  {
+    "id": "star_energy_fs",
+    "name": "Star Energy FS",
+    "assignedType": "coop_utility",
+    "confidence": "medium",
+    "ownership": "private",
+    "hqState": "IA",
+    "description": "Private propane distributor in IA."
+  },
+  {
+    "id": "e_v_energy",
+    "name": "E & V Energy",
+    "assignedType": "multi_fuel",
+    "confidence": "medium",
+    "ownership": "family",
+    "hqState": "NY",
+    "description": "Finger Lakes, Central and Northern NY fuel delivery for homes, businesses and farms."
+  },
+  {
+    "id": "haskins_gas",
+    "name": "Haskins Gas",
+    "assignedType": "multi_fuel",
+    "confidence": "medium",
+    "ownership": "family",
+    "hqState": "VT",
+    "description": "Locally owned fuel delivery and heating services in Southern Vermont."
+  },
+  {
+    "id": "jackman_fuels",
+    "name": "Jackman Fuels",
+    "assignedType": "retail_dealer",
+    "confidence": "low",
+    "ownership": "family",
+    "hqState": "VT",
+    "description": "Family-owned since 1945, 4,000+ customers in Addison and Chittenden counties VT."
+  },
+  {
+    "id": "campora_stockton",
+    "name": "Campora Stockton",
+    "assignedType": "retail_dealer",
+    "confidence": "low",
+    "ownership": "family",
+    "hqState": "CA",
+    "description": "Note: Campora may already be listed; Stockton branch covers San Joaquin County. Review dedup."
+  },
+  {
+    "id": "national_oil",
+    "name": "National Oil",
+    "assignedType": "multi_fuel",
+    "confidence": "medium",
+    "ownership": "family",
+    "hqState": "IN",
+    "description": "Farm and home fuel deliveries in and around Bluffton, Decatur, Berne, Huntington, Warsaw, and Monroeville, Indiana."
+  },
+  {
+    "id": "wiese_oil_supply",
+    "name": "Wiese Oil & Supply",
+    "assignedType": "multi_fuel",
+    "confidence": "low",
+    "ownership": "family",
+    "hqState": "IA",
+    "description": "Sioux City-based oil and supply company providing propane."
+  },
+  {
+    "id": "clark_energy",
+    "name": "Clark Energy",
+    "assignedType": "multi_fuel",
+    "confidence": "medium",
+    "ownership": "family",
+    "hqState": "NY",
+    "description": "Local family-owned full-service fuel delivery provider established 2010 in Central Adirondacks of New York."
+  },
+  {
+    "id": "van_etten_energy_systems",
+    "name": "Van Etten Energy Systems",
+    "assignedType": "retail_dealer",
+    "confidence": "low",
+    "ownership": "family",
+    "hqState": "NY",
+    "description": "Over 70 years of experience serving Hudson Valley and Catskill region homeowners and businesses."
+  },
+  {
+    "id": "amerigas_hydratane_of_athens",
+    "name": "AmeriGas / Hydratane of Athens",
+    "assignedType": "retail_dealer",
+    "confidence": "low",
+    "ownership": "private",
+    "hqState": "TN",
+    "description": "AmeriGas branch operating under Hydratane brand in McMinn County, serving southeast Tennessee residential and commercial customers."
+  },
+  {
+    "id": "oxarc_sandpoint",
+    "name": "OXARC Sandpoint",
+    "assignedType": "retail_dealer",
+    "confidence": "low",
+    "ownership": "pe",
+    "hqState": "ID",
+    "description": "Meritus Gas Partners (PE-backed) branch serving Sandpoint, CdA, Post Falls, Hayden, Rathdrum, Bonners Ferry."
+  },
+  {
+    "id": "big_oats_oil_field_supply",
+    "name": "Big Oats Oil Field Supply",
+    "assignedType": "multi_fuel",
+    "confidence": "low",
+    "ownership": "family",
+    "hqState": "OH",
+    "description": "Serves Lake, Cuyahoga, Geauga, Ashtabula, Summit, Portage, Trumbull counties NE Ohio."
+  },
+  {
+    "id": "hirschman_oil_supply",
+    "name": "Hirschman Oil Supply",
+    "assignedType": "multi_fuel",
+    "confidence": "low",
+    "ownership": "family",
+    "hqState": "MI",
+    "description": "Michigan family fuel and lube dealer serving rural Thumb area."
+  },
+  {
+    "id": "glider_oil",
+    "name": "Glider Oil",
+    "assignedType": "multi_fuel",
+    "confidence": "medium",
+    "ownership": "family",
+    "hqState": "NY",
+    "description": "Family-owned since 1942 serving Oneida, Herkimer, Lewis, Oswego, Jefferson, St. Lawrence counties in rural NY."
+  }
+]

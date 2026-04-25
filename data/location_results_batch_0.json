@@ -1,0 +1,281 @@
+[
+  {
+    "id": "dcc",
+    "name": "DCC",
+    "website": "https://spaldinggas.com/",
+    "locations_found": [
+      {"name": "Spalding Gas - Griffin, GA", "address": "415 Solomon Street", "city": "Griffin", "state": "GA", "zip": "30223", "phone": "(770) 228-8484"},
+      {"name": "Spalding Gas - McDonough, GA", "address": "26 Racetrack Road", "city": "McDonough", "state": "GA", "zip": "30253", "phone": "(770) 957-2501"}
+    ],
+    "notes": "Scraped 2 locations from /locations/ page. Spalding Gas is a DCC subsidiary."
+  },
+  {
+    "id": "premier_energy_formerly_gaile_s_propane",
+    "name": "Premier Energy (Formerly Gaile's Propane)",
+    "website": "https://premierenergy.com",
+    "locations_found": [],
+    "notes": "premierenergy.com resolves to an unrelated Woodstock, GA energy consulting/Venezuelan oil company, not the Gaile's Propane IN regional marketer. Could not locate propane-relevant locations via this URL."
+  },
+  {
+    "id": "united_propane_gas_cleveland_tn",
+    "name": "United Propane Gas (Cleveland, TN)",
+    "website": "https://unitedpropanegas.com/",
+    "locations_found": [
+      {"name": "UPG - Corporate HQ", "address": "1001 Warrenville Road, Suite 350", "city": "Lisle", "state": "IL", "zip": "60532", "phone": null},
+      {"name": "UPG - Paducah Main Office", "address": "4200 Cairo Rd", "city": "Paducah", "state": "KY", "zip": "42001", "phone": "(270) 442-5557"},
+      {"name": "West Kentucky Propane (UPG)", "address": null, "city": "Paducah", "state": "KY", "zip": null, "phone": null},
+      {"name": "Calloway County Propane (UPG)", "address": null, "city": "Murray", "state": "KY", "zip": null, "phone": null},
+      {"name": "Gasper River Propane (UPG)", "address": null, "city": "Auburn", "state": "KY", "zip": null, "phone": null},
+      {"name": "Green River Propane (UPG)", "address": null, "city": "Livermore", "state": "KY", "zip": null, "phone": null},
+      {"name": "Graves County Propane (UPG)", "address": null, "city": "Mayfield", "state": "KY", "zip": null, "phone": null},
+      {"name": "Cumberland River Propane (UPG)", "address": null, "city": "Springfield", "state": "TN", "zip": "37172", "phone": null},
+      {"name": "Highland Rim Propane (UPG)", "address": null, "city": "Manchester", "state": "TN", "zip": null, "phone": null},
+      {"name": "Natchez Trace Propane (UPG)", "address": null, "city": "Waynesboro", "state": "TN", "zip": null, "phone": null},
+      {"name": "Obion County Propane (UPG)", "address": null, "city": "Union City", "state": "TN", "zip": null, "phone": null},
+      {"name": "Quality Propane (UPG)", "address": null, "city": "Lebanon", "state": "TN", "zip": null, "phone": null},
+      {"name": "Southern Propane (UPG)", "address": null, "city": "Columbia", "state": "TN", "zip": null, "phone": null},
+      {"name": "Stewart County Propane (UPG)", "address": null, "city": "Dover", "state": "TN", "zip": null, "phone": null},
+      {"name": "Midwest Propane (UPG)", "address": null, "city": "Trenton", "state": "MO", "zip": null, "phone": null},
+      {"name": "MO Energy Propane (UPG)", "address": null, "city": "Unionville", "state": "MO", "zip": null, "phone": null},
+      {"name": "Small Bootheel Propane (UPG)", "address": null, "city": "Sikeston", "state": "MO", "zip": null, "phone": null}
+    ],
+    "notes": "UPG operates in AL, GA, IL, IN, KY, MI, MS, MO, NC, TN, WV. Locator map is JS-driven so street addresses for most branches not retrievable without interacting with the map; list above captures known banner/depot cities."
+  },
+  {
+    "id": "northern_new_mexico_gas_company",
+    "name": "Northern New Mexico Gas Company",
+    "website": "https://www.nnmgc.com",
+    "locations_found": [
+      {"name": "Angel Fire Office", "address": "19 Agua Rd", "city": "Angel Fire", "state": "NM", "zip": "87710", "phone": "(800) 916-2510"},
+      {"name": "Taos Office", "address": "State Highway 522", "city": "Taos", "state": "NM", "zip": "87571", "phone": "(575) 758-8400"}
+    ],
+    "notes": "nnmgc.com unreachable (ECONNREFUSED / cert error); scraped from northernnewmexicogas.com search results."
+  },
+  {
+    "id": "rocky_mountain_supply_ennis",
+    "name": "Rocky Mountain Supply- Ennis",
+    "website": "https://www.rockymtnsupply.com",
+    "locations_found": [
+      {"name": "Rocky Mountain Supply - Belgrade Retail", "address": "350 Jackrabbit Lane", "city": "Belgrade", "state": "MT", "zip": "59714", "phone": "(406) 388-4008"},
+      {"name": "Rocky Mountain Supply - Dillon Retail", "address": "700 North Montana St", "city": "Dillon", "state": "MT", "zip": "59725", "phone": "(406) 683-2308"},
+      {"name": "Rocky Mountain Supply - Ennis Retail", "address": "4999 US Hwy 287 N", "city": "Ennis", "state": "MT", "zip": "59729", "phone": "(406) 682-4315"},
+      {"name": "Rocky Mountain Supply - Townsend Retail", "address": "310 S Front St", "city": "Townsend", "state": "MT", "zip": null, "phone": null},
+      {"name": "Rocky Mountain Supply - Administration Office", "address": "210 Gallatin Farmers Ave", "city": "Belgrade", "state": "MT", "zip": "59714", "phone": "(406) 388-4009"},
+      {"name": "Rocky Mountain Supply - Belgrade Agronomy", "address": "210 Gallatin Farmers Ave", "city": "Belgrade", "state": "MT", "zip": "59714", "phone": "(406) 388-6242"},
+      {"name": "Rocky Mountain Supply - Dillon Agronomy", "address": "80 Stoltze Dr", "city": "Dillon", "state": "MT", "zip": "59725", "phone": "(406) 660-3124"},
+      {"name": "Rocky Mountain Supply - Amsterdam Cardlock", "address": "6685 Amsterdam Rd", "city": "Manhattan", "state": "MT", "zip": "59741", "phone": "(406) 388-6116"}
+    ],
+    "notes": "Correct URL is rmsi.coop. Scraped from search results; 8 locations."
+  },
+  {
+    "id": "mulgrew_oil_and_propane_co",
+    "name": "Mulgrew Oil and Propane Co",
+    "website": "https://mulgrewoil.com",
+    "locations_found": [
+      {"name": "Mulgrew Oil and Propane - Dubuque", "address": "10314 Silverwood Drive", "city": "Dubuque", "state": "IA", "zip": "52003", "phone": "(563) 583-7386"}
+    ],
+    "notes": "Only the Dubuque main office is listed on the website. Appears to be a single-location operator despite serving IA/IL region."
+  },
+  {
+    "id": "south_georgia_propane_inc",
+    "name": "South Georgia Propane Inc",
+    "website": "https://www.southgapropane.com/",
+    "locations_found": [
+      {"name": "South Georgia Propane - Valdosta Showroom", "address": "1801 E Park Ave", "city": "Valdosta", "state": "GA", "zip": "31602", "phone": "(229) 253-8811"}
+    ],
+    "notes": "Single showroom/location dealer; only Valdosta office listed on /locations page."
+  },
+  {
+    "id": "ed_staub_sons_propane",
+    "name": "Ed Staub & Sons Propane",
+    "website": "https://www.edstaub.com",
+    "locations_found": [
+      {"name": "Ed Staub & Sons - Klamath Falls Support Center", "address": "1301 Esplanade Avenue", "city": "Klamath Falls", "state": "OR", "zip": "97601", "phone": null},
+      {"name": "Ed Staub & Sons - Klamath Falls", "address": "865 S Spring St", "city": "Klamath Falls", "state": "OR", "zip": "97601", "phone": null},
+      {"name": "Ed Staub & Sons - Redmond", "address": "1819 S 1st St", "city": "Redmond", "state": "OR", "zip": "97756", "phone": "(541) 504-8265"},
+      {"name": "Ed Staub & Sons - John Day", "address": "139 S Canyon Blvd", "city": "John Day", "state": "OR", "zip": null, "phone": null},
+      {"name": "Ed Staub & Sons - La Grande", "address": null, "city": "La Grande", "state": "OR", "zip": "97850", "phone": null},
+      {"name": "Ed Staub & Sons - Enterprise", "address": null, "city": "Enterprise", "state": "OR", "zip": null, "phone": null},
+      {"name": "Ed Staub & Sons - Chiloquin", "address": null, "city": "Chiloquin", "state": "OR", "zip": null, "phone": null},
+      {"name": "Ed Staub & Sons - Nampa", "address": null, "city": "Nampa", "state": "ID", "zip": null, "phone": null},
+      {"name": "Ed Staub & Sons - Donnelly", "address": null, "city": "Donnelly", "state": "ID", "zip": null, "phone": null}
+    ],
+    "notes": "Company operates 19 bulk plants in OR, ID, Northern CA. Website /locations page is JS-rendered and didn't expose address data; captured known cities via search. Additional bulk plants exist beyond those listed."
+  },
+  {
+    "id": "rahn_s_oil_propane",
+    "name": "Rahn's Oil & Propane",
+    "website": "https://rahnsoil.com",
+    "locations_found": [
+      {"name": "Rahn's Oil & Propane - Main Office Melrose", "address": "1220 East Main Street", "city": "Melrose", "state": "MN", "zip": "56352", "phone": "(320) 256-3680"},
+      {"name": "Alexandria Gas & Grocery", "address": null, "city": "Alexandria", "state": "MN", "zip": null, "phone": "(320) 763-5317"},
+      {"name": "Big Foot Gas & Grocery", "address": null, "city": null, "state": "MN", "zip": null, "phone": "(218) 769-4484"},
+      {"name": "Bowlus Gas & Grocery", "address": null, "city": "Bowlus", "state": "MN", "zip": null, "phone": "(320) 584-5603"},
+      {"name": "Darwin Gas & Grocery", "address": null, "city": "Darwin", "state": "MN", "zip": null, "phone": "(320) 693-2586"},
+      {"name": "Freeport Cenex", "address": null, "city": "Freeport", "state": "MN", "zip": null, "phone": "(320) 836-2850"},
+      {"name": "Grey Eagle Gas & Grocery", "address": null, "city": "Grey Eagle", "state": "MN", "zip": null, "phone": "(320) 285-2336"},
+      {"name": "Grove City Gas & Grocery", "address": null, "city": "Grove City", "state": "MN", "zip": null, "phone": "(320) 857-2741"},
+      {"name": "Lincoln Gas & Bait", "address": null, "city": null, "state": "MN", "zip": null, "phone": "(218) 575-3137"},
+      {"name": "Meire Grove Gas & Grocery", "address": null, "city": "Meire Grove", "state": "MN", "zip": null, "phone": "(320) 987-3297"},
+      {"name": "Melrose 1 Stop", "address": null, "city": "Melrose", "state": "MN", "zip": null, "phone": "(320) 256-3519"},
+      {"name": "Nelson Gas & Grocery", "address": null, "city": "Nelson", "state": "MN", "zip": null, "phone": "(320) 763-6029"},
+      {"name": "New Munich Gas & Grocery", "address": null, "city": "New Munich", "state": "MN", "zip": null, "phone": "(320) 837-5054"},
+      {"name": "North Star Gas & Grocery", "address": null, "city": null, "state": "MN", "zip": null, "phone": "(218) 583-4114"},
+      {"name": "Ripley 1 Stop", "address": null, "city": null, "state": "MN", "zip": null, "phone": "(320) 632-2899"},
+      {"name": "St. Stephen Gas & Grocery", "address": null, "city": "St. Stephen", "state": "MN", "zip": null, "phone": "(320) 253-9508"}
+    ],
+    "notes": "Correct URL is rahnfuels.com. Main office plus 15 convenience store locations across Central MN. Street addresses for CStores not on site."
+  },
+  {
+    "id": "consolidated_energy",
+    "name": "Consolidated Energy",
+    "website": "https://consolidatedenergyco.com/",
+    "locations_found": [
+      {"name": "Consolidated Energy - Jesup", "address": "910 Main Street", "city": "Jesup", "state": "IA", "zip": "50648", "phone": "(319) 827-1211"},
+      {"name": "Consolidated Energy - La Crosse", "address": "410 Hagar Street", "city": "La Crosse", "state": "WI", "zip": "54603", "phone": "(608) 782-3308"},
+      {"name": "Consolidated Energy - Lake Mills", "address": "43437 225th Ave", "city": "Lake Mills", "state": "IA", "zip": "50450", "phone": "(641) 592-4206"},
+      {"name": "Consolidated Energy - Mason City", "address": "1711 S Pierce Avenue", "city": "Mason City", "state": "IA", "zip": "50401", "phone": "(641) 423-4510"},
+      {"name": "Consolidated Energy - Plainview", "address": "56 3rd Street SW", "city": "Plainview", "state": "MN", "zip": "55964", "phone": "(507) 534-2020"},
+      {"name": "Consolidated Energy - Postville", "address": "307 Wilson Street", "city": "Postville", "state": "IA", "zip": "52162", "phone": "(563) 518-6000"},
+      {"name": "Consolidated Energy - Rochester", "address": "2525 Schuster Ln NW", "city": "Rochester", "state": "MN", "zip": "55901", "phone": "(507) 289-2519"},
+      {"name": "Consolidated Energy - Rushford", "address": "43295 Highway 16", "city": "Rushford", "state": "MN", "zip": "55971", "phone": "(507) 864-9229"},
+      {"name": "Consolidated Energy - Winona", "address": "27053 County Road 12", "city": "Winona", "state": "MN", "zip": "55987", "phone": "(507) 452-4743"}
+    ],
+    "notes": "Scraped 9 locations from /contact page."
+  },
+  {
+    "id": "ak_energy_jackson",
+    "name": "AK Energy - Jackson",
+    "website": "https://www.akenergy.com",
+    "locations_found": [
+      {"name": "AK Energy - Jackson", "address": "433 Dixon Run Rd", "city": "Jackson", "state": "OH", "zip": "45640", "phone": "(740) 688-8758"}
+    ],
+    "notes": "Correct URL is akenergy.llc. Only one location listed; serves Jackson, Ross, Vinton, Gallia, Mason counties."
+  },
+  {
+    "id": "tiger_fuel_company",
+    "name": "Tiger Fuel Company",
+    "website": "https://www.tigerfuel.com",
+    "locations_found": [
+      {"name": "Tiger Fuel - Charlottesville (HQ)", "address": "200 Carlton Road", "city": "Charlottesville", "state": "VA", "zip": "22902", "phone": "(434) 293-6157"},
+      {"name": "Tiger Fuel - Appomattox", "address": "130 Commerce Street", "city": "Appomattox", "state": "VA", "zip": "24522", "phone": null},
+      {"name": "Tiger Fuel - Lovingston", "address": "242 Front St", "city": "Lovingston", "state": "VA", "zip": "22949", "phone": null},
+      {"name": "Tiger Fuel - Orange", "address": "175 Caroline St", "city": "Orange", "state": "VA", "zip": "22960", "phone": null},
+      {"name": "Tiger Fuel - Fredericksburg", "address": "11905 Tidewater Trail", "city": "Fredericksburg", "state": "VA", "zip": "22408", "phone": null},
+      {"name": "Tiger Fuel - Scottsville Propane Fill", "address": "153 James River Rd", "city": "Scottsville", "state": "VA", "zip": "24590", "phone": null},
+      {"name": "Tiger Fuel - Locust Grove Propane Fill", "address": "32301 Constitution Highway", "city": "Locust Grove", "state": "VA", "zip": "24508", "phone": null},
+      {"name": "Tiger Fuel - Long St Charlottesville Propane", "address": "1315 Long St", "city": "Charlottesville", "state": "VA", "zip": "22901", "phone": null}
+    ],
+    "notes": "Tiger Fuel /locations/ page is JS-rendered. Compiled from search results; covers 5 main branch offices plus propane filling points. Tiger Fuel also operates ~9 convenience store markets not listed here."
+  },
+  {
+    "id": "proflame_propane",
+    "name": "Proflame Propane",
+    "website": "https://proflamepropane.com/",
+    "locations_found": [
+      {"name": "Proflame Propane - Jerome", "address": "135 Bridon Way", "city": "Jerome", "state": "ID", "zip": "83338", "phone": "(208) 324-0544"}
+    ],
+    "notes": "Website redirects to lander page. Single location in Jerome, ID based on search results; family-owned single-office operator in Magic Valley."
+  },
+  {
+    "id": "prairie_ag_coop",
+    "name": "Prairie Ag Coop",
+    "website": "https://www.prairieagcoop.com",
+    "locations_found": [
+      {"name": "Prairie Ag Commodities - Mount Union", "address": "PO Box 8", "city": "Mount Union", "state": "IA", "zip": "52644", "phone": "(319) 865-1450"}
+    ],
+    "notes": "prairieagcoop.com redirects to prairieagcommodities.com, which is an IA grain/ag company, not the MT farm coop described in source record. Possible data-quality issue in source record. The likely intended MT coop is 'PRO Co-op' (procoopag.com) based in Scobey, MT."
+  },
+  {
+    "id": "yankee_propane",
+    "name": "Yankee Propane",
+    "website": "https://www.yankeepropane.com",
+    "locations_found": [
+      {"name": "Yankee Propane - Franklin Lakes", "address": "889 Circle Ave", "city": "Franklin Lakes", "state": "NJ", "zip": "07417", "phone": "(973) 864-2711"},
+      {"name": "Yankee Propane - Franklin", "address": "3238 State Rt 94", "city": "Franklin", "state": "NJ", "zip": "07416", "phone": null},
+      {"name": "Yankee Propane - Newton", "address": "4 High St", "city": "Newton", "state": "NJ", "zip": "07860", "phone": null},
+      {"name": "Yankee Propane - Stockholm", "address": null, "city": "Stockholm", "state": "NJ", "zip": null, "phone": null}
+    ],
+    "notes": "Website returns 403/404; compiled from 3rd-party listings (Yelp, Waze, Yellow Pages)."
+  },
+  {
+    "id": "titan_propane",
+    "name": "Titan Propane",
+    "website": "https://titanpropane.com/",
+    "locations_found": [
+      {"name": "Titan Propane - Flagstaff", "address": "7911 N Hwy 89", "city": "Flagstaff", "state": "AZ", "zip": "86004", "phone": null},
+      {"name": "Titan Propane - Camp Verde", "address": null, "city": "Camp Verde", "state": "AZ", "zip": null, "phone": null}
+    ],
+    "notes": "titanpropane.com now redirects to amerigas.com/titan-propane. Titan Propane was acquired by AmeriGas. Remaining branded locations found: Flagstaff and Camp Verde, AZ."
+  },
+  {
+    "id": "fred_s_energy",
+    "name": "Fred's Energy",
+    "website": "https://www.fredsenergy.com",
+    "locations_found": [
+      {"name": "Fred's Energy - Derby (Main)", "address": "328 Main Street", "city": "Derby", "state": "VT", "zip": "05829", "phone": "(802) 766-4949"},
+      {"name": "Fred's Energy - Lyndonville", "address": "4920 Memorial Drive", "city": "Lyndonville", "state": "VT", "zip": "05851", "phone": "(802) 626-4588"},
+      {"name": "Fred's Energy - Morrisville", "address": "288 Bridge Street", "city": "Morrisville", "state": "VT", "zip": "05661", "phone": "(802) 888-3827"}
+    ],
+    "notes": "Correct URL is callfreds.com. Scraped 3 office locations from /our-locations page."
+  },
+  {
+    "id": "thompsongas",
+    "name": "ThompsonGas",
+    "website": "https://thompsongas.com/",
+    "locations_found": [
+      {"name": "ThompsonGas - Corporate HQ Frederick", "address": "5260 Westview Dr, Suite 200", "city": "Frederick", "state": "MD", "zip": "21703", "phone": "(800) 768-6612"},
+      {"name": "ThompsonGas - Greenville", "address": "410 Greenville Byp", "city": "Greenville", "state": "AL", "zip": "36037", "phone": "(334) 383-9077"},
+      {"name": "ThompsonGas - Boonsboro", "address": null, "city": "Boonsboro", "state": "MD", "zip": null, "phone": null},
+      {"name": "ThompsonGas - Cullman", "address": null, "city": "Cullman", "state": "AL", "zip": null, "phone": null},
+      {"name": "ThompsonGas - Andalusia (Cooperative Propane)", "address": null, "city": "Andalusia", "state": "AL", "zip": null, "phone": null},
+      {"name": "ThompsonGas - Bremen (West Georgia Propane)", "address": null, "city": "Bremen", "state": "GA", "zip": null, "phone": null},
+      {"name": "ThompsonGas - Thomaston (Upson Propane)", "address": null, "city": "Thomaston", "state": "GA", "zip": null, "phone": null},
+      {"name": "ThompsonGas - Griffin (Quality Companies)", "address": null, "city": "Griffin", "state": "GA", "zip": null, "phone": null}
+    ],
+    "notes": "ThompsonGas operates 120+ locations nationwide per LeadIQ. /find-a-location is a JS-powered store locator, so street-level data not extractable. Captured HQ plus known acquired locations from search results."
+  },
+  {
+    "id": "parker_gas",
+    "name": "Parker Gas",
+    "website": "https://www.parkergas.com",
+    "locations_found": [
+      {"name": "Parker Gas - Smithfield", "address": null, "city": "Smithfield", "state": "NC", "zip": null, "phone": "(919) 300-4311"},
+      {"name": "Parker Gas - Newton Grove", "address": null, "city": "Newton Grove", "state": "NC", "zip": null, "phone": "(910) 249-4088"},
+      {"name": "Parker Gas - Fayetteville", "address": null, "city": "Fayetteville", "state": "NC", "zip": null, "phone": "(910) 359-3141"},
+      {"name": "Parker Gas - Clinton", "address": null, "city": "Clinton", "state": "NC", "zip": null, "phone": "(910) 682-3151"},
+      {"name": "Parker Gas - Wilmington", "address": null, "city": "Wilmington", "state": "NC", "zip": null, "phone": "(910) 319-4070"},
+      {"name": "Parker Gas - Mt. Olive", "address": null, "city": "Mt. Olive", "state": "NC", "zip": null, "phone": "(919) 551-4170"}
+    ],
+    "notes": "6 eastern NC locations with phones only; no street addresses listed on website."
+  },
+  {
+    "id": "pepup",
+    "name": "PepUp",
+    "website": "https://pepup.com",
+    "locations_found": [
+      {"name": "PepUp - Federalsburg District Office", "address": "3941 Federalsburg Hwy", "city": "Federalsburg", "state": "MD", "zip": "21632", "phone": "(410) 754-2000"},
+      {"name": "PepUp - Cambridge District Office", "address": "2918 Old Route 50", "city": "Cambridge", "state": "MD", "zip": "21613", "phone": "(410) 228-8500"},
+      {"name": "PepUp - Grasonville District Office", "address": "216 VFW Ave", "city": "Grasonville", "state": "MD", "zip": "21638", "phone": "(410) 827-3284"},
+      {"name": "PepUp - Galena District Office", "address": "13255 Augustine Herman Hwy", "city": "Galena", "state": "MD", "zip": "21635", "phone": "(410) 648-5856"},
+      {"name": "PepUp - Georgetown District Office", "address": "24987 DuPont Hwy", "city": "Georgetown", "state": "DE", "zip": "19947", "phone": "(302) 856-6300"},
+      {"name": "PepUp - Pocomoke City District Office", "address": "1211 Ocean Hwy", "city": "Pocomoke City", "state": "MD", "zip": "21851", "phone": "(410) 957-9535"},
+      {"name": "PepUp - Tasley District Office", "address": "24411 Lankford Hwy", "city": "Tasley", "state": "VA", "zip": "23301", "phone": "(757) 787-3580"},
+      {"name": "PepUp - Belle Haven District Office", "address": "15478 Merry Cat Ln", "city": "Belle Haven", "state": "VA", "zip": "23306", "phone": "(757) 442-6091"},
+      {"name": "PepUp - Glen Burnie District Office", "address": "898 Airport Park Rd, Suite 103", "city": "Glen Burnie", "state": "MD", "zip": "21061", "phone": "(410) 923-9199"}
+    ],
+    "notes": "Correct URL is pepupinc.com. Scraped 9 district offices from /propane-supplier-history page (company states 13 total locations on Delmarva)."
+  },
+  {
+    "id": "evergreen_fs",
+    "name": "Evergreen FS",
+    "website": "https://evergreenfs.com",
+    "locations_found": [
+      {"name": "Evergreen FS - Bloomington HQ/Energy", "address": "402 N Hershey Road", "city": "Bloomington", "state": "IL", "zip": "61704", "phone": "(877) 963-2392"},
+      {"name": "Evergreen FS - Bloomington Store", "address": "1808 Morrissey Dr", "city": "Bloomington", "state": "IL", "zip": null, "phone": null},
+      {"name": "Evergreen FS - Arrowsmith", "address": "102 S Main St", "city": "Arrowsmith", "state": "IL", "zip": "61722", "phone": null},
+      {"name": "Evergreen FS - Towanda", "address": "111 W Adams St", "city": "Towanda", "state": "IL", "zip": "61776", "phone": null}
+    ],
+    "notes": "Correct URL is evergreen-fs.com (now fscooperatives.com/evergreenfs, returns 403). Serves DeWitt, Livingston, Macon, McLean, Woodford counties. Additional location offices likely exist in Hudson, Gibson City, Forrest but not scraped."
+  }
+]

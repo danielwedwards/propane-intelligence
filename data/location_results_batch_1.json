@@ -1,0 +1,321 @@
+[
+  {
+    "id": "arrowwood_prairie_co_op_carrington_main_office",
+    "name": "Arrowwood Prairie Co-op - Carrington Main Office",
+    "website": "https://www.arrowwoodprairie.com",
+    "locations_found": [
+      {"name": "Wimbledon Main Office", "address": "355 Highway 9", "city": "Wimbledon", "state": "ND", "zip": "58492", "phone": "(701) 435-2406"},
+      {"name": "Cooperstown", "address": "402 4th St SW", "city": "Cooperstown", "state": "ND", "zip": "58425", "phone": "(701) 797-2040"},
+      {"name": "Carrington", "address": "77 4th Ave S", "city": "Carrington", "state": "ND", "zip": "58421", "phone": "(701) 652-3949"},
+      {"name": "Sutton", "address": "", "city": "Sutton", "state": "ND", "zip": "", "phone": ""}
+    ],
+    "notes": "Primary website arrowwoodprairie.com refused connection; data compiled from farmersunionoil.com (co-op's operating site) via web search. Sutton branch listed but no address found."
+  },
+  {
+    "id": "valley_wide_cooperative_energy_salmon",
+    "name": "Valley Wide Cooperative Energy | Salmon",
+    "website": "https://www.valleywidecoop.com",
+    "locations_found": [
+      {"name": "Nampa Valley Wide Country Store", "address": "9065 Booker Ln", "city": "Nampa", "state": "ID", "zip": "83686", "phone": "(208) 466-1766"},
+      {"name": "American Falls", "address": "2775 Neu Rd", "city": "American Falls", "state": "ID", "zip": "83211", "phone": "(208) 372-7020"},
+      {"name": "Arco", "address": "112 E Grand Ave", "city": "Arco", "state": "ID", "zip": "83218", "phone": "(208) 527-8209"},
+      {"name": "Ashton", "address": "634 Walnut St", "city": "Ashton", "state": "ID", "zip": "83420", "phone": "(208) 652-7796"},
+      {"name": "Basin City/Mesa Valley", "address": "22481 North Glade Road", "city": "Mesa", "state": "WA", "zip": "99343", "phone": "(509) 269-4444"},
+      {"name": "Chehalis", "address": "250 Northwest Quincy Place", "city": "Chehalis", "state": "WA", "zip": "98532", "phone": "(360) 748-9277"},
+      {"name": "Cornelius", "address": "986 N Holladay St", "city": "Cornelius", "state": "OR", "zip": "97113", "phone": "(503) 359-4289"},
+      {"name": "Coulee City", "address": "310 W Main", "city": "Coulee City", "state": "WA", "zip": "99115", "phone": "(509) 632-5292"},
+      {"name": "Delta", "address": "25 W 1000 N", "city": "Delta", "state": "UT", "zip": "84624", "phone": "(435) 572-0244"},
+      {"name": "Donald", "address": "10803 Oak Street", "city": "Donald", "state": "OR", "zip": "97020", "phone": "(503) 678-5831"},
+      {"name": "Edwall", "address": "16715 N Westerberg St", "city": "Edwall", "state": "WA", "zip": "99008", "phone": "(509) 236-2231"},
+      {"name": "Emmett", "address": "607 North Boise Avenue", "city": "Emmett", "state": "ID", "zip": "83617", "phone": "(208) 365-4629"},
+      {"name": "Fallon", "address": "500 Gummow Dr", "city": "Fallon", "state": "NV", "zip": "89406", "phone": "(775) 461-2192"},
+      {"name": "Grandview", "address": "1141 Highland Road", "city": "Grandview", "state": "WA", "zip": "98930", "phone": "(509) 882-3764"},
+      {"name": "Greenleaf", "address": "20870 Van Slyke Road", "city": "Greenleaf", "state": "ID", "zip": "83626", "phone": "(208) 453-5960"},
+      {"name": "Hansen", "address": "22657 Hwy 30", "city": "Hansen", "state": "ID", "zip": "83334", "phone": "(208) 423-5574"},
+      {"name": "Harrisburg", "address": "560 Lasalle Street", "city": "Harrisburg", "state": "OR", "zip": "97446", "phone": "(541) 995-6314"},
+      {"name": "Idaho Falls", "address": "4750 South 15th West", "city": "Idaho Falls", "state": "ID", "zip": "83402", "phone": "(208) 523-0751"},
+      {"name": "Kerman", "address": "12800 W Shields Ave", "city": "Kerman", "state": "CA", "zip": "93630", "phone": "(559) 474-4400"},
+      {"name": "Kittitas", "address": "200 South Main Street", "city": "Kittitas", "state": "WA", "zip": "98934", "phone": ""},
+      {"name": "Davenport", "address": "39100 Sunset Hwy E", "city": "Davenport", "state": "WA", "zip": "99122", "phone": "(509) 725-3321"},
+      {"name": "Dayton", "address": "108 N Pine St", "city": "Dayton", "state": "WA", "zip": "99115", "phone": "(509) 382-4581"}
+    ],
+    "notes": "Multi-state Pacific NW cooperative (Valley Agronomics/Valley Wide). Pulled from /locations page. Additional branches exist beyond page preview."
+  },
+  {
+    "id": "blue_star_gas_crescent_city_co",
+    "name": "Blue Star Gas - Crescent City Co.",
+    "website": "https://bluestargas.com/",
+    "locations_found": [
+      {"name": "Arcata", "address": "1907 Heindon Road", "city": "Arcata", "state": "CA", "zip": "95521", "phone": "(707) 822-4851"},
+      {"name": "Coast Co. (Crescent City)", "address": "340 H Street", "city": "Crescent City", "state": "CA", "zip": "95531", "phone": "(707) 464-7827"},
+      {"name": "Eugene Co.", "address": "61 S. Danebo Avenue", "city": "Eugene", "state": "OR", "zip": "97402", "phone": "(541) 689-3311"},
+      {"name": "Fortuna", "address": "926 Main Street", "city": "Fortuna", "state": "CA", "zip": "95540", "phone": "(707) 725-4465"},
+      {"name": "Garberville Co.", "address": "1333 Redwood Drive", "city": "Garberville", "state": "CA", "zip": "95542", "phone": "(707) 923-7827"},
+      {"name": "McMinnville Co.", "address": "3837 Portland Road NE", "city": "Salem", "state": "OR", "zip": "97301", "phone": "(503) 472-1571"},
+      {"name": "Medford Co.", "address": "6096 Crater Lake Avenue", "city": "Central Point", "state": "OR", "zip": "97502", "phone": "(541) 826-8683"},
+      {"name": "Mt. Shasta Co.", "address": "3700 Spring Hill Road", "city": "Mt. Shasta", "state": "CA", "zip": "96067", "phone": "(530) 926-5862"},
+      {"name": "Phoenix Co.", "address": "447 W Watkins Street, Ste. #1", "city": "Phoenix", "state": "AZ", "zip": "85003", "phone": "(602) 253-7827"},
+      {"name": "Redding Co.", "address": "6775 Eastside Road", "city": "Anderson", "state": "CA", "zip": "96007", "phone": "(530) 365-2131"},
+      {"name": "Salem Co.", "address": "3837 Portland Road NE", "city": "Salem", "state": "OR", "zip": "97301", "phone": "(503) 391-2737"},
+      {"name": "Salt Lake City Co.", "address": "3625 West California Ave", "city": "Salt Lake City", "state": "UT", "zip": "84104", "phone": "(801) 298-7827"},
+      {"name": "Santa Rosa Co. (Head Office)", "address": "880 N. Wright Road", "city": "Santa Rosa", "state": "CA", "zip": "95407", "phone": "(707) 546-1400"},
+      {"name": "Seattle Co.", "address": "10802 E. Marginal Way South", "city": "Tukwila", "state": "WA", "zip": "98168", "phone": "(206) 762-2583"},
+      {"name": "Acme Fuel", "address": "416 State Ave NW", "city": "Olympia", "state": "WA", "zip": "98501", "phone": "(360) 943-1133"}
+    ],
+    "notes": ""
+  },
+  {
+    "id": "superior_plus_energy_services",
+    "name": "Superior Plus Energy Services",
+    "website": "https://www.superiorpluspropane.com/",
+    "locations_found": [
+      {"name": "Winsted", "address": "", "city": "Winsted", "state": "CT", "zip": "", "phone": ""},
+      {"name": "Rochester", "address": "", "city": "Rochester", "state": "NY", "zip": "", "phone": ""},
+      {"name": "Florida", "address": "", "city": "Florida", "state": "NY", "zip": "", "phone": ""},
+      {"name": "Rome", "address": "", "city": "Rome", "state": "NY", "zip": "", "phone": ""},
+      {"name": "Gansevoort", "address": "", "city": "Gansevoort", "state": "NY", "zip": "", "phone": ""},
+      {"name": "St. Johnsville", "address": "", "city": "St. Johnsville", "state": "NY", "zip": "", "phone": ""},
+      {"name": "Marlboro", "address": "", "city": "Marlboro", "state": "NY", "zip": "", "phone": ""},
+      {"name": "Wurtsboro", "address": "", "city": "Wurtsboro", "state": "NY", "zip": "", "phone": ""},
+      {"name": "Tarboro", "address": "", "city": "Tarboro", "state": "NC", "zip": "", "phone": ""},
+      {"name": "Kenansville", "address": "", "city": "Kenansville", "state": "NC", "zip": "", "phone": ""},
+      {"name": "Morganton", "address": "", "city": "Morganton", "state": "NC", "zip": "", "phone": ""},
+      {"name": "Shelby", "address": "", "city": "Shelby", "state": "NC", "zip": "", "phone": ""},
+      {"name": "Lumberton", "address": "", "city": "Lumberton", "state": "NC", "zip": "", "phone": ""},
+      {"name": "Southern Pines", "address": "", "city": "Southern Pines", "state": "NC", "zip": "", "phone": ""},
+      {"name": "Dallas", "address": "", "city": "Dallas", "state": "NC", "zip": "", "phone": ""},
+      {"name": "Cashiers", "address": "", "city": "Cashiers", "state": "NC", "zip": "", "phone": ""},
+      {"name": "Blackshear", "address": "", "city": "Blackshear", "state": "GA", "zip": "", "phone": ""},
+      {"name": "Elkton", "address": "", "city": "Elkton", "state": "MD", "zip": "", "phone": ""},
+      {"name": "Windham", "address": "", "city": "Windham", "state": "ME", "zip": "", "phone": ""},
+      {"name": "Ashburnham", "address": "", "city": "Ashburnham", "state": "MA", "zip": "", "phone": ""},
+      {"name": "Sunderland", "address": "", "city": "Sunderland", "state": "MA", "zip": "", "phone": ""},
+      {"name": "West Lebanon", "address": "", "city": "West Lebanon", "state": "NH", "zip": "", "phone": ""},
+      {"name": "West Easton", "address": "", "city": "West Easton", "state": "PA", "zip": "", "phone": ""},
+      {"name": "Perkasie", "address": "", "city": "Perkasie", "state": "PA", "zip": "", "phone": ""},
+      {"name": "Fredericksburg", "address": "", "city": "Fredericksburg", "state": "VA", "zip": "", "phone": ""}
+    ],
+    "notes": "Locations page is dynamically loaded; addresses not scrapeable. Cities/states identified via web search of /location/<slug> URLs. Main corporate line: 1-855-804-3835. Full address detail would require individual location page fetches."
+  },
+  {
+    "id": "consolidated_energy_company",
+    "name": "Consolidated Energy Company",
+    "website": "https://consolidatedenergyco.com/",
+    "locations_found": [
+      {"name": "Jesup Regional Office", "address": "910 Main Street", "city": "Jesup", "state": "IA", "zip": "50648", "phone": "(319) 827-1211"},
+      {"name": "La Crosse", "address": "410 Hagar Street", "city": "La Crosse", "state": "WI", "zip": "54603", "phone": "(608) 782-3308"},
+      {"name": "Lake Mills", "address": "43437 225th Ave", "city": "Lake Mills", "state": "IA", "zip": "50450", "phone": "(641) 592-4206"},
+      {"name": "Mason City", "address": "1711 S. Pierce Avenue", "city": "Mason City", "state": "IA", "zip": "50401", "phone": "(641) 423-4510"},
+      {"name": "Plainview", "address": "56 3rd Street SW", "city": "Plainview", "state": "MN", "zip": "55964", "phone": "(507) 534-2020"},
+      {"name": "Postville", "address": "307 Wilson Street", "city": "Postville", "state": "IA", "zip": "52162", "phone": "(563) 518-6000"},
+      {"name": "Rochester", "address": "2525 Schuster Ln NW", "city": "Rochester", "state": "MN", "zip": "55901", "phone": "(507) 289-2519"},
+      {"name": "Rushford", "address": "43295 Highway 16", "city": "Rushford", "state": "MN", "zip": "55971", "phone": "(507) 864-9229"},
+      {"name": "Winona", "address": "27053 County Road 12", "city": "Winona", "state": "MN", "zip": "55987", "phone": "(507) 452-4743"}
+    ],
+    "notes": ""
+  },
+  {
+    "id": "blue_star_gas_eugene_co",
+    "name": "Blue Star Gas - Eugene Co.",
+    "website": "https://www.bluestargas.com",
+    "locations_found": [
+      {"name": "Arcata", "address": "1907 Heindon Road", "city": "Arcata", "state": "CA", "zip": "95521", "phone": "(707) 822-4851"},
+      {"name": "Coast Co. (Crescent City)", "address": "340 H Street", "city": "Crescent City", "state": "CA", "zip": "95531", "phone": "(707) 464-7827"},
+      {"name": "Eugene Co.", "address": "61 S. Danebo Avenue", "city": "Eugene", "state": "OR", "zip": "97402", "phone": "(541) 689-3311"},
+      {"name": "Fortuna", "address": "926 Main Street", "city": "Fortuna", "state": "CA", "zip": "95540", "phone": "(707) 725-4465"},
+      {"name": "Garberville Co.", "address": "1333 Redwood Drive", "city": "Garberville", "state": "CA", "zip": "95542", "phone": "(707) 923-7827"},
+      {"name": "McMinnville Co.", "address": "3837 Portland Road NE", "city": "Salem", "state": "OR", "zip": "97301", "phone": "(503) 472-1571"},
+      {"name": "Medford Co.", "address": "6096 Crater Lake Avenue", "city": "Central Point", "state": "OR", "zip": "97502", "phone": "(541) 826-8683"},
+      {"name": "Mt. Shasta Co.", "address": "3700 Spring Hill Road", "city": "Mt. Shasta", "state": "CA", "zip": "96067", "phone": "(530) 926-5862"},
+      {"name": "Phoenix Co.", "address": "447 W Watkins Street, Ste. #1", "city": "Phoenix", "state": "AZ", "zip": "85003", "phone": "(602) 253-7827"},
+      {"name": "Redding Co.", "address": "6775 Eastside Road", "city": "Anderson", "state": "CA", "zip": "96007", "phone": "(530) 365-2131"},
+      {"name": "Salem Co.", "address": "3837 Portland Road NE", "city": "Salem", "state": "OR", "zip": "97301", "phone": "(503) 391-2737"},
+      {"name": "Salt Lake City Co.", "address": "3625 West California Ave", "city": "Salt Lake City", "state": "UT", "zip": "84104", "phone": "(801) 298-7827"},
+      {"name": "Santa Rosa Co. (Head Office)", "address": "880 N. Wright Road", "city": "Santa Rosa", "state": "CA", "zip": "95407", "phone": "(707) 546-1400"},
+      {"name": "Seattle Co.", "address": "10802 E. Marginal Way South", "city": "Tukwila", "state": "WA", "zip": "98168", "phone": "(206) 762-2583"},
+      {"name": "Acme Fuel", "address": "416 State Ave NW", "city": "Olympia", "state": "WA", "zip": "98501", "phone": "(360) 943-1133"}
+    ],
+    "notes": "Same parent Blue Star Gas chain as Crescent City record."
+  },
+  {
+    "id": "ed_staub_sons_petroleum",
+    "name": "ED STAUB & SONS PETROLEUM",
+    "website": "https://www.edstaub.com",
+    "locations_found": [
+      {"name": "Klamath Falls", "address": "977 South Spring Street", "city": "Klamath Falls", "state": "OR", "zip": "97601", "phone": ""},
+      {"name": "Canyon City", "address": "243 N Canyon Blvd", "city": "Canyon City", "state": "OR", "zip": "97820", "phone": ""},
+      {"name": "Lakeview", "address": "1440 North 4th Street", "city": "Lakeview", "state": "OR", "zip": "97630", "phone": ""},
+      {"name": "John Day", "address": "", "city": "John Day", "state": "OR", "zip": "", "phone": ""},
+      {"name": "La Grande", "address": "", "city": "La Grande", "state": "OR", "zip": "", "phone": ""},
+      {"name": "Enterprise", "address": "", "city": "Enterprise", "state": "OR", "zip": "", "phone": ""},
+      {"name": "Nampa", "address": "", "city": "Nampa", "state": "ID", "zip": "", "phone": ""},
+      {"name": "Donnelly", "address": "", "city": "Donnelly", "state": "ID", "zip": "", "phone": ""},
+      {"name": "Alturas (HQ origin)", "address": "", "city": "Alturas", "state": "CA", "zip": "", "phone": ""}
+    ],
+    "notes": "Wix-based site did not render location data via WebFetch. Company has 19 bulk plants across OR, ID, Northern CA, NV, WA per web search sources (edstaub.com, fuelwonk.com). Full list requires direct site visit."
+  },
+  {
+    "id": "blakeman_propane_inc",
+    "name": "Blakeman Propane, Inc.",
+    "website": "https://www.blakemanpropane.com",
+    "locations_found": [
+      {"name": "Buffalo", "address": "P.O. Box 777", "city": "Buffalo", "state": "WY", "zip": "82834", "phone": "(307) 684-0682"},
+      {"name": "Casper", "address": "P.O. Box 253", "city": "Casper", "state": "WY", "zip": "82602", "phone": "(307) 235-5058"},
+      {"name": "Cheyenne", "address": "P.O. Box 602", "city": "Cheyenne", "state": "WY", "zip": "82003", "phone": "(307) 756-3302"},
+      {"name": "Cody", "address": "2338 Mountain View Drive", "city": "Cody", "state": "WY", "zip": "82414", "phone": "(307) 587-5183"},
+      {"name": "Douglas", "address": "P.O. Box 1012", "city": "Douglas", "state": "WY", "zip": "82633", "phone": "(307) 358-8355"},
+      {"name": "Gillette", "address": "4111 N. Hwy 14-16", "city": "Gillette", "state": "WY", "zip": "82716", "phone": "(307) 682-1447"},
+      {"name": "Moorcroft", "address": "P.O. Box 45", "city": "Moorcroft", "state": "WY", "zip": "82721", "phone": "(307) 756-3302"},
+      {"name": "Rawlins", "address": "P.O. Box 1409", "city": "Rawlins", "state": "WY", "zip": "82301", "phone": "(307) 324-3144"},
+      {"name": "Sundance", "address": "P.O. Box 1054", "city": "Sundance", "state": "WY", "zip": "82729", "phone": "(307) 283-2512"},
+      {"name": "Newcastle", "address": "78 WY-450", "city": "Newcastle", "state": "WY", "zip": "", "phone": ""}
+    ],
+    "notes": ""
+  },
+  {
+    "id": "energy_north_propane",
+    "name": "Energy North Propane",
+    "website": "https://www.energynorthpropane.com",
+    "locations_found": [
+      {"name": "Concord", "address": "75 Regional Drive", "city": "Concord", "state": "NH", "zip": "03301", "phone": "(603) 225-6660"},
+      {"name": "Derry", "address": "1 B Street", "city": "Derry", "state": "NH", "zip": "03038", "phone": "(603) 437-1906"}
+    ],
+    "notes": "Site redirects to amerigas.com/energy-north-propane - acquired/operated by AmeriGas. Only 2 NH branches found; serves wider NH area from these."
+  },
+  {
+    "id": "energy_west_montana",
+    "name": "Energy West Montana",
+    "website": "https://energywestpropane.com/",
+    "locations_found": [
+      {"name": "Great Falls (HQ)", "address": "1 1st Ave S", "city": "Great Falls", "state": "MT", "zip": "59401", "phone": ""},
+      {"name": "Great Falls Alt Location", "address": "904 9th St N", "city": "Great Falls", "state": "MT", "zip": "", "phone": ""},
+      {"name": "Cut Bank", "address": "", "city": "Cut Bank", "state": "MT", "zip": "", "phone": ""},
+      {"name": "Cascade", "address": "", "city": "Cascade", "state": "MT", "zip": "", "phone": ""},
+      {"name": "West Yellowstone", "address": "", "city": "West Yellowstone", "state": "MT", "zip": "", "phone": ""},
+      {"name": "Cody service area", "address": "", "city": "Cody", "state": "WY", "zip": "", "phone": ""}
+    ],
+    "notes": "Site WebFetch timed out. Per web search, Energy West Montana natural gas division was sold to NorthWestern Energy effective July 1, 2025. Propane division still operates via energywestpropane.com. Emergency contact: 1-800-570-5688."
+  },
+  {
+    "id": "town___country_gas",
+    "name": "Town & Country Gas",
+    "website": "https://towncountrygas.com",
+    "locations_found": [
+      {"name": "Wrens (Main Office)", "address": "402 East Broad Street", "city": "Wrens", "state": "GA", "zip": "30833", "phone": "(706) 547-2525"},
+      {"name": "Wrens Alternate", "address": "611 S Main St", "city": "Wrens", "state": "GA", "zip": "30833", "phone": ""},
+      {"name": "Sandersville", "address": "1292 GA Highway 15 N", "city": "Sandersville", "state": "GA", "zip": "", "phone": ""}
+    ],
+    "notes": "Contact page lists Wrens as main office only. Additional Wrens and Sandersville addresses from Yelp/Waze via web search."
+  },
+  {
+    "id": "burden_propane_inc",
+    "name": "Burden Propane Inc",
+    "website": "https://www.burdenpropane.com",
+    "locations_found": [],
+    "notes": "WebFetch returned 403 Forbidden on all URLs. Web search indicates Burden Propane mailing address in Harrison Hot Springs, BC (Canada), not a Washington operator. Possible misclassification of state/country. No US locations confirmed."
+  },
+  {
+    "id": "davenport_energy",
+    "name": "Davenport Energy",
+    "website": "https://www.davenportenergy.com",
+    "locations_found": [
+      {"name": "Chatham (Headquarters)", "address": "120 S. Main Street", "city": "Chatham", "state": "VA", "zip": "24531", "phone": "(434) 432-0251"},
+      {"name": "Gretna", "address": "413 Vaden Drive", "city": "Gretna", "state": "VA", "zip": "24557", "phone": "(434) 656-2271"},
+      {"name": "Rocky Mount", "address": "40 Diamond Avenue", "city": "Rocky Mount", "state": "VA", "zip": "24151", "phone": "(540) 483-5146"},
+      {"name": "Martinsville", "address": "8720 Philpott Highway", "city": "Martinsville", "state": "VA", "zip": "24112", "phone": "(276) 632-5788"},
+      {"name": "South Boston", "address": "7 Edmunds Street", "city": "South Boston", "state": "VA", "zip": "24592", "phone": "(434) 572-4981"},
+      {"name": "Roanoke", "address": "4939 Starkey Road", "city": "Roanoke", "state": "VA", "zip": "24018", "phone": "(540) 774-4401"},
+      {"name": "Covington", "address": "610 W Locust Street", "city": "Covington", "state": "VA", "zip": "24426", "phone": "(540) 962-1176"},
+      {"name": "Danville", "address": "200 River Street", "city": "Danville", "state": "VA", "zip": "24540", "phone": "(434) 793-5811"},
+      {"name": "Greensboro", "address": "5910 W Market Street", "city": "Greensboro", "state": "NC", "zip": "27409", "phone": "(336) 378-0400"}
+    ],
+    "notes": ""
+  },
+  {
+    "id": "enderby_gas_inc_ok",
+    "name": "Enderby Gas Inc",
+    "website": "https://www.enderbygas.com",
+    "locations_found": [
+      {"name": "Gainesville (Main Office)", "address": "1405 W. Hwy 82", "city": "Gainesville", "state": "TX", "zip": "", "phone": "(940) 665-3457"},
+      {"name": "Sherman", "address": "3101 US-82", "city": "Sherman", "state": "TX", "zip": "75090", "phone": ""},
+      {"name": "Bowie", "address": "3074 TX-59", "city": "Bowie", "state": "TX", "zip": "76230", "phone": ""},
+      {"name": "Krum", "address": "5549 Miller Rd", "city": "Krum", "state": "TX", "zip": "76249", "phone": ""}
+    ],
+    "notes": "Website's /locations page was 404. Data from homepage + Yelp listings via web search. Serves North Central TX and Southern OK."
+  },
+  {
+    "id": "marsh_propane",
+    "name": "Marsh Propane",
+    "website": "http://www.marshpet.com/",
+    "locations_found": [
+      {"name": "Corporate Headquarters", "address": "253 Baileyton Road", "city": "Greeneville", "state": "TN", "zip": "37743", "phone": "(423) 639-7226"},
+      {"name": "Kingsport", "address": "9964 Airport Parkway", "city": "Kingsport", "state": "TN", "zip": "37663", "phone": "(423) 323-9904"},
+      {"name": "Abingdon", "address": "15725 Porterfield Highway", "city": "Abingdon", "state": "VA", "zip": "24210", "phone": "(276) 619-2400"},
+      {"name": "Mountain City / Boone", "address": "4441 US Highway 421 South", "city": "Mountain City", "state": "TN", "zip": "37683", "phone": "(423) 727-0005"},
+      {"name": "Princeton", "address": "102 Roseland Ave", "city": "Princeton", "state": "WV", "zip": "24740", "phone": "(304) 431-3483"},
+      {"name": "Asheville", "address": "929 New Leicester Hwy, Suite 7", "city": "Asheville", "state": "NC", "zip": "28806", "phone": "(828) 515-5500"},
+      {"name": "Sevierville/Seymour", "address": "10490 Chapman Hwy", "city": "Seymour", "state": "TN", "zip": "37865", "phone": "(865) 280-9969"}
+    ],
+    "notes": ""
+  },
+  {
+    "id": "norup_gas_inc",
+    "name": "Norup Gas Inc",
+    "website": "https://norupgas.com/",
+    "locations_found": [
+      {"name": "Westcliffe", "address": "28 Range View Loop", "city": "Westcliffe", "state": "CO", "zip": "81252", "phone": "(719) 783-9338"}
+    ],
+    "notes": "WebFetch consistently returned ECONNREFUSED. Web search confirms single Westcliffe, CO location. Likely single-location operator."
+  },
+  {
+    "id": "pico_propane",
+    "name": "Pico Propane",
+    "website": "https://www.pfmpropane.com/",
+    "locations_found": [
+      {"name": "Siler City (PFM Propane)", "address": "95 Bonlee Road", "city": "Siler City", "state": "NC", "zip": "27344", "phone": "(919) 837-2000"}
+    ],
+    "notes": "Only 1 NC location found on /locations page. Serves Chatham County. Parent Pico Propane (TX-based) is much larger; pfmpropane.com appears to be a separate or regional entity."
+  },
+  {
+    "id": "ayer_goss",
+    "name": "Ayer & Goss",
+    "website": "https://ayergoss.com",
+    "locations_found": [
+      {"name": "Henniker (Main Office)", "address": "20 Hall Avenue", "city": "Henniker", "state": "NH", "zip": "03242", "phone": "(603) 428-3333"}
+    ],
+    "notes": "ayergoss.com DNS failed (typo); correct domain is ayerandgoss.com. Single-office company serving NH counties; also operates self-service gas stations in Henniker and Bradford, NH but not separate corporate offices."
+  },
+  {
+    "id": "greco_gas",
+    "name": "Greco Gas",
+    "website": "https://www.grecogas.com",
+    "locations_found": [
+      {"name": "Tarentum (Headquarters)", "address": "450 Grantham St", "city": "Tarentum", "state": "PA", "zip": "15084", "phone": "(724) 226-3800"},
+      {"name": "Butler", "address": "201 Kittanning St", "city": "Butler", "state": "PA", "zip": "16002", "phone": "(724) 285-4787"},
+      {"name": "Kittanning", "address": "291 Linde Road", "city": "Kittanning", "state": "PA", "zip": "16201", "phone": "(724) 543-2415"}
+    ],
+    "notes": "Input file notes HQ in Jeannette, PA but actual HQ per website is Tarentum, PA."
+  },
+  {
+    "id": "co_alliance_propane",
+    "name": "Co-Alliance Propane",
+    "website": "https://co-alliance.com",
+    "locations_found": [
+      {"name": "Angola", "address": "610 W Broad", "city": "Angola", "state": "IN", "zip": "46703", "phone": "(260) 665-7427"},
+      {"name": "Argos", "address": "15124 N Michigan St", "city": "Argos", "state": "IN", "zip": "46501", "phone": "(574) 780-0025"},
+      {"name": "Bringhurst", "address": "27 W 250 S", "city": "Bringhurst", "state": "IN", "zip": "46913", "phone": "(574) 967-4168"},
+      {"name": "Ade (Brook)", "address": "2887 W 883 S", "city": "Brook", "state": "IN", "zip": "47922", "phone": "(219) 275-2732"},
+      {"name": "Buchanan", "address": "16724 Bakertown Rd", "city": "Buchanan", "state": "MI", "zip": "49107", "phone": "(269) 695-6823"},
+      {"name": "Chalmers", "address": "5774 S State Rd 43", "city": "Chalmers", "state": "IN", "zip": "47929", "phone": "(219) 984-5353"},
+      {"name": "Goshen Energy", "address": "806 E Logan St", "city": "Goshen", "state": "IN", "zip": "46528", "phone": "(574) 533-4131"},
+      {"name": "Greenville", "address": "619 Sater St", "city": "Greenville", "state": "OH", "zip": "45331", "phone": "(937) 548-1122"},
+      {"name": "Lena (Conover)", "address": "7436 N Bollinger Rd", "city": "Conover", "state": "OH", "zip": "45317", "phone": "(937) 368-3856"},
+      {"name": "Boswell", "address": "2802 W St Rd 352", "city": "Boswell", "state": "IN", "zip": "47921", "phone": "(765) 869-5219"},
+      {"name": "Decatur", "address": "1966 W State Rd 224", "city": "Decatur", "state": "IN", "zip": "46733", "phone": "(260) 724-2169"},
+      {"name": "Hamilton Propane", "address": "4670 E Washington St", "city": "Hamilton", "state": "MI", "zip": "49419", "phone": "(888) 427-2968"},
+      {"name": "Avon (HQ)", "address": "5250 E US Hwy 36", "city": "Avon", "state": "IN", "zip": "", "phone": ""},
+      {"name": "Tipton", "address": "1005 N Berryman Pike", "city": "Tipton", "state": "IN", "zip": "46072", "phone": ""}
+    ],
+    "notes": "Co-Alliance has merged into Keystone Cooperative; co-alliance.com/locations redirects to keystonecoop.com. Keystone has 50+ locations across IN/MI/OH; only first page of propane locations captured."
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "arrowwood_prairie_co_op_carrington_main_office",
+    "name": "Arrowwood Prairie Co-op - Carrington Main Office",
+    "state": "ND",
+    "website": "https://www.arrowwoodprairie.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Main office of multi-location ND ag coop"
+  },
+  {
+    "id": "valley_wide_cooperative_energy_salmon",
+    "name": "Valley Wide Cooperative Energy | Salmon",
+    "state": "MT",
+    "website": "https://www.valleywidecoop.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state Pacific NW ag cooperative; Salmon ID/MT branch"
+  },
+  {
+    "id": "blue_star_gas_crescent_city_co",
+    "name": "Blue Star Gas - Crescent City Co.",
+    "state": "CA",
+    "website": "https://bluestargas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location West Coast propane company based in Santa Rosa, CA"
+  },
+  {
+    "id": "superior_plus_energy_services",
+    "name": "Superior Plus Energy Services",
+    "state": "CT",
+    "website": "https://www.superiorpluspropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Canadian public company; one of largest North American propane distributors"
+  },
+  {
+    "id": "consolidated_energy_company",
+    "name": "Consolidated Energy Company",
+    "state": "IA",
+    "website": "https://consolidatedenergyco.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Iowa regional fuels/propane company"
+  },
+  {
+    "id": "blue_star_gas_eugene_co",
+    "name": "Blue Star Gas - Eugene Co.",
+    "state": "OR",
+    "website": "https://www.bluestargas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Eugene, OR branch of Blue Star Gas chain"
+  },
+  {
+    "id": "ed_staub_sons_petroleum",
+    "name": "ED STAUB & SONS PETROLEUM",
+    "state": "OR",
+    "website": "https://www.edstaub.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-location propane/petroleum distributor in OR/CA/NV"
+  },
+  {
+    "id": "blakeman_propane_inc",
+    "name": "Blakeman Propane, Inc.",
+    "state": "WY",
+    "website": "https://www.blakemanpropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "WY family-owned, multi-location"
+  },
+  {
+    "id": "energy_north_propane",
+    "name": "Energy North Propane",
+    "state": "NH",
+    "website": "https://www.energynorthpropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "NH regional propane supplier"
+  },
+  {
+    "id": "energy_west_montana",
+    "name": "Energy West Montana",
+    "state": "ID",
+    "website": "https://energywestpropane.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Multi-state MT/ID propane operator"
+  },
+  {
+    "id": "town___country_gas",
+    "name": "Town & Country Gas",
+    "state": "GA",
+    "website": "https://towncountrygas.com",
+    "ownership": "private",
+    "nlocs": 2,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "burden_propane_inc",
+    "name": "Burden Propane Inc",
+    "state": "WA",
+    "website": "https://www.burdenpropane.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "WA operator"
+  },
+  {
+    "id": "davenport_energy",
+    "name": "Davenport Energy",
+    "state": "VA",
+    "website": "https://www.davenportenergy.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Chatham, VA; large regional multi-location"
+  },
+  {
+    "id": "enderby_gas_inc_ok",
+    "name": "Enderby Gas Inc",
+    "state": "OK",
+    "website": "https://www.enderbygas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "OK/TX regional propane distributor, multi-location"
+  },
+  {
+    "id": "marsh_propane",
+    "name": "Marsh Propane",
+    "state": "TN",
+    "website": "http://www.marshpet.com/",
+    "ownership": "private",
+    "nlocs": 2,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "norup_gas_inc",
+    "name": "Norup Gas Inc",
+    "state": "CO",
+    "website": "https://norupgas.com/",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Colorado regional propane dealer"
+  },
+  {
+    "id": "pico_propane",
+    "name": "Pico Propane",
+    "state": "NC",
+    "website": "https://www.pfmpropane.com/?utm_source=gmb&utm_medium=organic&utm_campaign=uberall",
+    "ownership": "family",
+    "nlocs": 2,
+    "score": 3,
+    "notes": ""
+  },
+  {
+    "id": "ayer_goss",
+    "name": "Ayer & Goss",
+    "state": "MA",
+    "website": "https://ayergoss.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "NH/MA regional"
+  },
+  {
+    "id": "greco_gas",
+    "name": "Greco Gas",
+    "state": "PA",
+    "website": "https://www.grecogas.com",
+    "ownership": "independent",
+    "nlocs": 1,
+    "score": 3,
+    "notes": "Jeannette, PA; multi-location western PA"
+  },
+  {
+    "id": "co_alliance_propane",
+    "name": "Co-Alliance Propane",
+    "state": "IN",
+    "website": "https://co-alliance.com",
+    "ownership": "coop",
+    "nlocs": 1,
+    "score": 2,
+    "notes": "Large Indiana farmer cooperative"
+  }
+]

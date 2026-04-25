@@ -1,0 +1,117 @@
+{
+  "source": "https://graincofs.com/",
+  "scraped": "2026-04-11",
+  "member_id": "graincofs",
+  "locations": [
+    {
+      "name": "Mazon",
+      "street": "2490 W. Grand Ridge Road",
+      "city": "Mazon",
+      "state": "IL",
+      "zip": "60444",
+      "phone": "(815) 448-2175",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Morris Agronomy",
+      "street": "11230 N. Route 47",
+      "city": "Morris",
+      "state": "IL",
+      "zip": "60450",
+      "phone": "(815) 705-9090",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Seneca",
+      "street": "520 E. Shipyard Road",
+      "city": "Seneca",
+      "state": "IL",
+      "zip": "61360",
+      "phone": "(815) 357-6167",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Newark",
+      "street": "202 IL-71",
+      "city": "Newark",
+      "state": "IL",
+      "zip": "60541",
+      "phone": "(815) 695-1067",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Streator",
+      "street": "1485 E. 1725th Road",
+      "city": "Streator",
+      "state": "IL",
+      "zip": "61364",
+      "phone": "(815) 672-5431",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Serena",
+      "street": "3807 E. 2276th Road",
+      "city": "Serena",
+      "state": "IL",
+      "zip": "60549",
+      "phone": "(815) 496-9421",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Ottawa Office",
+      "street": "4200 MBL Drive",
+      "city": "Ottawa",
+      "state": "IL",
+      "zip": "61350",
+      "phone": "(815) 434-0131",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Ottawa Warehouse",
+      "street": "4201 MBL Drive",
+      "city": "Ottawa",
+      "state": "IL",
+      "zip": "61350",
+      "phone": "(815) 431-0461",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Ottawa Propane",
+      "street": "4201 MBL Drive",
+      "city": "Ottawa",
+      "state": "IL",
+      "zip": "61350",
+      "phone": "(815) 431-0461",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Lostant",
+      "street": "536 N. 15th Road",
+      "city": "Lostant",
+      "state": "IL",
+      "zip": "61334",
+      "phone": "(815) 368-3215",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Mendota",
+      "street": "183 N. 40th Road",
+      "city": "Mendota",
+      "state": "IL",
+      "zip": "61342",
+      "phone": "(815) 539-6728",
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "source": "centergasfuels.com",
+  "scraped": "2026-04-11",
+  "locations": [
+    {
+      "street": "5901 N. Western",
+      "city": "Amarillo",
+      "state": "TX",
+      "zip": "79124"
+    },
+    {
+      "street": "821 W. Brown St.",
+      "city": "Pampa",
+      "state": "TX",
+      "zip": "79065"
+    },
+    {
+      "street": "8704 E. Oklahoma",
+      "city": "Wheeler",
+      "state": "TX",
+      "zip": "79096"
+    },
+    {
+      "street": "1120 E. Waylon Jennings Blvd",
+      "city": "Littlefield",
+      "state": "TX",
+      "zip": "79339"
+    },
+    {
+      "street": "6259 E. I-20",
+      "city": "Abilene",
+      "state": "TX",
+      "zip": "79602"
+    },
+    {
+      "street": "511 E. 5th",
+      "city": "McLean",
+      "state": "TX",
+      "zip": "79057"
+    },
+    {
+      "street": "19567 US Hwy 62",
+      "city": "Olustee",
+      "state": "OK",
+      "zip": "73560"
+    },
+    {
+      "street": "803 E. 4th",
+      "city": "Carnegie",
+      "state": "OK",
+      "zip": "73015"
+    },
+    {
+      "street": "56798 E. Hwy 60",
+      "city": "Fairland",
+      "state": "OK",
+      "zip": "74343"
+    },
+    {
+      "street": "47048 US Hwy 59",
+      "city": "Hodgen",
+      "state": "OK",
+      "zip": "74963"
+    },
+    {
+      "street": "2700 W. Cherokee",
+      "city": "Sallisaw",
+      "state": "OK",
+      "zip": "74955"
+    },
+    {
+      "street": "900 BK P",
+      "city": "Sayre",
+      "state": "OK",
+      "zip": "73662"
+    },
+    {
+      "street": "1205 S. Muskogee",
+      "city": "Tahlequah",
+      "state": "OK",
+      "zip": "74464"
+    },
+    {
+      "street": "101 W. Choctaw Ave.",
+      "city": "Wister",
+      "state": "OK",
+      "zip": "74966"
+    },
+    {
+      "street": "5671 Blackberry Rd.",
+      "city": "Sarcoxie",
+      "state": "MO",
+      "zip": "64862"
+    },
+    {
+      "street": "111 N. Main",
+      "city": "Southwest City",
+      "state": "MO",
+      "zip": "64863"
+    },
+    {
+      "street": "7438 Farm Road 2090",
+      "city": "Purdy",
+      "state": "MO",
+      "zip": "65734"
+    },
+    {
+      "street": "17904 Hwy 13",
+      "city": "Branson West",
+      "state": "MO",
+      "zip": "65737"
+    },
+    {
+      "street": "13754 Hwy 279 N.",
+      "city": "Hiwasse",
+      "state": "AR",
+      "zip": "72739"
+    }
+  ]
+}

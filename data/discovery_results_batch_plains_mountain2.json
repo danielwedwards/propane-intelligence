@@ -1,0 +1,561 @@
+{
+  "batch": "plains_mountain2",
+  "generated": "2026-04-11",
+  "companies": [
+    {
+      "name": "A&B Propane",
+      "hqCity": "Lake Havasu City",
+      "hqState": "AZ",
+      "website": "https://www.abpropaneaz.com/",
+      "knownLocations": [
+        {
+          "city": "Lake Havasu City",
+          "state": "AZ",
+          "street": ""
+        },
+        {
+          "city": "Bullhead City",
+          "state": "AZ",
+          "street": ""
+        },
+        {
+          "city": "Kingman",
+          "state": "AZ",
+          "street": ""
+        },
+        {
+          "city": "Parker",
+          "state": "AZ",
+          "street": ""
+        },
+        {
+          "city": "Golden Valley",
+          "state": "AZ",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned since 1990. Serves Lake Havasu City, Bullhead City, Kingman, Parker and Golden Valley. Residential and commercial propane delivery and tank monitoring."
+    },
+    {
+      "name": "Sierra Propane",
+      "hqCity": "Snowflake",
+      "hqState": "AZ",
+      "website": "https://www.sierrapropane.com/",
+      "knownLocations": [
+        {
+          "city": "Snowflake",
+          "state": "AZ",
+          "street": "3290 West Snowflake Boulevard"
+        },
+        {
+          "city": "Show Low",
+          "state": "AZ",
+          "street": ""
+        },
+        {
+          "city": "Taylor",
+          "state": "AZ",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Regional propane provider serving Snowflake, Taylor, Show Low and northern Arizona. Also operates in New Mexico."
+    },
+    {
+      "name": "1st Propane of Snowflake",
+      "hqCity": "Snowflake",
+      "hqState": "AZ",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Snowflake",
+          "state": "AZ",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Local propane retailer in Snowflake AZ (85937)."
+    },
+    {
+      "name": "Arrowhead Propane",
+      "hqCity": "Farmington",
+      "hqState": "NM",
+      "website": "https://www.arrowheadpropanenm.com/",
+      "knownLocations": [
+        {
+          "city": "Farmington",
+          "state": "NM",
+          "street": ""
+        },
+        {
+          "city": "Pagosa Springs",
+          "state": "CO",
+          "street": ""
+        },
+        {
+          "city": "Durango",
+          "state": "CO",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Locally owned Four Corners propane distributor founded 2013. Serves northwest NM and southern CO."
+    },
+    {
+      "name": "OXARC Sandpoint",
+      "hqCity": "Sandpoint",
+      "hqState": "ID",
+      "website": "https://meritusgas.com/company/locations/oxarc-sandpoint/",
+      "knownLocations": [
+        {
+          "city": "Sandpoint",
+          "state": "ID",
+          "street": ""
+        }
+      ],
+      "ownership": "pe",
+      "notes": "Meritus Gas Partners (PE-backed) branch serving Sandpoint, CdA, Post Falls, Hayden, Rathdrum, Bonners Ferry."
+    },
+    {
+      "name": "Gendco",
+      "hqCity": "Glendive",
+      "hqState": "MT",
+      "website": "https://shop.gendco.com/",
+      "knownLocations": [
+        {
+          "city": "Glendive",
+          "state": "MT",
+          "street": "720 N. Sargent"
+        }
+      ],
+      "ownership": "family",
+      "notes": "4th generation family-owned Montana business since 1948. Welding, industrial gases and propane supply."
+    },
+    {
+      "name": "Vintage Propane",
+      "hqCity": "Helena",
+      "hqState": "MT",
+      "website": "https://vintagepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Helena",
+          "state": "MT",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Helena based propane delivery and tank refill company."
+    },
+    {
+      "name": "Lewistown Propane and Fertilizer",
+      "hqCity": "Stanford",
+      "hqState": "MT",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Stanford",
+          "state": "MT",
+          "street": ""
+        },
+        {
+          "city": "Lewistown",
+          "state": "MT",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Central Montana propane and fertilizer sales and service."
+    },
+    {
+      "name": "PSI Propane",
+      "hqCity": "",
+      "hqState": "MT",
+      "website": "https://psipropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "MT",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Montana propane services provider with multiple locations."
+    },
+    {
+      "name": "Barnicks Appliance",
+      "hqCity": "Glendive",
+      "hqState": "MT",
+      "website": "https://www.barnicksappliance.com/",
+      "knownLocations": [
+        {
+          "city": "Glendive",
+          "state": "MT",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Glendive appliance store also sells and supplies propane."
+    },
+    {
+      "name": "Horizon Resources Coop",
+      "hqCity": "Williston",
+      "hqState": "ND",
+      "website": "https://www.horizonresources.coop/",
+      "knownLocations": [
+        {
+          "city": "Williston",
+          "state": "ND",
+          "street": "216 2nd Ave West"
+        },
+        {
+          "city": "Watford City",
+          "state": "ND",
+          "street": ""
+        },
+        {
+          "city": "Ray",
+          "state": "ND",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Ag cooperative serving 3M acres of Western ND and Eastern MT. Fuel, propane and DEF delivery."
+    },
+    {
+      "name": "Dakota Petroleum",
+      "hqCity": "Devils Lake",
+      "hqState": "ND",
+      "website": "https://dakotapetroleum.com/",
+      "knownLocations": [
+        {
+          "city": "Devils Lake",
+          "state": "ND",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Eastern ND fuel and propane distributor headquartered in Devils Lake."
+    },
+    {
+      "name": "Enning Propane",
+      "hqCity": "Enning",
+      "hqState": "SD",
+      "website": "https://www.enningpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Enning",
+          "state": "SD",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Serves most of West River and Black Hills area of SD."
+    },
+    {
+      "name": "Lindskov Implement",
+      "hqCity": "Isabel",
+      "hqState": "SD",
+      "website": "https://www.lindskovimp.com/",
+      "knownLocations": [
+        {
+          "city": "Isabel",
+          "state": "SD",
+          "street": ""
+        },
+        {
+          "city": "Mobridge",
+          "state": "SD",
+          "street": ""
+        },
+        {
+          "city": "Belle Fourche",
+          "state": "SD",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Equipment dealer and propane supplier serving north central and western SD."
+    },
+    {
+      "name": "Western Cooperative Company",
+      "hqCity": "Alliance",
+      "hqState": "NE",
+      "website": "https://www.westco.coop/",
+      "knownLocations": [
+        {
+          "city": "Alliance",
+          "state": "NE",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Western NE ag cooperative with petroleum and propane divisions."
+    },
+    {
+      "name": "Legacy Coop NE",
+      "hqCity": "Kimball",
+      "hqState": "NE",
+      "website": "https://legacycoop.com/",
+      "knownLocations": [
+        {
+          "city": "Kimball",
+          "state": "NE",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Western panhandle agricultural cooperative with fuel and propane operations."
+    },
+    {
+      "name": "Cooperative Gas and Oil Co",
+      "hqCity": "Sioux Center",
+      "hqState": "IA",
+      "website": "https://www.coopenergyco.com/",
+      "knownLocations": [
+        {
+          "city": "Sioux Center",
+          "state": "IA",
+          "street": ""
+        },
+        {
+          "city": "Ireton",
+          "state": "IA",
+          "street": ""
+        },
+        {
+          "city": "Boyden",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "NW Iowa cooperative formed 1924 as Cooperative Energy Company. Serves Sioux Center, Orange City, Hull, Maurice, Ireton, Alton, Boyden, Rock Valley, Hospers, Doon, Hawarden, Matlock and Sheldon."
+    },
+    {
+      "name": "Diamond Oil",
+      "hqCity": "",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned midwest Iowa distributor for residential, commercial, industrial and agricultural propane."
+    },
+    {
+      "name": "Pro Cooperative",
+      "hqCity": "Gilmore City",
+      "hqState": "IA",
+      "website": "https://procooperative.com/",
+      "knownLocations": [
+        {
+          "city": "Gilmore City",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Iowa ag cooperative with propane division."
+    },
+    {
+      "name": "Consumers Coop IA",
+      "hqCity": "",
+      "hqState": "IA",
+      "website": "https://consumerscoop.net/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Iowa cooperative offering propane, propane delivery and refined fuels."
+    },
+    {
+      "name": "Camp Verde Propane",
+      "hqCity": "Camp Verde",
+      "hqState": "AZ",
+      "website": "https://www.campverdepropane.com/",
+      "knownLocations": [
+        {
+          "city": "Camp Verde",
+          "state": "AZ",
+          "street": "3591 Old Hwy 279"
+        }
+      ],
+      "ownership": "family",
+      "notes": "John Graves Propane branded subsite for Camp Verde and Verde Valley customers."
+    },
+    {
+      "name": "Sonoita Propane",
+      "hqCity": "Sonoita",
+      "hqState": "AZ",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Sonoita",
+          "state": "AZ",
+          "street": ""
+        },
+        {
+          "city": "Sierra Vista",
+          "state": "AZ",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Southeast Arizona propane provider for Sonoita, Sierra Vista and surrounding Cochise County communities."
+    },
+    {
+      "name": "VWC Energy",
+      "hqCity": "Nampa",
+      "hqState": "ID",
+      "website": "https://www.vwcenergy.com/",
+      "knownLocations": [
+        {
+          "city": "Nampa",
+          "state": "ID",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Valley Wide Cooperative Energy. Number 1 propane distributor in Idaho serving 60 plus communities across ID, NV, OR, UT, WA, WY."
+    },
+    {
+      "name": "Blue Star Gas Medford",
+      "hqCity": "Medford",
+      "hqState": "OR",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Medford",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "private",
+      "notes": "Blue Star Gas branch serving Medford and southern Oregon coastal region."
+    },
+    {
+      "name": "Tilleman Equipment",
+      "hqCity": "Havre",
+      "hqState": "MT",
+      "website": "https://www.tillemanequipment.com/",
+      "knownLocations": [
+        {
+          "city": "Havre",
+          "state": "MT",
+          "street": ""
+        },
+        {
+          "city": "Great Falls",
+          "state": "MT",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Family-owned northern Montana equipment dealer with propane supply, serving Havre, Great Falls, Malta, Glasgow and Chinook."
+    },
+    {
+      "name": "Enning Propane",
+      "hqCity": "Enning",
+      "hqState": "SD",
+      "website": "https://www.enningpropane.com/",
+      "knownLocations": [
+        {
+          "city": "Enning",
+          "state": "SD",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "West River and Black Hills SD propane dealer."
+    },
+    {
+      "name": "Key Cooperative",
+      "hqCity": "Roland",
+      "hqState": "IA",
+      "website": "https://www.keycoop.com/",
+      "knownLocations": [
+        {
+          "city": "Roland",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Iowa ag cooperative offering propane for home, farm and business. Class A members receive propane discount per gallon."
+    },
+    {
+      "name": "Williams Oil and Propane",
+      "hqCity": "Jefferson",
+      "hqState": "IA",
+      "website": null,
+      "knownLocations": [
+        {
+          "city": "Jefferson",
+          "state": "IA",
+          "street": ""
+        },
+        {
+          "city": "Perry",
+          "state": "IA",
+          "street": ""
+        },
+        {
+          "city": "Boone",
+          "state": "IA",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Central Iowa family fuel and propane dealer serving Greene and Boone counties."
+    },
+    {
+      "name": "Wallowa County Grain Growers",
+      "hqCity": "Enterprise",
+      "hqState": "OR",
+      "website": "https://graingrowers.com/",
+      "knownLocations": [
+        {
+          "city": "Enterprise",
+          "state": "OR",
+          "street": ""
+        },
+        {
+          "city": "La Grande",
+          "state": "OR",
+          "street": ""
+        },
+        {
+          "city": "Baker City",
+          "state": "OR",
+          "street": ""
+        }
+      ],
+      "ownership": "coop",
+      "notes": "Tri-county NE Oregon ag cooperative since 1944 with propane and fuel services."
+    },
+    {
+      "name": "Butchs Propane",
+      "hqCity": "",
+      "hqState": "NE",
+      "website": "https://www.butchspropane.com/",
+      "knownLocations": [
+        {
+          "city": "",
+          "state": "NE",
+          "street": ""
+        }
+      ],
+      "ownership": "family",
+      "notes": "Trusted propane supplier serving Nebraska and Wyoming for 16 plus years."
+    }
+  ]
+}

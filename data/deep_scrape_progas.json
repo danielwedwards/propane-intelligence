@@ -1,0 +1,11 @@
+{
+  "source": "myprogas.com and public listings",
+  "scraped": "2026-04-11",
+  "company": "ProGas (EDP subsidiary)",
+  "parent": "Energy Distribution Partners (EDP)",
+  "notes": "ProGas serves ~3,500 customers in Western PA, Eastern OH, and Northern WV from two offices.",
+  "locations": [
+    {"name": "ProGas - Zelienople", "street": "2314 Evans City Rd", "city": "Zelienople", "state": "PA", "zip": "16063", "phone": "724-452-7262"},
+    {"name": "ProGas - Aliquippa", "street": "4700 State Route 151", "city": "Aliquippa", "state": "PA", "zip": "15001", "phone": "724-375-0001"}
+  ]
+}

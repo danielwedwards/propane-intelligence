@@ -1,0 +1,147 @@
+{
+  "source": "https://fosterfuels.com/about-us/locations/",
+  "scraped": "2026-04-11",
+  "notes": "Foster Fuels HQ in Brookneal, VA. Virginia propane/heating oil branches plus regional mission-critical hubs for diesel/fleet fueling in Greensboro NC, Dallas TX, Phoenix AZ, Northern VA, Cocoa FL, and Canada. Individual branch pages exist per city but detail pages are JS-rendered; street addresses sourced via web search for main VA propane branches. Website also mentions sitemap entries: Brookneal, Charlottesville, Richmond, Lynchburg, Blairs, Forest, Huddleston, Lovingston, Rustburg.",
+  "locations": [
+    {
+      "name": "Foster Fuels - Brookneal (HQ)",
+      "street": "16720 Brookneal Hwy",
+      "city": "Brookneal",
+      "state": "VA",
+      "zip": "24528",
+      "phone": "434-376-2322",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Charlottesville",
+      "street": "2151 Richmond Road, Suite 102",
+      "city": "Charlottesville",
+      "state": "VA",
+      "zip": "22911",
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Lynchburg",
+      "street": "200 Durham Street",
+      "city": "Lynchburg",
+      "state": "VA",
+      "zip": "24501",
+      "phone": "434-847-4453",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Rustburg",
+      "street": "10951 Wards Rd",
+      "city": "Rustburg",
+      "state": "VA",
+      "zip": "24588",
+      "phone": "434-808-1597",
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Richmond",
+      "street": null,
+      "city": "Richmond",
+      "state": "VA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Blairs",
+      "street": null,
+      "city": "Blairs",
+      "state": "VA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Forest",
+      "street": null,
+      "city": "Forest",
+      "state": "VA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Huddleston",
+      "street": null,
+      "city": "Huddleston",
+      "state": "VA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Lovingston",
+      "street": null,
+      "city": "Lovingston",
+      "state": "VA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Greensboro (Mission Critical Hub)",
+      "street": null,
+      "city": "Greensboro",
+      "state": "NC",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Northern Virginia (NoVa Mission Critical Hub)",
+      "street": null,
+      "city": null,
+      "state": "VA",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Dallas (Mission Critical Hub)",
+      "street": null,
+      "city": "Dallas",
+      "state": "TX",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Phoenix (Mission Critical Hub)",
+      "street": null,
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "name": "Foster Fuels - Cocoa (Mission Critical Hub)",
+      "street": null,
+      "city": "Cocoa",
+      "state": "FL",
+      "zip": null,
+      "phone": null,
+      "lat": null,
+      "lng": null
+    }
+  ]
+}

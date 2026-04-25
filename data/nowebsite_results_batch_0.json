@@ -1,0 +1,290 @@
+[
+  {
+    "id": "cromwell_s_convenience_petroleum_propane",
+    "name": "Cromwell's Convenience Petroleum & Propane",
+    "locations_found": [
+      {
+        "name": "Scobey (HQ)",
+        "address": "101 Railroad Ave W",
+        "city": "Scobey",
+        "state": "MT",
+        "zip": "59263",
+        "phone": "(406) 487-2441"
+      }
+    ],
+    "notes": "Confirmed single-location c-store/propane/gas station in Scobey, MT. Small local operator."
+  },
+  {
+    "id": "north_cascade_propane_service",
+    "name": "North Cascade Propane Service",
+    "locations_found": [
+      {
+        "name": "Twisp (HQ)",
+        "address": "1202 Cascade Dr",
+        "city": "Twisp",
+        "state": "WA",
+        "zip": "98856",
+        "phone": "(509) 997-3955"
+      },
+      {
+        "name": "Omak",
+        "address": "83 Copple Rd",
+        "city": "Omak",
+        "state": "WA",
+        "zip": "98841",
+        "phone": ""
+      }
+    ],
+    "notes": "Two locations found in Okanogan County, WA (Twisp and Omak). Serves Methow Valley area. Company does have a website (northcascadespropane.com) despite being flagged as no-website."
+  },
+  {
+    "id": "ontime_petroleum_propane",
+    "name": "OnTime Petroleum & Propane",
+    "locations_found": [
+      {
+        "name": "Howard (SD yard)",
+        "address": "23280 435th Ave",
+        "city": "Howard",
+        "state": "SD",
+        "zip": "57349",
+        "phone": "(507) 237-2726"
+      },
+      {
+        "name": "Gaylord (MN HQ)",
+        "address": "",
+        "city": "Gaylord",
+        "state": "MN",
+        "zip": "",
+        "phone": "(507) 237-2726"
+      }
+    ],
+    "notes": "Primary HQ is Gaylord, MN, with SD presence in Howard. Acquired Dakota Gas Propane. Has website ontimepetro.com - was mis-flagged as no-website. Delivers within 75 miles of both Gaylord MN and Howard SD."
+  },
+  {
+    "id": "fischer_oil_propane_co",
+    "name": "Fischer Oil & Propane Co",
+    "locations_found": [],
+    "notes": "DATA QUALITY ISSUE: Could not confirm any SD-based Fischer Oil & Propane Co. Most search hits refer to Fischer LP Gas (Michigan, multi-location) or Fischer Oil Company (not propane-focused). Possible name confusion or very small unlisted operator. Recommend manual verification - this entity may not exist as named in SD."
+  },
+  {
+    "id": "nebraska_iowa_supply_co",
+    "name": "Nebraska Iowa Supply Co",
+    "locations_found": [
+      {
+        "name": "Omaha (HQ)",
+        "address": "3441 S 66th St",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68106",
+        "phone": ""
+      }
+    ],
+    "notes": "Single-location wholesale supplier in Omaha, NE. Has website neiasupply.com — was mis-flagged as no-website. Wholesale distributor rather than retail propane marketer."
+  },
+  {
+    "id": "thunder_basin_propane",
+    "name": "Thunder Basin Propane",
+    "locations_found": [
+      {
+        "name": "Gillette (HQ)",
+        "address": "1901 Energy Ct #130",
+        "city": "Gillette",
+        "state": "WY",
+        "zip": "82718",
+        "phone": "(307) 687-1516"
+      }
+    ],
+    "notes": "Single-location operator serving NE Wyoming (Powder River Basin). Has website thunderbasinpropane.com — was mis-flagged as no-website."
+  },
+  {
+    "id": "gale_s_gas_services",
+    "name": "Gale's Gas Services",
+    "locations_found": [
+      {
+        "name": "Pierre (HQ)",
+        "address": "2100 N Airport Rd",
+        "city": "Pierre",
+        "state": "SD",
+        "zip": "57501",
+        "phone": "(605) 224-5518"
+      }
+    ],
+    "notes": "Confirmed single-location operator serving Central SD since 1964."
+  },
+  {
+    "id": "blue_flame_propane",
+    "name": "Blue Flame Propane",
+    "locations_found": [
+      {
+        "name": "Santaquin (HQ)",
+        "address": "1227 W Lark Rd",
+        "city": "Santaquin",
+        "state": "UT",
+        "zip": "84655",
+        "phone": "(801) 885-3160"
+      }
+    ],
+    "notes": "Single-location UT operator. Has website blueflamepropaneutah.com — was mis-flagged as no-website."
+  },
+  {
+    "id": "steveson_s_lp_gas",
+    "name": "Steveson's LP Gas",
+    "locations_found": [
+      {
+        "name": "Siloam Springs",
+        "address": "",
+        "city": "Siloam Springs",
+        "state": "AR",
+        "zip": "",
+        "phone": "(479) 855-4575"
+      },
+      {
+        "name": "Fort Gibson (OK sister location)",
+        "address": "P.O. Box 1982",
+        "city": "Fort Gibson",
+        "state": "OK",
+        "zip": "74434",
+        "phone": ""
+      }
+    ],
+    "notes": "Small operator with presence in NW Arkansas (Benton County / Siloam Springs) and likely related entity in Fort Gibson OK. Also shows listing in Kansas, OK and Sallisaw, OK on Yelp. Multi-state footprint across AR/OK border area."
+  },
+  {
+    "id": "champion_propane",
+    "name": "Champion Propane",
+    "locations_found": [
+      {
+        "name": "Sioux City (HQ)",
+        "address": "4501 Gordon Dr",
+        "city": "Sioux City",
+        "state": "IA",
+        "zip": "51106",
+        "phone": "(712) 274-6324"
+      }
+    ],
+    "notes": "DATA QUALITY ISSUE: Company is actually based in Sioux City, IOWA — not South Dakota as originally tagged. Sioux City borders SD so may serve SD customers but state assignment should be corrected to IA."
+  },
+  {
+    "id": "sandhill_oil_co",
+    "name": "Sandhill Oil Co",
+    "locations_found": [
+      {
+        "name": "Thedford (HQ)",
+        "address": "39397 Highway 2",
+        "city": "Thedford",
+        "state": "NE",
+        "zip": "69166",
+        "phone": "(308) 645-2233"
+      },
+      {
+        "name": "Hyannis",
+        "address": "101 Dellinger Ave",
+        "city": "Hyannis",
+        "state": "NE",
+        "zip": "69350",
+        "phone": "(308) 458-2237"
+      },
+      {
+        "name": "Valentine",
+        "address": "1001 E Highway 20",
+        "city": "Valentine",
+        "state": "NE",
+        "zip": "69201",
+        "phone": "(402) 376-1302"
+      }
+    ],
+    "notes": "Three locations across the Nebraska Sandhills (Thedford, Hyannis, Valentine). Has website sandhilloil.com — was mis-flagged as no-website. Original nlocs=1 should be updated to 3."
+  },
+  {
+    "id": "enterprise_gas",
+    "name": "Enterprise Gas",
+    "locations_found": [
+      {
+        "name": "Weber City (HQ)",
+        "address": "1827 US Highway 23 South",
+        "city": "Weber City",
+        "state": "VA",
+        "zip": "24290",
+        "phone": "(276) 386-9291"
+      }
+    ],
+    "notes": "Single-location operator in Scott County, VA. In business since 1997. Also operates as Enterprise Gas & Garden Center."
+  },
+  {
+    "id": "bob_s_gas_inc",
+    "name": "Bob's Gas Inc",
+    "locations_found": [
+      {
+        "name": "Saint Lawrence (HQ)",
+        "address": "203 3rd St NW",
+        "city": "Saint Lawrence",
+        "state": "SD",
+        "zip": "57373",
+        "phone": "(605) 853-3710"
+      },
+      {
+        "name": "Miller",
+        "address": "120 SE 3rd Ave",
+        "city": "Miller",
+        "state": "SD",
+        "zip": "57362",
+        "phone": "(605) 853-3710"
+      }
+    ],
+    "notes": "Two related locations in central SD (Saint Lawrence HQ and Miller). Note: a separate 'Bob's Gas Service' exists in Martin, SD (605-685-6538) but appears to be a distinct business. Original nlocs=1 should be updated to 2."
+  },
+  {
+    "id": "lake_philgas",
+    "name": "Lake Philgas",
+    "locations_found": [
+      {
+        "name": "Delta (HQ)",
+        "address": "70 N 400 E",
+        "city": "Delta",
+        "state": "UT",
+        "zip": "84624",
+        "phone": "(435) 864-2525"
+      }
+    ],
+    "notes": "Single-location operator serving Millard County, UT for over 50 years. Has website lakephilgas.com — was mis-flagged as no-website."
+  },
+  {
+    "id": "hill_gas",
+    "name": "Hill Gas",
+    "locations_found": [
+      {
+        "name": "Comanche (HQ)",
+        "address": "7130 E US Hwy 377",
+        "city": "Comanche",
+        "state": "TX",
+        "zip": "76442",
+        "phone": "(888) 210-1540"
+      },
+      {
+        "name": "De Leon",
+        "address": "4600 Hwy 6",
+        "city": "De Leon",
+        "state": "TX",
+        "zip": "76444",
+        "phone": "(888) 210-1540"
+      },
+      {
+        "name": "Early (Brownwood area)",
+        "address": "4650 US-183 Hwy",
+        "city": "Early",
+        "state": "TX",
+        "zip": "76802",
+        "phone": "(888) 210-1540"
+      },
+      {
+        "name": "Dublin",
+        "address": "14649 US-377",
+        "city": "Dublin",
+        "state": "TX",
+        "zip": "76446",
+        "phone": "(888) 210-1540"
+      }
+    ],
+    "notes": "Four locations across Central Texas (Comanche, De Leon, Early/Brownwood, Dublin). Has website hillgas.com — was mis-flagged as no-website. Original nlocs=1 should be updated to 4. Operates as Hill Gas / Central Texas Energy Suppliers."
+  }
+]

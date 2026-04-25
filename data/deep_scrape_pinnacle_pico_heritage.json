@@ -1,0 +1,148 @@
+{
+  "pinnacle_propane": {
+    "id": "pinnacle_propane",
+    "source": "https://www.pinnaclepropane.com/dealer-list + individual /propane-dealer/{city} pages",
+    "scraped_date": "2026-04-11",
+    "notes": "Pinnacle Propane LLC (HQ: 600 E Las Colinas Blvd Suite 1650, Irving, TX 75039). Owned by SHV Energy. Formerly Alliant Gas. Dealer list scraped from /dealer-list page and individual /propane-dealer/{citystate} pages. ~55 company-owned branches found across AR/TX/NM/MO/LA/KS/NE/IL/AZ/OK. A handful of dealer list cities not fetched individually (Pinnacle Propane dealer-list also includes Midland, Seguin, West Depot TX; plus partner dealers Ava Tire, Diamond G, Hardware & More, J A Farms, W.T. Equipment which are 3rd-party retailers not owned branches). Some phone numbers reference regional dispatch (e.g., 479-787-5400, 501-679-6006, 281-941-7011, 575-762-4749, 505-389-2620, 817-326-1129, 830-693-4383, 217-223-0925, 479-394-5900) indicating shared operational hubs.",
+    "locations_found": [
+      {"name": "Pinnacle Propane - Corporate HQ", "street": "600 E Las Colinas Blvd Suite 1650", "city": "Irving", "state": "TX", "zip": "75039", "phone": "972-444-0300", "type": "corporate"},
+      {"name": "Pinnacle Propane - Dallas", "street": "9323 S Central Expressway", "city": "Dallas", "state": "TX", "zip": "", "phone": "972-225-2347", "email": "dallas@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Fort Worth", "street": "5216 Jacksboro Hwy", "city": "Fort Worth", "state": "TX", "zip": "", "phone": "817-626-5496", "email": "fortworth@pinnaclepropane.com", "lat": 32.7966739, "lng": -97.3994215},
+      {"name": "Pinnacle Propane - Grand Prairie", "street": "2009 108th St Suite 905", "city": "Grand Prairie", "state": "TX", "zip": "75050", "phone": "817-326-1129"},
+      {"name": "Pinnacle Propane - Wylie", "street": "1445 E FM 544", "city": "Wylie", "state": "TX", "zip": "", "phone": "972-442-1078", "email": "wylie@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Bridgeport", "street": "39 Hwy 380", "city": "Bridgeport", "state": "TX", "zip": "", "phone": "940-683-2683", "email": "justin@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Justin", "street": "401 N Hwy 156", "city": "Justin", "state": "TX", "zip": "", "phone": "940-648-3113", "email": "justin@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Granbury", "street": "5820 E Hwy 377", "city": "Granbury", "state": "TX", "zip": "76049", "phone": "817-326-1129", "email": "granbury@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Dripping Springs", "street": "3401 US-290", "city": "Dripping Springs", "state": "TX", "zip": "78620", "phone": "512-858-2390"},
+      {"name": "Pinnacle Propane - Georgetown", "street": "6504 West State Highway 29", "city": "Georgetown", "state": "TX", "zip": "78628", "phone": "830-693-4383"},
+      {"name": "Pinnacle Propane - Marble Falls", "street": "1420 US-281", "city": "Marble Falls", "state": "TX", "zip": "78654", "phone": "830-693-4383", "email": "marblefalls@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Seguin", "street": "2502 N Austin St", "city": "Seguin", "state": "TX", "zip": "78155", "phone": "830-693-4383"},
+      {"name": "Pinnacle Propane - Baytown", "street": "10610 Interstate 10 E", "city": "Baytown", "state": "TX", "zip": "77523", "phone": "281-941-7011", "email": "houston@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Harlingen", "street": "14729 W Expressway 83", "city": "Harlingen", "state": "TX", "zip": "78552", "phone": "281-941-7011"},
+      {"name": "Pinnacle Propane - Alice", "street": "1048 S Flournoy Rd", "city": "Alice", "state": "TX", "zip": "78332", "phone": "281-941-7011"},
+      {"name": "Pinnacle Propane - Kilgore", "street": "2606 N Longview St", "city": "Kilgore", "state": "TX", "zip": "75662", "phone": "903-984-0781", "email": "kilgore@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Tyler", "street": "8549 US Hwy 69N", "city": "Tyler", "state": "TX", "zip": "", "phone": "903-314-5678", "email": "tyler@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Lubbock", "street": "8205 Avenue F", "city": "Lubbock", "state": "TX", "zip": "79404", "phone": "432-682-9405", "email": "midland@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Midland", "street": "1612 Garden City Highway", "city": "Midland", "state": "TX", "zip": "79701", "phone": "432-682-9405", "email": "midland@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Odessa", "street": "3410 NW TX-338 Loop", "city": "Odessa", "state": "TX", "zip": "79764", "phone": "432-682-9405", "email": "midland@pinnaclepropane.com"},
+
+      {"name": "Pinnacle Propane - Albuquerque", "street": "6400 Edith Blvd", "city": "Albuquerque", "state": "NM", "zip": "87107", "phone": "505-389-2620", "email": "albuquerque@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Alamogordo", "street": "7039 US Hwy 70 N", "city": "Alamogordo", "state": "NM", "zip": "88310", "phone": "505-389-2620"},
+      {"name": "Pinnacle Propane - Carlsbad", "street": "2825 Pecos Hwy", "city": "Carlsbad", "state": "NM", "zip": "88220", "phone": "575-234-9571"},
+      {"name": "Pinnacle Propane - Clayton", "street": "1672 South 1st St", "city": "Clayton", "state": "NM", "zip": "88415", "phone": "575-762-4749"},
+      {"name": "Pinnacle Propane - Clovis", "street": "1348 US Hwy 60-84", "city": "Clovis", "state": "NM", "zip": "88101", "phone": "575-762-4749"},
+      {"name": "Pinnacle Propane - Las Cruces", "street": "3247 W Picacho Ave", "city": "Las Cruces", "state": "NM", "zip": "88007", "phone": "575-800-1810", "email": "lascruces@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Moriarty", "street": "2006 US Hwy 66 west", "city": "Moriarty", "state": "NM", "zip": "87035", "phone": "505-832-4273"},
+      {"name": "Pinnacle Propane - Raton", "street": "1099 Frontage Rd", "city": "Raton", "state": "NM", "zip": "87740", "phone": "575-445-2364"},
+      {"name": "Pinnacle Propane - Ruidoso Downs", "street": "26320 US Hwy 70", "city": "Ruidoso Downs", "state": "NM", "zip": "88346", "phone": "505-389-2620"},
+      {"name": "Pinnacle Propane - Santa Rosa", "street": "301 Corona", "city": "Santa Rosa", "state": "NM", "zip": "88435", "phone": "575-762-4749"},
+      {"name": "Pinnacle Propane - Silver City", "street": "6 Rio De Arenas Rd", "city": "Silver City", "state": "NM", "zip": "88061", "phone": "575-538-5378"},
+      {"name": "Pinnacle Propane - Socorro", "street": "615 Spring St", "city": "Socorro", "state": "NM", "zip": "87801", "phone": "575-533-6500"},
+      {"name": "Pinnacle Propane - Truth or Consequences", "street": "1305 N Date St", "city": "Truth or Consequences", "state": "NM", "zip": "87901", "phone": "575-533-6500"},
+      {"name": "Pinnacle Propane - Tucumcari", "street": "1723 Camino del Coronado", "city": "Tucumcari", "state": "NM", "zip": "88401", "phone": "575-762-4749"},
+
+      {"name": "Pinnacle Propane - Bismarck", "street": "4424 Hwy 7", "city": "Bismarck", "state": "AR", "zip": "71929", "phone": "501-865-3444"},
+      {"name": "Pinnacle Propane - De Queen (Retail)", "street": "1144 Hwy 70-71 East", "city": "De Queen", "state": "AR", "zip": "71832", "phone": "870-642-2146", "email": "dequeen@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - El Dorado", "street": "3216 Northwest Ave", "city": "El Dorado", "state": "AR", "zip": "71730", "phone": "870-862-4295"},
+      {"name": "Pinnacle Propane - Fordyce", "street": "2314 Hwy 79 Bypass", "city": "Fordyce", "state": "AR", "zip": "71742", "phone": "870-352-7155"},
+      {"name": "Pinnacle Propane - Greenbrier", "street": "1197 Highway 65 North", "city": "Greenbrier", "state": "AR", "zip": "72058", "phone": "501-679-6006"},
+      {"name": "Pinnacle Propane - Hope", "street": "2307 W 3rd St", "city": "Hope", "state": "AR", "zip": "71801", "phone": "870-777-4371"},
+      {"name": "Pinnacle Propane - Lewisville", "street": "1428 Hwy 82", "city": "Lewisville", "state": "AR", "zip": "71845", "phone": "870-921-4455"},
+      {"name": "Pinnacle Propane - Mena", "street": "2201 Hwy 71 South", "city": "Mena", "state": "AR", "zip": "71953", "phone": "479-394-5900"},
+      {"name": "Pinnacle Propane - Monticello", "street": "175 Market St", "city": "Monticello", "state": "AR", "zip": "71655", "phone": "870-367-3321"},
+      {"name": "Pinnacle Propane - Nashville", "street": "1570 Hwy 371 West", "city": "Nashville", "state": "AR", "zip": "71852", "phone": "870-845-2378", "email": "nashville@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Pocahontas", "street": "2511 Highway 67 North", "city": "Pocahontas", "state": "AR", "zip": "72455", "phone": "870-892-2517"},
+      {"name": "Pinnacle Propane - Searcy", "street": "2177 Arkansas 16", "city": "Searcy", "state": "AR", "zip": "72143", "phone": "501-268-3131"},
+
+      {"name": "Pinnacle Propane - West Plains", "street": "987 Preacher Roe Blvd", "city": "West Plains", "state": "MO", "zip": "", "phone": "501-679-6006"},
+      {"name": "Pinnacle Propane - Holden", "street": "400 W McKissock St", "city": "Holden", "state": "MO", "zip": "64040", "phone": "479-787-5400"},
+      {"name": "Pinnacle Propane - Houston", "street": "8300 Hwy 63", "city": "Houston", "state": "MO", "zip": "65483", "phone": "417-967-3676"},
+      {"name": "Pinnacle Propane - Kahoka", "street": "162 W Main St", "city": "Kahoka", "state": "MO", "zip": "63445", "phone": "217-223-0925"},
+      {"name": "Pinnacle Propane - Kirksville", "street": "4201 N Baltimore St", "city": "Kirksville", "state": "MO", "zip": "63501", "phone": "217-223-0925"},
+      {"name": "Pinnacle Propane - Lake Ozark (Eldon)", "street": "406 E 4th St", "city": "Eldon", "state": "MO", "zip": "65026", "phone": "479-787-5400"},
+      {"name": "Pinnacle Propane - Lewistown", "street": "109 West Main St", "city": "Lewistown", "state": "MO", "zip": "63452", "phone": "217-223-0925"},
+      {"name": "Pinnacle Propane - Marshfield", "street": "740 S Prairie Ln", "city": "Marshfield", "state": "MO", "zip": "65706", "phone": "501-679-6006"},
+      {"name": "Pinnacle Propane - Shelbina", "street": "541 E Maple St", "city": "Shelbina", "state": "MO", "zip": "63468", "phone": "217-223-0925"},
+      {"name": "Pinnacle Propane - Warrensburg", "street": "230 NE 95 Road", "city": "Warrensburg", "state": "MO", "zip": "64093", "phone": "479-787-5400"},
+      {"name": "Pinnacle Propane - Warsaw", "street": "801 E Main St", "city": "Warsaw", "state": "MO", "zip": "65355", "phone": "660-438-6118"},
+
+      {"name": "Pinnacle Propane - Jonesville", "street": "3610 Fourth St", "city": "Jonesville", "state": "LA", "zip": "71343", "phone": "318-339-7948"},
+      {"name": "Pinnacle Propane - Natchitoches", "street": "147 Blanchard Rd", "city": "Natchitoches", "state": "LA", "zip": "71457", "phone": "318-352-5453"},
+
+      {"name": "Pinnacle Propane - Lawrence", "street": "1853 E 1450 Rd", "city": "Lawrence", "state": "KS", "zip": "66044", "phone": "785-843-4655"},
+      {"name": "Pinnacle Propane - Overbrook", "street": "315 Maple St", "city": "Overbrook", "state": "KS", "zip": "66524", "phone": "785-843-4655"},
+
+      {"name": "Pinnacle Propane - Falls City", "street": "603 Harlan St", "city": "Falls City", "state": "NE", "zip": "68355", "phone": "785-843-4655"},
+
+      {"name": "Pinnacle Propane - Waterloo", "street": "115 W Mill St", "city": "Waterloo", "state": "IL", "zip": "62298", "phone": "217-223-0925"},
+      {"name": "Pinnacle Propane - Quincy", "street": "2100 North 12th St", "city": "Quincy", "state": "IL", "zip": "62301", "phone": "217-223-0925"},
+
+      {"name": "Pinnacle Propane - Oklahoma City", "street": "601 N Portland Ave", "city": "Oklahoma City", "state": "OK", "zip": "73107", "phone": "405-917-1850"},
+
+      {"name": "Pinnacle Propane - Page", "street": "2000 E Frontage Rd", "city": "Page", "state": "AZ", "zip": "86040", "phone": "928-645-2391", "email": "Page-P2@pinnaclepropane.com"},
+      {"name": "Pinnacle Propane - Payson", "city": "Payson", "state": "AZ", "phone": "928-474-2294", "note": "Page 403 error; confirmed on dealer list and as emergency contact on /propane-near-me"}
+    ],
+    "additional_dealer_list_cities_not_individually_fetched": [
+      "Quemado NM", "Reserve NM", "West (Depot) TX", "Hiwasse AR"
+    ]
+  },
+  "pico_propane": {
+    "id": "pico_propane",
+    "source": "https://picopropane.com/locations/",
+    "scraped_date": "2026-04-11",
+    "notes": "Pico Propane and Fuels - based in San Antonio, TX. Pico is part of Pico Energy/Pico Propane and Fuels group. Operates Texas, New Mexico, North Carolina, and Florida offices. Locations scraped from single /locations/ page which returned full list. Note: actual count is 23 offices vs expected ~30; Pico also operates in NC and FL (not just TX/OK/LA as task description suggested). No Oklahoma or Louisiana offices found on current website.",
+    "locations_found": [
+      {"name": "Pico Propane - San Antonio HQ", "street": "19206 Huebner Road", "city": "San Antonio", "state": "TX", "phone": "210-876-3560", "type": "corporate"},
+      {"name": "Pico Propane - Alvin", "street": "3619 Farm Market 2403 Road", "city": "Alvin", "state": "TX", "phone": "281-585-0705"},
+      {"name": "Pico Propane - Austin", "city": "Austin", "state": "TX", "phone": "512-580-5773"},
+      {"name": "Pico Propane - Beaumont", "street": "6315 Hwy 347", "city": "Beaumont", "state": "TX", "phone": "409-240-2122"},
+      {"name": "Pico Propane - Bergheim", "street": "843 TX-46 Unit B", "city": "Bergheim", "state": "TX", "phone": "830-249-2416"},
+      {"name": "Pico Propane - Caldwell", "street": "2080 TX-21", "city": "Caldwell", "state": "TX", "phone": "979-272-9203"},
+      {"name": "Pico Propane - Carrizo Springs", "street": "2274 Hwy 83 South", "city": "Carrizo Springs", "state": "TX", "phone": "830-876-2527"},
+      {"name": "Pico Propane - Del Rio (N)", "street": "3821 Veterans Boulevard", "city": "Del Rio", "state": "TX", "phone": "830-774-4139"},
+      {"name": "Pico Propane - Del Rio (Main)", "street": "307 East 10th Street", "city": "Del Rio", "state": "TX", "phone": "830-775-7761", "type": "corporate"},
+      {"name": "Pico Propane - Kenedy", "street": "323 South Sunset Strip", "city": "Kenedy", "state": "TX", "phone": "830-583-2421"},
+      {"name": "Pico Propane - Laredo", "street": "6449 TX-359 Rear Building", "city": "Laredo", "state": "TX", "phone": "956-937-9010"},
+      {"name": "Pico Propane - Mission", "street": "401 N Shary", "city": "Mission", "state": "TX", "phone": "956-519-0622"},
+      {"name": "Pico Propane - Odessa", "street": "701 W 1st Street", "city": "Odessa", "state": "TX", "phone": "432-332-6821"},
+      {"name": "Pico Propane - Uvalde", "street": "421 W Calera Street", "city": "Uvalde", "state": "TX", "phone": "830-278-5681"},
+      {"name": "Pico Propane - Weslaco", "street": "809 S International Boulevard", "city": "Weslaco", "state": "TX", "phone": "956-968-3154"},
+
+      {"name": "Pico Propane - Carlsbad", "street": "4021 Iron Horse Drive Suite F", "city": "Carlsbad", "state": "NM", "phone": "575-200-1290"},
+      {"name": "Pico Propane - Roswell", "street": "1306 E 2nd Street", "city": "Roswell", "state": "NM", "phone": "575-622-7921"},
+
+      {"name": "Pico Propane - Yanceyville", "street": "1629 North Main Street", "city": "Yanceyville", "state": "NC", "phone": "336-694-4111"},
+      {"name": "Pico Propane - Siler City", "street": "95 Bonlee Road", "city": "Siler City", "state": "NC", "phone": "919-837-2000"},
+
+      {"name": "Pico Propane - Ft Lauderdale", "street": "350 NE 44th Street", "city": "Ft Lauderdale", "state": "FL", "phone": "954-566-3074"},
+      {"name": "Pico Propane - Miami", "street": "1060 SW 27 Avenue", "city": "Miami", "state": "FL", "phone": "305-643-1511"},
+      {"name": "Pico Propane - West Palm Beach", "street": "2635 Electronics Way", "city": "West Palm Beach", "state": "FL", "phone": "561-832-3092"}
+    ]
+  },
+  "heritage_propane": {
+    "id": "heritage_propane",
+    "source": "Web searches + heritageoil.com/locations + legacypropane page",
+    "scraped_date": "2026-04-11",
+    "notes": "IMPORTANT FINDING: The legacy 'Heritage Propane' / Heritage Propane Partners / Heritage Operating LP was acquired by Energy Transfer Partners and was sold/merged into AmeriGas Partners (now part of UGI Corp) in 2012. The Tulsa, OK address 8801 S Yale Ave Ste 310 is the legacy corporate office footprint. As a standalone branded 'Heritage Propane' entity this company no longer exists - the 300+ customer service locations referenced in old literature were folded into AmeriGas. \n\nThere is a DIFFERENT, unrelated 'Heritage Propane' which is a subsidiary of Heritage Petroleum (heritageoil.com), HQ in Evansville, IN. That entity is a Midwest oil/fuel distributor (IL/IN/IA/MO/KY/NE) - NOT a TX/OK operator. Its propane arm is 'Legacy Propane' with only 3 branded propane locations. All 14 Heritage Petroleum branches are listed below as the best available match for 'Heritage Propane' today. Recommend the task supervisor confirm which Heritage entity is intended - if legacy Energy Transfer Heritage, those sites are now AmeriGas.",
+    "locations_found": [
+      {"name": "Heritage Propane (legacy) - Tulsa Corporate", "street": "8801 S Yale Ave Suite 310", "city": "Tulsa", "state": "OK", "zip": "74137", "phone": "918-877-0083", "note": "Legacy Heritage Operating LP / Heritage Propane Partners HQ - entity now part of AmeriGas"},
+      {"name": "Heritage Petroleum - Corporate Office", "street": "306 Suite B N 7th Ave", "city": "Evansville", "state": "IN", "zip": "47710", "phone": "800-422-3645", "type": "corporate"},
+      {"name": "Heritage Petroleum - Marion", "street": "2708 Merchant Street", "city": "Marion", "state": "IL", "zip": "62959", "phone": "618-993-8118"},
+      {"name": "Heritage Petroleum - Clarksville", "street": "1 Sodrel Drive", "city": "Clarksville", "state": "IN", "zip": "47129", "phone": "812-422-3251"},
+      {"name": "Heritage Petroleum - Danville", "street": "201 W Main Street", "city": "Danville", "state": "IL", "zip": "61832", "phone": "800-422-3645"},
+      {"name": "Heritage Petroleum - South Roxana", "street": "7346 IL-111", "city": "South Roxana", "state": "IL", "zip": "62087", "phone": "800-422-3645"},
+      {"name": "Heritage Petroleum - Hickman", "street": "1104 7th Street", "city": "Hickman", "state": "KY", "zip": "42050", "phone": "800-422-3645"},
+      {"name": "Heritage Petroleum - Washington", "street": "504 W Walnut Street", "city": "Washington", "state": "IN", "zip": "47501", "phone": "812-463-0920"},
+      {"name": "Heritage Petroleum - Nixa", "street": "311 West Tracker Road", "city": "Nixa", "state": "MO", "zip": "65714", "phone": "417-725-1521"},
+      {"name": "Heritage Petroleum - Des Moines", "street": "702 SE Raccoon Street", "city": "Des Moines", "state": "IA", "zip": "50309", "phone": "515-244-4271"},
+      {"name": "Heritage Petroleum - Perry", "street": "808 2nd Street", "city": "Perry", "state": "IA", "zip": "50220", "phone": "515-465-3013"},
+      {"name": "Heritage Petroleum - Lincoln", "street": "4741 Douglas Circle", "city": "Lincoln", "state": "NE", "zip": "68504", "phone": "402-466-2344"},
+      {"name": "Heritage Petroleum - Allison", "street": "22095 IA-3", "city": "Allison", "state": "IA", "zip": "50602", "phone": "319-267-2498"},
+      {"name": "Heritage Petroleum - Ames", "street": "2028 Edison Street", "city": "Ames", "state": "IA", "zip": "50010", "phone": "515-232-6011"},
+      {"name": "Heritage Petroleum - Carlinville", "street": "805 North Broad Street", "city": "Carlinville", "state": "IL", "zip": "62626", "phone": "217-313-5999"},
+      {"name": "Legacy Propane - Carlinville", "street": "511 West Main Street", "city": "Carlinville", "state": "IL", "zip": "62626", "phone": "217-313-5999", "brand": "Legacy Propane"},
+      {"name": "Legacy Propane - Washington", "street": "504 W Walnut St", "city": "Washington", "state": "IN", "zip": "47501", "phone": "812-254-5773", "brand": "Legacy Propane"},
+      {"name": "Legacy Propane - Des Moines", "street": "702 SE Raccoon St", "city": "Des Moines", "state": "IA", "zip": "50309", "phone": "515-244-4271", "brand": "Legacy Propane"}
+    ]
+  }
+}

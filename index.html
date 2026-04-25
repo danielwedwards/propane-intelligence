@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Propane Intelligence — Ergon Corporate Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <link rel="stylesheet" href="design-tokens/tokens.css">
+
+  <style>
+    html, body, #root { margin: 0; padding: 0; height: 100%; }
+    body {
+      background: #F6F9FC;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #0A2540;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: -0.01em;
+      overflow: hidden;
+    }
+    #boot {
+      position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: #F6F9FC; color: #425466; font-size: 13px; gap: 10px;
+    }
+    #boot .dot {
+      width: 8px; height: 8px; border-radius: 50%; background: #635BFF;
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100% { opacity: 0.3; transform: scale(0.85); } 50% { opacity: 1; transform: scale(1); } }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="boot"><span class="dot"></span> Loading Propane Intelligence…</div>
+  </div>
+
+  <!-- React + Babel (in-browser transpile, no build step) -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+          integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+          crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+          integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+          crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+          integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+          crossorigin="anonymous"></script>
+
+  <!-- Leaflet for production map view -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Demo anchor data (13 companies). Preserved for prototype views with hard-coded references. -->
+  <script src="js/mockData.js"></script>
+
+  <!-- Real-data adapter: loads data/companies.json and exposes window.REAL_COMPANIES -->
+  <script>
+    window.__DATA_READY__ = (async () => {
+      try {
+        const r = await fetch('data/companies.json', { cache: 'no-cache' });
+        if (!r.ok) throw new Error('companies.json fetch failed: ' + r.status);
+        const arr = await r.json();
+        window.REAL_COMPANIES = arr;
+
+        // Augment MOCK_COMPANIES with all real companies appended (skip duplicates by name).
+        // Demo IDs (ll, blo, ami, ...) at the front stay intact so News + map mock positions work.
+        const demo = window.MOCK_COMPANIES || [];
+        const demoNames = new Set(demo.map(c => c.name.toLowerCase()));
+        const ownershipToType = {
+          'public': ['public', 'Public'],
+          'pe': ['pe', 'PE-Backed'],
+          'private equity': ['pe', 'PE-Backed'],
+          'family': ['family', 'Family'],
+          'private': ['private', 'Private'],
+          'cooperative': ['coop', 'Co-op'],
+          'co-op': ['coop', 'Co-op'],
+          'coop': ['coop', 'Co-op'],
+        };
+        const adapted = arr
+          .filter(c => !c.excluded && !demoNames.has(String(c.name || '').toLowerCase()))
+          .map((c, i) => {
+            const own = String(c.ownership || '').toLowerCase();
+            const [type, typeLabel] = ownershipToType[own] || ['private', 'Private'];
+            const totalLocs = Number(c.totalLocs) || (c.locations || []).length || 0;
+            const seLocs = Number(c.seLocs) || 0;
+            // Placeholder rev/emp until real financials are wired
+            const rev = Math.max(0.5, totalLocs * 1.4);
+            const emp = Math.max(5, Math.round(totalLocs * 6.5));
+            return {
+              id: c.id || ('co_' + i),
+              name: c.name,
+              parent: c.parentGroup || c.ownerDetail || (own === 'public' ? 'Public' : 'Independent'),
+              type, typeLabel,
+              locs: totalLocs,
+              prox: null, county: null, total: null,
+              mkt: Math.round((totalLocs / 12.47) * 10) / 10,
+              rev: Math.round(rev * 10) / 10,
+              emp,
+              states: Array.isArray(c.states) && c.states.length ? c.states : (c.hqState ? [c.hqState] : ['—']),
+              rank: demo.length + i + 1,
+              isPlatform: false,
+              hqCity: c.hqCity, hqState: c.hqState, website: c.website,
+              locations: c.locations || [],
+            };
+          });
+        window.MOCK_COMPANIES = demo.concat(adapted);
+        window.__COMPANY_COUNT__ = window.MOCK_COMPANIES.length;
+      } catch (err) {
+        console.warn('[PI] real-data load failed; falling back to demo data', err);
+        window.REAL_COMPANIES = [];
+      }
+    })();
+  </script>
+
+  <!-- Component layers (transpiled by Babel-standalone in the order listed) -->
+  <script type="text/babel" src="js/shared-ui.jsx"></script>
+  <script type="text/babel" src="js/Chrome.jsx"></script>
+  <script type="text/babel" src="js/Logins.jsx"></script>
+  <script type="text/babel" src="js/Views1.jsx"></script>
+  <script type="text/babel" src="js/Views2.jsx"></script>
+  <script type="text/babel" src="js/Views3.jsx"></script>
+  <script type="text/babel" src="js/News.jsx"></script>
+  <script type="text/babel" src="js/App.jsx"></script>
+
+  <!-- Production root: auth gate + Dashboard -->
+  <script type="text/babel" data-presets="env,react">
+    const { Dashboard, LoginV1, LoginV2 } = window;
+
+    const AUTH_KEY = 'pi_auth_v1';
+
+    function Root() {
+      const [authed, setAuthed] = React.useState(() => {
+        try { return localStorage.getItem(AUTH_KEY) === '1'; } catch (e) { return false; }
+      });
+      // Toggle login variants with ?login=v2
+      const variant = (new URLSearchParams(location.search).get('login') || 'v1').toLowerCase();
+      // Initial dashboard view from ?view=
+      const initialView = new URLSearchParams(location.search).get('view') || 'map';
+
+      const handleLogin = () => {
+        try { localStorage.setItem(AUTH_KEY, '1'); } catch (e) {}
+        setAuthed(true);
+      };
+
+      if (!authed) {
+        return variant === 'v2'
+          ? <LoginV2 onLogin={handleLogin} fullscreen />
+          : <LoginV1 onLogin={handleLogin} fullscreen />;
+      }
+      return <Dashboard initialView={initialView} />;
+    }
+
+    // Wait for the data adapter before rendering, so views see real company data.
+    (window.__DATA_READY__ || Promise.resolve()).then(() => {
+      const root = document.getElementById('root');
+      // Strip the boot loader
+      root.innerHTML = '';
+      ReactDOM.createRoot(root).render(<Root/>);
+    });
+  </script>
+</body>
+</html>

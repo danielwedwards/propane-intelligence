@@ -1,0 +1,21 @@
+{
+  "TX": [
+    {"name": "Northwest Propane Gas Company", "address": "1515 W Belt Line Rd", "phone": "(972) 247-6121"},
+    {"name": "Direct Propane Services", "address": "2771 State Hwy 71", "phone": "(512) 389-3700"},
+    {"name": "Godfrey Propane Co", "address": "2947 W Division St", "phone": "(817) 277-6328"},
+    {"name": "Texas Best Propane", "address": "5468 S State Hwy 121", "phone": "(903) 583-0123"},
+    {"name": "Heart of Texas Propane", "address": "1600 US-290", "phone": "(512) 829-7342"},
+    {"name": "Texas Butane Co. Inc", "address": "103 W Church St", "phone": "(817) 594-2612"},
+    {"name": "Propane Depot, Inc", "address": "8550 TX-16", "phone": "(830) 510-4777"},
+    {"name": "Henderson Propane Inc", "address": "1202 Trammel-Fresno Rd", "phone": "(281) 835-8566"},
+    {"name": "Texas Propane", "address": "6825 Mumford Rd", "phone": "(800) 646-4949"}
+  ],
+  "CO": [
+    {"name": "AAA Propane Sales & Rentals, Inc.", "address": "7405 W 44th Ave", "phone": "(303) 425-7623"},
+    {"name": "Affordable Propane", "address": "3801 E 56th Ave", "phone": "(720) 256-2226"},
+    {"name": "Mile High Propane", "address": "3841 Eudora Way", "phone": "(303) 288-3088"},
+    {"name": "Bailey Propane Co", "address": "60786 US Hwy 285", "phone": "(303) 838-5411"},
+    {"name": "Englewood Propane", "address": "1917 W Cornell Ave", "phone": "(303) 761-8132"},
+    {"name": "Apollo Propane Inc", "address": "4825 Slocum Rd", "phone": "(719) 683-2400"}
+  ]
+}

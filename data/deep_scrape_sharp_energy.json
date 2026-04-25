@@ -1,0 +1,191 @@
+{
+  "source": "https://www.sharpenergy.com/locations/ + fpupropane.com",
+  "scraped": "2026-04-11",
+  "note": "Sharp Energy (Chesapeake Utilities subsidiary) and sister brand FPU Propane. Full branch list extracted from main locations page.",
+  "locations": [
+    {
+      "name": "Sharp Energy - Dover",
+      "street": "5011 North Dupont Hwy",
+      "city": "Dover",
+      "state": "DE",
+      "zip": "19901",
+      "phone": "302.678.2400"
+    },
+    {
+      "name": "Sharp Energy - Georgetown",
+      "street": "22945 E Piney Grove Rd",
+      "city": "Georgetown",
+      "state": "DE",
+      "zip": "19947",
+      "phone": "302.316.7000"
+    },
+    {
+      "name": "Sharp Energy - Newark",
+      "street": "250 Corporate Blvd",
+      "city": "Newark",
+      "state": "DE",
+      "zip": "19702",
+      "phone": "302.273.7060"
+    },
+    {
+      "name": "Sharp Energy - Debary",
+      "street": "450 S Charles Richard Beall Blvd",
+      "city": "Debary",
+      "state": "FL",
+      "zip": "32713",
+      "phone": "386.668.3201"
+    },
+    {
+      "name": "Sharp Energy - Hernando",
+      "street": "PO Box 467",
+      "city": "Hernando",
+      "state": "FL",
+      "zip": "34441",
+      "phone": "352.447.2790"
+    },
+    {
+      "name": "Sharp Energy - Jacksonville",
+      "street": "4613 Philips Hwy",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip": "32207",
+      "phone": "904.661.7590"
+    },
+    {
+      "name": "Sharp Energy - Lantana",
+      "street": "360 Hillbrath Drive",
+      "city": "Lantana",
+      "state": "FL",
+      "zip": "33462",
+      "phone": "561.838.1814"
+    },
+    {
+      "name": "Sharp Energy - Okeechobee",
+      "street": "802 North Parrott Ave",
+      "city": "Okeechobee",
+      "state": "FL",
+      "zip": "34972",
+      "phone": "863.763.2115"
+    },
+    {
+      "name": "Sharp Energy - Winter Haven",
+      "street": "802 North Parrott Ave",
+      "city": "Winter Haven",
+      "state": "FL",
+      "zip": "33880",
+      "phone": "863.733.7032"
+    },
+    {
+      "name": "Sharp Energy - McLeansville",
+      "street": "400 Kivett Dairy Rd",
+      "city": "McLeansville",
+      "state": "NC",
+      "zip": "27301",
+      "phone": "336.697.3141"
+    },
+    {
+      "name": "Sharp Energy - Rich Square",
+      "street": "136 S. Main St",
+      "city": "Rich Square",
+      "state": "NC",
+      "zip": "27869",
+      "phone": "252.539.2850"
+    },
+    {
+      "name": "Sharp Energy - Sanford",
+      "street": "2416 S Horner Blvd",
+      "city": "Sanford",
+      "state": "NC",
+      "zip": "27330",
+      "phone": "252.539.2850"
+    },
+    {
+      "name": "Sharp Energy - Shallotte",
+      "street": "2416 S Horner Blvd",
+      "city": "Shallotte",
+      "state": "NC",
+      "zip": "28470",
+      "phone": "910.776.6910"
+    },
+    {
+      "name": "Sharp Energy - Wallace",
+      "street": "1525 N Norwood St",
+      "city": "Wallace",
+      "state": "NC",
+      "zip": "28466",
+      "phone": "910.285.2471"
+    },
+    {
+      "name": "Sharp Energy - Wilmington",
+      "street": "1525 N Norwood St",
+      "city": "Wilmington",
+      "state": "NC",
+      "zip": "28401",
+      "phone": "910.285.2471"
+    },
+    {
+      "name": "Sharp Energy - Easton",
+      "street": "9387 Ocean Gateway",
+      "city": "Easton",
+      "state": "MD",
+      "zip": "21601",
+      "phone": "410.822.8261"
+    },
+    {
+      "name": "Sharp Energy - Pocomoke City",
+      "street": "648 Ocean Hwy",
+      "city": "Pocomoke City",
+      "state": "MD",
+      "zip": "21851",
+      "phone": "410.957.1501"
+    },
+    {
+      "name": "Sharp Energy - Salisbury",
+      "street": "520 Commerce St",
+      "city": "Salisbury",
+      "state": "MD",
+      "zip": "21084",
+      "phone": "410.749.4147"
+    },
+    {
+      "name": "Sharp Energy - Orefield",
+      "street": "7205 Kernsville Rd",
+      "city": "Orefield",
+      "state": "PA",
+      "zip": "18069",
+      "phone": "610.530.1535"
+    },
+    {
+      "name": "Sharp Energy - Pocono Lake",
+      "street": "7205 Kernsville Rd",
+      "city": "Pocono Lake",
+      "state": "PA",
+      "zip": "18347",
+      "phone": "570.646.5626"
+    },
+    {
+      "name": "Sharp Energy - Manheim",
+      "street": "236 S. Cherry St.",
+      "city": "Manheim",
+      "state": "PA",
+      "zip": "17545",
+      "phone": "717-492-1880"
+    },
+    {
+      "name": "Sharp Energy - Colonial Square Office Park",
+      "street": "36292 Lankford Hwy",
+      "city": "Belle Haven",
+      "state": "VA",
+      "zip": "23306",
+      "phone": "757.442.4328"
+    },
+    {
+      "name": "Sharp Energy - Mattaponi",
+      "street": "6560 Lewis B Puller Memorial Hwy",
+      "city": "Mattaponi",
+      "state": "VA",
+      "zip": "23110",
+      "phone": "804.294.7001"
+    }
+  ]
+}
