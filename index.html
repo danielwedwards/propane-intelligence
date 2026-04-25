@@ -886,6 +886,37 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
 .skl-line{display:block;height:11px;margin:6px 0}
 .skl-card{padding:10px 12px;border:1px solid var(--border-subtle);border-radius:var(--radius-md);background:var(--light-bg);margin-bottom:8px}
 [data-theme="dark"] .skl{background:linear-gradient(90deg,#1a2534 0%,#0f1722 50%,#1a2534 100%);background-size:200% 100%}
+/* === v4.13.0: Activity feed (top-bar bell + dropdown panel) === */
+.act-wrap{position:relative;display:inline-flex;align-items:center}
+.act-btn{position:relative;width:34px;height:30px;padding:0;border:1px solid var(--border-subtle);background:var(--white);border-radius:var(--radius-md);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:var(--text-secondary);transition:all .12s ease}
+.act-btn:hover{background:var(--light-bg);color:var(--text-primary);border-color:var(--text-tertiary)}
+.act-btn:focus-visible{outline:2px solid var(--brand);outline-offset:1px}
+.act-btn[aria-expanded="true"]{background:var(--light-bg);border-color:var(--brand);color:var(--text-primary)}
+.act-bell{font-size:14px;line-height:1;filter:grayscale(.4)}
+.act-badge{position:absolute;top:-5px;right:-5px;min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:#C0392B;color:#fff;font-size:10px;font-weight:700;line-height:16px;text-align:center;box-shadow:0 0 0 2px var(--white)}
+.act-panel{position:absolute;top:calc(100% + 6px);right:0;width:340px;max-width:92vw;background:var(--white);border:1px solid var(--border-subtle);border-radius:var(--radius-md);box-shadow:0 12px 28px rgba(20,20,20,.12),0 2px 6px rgba(20,20,20,.06);z-index:1200;display:none;flex-direction:column;max-height:480px;overflow:hidden}
+.act-panel.open{display:flex}
+.act-head{display:flex;align-items:center;justify-content:space-between;padding:10px 14px 8px;border-bottom:1px solid var(--border-subtle)}
+.act-head h3{margin:0;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--text-secondary)}
+.act-clear{background:transparent;border:none;font-size:11px;color:var(--text-tertiary);cursor:pointer;padding:2px 6px;border-radius:4px;letter-spacing:.3px}
+.act-clear:hover{color:#C0392B;background:rgba(192,57,43,.08)}
+.act-list{overflow-y:auto;flex:1;padding:4px 0}
+.act-empty{padding:18px 16px;color:var(--text-tertiary);font-size:12px;text-align:center;line-height:1.5}
+.act-item{display:flex;gap:10px;align-items:flex-start;padding:8px 14px;border-left:2px solid transparent;transition:background .12s ease}
+.act-item:hover{background:var(--light-bg);border-left-color:var(--brand)}
+.act-ico{flex:0 0 auto;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;margin-top:1px}
+.act-body{flex:1;min-width:0}
+.act-text{font-size:12.5px;color:var(--text-primary);font-weight:500;line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.act-meta{font-size:10.5px;color:var(--text-tertiary);margin-top:2px;letter-spacing:.2px}
+.act-foot{padding:7px 14px;font-size:10px;color:var(--text-tertiary);border-top:1px solid var(--border-subtle);text-align:center;letter-spacing:.3px;text-transform:uppercase}
+[data-theme="dark"] .act-btn{background:#0e1620;border-color:#1f2a36;color:#cbd5e0}
+[data-theme="dark"] .act-btn:hover{background:#142031;color:#fff}
+[data-theme="dark"] .act-badge{box-shadow:0 0 0 2px #0a1018}
+[data-theme="dark"] .act-panel{background:#0e1620;border-color:#1f2a36;box-shadow:0 12px 28px rgba(0,0,0,.5)}
+[data-theme="dark"] .act-head,[data-theme="dark"] .act-foot{border-color:#1f2a36}
+[data-theme="dark"] .act-item:hover{background:#142031}
+@media (max-width:760px){.act-panel{width:300px}}
+@media print{.act-wrap{display:none!important}}
 /* === v4.7.0: Overlap section (pairwise territory heatmap) === */
 .overlap-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
 .main.view-overlap{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
@@ -1321,6 +1352,17 @@ Continue with Microsoft
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
 <button class="sub-btn" data-sub="table" role="tab" aria-selected="false" onclick="setCompaniesSub('table')" title="Table only (T)">Table</button>
 <button class="sub-btn active" data-sub="both" role="tab" aria-selected="true" onclick="setCompaniesSub('both')" title="Table + Map (B)">+ Map</button>
+</div>
+<div class="act-wrap">
+<button class="act-btn" id="actBtn" onclick="toggleActivityPanel()" aria-haspopup="true" aria-expanded="false" aria-label="Recent activity" title="Recent activity">
+<span class="act-bell" aria-hidden="true">&#128276;</span>
+<span class="act-badge" id="actBadge" aria-live="polite" style="display:none">0</span>
+</button>
+<div class="act-panel" id="actPanel" role="dialog" aria-label="Recent activity">
+<div class="act-head"><h3>Recent activity</h3><button class="act-clear" onclick="_actClear()" title="Clear all">Clear</button></div>
+<div class="act-list" id="actBody"><div class="act-empty">No recent activity yet.</div></div>
+<div class="act-foot">Last 25 events &middot; auto-cleared after 50</div>
+</div>
 </div>
 <button class="logout-btn" onclick="exportCSV()" title="Export CSV">&#8595; Export</button>
 <button class="logout-btn" onclick="resetApp()" title="Reset">&#x21bb; Reset</button>
@@ -2882,8 +2924,8 @@ function zoomToLoc(lat,lng,name){
 function togglePlatform(id){try{
   if(id===LL_ID)return;
   let c=DATA.find(x=>x.id===id);
-  if(platform.includes(id)){platform=platform.filter(x=>x!==id);if(c)showToast('Removed: '+esc(c.name))}
-  else{platform.push(id);if(c)showToast('Added: '+esc(c.name))}
+  if(platform.includes(id)){platform=platform.filter(x=>x!==id);if(c){showToast('Removed: '+esc(c.name));_actLog('platform_remove',c.name,{id:c.id})}}
+  else{platform.push(id);if(c){showToast('Added: '+esc(c.name));_actLog('platform_add',c.name,{id:c.id})}}
   computeProxScores();updatePF();render();updateMap();
 }catch(e){console.error('[togglePlatform]',e)}}
 function togglePF(){
@@ -3661,6 +3703,89 @@ function renderNetwork(){
   _netUpdateInspect();
 }
 
+/* === v4.13.0: Activity feed (chronological log of platform/scenario/compare changes) === */
+const ACT_KEY='pi_activity', ACT_READ_KEY='pi_activity_read', ACT_CAP=50, ACT_DROP_LIMIT=25;
+const ACT_KIND_META={
+  platform_add:    {icon:'+', color:'#2BB673', label:'Added to platform'},
+  platform_remove: {icon:'−', color:'#C0392B', label:'Removed from platform'},
+  scenario_save:   {icon:'☰', color:'#7C5CFC', label:'Scenario saved'},
+  scenario_load:   {icon:'↵', color:'#5B8DEF', label:'Scenario loaded'},
+  scenario_update: {icon:'↻', color:'#5B8DEF', label:'Scenario updated'},
+  scenario_delete: {icon:'×', color:'#C0392B', label:'Scenario deleted'},
+  scenario_pin:    {icon:'★', color:'#E0A106', label:'Scenario pinned'},
+  scenario_unpin:  {icon:'☆', color:'#697386', label:'Scenario unpinned'},
+  scenario_dup:    {icon:'⧉', color:'#5B8DEF', label:'Scenario duplicated'},
+  scenario_import: {icon:'⤓', color:'#7C5CFC', label:'Scenarios imported'},
+  compare_add:     {icon:'▤', color:'#2BB673', label:'Added to compare'},
+  compare_remove:  {icon:'▤', color:'#C0392B', label:'Removed from compare'},
+  compare_clear:   {icon:'▤', color:'#697386', label:'Compare cleared'}
+};
+function _actAll(){try{let s=localStorage.getItem(ACT_KEY);if(!s)return [];let a=JSON.parse(s);return Array.isArray(a)?a:[]}catch(e){return []}}
+function _actPersist(arr){try{localStorage.setItem(ACT_KEY,JSON.stringify(arr.slice(0,ACT_CAP)));return true}catch(e){console.error('[activity persist]',e);return false}}
+function _actGenId(){return 'act_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,7)}
+function _actLog(kind,text,meta){
+  if(!ACT_KIND_META[kind])return;
+  let entry={id:_actGenId(),ts:Date.now(),kind:kind,text:String(text||'')};
+  if(meta&&typeof meta==='object')entry.meta=meta;
+  let arr=_actAll();arr.unshift(entry);_actPersist(arr);
+  _actUpdateBadge();
+  // If panel open, refresh it
+  let panel=document.getElementById('actPanel');
+  if(panel&&panel.classList.contains('open'))_actRenderPanel();
+}
+function _actLastReadTs(){try{let v=localStorage.getItem(ACT_READ_KEY);return v?parseInt(v,10)||0:0}catch(e){return 0}}
+function _actMarkRead(){try{localStorage.setItem(ACT_READ_KEY,String(Date.now()))}catch(e){}_actUpdateBadge()}
+function _actUnreadCount(){let last=_actLastReadTs();return _actAll().filter(e=>e.ts>last).length}
+function _actClear(){if(!confirm('Clear all activity? This cannot be undone.'))return;_actPersist([]);_actMarkRead();_actRenderPanel();showToast('Activity cleared')}
+function _actAgo(ts){let d=Date.now()-ts;if(d<60000)return 'just now';let m=Math.floor(d/60000);if(m<60)return m+'m ago';let h=Math.floor(m/60);if(h<24)return h+'h ago';let dd=Math.floor(h/24);if(dd<30)return dd+'d ago';return new Date(ts).toLocaleDateString()}
+function _actUpdateBadge(){
+  let badge=document.getElementById('actBadge');if(!badge)return;
+  let n=_actUnreadCount();
+  if(n<=0){badge.style.display='none';badge.textContent=''}
+  else{badge.style.display='';badge.textContent=n>99?'99+':String(n)}
+}
+function toggleActivityPanel(){
+  let panel=document.getElementById('actPanel');if(!panel)return;
+  let open=panel.classList.toggle('open');
+  let btn=document.getElementById('actBtn');if(btn)btn.setAttribute('aria-expanded',open?'true':'false');
+  if(open){_actRenderPanel();_actMarkRead();
+    setTimeout(()=>{document.addEventListener('click',_actOutside,{capture:true})},10);
+  } else {
+    document.removeEventListener('click',_actOutside,{capture:true});
+  }
+}
+function _actOutside(e){
+  let panel=document.getElementById('actPanel'),btn=document.getElementById('actBtn');
+  if(!panel)return;
+  if(panel.contains(e.target))return;
+  if(btn&&btn.contains(e.target))return;
+  panel.classList.remove('open');if(btn)btn.setAttribute('aria-expanded','false');
+  document.removeEventListener('click',_actOutside,{capture:true});
+}
+function _actRenderPanel(){
+  let body=document.getElementById('actBody');if(!body)return;
+  let arr=_actAll().slice(0,ACT_DROP_LIMIT);
+  if(arr.length===0){body.innerHTML='<div class="act-empty">No recent activity. Add a company, save a scenario, or compare to start tracking changes.</div>';return}
+  let h='';
+  arr.forEach(e=>{
+    let m=ACT_KIND_META[e.kind]||{icon:'•',color:'#697386',label:e.kind};
+    let click='';
+    if(e.kind==='scenario_load'||e.kind==='scenario_save'||e.kind==='scenario_update'||e.kind==='scenario_dup'){
+      click=' onclick="setSection(\'scenarios\');toggleActivityPanel()" style="cursor:pointer"';
+    } else if(e.kind==='compare_add'||e.kind==='compare_remove'||e.kind==='compare_clear'){
+      click=' onclick="setSection(\'compare\');toggleActivityPanel()" style="cursor:pointer"';
+    } else if(e.kind==='platform_add'||e.kind==='platform_remove'){
+      click=' onclick="setSection(\'proforma\');toggleActivityPanel()" style="cursor:pointer"';
+    }
+    h+='<div class="act-item"'+click+'>'+
+      '<span class="act-ico" style="background:'+m.color+'" aria-hidden="true">'+m.icon+'</span>'+
+      '<div class="act-body"><div class="act-text">'+_cmpEsc(e.text)+'</div>'+
+      '<div class="act-meta">'+_cmpEsc(m.label)+' · '+_actAgo(e.ts)+'</div></div>'+
+      '</div>';
+  });
+  body.innerHTML=h;
+}
+
 /* === v4.9.0: Compare view (port from v3 CompareView) === */
 let compareIds=[];
 const CMP_MAX=4;
@@ -3687,14 +3812,17 @@ function addToCompare(id){
   let main=document.getElementById('mainArea');
   if(main&&main.classList.contains('view-compare'))renderCompare();
   showToast('Added '+c.name+' to Compare');
+  _actLog('compare_add',c.name,{id:c.id});
 }
 function removeFromCompare(id){
   let i=compareIds.indexOf(id);if(i<0)return;
+  let c=DATA.find(x=>x.id===id);
   compareIds.splice(i,1);_cmpPersist();
   let main=document.getElementById('mainArea');
   if(main&&main.classList.contains('view-compare'))renderCompare();
+  if(c)_actLog('compare_remove',c.name,{id:c.id});
 }
-function cmpClear(){compareIds=[];_cmpPersist();renderCompare();showToast('Compare cleared')}
+function cmpClear(){let n=compareIds.length;compareIds=[];_cmpPersist();renderCompare();showToast('Compare cleared');if(n>0)_actLog('compare_clear',n+' compan'+(n===1?'y':'ies')+' cleared')}
 function toggleCompare(id){
   if(compareIds.includes(id))removeFromCompare(id);
   else addToCompare(id);
@@ -3943,6 +4071,7 @@ function scnSaveCurrent(){
     updateSavedCount();
     renderScenarios();
     showToast('Saved: '+name);
+    _actLog('scenario_save',name,{id:s.id,n:s.ids.length});
   }
 }
 function scnLoad(id){
@@ -3953,13 +4082,14 @@ function scnLoad(id){
   computeProxScores();updatePF();render();updateMap();
   renderScenarios();
   showToast('Loaded: '+s.name);
+  _actLog('scenario_load',s.name,{id:s.id,n:platform.length});
 }
 function scnDuplicate(id){
   let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
   let copy=JSON.parse(JSON.stringify(s));
   copy.id=_scnGenId();copy.name=s.name+' (copy)';copy.ts=Date.now();copy.updatedAt=Date.now();copy.pinned=false;
   arr.unshift(copy);
-  if(_scnPersist(arr)){updateSavedCount();renderScenarios();showToast('Duplicated: '+s.name)}
+  if(_scnPersist(arr)){updateSavedCount();renderScenarios();showToast('Duplicated: '+s.name);_actLog('scenario_dup',copy.name,{id:copy.id})}
 }
 function scnPromptDelete(id){_scnDeleteId=id;renderScenarios()}
 function scnCancelDelete(){_scnDeleteId=null;renderScenarios()}
@@ -3967,11 +4097,13 @@ function scnConfirmDelete(id){
   let arr=_scnAll();let i=arr.findIndex(x=>x.id===id);if(i<0)return;
   let nm=arr[i].name;arr.splice(i,1);_scnPersist(arr);_scnDeleteId=null;
   updateSavedCount();renderScenarios();showToast('Deleted: '+nm);
+  _actLog('scenario_delete',nm);
 }
 function scnTogglePin(id){
   let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
   s.pinned=!s.pinned;s.updatedAt=Date.now();
   _scnPersist(arr);renderScenarios();
+  _actLog(s.pinned?'scenario_pin':'scenario_unpin',s.name,{id:s.id});
 }
 function scnEdit(id){_scnEditId=id;_scnDeleteId=null;renderScenarios();
   setTimeout(()=>{let el=document.querySelector('.scn-card.editing input');if(el){el.focus();el.select()}},30)}
@@ -3990,6 +4122,7 @@ function scnUpdateToCurrent(id){
   let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
   s.ids=[...platform];s.updatedAt=Date.now();
   _scnPersist(arr);renderScenarios();showToast('Updated to current platform');
+  _actLog('scenario_update',s.name,{id:s.id,n:s.ids.length});
 }
 function scnExportAll(){
   let arr=_scnAll();
@@ -4033,6 +4166,7 @@ function scnHandleImport(ev){
       _scnPersist(arr);
       updateSavedCount();renderScenarios();
       showToast('Imported '+added+' scenario'+(added===1?'':'s'));
+      if(added>0)_actLog('scenario_import',added+' scenario'+(added===1?'':'s')+' imported');
     }catch(e){showToast('Import failed: '+e.message)}
     finally{ev.target.value=''}
   };
@@ -4908,6 +5042,7 @@ async function loadRegionGeo(region) {
 document.addEventListener('DOMContentLoaded',()=>{
   let sn=document.getElementById('shareScenarioName');
   if(sn)sn.addEventListener('input',updateShareMessage);
+  _actUpdateBadge();
 });
 
 function loadFromURL(){
