@@ -952,6 +952,42 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
 [data-theme="dark"] .act-item:hover{background:#142031}
 @media (max-width:760px){.act-panel{width:300px}}
 @media print{.act-wrap{display:none!important}}
+/* === v4.19.0: Print stylesheets — Compare, Scenarios, Network, Overlap === */
+@media print{
+  /* Hide global chrome by default in any single-section print */
+  .header-stats,.section-nav,.sub-toggle,.logout-btn,.cp-overlay,.help-modal,.share-modal,.po,.pp,.rh,.toast,.scn-save,.scn-diff{display:none!important}
+  /* Compare: keep table, hide picker + clear */
+  body:not(.deck-mode) .main.view-compare .cmp-controls{display:none!important}
+  body:not(.deck-mode) .main.view-compare .cmp-h-card .x{display:none!important}
+  body:not(.deck-mode) .main.view-compare .cmp-table{font-size:9pt;page-break-inside:auto}
+  body:not(.deck-mode) .main.view-compare .cmp-row{page-break-inside:avoid}
+  body:not(.deck-mode) .main.view-compare{overflow:visible!important;height:auto!important}
+  body:not(.deck-mode) .main.view-compare .cmp-wrap{padding:14px 16px}
+  /* Scenarios: hide save bar + diff bar + per-card actions */
+  body:not(.deck-mode) .main.view-scenarios .scn-save,
+  body:not(.deck-mode) .main.view-scenarios .scn-diff,
+  body:not(.deck-mode) .main.view-scenarios .scn-card .actions,
+  body:not(.deck-mode) .main.view-scenarios .scn-card .iconbtn,
+  body:not(.deck-mode) .main.view-scenarios .scn-head .actions{display:none!important}
+  body:not(.deck-mode) .main.view-scenarios .scn-card{page-break-inside:avoid;break-inside:avoid;border:1px solid #999!important;box-shadow:none!important}
+  body:not(.deck-mode) .main.view-scenarios .scn-grid{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:10px!important}
+  body:not(.deck-mode) .main.view-scenarios{overflow:visible!important;height:auto!important}
+  body:not(.deck-mode) .main.view-scenarios .scn-wrap{padding:14px 16px}
+  /* Overlap: hide controls but keep matrix */
+  body:not(.deck-mode) .main.view-overlap .ov-controls{display:none!important}
+  body:not(.deck-mode) .main.view-overlap .overlap-wrap{padding:14px 16px;overflow:visible!important;height:auto!important}
+  body:not(.deck-mode) .main.view-overlap .ov-grid{font-size:8pt}
+  /* Network: tighten controls */
+  body:not(.deck-mode) .main.view-network .net-controls,
+  body:not(.deck-mode) .main.view-network .net-toolbar,
+  body:not(.deck-mode) .main.view-network .net-inspect{display:none!important}
+  body:not(.deck-mode) .main.view-network .net-canvas-wrap{height:6.5in!important;page-break-inside:avoid}
+  body:not(.deck-mode) .main.view-network .net-wrap{padding:14px 16px;overflow:visible!important;height:auto!important}
+  body:not(.deck-mode) .main.view-network{overflow:visible!important;height:auto!important;display:block!important}
+  /* Universal: never print scrollbars or fixed positioning */
+  *{box-shadow:none!important}
+  @page{margin:0.5in;size:landscape}
+}
 /* === v4.16.0: Export-to-deck — print all key sections in sequence === */
 @media print{
   body.deck-mode .header{position:static}
@@ -1708,6 +1744,7 @@ Continue with Microsoft
 <div class="actions">
 <button onclick="scnImportClick()" title="Import scenarios from JSON file">&#8593; Import</button>
 <button onclick="scnExportAll()" title="Download all scenarios as JSON">&#8595; Export all</button>
+<button onclick="window.print()" title="Print scenarios (clean, controls hidden)">&#128424; Print</button>
 <input type="file" id="scnImportFile" accept="application/json,.json" style="display:none" onchange="scnHandleImport(event)"/>
 </div>
 </div>
@@ -1746,6 +1783,7 @@ Continue with Microsoft
 <div class="cmp-controls">
 <select id="cmpAddSelect" onchange="cmpAddFromSelect()" aria-label="Add company to compare"><option value="">+ Add company&hellip;</option></select>
 <button onclick="cmpExportCSV()" title="Download as CSV">&#8595; Export CSV</button>
+<button onclick="window.print()" title="Print comparison (clean, controls hidden)">&#128424; Print</button>
 <button class="danger" onclick="cmpClear()" title="Remove all">&#10005; Clear</button>
 </div>
 </div>
