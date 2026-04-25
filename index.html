@@ -777,6 +777,74 @@ body:has(.main.view-compare) .pf-bar{display:none!important}
 [data-theme="dark"] .cmp-cell.cmp-best{background:rgba(124,92,252,0.12)!important}
 [data-theme="dark"] .cmp-empty{background:#16202e;border-color:#2a3a4e}
 [data-theme="dark"] .cmp-controls select,[data-theme="dark"] .cmp-controls button{background:#16202e;border-color:#2a3a4e;color:#e0e4ea}
+/* === v4.10.0: Scenarios section (saved platform compositions) === */
+.scn-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
+.main.view-scenarios{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
+.main.view-scenarios .left,.main.view-scenarios .rh,.main.view-scenarios .map-wrap,.main.view-scenarios .charts-wrap,.main.view-scenarios .intel-wrap,.main.view-scenarios .pf-wrap,.main.view-scenarios .brief-wrap,.main.view-scenarios .overlap-wrap,.main.view-scenarios .net-wrap,.main.view-scenarios .cmp-wrap{display:none!important}
+.main.view-scenarios .scn-wrap{display:block!important}
+body:has(.main.view-scenarios) .pf-bar{display:none!important}
+.scn-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.scn-head .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:4px}
+.scn-head .title-block h2{margin:0;font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--text-primary);letter-spacing:-0.2px}
+.scn-head .title-block .sub{margin-top:6px;font-size:12px;color:var(--text-secondary);max-width:580px;line-height:1.5}
+.scn-head .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.scn-head .actions button{padding:7px 13px;font-size:12px;border-radius:var(--radius-md);border:1px solid var(--border);background:var(--white);color:var(--text-secondary);font-family:inherit;font-weight:500;cursor:pointer;transition:all var(--tr-fast)}
+.scn-head .actions button:hover{border-color:var(--brand);color:var(--brand)}
+.scn-save{background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;padding:18px 22px;margin-bottom:18px}
+.scn-save .ttl{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.scn-save .ttl h3{margin:0;font-size:14px;font-weight:600;color:var(--text-primary);font-family:var(--font-sans)}
+.scn-save .ttl .summary{font-size:11px;color:var(--text-secondary);font-family:var(--font-mono)}
+.scn-save .row{display:grid;grid-template-columns:1fr 1.5fr auto;gap:10px;align-items:start}
+.scn-save input[type=text],.scn-save textarea{width:100%;padding:8px 11px;font-size:12px;border:1px solid var(--border);border-radius:var(--radius-md);font-family:inherit;color:var(--text-primary);outline:none;background:var(--white);transition:border-color var(--tr-fast)}
+.scn-save input[type=text]:focus,.scn-save textarea:focus{border-color:var(--brand)}
+.scn-save textarea{min-height:38px;resize:vertical;line-height:1.4}
+.scn-save .opts{margin-top:10px;display:flex;gap:18px;flex-wrap:wrap;font-size:11px;color:var(--text-secondary)}
+.scn-save .opts label{display:inline-flex;align-items:center;gap:6px;cursor:pointer;user-select:none}
+.scn-save button.savebtn{padding:8px 18px;background:var(--brand);color:#fff;border:none;border-radius:var(--radius-md);font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap;height:36px}
+.scn-save button.savebtn:hover{background:var(--brand-dark)}
+.scn-save button.savebtn:disabled{background:var(--border);cursor:not-allowed}
+.scn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.scn-card{background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;transition:border-color var(--tr-fast),box-shadow var(--tr-fast);position:relative;overflow:hidden}
+.scn-card:hover{border-color:var(--brand);box-shadow:var(--shadow-xs)}
+.scn-card.is-active{border-color:var(--brand);box-shadow:0 0 0 2px rgba(124,92,252,0.15)}
+.scn-card.is-pinned::before{content:"";position:absolute;top:0;left:0;width:3px;height:100%;background:var(--brand)}
+.scn-card .hdr{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.scn-card .hdr .nm{font-size:14px;font-weight:600;color:var(--text-primary);line-height:1.3;flex:1}
+.scn-card .hdr .nm .pin-ind{font-size:10px;color:var(--brand);margin-left:6px;vertical-align:middle}
+.scn-card .hdr .active-flag{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand);background:rgba(124,92,252,0.1);padding:2px 7px;border-radius:9999px;flex-shrink:0}
+.scn-card .desc{font-size:11px;color:var(--text-secondary);line-height:1.45;min-height:14px}
+.scn-card .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-size:10px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.3px;font-weight:600}
+.scn-card .stats .stat{padding:6px 8px;background:var(--light-bg);border-radius:6px;text-align:center}
+.scn-card .stats .stat .v{display:block;font-size:14px;font-weight:600;color:var(--text-primary);font-family:var(--font-mono);text-transform:none;letter-spacing:0;margin-bottom:1px}
+.scn-card .meta{font-size:10px;color:var(--text-tertiary);font-family:var(--font-mono);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px solid var(--border-subtle);padding-top:8px}
+.scn-card .actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.scn-card .actions button{padding:5px 10px;font-size:11px;border-radius:6px;border:1px solid var(--border);background:var(--white);color:var(--text-secondary);font-family:inherit;font-weight:500;cursor:pointer;transition:all var(--tr-fast)}
+.scn-card .actions button.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.scn-card .actions button.primary:hover{background:var(--brand-dark)}
+.scn-card .actions button:hover{border-color:var(--brand);color:var(--brand)}
+.scn-card .actions button.danger:hover{border-color:var(--red);color:var(--red)}
+.scn-card .actions .iconbtn{padding:5px 8px}
+.scn-card.editing{border-color:var(--brand)}
+.scn-card .edit-form{display:grid;gap:8px}
+.scn-card .edit-form input,.scn-card .edit-form textarea{padding:7px 10px;font-size:12px;border:1px solid var(--border);border-radius:var(--radius-md);font-family:inherit;color:var(--text-primary);outline:none;background:var(--white);width:100%}
+.scn-card .edit-form input:focus,.scn-card .edit-form textarea:focus{border-color:var(--brand)}
+.scn-card .edit-form textarea{min-height:48px;resize:vertical;line-height:1.4}
+.scn-confirm{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text-secondary)}
+.scn-confirm .yes{padding:4px 10px;background:var(--red);color:#fff;border:none;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;font-family:inherit}
+.scn-confirm .no{padding:4px 10px;background:var(--white);color:var(--text-secondary);border:1px solid var(--border);border-radius:6px;font-size:11px;cursor:pointer;font-family:inherit}
+.scn-empty{background:var(--white);border:1px dashed var(--border);border-radius:12px;padding:48px 20px;text-align:center;color:var(--text-secondary);grid-column:1/-1}
+.scn-empty .ico{font-size:32px;margin-bottom:10px;color:var(--text-tertiary)}
+.scn-empty h3{margin:0 0 8px;font-family:var(--font-serif);font-weight:400;font-size:18px;color:var(--text-primary)}
+.scn-empty p{margin:0;font-size:12px;line-height:1.55;max-width:420px;margin-left:auto;margin-right:auto}
+.scn-section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--text-tertiary);margin:18px 0 10px}
+[data-theme="dark"] .scn-wrap{background:#0a1018}
+[data-theme="dark"] .scn-save,[data-theme="dark"] .scn-card{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .scn-save input[type=text],[data-theme="dark"] .scn-save textarea,[data-theme="dark"] .scn-card .edit-form input,[data-theme="dark"] .scn-card .edit-form textarea{background:#1a2534;color:#e0e4ea;border-color:#2a3a4e}
+[data-theme="dark"] .scn-card .stats .stat{background:#0f1722}
+[data-theme="dark"] .scn-card .stats .stat .v{color:#e0e4ea}
+[data-theme="dark"] .scn-card .actions button{background:#1a2534;color:#a0aec0;border-color:#2a3a4e}
+[data-theme="dark"] .scn-empty{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .scn-head .actions button{background:#16202e;color:#a0aec0;border-color:#2a3a4e}
 /* === v4.7.0: Overlap section (pairwise territory heatmap) === */
 .overlap-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
 .main.view-overlap{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
@@ -1193,6 +1261,7 @@ Continue with Microsoft
 <button class="section-btn" data-section="overlap" role="tab" aria-selected="false" onclick="setSection('overlap')" title="Overlap (O)">Overlap</button>
 <button class="section-btn" data-section="network" role="tab" aria-selected="false" onclick="setSection('network')" title="Network (N)">Network</button>
 <button class="section-btn" data-section="compare" role="tab" aria-selected="false" onclick="setSection('compare')" title="Compare (X)">Compare</button>
+<button class="section-btn" data-section="scenarios" role="tab" aria-selected="false" onclick="setSection('scenarios')" title="Scenarios (S)">Scenarios</button>
 <button class="section-btn" data-section="analytics" role="tab" aria-selected="false" onclick="setSection('analytics')" title="Analytics (A)">Analytics</button>
 </div>
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
@@ -1412,6 +1481,33 @@ Continue with Microsoft
 </div>
 </div>
 </div>
+<!-- v4.10.0: Scenarios section (saved platform compositions) -->
+<div class="scn-wrap" id="scnWrap">
+<div class="scn-head">
+<div class="title-block">
+<div class="eyebrow">Saved Platforms</div>
+<h2>Scenarios</h2>
+<div class="sub">Save and switch between named platform compositions. Each scenario captures your acquisition list and (optionally) active filters. Useful for comparing roll-up strategies.</div>
+</div>
+<div class="actions">
+<button onclick="scnImportClick()" title="Import scenarios from JSON file">&#8593; Import</button>
+<button onclick="scnExportAll()" title="Download all scenarios as JSON">&#8595; Export all</button>
+<input type="file" id="scnImportFile" accept="application/json,.json" style="display:none" onchange="scnHandleImport(event)"/>
+</div>
+</div>
+<div class="scn-save" id="scnSaveBar">
+<div class="ttl"><h3>Save current platform</h3><span class="summary" id="scnSaveSummary">&mdash;</span></div>
+<div class="row">
+<input type="text" id="scnSaveName" placeholder="Scenario name (e.g. Aggressive SE Roll-Up)" onkeydown="if(event.key==='Enter')scnSaveCurrent()" maxlength="80"/>
+<textarea id="scnSaveDesc" placeholder="Optional description" maxlength="240"></textarea>
+<button class="savebtn" id="scnSaveBtn" onclick="scnSaveCurrent()">&#128190; Save</button>
+</div>
+<div class="opts">
+<label><input type="checkbox" id="scnSaveCaptureFilters"/> Capture active filters (states, ownership, type, search)</label>
+</div>
+</div>
+<div id="scnBody"></div>
+</div>
 <!-- v4.9.0: Compare section (side-by-side company comparison) -->
 <div class="cmp-wrap" id="cmpWrap">
 <div class="cmp-head">
@@ -1588,8 +1684,8 @@ function setMobileView(view){
 /* === PRODUCT SPRINT B: Desktop view toggle (now driven by section nav in v4.1.0) === */
 function setView(view){
   let main=document.getElementById('mainArea');
-  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma')&&!main.classList.contains('view-brief')&&!main.classList.contains('view-overlap')&&!main.classList.contains('view-network')&&!main.classList.contains('view-compare'));
-  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma','view-brief','view-overlap','view-network','view-compare');
+  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma')&&!main.classList.contains('view-brief')&&!main.classList.contains('view-overlap')&&!main.classList.contains('view-network')&&!main.classList.contains('view-compare')&&!main.classList.contains('view-scenarios'));
+  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma','view-brief','view-overlap','view-network','view-compare','view-scenarios');
   if(view==='table')main.classList.add('view-table');
   else if(view==='map')main.classList.add('view-map');
   else if(view==='charts'){main.classList.add('view-charts');setTimeout(function(){renderCharts();chartInstances.forEach(function(c){c.resize()})},100)}
@@ -1599,8 +1695,9 @@ function setView(view){
   else if(view==='overlap'){main.classList.add('view-overlap');setTimeout(function(){renderOverlap()},50)}
   else if(view==='network'){main.classList.add('view-network');setTimeout(function(){renderNetwork()},50)}
   else if(view==='compare'){main.classList.add('view-compare');setTimeout(function(){renderCompare()},50)}
+  else if(view==='scenarios'){main.classList.add('view-scenarios');setTimeout(function(){renderScenarios()},50)}
   // v4.4.0: Sync section nav + Companies sub-toggle UI from view
-  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':(view==='brief'?'brief':(view==='overlap'?'overlap':(view==='network'?'network':(view==='compare'?'compare':'companies')))))));
+  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':(view==='brief'?'brief':(view==='overlap'?'overlap':(view==='network'?'network':(view==='compare'?'compare':(view==='scenarios'?'scenarios':'companies'))))))));
   document.querySelectorAll('.section-btn').forEach(btn=>{
     let isActive=btn.dataset.section===section;
     btn.classList.toggle('active',isActive);
@@ -1637,6 +1734,7 @@ function setSection(section){
   if(section==='overlap'){setView('overlap');return}
   if(section==='network'){setView('network');return}
   if(section==='compare'){setView('compare');return}
+  if(section==='scenarios'){setView('scenarios');return}
   if(section==='analytics'||section==='charts'){setView('charts');return}
 }
 /* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
@@ -3600,6 +3698,271 @@ function cmpExportCSV(){
   showToast('Exported '+cos.length+'-company comparison');
 }
 
+/* === v4.10.0: Scenarios — saved platform compositions === */
+/* Schema (additive migration from existing propane_saves):
+   { id, name, description?, ids:[], ts (createdAt), updatedAt?,
+     filters?:{state:[],ownership:[],ct:[],search:'',hideEx:false,hideLL:false},
+     pinned?:bool }
+   Old saves only have {name, ids, ts}. We backfill id and read tolerantly.
+*/
+let _scnEditId=null,_scnDeleteId=null;
+function _scnEsc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function _scnGenId(){return 'sc_'+Math.random().toString(36).slice(2,10)+Date.now().toString(36).slice(-4)}
+function _scnNormalize(s){
+  if(!s||typeof s!=='object')return null;
+  if(!s.id)s.id=_scnGenId();
+  if(!Array.isArray(s.ids))s.ids=[];
+  if(typeof s.name!=='string'||!s.name.trim())s.name='Untitled Scenario';
+  if(typeof s.ts!=='number')s.ts=Date.now();
+  return s;
+}
+function _scnAll(){
+  let arr=[];try{arr=JSON.parse(localStorage.getItem('propane_saves')||'[]')}catch(e){arr=[]}
+  if(!Array.isArray(arr))arr=[];
+  let dirty=false;
+  arr=arr.map(s=>{let n=_scnNormalize(s);if(n!==s)dirty=true;return n}).filter(Boolean);
+  if(dirty){try{localStorage.setItem('propane_saves',JSON.stringify(arr))}catch(e){}}
+  return arr;
+}
+function _scnPersist(arr){
+  if(arr.length>CONFIG.MAX_SAVES)arr=arr.slice(0,CONFIG.MAX_SAVES);
+  try{localStorage.setItem('propane_saves',JSON.stringify(arr));return true}
+  catch(e){showToast('Storage full — could not save');return false}
+}
+function _scnFmtDate(ts){if(!ts)return'—';let d=new Date(ts);return d.toLocaleDateString()+' '+d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})}
+function _scnArrEq(a,b){if(!a||!b||a.length!==b.length)return false;let A=a.slice().sort(),B=b.slice().sort();for(let i=0;i<A.length;i++)if(A[i]!==B[i])return false;return true}
+function _scnIsActive(s){return _scnArrEq(s.ids||[],platform||[])}
+function _scnStats(s){
+  let cos=(s.ids||[]).map(id=>DATA.find(c=>c.id===id)).filter(Boolean);
+  let ll=DATA.find(c=>c.id===LL_ID);
+  let allCos=ll?[ll].concat(cos):cos.slice();
+  let totalLocs=allCos.reduce((a,c)=>a+(c.locations||[]).length,0);
+  let states=new Set();allCos.forEach(c=>(c.states||[]).forEach(st=>states.add(st)));
+  let totalRev=allCos.reduce((a,c)=>a+(c.estRevenue||0),0);
+  return {nAcq:cos.length,nCos:allCos.length,locs:totalLocs,states:states.size,rev:totalRev};
+}
+function _scnCaptureFilters(){
+  return {
+    state:[...(stateFilter||new Set())],
+    ownership:[...(ownerFilter||new Set())],
+    ct:[...(ctFilter||new Set())],
+    search:String(searchQuery||''),
+    hideEx:!!hideEx,
+    hideLL:!!hideLL
+  };
+}
+function _scnApplyFilters(f){
+  if(!f)return;
+  try{
+    stateFilter=new Set(f.state||[]);
+    ownerFilter=new Set(f.ownership||[]);
+    ctFilter=new Set(f.ct||[]);
+    searchQuery=f.search||'';
+    hideEx=!!f.hideEx;hideLL=!!f.hideLL;
+    let si=document.getElementById('si');if(si)si.value=searchQuery;
+    /* Re-render filter chips/checkboxes if those exist */
+    if(typeof renderFilters==='function')renderFilters();
+  }catch(e){console.warn('[scn] apply filters failed',e)}
+}
+function scnSaveCurrent(){
+  let nameEl=document.getElementById('scnSaveName');
+  let descEl=document.getElementById('scnSaveDesc');
+  let capEl=document.getElementById('scnSaveCaptureFilters');
+  let name=(nameEl?nameEl.value:'').trim();
+  let desc=(descEl?descEl.value:'').trim();
+  let captureFilters=capEl&&capEl.checked;
+  if(!name){let acqs=platform.map(id=>DATA.find(c=>c.id===id)).filter(Boolean);name=acqs.length===1?acqs[0].name+' Scenario':acqs.length>1?acqs.length+'-Company Pro Forma':'Pro Forma';name+=' \u2014 '+new Date().toLocaleDateString()}
+  let arr=_scnAll();
+  let s={id:_scnGenId(),name:name,description:desc||undefined,ids:[...platform],ts:Date.now(),updatedAt:Date.now()};
+  if(captureFilters)s.filters=_scnCaptureFilters();
+  arr.unshift(s);
+  if(_scnPersist(arr)){
+    if(nameEl)nameEl.value='';
+    if(descEl)descEl.value='';
+    if(capEl)capEl.checked=false;
+    updateSavedCount();
+    renderScenarios();
+    showToast('Saved: '+name);
+  }
+}
+function scnLoad(id){
+  let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
+  platform=[];
+  (s.ids||[]).forEach(cid=>{if(DATA.find(c=>c.id===cid))platform.push(cid)});
+  if(s.filters)_scnApplyFilters(s.filters);
+  computeProxScores();updatePF();render();updateMap();
+  renderScenarios();
+  showToast('Loaded: '+s.name);
+}
+function scnDuplicate(id){
+  let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
+  let copy=JSON.parse(JSON.stringify(s));
+  copy.id=_scnGenId();copy.name=s.name+' (copy)';copy.ts=Date.now();copy.updatedAt=Date.now();copy.pinned=false;
+  arr.unshift(copy);
+  if(_scnPersist(arr)){updateSavedCount();renderScenarios();showToast('Duplicated: '+s.name)}
+}
+function scnPromptDelete(id){_scnDeleteId=id;renderScenarios()}
+function scnCancelDelete(){_scnDeleteId=null;renderScenarios()}
+function scnConfirmDelete(id){
+  let arr=_scnAll();let i=arr.findIndex(x=>x.id===id);if(i<0)return;
+  let nm=arr[i].name;arr.splice(i,1);_scnPersist(arr);_scnDeleteId=null;
+  updateSavedCount();renderScenarios();showToast('Deleted: '+nm);
+}
+function scnTogglePin(id){
+  let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
+  s.pinned=!s.pinned;s.updatedAt=Date.now();
+  _scnPersist(arr);renderScenarios();
+}
+function scnEdit(id){_scnEditId=id;_scnDeleteId=null;renderScenarios();
+  setTimeout(()=>{let el=document.querySelector('.scn-card.editing input');if(el){el.focus();el.select()}},30)}
+function scnEditCancel(){_scnEditId=null;renderScenarios()}
+function scnEditSave(id){
+  let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
+  let nameEl=document.getElementById('scnEditName_'+id);
+  let descEl=document.getElementById('scnEditDesc_'+id);
+  let nm=nameEl?nameEl.value.trim():'';
+  let ds=descEl?descEl.value.trim():'';
+  if(!nm){showToast('Name required');return}
+  s.name=nm;s.description=ds||undefined;s.updatedAt=Date.now();
+  _scnPersist(arr);_scnEditId=null;renderScenarios();showToast('Updated');
+}
+function scnUpdateToCurrent(id){
+  let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
+  s.ids=[...platform];s.updatedAt=Date.now();
+  _scnPersist(arr);renderScenarios();showToast('Updated to current platform');
+}
+function scnExportAll(){
+  let arr=_scnAll();
+  if(!arr.length){showToast('No scenarios to export');return}
+  let payload={app:'propane-intelligence',version:'4.10.0',exportedAt:new Date().toISOString(),scenarios:arr};
+  let blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  let a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='propane_scenarios_'+new Date().toISOString().slice(0,10)+'.json';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  setTimeout(()=>URL.revokeObjectURL(a.href),200);
+  showToast('Exported '+arr.length+' scenario'+(arr.length===1?'':'s'));
+}
+function scnExportOne(id){
+  let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s)return;
+  let payload={app:'propane-intelligence',version:'4.10.0',exportedAt:new Date().toISOString(),scenarios:[s]};
+  let blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  let a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='scenario_'+(s.name||'untitled').toLowerCase().replace(/[^a-z0-9]+/g,'_').slice(0,40)+'.json';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  setTimeout(()=>URL.revokeObjectURL(a.href),200);
+}
+function scnImportClick(){let el=document.getElementById('scnImportFile');if(el)el.click()}
+function scnHandleImport(ev){
+  let f=ev.target.files&&ev.target.files[0];if(!f)return;
+  let reader=new FileReader();
+  reader.onload=function(){
+    try{
+      let p=JSON.parse(reader.result);
+      let incoming=Array.isArray(p)?p:(Array.isArray(p.scenarios)?p.scenarios:null);
+      if(!incoming){showToast('Invalid scenario file');return}
+      let arr=_scnAll();
+      let existingIds=new Set(arr.map(s=>s.id));
+      let added=0;
+      incoming.forEach(s=>{
+        let n=_scnNormalize(JSON.parse(JSON.stringify(s)));if(!n)return;
+        if(existingIds.has(n.id))n.id=_scnGenId();
+        arr.unshift(n);added++;
+      });
+      _scnPersist(arr);
+      updateSavedCount();renderScenarios();
+      showToast('Imported '+added+' scenario'+(added===1?'':'s'));
+    }catch(e){showToast('Import failed: '+e.message)}
+    finally{ev.target.value=''}
+  };
+  reader.readAsText(f);
+}
+function _scnSummaryStr(){
+  let acqs=platform.map(id=>DATA.find(c=>c.id===id)).filter(Boolean);
+  if(!acqs.length)return 'No acquisitions added &mdash; saving will store the LL-only platform.';
+  let st=new Set();acqs.forEach(c=>(c.states||[]).forEach(s=>st.add(s)));
+  let locs=acqs.reduce((a,c)=>a+(c.locations||[]).length,0);
+  return acqs.length+' acquisition'+(acqs.length===1?'':'s')+' &middot; '+locs+' location'+(locs===1?'':'s')+' &middot; '+st.size+' state'+(st.size===1?'':'s');
+}
+function renderScenarios(){
+  // Update top save-bar summary
+  let sum=document.getElementById('scnSaveSummary');if(sum)sum.innerHTML=_scnSummaryStr();
+  let body=document.getElementById('scnBody');if(!body)return;
+  let arr=_scnAll();
+  // Sort: pinned first, then by updatedAt|ts desc
+  arr.sort((a,b)=>{
+    let pa=a.pinned?1:0,pb=b.pinned?1:0;
+    if(pa!==pb)return pb-pa;
+    return (b.updatedAt||b.ts||0)-(a.updatedAt||a.ts||0);
+  });
+  if(arr.length===0){
+    body.innerHTML='<div class="scn-empty">'+
+      '<div class="ico">&#128190;</div>'+
+      '<h3>No saved scenarios yet</h3>'+
+      '<p>Build a platform in Pro-Forma, then return here to save it. Saved scenarios let you quickly switch between strategies (e.g. <em>Aggressive SE Roll-Up</em> vs. <em>Conservative MS-Only</em>).</p>'+
+      '</div>';
+    return;
+  }
+  let html='';
+  let pinned=arr.filter(s=>s.pinned),other=arr.filter(s=>!s.pinned);
+  function renderCardSet(list){
+    let h='<div class="scn-grid">';
+    list.forEach(s=>{
+      let st=_scnStats(s);
+      let active=_scnIsActive(s);
+      if(_scnEditId===s.id){
+        h+='<div class="scn-card editing"><div class="edit-form">'+
+          '<input id="scnEditName_'+s.id+'" type="text" value="'+_scnEsc(s.name)+'" maxlength="80" placeholder="Scenario name"/>'+
+          '<textarea id="scnEditDesc_'+s.id+'" maxlength="240" placeholder="Optional description">'+_scnEsc(s.description||'')+'</textarea>'+
+          '<div class="actions">'+
+            '<button class="primary" onclick="scnEditSave(\''+s.id+'\')">Save</button>'+
+            '<button onclick="scnEditCancel()">Cancel</button>'+
+          '</div></div></div>';
+        return;
+      }
+      let confirmingDel=_scnDeleteId===s.id;
+      h+='<div class="scn-card'+(active?' is-active':'')+(s.pinned?' is-pinned':'')+'">'+
+        '<div class="hdr">'+
+          '<div class="nm">'+_scnEsc(s.name)+(s.pinned?' <span class="pin-ind" title="Pinned">&#9733;</span>':'')+'</div>'+
+          (active?'<span class="active-flag">Active</span>':'')+
+        '</div>'+
+        '<div class="desc">'+(s.description?_scnEsc(s.description):'<span style="color:var(--text-tertiary);font-style:italic">No description</span>')+'</div>'+
+        '<div class="stats">'+
+          '<div class="stat"><span class="v">'+st.nAcq+'</span>Acq</div>'+
+          '<div class="stat"><span class="v">'+st.locs.toLocaleString()+'</span>Locs</div>'+
+          '<div class="stat"><span class="v">'+st.states+'</span>States</div>'+
+          '<div class="stat"><span class="v">$'+(st.rev>=1000?(st.rev/1000).toFixed(1)+'B':st.rev.toFixed(0)+'M')+'</span>Rev</div>'+
+        '</div>'+
+        (s.filters?'<div style="font-size:10px;color:var(--text-tertiary)">&#9874; Captured filters: '+
+          ((s.filters.state||[]).length?(s.filters.state.length+' state'+(s.filters.state.length===1?'':'s')+' '):'')+
+          ((s.filters.ownership||[]).length?(s.filters.ownership.length+' ownership '):'')+
+          ((s.filters.search||'').length?'search: \u201C'+_scnEsc(s.filters.search.slice(0,20))+'\u201D':'')+
+        '</div>':'')+
+        '<div class="meta">'+
+          '<span title="Created">Created '+_scnFmtDate(s.ts)+'</span>'+
+          (s.updatedAt&&s.updatedAt!==s.ts?'<span title="Last updated">Updated '+_scnFmtDate(s.updatedAt)+'</span>':'')+
+        '</div>'+
+        (confirmingDel?
+          '<div class="scn-confirm"><span>Delete this scenario?</span><button class="yes" onclick="scnConfirmDelete(\''+s.id+'\')">Delete</button><button class="no" onclick="scnCancelDelete()">Cancel</button></div>':
+          '<div class="actions">'+
+            '<button class="primary" onclick="scnLoad(\''+s.id+'\')" title="Load this scenario into the platform">&#9166; Load</button>'+
+            '<button onclick="scnUpdateToCurrent(\''+s.id+'\')" title="Overwrite scenario with current platform">&#8635; Update</button>'+
+            '<button onclick="scnEdit(\''+s.id+'\')" title="Rename / edit description">&#9998; Edit</button>'+
+            '<button class="iconbtn" onclick="scnTogglePin(\''+s.id+'\')" title="'+(s.pinned?'Unpin':'Pin to top')+'">'+(s.pinned?'&#9733;':'&#9734;')+'</button>'+
+            '<button class="iconbtn" onclick="scnDuplicate(\''+s.id+'\')" title="Duplicate">&#10063;</button>'+
+            '<button class="iconbtn" onclick="scnExportOne(\''+s.id+'\')" title="Export as JSON">&#8595;</button>'+
+            '<button class="iconbtn danger" onclick="scnPromptDelete(\''+s.id+'\')" title="Delete">&#128465;</button>'+
+          '</div>')+
+      '</div>';
+    });
+    h+='</div>';return h;
+  }
+  if(pinned.length){html+='<div class="scn-section-title">Pinned</div>'+renderCardSet(pinned)}
+  if(other.length){html+=(pinned.length?'<div class="scn-section-title">All scenarios ('+other.length+')</div>':'')+renderCardSet(other)}
+  body.innerHTML=html;
+}
+
 function clearPlatform(){
   platform=[];
   _proxCacheKey='__FORCE__';
@@ -3681,6 +4044,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='o'||e.key==='O'){e.preventDefault();setSection('overlap');return}                // Overlap section
   if(e.key==='n'||e.key==='N'){e.preventDefault();setSection('network');return}                // Network section
   if(e.key==='x'||e.key==='X'){e.preventDefault();setSection('compare');return}                // Compare section
+  if(e.key==='s'||e.key==='S'){e.preventDefault();setSection('scenarios');return}             // Scenarios section
   if(e.key==='a'||e.key==='A'){e.preventDefault();setSection('analytics');return}            // Analytics section
   if(e.key==='t'||e.key==='T'){e.preventDefault();setCompaniesSub('table');return}           // Companies > Table only
   if(e.key==='b'||e.key==='B'){e.preventDefault();setCompaniesSub('both');return}            // Companies > Table + Map
@@ -3892,6 +4256,7 @@ function renderSavesDropdown(){
     html+='<div class="sd-item" onclick="loadSave('+i+')"><div><div class="sd-name">'+esc(s.name)+'</div><div class="sd-meta">'+s.ids.length+' companies &middot; '+dateStr+'</div></div>'+delHtml+'</div>';
   })}
   html+='<div class="sd-input"><input type="text" id="saveName" placeholder="Name this selection..." onkeydown="if(event.key===\'Enter\')saveCurrentPF()"><button onclick="saveCurrentPF()">Save</button></div>';
+  html+='<div style="padding:6px 14px;border-top:1px solid var(--border);text-align:right"><a onclick="closeSavesDropdown();setSection(\'scenarios\')" style="font-size:10px;color:var(--brand);cursor:pointer;text-decoration:none">Manage all in Scenarios &rarr;</a></div>';
   dd.innerHTML=html;
 }
 
