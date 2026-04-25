@@ -56,63 +56,144 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-  <!-- Demo anchor data (13 companies). Preserved for prototype views with hard-coded references. -->
+  <!-- Demo anchor data (13 short IDs). Used for News bridge + map fallback only;
+       real fields below are hydrated from companies.json via the demo→real merge. -->
   <script src="js/mockData.js"></script>
 
-  <!-- Real-data adapter: loads data/companies.json and exposes window.REAL_COMPANIES -->
+  <!-- Scoring engine (vanilla JS, exposes window.PI before any view loads). -->
+  <script src="js/scoring.js"></script>
+
+  <!-- Real-data adapter: loads companies.json + counties_national.json, runs the
+       anchor merge, attaches scoring results, exposes window.MOCK_COMPANIES. -->
   <script>
     window.__DATA_READY__ = (async () => {
-      try {
-        const r = await fetch('data/companies.json', { cache: 'no-cache' });
-        if (!r.ok) throw new Error('companies.json fetch failed: ' + r.status);
-        const arr = await r.json();
-        window.REAL_COMPANIES = arr;
+      // Demo short ID  ↔  canonical id in companies.json
+      const DEMO_TO_REAL = {
+        ll:  'lampton_love',
+        blo: 'blossman_gas',
+        ami: 'amerigas',
+        fer: 'ferrellgas',
+        che: 'cherry_energy',
+        bar: 'barrett_propane',
+        dea: 'dead_river',
+        chs: 'chs_propane',
+        cry: 'crystal_flash',
+        edp: 'eastern_propane',
+        ber: 'berico',
+        dav: 'davenport_energy',
+        dnd: 'dnd_gas',
+      };
+      const REAL_TO_DEMO = Object.fromEntries(Object.entries(DEMO_TO_REAL).map(([d, r]) => [r, d]));
 
-        // Augment MOCK_COMPANIES with all real companies appended (skip duplicates by name).
-        // Demo IDs (ll, blo, ami, ...) at the front stay intact so News + map mock positions work.
-        const demo = window.MOCK_COMPANIES || [];
-        const demoNames = new Set(demo.map(c => c.name.toLowerCase()));
-        const ownershipToType = {
-          'public': ['public', 'Public'],
-          'pe': ['pe', 'PE-Backed'],
-          'private equity': ['pe', 'PE-Backed'],
-          'family': ['family', 'Family'],
-          'private': ['private', 'Private'],
-          'cooperative': ['coop', 'Co-op'],
-          'co-op': ['coop', 'Co-op'],
-          'coop': ['coop', 'Co-op'],
+      const ownershipToType = {
+        public: ['public', 'Public'],
+        pe: ['pe', 'PE-Backed'],
+        'private equity': ['pe', 'PE-Backed'],
+        family: ['family', 'Family'],
+        private: ['private', 'Private'],
+        cooperative: ['coop', 'Co-op'],
+        'co-op': ['coop', 'Co-op'],
+        coop: ['coop', 'Co-op'],
+        ll: ['ll', 'Ergon'],
+      };
+
+      // Adapt a raw companies.json record into the unified shape the views read.
+      // Preserves every v1 field; only renames a handful for the existing JSX.
+      function adapt(c, opts) {
+        const own = String(c.ownership || '').toLowerCase();
+        const [type, typeLabel] = ownershipToType[own] || ['private', 'Private'];
+        const isAnchor = c.id === 'lampton_love';
+        const id = (opts && opts.id) || REAL_TO_DEMO[c.id] || c.id;
+        return {
+          // identity
+          id,
+          canonicalId: c.id,
+          name: c.name,
+          parent: c.parentGroup || c.ownerDetail || (own === 'public' ? 'Public' : 'Independent'),
+          parentGroup: c.parentGroup,
+          ownership: own || 'private',
+          ownerDetail: c.ownerDetail,
+          type, typeLabel,
+          isPlatform: !!isAnchor,
+          excluded: !!c.excluded,
+          // geography
+          hqCity: c.hqCity,
+          hqState: c.hqState,
+          states: Array.isArray(c.states) && c.states.length ? c.states : (c.hqState ? [c.hqState] : []),
+          // ops/financials — keep nulls when unknown so the UI shows "—"
+          totalLocs: Number(c.totalLocs) || (c.locations || []).length || 0,
+          seLocs: Number(c.seLocs) || 0,
+          locs: Number(c.totalLocs) || (c.locations || []).length || 0,   // alias for v2 views
+          rev: c.estRevenue != null ? Math.round(c.estRevenue * 10) / 10 : null,
+          estRevenue: c.estRevenue,
+          emp: c.employeeCount != null ? c.employeeCount : null,
+          employeeCount: c.employeeCount,
+          yearFounded: c.yearFounded,
+          estAnnualGallons: c.estAnnualGallons,
+          // contact / metadata
+          website: c.website,
+          phone: c.phone,
+          email: c.email,
+          ticker: c.ticker,
+          description: c.description,
+          companyType: c.companyType,
+          keyPersonnel: c.keyPersonnel || [],
+          serviceTypes: c.serviceTypes || [],
+          acquisitions: c.acquisitions || [],
+          // location records (with lat/lng/address — required for map + detail panel)
+          locations: c.locations || [],
         };
-        const adapted = arr
-          .filter(c => !c.excluded && !demoNames.has(String(c.name || '').toLowerCase()))
-          .map((c, i) => {
-            const own = String(c.ownership || '').toLowerCase();
-            const [type, typeLabel] = ownershipToType[own] || ['private', 'Private'];
-            const totalLocs = Number(c.totalLocs) || (c.locations || []).length || 0;
-            const seLocs = Number(c.seLocs) || 0;
-            // Placeholder rev/emp until real financials are wired
-            const rev = Math.max(0.5, totalLocs * 1.4);
-            const emp = Math.max(5, Math.round(totalLocs * 6.5));
-            return {
-              id: c.id || ('co_' + i),
-              name: c.name,
-              parent: c.parentGroup || c.ownerDetail || (own === 'public' ? 'Public' : 'Independent'),
-              type, typeLabel,
-              locs: totalLocs,
-              prox: null, county: null, total: null,
-              mkt: Math.round((totalLocs / 12.47) * 10) / 10,
-              rev: Math.round(rev * 10) / 10,
-              emp,
-              states: Array.isArray(c.states) && c.states.length ? c.states : (c.hqState ? [c.hqState] : ['—']),
-              rank: demo.length + i + 1,
-              isPlatform: false,
-              hqCity: c.hqCity, hqState: c.hqState, website: c.website,
-              locations: c.locations || [],
-            };
-          });
-        window.MOCK_COMPANIES = demo.concat(adapted);
-        window.__COMPANY_COUNT__ = window.MOCK_COMPANIES.length;
+      }
+
+      try {
+        const [companiesRaw, countiesRaw] = await Promise.all([
+          fetch('data/companies.json', { cache: 'no-cache' }).then(r => {
+            if (!r.ok) throw new Error('companies.json ' + r.status);
+            return r.json();
+          }),
+          fetch('data/counties_national.json', { cache: 'no-cache' }).then(r => {
+            if (!r.ok) throw new Error('counties_national.json ' + r.status);
+            return r.json();
+          }).catch(err => { console.warn('[PI] counties load failed', err); return []; }),
+        ]);
+
+        window.REAL_COMPANIES = companiesRaw;
+        window.COUNTY_METRICS = countiesRaw;
+
+        // Build the unified company list:
+        // 1) Each demo short-id slot gets HYDRATED with the matching real record's fields.
+        //    The demo entry's short id (ll, blo, …) is preserved so News + map ID
+        //    references continue to resolve.
+        // 2) Every other real company is appended.
+        const realById = Object.fromEntries(companiesRaw.map(c => [c.id, c]));
+        const usedReal = new Set();
+        const demoSeed = (window.MOCK_COMPANIES || []);
+        const hydrated = demoSeed.map(d => {
+          const realId = DEMO_TO_REAL[d.id];
+          const r = realId ? realById[realId] : null;
+          if (!r) return d; // keep mock if no real match (shouldn't happen)
+          usedReal.add(realId);
+          return adapt(r, { id: d.id });
+        });
+        const tail = companiesRaw
+          .filter(c => !usedReal.has(c.id))
+          .map(c => adapt(c));
+
+        let companies = hydrated.concat(tail);
+
+        // Attach proximity, county overlap, market share, fit breakdown, fit score.
+        if (window.PI && typeof window.PI.attachScores === 'function') {
+          window.PI.attachScores(companies, countiesRaw, 'll');
+        } else {
+          console.warn('[PI] scoring engine missing — fit scores unavailable');
+        }
+
+        window.MOCK_COMPANIES = companies;
+        window.__COMPANY_COUNT__ = companies.length;
+        window.__DEMO_TO_REAL__ = DEMO_TO_REAL;
+        console.info('[PI] loaded', companies.length, 'companies,', (countiesRaw||[]).length, 'counties');
       } catch (err) {
-        console.warn('[PI] real-data load failed; falling back to demo data', err);
+        console.error('[PI] data load failed; falling back to demo data only', err);
         window.REAL_COMPANIES = [];
       }
     })();
