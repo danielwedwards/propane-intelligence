@@ -2152,6 +2152,105 @@ function showRowPreview(e,companyId){
 function hideRowPreview(){clearTimeout(rowHoverTimer);if(rowPreviewEl)rowPreviewEl.classList.remove('visible')}
 
 // === PROFILE PANEL ===
+/* === v4.5.0: Strategic Fit Breakdown — 6-bucket weighted score ===
+ * Ports v3 archive's _FIT_BUCKETS + computeFitScore math directly into the
+ * profile panel, computed on-the-fly from existing company fields. */
+const _FIT_BUCKETS=[
+  {key:'geo',    label:'Geography',  weight:25,note:'Distance to anchor + county overlap'},
+  {key:'size',   label:'Size',       weight:20,note:'Locations vs anchor (log-scaled)'},
+  {key:'ops',    label:'Operations', weight:15,note:'Throughput per location (gallons)'},
+  {key:'culture',label:'Culture',    weight:15,note:'Ownership type compatibility'},
+  {key:'fin',    label:'Financial',  weight:15,note:'Revenue per location'},
+  {key:'integ',  label:'Integration',weight:10,note:'State count (fewer is easier)'}
+];
+const _FIT_CULTURE={family:90,private:75,coop:65,ll:80,pe:35,public:25};
+function _fitBucket(val,lo,hi){
+  if(val==null||!isFinite(val))return 50;
+  if(val<=lo)return 0;
+  if(val>=hi)return 100;
+  return Math.round(((val-lo)/(hi-lo))*100);
+}
+function computeFitBreakdown(c){
+  if(!c)return null;
+  let ll=DATA.find(x=>x.id===LL_ID);
+  // Geo: 0 mi → 100, 800 mi → 0; blended with county overlap pct
+  let geo=50;
+  let ps=proxScores[c.id];
+  // Existing proxScores are already an inverse-distance proxy. Re-derive
+  // a 0-100 from raw mean distance if available, else use proxScores raw.
+  // (proxScores is computed from haversine distances, so use it as a proxy:
+  //  high score → close → high geo bucket.)
+  if(c.id===LL_ID){geo=100}
+  else if(ps!=null){geo=Math.max(0,Math.min(100,ps))}
+  // Blend in county overlap: countyScores already 0-100ish, weight 30%
+  let cys=countyScores[c.id];
+  if(cys!=null)geo=Math.round(0.7*geo+0.3*Math.min(100,cys));
+  // Size: log ratio vs LL
+  let anchorLocs=ll?ll.locations.length||1:1;
+  let cLocs=c.locations.length||1;
+  let ratio=cLocs/anchorLocs;
+  let size=Math.round(Math.max(0,Math.min(100,60+30*Math.log10(Math.max(0.05,ratio)))));
+  // Ops: gallons per location, bucketed 200k-2M
+  let gpl=(c.estAnnualGallons||0)*1e6/cLocs; // estAnnualGallons stored in millions
+  let ops=_fitBucket(gpl,200000,2000000);
+  // Culture
+  let culture=_FIT_CULTURE[c.ownership]!=null?_FIT_CULTURE[c.ownership]:50;
+  // Financial: revenue per location, bucketed $0.3M-$4.5M
+  let rpl=(c.estRevenue||0)/cLocs;
+  let fin=_fitBucket(rpl,0.3,4.5);
+  // Integration: 110 - 6×states, capped 0-100
+  let states=(c.states||[]).length||1;
+  let integ=Math.round(Math.max(0,Math.min(100,110-states*6)));
+  let bd={geo,size,ops,culture,fin,integ};
+  // Weighted composite
+  let weights=_FIT_BUCKETS.reduce((a,b)=>(a[b.key]=b.weight,a),{});
+  let total=_FIT_BUCKETS.reduce((s,b)=>s+weights[b.key],0);
+  let composite=Math.round(_FIT_BUCKETS.reduce((s,b)=>s+bd[b.key]*weights[b.key],0)/total);
+  return Object.assign(bd,{composite});
+}
+function _fitToneColor(v){return v>75?'var(--green)':v>55?'var(--brand)':v>35?'var(--amber)':'var(--text-tertiary)'}
+function renderFitBreakdownHTML(c){
+  let bd=computeFitBreakdown(c);
+  if(!bd)return'';
+  let rowsHtml=_FIT_BUCKETS.map(b=>{
+    let v=bd[b.key];let contrib=(v*b.weight)/100;
+    let tone=_fitToneColor(v);
+    return '<div style="display:grid;grid-template-columns:90px 1fr 36px 56px;align-items:center;gap:10px;padding:5px 0">'+
+      '<div style="font-size:12px;color:var(--text-secondary)" title="'+esc(b.note)+'">'+b.label+' <span style="color:var(--text-tertiary);margin-left:3px;font-size:10px">'+b.weight+'%</span></div>'+
+      '<div style="height:6px;background:var(--border-subtle);border-radius:3px;overflow:hidden"><div style="width:'+v+'%;height:100%;background:'+tone+';border-radius:3px;transition:width .3s"></div></div>'+
+      '<div style="font-size:12px;font-weight:600;color:var(--text-primary);font-family:var(--font-mono);text-align:right">'+v+'</div>'+
+      '<div style="font-size:10px;color:var(--text-tertiary);font-family:var(--font-mono);text-align:right" title="Weighted contribution: raw × weight%">+'+contrib.toFixed(1)+'</div>'+
+    '</div>';
+  }).join('');
+  let inputsHtml='';
+  let ll=DATA.find(x=>x.id===LL_ID);
+  let inputs=[];
+  if(c.id!==LL_ID&&proxScores[c.id]!=null)inputs.push(['Proximity score',(proxScores[c.id]||0)+' / 100']);
+  if(countyScores[c.id]!=null)inputs.push(['County overlap',(countyScores[c.id]||0)+' / 100']);
+  let cLocs=c.locations.length||1;
+  if(ll)inputs.push(['Locations vs LL',(ll.locations.length>0?(cLocs/ll.locations.length).toFixed(2)+'\u00D7':'\u2014')]);
+  if(c.estAnnualGallons)inputs.push(['Gallons / location',Math.round(c.estAnnualGallons*1e6/cLocs).toLocaleString()]);
+  if(c.estRevenue)inputs.push(['Revenue / location','$'+(c.estRevenue/cLocs).toFixed(2)+'M']);
+  if(c.states&&c.states.length)inputs.push(['State footprint',c.states.length+' state'+(c.states.length>1?'s':'')]);
+  if(c.estRevenue!=null&&c.employeeCount&&c.employeeCount>0)inputs.push(['Revenue / employee','$'+(c.estRevenue*1e6/c.employeeCount/1000).toFixed(0)+'k']);
+  if(inputs.length){
+    inputsHtml='<div style="margin-top:12px;padding:10px 12px;background:var(--light-bg);border:1px solid var(--border-subtle);border-radius:6px">'+
+      '<div style="font-size:10px;font-weight:600;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.4px;margin-bottom:6px">Score inputs</div>'+
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 14px">'+
+      inputs.map(([k,v])=>'<div style="display:flex;justify-content:space-between;font-size:11px"><span style="color:var(--text-secondary)">'+esc(k)+'</span><span style="font-family:var(--font-mono);color:var(--text-primary);font-weight:600">'+esc(v)+'</span></div>').join('')+
+    '</div></div>';
+  }
+  let toneTotal=_fitToneColor(bd.composite);
+  return '<div class="ps"><h3>Strategic Fit Breakdown</h3>'+
+    '<div style="display:flex;align-items:baseline;gap:10px;margin-bottom:10px">'+
+      '<div style="font-size:30px;font-weight:600;color:'+toneTotal+';letter-spacing:-0.4px;font-family:var(--font-mono)">'+bd.composite+'</div>'+
+      '<div style="font-size:11px;color:var(--text-secondary)">composite fit &middot; 0&ndash;100 &middot; Lampton-Love anchored</div>'+
+    '</div>'+
+    rowsHtml+
+    inputsHtml+
+  '</div>';
+}
+
 function op(id){try{
   let c=DATA.find(x=>x.id===id);if(!c)return;
   document.querySelectorAll('.lt tbody tr').forEach(tr=>tr.classList.toggle('sel',tr.dataset.id===id));
@@ -2256,6 +2355,9 @@ function op(id){try{
     '<div class="pst" style="cursor:pointer" onmouseenter="showScoreTip(event,\''+c.id+'\',\'county\')" onmouseleave="hideScoreTip()" onclick="showScoreTip(event,\''+c.id+'\',\'county\')"><div class="l">County Market</div><div class="v '+scoreCls(cys)+'">'+cys+'</div><div class="n">Market quality</div></div>'+
     '<div class="pst" style="cursor:pointer" onmouseenter="showScoreTip(event,\''+c.id+'\',\'total\')" onmouseleave="hideScoreTip()" onclick="showScoreTip(event,\''+c.id+'\',\'total\')"><div class="l">Total Score</div><div class="v '+scoreCls(ts)+'" style="font-size:20px">'+ts+'</div><div class="n">Combined rank</div></div>'+
     '</div></div>'+
+
+    // === v4.5.0: Strategic Fit Breakdown — 6-bucket weighted score ===
+    renderFitBreakdownHTML(c)+
 
     // === Market Presence ===
     '<div class="ps"><h3>Market Presence</h3><div class="pg">'+
