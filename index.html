@@ -845,6 +845,47 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
 [data-theme="dark"] .scn-card .actions button{background:#1a2534;color:#a0aec0;border-color:#2a3a4e}
 [data-theme="dark"] .scn-empty{background:#16202e;border-color:#2a3a4e}
 [data-theme="dark"] .scn-head .actions button{background:#16202e;color:#a0aec0;border-color:#2a3a4e}
+/* === v4.12.0: Polish — focus-visible, mobile, loading skeletons === */
+.section-btn:focus-visible,.sub-btn:focus-visible,.ov-pill:focus-visible,.cmp-controls button:focus-visible,.cmp-controls select:focus-visible,.scn-head .actions button:focus-visible,.scn-card .actions button:focus-visible,.scn-save .savebtn:focus-visible,.cmp-h-card .x:focus-visible,.brief-head .actions button:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+/* Section-nav horizontal scroll on small screens */
+.section-nav{scrollbar-width:thin}
+@media (max-width:900px){
+  .section-nav{overflow-x:auto;overflow-y:hidden;flex-wrap:nowrap;scrollbar-width:thin;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+  .section-nav::-webkit-scrollbar{height:3px}
+  .section-nav .section-btn{flex-shrink:0;white-space:nowrap}
+}
+@media (max-width:760px){
+  /* Compare: wrap header controls, allow horizontal scroll on table */
+  .cmp-head .cmp-controls{width:100%}
+  .cmp-controls select{min-width:0;flex:1}
+  .cmp-table{overflow-x:auto;display:block}
+  .cmp-table .cmp-row,.cmp-table .cmp-row.head{display:grid}
+  /* Scenarios: tighter header */
+  .scn-head .actions{width:100%}
+  .scn-head .actions button{flex:1}
+  .scn-save .row{grid-template-columns:1fr;gap:8px}
+  .scn-save button.savebtn{width:100%}
+  .scn-grid{grid-template-columns:1fr}
+  /* Overlap matrix: horizontal scroll wrapper */
+  .ov-card{overflow-x:auto}
+  .ov-insights{grid-template-columns:1fr}
+  /* Network: hide outer ring controls on tiny screens */
+  .net-head .ctrls{width:100%}
+  .net-head .ctrls input[type=range]{width:80px}
+  .net-inspect{width:auto;max-width:calc(100% - 32px)}
+  /* Brief: stack two-column cards */
+  .brief-grid2{grid-template-columns:1fr}
+  .brief-kpis{grid-template-columns:repeat(2,1fr)}
+  .brief-head{flex-direction:column;align-items:flex-start}
+  /* Brief map shrinks naturally via SVG max-width */
+  /* Filter-bar pf-bar already handled */
+}
+/* Loading skeleton */
+.skl{display:inline-block;background:linear-gradient(90deg,var(--border-subtle) 0%,var(--light-bg) 50%,var(--border-subtle) 100%);background-size:200% 100%;animation:sklShimmer 1.4s linear infinite;border-radius:4px;color:transparent}
+@keyframes sklShimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.skl-line{display:block;height:11px;margin:6px 0}
+.skl-card{padding:10px 12px;border:1px solid var(--border-subtle);border-radius:var(--radius-md);background:var(--light-bg);margin-bottom:8px}
+[data-theme="dark"] .skl{background:linear-gradient(90deg,#1a2534 0%,#0f1722 50%,#1a2534 100%);background-size:200% 100%}
 /* === v4.7.0: Overlap section (pairwise territory heatmap) === */
 .overlap-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
 .main.view-overlap{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
@@ -1206,8 +1247,9 @@ Continue with Microsoft
 <li><kbd>Space</kbd> &mdash; Toggle platform add/remove for selected row</li>
 <li><kbd>?</kbd> &mdash; Toggle this help panel</li>
 <li><kbd>/</kbd> &mdash; Focus search bar</li>
-<li><kbd>M</kbd> &mdash; Market Map &nbsp; <kbd>C</kbd> &mdash; Companies &nbsp; <kbd>I</kbd> &mdash; Intelligence &nbsp; <kbd>P</kbd> &mdash; Pro-Forma &nbsp; <kbd>A</kbd> &mdash; Analytics</li>
-<li><kbd>T</kbd> &mdash; Companies &gt; Table only &nbsp; <kbd>B</kbd> &mdash; Companies &gt; Table + Map</li>
+<li><kbd>M</kbd> Market Map &nbsp; <kbd>C</kbd> Companies &nbsp; <kbd>I</kbd> Intelligence &nbsp; <kbd>P</kbd> Pro-Forma &nbsp; <kbd>A</kbd> Analytics</li>
+<li><kbd>R</kbd> Brief (Rollup) &nbsp; <kbd>O</kbd> Overlap &nbsp; <kbd>N</kbd> Network &nbsp; <kbd>X</kbd> Compare &nbsp; <kbd>S</kbd> Scenarios</li>
+<li><kbd>T</kbd> Companies &gt; Table only &nbsp; <kbd>B</kbd> Companies &gt; Table + Map</li>
 <li><kbd>Esc</kbd> &mdash; Close panels</li>
 </ul>
 </div>
@@ -1245,7 +1287,7 @@ Continue with Microsoft
 <p style="font-size:10px;color:var(--slate);margin-top:4px">Revenue and gallon figures for private companies are estimates unless noted. Last research update: April 2026.</p>
 </div>
 </div>
-<div class="toast" id="toast"></div>
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 <!-- SPRINT 5: Score tooltip + row preview -->
 <div class="score-tip" id="scoreTip"></div>
 <div class="row-preview" id="rowPreview"></div>
@@ -1545,19 +1587,19 @@ Continue with Microsoft
 <div class="sub">Pairwise overlap of company footprints, computed from shared 30-mile geographic cells. Lampton-Love is always pinned to the matrix. Click any name to open that company.</div>
 </div>
 <div class="ov-controls">
-<div class="ov-ctrl-group"><span class="lbl">Metric</span>
-<button class="ov-pill active" data-metric="jaccard" onclick="setOverlapMetric('jaccard')" title="Shared cells / union — symmetric">Jaccard</button>
-<button class="ov-pill" data-metric="rowPct" onclick="setOverlapMetric('rowPct')" title="Shared cells / row company total — directional">Row %</button>
+<div class="ov-ctrl-group" role="group" aria-label="Overlap metric"><span class="lbl">Metric</span>
+<button class="ov-pill active" data-metric="jaccard" aria-pressed="true" onclick="setOverlapMetric('jaccard')" title="Shared cells / union — symmetric">Jaccard</button>
+<button class="ov-pill" data-metric="rowPct" aria-pressed="false" onclick="setOverlapMetric('rowPct')" title="Shared cells / row company total — directional">Row %</button>
 </div>
-<div class="ov-ctrl-group"><span class="lbl">Top</span>
-<button class="ov-pill" data-size="8" onclick="setOverlapSize(8)">8</button>
-<button class="ov-pill active" data-size="10" onclick="setOverlapSize(10)">10</button>
-<button class="ov-pill" data-size="14" onclick="setOverlapSize(14)">14</button>
+<div class="ov-ctrl-group" role="group" aria-label="Top N companies"><span class="lbl">Top</span>
+<button class="ov-pill" data-size="8" aria-pressed="false" onclick="setOverlapSize(8)">8</button>
+<button class="ov-pill active" data-size="10" aria-pressed="true" onclick="setOverlapSize(10)">10</button>
+<button class="ov-pill" data-size="14" aria-pressed="false" onclick="setOverlapSize(14)">14</button>
 </div>
-<div class="ov-ctrl-group"><span class="lbl">Cell</span>
-<button class="ov-pill" data-cell="0.25" onclick="setOverlapCell(0.25)" title="~17 mile cells (finer)">Fine</button>
-<button class="ov-pill active" data-cell="0.5" onclick="setOverlapCell(0.5)" title="~35 mile cells (~county scale)">Std</button>
-<button class="ov-pill" data-cell="1" onclick="setOverlapCell(1)" title="~70 mile cells (regional)">Coarse</button>
+<div class="ov-ctrl-group" role="group" aria-label="Cell granularity"><span class="lbl">Cell</span>
+<button class="ov-pill" data-cell="0.25" aria-pressed="false" onclick="setOverlapCell(0.25)" title="~17 mile cells (finer)">Fine</button>
+<button class="ov-pill active" data-cell="0.5" aria-pressed="true" onclick="setOverlapCell(0.5)" title="~35 mile cells (~county scale)">Std</button>
+<button class="ov-pill" data-cell="1" aria-pressed="false" onclick="setOverlapCell(1)" title="~70 mile cells (regional)">Coarse</button>
 </div>
 </div>
 </div>
@@ -3246,7 +3288,19 @@ function renderBrief(){
   let topItems=pickList.slice(0,4);
   intelHtml+='<span class="meta">'+(relevant.length>0?'PLATFORM-RELEVANT':'INDUSTRY')+' &middot; '+topItems.length+' ITEM'+(topItems.length===1?'':'S')+'</span></h2>';
   if(!INTEL_NEWS){
-    intelHtml+='<div class="brief-empty" style="padding:18px">Loading recent intelligence&hellip;</div>';
+    intelHtml+='<div class="brief-intel-list" aria-busy="true" aria-label="Loading recent intelligence">';
+    for(let i=0;i<4;i++){
+      intelHtml+='<div class="brief-intel-item skl-card" style="cursor:default">'+
+        '<div class="top" style="gap:8px">'+
+          '<span class="skl skl-line" style="width:80px;height:11px"></span>'+
+          '<span class="skl skl-line" style="width:42px;height:11px"></span>'+
+          '<span class="skl skl-line" style="width:60px;height:14px;border-radius:8px"></span>'+
+          '<span class="skl skl-line" style="width:54px;height:11px;margin-left:auto"></span>'+
+        '</div>'+
+        '<div class="hl"><span class="skl skl-line" style="width:'+(72+(i%3)*8)+'%;height:14px"></span></div>'+
+      '</div>';
+    }
+    intelHtml+='</div>';
   } else if(topItems.length===0){
     intelHtml+='<div class="brief-empty" style="padding:18px">No recent intelligence available.</div>';
   } else {
@@ -3303,17 +3357,17 @@ function _ovBuildCellSets(cell){
 }
 function setOverlapMetric(m){
   overlapMetric=(m==='rowPct')?'rowPct':'jaccard';
-  document.querySelectorAll('#overlapWrap .ov-pill[data-metric]').forEach(b=>b.classList.toggle('active',b.dataset.metric===overlapMetric));
+  document.querySelectorAll('#overlapWrap .ov-pill[data-metric]').forEach(b=>{let on=b.dataset.metric===overlapMetric;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false')});
   renderOverlap();
 }
 function setOverlapSize(n){
   overlapSize=n;
-  document.querySelectorAll('#overlapWrap .ov-pill[data-size]').forEach(b=>b.classList.toggle('active',+b.dataset.size===n));
+  document.querySelectorAll('#overlapWrap .ov-pill[data-size]').forEach(b=>{let on=+b.dataset.size===n;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false')});
   renderOverlap();
 }
 function setOverlapCell(deg){
   overlapCell=deg;
-  document.querySelectorAll('#overlapWrap .ov-pill[data-cell]').forEach(b=>b.classList.toggle('active',+b.dataset.cell===deg));
+  document.querySelectorAll('#overlapWrap .ov-pill[data-cell]').forEach(b=>{let on=+b.dataset.cell===deg;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false')});
   renderOverlap();
 }
 function renderOverlap(){
@@ -3744,7 +3798,7 @@ function renderCompare(){
             '<div class="n" title="'+_cmpEsc(c.name)+'">'+_cmpEsc(c.name)+'</div>'+
             '<div class="pg">'+_cmpEsc(c.parentGroup&&c.parentGroup!==c.name?c.parentGroup:'Independent')+'</div>'+
           '</div>'+
-          '<button class="x" onclick="removeFromCompare(\''+_cmpEsc(c.id)+'\')" title="Remove from compare">&times;</button>'+
+          '<button class="x" onclick="removeFromCompare(\''+_cmpEsc(c.id)+'\')" title="Remove from compare" aria-label="Remove '+_cmpEsc(c.name)+' from compare">&times;</button>'+
         '</div>'+
         '<div class="badges">'+
           (c.id===LL_ID?'<span style="background:rgba(124,92,252,0.12);color:#7C5CFC">ANCHOR</span>':'')+
@@ -4052,13 +4106,13 @@ function renderScenarios(){
         (confirmingDel?
           '<div class="scn-confirm"><span>Delete this scenario?</span><button class="yes" onclick="scnConfirmDelete(\''+s.id+'\')">Delete</button><button class="no" onclick="scnCancelDelete()">Cancel</button></div>':
           '<div class="actions">'+
-            '<button class="primary" onclick="scnLoad(\''+s.id+'\')" title="Load this scenario into the platform">&#9166; Load</button>'+
-            '<button onclick="scnUpdateToCurrent(\''+s.id+'\')" title="Overwrite scenario with current platform">&#8635; Update</button>'+
-            '<button onclick="scnEdit(\''+s.id+'\')" title="Rename / edit description">&#9998; Edit</button>'+
-            '<button class="iconbtn" onclick="scnTogglePin(\''+s.id+'\')" title="'+(s.pinned?'Unpin':'Pin to top')+'">'+(s.pinned?'&#9733;':'&#9734;')+'</button>'+
-            '<button class="iconbtn" onclick="scnDuplicate(\''+s.id+'\')" title="Duplicate">&#10063;</button>'+
-            '<button class="iconbtn" onclick="scnExportOne(\''+s.id+'\')" title="Export as JSON">&#8595;</button>'+
-            '<button class="iconbtn danger" onclick="scnPromptDelete(\''+s.id+'\')" title="Delete">&#128465;</button>'+
+            '<button class="primary" onclick="scnLoad(\''+s.id+'\')" title="Load this scenario into the platform" aria-label="Load scenario">&#9166; Load</button>'+
+            '<button onclick="scnUpdateToCurrent(\''+s.id+'\')" title="Overwrite scenario with current platform" aria-label="Update scenario to current">&#8635; Update</button>'+
+            '<button onclick="scnEdit(\''+s.id+'\')" title="Rename / edit description" aria-label="Edit scenario">&#9998; Edit</button>'+
+            '<button class="iconbtn" onclick="scnTogglePin(\''+s.id+'\')" title="'+(s.pinned?'Unpin':'Pin to top')+'" aria-label="'+(s.pinned?'Unpin scenario':'Pin scenario to top')+'" aria-pressed="'+(s.pinned?'true':'false')+'">'+(s.pinned?'&#9733;':'&#9734;')+'</button>'+
+            '<button class="iconbtn" onclick="scnDuplicate(\''+s.id+'\')" title="Duplicate" aria-label="Duplicate scenario">&#10063;</button>'+
+            '<button class="iconbtn" onclick="scnExportOne(\''+s.id+'\')" title="Export as JSON" aria-label="Export scenario as JSON">&#8595;</button>'+
+            '<button class="iconbtn danger" onclick="scnPromptDelete(\''+s.id+'\')" title="Delete" aria-label="Delete scenario">&#128465;</button>'+
           '</div>')+
       '</div>';
     });
