@@ -56,6 +56,20 @@ function filterCompanies(companies, filters, search) {
 
 // ------------------------------------------------------------------ component
 
+// County choropleth modes:
+//   'off'      – no county layer
+//   'overlap'  – LL counties + competitor overlap (legacy v1 behaviour)
+//   'gallons'  – annual propane consumption (counties_national.json `g`)
+//   'customers'– residential propane households (counties_national.json `h`)
+//   'percapita'– % of households using propane (counties_national.json `u`)
+const COUNTY_MODE_LABELS = {
+  off: 'Off',
+  overlap: 'Overlap',
+  gallons: 'Total consumption',
+  customers: 'Residential customers',
+  percapita: 'Per-capita use',
+};
+
 function LeafletMap({
   companies = [],
   filters = {},
@@ -63,9 +77,12 @@ function LeafletMap({
   selectedId = null,
   colorMode = 'ownership',
   clusterOn = false,
-  countyOn = false,
+  countyOn = false,                 // legacy boolean — kept for back-compat
+  countyMode,                       // new: see COUNTY_MODE_LABELS
   onSelect,
 }) {
+  // Back-compat: if old callers pass countyOn=true and no mode, default to overlap.
+  const effectiveCountyMode = countyMode || (countyOn ? 'overlap' : 'off');
   const containerRef = React.useRef(null);
   const mapRef = React.useRef(null);
   const layerRef = React.useRef(null);          // currently mounted L.layerGroup or markerClusterGroup
@@ -284,13 +301,13 @@ function LeafletMap({
     }
   }
 
-  // ---------- 4) county overlap choropleth (lazy) -----------------------------
+  // ---------- 4) county choropleth (lazy, 5 modes) ----------------------------
   React.useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
 
-    // Tear down on toggle-off
-    if (!countyOn) {
+    // Tear down on off
+    if (effectiveCountyMode === 'off') {
       if (countyLayerRef.current) {
         try { map.removeLayer(countyLayerRef.current); } catch (e) {}
         countyLayerRef.current = null;
@@ -298,7 +315,6 @@ function LeafletMap({
       return;
     }
 
-    // Build (or rebuild) the layer
     let cancelled = false;
     (async () => {
       let geo = countyGeoRef.current;
@@ -315,64 +331,143 @@ function LeafletMap({
       }
       if (cancelled) return;
 
-      // Build a per-FIPS overlap count: how many non-anchor operators share each LL county.
-      const counts = new Map();
-      let maxCount = 0;
-      for (const c of companies) {
-        if (c.id === LL_ID) continue;
-        const overlap = c.countyShared;
-        if (!overlap || !overlap.sharedCounties) continue;
-        for (const f of overlap.sharedCounties) {
-          const next = (counts.get(f) || 0) + 1;
-          counts.set(f, next);
-          if (next > maxCount) maxCount = next;
-        }
-      }
-
-      // Anchor (LL) county set — its sharedCounties row from computeCountyOverlap
-      // is populated with all LL-owned FIPS (see scoring.js line 149).
+      // ----------------- mode-specific styling -----------------
       const ll = companies.find(c => c.id === LL_ID);
       const llFips = new Set((ll && ll.countyShared && ll.countyShared.sharedCounties) || []);
+      let styleFn, getValue, formatValue, valueLabel;
 
-      // Indigo ramp tied to overlap intensity
-      function shade(n) {
-        if (!n) return null;
-        const t = Math.min(1, n / Math.max(4, maxCount));
-        const a = 0.18 + t * 0.45;          // 0.18 → 0.63
-        return { fillColor: '#635BFF', fillOpacity: a, weight: 0.4, color: '#635BFF', opacity: 0.6 };
+      if (effectiveCountyMode === 'overlap') {
+        // Per-FIPS overlap count: how many non-anchor operators share each LL county.
+        const counts = new Map();
+        let maxCount = 0;
+        for (const c of companies) {
+          if (c.id === LL_ID) continue;
+          const overlap = c.countyShared;
+          if (!overlap || !overlap.sharedCounties) continue;
+          for (const f of overlap.sharedCounties) {
+            const next = (counts.get(f) || 0) + 1;
+            counts.set(f, next);
+            if (next > maxCount) maxCount = next;
+          }
+        }
+        getValue = (fips) => counts.get(fips) || 0;
+        formatValue = (n) => n + ' competitor' + (n === 1 ? '' : 's');
+        valueLabel = 'competitors';
+        styleFn = (f) => {
+          const fips = f.id || (f.properties && (f.properties.GEOID || f.properties.fips));
+          if (!fips) return { fillOpacity: 0, weight: 0 };
+          if (llFips.has(fips)) return { fillColor: '#7C5CFC', fillOpacity: 0.55, weight: 0.6, color: '#4B45B8', opacity: 0.9 };
+          const n = counts.get(fips);
+          if (!n) return { fillColor: 'transparent', fillOpacity: 0, weight: 0.25, color: '#E3E8EE', opacity: 0.4 };
+          const t = Math.min(1, n / Math.max(4, maxCount));
+          return { fillColor: '#635BFF', fillOpacity: 0.18 + t * 0.45, weight: 0.4, color: '#635BFF', opacity: 0.6 };
+        };
+      } else {
+        // Metric mode (gallons / customers / percapita) — drive colour from
+        // counties_national.json. Loaded into window.COUNTY_METRICS at boot.
+        const metrics = window.COUNTY_METRICS || [];
+        const metricKey = effectiveCountyMode === 'gallons' ? 'g'
+                        : effectiveCountyMode === 'customers' ? 'h'
+                        : 'u';
+        const valueByFips = new Map();
+        let maxV = 0;
+        for (const m of metrics) {
+          const v = +m[metricKey] || 0;
+          if (!m.fips) continue;
+          valueByFips.set(m.fips, v);
+          if (v > maxV) maxV = v;
+        }
+        // Use log-scaled normalization for gallons/customers (long-tailed) and
+        // linear for percapita (already a rate 0-100).
+        const useLog = effectiveCountyMode !== 'percapita';
+        const logMax = useLog ? Math.log(1 + maxV) : maxV;
+        const norm = (v) => {
+          if (!v || v <= 0) return 0;
+          if (useLog) return Math.log(1 + v) / logMax;
+          return Math.min(1, v / Math.max(1, logMax));
+        };
+        // Indigo→teal ramp: low = pale, high = saturated.
+        const RAMP = ['#EEF0FF', '#C9CBFF', '#A1A6FF', '#7B7FFF', '#635BFF', '#4B45B8'];
+        function shade(t) {
+          if (t <= 0) return RAMP[0];
+          const idx = Math.min(RAMP.length - 1, Math.floor(t * (RAMP.length - 1) + 0.0001));
+          return RAMP[idx];
+        }
+        getValue = (fips) => valueByFips.get(fips) || 0;
+        if (effectiveCountyMode === 'gallons') {
+          formatValue = (v) => v >= 1e6 ? (v / 1e6).toFixed(1) + 'M gal' : v >= 1e3 ? (v / 1e3).toFixed(0) + 'k gal' : v.toLocaleString() + ' gal';
+          valueLabel = 'annual gallons';
+        } else if (effectiveCountyMode === 'customers') {
+          formatValue = (v) => v >= 1e6 ? (v / 1e6).toFixed(2) + 'M' : v >= 1e3 ? (v / 1e3).toFixed(1) + 'k' : v.toLocaleString();
+          valueLabel = 'residential customers';
+        } else {
+          formatValue = (v) => v.toFixed(1) + '%';
+          valueLabel = 'pct using propane';
+        }
+        styleFn = (f) => {
+          const fips = f.id || (f.properties && (f.properties.GEOID || f.properties.fips));
+          if (!fips) return { fillOpacity: 0, weight: 0 };
+          const v = valueByFips.get(fips);
+          // LL counties always sit on top with their own colour.
+          if (llFips.has(fips)) return { fillColor: '#FFD100', fillOpacity: 0.55, weight: 0.7, color: '#7A6300', opacity: 0.9 };
+          if (!v) return { fillColor: '#F7FAFC', fillOpacity: 0.35, weight: 0.18, color: '#E3E8EE', opacity: 0.4 };
+          const t = norm(v);
+          return { fillColor: shade(t), fillOpacity: 0.22 + t * 0.55, weight: 0.25, color: '#C9CBFF', opacity: 0.5 };
+        };
       }
 
       const layer = L.geoJSON(geo, {
-        style: (f) => {
-          const fips = f.id || (f.properties && (f.properties.GEOID || f.properties.fips));
-          if (!fips) return { fillOpacity: 0, weight: 0 };
-          const isLLOwn = llFips.has(fips);
-          if (isLLOwn) {
-            return { fillColor: '#7C5CFC', fillOpacity: 0.55, weight: 0.6, color: '#4B45B8', opacity: 0.9 };
-          }
-          const s = shade(counts.get(fips));
-          if (s) return s;
-          return { fillColor: 'transparent', fillOpacity: 0, weight: 0.25, color: '#E3E8EE', opacity: 0.4 };
+        style: styleFn,
+        interactive: effectiveCountyMode !== 'off',
+        // Force SVG renderer (the map default is Canvas via preferCanvas:true,
+        // which doesn't generate <path> DOM elements and therefore can't host
+        // tooltips/hover. SVG handles ~3k polygons fine and gives us proper
+        // event delegation per county.)
+        renderer: L.svg({ padding: 0.5 }),
+        onEachFeature: (feature, lyr) => {
+          const fips = feature.id || (feature.properties && (feature.properties.GEOID || feature.properties.fips));
+          if (!fips) return;
+          const v = getValue(fips);
+          const name = (feature.properties && (feature.properties.NAME || feature.properties.name)) || ('FIPS ' + fips);
+          const isLL = llFips.has(fips);
+          const tip =
+            '<div style="font:600 12px/1.2 Inter,system-ui,sans-serif;color:#0A2540">' +
+              name +
+            '</div>' +
+            (isLL
+              ? '<div style="font:500 10px/1.3 \'IBM Plex Mono\',monospace;color:#7A6300;margin-top:3px">Lampton Love county</div>'
+              : '') +
+            '<div style="font:500 11px/1.3 \'IBM Plex Mono\',monospace;color:#425466;margin-top:3px">' +
+              (v ? formatValue(v) : 'No data') +
+            '</div>' +
+            '<div style="font:500 9px/1 \'IBM Plex Mono\',monospace;color:#8B97A8;margin-top:2px;text-transform:uppercase;letter-spacing:.04em">' +
+              valueLabel +
+            '</div>';
+          lyr.bindTooltip(tip, { sticky: true, className: 'pi-tip', opacity: 0.97, direction: 'top' });
+          // Hover lift
+          lyr.on('mouseover', () => { try { lyr.setStyle({ weight: 1.4, color: '#0A2540', opacity: 0.9 }); } catch(e){} });
+          lyr.on('mouseout',  () => { try { layer.resetStyle(lyr); } catch(e){} });
         },
-        interactive: false,
       });
 
       if (cancelled) return;
-      // Insert beneath markers
       if (countyLayerRef.current) {
         try { map.removeLayer(countyLayerRef.current); } catch (e) {}
       }
       layer.addTo(map);
       countyLayerRef.current = layer;
-      // Push markers back on top
+      // Push markers + state labels back on top
       if (layerRef.current) {
         try { map.removeLayer(layerRef.current); layerRef.current.addTo(map); } catch (e) {}
+      }
+      if (stateLabelsRef.current) {
+        try { map.removeLayer(stateLabelsRef.current); stateLabelsRef.current.addTo(map); } catch (e) {}
       }
     })();
 
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [countyOn, companies]);
+  }, [effectiveCountyMode, companies]);
 
   // ---------- 5) selection: pan to selected --------------------------------
   React.useEffect(() => {
@@ -400,3 +495,4 @@ window.LeafletMap = LeafletMap;
 window.PI_OC = OC;
 window.PI_LL_COLOR = LL_COLOR;
 window.PI_LL_ID = LL_ID;
+window.PI_COUNTY_MODE_LABELS = COUNTY_MODE_LABELS;

@@ -25,7 +25,7 @@ function MarketMapView({ onSelect, selected }) {
 
   const [colorMode, setColorMode] = React.useState('ownership'); // 'ownership' | 'company'
   const [clusterOn, setClusterOn] = React.useState(false);
-  const [countyOn, setCountyOn]   = React.useState(false);
+  const [countyMode, setCountyMode] = React.useState('off'); // off | overlap | gallons | customers | percapita
 
   // ----- live counts for legend / filter chips ----------------------------
   const ownershipCounts = React.useMemo(() => {
@@ -178,7 +178,7 @@ function MarketMapView({ onSelect, selected }) {
               selectedId={selected}
               colorMode={colorMode}
               clusterOn={clusterOn}
-              countyOn={countyOn}
+              countyMode={countyMode}
               onSelect={onSelect}
             />
           : <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#8B97A8', fontSize: 12 }}>Map engine loading…</div>
@@ -198,7 +198,29 @@ function MarketMapView({ onSelect, selected }) {
           </div>
           <div style={{ display: 'flex', background: '#fff', border: '1px solid #E3E8EE', borderRadius: 6, padding: 2, boxShadow: '0 2px 4px rgba(10,37,64,0.06)' }}>
             <button onClick={() => setClusterOn(v => !v)} style={{ padding: '5px 10px', border: 'none', background: clusterOn ? '#EEF0FF' : 'transparent', color: clusterOn ? '#4B45B8' : '#697386', fontSize: 12, fontWeight: 500, borderRadius: 4, cursor: 'pointer', fontFamily: 'inherit' }}>Cluster</button>
-            <button onClick={() => setCountyOn(v => !v)} style={{ padding: '5px 10px', border: 'none', background: countyOn ? '#EEF0FF' : 'transparent', color: countyOn ? '#4B45B8' : '#697386', fontSize: 12, fontWeight: 500, borderRadius: 4, cursor: 'pointer', fontFamily: 'inherit' }}>Counties</button>
+          </div>
+          <div style={{ display: 'flex', background: '#fff', border: '1px solid #E3E8EE', borderRadius: 6, padding: 2, boxShadow: '0 2px 4px rgba(10,37,64,0.06)', flexWrap: 'wrap' }}>
+            <span style={{ padding: '5px 8px 5px 10px', fontSize: 11, fontWeight: 500, color: '#8B97A8', alignSelf: 'center', textTransform: 'uppercase', letterSpacing: 0.4 }}>Counties</span>
+            {[
+              ['off',       'Off'],
+              ['overlap',   'Overlap'],
+              ['gallons',   'Gallons'],
+              ['customers', 'Customers'],
+              ['percapita', '% Use'],
+            ].map(([k, l]) => (
+              <button
+                key={k}
+                onClick={() => setCountyMode(k)}
+                title={window.PI_COUNTY_MODE_LABELS && window.PI_COUNTY_MODE_LABELS[k]}
+                style={{
+                  padding: '5px 10px', border: 'none',
+                  background: countyMode === k ? '#EEF0FF' : 'transparent',
+                  color: countyMode === k ? '#4B45B8' : '#697386',
+                  fontSize: 12, fontWeight: 500, borderRadius: 4,
+                  cursor: 'pointer', fontFamily: 'inherit',
+                }}
+              >{l}</button>
+            ))}
           </div>
         </div>
 
@@ -224,6 +246,10 @@ function MarketMapView({ onSelect, selected }) {
               ))
             : <div style={{ fontSize: 11, color: '#697386' }}>Each company gets its own colour. Hover a marker for details.</div>
           }
+
+          {countyMode !== 'off' && (
+            <CountyLegend mode={countyMode} />
+          )}
         </Card>
       </div>
     </div>
@@ -377,6 +403,40 @@ function StatePicker({ stateCounts = {}, selected, onToggle, onClear }) {
       {filtered.length === 0 && (
         <div style={{ padding: '8px 4px', fontSize: 11, color: '#8B97A8' }}>No states match "{q}".</div>
       )}
+    </div>
+  );
+}
+
+// Renders the gradient swatch + labels for the active county-mode.
+function CountyLegend({ mode }) {
+  if (mode === 'off') return null;
+  const isOverlap = mode === 'overlap';
+  const ramp = isOverlap
+    ? ['rgba(99,91,255,0.18)', 'rgba(99,91,255,0.35)', 'rgba(99,91,255,0.50)', 'rgba(99,91,255,0.63)']
+    : ['#EEF0FF', '#A1A6FF', '#635BFF', '#4B45B8'];
+  const label = (window.PI_COUNTY_MODE_LABELS && window.PI_COUNTY_MODE_LABELS[mode]) || mode;
+  const lowLbl = mode === 'gallons' ? 'low' : mode === 'customers' ? 'few' : mode === 'percapita' ? '0%' : '1';
+  const highLbl = mode === 'gallons' ? '12M+ gal' : mode === 'customers' ? '500k+' : mode === 'percapita' ? '90%+' : '20+';
+  const llSwatchColor = isOverlap ? '#7C5CFC' : '#FFD100';
+  const llLabel = isOverlap ? 'LL counties' : 'LL counties (overlay)';
+  return (
+    <div style={{ marginTop: 12, paddingTop: 12, borderTop: '1px solid #EDF1F6' }}>
+      <div style={{ fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 8 }}>
+        Counties · {label}
+      </div>
+      <div style={{ display: 'flex', height: 6, borderRadius: 3, overflow: 'hidden', marginBottom: 4 }}>
+        {ramp.map((c, i) => (
+          <div key={i} style={{ flex: 1, background: c }}/>
+        ))}
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 9, fontFamily: "'IBM Plex Mono'", color: '#8B97A8' }}>
+        <span>{lowLbl}</span>
+        <span>{highLbl}</span>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 8, fontSize: 11 }}>
+        <div style={{ width: 10, height: 10, background: llSwatchColor, borderRadius: 2, border: '1px solid rgba(10,37,64,0.15)' }}/>
+        <span style={{ color: '#425466' }}>{llLabel}</span>
+      </div>
     </div>
   );
 }
