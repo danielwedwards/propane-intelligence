@@ -571,6 +571,24 @@ table.lt td{padding:var(--space-sm) var(--space-sm);min-height:var(--touch-min)}
 [data-theme="dark"] .vtog-btn{color:#8899AA;border-color:#2a3a4e}
 [data-theme="dark"] .vtog-btn:hover{border-color:var(--gold);color:#e0e4ea}
 [data-theme="dark"] .vtog-btn.active{background:var(--gold);color:#0e1620;border-color:var(--gold)}
+/* === v4.1.0: Section nav + Companies sub-toggle === */
+.section-nav{display:flex;gap:2px;background:#F0F2F5;border-radius:var(--radius-md);padding:3px}
+.section-btn{padding:7px 16px;border:none;border-radius:var(--radius-sm);font-size:12px;font-weight:600;font-family:inherit;color:var(--text-tertiary);background:transparent;cursor:pointer;transition:all var(--tr-fast);letter-spacing:0.2px}
+.section-btn:hover{color:var(--text-primary)}
+.section-btn.active{background:var(--white);color:var(--text-primary);box-shadow:var(--shadow-xs)}
+.sub-toggle{display:flex;gap:1px;background:transparent;border:1px solid var(--border);border-radius:var(--radius-md);padding:2px;margin-left:8px;transition:opacity var(--tr-fast)}
+.sub-toggle[hidden]{display:none}
+.sub-btn{padding:5px 11px;border:none;border-radius:var(--radius-sm);font-size:11px;font-weight:500;font-family:inherit;color:var(--slate);background:transparent;cursor:pointer;transition:all var(--tr-fast)}
+.sub-btn:hover{color:var(--text-primary)}
+.sub-btn.active{background:var(--navy);color:var(--white)}
+[data-theme="dark"] .section-nav{background:#0e1620}
+[data-theme="dark"] .section-btn{color:#8899AA}
+[data-theme="dark"] .section-btn:hover{color:#e0e4ea}
+[data-theme="dark"] .section-btn.active{background:#1a2534;color:#e0e4ea}
+[data-theme="dark"] .sub-toggle{border-color:#2a3a4e}
+[data-theme="dark"] .sub-btn{color:#8899AA}
+[data-theme="dark"] .sub-btn:hover{color:#e0e4ea}
+[data-theme="dark"] .sub-btn.active{background:var(--gold);color:#0e1620}
 /* View states */
 .main.view-table .map-wrap{display:none}
 .main.view-table .left{width:100%;border-right:none}
@@ -839,11 +857,14 @@ Continue with Microsoft
 <span><b id="hs">0</b> States</span>
 </div>
 <div style="display:flex;gap:8px;align-items:center;margin-left:auto">
-<div class="vtog" id="viewToggle" role="tablist">
-<button class="vtog-btn" data-view="table" role="tab" onclick="setView('table')">Table</button>
-<button class="vtog-btn on" data-view="both" role="tab" onclick="setView('both')">Both</button>
-<button class="vtog-btn" data-view="map" role="tab" onclick="setView('map')">Map</button>
-<button class="vtog-btn" data-view="charts" role="tab" onclick="setView('charts')">Charts</button>
+<!-- v4.1.0: Top-level section nav (Market Map | Companies) + Companies sub-toggle (Table | + Map) -->
+<div class="section-nav" id="sectionNav" role="tablist" aria-label="Main sections">
+<button class="section-btn" data-section="map" role="tab" aria-selected="false" onclick="setSection('map')">Market Map</button>
+<button class="section-btn active" data-section="companies" role="tab" aria-selected="true" onclick="setSection('companies')">Companies</button>
+</div>
+<div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
+<button class="sub-btn" data-sub="table" role="tab" aria-selected="false" onclick="setCompaniesSub('table')" title="Table only (T)">Table</button>
+<button class="sub-btn active" data-sub="both" role="tab" aria-selected="true" onclick="setCompaniesSub('both')" title="Table + Map (B)">+ Map</button>
 </div>
 <button class="logout-btn" onclick="exportCSV()" title="Export CSV">&#8595; Export</button>
 <button class="logout-btn" onclick="resetApp()" title="Reset">&#x21bb; Reset</button>
@@ -1111,7 +1132,7 @@ function setMobileView(view){
   if(view==='map'){main.classList.add('show-map');tabs[0].classList.remove('active');tabs[0].setAttribute('aria-selected','false');tabs[1].classList.add('active');tabs[1].setAttribute('aria-selected','true');setTimeout(()=>map&&map.invalidateSize(),100)}
   else{main.classList.remove('show-map');tabs[1].classList.remove('active');tabs[1].setAttribute('aria-selected','false');tabs[0].classList.add('active');tabs[0].setAttribute('aria-selected','true')}
 }
-/* === PRODUCT SPRINT B: Desktop view toggle === */
+/* === PRODUCT SPRINT B: Desktop view toggle (now driven by section nav in v4.1.0) === */
 function setView(view){
   let main=document.getElementById('mainArea');
   let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts'));
@@ -1119,18 +1140,43 @@ function setView(view){
   if(view==='table')main.classList.add('view-table');
   else if(view==='map')main.classList.add('view-map');
   else if(view==='charts'){main.classList.add('view-charts');setTimeout(function(){renderCharts();chartInstances.forEach(function(c){c.resize()})},100)}
-  // Update toggle buttons
-  document.querySelectorAll('.vtog-btn').forEach(btn=>{
-    let isActive=btn.dataset.view===view;
+  // v4.1.0: Sync section nav + Companies sub-toggle UI from view
+  let section=(view==='map')?'map':(view==='charts'?'charts':'companies');
+  document.querySelectorAll('.section-btn').forEach(btn=>{
+    let isActive=btn.dataset.section===section;
     btn.classList.toggle('active',isActive);
     btn.setAttribute('aria-selected',isActive?'true':'false');
   });
+  let sub=(view==='table')?'table':'both';
+  document.querySelectorAll('.sub-btn').forEach(btn=>{
+    let isActive=btn.dataset.sub===sub;
+    btn.classList.toggle('active',isActive);
+    btn.setAttribute('aria-selected',isActive?'true':'false');
+  });
+  let subTog=document.getElementById('companiesSubToggle');
+  if(subTog)subTog.hidden=(section!=='companies');
+  if(view==='table'||view==='both'){try{localStorage.setItem('pi_companies_sub',view)}catch(e){}}
   // Invalidate map size after layout change, then reset zoom when entering a view that shows the map
   setTimeout(()=>{
     if(typeof map==='undefined'||!map)return;
     map.invalidateSize();
     if((view==='map'||view==='both')&&!prevHadMap)resetMapToScope();
   },150);
+}
+/* v4.1.0: Top-level section selector. Companies remembers last sub-state via localStorage. */
+function setSection(section){
+  if(section==='map'){setView('map');return}
+  if(section==='companies'){
+    let sub='both';
+    try{sub=(localStorage.getItem('pi_companies_sub')==='table')?'table':'both'}catch(e){}
+    setView(sub);
+    return;
+  }
+  if(section==='charts'){setView('charts');return}
+}
+/* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
+function setCompaniesSub(sub){
+  setView(sub==='table'?'table':'both');
 }
 /* Reset map to current filter scope (or continental US) so it isn't stuck zoomed-in on a previously opened company. */
 function resetMapToScope(){
@@ -2327,10 +2373,11 @@ document.addEventListener('keydown',e=>{
   }
   if(e.key==='?'){e.preventDefault();toggleHelp();return}
   if(e.key==='/'){e.preventDefault();document.getElementById('si').focus();return}
-  if(e.key==='t'||e.key==='T'){e.preventDefault();setView('table');return}
-  if(e.key==='m'||e.key==='M'){e.preventDefault();setView('map');return}
-  if(e.key==='b'||e.key==='B'){e.preventDefault();setView('both');return}
-  if(e.key==='c'||e.key==='C'){e.preventDefault();setView('charts');return}
+  // v4.1.0: section + sub-view shortcuts
+  if(e.key==='m'||e.key==='M'){e.preventDefault();setSection('map');return}                 // Market Map section
+  if(e.key==='c'||e.key==='C'){e.preventDefault();setSection('companies');return}            // Companies section (uses last sub)
+  if(e.key==='t'||e.key==='T'){e.preventDefault();setCompaniesSub('table');return}           // Companies > Table only
+  if(e.key==='b'||e.key==='B'){e.preventDefault();setCompaniesSub('both');return}            // Companies > Table + Map
   let companies=fil();
   if(e.key==='ArrowDown'){
     e.preventDefault();
@@ -2822,6 +2869,12 @@ window.addEventListener('load',async()=>{
   initMap();updateH();updatePF();updateSavedCount();
   restoreTheme();
   loadFromURL();
+  // v4.1.0: Apply saved Companies sub-view (default 'both') so refresh remembers user choice
+  try{
+    let savedSub=localStorage.getItem('pi_companies_sub');
+    if(savedSub==='table')setView('table');
+    else setView('both');
+  }catch(e){setView('both')}
 
   // Hide loading overlay
   document.getElementById('loadingOverlay').classList.add('hidden');
