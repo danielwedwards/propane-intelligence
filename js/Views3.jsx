@@ -711,30 +711,100 @@ function _Kpi({ label, value, sub }) {
   );
 }
 
-// Six-bucket fit-score bar chart (driven by c.fitBreakdown)
-function _FitBreakdown({ breakdown, total }) {
+// Six-bucket fit-score bar chart (driven by c.fitBreakdown).
+// Optionally renders a "score inputs" attribution panel showing the underlying
+// measured values that drove the abstract bucket scores — proximity, county
+// overlap, market share, gallons, and revenue density.
+function _FitBreakdown({ breakdown, total, company }) {
   if (!breakdown) {
     return <div style={{ fontSize: 12, color: '#8B97A8' }}>Score breakdown unavailable.</div>;
   }
+  const c = company || {};
+  // Compute weighted contribution of each bucket toward the composite, so the
+  // analyst can see "where the points came from" beyond the raw 0–100 bars.
+  const contribs = _FIT_BUCKETS.map(b => {
+    const raw = Math.max(0, Math.min(100, +(breakdown[b.key] || 0)));
+    return { ...b, raw, contrib: (raw * b.weight) / 100 };
+  });
+  const compositeFromBreakdown = contribs.reduce((s, x) => s + x.contrib, 0);
   return (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
         <div style={{ fontSize: 28, fontWeight: 600, color: '#0A2540', letterSpacing: '-0.4px' }}>{Math.round(total || 0)}</div>
         <div style={{ fontSize: 11, color: '#697386' }}>composite fit · 0–100</div>
       </div>
-      {_FIT_BUCKETS.map(b => {
-        const v = Math.max(0, Math.min(100, Math.round(breakdown[b.key] || 0)));
+      {contribs.map(b => {
+        const v = Math.round(b.raw);
         const tone = v > 75 ? '#009966' : v > 55 ? '#635BFF' : v > 35 ? '#C4862D' : '#8B97A8';
         return (
-          <div key={b.key} style={{ display: 'grid', gridTemplateColumns: '90px 1fr 38px', alignItems: 'center', gap: 10, padding: '5px 0' }}>
+          <div key={b.key} style={{ display: 'grid', gridTemplateColumns: '90px 1fr 38px 56px', alignItems: 'center', gap: 10, padding: '5px 0' }}>
             <div style={{ fontSize: 12, color: '#425466' }}>{b.label}<span style={{ color: '#8B97A8', marginLeft: 4 }}>{b.weight}%</span></div>
             <div style={{ height: 6, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
               <div style={{ width: v + '%', height: '100%', background: tone, borderRadius: 3 }}/>
             </div>
             <div style={{ fontSize: 12, fontWeight: 600, color: '#0A2540', fontFamily: "'IBM Plex Mono'", textAlign: 'right' }}>{v}</div>
+            <div style={{ fontSize: 10, color: '#697386', fontFamily: "'IBM Plex Mono'", textAlign: 'right' }} title="Weighted contribution toward composite (raw × weight)">
+              +{b.contrib.toFixed(1)}
+            </div>
           </div>
         );
       })}
+
+      <div style={{
+        marginTop: 8, paddingTop: 8, borderTop: '1px dashed #EDF1F6',
+        display: 'grid', gridTemplateColumns: '1fr auto', alignItems: 'baseline', gap: 8,
+        fontSize: 11, color: '#697386',
+      }}>
+        <span>Σ weighted contributions</span>
+        <span style={{ fontFamily: "'IBM Plex Mono'", fontWeight: 600, color: '#0A2540' }}>
+          {compositeFromBreakdown.toFixed(1)}
+        </span>
+      </div>
+
+      {/* Score inputs — the underlying measurements that drove the bucket scores. */}
+      {(c.proxScore || c.countyShared || c.marketShare) && (
+        <div style={{ marginTop: 12, padding: '10px 12px', background: '#FBFCFE', border: '1px solid #EDF1F6', borderRadius: 6 }}>
+          <div style={{ fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 6 }}>Score inputs</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px 14px' }}>
+            {c.proxScore && c.proxScore.mean != null && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11 }}>
+                <span style={{ color: '#697386' }}>Proximity · avg dist</span>
+                <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{Math.round(c.proxScore.mean)} mi</span>
+              </div>
+            )}
+            {c.proxScore && c.proxScore.locsWithin100 != null && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11 }}>
+                <span style={{ color: '#697386' }}>Locs ≤100 mi LL</span>
+                <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{c.proxScore.locsWithin100}</span>
+              </div>
+            )}
+            {c.countyShared && c.countyShared.count != null && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11 }}>
+                <span style={{ color: '#697386' }}>Shared counties</span>
+                <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{c.countyShared.count}</span>
+              </div>
+            )}
+            {c.countyShared && c.countyShared.pct != null && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11 }}>
+                <span style={{ color: '#697386' }}>% of LL counties</span>
+                <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{(+c.countyShared.pct).toFixed(0)}%</span>
+              </div>
+            )}
+            {c.marketShare && c.marketShare.nationalPct != null && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11 }}>
+                <span style={{ color: '#697386' }}>National share</span>
+                <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{(+c.marketShare.nationalPct).toFixed(2)}%</span>
+              </div>
+            )}
+            {c.estRevenue != null && c.employeeCount != null && c.employeeCount > 0 && (
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11 }}>
+                <span style={{ color: '#697386' }}>Rev / employee</span>
+                <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>${(c.estRevenue * 1e6 / c.employeeCount / 1000).toFixed(0)}k</span>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -826,7 +896,7 @@ function CompanyDetail({ companyId, onClose, onCompare, onAddPortfolio, inPortfo
         {/* Strategic fit breakdown */}
         <div style={{ marginBottom: 20 }}>
           <_SectionHead right={<span style={{ fontSize: 10, color: '#8B97A8' }}>vs. Lampton Love</span>}>Strategic fit</_SectionHead>
-          <_FitBreakdown breakdown={c.fitBreakdown} total={c.fitScore}/>
+          <_FitBreakdown breakdown={c.fitBreakdown} total={c.fitScore} company={c}/>
         </div>
 
         {/* Locations table (real, paginated) */}
@@ -1020,7 +1090,35 @@ function CompareView({ ids, onRemove }) {
       <Card padding={0}>
         <div style={{ padding: '14px 20px', borderBottom: '1px solid #EDF1F6', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ fontSize: 14, fontWeight: 600, color: '#0A2540' }}>Side-by-side comparison · {companies.length} companies</div>
-          <Button variant="secondary" size="sm" icon="download">Export</Button>
+          <Button
+            variant="secondary"
+            size="sm"
+            icon="download"
+            onClick={() => {
+              // Build a CSV out of the same row definitions used in the table.
+              const header = ['Metric', ...companies.map(c => c.name)];
+              const lines = [header.join(',')];
+              rows.forEach(([label, fmt]) => {
+                const cells = [label, ...companies.map(c => {
+                  const v = fmt(c);
+                  if (v == null) return '';
+                  const s = String(v).replace(/"/g, '""');
+                  return /[,"\n]/.test(s) ? '"' + s + '"' : s;
+                })];
+                lines.push(cells.join(','));
+              });
+              const blob = new Blob(['\ufeff' + lines.join('\n')], { type: 'text/csv;charset=utf-8' });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              const stamp = new Date().toISOString().slice(0, 10);
+              a.href = url;
+              a.download = 'pi_compare_' + stamp + '.csv';
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+              setTimeout(() => URL.revokeObjectURL(url), 1000);
+            }}
+          >Export</Button>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: `180px repeat(${companies.length}, 1fr)`, fontSize: 13 }}>

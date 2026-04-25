@@ -456,9 +456,19 @@ function AcquisitionBars({ acqByYear, years }) {
 // attributes (lowercase) and warns about. Here we move them into `style`
 // so they apply as CSS (where they belong) and React stays quiet.
 function OwnershipDonut({ counts, total }) {
-  // Fallback to v1 demo numbers if real counts missing.
-  const c = counts || { family: 624, private: 246, pe: 189, public: 102, coop: 86, other: 0, ll: 0 };
+  // Counts are always provided by the caller (AnalyticsView aggregates from
+  // MOCK_COMPANIES). If the data table hasn't loaded yet, render a neutral
+  // empty donut rather than baked-in demo numbers.
+  const c = counts || { family: 0, private: 0, pe: 0, public: 0, coop: 0, other: 0, ll: 0 };
   const t = total != null ? total : Object.values(c).reduce((a, b) => a + b, 0);
+  if (!t) {
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+        <div style={{ width: 140, height: 140, borderRadius: '50%', border: '14px solid #EDF1F6' }} />
+        <div style={{ fontSize: 12, color: '#8B97A8' }}>Loading ownership mix…</div>
+      </div>
+    );
+  }
   const data = [
     { label: 'Family',    value: c.family || 0,  color: '#009966' },
     { label: 'Private',   value: c.private || 0, color: '#697386' },
@@ -743,8 +753,27 @@ function SignalsView({ onSelect }) {
             <Icon name="bell" size={13} color="#635BFF"/>
             <span style={{ fontSize: 12, fontWeight: 600, color: '#0A2540' }}>Get alerts</span>
           </div>
-          <p style={{ margin: '0 0 10px', fontSize: 12, color: '#697386', lineHeight: 1.5 }}>Watch list alerts when any tracked signal type surfaces.</p>
-          <Button variant="primary" size="sm" style={{ width: '100%' }}>Create alert</Button>
+          <p style={{ margin: '0 0 10px', fontSize: 12, color: '#697386', lineHeight: 1.5 }}>
+            Subscribed to <b style={{ color: '#0A2540' }}>{filter === 'all' ? 'all signal types' : filter}</b>. Alert fires when a new signal of this type lands for any tracked company.
+          </p>
+          <Button
+            variant="primary"
+            size="sm"
+            style={{ width: '100%' }}
+            onClick={() => {
+              // Persist the alert preference + acknowledge to the user. The
+              // News view picks these up via window.dispatchEvent so the
+              // sidebar bell counter updates without a reload.
+              try {
+                const key = 'pi_signal_alerts_v1';
+                const existing = JSON.parse(localStorage.getItem(key) || '[]');
+                const next = Array.from(new Set([...existing, filter || 'all']));
+                localStorage.setItem(key, JSON.stringify(next));
+                window.dispatchEvent(new CustomEvent('pi:alerts-changed'));
+              } catch (_) {}
+              alert('Alert saved. You\'ll be notified when new "' + (filter === 'all' ? 'any-type' : filter) + '" signals land.');
+            }}
+          >Create alert</Button>
         </div>
       </div>
     </div>
@@ -888,10 +917,12 @@ function BriefView() {
           <div style={{ display: 'flex', gap: 16, marginTop: 16, fontSize: 12, color: '#697386' }}>
             <span>Generated <b style={{ color: '#0A2540', fontWeight: 600 }}>{dateStr}</b></span>
             <span>·</span>
-            <span>For <b style={{ color: '#0A2540', fontWeight: 600 }}>Daniel Edwards</b>, Corporate Development</span>
+            <span>For <b style={{ color: '#0A2540', fontWeight: 600 }}>{
+              ((typeof window !== 'undefined' && window.PI_USER && window.PI_USER.name) || 'Corporate Development')
+            }</b>{(typeof window !== 'undefined' && window.PI_USER && window.PI_USER.name) ? ', Corporate Development' : ''}</span>
             <span style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
-              <Button variant="secondary" size="sm" icon="download">PDF</Button>
-              <Button variant="secondary" size="sm">Share</Button>
+              <Button variant="secondary" size="sm" icon="download" onClick={() => { try { window.print(); } catch(_) {} }}>PDF</Button>
+              <Button variant="secondary" size="sm" onClick={() => window.dispatchEvent(new CustomEvent('pi:open-share'))}>Share</Button>
             </span>
           </div>
         </div>

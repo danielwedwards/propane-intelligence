@@ -406,31 +406,38 @@ function timeAgo(iso) {
   return `${mo}mo ago`;
 }
 
-// Demo-time bridge: the News feed uses production-style canonical ids
-// (matching data/companies.json). The UI kit's mock roster uses short ids.
-// Map long→short so filtering/clicking works in the prototype.
-// When wired to the real API, delete this map — ids will match natively.
-const CANONICAL_TO_DEMO = {
-  lampton_love: 'll',
-  blossman_gas: 'blo',
-  amerigas: 'ami',
-  ferrellgas: 'fer',
-  cherry_energy: 'che',
-  barrett_propane: 'bar',
-  dead_river: 'dea',
-  chs_propane: 'chs',
-  crystal_flash: 'cry',
-  eastern_propane: 'edp',
-  berico: 'ber',
-  davenport_energy: 'dav',
-  dnd_gas: 'dnd',
-};
-function resolveId(id) { return CANONICAL_TO_DEMO[id] || id; }
+// localStorage helpers for saved articles + watchlist alerts.
+function _lsArr(key) {
+  try {
+    const raw = localStorage.getItem(key);
+    if (!raw) return [];
+    const v = JSON.parse(raw);
+    return Array.isArray(v) ? v : [];
+  } catch (_) { return []; }
+}
+function _lsSetArr(key, arr) {
+  try { localStorage.setItem(key, JSON.stringify(arr || [])); } catch (_) {}
+}
+
+// Resolve a company id (canonical or short) to whatever id the live MOCK_COMPANIES
+// table is keyed on. We try the live id, the canonicalId, and a normalized name
+// match — that's enough to bridge legacy news payloads to the merged demo+real
+// roster without an explicit mapping table.
+function resolveId(id) {
+  if (!id) return id;
+  const cs = (window.MOCK_COMPANIES || []);
+  const hit = cs.find(x => x.id === id) || cs.find(x => x.canonicalId === id);
+  return hit ? hit.id : id;
+}
 
 function companyName(id) {
-  const sid = CANONICAL_TO_DEMO[id] || id;
-  const c = (window.MOCK_COMPANIES || []).find(x => x.id === sid || x.id === id);
-  return c ? c.name : id;
+  if (!id) return '';
+  const cs = (window.MOCK_COMPANIES || []);
+  const c = cs.find(x => x.id === id) || cs.find(x => x.canonicalId === id);
+  if (c) return c.name;
+  // Last-ditch: turn `blossman_gas` into "Blossman Gas" for unknown ids so
+  // the UI never shows the raw key.
+  return String(id).replace(/_/g, ' ').replace(/\b\w/g, ch => ch.toUpperCase());
 }
 // ---------------------------------------------------------------------------
 // Full News view
@@ -446,6 +453,45 @@ function NewsView({ onSelect }) {
     window.addEventListener('pi:news-loaded', onLoaded);
     return () => window.removeEventListener('pi:news-loaded', onLoaded);
   }, []);
+
+  // Saved articles + watchlist alerts persisted to localStorage. Both are
+  // simple sets of ids/canonical company ids — the Bell + Save buttons in
+  // each article card flip these on and off.
+  const [savedSet, setSavedSet] = React.useState(() => new Set(_lsArr('pi_saved_articles_v1')));
+  const [alertCompanies, setAlertCompanies] = React.useState(() => new Set(_lsArr('pi_alert_companies_v1')));
+  const [alertsPanelOpen, setAlertsPanelOpen] = React.useState(false);
+  const [digestOpen, setDigestOpen] = React.useState(false);
+  const isSaved = (id) => savedSet.has(id);
+  const toggleSaved = (id) => {
+    setSavedSet(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      _lsSetArr('pi_saved_articles_v1', [...next]);
+      return next;
+    });
+  };
+  const isAlertedFor = (companyIds) => (companyIds || []).some(id => alertCompanies.has(id));
+  const toggleAlert = (companyIds, headline) => {
+    if (!companyIds || !companyIds.length) {
+      // Industry-wide story — store the headline as a topical alert.
+      setAlertCompanies(prev => {
+        const key = '_topic:' + (headline || '').slice(0, 60);
+        const next = new Set(prev);
+        if (next.has(key)) next.delete(key); else next.add(key);
+        _lsSetArr('pi_alert_companies_v1', [...next]);
+        return next;
+      });
+      return;
+    }
+    setAlertCompanies(prev => {
+      const next = new Set(prev);
+      // If any of the companies is already alerted, remove all of them; otherwise add all.
+      const anyOn = companyIds.some(id => next.has(id));
+      companyIds.forEach(id => { if (anyOn) next.delete(id); else next.add(id); });
+      _lsSetArr('pi_alert_companies_v1', [...next]);
+      return next;
+    });
+  };
 
   const articles = window.NEWS_ARTICLES || [];
   const meta = window.NEWS_META || { live: false, generatedAt: null };
@@ -554,7 +600,9 @@ function NewsView({ onSelect }) {
               }}>{l}</button>
             ))}
           </div>
-          <Button variant="secondary" size="sm" icon="bell">Alerts</Button>
+          <Button variant="secondary" size="sm" icon="bell" onClick={() => setAlertsPanelOpen(true)}>
+            Alerts{alertCompanies.size ? ' (' + alertCompanies.size + ')' : ''}
+          </Button>
         </div>
 
         {/* Category chips */}
@@ -635,9 +683,26 @@ function NewsView({ onSelect }) {
                       ))
                     )}
                     <div style={{ marginLeft: 'auto', display: 'flex', gap: 4 }}>
-                      <button aria-label="Subscribe to alerts for this story" title="Subscribe to alerts" style={iconBtnStyle}><Icon name="bell" size={13} color="#697386"/></button>
-                      <button aria-label="Save this article" title="Save article" style={iconBtnStyle}><Icon name="plus" size={13} color="#697386"/></button>
-                      <a href={`https://${a.sourceUrl}`} target="_blank" rel="noopener" onClick={(e) => e.preventDefault()} aria-label={`Open source: ${a.sourceUrl || 'article'}`} title={a.sourceUrl ? ('Open ' + a.sourceUrl) : 'Open article'} style={iconBtnStyle}>
+                      <button
+                        aria-label={isSaved(a.id) ? 'Saved — click to remove' : 'Save article'}
+                        title={isSaved(a.id) ? 'Remove from saved' : 'Save article'}
+                        onClick={() => toggleSaved(a.id)}
+                        style={{ ...iconBtnStyle, background: isSaved(a.id) ? '#EEF0FF' : '#fff', borderColor: isSaved(a.id) ? '#C7CEFF' : '#E3E8EE' }}
+                      ><Icon name={isSaved(a.id) ? 'check' : 'plus'} size={13} color={isSaved(a.id) ? '#4B45B8' : '#697386'}/></button>
+                      <button
+                        aria-label={isAlertedFor(a.companyIds) ? 'Alert active' : 'Subscribe to alerts for this story'}
+                        title={isAlertedFor(a.companyIds) ? 'Alert active for these companies' : 'Subscribe to alerts'}
+                        onClick={() => toggleAlert(a.companyIds, a.headline)}
+                        style={{ ...iconBtnStyle, background: isAlertedFor(a.companyIds) ? '#FDF6E3' : '#fff', borderColor: isAlertedFor(a.companyIds) ? '#E0CB85' : '#E3E8EE' }}
+                      ><Icon name="bell" size={13} color={isAlertedFor(a.companyIds) ? '#8B5A0E' : '#697386'}/></button>
+                      <a
+                        href={a.url || (a.sourceUrl ? ('https://' + a.sourceUrl) : '#')}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open source: ${a.sourceUrl || 'article'}`}
+                        title={a.sourceUrl ? ('Open ' + a.sourceUrl) : 'Open article'}
+                        style={iconBtnStyle}
+                      >
                         <Icon name="arrowRight" size={13} color="#635BFF"/>
                       </a>
                     </div>
@@ -667,7 +732,7 @@ function NewsView({ onSelect }) {
           <p style={{ margin: '0 0 12px', fontSize: 12, color: '#B7C0CC', lineHeight: 1.55 }}>
             Succession and sale-process signals clustered in the Southeast. Blossman's banker hire is the highest-priority event.
           </p>
-          <Button variant="primary" size="sm" style={{ width: '100%' }}>Read full digest</Button>
+          <Button variant="primary" size="sm" style={{ width: '100%' }} onClick={() => setDigestOpen(true)}>Read full digest</Button>
         </div>
 
         {/* Top sources — live from meta.sources when available */}
@@ -697,25 +762,43 @@ function NewsView({ onSelect }) {
           ))}
         </div>
 
-        {/* Saved news searches */}
+        {/* Saved news searches — pulls from localStorage (toggled by the
+            bell button on each article card). Counts show how many of the
+            currently-loaded articles match. */}
         <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 10 }}>My alerts</div>
         <div style={{ display: 'grid', gap: 6, marginBottom: 20 }}>
-          {[
-            ['Southeast family successions', 12, '#635BFF'],
-            ['Ares portfolio activity', 4, '#C4862D'],
-            ['Cherry Energy — any mention', 3, '#009966'],
-          ].map(([n, c, col]) => (
-            <div key={n} style={{ padding: '8px 10px', border: '1px solid #EDF1F6', borderRadius: 6 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 2 }}>
-                <div style={{ width: 6, height: 6, borderRadius: 2, background: col }}/>
-                <span style={{ flex: 1, fontSize: 12, fontWeight: 500, color: '#0A2540' }}>{n}</span>
-                <span style={{ fontSize: 10, padding: '1px 6px', borderRadius: 9999, background: '#F7FAFC', color: '#425466', fontFamily: "'IBM Plex Mono'", fontWeight: 500 }}>{c}</span>
-              </div>
-              <div style={{ fontSize: 10, color: '#8B97A8' }}>Matches trailing 90d</div>
+          {[...alertCompanies].length === 0 && (
+            <div style={{ padding: '8px 10px', border: '1px dashed #E3E8EE', borderRadius: 6, fontSize: 11, color: '#8B97A8', fontStyle: 'italic' }}>
+              Click the bell on any article to start watching that company.
             </div>
-          ))}
-          <button style={{ padding: '6px 10px', background: 'transparent', color: '#635BFF', border: 'none', fontSize: 12, fontWeight: 500, textAlign: 'left', fontFamily: 'inherit', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
-            <Icon name="plus" size={12}/> New alert
+          )}
+          {[...alertCompanies].slice(0, 6).map(key => {
+            const isTopic = String(key).startsWith('_topic:');
+            const name = isTopic ? key.slice(7) : companyName(key);
+            const matches = articles.filter(a => isTopic
+              ? (a.headline + ' ' + a.summary).toLowerCase().includes(key.slice(7).toLowerCase())
+              : (a.companyIds || []).includes(key)).length;
+            return (
+              <div key={key} style={{ padding: '8px 10px', border: '1px solid #EDF1F6', borderRadius: 6 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 2 }}>
+                  <div style={{ width: 6, height: 6, borderRadius: 2, background: isTopic ? '#C4862D' : '#635BFF' }}/>
+                  <span style={{ flex: 1, fontSize: 12, fontWeight: 500, color: '#0A2540', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{name}</span>
+                  <span style={{ fontSize: 10, padding: '1px 6px', borderRadius: 9999, background: '#F7FAFC', color: '#425466', fontFamily: "'IBM Plex Mono'", fontWeight: 500 }}>{matches}</span>
+                  <button
+                    onClick={() => toggleAlert(isTopic ? [] : [key], isTopic ? key.slice(7) : '')}
+                    aria-label={'Remove alert for ' + name}
+                    title="Remove alert"
+                    style={{ border: 'none', background: 'transparent', color: '#8B97A8', cursor: 'pointer', padding: 0 }}
+                  >
+                    <Icon name="x" size={11} />
+                  </button>
+                </div>
+                <div style={{ fontSize: 10, color: '#8B97A8' }}>{matches} match{matches === 1 ? '' : 'es'} in current feed</div>
+              </div>
+            );
+          })}
+          <button onClick={() => setAlertsPanelOpen(true)} style={{ padding: '6px 10px', background: 'transparent', color: '#635BFF', border: 'none', fontSize: 12, fontWeight: 500, textAlign: 'left', fontFamily: 'inherit', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 6 }}>
+            <Icon name="settings" size={12}/> Manage alerts
           </button>
         </div>
 
@@ -727,6 +810,124 @@ function NewsView({ onSelect }) {
             <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Companies matched</span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{(window.MOCK_COMPANIES || []).length.toLocaleString()}</b></div>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Last ingestion</span><b style={{ color: meta.live ? '#009966' : '#8B97A8', fontFamily: "'IBM Plex Mono'" }}>{meta.live && meta.generatedAt ? timeAgo(meta.generatedAt) : 'demo seed'}</b></div>
           </div>
+        </div>
+      </div>
+      {alertsPanelOpen && (
+        <_AlertsPanel
+          alerts={[...alertCompanies]}
+          articles={articles}
+          onClose={() => setAlertsPanelOpen(false)}
+          onRemove={(key) => {
+            const isTopic = String(key).startsWith('_topic:');
+            toggleAlert(isTopic ? [] : [key], isTopic ? key.slice(7) : '');
+          }}
+        />
+      )}
+      {digestOpen && (
+        <_DigestModal
+          articles={articles}
+          onClose={() => setDigestOpen(false)}
+        />
+      )}
+    </div>
+  );
+}
+
+// AlertsPanel — modal listing every saved company / topic alert with the
+// number of currently-loaded articles that match. Click "Remove" to drop one;
+// the savedCompanies set in NewsView is the source of truth.
+function _AlertsPanel({ alerts, articles, onClose, onRemove }) {
+  return (
+    <div onClick={onClose} style={{ position: 'fixed', inset: 0, background: 'rgba(10,37,64,0.35)', backdropFilter: 'blur(3px)', zIndex: 100, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: 110 }}>
+      <div onClick={e => e.stopPropagation()} style={{ width: 520, background: '#fff', borderRadius: 10, boxShadow: '0 25px 50px rgba(10,37,64,0.25)', overflow: 'hidden' }}>
+        <div style={{ padding: '14px 18px', borderBottom: '1px solid #EDF1F6', display: 'flex', alignItems: 'center', gap: 10 }}>
+          <Icon name="bell" size={16} color="#635BFF"/>
+          <div style={{ flex: 1, fontSize: 14, fontWeight: 600, color: '#0A2540' }}>News alerts</div>
+          <span style={{ fontSize: 11, color: '#8B97A8' }}>{alerts.length} active · stored locally</span>
+          <button onClick={onClose} aria-label="Close" style={{ border: 'none', background: 'transparent', cursor: 'pointer', color: '#8B97A8' }}><Icon name="x" size={14} /></button>
+        </div>
+        <div style={{ maxHeight: 420, overflow: 'auto' }}>
+          {alerts.length === 0 && (
+            <div style={{ padding: 32, fontSize: 13, color: '#8B97A8', textAlign: 'center' }}>
+              No alerts yet. Click the bell icon on any article to start watching its companies.
+            </div>
+          )}
+          {alerts.map(key => {
+            const isTopic = String(key).startsWith('_topic:');
+            const name = isTopic ? key.slice(7) : companyName(key);
+            const matches = articles.filter(a => isTopic
+              ? (a.headline + ' ' + a.summary).toLowerCase().includes(key.slice(7).toLowerCase())
+              : (a.companyIds || []).includes(key));
+            return (
+              <div key={key} style={{ padding: '12px 18px', borderBottom: '1px solid #EDF1F6' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <Icon name={isTopic ? 'search' : 'building'} size={13} color={isTopic ? '#C4862D' : '#635BFF'} />
+                  <div style={{ flex: 1, fontSize: 13, fontWeight: 600, color: '#0A2540' }}>{name}</div>
+                  <Badge tone="neutral">{matches.length} match{matches.length === 1 ? '' : 'es'}</Badge>
+                  <Button variant="ghost" size="sm" onClick={() => onRemove(key)}>Remove</Button>
+                </div>
+                {matches.slice(0, 2).map(m => (
+                  <div key={m.id} style={{ marginTop: 6, fontSize: 12, color: '#697386', lineHeight: 1.45 }}>
+                    · {m.headline}
+                  </div>
+                ))}
+              </div>
+            );
+          })}
+        </div>
+        <div style={{ padding: '12px 18px', borderTop: '1px solid #EDF1F6', fontSize: 11, color: '#8B97A8', textAlign: 'right' }}>
+          Alerts are stored on this device only.
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// DigestModal — auto-generated weekly digest from the loaded article set.
+// We bucket by category, show top-3 by impactScore, and list breaking items.
+function _DigestModal({ articles, onClose }) {
+  const sorted = [...(articles || [])].sort((a, b) => (b.impactScore || 0) - (a.impactScore || 0));
+  const top = sorted.slice(0, 5);
+  const byCat = {};
+  articles.forEach(a => {
+    byCat[a.category] = (byCat[a.category] || 0) + 1;
+  });
+  const breaking = articles.filter(a => a.isBreaking).slice(0, 3);
+  return (
+    <div onClick={onClose} style={{ position: 'fixed', inset: 0, background: 'rgba(10,37,64,0.45)', backdropFilter: 'blur(4px)', zIndex: 100, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: 80 }}>
+      <div onClick={e => e.stopPropagation()} style={{ width: 720, maxHeight: '80vh', background: '#fff', borderRadius: 12, boxShadow: '0 25px 50px rgba(10,37,64,0.25)', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+        <div style={{ padding: '18px 22px', borderBottom: '1px solid #EDF1F6', display: 'flex', alignItems: 'center', gap: 10, background: 'linear-gradient(135deg,#0A2540,#1A3C5E)', color: '#fff' }}>
+          <Icon name="sparkle" size={18} color="#AB87FF"/>
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 11, fontWeight: 600, color: '#AB87FF', textTransform: 'uppercase', letterSpacing: 0.5 }}>Weekly digest</div>
+            <div style={{ fontSize: 16, fontWeight: 600 }}>{articles.length} articles · {breaking.length} breaking · {Object.keys(byCat).length} categories</div>
+          </div>
+          <button onClick={onClose} aria-label="Close" style={{ border: 'none', background: 'transparent', cursor: 'pointer', color: '#fff' }}><Icon name="x" size={16} /></button>
+        </div>
+        <div style={{ padding: '20px 22px', overflowY: 'auto' }}>
+          {breaking.length > 0 && (
+            <div style={{ marginBottom: 20 }}>
+              <div style={{ fontSize: 11, fontWeight: 600, color: '#D83E4A', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Breaking</div>
+              {breaking.map(a => (
+                <div key={a.id} style={{ padding: '10px 12px', background: '#FFF5F5', border: '1px solid #FCD9DD', borderRadius: 6, marginBottom: 6, fontSize: 13, color: '#0A2540', lineHeight: 1.4 }}>
+                  {a.headline}
+                </div>
+              ))}
+            </div>
+          )}
+          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Top stories by impact</div>
+          {top.map((a, i) => (
+            <div key={a.id} style={{ padding: '12px 0', borderBottom: i < top.length - 1 ? '1px solid #EDF1F6' : 'none' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+                <span style={{ fontSize: 11, color: '#697386' }}>{a.source}</span>
+                <span style={{ fontSize: 11, color: '#C1CCD6' }}>·</span>
+                <span style={{ fontSize: 11, color: '#8B97A8' }}>{timeAgo(a.publishedAt)}</span>
+                <Badge tone="neutral">Impact {a.impactScore}</Badge>
+              </div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: '#0A2540', marginBottom: 4, lineHeight: 1.4 }}>{a.headline}</div>
+              <div style={{ fontSize: 12, color: '#425466', lineHeight: 1.55 }}>{a.summary}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

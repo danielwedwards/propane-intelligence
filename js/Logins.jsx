@@ -83,9 +83,42 @@ function LoginV1({ onLogin, fullscreen = false }) {
   );
 }
 
+// Compute live login-screen stats from MOCK_COMPANIES.
+// Falls back to "—" if the data hasn't loaded yet (rare — login renders after
+// data hydration in App.jsx). Numbers tick when data finishes loading.
+function _loginLiveStats() {
+  const cs = (window.MOCK_COMPANIES || []);
+  if (!cs.length) return { count: '—', market: '—', coverage: '—', countLong: '...' };
+  const total = cs.length;
+  const totalRev = cs.reduce((a, c) => a + (c.estRevenue || c.rev || 0), 0);
+  const states = new Set();
+  cs.forEach(c => (c.statesOperating || []).forEach(s => states.add(s)));
+  const coveragePct = Math.round((states.size / 50) * 100);
+  const fmtMoney = (n) => {
+    if (n >= 1e9) return '$' + (n / 1e9).toFixed(1).replace(/\.0$/, '') + 'B';
+    if (n >= 1e6) return '$' + (n / 1e6).toFixed(0) + 'M';
+    return '$' + n.toLocaleString();
+  };
+  return {
+    count: total.toLocaleString(),
+    countLong: total.toLocaleString(),
+    market: fmtMoney(totalRev),
+    coverage: coveragePct + '%',
+  };
+}
+
 // V2 — Split screen with rich marketing panel
 function LoginV2({ onLogin, fullscreen = false }) {
   const handleSubmit = (e) => { if (e) e.preventDefault(); if (onLogin) onLogin(); };
+  const [, _setStatsTick] = React.useState(0);
+  React.useEffect(() => {
+    if ((window.MOCK_COMPANIES || []).length) return;
+    // Data may still be hydrating — listen for the global ready event.
+    const onReady = () => _setStatsTick(t => t + 1);
+    window.addEventListener('pi:data-ready', onReady);
+    return () => window.removeEventListener('pi:data-ready', onReady);
+  }, []);
+  const _stats = _loginLiveStats();
   return (
     <div className="redesign" style={{ width: fullscreen ? '100vw' : 1280, height: fullscreen ? '100vh' : 820, background: '#fff', display: 'flex' }}>
       {/* Left: brand panel */}
@@ -110,11 +143,11 @@ function LoginV2({ onLogin, fullscreen = false }) {
             The operating system for propane M&A.
           </h1>
           <p style={{ fontSize: 15, lineHeight: 1.6, color: '#C0CCD9', margin: '20px 0 32px', maxWidth: 420 }}>
-            Real-time coverage of 1,247 retailers. Strategic-fit scoring, M&A signals, and competitor mapping for corporate development teams.
+            Real-time coverage of {_stats.countLong} retailers. Strategic-fit scoring, M&A signals, and competitor mapping for corporate development teams.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, maxWidth: 420 }}>
-            {[['1,247','Companies'],['$18.2B','Market'],['96%','Coverage']].map(([v,l]) => (
+            {[[_stats.count,'Companies'],[_stats.market,'Market'],[_stats.coverage,'Coverage']].map(([v,l]) => (
               <div key={l}>
                 <div style={{ fontSize: 24, fontWeight: 600, letterSpacing: '-0.5px', color: '#fff', fontVariantNumeric: 'tabular-nums' }}>{v}</div>
                 <div style={{ fontSize: 11, color: '#8B97A8', marginTop: 2, textTransform: 'uppercase', letterSpacing: 0.6, fontWeight: 500 }}>{l}</div>

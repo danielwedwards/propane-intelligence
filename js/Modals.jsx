@@ -1,6 +1,11 @@
 // Modals.jsx — Help (?) modal, Sources & methodology modal, Fit-score hover cell.
 // Phase 14 of V3_PLAN.
 
+// Single source of truth for the support contact. Override at runtime by
+// setting `window.PI_SUPPORT_EMAIL` before bundle parse.
+const PI_SUPPORT_EMAIL = (typeof window !== 'undefined' && window.PI_SUPPORT_EMAIL)
+  || 'corpdev@ergon.com';
+
 // ---- Bucket weights (mirrors scoring.js DEFAULT_WEIGHTS) ----
 const _MOD_FIT_BUCKETS = [
   { key: 'geo',     label: 'Geography',   weight: 25 },
@@ -151,14 +156,21 @@ function HelpModal({ onClose }) {
   const mod = isMac ? '⌘' : 'Ctrl';
   const shortcuts = [
     { keys: [mod + 'K'], label: 'Open command palette / search' },
+    { keys: ['/'],       label: 'Open command palette / search' },
     { keys: [mod + 'E'], label: 'Export current view to CSV' },
     { keys: ['?'],       label: 'Open this help dialog' },
     { keys: ['Esc'],     label: 'Close any open modal or slideover' },
-    { keys: ['/'],       label: 'Focus the command bar' },
+    { keys: ['S'],       label: 'Open Scenarios drawer' },
+    { keys: ['C'],       label: 'Open Compare view' },
     { keys: ['G', 'M'],  label: 'Go to Map view' },
     { keys: ['G', 'L'],  label: 'Go to Companies list' },
-    { keys: ['G', 'F'],  label: 'Go to Strategic Fit' },
+    { keys: ['G', 'A'],  label: 'Go to Analytics' },
+    { keys: ['G', 'S'],  label: 'Go to M&A Signals' },
     { keys: ['G', 'N'],  label: 'Go to News' },
+    { keys: ['G', 'F'],  label: 'Go to Strategic Fit' },
+    { keys: ['G', 'O'],  label: 'Go to Competitor Overlap' },
+    { keys: ['G', 'R'],  label: 'Go to Relationship Graph' },
+    { keys: ['G', 'B'],  label: 'Go to Executive Brief' },
   ];
 
   return (
@@ -214,7 +226,7 @@ function HelpModal({ onClose }) {
           >
             <Icon name="info" size={13} /> Sources & methodology
           </button>
-          <a href="mailto:daniel.edwards@ergon.com?subject=Propane%20Intelligence%20support" style={_HelpLinkBtn}>
+          <a href={'mailto:' + PI_SUPPORT_EMAIL + '?subject=Propane%20Intelligence%20support'} style={_HelpLinkBtn}>
             <Icon name="external-link" size={13} /> Email support
           </a>
         </div>

@@ -79,17 +79,47 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
-  // Phase 14 — global key handling: ? opens Help, ⌘/Ctrl+K opens command palette,
-  // ⌘/Ctrl+E exports the current view (delegates to whatever export button is in the page header).
-  // We ignore key presses while typing in form fields so search inputs still receive '?'.
+  // Phase 14 — global key handling. Bindings:
+  //   ?            → open Help dialog
+  //   ⌘/Ctrl+K     → open command palette
+  //   ⌘/Ctrl+E     → export current view (delegates to header Export button)
+  //   /            → open command palette (Linear/Slack style search shortcut)
+  //   Esc          → close company detail slideover (modals handle their own Esc)
+  //   S            → open Scenarios drawer
+  //   C            → open Compare view (when items are pinned)
+  //   g <letter>   → "go to view" two-key sequence:
+  //                  g m → map, g l → list, g a → analytics, g s → signals,
+  //                  g n → news, g f → fit, g o → overlap, g r → relationship graph, g b → brief
+  // Form fields (input/textarea/select/contenteditable) suppress the bindings so
+  // typing "?" in a search box still inserts the character.
   React.useEffect(() => {
     const isTextField = (el) => {
       if (!el) return false;
       const tag = (el.tagName || '').toLowerCase();
       return tag === 'input' || tag === 'textarea' || tag === 'select' || el.isContentEditable;
     };
+    let _gPending = false;
+    let _gTimer = null;
+    const _clearG = () => { _gPending = false; if (_gTimer) { clearTimeout(_gTimer); _gTimer = null; } };
+    const _viewMap = { m: 'map', l: 'list', a: 'analytics', s: 'signals', n: 'news', f: 'fit', o: 'overlap', r: 'network', b: 'brief' };
+
     const onKey = (e) => {
+      // If a "g" was just pressed, treat the next non-modifier letter as a view code.
+      if (_gPending && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        const code = (e.key || '').toLowerCase();
+        if (_viewMap[code]) {
+          e.preventDefault();
+          setView(_viewMap[code]);
+          setSelected(null);
+          _clearG();
+          return;
+        }
+        // Any other key cancels the sequence.
+        _clearG();
+      }
+
       if (isTextField(e.target)) return;
+
       // Help: ? (shift+/) — only when no other modifiers
       if (e.key === '?' && !e.metaKey && !e.ctrlKey && !e.altKey) {
         e.preventDefault();
@@ -102,15 +132,47 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
         setCmdOpen(true);
         return;
       }
-      // Cmd/Ctrl+E — export current view (forward to whatever Export button exists)
+      // Cmd/Ctrl+E — export current view
       if ((e.metaKey || e.ctrlKey) && (e.key === 'e' || e.key === 'E')) {
         e.preventDefault();
         window.dispatchEvent(new CustomEvent('pi:export'));
         return;
       }
+      // / — focus the command palette
+      if (e.key === '/' && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        e.preventDefault();
+        setCmdOpen(true);
+        return;
+      }
+      // Esc — close the slideover detail panel (modals close themselves).
+      if (e.key === 'Escape') {
+        setSelected(null);
+        return;
+      }
+      // S — open Scenarios drawer
+      if ((e.key === 's' || e.key === 'S') && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        e.preventDefault();
+        setScenariosOpen(true);
+        return;
+      }
+      // C — switch to Compare view (only useful when items are pinned)
+      if ((e.key === 'c' || e.key === 'C') && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        e.preventDefault();
+        setView('compare');
+        setSelected(null);
+        return;
+      }
+      // g — start the two-key "go to view" sequence
+      if ((e.key === 'g' || e.key === 'G') && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        e.preventDefault();
+        _gPending = true;
+        if (_gTimer) clearTimeout(_gTimer);
+        _gTimer = setTimeout(_clearG, 1500);
+        return;
+      }
     };
     document.addEventListener('keydown', onKey);
-    return () => document.removeEventListener('keydown', onKey);
+    return () => { document.removeEventListener('keydown', onKey); _clearG(); };
   }, []);
 
   // Phase 14 — listen for the avatar-menu "Sources & methodology" event.
@@ -141,32 +203,60 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
     setCompare(prev => prev.includes(id) ? prev.filter(x => x !== id) : prev.length < 4 ? [...prev, id] : prev);
   };
 
-  const viewTitle = {
-    map: ['U.S. Propane Market Map', 'Interactive geography of 1,247 retailers'],
-    list: ['Companies', '247 matching current filters · 1,247 total'],
-    analytics: ['Analytics', 'Market trends, ownership mix, roll-up pace'],
-    signals: ['M&A Signals', '18 tracked signals this quarter'],
-    news: ['News', 'Industry news — surfaced by deal-trigger impact'],
-    fit: ['Strategic Fit', 'Targets ranked against Lampton Love platform'],
-    overlap: ['Competitor Overlap', 'County-level service area overlap'],
-    network: ['Relationship Graph', 'Ownership, competition, and acquisition paths'],
-    brief: ['Executive Brief', 'Q2 2026 market intelligence summary'],
-    compare: ['Compare', `${compare.length} companies side-by-side`],
-  }[view];
+  // Build live page subtitles. Re-tick when news / signals load so counts
+  // pick up post-fetch values without a hard reload.
+  const [_subTick, _setSubTick] = React.useState(0);
+  React.useEffect(() => {
+    const bump = () => _setSubTick(x => x + 1);
+    window.addEventListener('pi:news-loaded', bump);
+    window.addEventListener('pi:signals-loaded', bump);
+    return () => {
+      window.removeEventListener('pi:news-loaded', bump);
+      window.removeEventListener('pi:signals-loaded', bump);
+    };
+  }, []);
+
+  const viewTitle = React.useMemo(() => {
+    const cs = (window.MOCK_COMPANIES || []);
+    const total = cs.length;
+    const totalFmt = total.toLocaleString();
+    const hard = (window.HARD_SIGNALS || []).length;
+    const soft = (window.SOFT_SIGNAL_COUNT || 0);
+    const totalSignals = hard + soft;
+    const period = (() => {
+      const m = new Date().getMonth();
+      const q = Math.floor(m / 3) + 1;
+      return 'Q' + q + ' ' + new Date().getFullYear();
+    })();
+    return {
+      map:       ['U.S. Propane Market Map', 'Interactive geography of ' + totalFmt + ' retailers'],
+      list:      ['Companies', totalFmt + ' tracked · sort, filter, and add to scenarios'],
+      analytics: ['Analytics', 'Market trends, ownership mix, roll-up pace'],
+      signals:   ['M&A Signals', totalSignals
+                                 ? (hard + ' hard · ' + soft + ' heuristic signal' + (totalSignals === 1 ? '' : 's') + ' tracked')
+                                 : 'No signals tracked yet'],
+      news:      ['News', 'Industry news — surfaced by deal-trigger impact'],
+      fit:       ['Strategic Fit', 'Targets ranked against Lampton Love platform'],
+      overlap:   ['Competitor Overlap', 'County-level service area overlap'],
+      network:   ['Relationship Graph', 'Ownership, competition, and acquisition paths'],
+      brief:     ['Executive Brief', period + ' market intelligence summary'],
+      compare:   ['Compare', `${compare.length} companies side-by-side`],
+    }[view];
+  }, [view, compare.length, _subTick]);
 
   return (
     <div className="redesign" style={{ width: '100vw', height: '100vh', background: '#F6F9FC', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', fontFamily: "'Inter', sans-serif" }}>
       <TopNav active={view} onView={setView} onCmd={() => setCmdOpen(true)} onLogout={onLogout} user={user} />
       <div style={{ flex: 1, display: 'flex', minHeight: 0, paddingBottom: portfolio.length > 0 ? 64 : 0 }}>
         <SideNav active={view} onView={(v) => { setView(v); setSelected(null); }} />
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minWidth: 0, position: 'relative' }}>
+        <div id="pi-main" tabIndex={-1} style={{ flex: 1, display: 'flex', flexDirection: 'column', minWidth: 0, position: 'relative' }}>
           <PageHeader title={viewTitle[0]} sub={viewTitle[1]}>
             {compare.length > 0 && view !== 'compare' && (
               <Button variant="ink" size="sm" icon="users" onClick={() => setView('compare')}>Compare ({compare.length})</Button>
             )}
             <Button variant="secondary" size="sm" icon="bookmark" onClick={() => setScenariosOpen(true)}>Scenarios{scenarios.length ? ' (' + scenarios.length + ')' : ''}</Button>
-            <Button variant="secondary" size="sm" icon="filter">Filter</Button>
-            <Button variant="primary" size="sm" icon="plus">New analysis</Button>
+            <Button variant="secondary" size="sm" icon="filter" onClick={() => window.dispatchEvent(new CustomEvent('pi:toggle-filters'))}>Filter</Button>
+            <Button variant="primary" size="sm" icon="plus" onClick={() => setScenariosOpen(true)}>New analysis</Button>
           </PageHeader>
 
           {view === 'map' && <MarketMapView onSelect={setSelected} selected={selected} />}

@@ -69,6 +69,78 @@ function computeAggregate(companies) {
   return out;
 }
 
+// Build a state-by-state rollup of LL + targets. For each state present anywhere
+// in the stack we report:
+//   - LL locations in that state
+//   - Target locations in that state (summed across all targets)
+//   - Combined locations
+//   - Number of target companies operating in that state
+//   - Whether LL is already present (for "expand vs new market" framing)
+function computeStateRollup(ll, targets) {
+  const stateMap = new Map(); // state -> row
+  const ensure = (st) => {
+    if (!stateMap.has(st)) stateMap.set(st, {
+      state: st, llLocs: 0, tgtLocs: 0, tgtCompanies: 0, llHere: false, tgtNames: [],
+    });
+    return stateMap.get(st);
+  };
+  // LL locations per state
+  if (ll) {
+    const locs = Array.isArray(ll.locations) ? ll.locations : [];
+    if (locs.length) {
+      for (const l of locs) {
+        const st = (l.state || l.hqState || '').toUpperCase();
+        if (!st) continue;
+        const r = ensure(st);
+        r.llLocs += 1;
+        r.llHere = true;
+      }
+    } else {
+      // Fallback: distribute total locs across listed states evenly when per-loc data missing.
+      const sts = (ll.states || (ll.hqState ? [ll.hqState] : []));
+      const each = sts.length ? Math.round((ll.totalLocs || 0) / sts.length) : 0;
+      for (const st of sts) {
+        const r = ensure((st || '').toUpperCase());
+        if (each) r.llLocs += each;
+        r.llHere = true;
+      }
+    }
+  }
+  // Targets
+  for (const c of targets) {
+    const locs = Array.isArray(c.locations) ? c.locations : [];
+    const seenStates = new Set();
+    if (locs.length) {
+      for (const l of locs) {
+        const st = (l.state || l.hqState || '').toUpperCase();
+        if (!st) continue;
+        const r = ensure(st);
+        r.tgtLocs += 1;
+        seenStates.add(st);
+      }
+    } else {
+      const sts = (c.states || (c.hqState ? [c.hqState] : []));
+      const each = sts.length ? Math.round((c.totalLocs || 0) / sts.length) : 0;
+      for (const st of sts) {
+        const sU = (st || '').toUpperCase();
+        const r = ensure(sU);
+        if (each) r.tgtLocs += each;
+        seenStates.add(sU);
+      }
+    }
+    for (const st of seenStates) {
+      const r = ensure(st);
+      r.tgtCompanies += 1;
+      if (r.tgtNames.length < 4 && !r.tgtNames.includes(c.name)) r.tgtNames.push(c.name);
+    }
+  }
+  return Array.from(stateMap.values()).map(r => ({
+    ...r,
+    combinedLocs: r.llLocs + r.tgtLocs,
+    isNewMarket: !r.llHere && r.tgtLocs > 0,
+  })).sort((a, b) => b.combinedLocs - a.combinedLocs);
+}
+
 // Resolve company ids → objects, preserving order. Skips ids that don't resolve.
 function _resolvePortfolio(ids) {
   const cs = window.MOCK_COMPANIES || [];
@@ -320,6 +392,67 @@ function ProFormaModal({ ids = [], onClose, onRemove, onSelect }) {
               </tr>
             </tbody>
           </table>
+
+          {/* State-by-state rollup grid */}
+          {(() => {
+            const rollup = computeStateRollup(ll, companies);
+            if (!rollup.length) return null;
+            const newMarketCount = rollup.filter(r => r.isNewMarket).length;
+            const expandCount = rollup.filter(r => r.llHere && r.tgtLocs > 0).length;
+            return (
+              <div style={{ marginTop: 22 }}>
+                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 8 }}>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: '#0A2540' }}>State-by-state pro forma footprint</div>
+                  <div style={{ fontSize: 11, color: '#697386' }}>
+                    {expandCount} state{expandCount === 1 ? '' : 's'} expanded · {newMarketCount} new market{newMarketCount === 1 ? '' : 's'}
+                  </div>
+                </div>
+                <div style={{ border: '1px solid #E3E8EE', borderRadius: 8, overflow: 'hidden', background: '#fff' }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
+                    <thead>
+                      <tr style={{ background: '#F7FAFC', color: '#697386', textAlign: 'left', textTransform: 'uppercase', letterSpacing: 0.4, fontSize: 10 }}>
+                        <th style={_pfTh}>State</th>
+                        <th style={_pfTh}>Status</th>
+                        <th style={_pfThNum}>LL locs</th>
+                        <th style={_pfThNum}>Target locs</th>
+                        <th style={_pfThNum}>Combined</th>
+                        <th style={_pfThNum}>Targets</th>
+                        <th style={_pfTh}>Notable targets</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {rollup.map(r => (
+                        <tr key={r.state} style={{ borderBottom: '1px solid #EDF1F6', background: r.isNewMarket ? '#F4FBF7' : '#fff' }}>
+                          <td style={{ ..._pfTd, fontWeight: 600, color: '#0A2540' }}>{r.state}</td>
+                          <td style={_pfTd}>
+                            {r.isNewMarket ? (
+                              <Badge tone="green" dot>New market</Badge>
+                            ) : r.llHere && r.tgtLocs > 0 ? (
+                              <Badge tone="indigo" dot>Expand</Badge>
+                            ) : r.llHere ? (
+                              <Badge tone="amber" dot>LL only</Badge>
+                            ) : (
+                              <Badge tone="neutral" dot>—</Badge>
+                            )}
+                          </td>
+                          <td style={_pfTdNum}>{r.llLocs ? _pfInt(r.llLocs) : <span style={{ color: '#C1CCD6' }}>—</span>}</td>
+                          <td style={_pfTdNum}>{r.tgtLocs ? _pfInt(r.tgtLocs) : <span style={{ color: '#C1CCD6' }}>—</span>}</td>
+                          <td style={{ ..._pfTdNum, fontWeight: 600 }}>{_pfInt(r.combinedLocs)}</td>
+                          <td style={_pfTdNum}>{r.tgtCompanies || <span style={{ color: '#C1CCD6' }}>—</span>}</td>
+                          <td style={{ ..._pfTd, fontSize: 11, color: '#697386' }}>
+                            {r.tgtNames.length ? r.tgtNames.slice(0, 3).join(', ') + (r.tgtCompanies > 3 ? ' +' + (r.tgtCompanies - 3) : '') : '—'}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div style={{ marginTop: 6, fontSize: 10, color: '#8B97A8' }}>
+                  Location counts use per-location data when available, otherwise distribute totalLocs evenly across listed states.
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Side-by-side standalone vs combined */}
           <div style={{ marginTop: 22, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>

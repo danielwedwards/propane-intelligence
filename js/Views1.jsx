@@ -10,18 +10,32 @@ const OWNERSHIP_TYPES = [
   { k: 'private', label: 'Private',      color: '#697386' },
 ];
 
+// Business-type taxonomy — keyed off `c.companyType` (already populated in data).
+// Used by both MarketMapView and CompanyListView filter panels.
+const COMPANY_TYPES = [
+  { k: 'retail_dealer',       label: 'Retail dealer',  color: '#635BFF' },
+  { k: 'multi_fuel',          label: 'Multi-fuel',     color: '#F59E0B' },
+  { k: 'coop_utility',        label: 'Coop / utility', color: '#0EA5E9' },
+  { k: 'industrial_gas',      label: 'Industrial gas', color: '#7C3AED' },
+  { k: 'cylinder_exchange',   label: 'Cylinder',       color: '#10B981' },
+  { k: 'wholesale_transport', label: 'Wholesale',      color: '#64748B' },
+];
+
 function MarketMapView({ onSelect, selected }) {
   const [filterOpen, setFilterOpen] = React.useState(true);
   const companies = window.MOCK_COMPANIES || [];
 
   // ----- controlled filter state -------------------------------------------
   const [ownership, setOwnership] = React.useState(() => new Set()); // empty = all
+  const [companyType, setCompanyType] = React.useState(() => new Set()); // empty = all
   const [states, setStates]       = React.useState(() => new Set()); // empty = all
   const [search, setSearch]       = React.useState('');
   const [revRange, setRevRange]   = React.useState([0, 5000]);   // $M
   const [locRange, setLocRange]   = React.useState([0, 5000]);
   const [fitRange, setFitRange]   = React.useState([0, 100]);
   const [region, setRegion]       = React.useState('all');
+  const [hideExcluded, setHideExcluded] = React.useState(true);
+  const [platformOnly, setPlatformOnly] = React.useState(false);
 
   const [colorMode, setColorMode] = React.useState('ownership'); // 'ownership' | 'company'
   const [clusterOn, setClusterOn] = React.useState(false);
@@ -31,6 +45,12 @@ function MarketMapView({ onSelect, selected }) {
   const ownershipCounts = React.useMemo(() => {
     const counts = {};
     for (const c of companies) counts[c.ownership] = (counts[c.ownership] || 0) + 1;
+    return counts;
+  }, [companies]);
+
+  const companyTypeCounts = React.useMemo(() => {
+    const counts = {};
+    for (const c of companies) counts[c.companyType] = (counts[c.companyType] || 0) + 1;
     return counts;
   }, [companies]);
 
@@ -51,13 +71,15 @@ function MarketMapView({ onSelect, selected }) {
 
   const filters = React.useMemo(() => ({
     ownership: ownership.size ? ownership : null,
+    companyType: companyType.size ? companyType : null,
     states: states.size ? states : null,
     region,
     revRange: revRange[0] === 0 && revRange[1] === 5000 ? null : revRange,
     locRange: locRange[0] === 0 && locRange[1] === 5000 ? null : locRange,
     fitRange: fitRange[0] === 0 && fitRange[1] === 100 ? null : fitRange,
-    hideExcluded: true,
-  }), [ownership, states, region, revRange, locRange, fitRange]);
+    hideExcluded,
+    platformOnly,
+  }), [ownership, companyType, states, region, revRange, locRange, fitRange, hideExcluded, platformOnly]);
 
   // Phase 15 — publish current filters/search to the shared bus so AnalyticsView
   // (and any other view) can mirror them. Stored as a *plain* shape (Sets converted
@@ -66,15 +88,24 @@ function MarketMapView({ onSelect, selected }) {
     window._PI_SHARED_FILTERS = {
       filters: {
         ownership: ownership.size ? Array.from(ownership) : null,
+        companyType: companyType.size ? Array.from(companyType) : null,
         states:    states.size    ? Array.from(states)    : null,
-        region, revRange, locRange, fitRange,
+        region, revRange, locRange, fitRange, hideExcluded, platformOnly,
       },
       search,
     };
-  }, [ownership, states, region, revRange, locRange, fitRange, search]);
+  }, [ownership, companyType, states, region, revRange, locRange, fitRange, hideExcluded, platformOnly, search]);
 
   const toggleOwnership = (k) => {
     setOwnership(prev => {
+      const next = new Set(prev);
+      if (next.has(k)) next.delete(k);
+      else next.add(k);
+      return next;
+    });
+  };
+  const toggleCompanyType = (k) => {
+    setCompanyType(prev => {
       const next = new Set(prev);
       if (next.has(k)) next.delete(k);
       else next.add(k);
@@ -99,12 +130,15 @@ function MarketMapView({ onSelect, selected }) {
 
   const clearAll = () => {
     setOwnership(new Set());
+    setCompanyType(new Set());
     setStates(new Set());
     setSearch('');
     setRevRange([0, 5000]);
     setLocRange([0, 5000]);
     setFitRange([0, 100]);
     setRegion('all');
+    setHideExcluded(true);
+    setPlatformOnly(false);
   };
 
   return (
@@ -160,6 +194,32 @@ function MarketMapView({ onSelect, selected }) {
                 </label>
               );
             })}
+          </FilterBlock>
+
+          <FilterBlock title="Business type" value={companyType.size ? `${companyType.size} selected` : 'All types'}>
+            {COMPANY_TYPES.map(t => {
+              const checked = companyType.size === 0 || companyType.has(t.k);
+              const n = companyTypeCounts[t.k] || 0;
+              return (
+                <label key={t.k} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '5px 0', fontSize: 13, color: '#425466', cursor: 'pointer' }}>
+                  <input type="checkbox" checked={checked} onChange={() => toggleCompanyType(t.k)} style={{ accentColor: '#635BFF' }} />
+                  <span style={{ width: 8, height: 8, borderRadius: '50%', background: t.color }} />
+                  <span style={{ flex: 1 }}>{t.label}</span>
+                  <span style={{ fontSize: 11, color: '#8B97A8', fontFamily: "'IBM Plex Mono'" }}>{n}</span>
+                </label>
+              );
+            })}
+          </FilterBlock>
+
+          <FilterBlock title="Visibility" value={(hideExcluded ? 'Excluded hidden' : 'All shown') + (platformOnly ? ' · platforms only' : '')}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '5px 0', fontSize: 13, color: '#425466', cursor: 'pointer' }}>
+              <input type="checkbox" checked={hideExcluded} onChange={(e) => setHideExcluded(e.target.checked)} style={{ accentColor: '#635BFF' }} />
+              <span style={{ flex: 1 }}>Hide excluded companies</span>
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '5px 0', fontSize: 13, color: '#425466', cursor: 'pointer' }}>
+              <input type="checkbox" checked={platformOnly} onChange={(e) => setPlatformOnly(e.target.checked)} style={{ accentColor: '#635BFF' }} />
+              <span style={{ flex: 1 }}>Platform candidates only</span>
+            </label>
           </FilterBlock>
 
           <FilterBlock title="Revenue ($M)" value={`$${revRange[0]}M–$${revRange[1] >= 5000 ? '5B+' : revRange[1]+'M'}`}>
@@ -618,18 +678,23 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
   // ----- filter state -----
   const [search, setSearch]       = React.useState('');
   const [ownership, setOwnership] = React.useState(() => new Set());
+  const [companyType, setCompanyType] = React.useState(() => new Set());
   const [statesSel, setStatesSel] = React.useState(() => new Set());
   const [region, setRegion]       = React.useState('all');
+  const [hideExcluded, setHideExcluded] = React.useState(true);
+  const [platformOnly, setPlatformOnly] = React.useState(false);
   const [sortCol, setSortCol]     = React.useState('fitScore');
   const [sortDir, setSortDir]     = React.useState('desc');
   const [pageSize, setPageSize]   = React.useState(200);
 
   const filters = React.useMemo(() => ({
     ownership: ownership.size ? ownership : null,
+    companyType: companyType.size ? companyType : null,
     states: statesSel.size ? statesSel : null,
     region,
-    hideExcluded: true,
-  }), [ownership, statesSel, region]);
+    hideExcluded,
+    platformOnly,
+  }), [ownership, companyType, statesSel, region, hideExcluded, platformOnly]);
 
   // Phase 15 — publish current filters/search to the shared bus so AnalyticsView
   // (and any other view) can mirror them.
@@ -637,12 +702,13 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
     window._PI_SHARED_FILTERS = {
       filters: {
         ownership: ownership.size ? Array.from(ownership) : null,
+        companyType: companyType.size ? Array.from(companyType) : null,
         states:    statesSel.size ? Array.from(statesSel) : null,
-        region,
+        region, hideExcluded, platformOnly,
       },
       search,
     };
-  }, [ownership, statesSel, region, search]);
+  }, [ownership, companyType, statesSel, region, hideExcluded, platformOnly, search]);
 
   // Filter via the shared engine (same filter as the map for parity).
   const filtered = React.useMemo(() => {
@@ -690,6 +756,9 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
   const toggleOwnership = (k) => setOwnership(prev => {
     const next = new Set(prev); if (next.has(k)) next.delete(k); else next.add(k); return next;
   });
+  const toggleCompanyType = (k) => setCompanyType(prev => {
+    const next = new Set(prev); if (next.has(k)) next.delete(k); else next.add(k); return next;
+  });
   const toggleStateSel = (s) => setStatesSel(prev => {
     const next = new Set(prev); if (next.has(s)) next.delete(s); else next.add(s); return next;
   });
@@ -712,8 +781,14 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
   // Active-filter chips
   const chips = [];
   ownership.forEach(o => chips.push({ label: o[0].toUpperCase() + o.slice(1), clear: () => toggleOwnership(o) }));
+  companyType.forEach(t => {
+    const def = COMPANY_TYPES.find(x => x.k === t);
+    chips.push({ label: def ? def.label : t.replace(/_/g, ' '), clear: () => toggleCompanyType(t) });
+  });
   [...statesSel].sort().forEach(s => chips.push({ label: s, clear: () => toggleStateSel(s) }));
   if (region !== 'all') chips.push({ label: region.replace('_',' '), clear: () => setRegion('all') });
+  if (!hideExcluded) chips.push({ label: 'Incl. excluded', clear: () => setHideExcluded(true) });
+  if (platformOnly) chips.push({ label: 'Platforms only', clear: () => setPlatformOnly(false) });
   if (search) chips.push({ label: '"' + search + '"', clear: () => setSearch('') });
 
   return (
@@ -759,6 +834,40 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
               </button>
             );
           })}
+        </div>
+
+        {/* Business-type pills */}
+        <div style={{ display: 'flex', gap: 4 }}>
+          {COMPANY_TYPES.map(t => {
+            const on = companyType.has(t.k);
+            return (
+              <button key={t.k} onClick={() => toggleCompanyType(t.k)} title={t.label} style={{
+                padding: '4px 9px', border: '1px solid ' + (on ? t.color : '#E3E8EE'),
+                background: on ? t.color + '22' : '#fff',
+                color: on ? '#0A2540' : '#425466',
+                borderRadius: 9999, fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit', display: 'inline-flex', alignItems: 'center', gap: 5,
+              }}>
+                <span style={{ width: 6, height: 6, borderRadius: '50%', background: t.color }}/>
+                {t.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Visibility toggles */}
+        <div style={{ display: 'flex', gap: 4 }}>
+          <button onClick={() => setHideExcluded(v => !v)} title={hideExcluded ? 'Excluded companies hidden' : 'Excluded companies visible'} style={{
+            padding: '4px 9px', border: '1px solid ' + (!hideExcluded ? '#635BFF' : '#E3E8EE'),
+            background: !hideExcluded ? '#EEF0FF' : '#fff',
+            color: !hideExcluded ? '#4B45B8' : '#425466',
+            borderRadius: 9999, fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit',
+          }}>{hideExcluded ? 'Hide excluded' : 'Incl. excluded'}</button>
+          <button onClick={() => setPlatformOnly(v => !v)} title="Restrict to platform candidates" style={{
+            padding: '4px 9px', border: '1px solid ' + (platformOnly ? '#635BFF' : '#E3E8EE'),
+            background: platformOnly ? '#EEF0FF' : '#fff',
+            color: platformOnly ? '#4B45B8' : '#425466',
+            borderRadius: 9999, fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit',
+          }}>Platforms only</button>
         </div>
 
         {/* State picker dropdown */}
@@ -816,6 +925,7 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
             sortCol={sortCol} sortDir={sortDir} onSort={setSort}
             onSelect={onSelect} selected={selected}
             compare={compare} onCompare={onCompare}
+            search={search}
           />
           {sorted.length > visible.length && (
             <div style={{ padding: '14px 18px', borderTop: '1px solid #EDF1F6', textAlign: 'center', background: '#F7FAFC' }}>
@@ -855,7 +965,35 @@ function SortableTH({ id, label, align, sortCol, sortDir, onSort }) {
   );
 }
 
-function CompaniesTable({ rows, sortCol, sortDir, onSort, onSelect, selected, compare = [], onCompare }) {
+// Highlight occurrences of `term` in `str` with a yellow <mark>. Case-insensitive,
+// preserves the original casing of the source string. Returns the original string
+// when there's nothing to highlight.
+function _highlightMatch(str, term) {
+  if (!str) return str;
+  const t = (term || '').trim();
+  if (!t || t.length < 2) return str;
+  const s = String(str);
+  const lc = s.toLowerCase();
+  const lct = t.toLowerCase();
+  const out = [];
+  let i = 0;
+  let key = 0;
+  while (i < s.length) {
+    const hit = lc.indexOf(lct, i);
+    if (hit === -1) { out.push(s.slice(i)); break; }
+    if (hit > i) out.push(s.slice(i, hit));
+    out.push(
+      React.createElement('mark', {
+        key: 'm' + (key++),
+        style: { background: '#FFF3B0', color: 'inherit', padding: '0 1px', borderRadius: 2 },
+      }, s.slice(hit, hit + t.length))
+    );
+    i = hit + t.length;
+  }
+  return out;
+}
+
+function CompaniesTable({ rows, sortCol, sortDir, onSort, onSelect, selected, compare = [], onCompare, search }) {
   const _onSort = onSort || (() => {});
   return (
     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
@@ -899,8 +1037,8 @@ function CompaniesTable({ rows, sortCol, sortDir, onSort, onSelect, selected, co
                     {(c.name || '').slice(0, 2).toUpperCase()}
                   </div>
                   <div>
-                    <div style={{ fontWeight: 500, color: '#0A2540' }}>{c.name}</div>
-                    <div style={{ fontSize: 11, color: '#8B97A8' }}>{c.parent || c.parentGroup || '—'}</div>
+                    <div style={{ fontWeight: 500, color: '#0A2540' }}>{_highlightMatch(c.name, search)}</div>
+                    <div style={{ fontSize: 11, color: '#8B97A8' }}>{_highlightMatch(c.parent || c.parentGroup || '—', search)}</div>
                   </div>
                 </div>
               </td>
@@ -908,7 +1046,7 @@ function CompaniesTable({ rows, sortCol, sortDir, onSort, onSelect, selected, co
                 <Badge dot tone={tone}>{c.typeLabel || c.ownership}</Badge>
               </td>
               <td style={{ padding: '10px 14px', color: '#425466', fontSize: 12 }}>
-                {c.hqCity ? c.hqCity + ', ' : ''}{c.hqState || (c.states || [])[0] || '—'}
+                {c.hqCity ? <>{_highlightMatch(c.hqCity, search)}{', '}</> : ''}{c.hqState || (c.states || [])[0] || '—'}
                 {(c.states || []).length > 1 && (
                   <span style={{ color: '#8B97A8' }}> · +{c.states.length - 1}</span>
                 )}

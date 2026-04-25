@@ -36,9 +36,93 @@
       animation: pulse 1.2s ease-in-out infinite;
     }
     @keyframes pulse { 0%,100% { opacity: 0.3; transform: scale(0.85); } 50% { opacity: 1; transform: scale(1); } }
+
+    /* Skip-to-main-content a11y link — only visible when focused. */
+    .pi-skip-link {
+      position: absolute; left: -9999px; top: -9999px;
+      padding: 8px 14px; background: #0A2540; color: #fff;
+      border-radius: 6px; font-size: 13px; font-weight: 600;
+      text-decoration: none; z-index: 1000;
+    }
+    .pi-skip-link:focus {
+      left: 12px; top: 12px;
+      outline: 2px solid #FFD100; outline-offset: 2px;
+    }
+
+    /* ----- Dark mode -----
+       Activated by adding `pi-dark` to <body>. Mirrors the light-mode palette
+       but inverts surfaces and lifts text contrast. Brand purple/yellow accents
+       are unchanged. */
+    body.pi-dark { background: #0B121C !important; color: #E5EAF2 !important; }
+    body.pi-dark #boot { background: #0B121C; color: #8A93A6; }
+    body.pi-dark .redesign { background: #0B121C !important; }
+    body.pi-dark .pi-top-nav,
+    body.pi-dark .pi-side-nav { background: #131C2A !important; border-color: #1F2B3D !important; }
+    body.pi-dark h1, body.pi-dark h2, body.pi-dark h3 { color: #F5F7FB !important; }
+    body.pi-dark a { color: #A1A6FF; }
+    body.pi-dark .pi-tip { background: #131C2A !important; border-color: #1F2B3D !important; color: #E5EAF2 !important; }
+    body.pi-dark .pi-tip:before { border-top-color: #131C2A !important; }
+    /* Cards default to white in inline styles; soften them. */
+    body.pi-dark *[style*="background: #fff"],
+    body.pi-dark *[style*="background:#fff"],
+    body.pi-dark *[style*="background: #FFF"],
+    body.pi-dark *[style*="background: rgb(255, 255, 255)"] { background: #131C2A !important; }
+    body.pi-dark *[style*="background: #F6F9FC"],
+    body.pi-dark *[style*="background:#F6F9FC"] { background: #0B121C !important; }
+    body.pi-dark *[style*="background: #F7FAFC"],
+    body.pi-dark *[style*="background:#F7FAFC"] { background: #1A2536 !important; }
+    body.pi-dark *[style*="background: #FBFCFE"],
+    body.pi-dark *[style*="background:#FBFCFE"] { background: #16202F !important; }
+    body.pi-dark *[style*="background: #EEF0FF"],
+    body.pi-dark *[style*="background:#EEF0FF"] { background: #1F1E45 !important; }
+    body.pi-dark *[style*="border: 1px solid #E3E8EE"],
+    body.pi-dark *[style*="border:1px solid #E3E8EE"],
+    body.pi-dark *[style*="border-color: #E3E8EE"] { border-color: #233047 !important; }
+    body.pi-dark *[style*="border-bottom: 1px solid #EDF1F6"],
+    body.pi-dark *[style*="border-bottom:1px solid #EDF1F6"],
+    body.pi-dark *[style*="border-bottom: 1px solid #E3E8EE"] { border-bottom-color: #233047 !important; }
+    body.pi-dark *[style*="color: #0A2540"],
+    body.pi-dark *[style*="color:#0A2540"] { color: #F5F7FB !important; }
+    body.pi-dark *[style*="color: #425466"],
+    body.pi-dark *[style*="color:#425466"] { color: #BCC4D2 !important; }
+    body.pi-dark *[style*="color: #697386"],
+    body.pi-dark *[style*="color:#697386"] { color: #8A93A6 !important; }
+    body.pi-dark *[style*="color: #8B97A8"],
+    body.pi-dark *[style*="color:#8B97A8"] { color: #6B7689 !important; }
+
+    /* ----- Print stylesheet -----
+       Optimized for printing the Executive Brief view. Hides chrome (top nav,
+       side nav, page header buttons, slideovers, footers) and lets the brief
+       canvas flow naturally on US-Letter pages. */
+    @media print {
+      @page { size: letter; margin: 0.5in; }
+      html, body, #root { height: auto !important; overflow: visible !important; background: #fff !important; }
+      body { color: #000 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      /* Hide app chrome that shouldn't appear in print */
+      .pi-skip-link,
+      [data-pi-noprint],
+      nav[role="navigation"],
+      .pi-side-nav,
+      .pi-top-nav { display: none !important; }
+      /* Top-nav has no marker class today; hide by structural fallback */
+      body > #root > div > div:first-child,                     /* TopNav */
+      body > #root > div > div:nth-child(2) > div:first-child,  /* SideNav */
+      body > #root > div > div:nth-child(2) > div > div:first-child > div:nth-child(2) /* PageHeader buttons row */
+      { /* keep — hidden via .pi-print-hide instead */ }
+      .pi-print-hide { display: none !important; }
+      .pi-print-fullwidth { width: 100% !important; max-width: 100% !important; }
+      a[href]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+      a[href^="#"]::after, a[href^="javascript:"]::after { content: ""; }
+      /* Page-break helpers */
+      .pi-print-pagebreak { page-break-before: always; }
+      .pi-print-avoid-break { page-break-inside: avoid; }
+      /* Force charts to fit */
+      svg, canvas, .echarts-for-react { max-width: 100% !important; height: auto !important; }
+    }
   </style>
 </head>
 <body>
+  <a href="#pi-main" class="pi-skip-link">Skip to main content</a>
   <div id="root">
     <div id="boot"><span class="dot"></span> Loading Propane Intelligence…</div>
   </div>
@@ -202,6 +286,10 @@
         window.__COMPANY_COUNT__ = companies.length;
         window.__DEMO_TO_REAL__ = DEMO_TO_REAL;
         console.info('[PI] loaded', companies.length, 'companies,', (countiesRaw||[]).length, 'counties');
+        // Notify subscribers that the canonical data tables are now populated.
+        // Login screens / page subtitles / stat cards listen for this so their
+        // numbers tick up once the JSON resolves.
+        try { window.dispatchEvent(new CustomEvent('pi:data-ready')); } catch (_) {}
       } catch (err) {
         console.error('[PI] data load failed; falling back to demo data only', err);
         window.REAL_COMPANIES = [];
