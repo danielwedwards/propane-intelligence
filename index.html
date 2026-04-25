@@ -952,6 +952,25 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
 [data-theme="dark"] .act-item:hover{background:#142031}
 @media (max-width:760px){.act-panel{width:300px}}
 @media print{.act-wrap{display:none!important}}
+/* === v4.16.0: Export-to-deck — print all key sections in sequence === */
+@media print{
+  body.deck-mode .header{position:static}
+  body.deck-mode .section-nav,body.deck-mode .sub-toggle,body.deck-mode .logout-btn,body.deck-mode .header-stats,body.deck-mode .act-wrap{display:none!important}
+  body.deck-mode .main{display:block!important;height:auto!important;overflow:visible!important}
+  body.deck-mode .main .left,body.deck-mode .main .rh,body.deck-mode .main .map-wrap,body.deck-mode .main .charts-wrap,body.deck-mode .main .intel-wrap,body.deck-mode .main .pf-wrap,body.deck-mode .main .pp{display:none!important}
+  body.deck-mode .brief-wrap,body.deck-mode .cmp-wrap,body.deck-mode .overlap-wrap,body.deck-mode .net-wrap,body.deck-mode .scn-wrap{display:block!important;overflow:visible!important;height:auto!important;page-break-before:always;padding:24px 28px}
+  body.deck-mode .deck-cover{display:flex!important;flex-direction:column;justify-content:center;align-items:flex-start;padding:60px;min-height:8in;background:#141414;color:#fff;page-break-after:always}
+  body.deck-mode .deck-cover .eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:#FFD100;text-transform:uppercase;margin-bottom:14px}
+  body.deck-mode .deck-cover h1{font-size:38pt;margin:0 0 14px 0;font-family:Georgia,serif;font-weight:400}
+  body.deck-mode .deck-cover .sub{font-size:14pt;color:#A8A4A2}
+  body.deck-mode .deck-cover .toc{margin-top:36px;font-size:10pt;color:#E0DBD5}
+  body.deck-mode .deck-cover .toc li{padding:4px 0;list-style:none;border-bottom:1px solid #595959}
+  body.deck-mode .scn-save,body.deck-mode .scn-diff,body.deck-mode .cmp-controls,body.deck-mode .ov-controls,body.deck-mode .net-controls,body.deck-mode .net-toolbar,body.deck-mode .scn-card .actions,body.deck-mode .brief-head .actions{display:none!important}
+  body.deck-mode .scn-card{break-inside:avoid;page-break-inside:avoid}
+  body.deck-mode .net-canvas-wrap{height:6.5in!important}
+  @page{margin:0.5in;size:landscape}
+}
+.deck-cover{display:none}
 /* v4.14.0 Watchlist panel items + star toggle */
 .wl-item{display:flex;gap:10px;align-items:center;padding:9px 14px;border-left:2px solid transparent;transition:background .12s ease;cursor:pointer}
 .wl-item:hover{background:var(--light-bg);border-left-color:#E0A106}
@@ -3169,6 +3188,46 @@ function _briefFmtDate(d){
   return mo+' '+d.getDate()+', '+d.getFullYear();
 }
 function briefPrint(){window.print()}
+/* === v4.16.0: Export deck — print Brief+Compare+Overlap+Network+Scenarios as PDF === */
+function exportDeck(){
+  // Render every section so its content is up-to-date
+  try{if(typeof renderBrief==='function')renderBrief()}catch(e){}
+  try{if(typeof renderCompare==='function')renderCompare()}catch(e){}
+  try{if(typeof renderOverlap==='function')renderOverlap()}catch(e){}
+  try{if(typeof renderNetwork==='function')renderNetwork()}catch(e){}
+  try{if(typeof renderScenarios==='function')renderScenarios()}catch(e){}
+  // Build cover page if not present
+  let cover=document.getElementById('deckCover');
+  if(!cover){
+    cover=document.createElement('section');
+    cover.id='deckCover';cover.className='deck-cover';
+    let mainEl=document.querySelector('.main');
+    if(mainEl&&mainEl.parentElement){mainEl.parentElement.insertBefore(cover,mainEl)}
+    else{document.body.appendChild(cover)}
+  }
+  let acqs=platform.map(id=>DATA.find(c=>c.id===id)).filter(Boolean);
+  let acqList=acqs.length?acqs.map(c=>'<li>'+esc(c.name)+'</li>').join(''):'<li style="color:#A8A4A2;font-style:italic">No acquisitions selected — anchored on Lampton Love</li>';
+  let sections=[];
+  if(document.getElementById('briefBody'))sections.push('Strategic Platform Brief');
+  if(compareIds.length>=2)sections.push('Compare ('+compareIds.length+' companies)');
+  if(platform.length)sections.push('Overlap Heatmap');
+  if(platform.length)sections.push('Network Graph');
+  if(_scnAll().length)sections.push('Scenarios ('+_scnAll().length+')');
+  cover.innerHTML='<div class="eyebrow">Strategic Platform Deck</div>'+
+    '<h1>U.S. Propane Market Intelligence</h1>'+
+    '<div class="sub">Pro-forma rollup briefing &middot; '+new Date().toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'})+'</div>'+
+    '<div class="toc"><div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#FFD100;margin-bottom:8px">Contents</div><ul style="margin:0;padding:0">'+
+      sections.map(s=>'<li>'+s+'</li>').join('')+
+    '</ul></div>'+
+    '<div class="toc" style="margin-top:24px"><div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#FFD100;margin-bottom:8px">Targets in this deck</div><ul style="margin:0;padding:0">'+acqList+'</ul></div>';
+  // Apply deck mode and print
+  document.body.classList.add('deck-mode');
+  showToast('Preparing deck PDF…');
+  setTimeout(()=>{
+    window.print();
+    setTimeout(()=>{document.body.classList.remove('deck-mode')},800);
+  },200);
+}
 function briefEmail(){
   let ll=DATA.find(c=>c.id===LL_ID);
   let acqs=platform.map(id=>DATA.find(c=>c.id===id)).filter(Boolean);
@@ -3296,6 +3355,7 @@ function renderBrief(){
     '</div>'+
     '<div class="actions">'+
     '<button class="primary" onclick="briefPrint()" title="Print or save as PDF">&#128424; Print / PDF</button>'+
+    '<button onclick="exportDeck()" title="Print Brief + Compare + Overlap + Network + Scenarios as one deck">&#128196; Export Deck</button>'+
     '<button onclick="briefEmail()" title="Email summary">&#9993; Email</button>'+
     '<button onclick="setSection(\'companies\')" title="Browse companies">&#43; Add targets</button>'+
     '</div></div>';
