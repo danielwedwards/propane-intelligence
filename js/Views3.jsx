@@ -801,7 +801,7 @@ function CompanyDetail({ companyId, onClose, onCompare }) {
           <_Kpi label="Est. revenue"   value={_fmtMoneyM(c.estRevenue)}/>
           <_Kpi label="Employees"      value={_fmtInt(c.employeeCount)}/>
           <_Kpi label="Year founded"   value={c.yearFounded || '—'}/>
-          <_Kpi label="Annual gallons" value={_fmtGallons(c.estAnnualGallons)}/>
+          <_Kpi label="Annual gallons" value={_fmtGallons((c.marketShare && c.marketShare.nationalG) || c.estAnnualGallons)}/>
           <_Kpi label="Avg dist to LL" value={c.proxScore ? _fmtDist(c.proxScore.mean) : '—'} sub={c.proxScore && c.proxScore.locsWithin100 ? c.proxScore.locsWithin100 + ' locs ≤100mi' : null}/>
           <_Kpi label="Shared counties" value={c.countyShared ? _fmtInt(c.countyShared.count) : '—'} sub={c.countyShared && c.countyShared.pct ? _fmtPct(c.countyShared.pct, 0) + ' of LL' : null}/>
           <_Kpi label="Market share"    value={c.marketShare ? _fmtPct(c.marketShare.nationalPct, 2) : '—'} sub={totalG ? _fmtGallons(totalG) : null}/>
@@ -980,7 +980,7 @@ function CompareView({ ids, onRemove }) {
     ['States',       (c) => (c.states || []).length,                                  (c) => (c.states || []).length],
     ['Revenue (est.)', (c) => _fmtMoneyM(c.estRevenue),                                (c) => c.estRevenue],
     ['Employees',    (c) => _fmtInt(c.employeeCount),                                  (c) => c.employeeCount],
-    ['Annual gallons', (c) => _fmtGallons(c.estAnnualGallons),                         (c) => c.estAnnualGallons],
+    ['Annual gallons', (c) => _fmtGallons((c.marketShare && c.marketShare.nationalG) || c.estAnnualGallons), (c) => (c.marketShare && c.marketShare.nationalG) || c.estAnnualGallons],
     ['Market share', (c) => c.marketShare ? _fmtPct(c.marketShare.nationalPct, 2) : '—', (c) => c.marketShare ? c.marketShare.nationalPct : null],
     ['Avg dist to LL', (c) => c.proxScore ? _fmtDist(c.proxScore.mean) : '—',          (c) => c.proxScore ? c.proxScore.mean : null,          'min'],
     ['Shared counties', (c) => c.countyShared ? _fmtInt(c.countyShared.count) : '—',   (c) => c.countyShared ? c.countyShared.count : null],
