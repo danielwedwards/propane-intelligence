@@ -954,6 +954,18 @@ body:has(.main.view-brief) .pf-bar{display:none!important}
 .brief-intel-item .hl{font-size:13px;font-weight:500;color:var(--text-primary);line-height:1.4}
 .brief-foot{margin-top:24px;padding-top:14px;border-top:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;color:var(--text-tertiary);font-family:var(--font-mono);flex-wrap:wrap}
 .brief-foot .gen{font-weight:600;color:var(--text-secondary)}
+/* v4.11.0: Brief map snapshot — state tilegram */
+.brief-map-card{background:var(--light-bg);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:14px 16px;margin-bottom:14px}
+.brief-map-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.brief-map-head .lbl{font-size:11px;color:var(--text-tertiary);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:0.4px;font-weight:600}
+.brief-map-head .meta{font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);font-weight:500}
+.brief-map-card svg g{transition:opacity 100ms}
+.brief-map-card svg g:hover{opacity:0.85}
+.brief-map-legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border-subtle);font-size:10px;color:var(--text-secondary)}
+.brief-map-legend .lg-item{display:inline-flex;align-items:center;gap:5px}
+.brief-map-legend .lg-sw{width:11px;height:11px;border-radius:2px;border:1px solid;display:inline-block}
+.brief-map-legend .lg-stats{margin-left:auto;font-family:var(--font-mono);color:var(--text-tertiary);font-size:10px}
+[data-theme="dark"] .brief-map-card{background:#0f1722;border-color:#2a3a4e}
 [data-theme="dark"] .brief-wrap{background:#0a1018}
 [data-theme="dark"] .brief-page{background:#16202e;border-color:#2a3a4e}
 [data-theme="dark"] .brief-kpi,[data-theme="dark"] .brief-card,[data-theme="dark"] .brief-intel-item,[data-theme="dark"] .brief-empty{background:#0f1722;border-color:#2a3a4e}
@@ -3017,6 +3029,98 @@ function briefEmail(){
   let subj=encodeURIComponent('Lampton-Love Platform Brief — '+_briefFmtDate());
   window.location.href='mailto:?subject='+subj+'&body='+body;
 }
+/* === v4.11.0: Brief map snapshot — state tilegram (print-friendly SVG) === */
+const _BRIEF_TILEGRAM={
+  ME:[12,1], VT:[10,2], NH:[11,2],
+  AK:[1,3], WA:[2,3], ID:[3,3], MT:[4,3], ND:[5,3], MN:[6,3], WI:[7,3], MI:[8,3], NY:[9,3], MA:[11,3], RI:[12,3],
+  OR:[2,4], NV:[3,4], WY:[4,4], SD:[5,4], IA:[6,4], IL:[7,4], IN:[8,4], OH:[9,4], PA:[10,4], NJ:[11,4], CT:[12,4],
+  CA:[2,5], UT:[3,5], CO:[4,5], NE:[5,5], MO:[6,5], KY:[7,5], WV:[8,5], VA:[9,5], MD:[10,5], DE:[11,5], DC:[12,5],
+  AZ:[3,6], NM:[4,6], KS:[5,6], AR:[6,6], TN:[7,6], NC:[8,6], SC:[9,6],
+  OK:[5,7], LA:[6,7], MS:[7,7], AL:[8,7], GA:[9,7], FL:[10,7],
+  HI:[1,8], TX:[5,8]
+};
+function _briefMapSVG(allCos, llObj){
+  // Compute platform location counts per state and acquisition counts per state
+  let pfStateLocs={},pfStateCos={},llStates=new Set();
+  if(llObj){(llObj.states||[]).forEach(s=>llStates.add(s))}
+  allCos.forEach(c=>{
+    let isLL=llObj&&c.id===llObj.id;
+    (c.locations||[]).forEach(l=>{
+      if(!l||!l.state)return;
+      pfStateLocs[l.state]=(pfStateLocs[l.state]||0)+1;
+      if(!pfStateCos[l.state])pfStateCos[l.state]=new Set();
+      pfStateCos[l.state].add(isLL?'__LL__':c.name);
+    });
+  });
+  // Color ramp by location count
+  let maxN=0;Object.values(pfStateLocs).forEach(n=>{if(n>maxN)maxN=n});
+  function fillFor(st){
+    let n=pfStateLocs[st]||0;
+    let isLL=llStates.has(st);
+    if(n===0&&!isLL)return '#EFF1F5';
+    // LL anchor states get a saturated brand fill
+    if(isLL&&n===0)return '#7C5CFC';
+    // Tint by intensity using brand color
+    let t=maxN?Math.min(1,Math.max(0.18,n/maxN)):0.4;
+    // Mix #7C5CFC with white at (1-t)
+    let r=Math.round(255+(124-255)*t),g=Math.round(255+(92-255)*t),b=Math.round(255+(252-255)*t);
+    return 'rgb('+r+','+g+','+b+')';
+  }
+  function strokeFor(st){
+    if(llStates.has(st))return '#5b3fd6';
+    return (pfStateLocs[st]||0)>0?'#A893FB':'#D6DCE6';
+  }
+  function textFillFor(st){
+    let n=pfStateLocs[st]||0;
+    let isLL=llStates.has(st);
+    if(isLL)return '#fff';
+    let t=maxN?n/maxN:0;
+    return t>=0.55?'#fff':'#324663';
+  }
+  // Cell geometry
+  const cell=30, gap=3, padX=6, padY=6, cols=12, rows=8;
+  const w=cols*cell+(cols-1)*gap+padX*2;
+  const h=rows*cell+(rows-1)*gap+padY*2;
+  let cells='';
+  Object.keys(_BRIEF_TILEGRAM).forEach(st=>{
+    let [c,r]=_BRIEF_TILEGRAM[st];
+    let x=padX+(c-1)*(cell+gap);
+    let y=padY+(r-1)*(cell+gap);
+    let n=pfStateLocs[st]||0;
+    let isLL=llStates.has(st);
+    let cosHere=pfStateCos[st]?[...pfStateCos[st]].length:0;
+    let title=st+': '+(n>0?n+' platform location'+(n===1?'':'s')+(cosHere>0?' across '+cosHere+' compan'+(cosHere===1?'y':'ies'):''):'no platform presence')+(isLL?' \u2014 LL anchor state':'');
+    let badge=(n>0&&n<99)?'<text x="'+(x+cell-3)+'" y="'+(y+9)+'" font-size="7" font-weight="700" font-family="\'JetBrains Mono\',monospace" text-anchor="end" fill="'+textFillFor(st)+'" opacity="0.85" pointer-events="none">'+n+'</text>':'';
+    cells+='<g><title>'+title+'</title>'+
+      '<rect x="'+x+'" y="'+y+'" width="'+cell+'" height="'+cell+'" rx="3" fill="'+fillFor(st)+'" stroke="'+strokeFor(st)+'" stroke-width="0.75"/>'+
+      '<text x="'+(x+cell/2)+'" y="'+(y+cell/2+3.5)+'" font-size="9" font-weight="700" font-family="Inter,sans-serif" text-anchor="middle" fill="'+textFillFor(st)+'" pointer-events="none">'+st+'</text>'+
+      badge+
+    '</g>';
+  });
+  let svg='<svg viewBox="0 0 '+w+' '+h+'" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto;display:block;max-width:520px;margin:0 auto" role="img" aria-label="US state tilegram showing platform footprint">'+cells+'</svg>';
+  // Compute summary line
+  let footprintStates=Object.keys(pfStateLocs).filter(s=>pfStateLocs[s]>0);
+  let total=Object.values(pfStateLocs).reduce((a,b)=>a+b,0);
+  // Top 3 by count
+  let topByN=footprintStates.map(s=>({s,n:pfStateLocs[s]})).sort((a,b)=>b.n-a.n).slice(0,3);
+  let topStr=topByN.map(x=>x.s+' ('+x.n+')').join(' &middot; ');
+  // Legend
+  let legend='<div class="brief-map-legend">'+
+    '<span class="lg-item"><span class="lg-sw" style="background:#7C5CFC;border-color:#5b3fd6"></span>LL anchor</span>'+
+    '<span class="lg-item"><span class="lg-sw" style="background:#A893FB;border-color:#A893FB"></span>Active footprint</span>'+
+    '<span class="lg-item"><span class="lg-sw" style="background:#EFF1F5;border-color:#D6DCE6"></span>No presence</span>'+
+    (topStr?'<span class="lg-stats">Top: '+topStr+'</span>':'')+
+    '</div>';
+  return '<div class="brief-map-card">'+
+    '<div class="brief-map-head">'+
+      '<div class="lbl">Geographic Footprint</div>'+
+      '<div class="meta">'+footprintStates.length+' state'+(footprintStates.length===1?'':'s')+' &middot; '+total+' location'+(total===1?'':'s')+'</div>'+
+    '</div>'+
+    svg+
+    legend+
+  '</div>';
+}
+
 function renderBrief(){
   let body=document.getElementById('briefBody');if(!body)return;
   let ll=DATA.find(c=>c.id===LL_ID);
@@ -3121,7 +3225,9 @@ function renderBrief(){
       '<span class="v">'+fit+'</span></div>';
   });
   fitCard+='<div style="font-size:10px;color:var(--text-tertiary);margin-top:8px;font-family:var(--font-mono);border-top:1px solid var(--border-subtle);padding-top:6px">Composite 0&ndash;100  &middot;  6-bucket model</div></div>';
-  let geo='<div class="brief-section"><h2><span class="ix">2</span>Geographic & Strategic Fit</h2><div class="brief-grid2">'+geoCard+fitCard+'</div></div>';
+  // v4.11.0: state-tilegram map snapshot (print-friendly SVG)
+  let mapSvg=_briefMapSVG(allCos,ll);
+  let geo='<div class="brief-section"><h2><span class="ix">2</span>Geographic &amp; Strategic Fit</h2>'+mapSvg+'<div class="brief-grid2">'+geoCard+fitCard+'</div></div>';
   // Recent intelligence — kick off lazy load if not loaded
   if(!INTEL_NEWS&&!_intelLoadStarted){_intelLoad().then(()=>{ if(document.getElementById('mainArea').classList.contains('view-brief'))renderBrief() })}
   let intelHtml='<div class="brief-section"><h2><span class="ix">3</span>Recent Intelligence';
