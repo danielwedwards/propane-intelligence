@@ -845,6 +845,41 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
 [data-theme="dark"] .scn-card .actions button{background:#1a2534;color:#a0aec0;border-color:#2a3a4e}
 [data-theme="dark"] .scn-empty{background:#16202e;border-color:#2a3a4e}
 [data-theme="dark"] .scn-head .actions button{background:#16202e;color:#a0aec0;border-color:#2a3a4e}
+/* v4.15.0 Scenario diff */
+.scn-diff{background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+.scn-diff .ttl{display:flex;align-items:baseline;gap:10px;justify-content:space-between;flex-wrap:wrap}
+.scn-diff .ttl h3{margin:0;font-size:13px;font-weight:700;color:var(--text-primary);letter-spacing:0.2px}
+.scn-diff .ttl .summary{font-size:11px;color:var(--text-tertiary)}
+.scn-diff .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.scn-diff select{padding:7px 10px;font-size:12px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--white);color:var(--text-primary);min-width:200px;font-family:inherit;cursor:pointer}
+.scn-diff .vs{font-size:11px;color:var(--text-tertiary);font-weight:600;text-transform:uppercase;letter-spacing:0.6px}
+.scn-diff button{padding:7px 12px;font-size:11px;border-radius:var(--radius-md);border:1px solid var(--border);background:var(--white);color:var(--text-secondary);cursor:pointer;font-family:inherit;font-weight:500}
+.scn-diff button:hover{border-color:var(--brand);color:var(--brand)}
+.scn-diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
+.scn-diff-col{border:1px solid var(--border-subtle);border-radius:8px;padding:10px 12px;background:var(--light-bg);min-height:64px}
+.scn-diff-col .h{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:var(--text-tertiary);margin-bottom:6px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.scn-diff-col .h .ct{font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);background:var(--white);padding:1px 7px;border-radius:9px;border:1px solid var(--border-subtle)}
+.scn-diff-col.only-a .h{color:#C0392B}
+.scn-diff-col.only-b .h{color:#2BB673}
+.scn-diff-col.shared .h{color:var(--brand)}
+.scn-diff-col ul{list-style:none;padding:0;margin:0;font-size:11.5px;color:var(--text-primary)}
+.scn-diff-col li{padding:4px 0;border-bottom:1px dashed var(--border-subtle)}
+.scn-diff-col li:last-child{border-bottom:none}
+.scn-diff-col .empty{font-style:italic;color:var(--text-tertiary);font-size:11px}
+.scn-diff-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px;padding:10px 12px;border:1px solid var(--border-subtle);border-radius:8px;background:var(--white)}
+.scn-diff-metric{text-align:center}
+.scn-diff-metric .lbl{font-size:9.5px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.5px;font-weight:600}
+.scn-diff-metric .vals{display:flex;justify-content:center;align-items:baseline;gap:4px;margin-top:3px;font-family:var(--font-mono);font-size:11.5px;color:var(--text-secondary)}
+.scn-diff-metric .delta{font-weight:700;font-size:12px;font-family:var(--font-mono);margin-top:2px}
+.scn-diff-metric .delta.up{color:#2BB673}
+.scn-diff-metric .delta.dn{color:#C0392B}
+.scn-diff-metric .delta.eq{color:var(--text-tertiary)}
+[data-theme="dark"] .scn-diff{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .scn-diff select,[data-theme="dark"] .scn-diff button{background:#1a2534;color:#cbd5e0;border-color:#2a3a4e}
+[data-theme="dark"] .scn-diff-col{background:#0f1722;border-color:#2a3a4e}
+[data-theme="dark"] .scn-diff-col .h .ct{background:#1a2534;border-color:#2a3a4e}
+[data-theme="dark"] .scn-diff-metrics{background:#0f1722;border-color:#2a3a4e}
+@media (max-width:760px){.scn-diff-grid{grid-template-columns:1fr}.scn-diff-metrics{grid-template-columns:repeat(2,1fr)}}
 /* === v4.12.0: Polish — focus-visible, mobile, loading skeletons === */
 .section-btn:focus-visible,.sub-btn:focus-visible,.ov-pill:focus-visible,.cmp-controls button:focus-visible,.cmp-controls select:focus-visible,.scn-head .actions button:focus-visible,.scn-card .actions button:focus-visible,.scn-save .savebtn:focus-visible,.cmp-h-card .x:focus-visible,.brief-head .actions button:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
 /* Section-nav horizontal scroll on small screens */
@@ -1628,6 +1663,17 @@ Continue with Microsoft
 <div class="opts">
 <label><input type="checkbox" id="scnSaveCaptureFilters"/> Capture active filters (states, ownership, type, search)</label>
 </div>
+</div>
+<div class="scn-diff" id="scnDiff">
+<div class="ttl"><h3>Compare two scenarios</h3><span class="summary" id="scnDiffSummary">Pick A and B to see the diff &mdash; companies only in A, only in B, shared, plus aggregate deltas.</span></div>
+<div class="row">
+<select id="scnDiffA" onchange="_scnDiffRender()" aria-label="Scenario A"><option value="">Scenario A&hellip;</option></select>
+<span class="vs">vs.</span>
+<select id="scnDiffB" onchange="_scnDiffRender()" aria-label="Scenario B"><option value="">Scenario B&hellip;</option></select>
+<button onclick="_scnDiffSwap()" title="Swap A and B" aria-label="Swap A and B">&#8646; Swap</button>
+<button onclick="_scnDiffClear()" title="Clear comparison">&times; Clear</button>
+</div>
+<div id="scnDiffBody"></div>
 </div>
 <div id="scnBody"></div>
 </div>
@@ -4384,6 +4430,84 @@ function renderScenarios(){
   if(pinned.length){html+='<div class="scn-section-title">Pinned</div>'+renderCardSet(pinned)}
   if(other.length){html+=(pinned.length?'<div class="scn-section-title">All scenarios ('+other.length+')</div>':'')+renderCardSet(other)}
   body.innerHTML=html;
+  _scnDiffPopulate();
+}
+
+/* === v4.15.0: Scenario diff (compare two saved scenarios or current platform) === */
+function _scnDiffPopulate(){
+  let arr=_scnAll();
+  let aSel=document.getElementById('scnDiffA'),bSel=document.getElementById('scnDiffB');
+  if(!aSel||!bSel)return;
+  let prevA=aSel.value,prevB=bSel.value;
+  let opts='<option value="">Scenario A&hellip;</option><option value="__current__">&#9733; Current platform</option>';
+  let optsB='<option value="">Scenario B&hellip;</option><option value="__current__">&#9733; Current platform</option>';
+  arr.forEach(s=>{
+    opts+='<option value="'+s.id+'">'+_scnEsc(s.name)+'</option>';
+    optsB+='<option value="'+s.id+'">'+_scnEsc(s.name)+'</option>';
+  });
+  aSel.innerHTML=opts;bSel.innerHTML=optsB;
+  if(prevA)aSel.value=prevA;if(prevB)bSel.value=prevB;
+}
+function _scnDiffGetIds(val){
+  if(!val)return null;
+  if(val==='__current__')return {ids:[...platform],name:'Current platform'};
+  let s=_scnAll().find(x=>x.id===val);
+  return s?{ids:s.ids||[],name:s.name}:null;
+}
+function _scnDiffStats(ids){
+  let cos=ids.map(id=>DATA.find(c=>c.id===id)).filter(Boolean);
+  let states=new Set();let locs=0,rev=0;
+  cos.forEach(c=>{(c.states||[]).forEach(s=>states.add(s));locs+=(c.locations||[]).length;rev+=(c.estRevenue||0)});
+  return {nAcq:cos.length,locs:locs,states:states.size,rev:rev};
+}
+function _scnDiffSwap(){
+  let a=document.getElementById('scnDiffA'),b=document.getElementById('scnDiffB');
+  if(!a||!b)return;
+  let av=a.value;a.value=b.value;b.value=av;_scnDiffRender();
+}
+function _scnDiffClear(){
+  let a=document.getElementById('scnDiffA'),b=document.getElementById('scnDiffB');
+  if(a)a.value='';if(b)b.value='';_scnDiffRender();
+}
+function _scnDiffRender(){
+  let body=document.getElementById('scnDiffBody'),sum=document.getElementById('scnDiffSummary');
+  if(!body)return;
+  let aV=document.getElementById('scnDiffA').value,bV=document.getElementById('scnDiffB').value;
+  let A=_scnDiffGetIds(aV),B=_scnDiffGetIds(bV);
+  if(!A||!B){body.innerHTML='';if(sum)sum.textContent='Pick A and B to see the diff — companies only in A, only in B, shared, plus aggregate deltas.';return}
+  let aSet=new Set(A.ids),bSet=new Set(B.ids);
+  let onlyA=[...aSet].filter(x=>!bSet.has(x));
+  let onlyB=[...bSet].filter(x=>!aSet.has(x));
+  let shared=[...aSet].filter(x=>bSet.has(x));
+  let sa=_scnDiffStats(A.ids),sb=_scnDiffStats(B.ids);
+  function nm(id){let c=DATA.find(x=>x.id===id);return c?c.name:id}
+  function listHtml(ids,emptyTxt){
+    if(!ids.length)return '<div class="empty">'+emptyTxt+'</div>';
+    let sorted=ids.map(id=>nm(id)).sort((x,y)=>x.localeCompare(y));
+    return '<ul>'+sorted.map(n=>'<li>'+_scnEsc(n)+'</li>').join('')+'</ul>';
+  }
+  function fmtRev(v){return v>=1000?'$'+(v/1000).toFixed(1)+'B':'$'+v.toFixed(0)+'M'}
+  function deltaCell(lbl,va,vb,fmt){
+    let d=vb-va;let cls=d>0?'up':(d<0?'dn':'eq');let sgn=d>0?'+':(d<0?'':'');
+    let displayD=lbl==='Revenue'?(d>=0?'+':'-')+fmtRev(Math.abs(d)):sgn+d.toLocaleString();
+    if(d===0)displayD='&middot;';
+    return '<div class="scn-diff-metric"><div class="lbl">'+lbl+'</div>'+
+      '<div class="vals">'+(fmt?fmt(va):va.toLocaleString())+' &rarr; '+(fmt?fmt(vb):vb.toLocaleString())+'</div>'+
+      '<div class="delta '+cls+'">'+displayD+'</div></div>';
+  }
+  let html='<div class="scn-diff-grid">'+
+    '<div class="scn-diff-col only-a"><div class="h"><span>Only in A &middot; '+_scnEsc(A.name)+'</span><span class="ct">'+onlyA.length+'</span></div>'+listHtml(onlyA,'(none — A is a subset of B)')+'</div>'+
+    '<div class="scn-diff-col shared"><div class="h"><span>Shared</span><span class="ct">'+shared.length+'</span></div>'+listHtml(shared,'(no overlap)')+'</div>'+
+    '<div class="scn-diff-col only-b"><div class="h"><span>Only in B &middot; '+_scnEsc(B.name)+'</span><span class="ct">'+onlyB.length+'</span></div>'+listHtml(onlyB,'(none — B is a subset of A)')+'</div>'+
+    '</div>'+
+    '<div class="scn-diff-metrics">'+
+      deltaCell('Acquisitions',sa.nAcq,sb.nAcq)+
+      deltaCell('Locations',sa.locs,sb.locs)+
+      deltaCell('States',sa.states,sb.states)+
+      deltaCell('Revenue',sa.rev,sb.rev,fmtRev)+
+    '</div>';
+  body.innerHTML=html;
+  if(sum)sum.innerHTML='<b>'+_scnEsc(A.name)+'</b> vs <b>'+_scnEsc(B.name)+'</b> &middot; '+onlyA.length+' only in A, '+shared.length+' shared, '+onlyB.length+' only in B';
 }
 
 function clearPlatform(){
