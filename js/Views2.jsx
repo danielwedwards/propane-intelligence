@@ -226,10 +226,8 @@ function OwnershipDonut({ counts, total }) {
             return el;
           })}
         </g>
-        <text x="70" y="68" textAnchor="middle" fontSize="22" fontWeight="600" fill="#0A2540" fontFamily="Inter" letterSpacing="-0.5"
-              style={{ fontVariantNumeric: 'tabular-nums' }}>{_v2_fmtInt(t)}</text>
-        <text x="70" y="84" textAnchor="middle" fontSize="10" fill="#8B97A8" letterSpacing="0.6"
-              style={{ textTransform: 'uppercase' }}>companies</text>
+        <text x="70" y="68" textAnchor="middle" fontSize="22" fontWeight="600" fill="#0A2540" fontFamily="Inter" letterSpacing="-0.5">{_v2_fmtInt(t)}</text>
+        <text x="70" y="84" textAnchor="middle" fontSize="10" fill="#8B97A8" letterSpacing="0.6">COMPANIES</text>
       </svg>
       <div style={{ flex: 1 }}>
         {data.map(d => (
@@ -324,21 +322,142 @@ function SignalsView({ onSelect }) {
   );
 }
 
-// Executive Brief — kept as-is until Phase 6/7 wires real numbers.
+// Executive Brief — derives real KPIs and findings from companies + scoring engine.
+function _v2_briefAggregates(companies) {
+  const ll = companies.find(c => c.id === 'll' || c.canonicalId === 'lampton_love');
+  const llG = ll && ll.marketShare ? (ll.marketShare.nationalG || 0) : 0;
+  const llRev = ll ? (ll.estRevenue || ll.rev || 0) : 0;
+  const llLocs = ll ? (ll.totalLocs || ll.locs || 0) : 0;
+  // LL's own county count: prefer countyShared.count for self (=100% pct), else derive from location fips set.
+  const llCounties = (() => {
+    if (!ll) return 0;
+    if (ll.countyShared && ll.countyShared.count) return ll.countyShared.count;
+    const s = new Set();
+    (ll.locations || []).forEach(l => { if (l && l.fips) s.add(l.fips); });
+    return s.size;
+  })();
+
+  let totalG = 0, totalRev = 0, totalLocs = 0;
+  let famN = 0, peN = 0;
+  const SE_SET = (window.PI && window.PI.REGIONS && window.PI.REGIONS.se) || new Set(['MS','AL','GA','FL','SC','NC','TN','LA','AR']);
+  let seCompanies = 0;
+
+  companies.forEach(c => {
+    totalG += (c.marketShare && c.marketShare.nationalG) || c.estAnnualGallons || 0;
+    totalRev += c.estRevenue || c.rev || 0;
+    totalLocs += c.totalLocs || c.locs || 0;
+    const own = (c.ownership || '').toLowerCase();
+    if (own === 'family') famN++;
+    if (own === 'pe' || own === 'private equity') peN++;
+    const states = c.states || (c.hqState ? [c.hqState] : []);
+    if (states.some(s => SE_SET.has(s))) seCompanies++;
+  });
+
+  // Targets in play = fit score >= 50, excluding LL itself.
+  const targets = companies
+    .filter(c => c !== ll && (c.fitScore || 0) >= 50)
+    .sort((a, b) => (b.fitScore || 0) - (a.fitScore || 0));
+
+  // Pro forma = LL + top 5 targets revenue (where revenue is known).
+  const proRev = llRev + targets.slice(0, 5).reduce((a, c) => a + (c.estRevenue || c.rev || 0), 0);
+  const proLocs = llLocs + targets.slice(0, 5).reduce((a, c) => a + (c.totalLocs || c.locs || 0), 0);
+
+  // Top family-owned succession candidates by fit.
+  const famTargets = companies
+    .filter(c => c !== ll && (c.ownership || '').toLowerCase() === 'family' && (c.fitScore || 0) >= 45)
+    .sort((a, b) => (b.fitScore || 0) - (a.fitScore || 0))
+    .slice(0, 6);
+
+  // Highest county overlap = strongest geographic fit.
+  const geoTop = companies
+    .filter(c => c !== ll && c.countyShared && c.countyShared.count > 0)
+    .sort((a, b) => (b.countyShared.count || 0) - (a.countyShared.count || 0))
+    .slice(0, 5);
+
+  // Largest competitor by gallons (national).
+  const bigOps = companies
+    .filter(c => c !== ll && c.marketShare && c.marketShare.nationalG > 0)
+    .sort((a, b) => b.marketShare.nationalG - a.marketShare.nationalG);
+  const top1 = bigOps[0];
+  const top3G = bigOps.slice(0, 3).reduce((a, c) => a + c.marketShare.nationalG, 0);
+
+  return {
+    totalG, totalRev, totalLocs, famN, peN, seCompanies,
+    ll, llG, llRev, llLocs, llCounties,
+    targets, famTargets, geoTop, top1, top3G,
+    nTotal: companies.length,
+    proRev, proLocs,
+  };
+}
+
 function BriefView() {
+  const all = (typeof window !== 'undefined' && window.MOCK_COMPANIES) || [];
+  const A = React.useMemo(() => _v2_briefAggregates(all), [all]);
+
+  const today = new Date();
+  const dateStr = today.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+  const platformShare = A.totalG > 0 ? (A.llG / A.totalG) * 100 : 0;
+  const top3Pct = A.totalG > 0 ? (A.top3G / A.totalG) * 100 : 0;
+  const proShare = A.totalG > 0 ? ((A.llG + A.targets.slice(0, 5).reduce((a, c) => a + ((c.marketShare && c.marketShare.nationalG) || 0), 0)) / A.totalG) * 100 : 0;
+
+  const kpis = [
+    [_v2_fmtMoneyM(A.totalRev), 'Tracked market size', A.nTotal + ' operators · revenue est.'],
+    [_v2_fmtInt(A.targets.length), 'Targets in play', 'Fit score ≥ 50'],
+    [platformShare.toFixed(2) + '%', 'LL platform share', _v2_fmtGallons(A.llG) + ' of ' + _v2_fmtGallons(A.totalG)],
+    [_v2_fmtMoneyM(A.proRev), 'Pro-forma revenue', 'LL + top 5 fit targets'],
+  ];
+
+  // Findings derived from data.
+  const f1Top = A.famTargets.slice(0, 2).map(c => (c.name || '') + ' (' + (c.hqState || '—') + ')').join(', ') || '—';
+  const f2Top = A.geoTop.slice(0, 2).map(c => (c.name || '') + ' — ' + (c.countyShared.count || 0) + ' counties').join(', ') || '—';
+  const f3Op = A.top1 ? (A.top1.name + ' (' + ((A.top1.marketShare.nationalPct || 0).toFixed(1)) + '% national share)') : '—';
+
+  const findings = [
+    {
+      n: '01', tag: 'SUCCESSION', chip: 'High priority',
+      title: 'Family-owned operators dominate the targetable universe',
+      body: A.famN + ' of ' + A.nTotal + ' tracked operators (' + ((A.famN / A.nTotal) * 100).toFixed(0)
+        + '%) are family-owned, vs ' + A.peN + ' PE-backed. Top succession-fit candidates: ' + f1Top
+        + '. These are strategic sellers, not auctioned processes — fit scores reflect geographic and operational alignment with LL.',
+    },
+    {
+      n: '02', tag: 'GEOGRAPHY', chip: 'Thesis validated',
+      title: 'Southeast county overlap concentrates the rollup economics',
+      body: 'LL operates in ' + A.llCounties + ' counties from ' + A.llLocs + ' locations. ' + A.seCompanies
+        + ' tracked operators have any Southeast presence. Highest pairwise county overlap with LL: ' + f2Top
+        + '. Acquisition synergies are highest where county footprints already overlap.',
+    },
+    {
+      n: '03', tag: 'COMPETITION', chip: 'Monitor',
+      title: 'Top-3 operators command ' + top3Pct.toFixed(0) + '% of tracked gallons',
+      body: 'Largest tracked operator: ' + f3Op + '. Top-3 share: ' + top3Pct.toFixed(1)
+        + '% of national volume. The remaining ' + (100 - top3Pct).toFixed(0)
+        + '% is fragmented across ' + (A.nTotal - 3) + ' operators — a structurally consolidatable market.',
+    },
+  ];
+
+  const actions = A.famTargets.slice(0, 3).map(c => [
+    'Initiate dialogue with ' + (c.name || 'target'),
+    (c.hqState || '—') + ' · fit ' + Math.round(c.fitScore || 0)
+      + ' · ' + (c.countyShared ? c.countyShared.count : 0) + ' shared counties · '
+      + (c.totalLocs || c.locs || 0) + ' locations',
+    (c.fitScore || 0) >= 60 ? 'High' : 'Medium',
+    c.id,
+  ]);
+
   return (
     <div style={{ flex: 1, overflow: 'auto', background: '#F6F9FC', padding: 28 }}>
       <div style={{ maxWidth: 960, margin: '0 auto' }}>
         <div style={{ marginBottom: 24 }}>
-          <div style={{ fontSize: 11, fontWeight: 600, color: '#635BFF', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 8 }}>Executive brief · Q2 2026</div>
+          <div style={{ fontSize: 11, fontWeight: 600, color: '#635BFF', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 8 }}>Executive brief · {today.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</div>
           <h1 style={{ margin: 0, fontSize: 36, fontWeight: 600, color: '#0A2540', letterSpacing: '-0.8px', lineHeight: 1.15 }}>
-            Family-owned consolidation is accelerating. The Southeast is where it matters.
+            Family-owned consolidation is the dominant pattern. The Southeast is where LL has the structural edge.
           </h1>
           <p style={{ margin: '12px 0 0', fontSize: 16, color: '#425466', lineHeight: 1.6 }}>
-            18 tracked signals this quarter — a 38% QoQ increase. Succession-driven transactions now outpace PE exits for the first time in six quarters. Below: what to pay attention to before Q3.
+            {A.targets.length} operators score above the 50-point fit threshold across {A.nTotal} tracked companies. Below: what the data says about where to focus before next quarter.
           </p>
           <div style={{ display: 'flex', gap: 16, marginTop: 16, fontSize: 12, color: '#697386' }}>
-            <span>Generated <b style={{ color: '#0A2540', fontWeight: 600 }}>Apr 24, 2026</b></span>
+            <span>Generated <b style={{ color: '#0A2540', fontWeight: 600 }}>{dateStr}</b></span>
             <span>·</span>
             <span>For <b style={{ color: '#0A2540', fontWeight: 600 }}>Daniel Edwards</b>, Corporate Development</span>
             <span style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
@@ -349,20 +468,16 @@ function BriefView() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 12, marginBottom: 24 }}>
-          {[['$18.2B','Market size','+4.2%'],['247','Targets in play','+12'],['4.7%','Platform share','+0.8pt'],['$1.24B','Pro forma rev','+8.1%']].map(([v,l,d]) => (
+          {kpis.map(([v, l, sub]) => (
             <Card key={l} padding={16}>
               <div style={{ fontSize: 11, color: '#697386', fontWeight: 500, marginBottom: 6 }}>{l}</div>
               <div style={{ fontSize: 22, fontWeight: 600, color: '#0A2540', fontFamily: 'Inter', letterSpacing: '-0.5px', fontVariantNumeric: 'tabular-nums' }}>{v}</div>
-              <div style={{ fontSize: 11, color: '#009966', fontWeight: 500, marginTop: 2 }}>↑ {d} YoY</div>
+              <div style={{ fontSize: 11, color: '#697386', fontWeight: 500, marginTop: 4, lineHeight: 1.4 }}>{sub}</div>
             </Card>
           ))}
         </div>
 
-        {[
-          { n: '01', tag: 'SUCCESSION', title: 'Family-owned succession is a 12-month opportunity', body: 'Seven confirmed succession signals in Q2 — led by Barrett Propane (MS) and Cherry Energy (NC). Average principal age at event = 67. These are strategic sellers, not auctioned processes.', chip: 'High priority' },
-          { n: '02', tag: 'GEOGRAPHY', title: 'Southeast density makes the rollup economics work', body: 'Lampton Love anchors a 58-location footprint across 5 SE states. Acquisition of Blossman + Cherry + Barrett adds 82 locations with 74% geographic overlap at the county level.', chip: 'Thesis validated' },
-          { n: '03', tag: 'COMPETITION', title: 'AmeriGas is pulling back, not leaning in', body: 'UGI guided to $300M of divestitures this quarter. Early signals suggest Northeast and Mountain West assets first. Short-term favorable dynamic for regional consolidators.', chip: 'Monitor' },
-        ].map(f => (
+        {findings.map(f => (
           <Card key={f.n} style={{ marginBottom: 12 }} padding={24}>
             <div style={{ display: 'flex', gap: 20 }}>
               <div style={{ fontSize: 32, fontWeight: 600, color: '#E0E3FF', fontFamily: 'Inter', letterSpacing: '-1px', width: 60, flexShrink: 0 }}>{f.n}</div>
@@ -384,12 +499,10 @@ function BriefView() {
             <Icon name="zap" size={16} color="#635BFF"/>
             <h3 style={{ margin: 0, fontSize: 16, fontWeight: 600, color: '#0A2540' }}>Recommended actions</h3>
           </div>
-          {[
-            ['Initiate contact with Barrett Propane principals', 'High confidence match with current succession thesis', 'High'],
-            ['Revisit valuation framework for Cherry Energy', 'Family context changed; last IOI was 18 months ago', 'Medium'],
-            ['Monitor AmeriGas divestiture signals weekly', 'Geographic fit depends on which assets come to market', 'Medium'],
-          ].map(([t,s,p]) => (
-            <div key={t} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 0', borderBottom: '1px solid #EDF1F6' }}>
+          {actions.length === 0 ? (
+            <div style={{ fontSize: 13, color: '#697386', padding: '12px 0' }}>No family-owned candidates above fit threshold.</div>
+          ) : actions.map(([t, s, p, id]) => (
+            <div key={id || t} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 0', borderBottom: '1px solid #EDF1F6' }}>
               <input type="checkbox" style={{ accentColor: '#635BFF' }}/>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: 13, fontWeight: 500, color: '#0A2540' }}>{t}</div>
@@ -400,6 +513,11 @@ function BriefView() {
             </div>
           ))}
         </Card>
+
+        <div style={{ fontSize: 11, color: '#8B97A8', textAlign: 'center', marginTop: 20 }}>
+          Pro-forma share with top 5 fit targets: {proShare.toFixed(2)}% of tracked national gallons.
+          Source: Propane Intelligence · {A.nTotal} operators · scoring engine v2.
+        </div>
       </div>
     </div>
   );

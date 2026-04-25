@@ -416,45 +416,113 @@ function OverlapView({ onSelect }) {
   );
 }
 
-// Network — Palantir-style relationship graph
-function NetworkView() {
-  // Hand-positioned nodes on a 1000×600 canvas
-  const nodes = [
-    { id: 'll',  label: 'Lampton Love', x: 500, y: 320, r: 32, color: '#635BFF', tier: 0 },
-    { id: 'ergon', label: 'Ergon, Inc.', x: 500, y: 140, r: 26, color: '#0A2540', tier: 0 },
-    { id: 'blo', label: 'Blossman Gas', x: 320, y: 240, r: 22, color: '#009966', tier: 1 },
-    { id: 'che', label: 'Cherry Energy', x: 260, y: 380, r: 16, color: '#009966', tier: 1 },
-    { id: 'bar', label: 'Barrett', x: 340, y: 460, r: 17, color: '#009966', tier: 1 },
-    { id: 'ami', label: 'AmeriGas', x: 760, y: 180, r: 30, color: '#1890FF', tier: 2 },
-    { id: 'ugi', label: 'UGI Corp.', x: 860, y: 80, r: 20, color: '#0A2540', tier: 2 },
-    { id: 'fer', label: 'Ferrellgas', x: 720, y: 420, r: 26, color: '#1890FF', tier: 2 },
-    { id: 'chs', label: 'CHS Co-op', x: 180, y: 130, r: 19, color: '#C4862D', tier: 1 },
-    { id: 'crystal', label: 'Crystal Flash', x: 610, y: 90, r: 18, color: '#AB87FF', tier: 1 },
-    { id: 'ares', label: 'Ares Mgmt.', x: 860, y: 500, r: 18, color: '#0A2540', tier: 2 },
-    { id: 'edp', label: 'Eastern Propane', x: 770, y: 540, r: 15, color: '#AB87FF', tier: 2 },
-    { id: 'dea', label: 'Dead River', x: 480, y: 540, r: 17, color: '#009966', tier: 1 },
-  ];
-  const edges = [
-    { a: 'll', b: 'ergon', type: 'parent', label: 'parent' },
-    { a: 'ami', b: 'ugi', type: 'parent', label: 'parent' },
-    { a: 'edp', b: 'ares', type: 'parent', label: 'PE owner' },
-    { a: 'll', b: 'blo', type: 'competitor', label: '47% overlap' },
-    { a: 'll', b: 'che', type: 'competitor' },
-    { a: 'll', b: 'bar', type: 'competitor' },
-    { a: 'blo', b: 'che', type: 'competitor' },
-    { a: 'ami', b: 'fer', type: 'competitor', label: '68% overlap' },
-    { a: 'll', b: 'ami', type: 'competitor' },
-    { a: 'che', b: 'crystal', type: 'target', label: 'succession signal' },
-    { a: 'chs', b: 'crystal', type: 'target' },
-    { a: 'dea', b: 'edp', type: 'target' },
-  ];
+// Network — Palantir-style relationship graph, real edges only.
+//
+// Node selection: LL at the centre. Inner ring = top-N candidates by fit
+// score (target edges). Outer ring = top-M competitors by county overlap with
+// LL (competitor edges). Plus parent-group nodes for any company in the graph
+// whose parentGroup is non-trivial.
+function NetworkView({ onSelect }) {
+  const all = window.MOCK_COMPANIES || [];
+  const [hoverId, setHoverId] = React.useState(null);
+  const [innerN, setInnerN] = React.useState(6);   // # target nodes in inner ring
+  const [outerN, setOuterN] = React.useState(6);   // # competitor nodes in outer ring
 
-  const nmap = Object.fromEntries(nodes.map(n => [n.id, n]));
+  const graph = React.useMemo(() => {
+    const ll = all.find(c => c.id === 'll');
+    if (!ll) return { nodes: [], edges: [] };
+
+    // Inner ring: highest fit (excluding LL, must have fitScore)
+    const candidates = all.filter(c => c.id !== 'll' && c.fitScore != null);
+    const targets = candidates.slice().sort((a, b) => b.fitScore - a.fitScore).slice(0, innerN);
+
+    // Outer ring: highest county overlap with LL — pull from countyShared.count
+    const overlapPool = all.filter(c => c.id !== 'll' && c.countyShared && c.countyShared.count > 0)
+      .slice().sort((a, b) => b.countyShared.count - a.countyShared.count);
+    const competitors = [];
+    const seen = new Set(targets.map(t => t.id));
+    for (const c of overlapPool) {
+      if (seen.has(c.id)) continue;
+      competitors.push(c);
+      seen.add(c.id);
+      if (competitors.length >= outerN) break;
+    }
+
+    // Parent-group nodes: dedupe by parentGroup string. The anchor LL gets
+    // "Ergon, Inc." pinned above it.
+    const parentMap = {};
+    const ringMembers = [ll, ...targets, ...competitors];
+    for (const c of ringMembers) {
+      const pg = c.parentGroup || c.ownerDetail;
+      if (pg && pg !== c.name && pg.toLowerCase() !== 'independent' && pg.toLowerCase() !== 'public') {
+        if (!parentMap[pg]) parentMap[pg] = { id: 'parent::' + pg, label: pg, children: [] };
+        parentMap[pg].children.push(c.id);
+      }
+    }
+    const parents = Object.values(parentMap);
+
+    // Layout: LL at (500, 320). Targets at r=170, competitors at r=275.
+    const nodes = [];
+    nodes.push({
+      id: 'll', cid: 'll', label: ll.name, x: 500, y: 320, r: 32, color: '#635BFF', tier: 0,
+      sub: 'Subsidiary of Ergon · platform', isLL: true,
+    });
+
+    // Place targets in upper hemisphere, competitors in lower; spread evenly
+    const placeRing = (arr, radius, startAngle, endAngle, color, tier) => {
+      const n = arr.length;
+      for (let i = 0; i < n; i++) {
+        const t = n === 1 ? 0.5 : i / (n - 1);
+        const ang = startAngle + (endAngle - startAngle) * t;
+        const x = 500 + Math.cos(ang) * radius;
+        const y = 320 + Math.sin(ang) * radius;
+        const c = arr[i];
+        const sz = Math.max(14, Math.min(26, 12 + Math.sqrt((c.locations || []).length || 1) * 1.6));
+        const colourByOwn = OC_NETWORK[c.ownership] || color;
+        nodes.push({
+          id: c.id, cid: c.id, label: c.name, x, y, r: sz,
+          color: colourByOwn, tier,
+          sub: (c.typeLabel || c.type || '—') + (c.fitScore != null ? ' · fit ' + Math.round(c.fitScore) : ''),
+          fit: c.fitScore, overlap: c.countyShared && c.countyShared.count,
+        });
+      }
+    };
+    // Targets above (left + top + right of LL): -π .. 0
+    placeRing(targets, 170, -Math.PI, 0, '#635BFF', 1);
+    // Competitors below: 0 .. π
+    placeRing(competitors, 275, Math.PI * 0.05, Math.PI * 0.95, '#D83E4A', 2);
+
+    // Parent nodes: stack in a column to the right of LL.
+    parents.forEach((p, i) => {
+      nodes.push({
+        id: p.id, cid: null, label: p.label, x: 920, y: 90 + i * 60, r: 18,
+        color: '#0A2540', tier: 3, sub: 'Parent group', isParent: true,
+      });
+    });
+
+    // Edges
+    const edges = [];
+    for (const t of targets) {
+      edges.push({ a: 'll', b: t.id, type: 'target', label: t.fitScore != null ? 'fit ' + Math.round(t.fitScore) : null });
+    }
+    for (const c of competitors) {
+      edges.push({ a: 'll', b: c.id, type: 'competitor', label: c.countyShared ? c.countyShared.count + ' shared' : null });
+    }
+    for (const p of parents) {
+      for (const childId of p.children) edges.push({ a: childId, b: p.id, type: 'parent' });
+    }
+
+    return { nodes, edges };
+  }, [all, innerN, outerN]);
+
+  const nmap = React.useMemo(() => Object.fromEntries(graph.nodes.map(n => [n.id, n])), [graph]);
   const edgeColor = (t) => t === 'parent' ? '#0A2540' : t === 'competitor' ? '#D83E4A' : '#635BFF';
+  const inspect = nmap[hoverId] || nmap['ll'];
+  const llCompany = all.find(c => c.id === 'll');
 
   return (
     <div style={{ flex: 1, display: 'flex', background: '#F6F9FC', minHeight: 0 }}>
-      {/* Left: legend + details */}
+      {/* Left: legend + controls */}
       <div style={{ width: 240, background: '#fff', borderRight: '1px solid #E3E8EE', padding: 20, overflow: 'auto' }}>
         <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 12 }}>Relationship types</div>
         {[['parent','Parent / subsidiary','#0A2540'],['competitor','Direct competitor','#D83E4A'],['target','Acquisition target','#635BFF']].map(([k,l,c]) => (
@@ -464,17 +532,23 @@ function NetworkView() {
           </div>
         ))}
         <div style={{ borderTop: '1px solid #EDF1F6', marginTop: 16, paddingTop: 16, fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 10 }}>Graph controls</div>
-        <Button variant="secondary" size="sm" style={{ width: '100%', marginBottom: 6, justifyContent: 'flex-start' }}>Focus: Lampton Love</Button>
-        <Button variant="secondary" size="sm" style={{ width: '100%', marginBottom: 6, justifyContent: 'flex-start' }}>Depth: 2 hops</Button>
-        <Button variant="secondary" size="sm" style={{ width: '100%', marginBottom: 6, justifyContent: 'flex-start' }}>Layout: Force-directed</Button>
-        <div style={{ borderTop: '1px solid #EDF1F6', marginTop: 16, paddingTop: 16 }}>
-          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 8 }}>Expand connections</div>
-          {['Shared board members','Former executives','Financial advisors','Bolt-on history'].map(l => (
-            <label key={l} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '4px 0', fontSize: 12, color: '#425466' }}>
-              <input type="checkbox" style={{ accentColor: '#635BFF' }}/> {l}
-            </label>
-          ))}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 4 }}>
+          <span style={{ fontSize: 12, color: '#425466' }}>Top targets</span>
+          <span style={{ fontSize: 12, fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{innerN}</span>
         </div>
+        <input type="range" min="3" max="10" value={innerN} onChange={e => setInnerN(Number(e.target.value))} style={{ accentColor: '#635BFF', width: '100%', marginBottom: 10 }}/>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 4 }}>
+          <span style={{ fontSize: 12, color: '#425466' }}>Top competitors</span>
+          <span style={{ fontSize: 12, fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{outerN}</span>
+        </div>
+        <input type="range" min="3" max="10" value={outerN} onChange={e => setOuterN(Number(e.target.value))} style={{ accentColor: '#635BFF', width: '100%' }}/>
+
+        <div style={{ borderTop: '1px solid #EDF1F6', marginTop: 16, paddingTop: 16, fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 8 }}>Edge sources</div>
+        <ul style={{ margin: 0, padding: '0 0 0 16px', fontSize: 11, color: '#697386', lineHeight: 1.7 }}>
+          <li><b style={{ color: '#0A2540' }}>Target</b> — top fit score</li>
+          <li><b style={{ color: '#0A2540' }}>Competitor</b> — county overlap with LL</li>
+          <li><b style={{ color: '#0A2540' }}>Parent</b> — companies.json parentGroup</li>
+        </ul>
       </div>
 
       {/* Graph */}
@@ -488,16 +562,24 @@ function NetworkView() {
           <rect width="1000" height="600" fill="url(#ngrid)"/>
 
           {/* Edges */}
-          {edges.map((e, i) => {
+          {graph.edges.map((e, i) => {
             const a = nmap[e.a], b = nmap[e.b];
+            if (!a || !b) return null;
             const mx = (a.x + b.x) / 2;
             const my = (a.y + b.y) / 2;
+            const isHot = hoverId && (hoverId === e.a || hoverId === e.b);
             return (
               <g key={i}>
-                <line x1={a.x} y1={a.y} x2={b.x} y2={b.y} stroke={edgeColor(e.type)} strokeWidth={e.type === 'parent' ? 2 : 1.25} strokeDasharray={e.type === 'target' ? '4 3' : ''} opacity="0.55"/>
-                {e.label && (
+                <line
+                  x1={a.x} y1={a.y} x2={b.x} y2={b.y}
+                  stroke={edgeColor(e.type)}
+                  strokeWidth={e.type === 'parent' ? 2 : 1.25}
+                  strokeDasharray={e.type === 'target' ? '4 3' : ''}
+                  opacity={isHot ? 0.95 : (hoverId ? 0.18 : 0.55)}
+                />
+                {e.label && (!hoverId || isHot) && (
                   <g>
-                    <rect x={mx - 32} y={my - 8} width="64" height="16" rx="8" fill="#fff" stroke="#E3E8EE"/>
+                    <rect x={mx - 36} y={my - 8} width="72" height="16" rx="8" fill="#fff" stroke="#E3E8EE"/>
                     <text x={mx} y={my + 3.5} textAnchor="middle" fontSize="10" fontWeight="500" fill="#425466" fontFamily="Inter">{e.label}</text>
                   </g>
                 )}
@@ -506,44 +588,58 @@ function NetworkView() {
           })}
 
           {/* Nodes */}
-          {nodes.map(n => (
-            <g key={n.id} transform={`translate(${n.x} ${n.y})`} style={{ cursor: 'pointer' }}>
-              {n.id === 'll' && <circle r={n.r + 8} fill="none" stroke={n.color} strokeWidth="1.5" opacity="0.3"/>}
-              <circle r={n.r} fill={n.color} stroke="#fff" strokeWidth="3"/>
-              <text y="5" textAnchor="middle" fontSize="11" fontWeight="700" fill="#fff" fontFamily="Inter">{n.label.slice(0, 2).toUpperCase()}</text>
-              <rect x={-n.label.length * 3.5 - 6} y={n.r + 6} width={n.label.length * 7 + 12} height="18" rx="9" fill="#fff" stroke="#E3E8EE"/>
-              <text y={n.r + 18} textAnchor="middle" fontSize="11" fontWeight="500" fill="#0A2540" fontFamily="Inter">{n.label}</text>
-            </g>
-          ))}
+          {graph.nodes.map(n => {
+            const initials = (n.label || '··').replace(/[^A-Za-z]/g, '').slice(0, 2).toUpperCase() || '··';
+            const labelW = Math.min(160, n.label.length * 6 + 16);
+            const dim = hoverId && hoverId !== n.id;
+            return (
+              <g key={n.id}
+                 transform={'translate(' + n.x + ' ' + n.y + ')'}
+                 style={{ cursor: n.cid ? 'pointer' : 'default', opacity: dim ? 0.35 : 1, transition: 'opacity 120ms' }}
+                 onMouseEnter={() => setHoverId(n.id)}
+                 onMouseLeave={() => setHoverId(null)}
+                 onClick={() => n.cid && onSelect && onSelect(n.cid)}>
+                {n.isLL && <circle r={n.r + 8} fill="none" stroke={n.color} strokeWidth="1.5" opacity="0.3"/>}
+                <circle r={n.r} fill={n.color} stroke="#fff" strokeWidth="3"/>
+                <text y="5" textAnchor="middle" fontSize="11" fontWeight="700" fill="#fff" fontFamily="Inter">{initials}</text>
+                <rect x={-labelW / 2} y={n.r + 6} width={labelW} height="18" rx="9" fill="#fff" stroke="#E3E8EE"/>
+                <text y={n.r + 18} textAnchor="middle" fontSize="10" fontWeight="500" fill="#0A2540" fontFamily="Inter">
+                  {n.label.length > 24 ? n.label.slice(0, 22) + '…' : n.label}
+                </text>
+              </g>
+            );
+          })}
         </svg>
 
-        {/* Toolbar */}
-        <div style={{ position: 'absolute', top: 16, right: 16, display: 'flex', background: '#fff', border: '1px solid #E3E8EE', borderRadius: 6, padding: 2, boxShadow: '0 2px 4px rgba(10,37,64,0.06)' }}>
-          {['+','−','⤢'].map(s => (
-            <button key={s} style={{ width: 28, height: 28, border: 'none', background: 'transparent', color: '#425466', cursor: 'pointer', fontSize: 14, fontWeight: 500 }}>{s}</button>
-          ))}
-        </div>
-
-        {/* Inspector card */}
-        <Card style={{ position: 'absolute', bottom: 16, left: 16, width: 280, padding: 16 }}>
+        {/* Inspector card — reflects whatever is hovered (defaults to LL) */}
+        <Card style={{ position: 'absolute', bottom: 16, left: 16, width: 320, padding: 16 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
-            <div style={{ width: 32, height: 32, borderRadius: '50%', background: '#635BFF', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 700 }}>LL</div>
-            <div>
-              <div style={{ fontSize: 14, fontWeight: 600, color: '#0A2540' }}>Lampton Love</div>
-              <div style={{ fontSize: 11, color: '#697386' }}>Subsidiary of Ergon</div>
+            <div style={{ width: 32, height: 32, borderRadius: '50%', background: inspect && inspect.color || '#635BFF', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 700 }}>
+              {inspect ? ((inspect.label || '··').replace(/[^A-Za-z]/g, '').slice(0, 2).toUpperCase()) : 'LL'}
+            </div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <div style={{ fontSize: 14, fontWeight: 600, color: '#0A2540', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{inspect ? inspect.label : '—'}</div>
+              <div style={{ fontSize: 11, color: '#697386' }}>{inspect ? inspect.sub : ''}</div>
             </div>
           </div>
-          <div style={{ display: 'flex', gap: 10, fontSize: 11, color: '#697386', marginBottom: 10 }}>
-            <span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>8</b> connections</span>
-            <span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>3</b> targets</span>
-            <span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>4</b> competitors</span>
+          <div style={{ display: 'flex', gap: 12, fontSize: 11, color: '#697386', marginBottom: 10 }}>
+            <span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{innerN}</b> targets</span>
+            <span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{outerN}</b> competitors</span>
+            <span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{llCompany && llCompany.countyShared ? llCompany.countyShared.count : '—'}</b> LL counties</span>
           </div>
-          <Button variant="primary" size="sm" style={{ width: '100%' }}>Expand neighborhood</Button>
+          {inspect && inspect.cid ? (
+            <Button variant="primary" size="sm" style={{ width: '100%' }} onClick={() => onSelect && onSelect(inspect.cid)}>Open profile</Button>
+          ) : (
+            <Button variant="secondary" size="sm" style={{ width: '100%' }} disabled>Hover a node</Button>
+          )}
         </Card>
       </div>
     </div>
   );
 }
+
+// Ownership → node colour for the network graph
+const OC_NETWORK = { ll:'#635BFF', public:'#1890FF', pe:'#AB87FF', family:'#009966', coop:'#C4862D', private:'#697386', unknown:'#8B97A8' };
 
 // --- Local formatters (duplicated from Views1.jsx — Babel-standalone files don't share locals) ---
 function _fmtMoneyM(v) {
