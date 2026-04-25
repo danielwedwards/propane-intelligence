@@ -691,6 +691,55 @@ table.lt td{padding:var(--space-sm) var(--space-sm);min-height:var(--touch-min)}
 [data-theme="dark"] .pf-empty-section{background:#16202e;border-color:#2a3a4e}
 /* When in Pro-Forma section, hide the bottom pf-bar to avoid duplication */
 body:has(.main.view-proforma) .pf-bar{display:none!important}
+/* === v4.7.0: Overlap section (pairwise territory heatmap) === */
+.overlap-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
+.main.view-overlap{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
+.main.view-overlap .left,.main.view-overlap .rh,.main.view-overlap .map-wrap,.main.view-overlap .charts-wrap,.main.view-overlap .intel-wrap,.main.view-overlap .pf-wrap,.main.view-overlap .brief-wrap{display:none!important}
+.main.view-overlap .overlap-wrap{display:block!important}
+body:has(.main.view-overlap) .pf-bar{display:none!important}
+.ov-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.ov-head .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:4px}
+.ov-head .title-block h2{margin:0;font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--text-primary);letter-spacing:-0.2px}
+.ov-head .title-block .sub{margin-top:6px;font-size:12px;color:var(--text-secondary);max-width:560px;line-height:1.5}
+.ov-controls{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.ov-ctrl-group{display:inline-flex;align-items:center;gap:6px}
+.ov-ctrl-group .lbl{font-size:10px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.4px;font-weight:600;margin-right:2px}
+.ov-pill{padding:5px 11px;font-size:11px;border-radius:9999px;cursor:pointer;border:1px solid var(--border);background:var(--white);color:var(--text-secondary);font-family:inherit;font-weight:500;transition:all var(--tr-fast)}
+.ov-pill:hover{border-color:var(--brand);color:var(--brand)}
+.ov-pill.active{border-color:var(--brand);background:var(--brand-light);color:var(--brand-dark);font-weight:600}
+.ov-card{background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;padding:20px 22px;margin-bottom:16px}
+.ov-grid{display:grid;gap:2px}
+.ov-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:4px;font-size:11px;font-weight:600;font-family:var(--font-mono);transition:transform var(--tr-fast)}
+.ov-cell.has-val{cursor:help}
+.ov-cell.has-val:hover{transform:scale(1.05);outline:2px solid var(--brand)}
+.ov-cell.diag{background:#F7FAFC;color:#C1CCD6}
+.ov-rowlabel{font-size:12px;padding:10px 12px;display:flex;align-items:center;cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary)}
+.ov-rowlabel.is-ll{color:var(--brand-dark);font-weight:600}
+.ov-rowlabel:hover{color:var(--brand)}
+.ov-collabel{font-size:10px;text-align:center;padding:6px 4px;writing-mode:vertical-rl;transform:rotate(180deg);height:120px;display:flex;align-items:flex-end;justify-content:center;cursor:pointer;color:var(--text-secondary);font-weight:500}
+.ov-collabel.is-ll{color:var(--brand-dark);font-weight:700}
+.ov-collabel:hover{color:var(--brand)}
+.ov-scale{display:flex;align-items:center;gap:10px;margin-top:18px;justify-content:center;font-size:11px;color:var(--text-tertiary)}
+.ov-scale .ramp{width:240px;height:8px;background:linear-gradient(90deg,rgba(124,92,252,0.06),rgba(124,92,252,0.92));border-radius:4px}
+.ov-insights{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ov-insight{background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;padding:16px 18px;position:relative;overflow:hidden}
+.ov-insight::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px}
+.ov-insight.tone-red::before{background:var(--red)}
+.ov-insight.tone-amber::before{background:var(--amber)}
+.ov-insight.tone-green::before{background:var(--green)}
+.ov-insight .lbl{font-size:10px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px}
+.ov-insight .pair{font-size:14px;font-weight:600;color:var(--text-primary);line-height:1.35;margin-bottom:6px}
+.ov-insight .val{font-size:12px;color:var(--text-secondary);line-height:1.5;margin-bottom:10px}
+.ov-insight .verdict{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:9999px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.4px}
+.ov-insight.tone-red .verdict{background:rgba(217,45,32,0.1);color:var(--red)}
+.ov-insight.tone-amber .verdict{background:rgba(196,134,45,0.1);color:#9A6915}
+.ov-insight.tone-green .verdict{background:rgba(2,122,72,0.1);color:var(--green)}
+.ov-empty{padding:40px 20px;text-align:center;color:var(--text-secondary);font-size:13px}
+[data-theme="dark"] .overlap-wrap{background:#0a1018}
+[data-theme="dark"] .ov-card,[data-theme="dark"] .ov-insight{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .ov-cell.diag{background:#0f1722;color:#3a4a5e}
+[data-theme="dark"] .ov-pill{background:#16202e;color:#a0aec0;border-color:#2a3a4e}
+[data-theme="dark"] .ov-pill.active{background:rgba(124,92,252,0.18);color:#bea6ff;border-color:#7C5CFC}
 /* === v4.6.0: Brief section (executive one-page rollup) === */
 .brief-wrap{display:none;flex:1;overflow-y:auto;padding:32px 28px;background:var(--light-bg)}
 .main.view-brief{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
@@ -1055,6 +1104,7 @@ Continue with Microsoft
 <button class="section-btn" data-section="intelligence" role="tab" aria-selected="false" onclick="setSection('intelligence')" title="Intelligence (I)">Intelligence</button>
 <button class="section-btn" data-section="proforma" role="tab" aria-selected="false" onclick="setSection('proforma')" title="Pro-Forma (P)">Pro-Forma</button>
 <button class="section-btn" data-section="brief" role="tab" aria-selected="false" onclick="setSection('brief')" title="Brief (R)">Brief</button>
+<button class="section-btn" data-section="overlap" role="tab" aria-selected="false" onclick="setSection('overlap')" title="Overlap (O)">Overlap</button>
 <button class="section-btn" data-section="analytics" role="tab" aria-selected="false" onclick="setSection('analytics')" title="Analytics (A)">Analytics</button>
 </div>
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
@@ -1242,6 +1292,33 @@ Continue with Microsoft
 </div>
 <div id="pfSectionBody"></div>
 </div>
+<!-- v4.7.0: Overlap section (pairwise territory heatmap) -->
+<div class="overlap-wrap" id="overlapWrap">
+<div class="ov-head">
+<div class="title-block">
+<div class="eyebrow">Competitor Overlap</div>
+<h2>Geographic territory overlap</h2>
+<div class="sub">Pairwise overlap of company footprints, computed from shared 30-mile geographic cells. Lampton-Love is always pinned to the matrix. Click any name to open that company.</div>
+</div>
+<div class="ov-controls">
+<div class="ov-ctrl-group"><span class="lbl">Metric</span>
+<button class="ov-pill active" data-metric="jaccard" onclick="setOverlapMetric('jaccard')" title="Shared cells / union — symmetric">Jaccard</button>
+<button class="ov-pill" data-metric="rowPct" onclick="setOverlapMetric('rowPct')" title="Shared cells / row company total — directional">Row %</button>
+</div>
+<div class="ov-ctrl-group"><span class="lbl">Top</span>
+<button class="ov-pill" data-size="8" onclick="setOverlapSize(8)">8</button>
+<button class="ov-pill active" data-size="10" onclick="setOverlapSize(10)">10</button>
+<button class="ov-pill" data-size="14" onclick="setOverlapSize(14)">14</button>
+</div>
+<div class="ov-ctrl-group"><span class="lbl">Cell</span>
+<button class="ov-pill" data-cell="0.25" onclick="setOverlapCell(0.25)" title="~17 mile cells (finer)">Fine</button>
+<button class="ov-pill active" data-cell="0.5" onclick="setOverlapCell(0.5)" title="~35 mile cells (~county scale)">Std</button>
+<button class="ov-pill" data-cell="1" onclick="setOverlapCell(1)" title="~70 mile cells (regional)">Coarse</button>
+</div>
+</div>
+</div>
+<div id="overlapBody"></div>
+</div>
 <!-- v4.6.0: Brief section (executive one-page rollup) -->
 <div class="brief-wrap" id="briefWrap">
 <div class="brief-page" id="briefPage">
@@ -1375,16 +1452,17 @@ function setMobileView(view){
 /* === PRODUCT SPRINT B: Desktop view toggle (now driven by section nav in v4.1.0) === */
 function setView(view){
   let main=document.getElementById('mainArea');
-  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma')&&!main.classList.contains('view-brief'));
-  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma','view-brief');
+  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma')&&!main.classList.contains('view-brief')&&!main.classList.contains('view-overlap'));
+  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma','view-brief','view-overlap');
   if(view==='table')main.classList.add('view-table');
   else if(view==='map')main.classList.add('view-map');
   else if(view==='charts'){main.classList.add('view-charts');setTimeout(function(){renderCharts();chartInstances.forEach(function(c){c.resize()})},100)}
   else if(view==='intel'){main.classList.add('view-intel');setTimeout(function(){renderIntelligence()},50)}
   else if(view==='proforma'){main.classList.add('view-proforma');setTimeout(function(){updatePF()},50)}
   else if(view==='brief'){main.classList.add('view-brief');setTimeout(function(){renderBrief()},50)}
+  else if(view==='overlap'){main.classList.add('view-overlap');setTimeout(function(){renderOverlap()},50)}
   // v4.4.0: Sync section nav + Companies sub-toggle UI from view
-  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':(view==='brief'?'brief':'companies'))));
+  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':(view==='brief'?'brief':(view==='overlap'?'overlap':'companies')))));
   document.querySelectorAll('.section-btn').forEach(btn=>{
     let isActive=btn.dataset.section===section;
     btn.classList.toggle('active',isActive);
@@ -1418,6 +1496,7 @@ function setSection(section){
   if(section==='intelligence'||section==='intel'){setView('intel');return}
   if(section==='proforma'||section==='pro-forma'||section==='pf'){setView('proforma');return}
   if(section==='brief'){setView('brief');return}
+  if(section==='overlap'){setView('overlap');return}
   if(section==='analytics'||section==='charts'){setView('charts');return}
 }
 /* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
@@ -2851,6 +2930,147 @@ function _briefFooter(){
     '</div>';
 }
 
+/* === v4.7.0: Overlap section — pairwise territory overlap heatmap === */
+let overlapMetric='jaccard';   // 'jaccard' | 'rowPct'
+let overlapSize=10;            // 8 | 10 | 14
+let overlapCell=0.5;           // degrees per cell (0.25 ~ 17mi, 0.5 ~ 35mi, 1 ~ 70mi)
+let _ovCellCache={key:'',map:null};
+function _ovEsc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function _ovBuildCellSets(cell){
+  // For every company, the Set of cell keys touched by its locations.
+  let key='c'+cell;
+  if(_ovCellCache.key===key&&_ovCellCache.map)return _ovCellCache.map;
+  let inv=1/cell;
+  let out={};
+  DATA.forEach(c=>{
+    let s=new Set();
+    (c.locations||[]).forEach(l=>{
+      if(l.lat==null||l.lng==null)return;
+      s.add(Math.floor(l.lat*inv)+'_'+Math.floor(l.lng*inv));
+    });
+    out[c.id]=s;
+  });
+  _ovCellCache={key:key,map:out};
+  return out;
+}
+function setOverlapMetric(m){
+  overlapMetric=(m==='rowPct')?'rowPct':'jaccard';
+  document.querySelectorAll('#overlapWrap .ov-pill[data-metric]').forEach(b=>b.classList.toggle('active',b.dataset.metric===overlapMetric));
+  renderOverlap();
+}
+function setOverlapSize(n){
+  overlapSize=n;
+  document.querySelectorAll('#overlapWrap .ov-pill[data-size]').forEach(b=>b.classList.toggle('active',+b.dataset.size===n));
+  renderOverlap();
+}
+function setOverlapCell(deg){
+  overlapCell=deg;
+  document.querySelectorAll('#overlapWrap .ov-pill[data-cell]').forEach(b=>b.classList.toggle('active',+b.dataset.cell===deg));
+  renderOverlap();
+}
+function renderOverlap(){
+  let body=document.getElementById('overlapBody');if(!body)return;
+  let cellSets=_ovBuildCellSets(overlapCell);
+  // Rank by cell count first (proxy for footprint size), then by national gallons / revenue / locs.
+  let ranked=DATA.filter(c=>(c.id===LL_ID||!c.excluded)&&cellSets[c.id]&&cellSets[c.id].size>0)
+    .map(c=>({
+      id:c.id,name:c.name,
+      cells:cellSets[c.id],
+      score:(c.estAnnualGallons||0)*1e6+(c.estRevenue||0)*1e3+c.locations.length,
+      isLL:c.id===LL_ID,c:c
+    }))
+    .sort((a,b)=>b.cells.size-a.cells.size||b.score-a.score);
+  // Always include LL anchor in the matrix.
+  let top=ranked.slice(0,overlapSize);
+  if(!top.some(x=>x.isLL)){
+    let ll=ranked.find(x=>x.isLL);
+    if(ll)top[top.length-1]=ll;
+  }
+  if(top.length<2){
+    body.innerHTML='<div class="ov-card"><div class="ov-empty">Not enough geocoded companies to compute overlap. Need at least 2 companies with locations.</div></div>';
+    return;
+  }
+  // Pairwise matrix
+  let m=top.map((row,i)=>top.map((col,j)=>{
+    if(i===j)return null;
+    let inter=0;
+    row.cells.forEach(f=>{if(col.cells.has(f))inter++});
+    let denom;
+    if(overlapMetric==='jaccard'){
+      // |A ∪ B| = |A| + |B| - |A ∩ B|
+      denom=row.cells.size+col.cells.size-inter;
+    }else{
+      denom=row.cells.size;
+    }
+    return denom>0?Math.round((inter/denom)*100):0;
+  }));
+  // Insights: highest non-LL pair, max pair containing LL, min pair containing LL
+  let highest={v:-1},llHigh={v:-1},llLow={v:101};
+  for(let i=0;i<top.length;i++){
+    for(let j=i+1;j<top.length;j++){
+      let v=m[i][j];if(v==null)continue;
+      // For Jaccard the matrix is symmetric; for Row% take max of m[i][j], m[j][i]
+      let v2=overlapMetric==='rowPct'?Math.max(m[i][j],m[j][i]):v;
+      if(v2>highest.v){highest={v:v2,a:top[i],b:top[j]}}
+      if(top[i].isLL||top[j].isLL){
+        if(v2>llHigh.v){llHigh={v:v2,a:top[i],b:top[j]}}
+        if(v2<llLow.v){llLow={v:v2,a:top[i],b:top[j]}}
+      }
+    }
+  }
+  // Cell color (brand purple ramp)
+  function cellBg(v){
+    if(v==null)return null;
+    let alpha=(v/100*0.85+0.06).toFixed(2);
+    return 'rgba(124,92,252,'+alpha+')';
+  }
+  let n=top.length;
+  // Build grid: top-left blank, then column header row; then for each row, a row header + n cells
+  let grid='<div class="ov-grid" style="grid-template-columns:200px repeat('+n+',1fr)">';
+  grid+='<div></div>';
+  top.forEach(c=>{
+    grid+='<div class="ov-collabel'+(c.isLL?' is-ll':'')+'" onclick="op(\''+_ovEsc(c.id)+'\')" title="'+_ovEsc(c.name)+' &middot; '+c.cells.size+' cells">'+_ovEsc(c.name)+'</div>';
+  });
+  top.forEach((rowCo,i)=>{
+    grid+='<div class="ov-rowlabel'+(rowCo.isLL?' is-ll':'')+'" onclick="op(\''+_ovEsc(rowCo.id)+'\')" title="'+_ovEsc(rowCo.name)+' &middot; '+rowCo.cells.size+' cells">'+_ovEsc(rowCo.name)+'</div>';
+    m[i].forEach((v,j)=>{
+      let isDiag=(v==null);
+      let bg=isDiag?'':('background:'+cellBg(v)+';');
+      let color=v==null?'':(v>50?'color:#fff;':'color:var(--text-primary);');
+      let title=isDiag?'':(_ovEsc(rowCo.name)+' \u2194 '+_ovEsc(top[j].name)+': '+v+'%');
+      let txt=isDiag?'\u2014':v+'%';
+      grid+='<div class="ov-cell '+(isDiag?'diag':'has-val')+'" style="'+bg+color+'" title="'+title+'">'+txt+'</div>';
+    });
+  });
+  grid+='</div>';
+  let scaleHtml='<div class="ov-scale"><span>0%</span><span class="ramp"></span><span>100%</span></div>';
+  let metricNote=overlapMetric==='jaccard'
+    ?'Jaccard = shared cells &divide; union of cells (symmetric).'
+    :'Row % = shared cells &divide; row company\u2019s cells (directional &mdash; read row \u2192 column).';
+  let cellNote='~'+(overlapCell===0.25?'17':overlapCell===0.5?'35':'70')+' mile cells. Darker = higher overlap.';
+  let card='<div class="ov-card">'+grid+scaleHtml+
+    '<div style="margin-top:14px;font-size:11px;color:var(--text-tertiary);text-align:center;font-family:var(--font-mono);letter-spacing:0.2px">'+metricNote+' &middot; '+cellNote+'</div></div>';
+  // Insight cards
+  let cards=[
+    {title:'Highest overlap',     pair:highest,tone:'red',  verdict:'Direct conflict'},
+    {title:'Platform exposure',   pair:llHigh, tone:'amber',verdict:'Watch closely'},
+    {title:'LL whitespace',       pair:llLow,  tone:'green',verdict:'Complementary'}
+  ];
+  let insights='<div class="ov-insights">'+cards.map(c=>{
+    let body='';
+    if(c.pair&&c.pair.a&&c.pair.b){
+      body='<div class="pair">'+_ovEsc(c.pair.a.name)+' \u2194 '+_ovEsc(c.pair.b.name)+'</div>'+
+        '<div class="val">'+c.pair.v+'% '+(overlapMetric==='jaccard'?'Jaccard':'max-row')+' overlap '+
+        '&middot; '+c.pair.a.cells.size+' vs '+c.pair.b.cells.size+' cells</div>'+
+        '<span class="verdict">'+c.verdict+'</span>';
+    }else{
+      body='<div class="val" style="color:var(--text-tertiary)">Insufficient data.</div>';
+    }
+    return '<div class="ov-insight tone-'+c.tone+'"><div class="lbl">'+c.title+'</div>'+body+'</div>';
+  }).join('')+'</div>';
+  body.innerHTML=card+insights;
+}
+
 function clearPlatform(){
   platform=[];
   _proxCacheKey='__FORCE__';
@@ -2929,6 +3149,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='i'||e.key==='I'){e.preventDefault();setSection('intelligence');return}         // Intelligence section
   if(e.key==='p'||e.key==='P'){e.preventDefault();setSection('proforma');return}              // Pro-Forma section
   if(e.key==='r'||e.key==='R'){e.preventDefault();setSection('brief');return}                  // Brief section (Rollup)
+  if(e.key==='o'||e.key==='O'){e.preventDefault();setSection('overlap');return}                // Overlap section
   if(e.key==='a'||e.key==='A'){e.preventDefault();setSection('analytics');return}            // Analytics section
   if(e.key==='t'||e.key==='T'){e.preventDefault();setCompaniesSub('table');return}           // Companies > Table only
   if(e.key==='b'||e.key==='B'){e.preventDefault();setCompaniesSub('both');return}            // Companies > Table + Map
