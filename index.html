@@ -691,6 +691,45 @@ table.lt td{padding:var(--space-sm) var(--space-sm);min-height:var(--touch-min)}
 [data-theme="dark"] .pf-empty-section{background:#16202e;border-color:#2a3a4e}
 /* When in Pro-Forma section, hide the bottom pf-bar to avoid duplication */
 body:has(.main.view-proforma) .pf-bar{display:none!important}
+/* === v4.8.0: Network section (Palantir-style relationship graph) === */
+.net-wrap{display:none;flex:1;flex-direction:column;overflow:hidden;background:var(--light-bg)}
+.main.view-network{overflow:hidden!important;flex:1 1 auto!important;min-height:0!important;display:flex!important}
+.main.view-network .left,.main.view-network .rh,.main.view-network .map-wrap,.main.view-network .charts-wrap,.main.view-network .intel-wrap,.main.view-network .pf-wrap,.main.view-network .brief-wrap,.main.view-network .overlap-wrap{display:none!important}
+.main.view-network .net-wrap{display:flex!important}
+body:has(.main.view-network) .pf-bar{display:none!important}
+.net-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:18px 24px 14px;background:var(--white);border-bottom:1px solid var(--border-subtle);flex-wrap:wrap}
+.net-head .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:4px}
+.net-head .title-block h2{margin:0;font-family:var(--font-serif);font-size:20px;font-weight:400;color:var(--text-primary);letter-spacing:-0.2px}
+.net-head .title-block .sub{margin-top:4px;font-size:11px;color:var(--text-secondary);max-width:520px;line-height:1.5}
+.net-head .ctrls{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.net-head .ctrls .grp{display:inline-flex;align-items:center;gap:8px}
+.net-head .ctrls .lbl{font-size:10px;font-weight:600;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.4px}
+.net-head .ctrls input[type=range]{width:120px;accent-color:var(--brand)}
+.net-head .ctrls .val{font-family:var(--font-mono);font-size:12px;font-weight:600;color:var(--text-primary);min-width:14px;text-align:right}
+.net-head .ctrls .toggle{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--text-secondary);cursor:pointer;user-select:none}
+.net-canvas{flex:1;position:relative;overflow:hidden;background:var(--light-bg)}
+.net-canvas svg{width:100%;height:100%;display:block}
+.net-canvas svg .net-node{cursor:pointer;transition:opacity 120ms}
+.net-canvas svg .net-node.dim{opacity:0.28}
+.net-canvas svg .net-edge{transition:opacity 120ms}
+.net-legend{position:absolute;top:16px;left:16px;background:var(--white);border:1px solid var(--border-subtle);border-radius:10px;padding:10px 14px;box-shadow:var(--shadow-xs);font-size:11px;color:var(--text-secondary)}
+.net-legend .ttl{font-size:9px;font-weight:700;text-transform:uppercase;color:var(--text-tertiary);letter-spacing:0.5px;margin-bottom:6px}
+.net-legend .row{display:flex;align-items:center;gap:8px;padding:3px 0}
+.net-legend .swatch{width:18px;height:2px;border-radius:1px}
+.net-inspect{position:absolute;bottom:16px;left:16px;width:340px;background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow);font-family:var(--font-sans)}
+.net-inspect .head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.net-inspect .head .av{width:34px;height:34px;border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+.net-inspect .head .nm{flex:1;min-width:0}
+.net-inspect .head .nm .n{font-size:14px;font-weight:600;color:var(--text-primary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.net-inspect .head .nm .s{font-size:11px;color:var(--text-secondary);margin-top:2px}
+.net-inspect .stats{display:flex;gap:14px;font-size:11px;color:var(--text-tertiary);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border-subtle)}
+.net-inspect .stats b{color:var(--text-primary);font-family:var(--font-mono);font-weight:600;margin-right:3px}
+.net-inspect .actbtn{width:100%;padding:8px 14px;background:var(--brand);color:#fff;border:none;border-radius:var(--radius-md);font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;transition:background var(--tr-fast)}
+.net-inspect .actbtn:hover{background:var(--brand-dark)}
+.net-inspect .actbtn:disabled{background:var(--border);color:var(--text-tertiary);cursor:not-allowed}
+[data-theme="dark"] .net-wrap{background:#0a1018}
+[data-theme="dark"] .net-canvas{background:#0a1018}
+[data-theme="dark"] .net-head,[data-theme="dark"] .net-legend,[data-theme="dark"] .net-inspect{background:#16202e;border-color:#2a3a4e;color:#e0e4ea}
 /* === v4.7.0: Overlap section (pairwise territory heatmap) === */
 .overlap-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
 .main.view-overlap{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
@@ -1105,6 +1144,7 @@ Continue with Microsoft
 <button class="section-btn" data-section="proforma" role="tab" aria-selected="false" onclick="setSection('proforma')" title="Pro-Forma (P)">Pro-Forma</button>
 <button class="section-btn" data-section="brief" role="tab" aria-selected="false" onclick="setSection('brief')" title="Brief (R)">Brief</button>
 <button class="section-btn" data-section="overlap" role="tab" aria-selected="false" onclick="setSection('overlap')" title="Overlap (O)">Overlap</button>
+<button class="section-btn" data-section="network" role="tab" aria-selected="false" onclick="setSection('network')" title="Network (N)">Network</button>
 <button class="section-btn" data-section="analytics" role="tab" aria-selected="false" onclick="setSection('analytics')" title="Analytics (A)">Analytics</button>
 </div>
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
@@ -1292,6 +1332,38 @@ Continue with Microsoft
 </div>
 <div id="pfSectionBody"></div>
 </div>
+<!-- v4.8.0: Network section (Palantir-style relationship graph) -->
+<div class="net-wrap" id="netWrap">
+<div class="net-head">
+<div class="title-block">
+<div class="eyebrow">Strategic Network</div>
+<h2>Lampton-Love relationship graph</h2>
+<div class="sub">Inner ring = highest-fit acquisition targets. Outer ring = top competitors by territory overlap with LL. Parent groups stack to the right. Hover any node to inspect; click to open the profile.</div>
+</div>
+<div class="ctrls">
+<div class="grp"><span class="lbl">Targets</span><input type="range" min="3" max="10" value="6" id="netInnerN" oninput="setNetworkInner(this.value)"/><span class="val" id="netInnerV">6</span></div>
+<div class="grp"><span class="lbl">Competitors</span><input type="range" min="3" max="10" value="6" id="netOuterN" oninput="setNetworkOuter(this.value)"/><span class="val" id="netOuterV">6</span></div>
+<label class="toggle"><input type="checkbox" id="netShowParents" checked onchange="setNetworkParents(this.checked)"/>Parents</label>
+</div>
+</div>
+<div class="net-canvas" id="netCanvas">
+<div class="net-legend">
+<div class="ttl">Edge type</div>
+<div class="row"><span class="swatch" style="background:#7C5CFC"></span><span>Acquisition target</span></div>
+<div class="row"><span class="swatch" style="background:#D92D20"></span><span>Direct competitor</span></div>
+<div class="row"><span class="swatch" style="background:#0A2540"></span><span>Parent group</span></div>
+</div>
+<div id="netSvgHost" style="position:absolute;inset:0"></div>
+<div class="net-inspect" id="netInspect" style="display:none">
+<div class="head">
+<div class="av" id="netInsAv">LL</div>
+<div class="nm"><div class="n" id="netInsName">—</div><div class="s" id="netInsSub">—</div></div>
+</div>
+<div class="stats" id="netInsStats"></div>
+<button class="actbtn" id="netInsBtn" onclick="_netOpenInspect()">Open profile</button>
+</div>
+</div>
+</div>
 <!-- v4.7.0: Overlap section (pairwise territory heatmap) -->
 <div class="overlap-wrap" id="overlapWrap">
 <div class="ov-head">
@@ -1452,8 +1524,8 @@ function setMobileView(view){
 /* === PRODUCT SPRINT B: Desktop view toggle (now driven by section nav in v4.1.0) === */
 function setView(view){
   let main=document.getElementById('mainArea');
-  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma')&&!main.classList.contains('view-brief')&&!main.classList.contains('view-overlap'));
-  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma','view-brief','view-overlap');
+  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma')&&!main.classList.contains('view-brief')&&!main.classList.contains('view-overlap')&&!main.classList.contains('view-network'));
+  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma','view-brief','view-overlap','view-network');
   if(view==='table')main.classList.add('view-table');
   else if(view==='map')main.classList.add('view-map');
   else if(view==='charts'){main.classList.add('view-charts');setTimeout(function(){renderCharts();chartInstances.forEach(function(c){c.resize()})},100)}
@@ -1461,8 +1533,9 @@ function setView(view){
   else if(view==='proforma'){main.classList.add('view-proforma');setTimeout(function(){updatePF()},50)}
   else if(view==='brief'){main.classList.add('view-brief');setTimeout(function(){renderBrief()},50)}
   else if(view==='overlap'){main.classList.add('view-overlap');setTimeout(function(){renderOverlap()},50)}
+  else if(view==='network'){main.classList.add('view-network');setTimeout(function(){renderNetwork()},50)}
   // v4.4.0: Sync section nav + Companies sub-toggle UI from view
-  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':(view==='brief'?'brief':(view==='overlap'?'overlap':'companies')))));
+  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':(view==='brief'?'brief':(view==='overlap'?'overlap':(view==='network'?'network':'companies'))))));
   document.querySelectorAll('.section-btn').forEach(btn=>{
     let isActive=btn.dataset.section===section;
     btn.classList.toggle('active',isActive);
@@ -1497,6 +1570,7 @@ function setSection(section){
   if(section==='proforma'||section==='pro-forma'||section==='pf'){setView('proforma');return}
   if(section==='brief'){setView('brief');return}
   if(section==='overlap'){setView('overlap');return}
+  if(section==='network'){setView('network');return}
   if(section==='analytics'||section==='charts'){setView('charts');return}
 }
 /* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
@@ -3071,6 +3145,194 @@ function renderOverlap(){
   body.innerHTML=card+insights;
 }
 
+/* === v4.8.0: Network section — Palantir-style relationship graph === */
+let netInnerN=6, netOuterN=6, netShowParents=true;
+let _netHoverId=null, _netInspectCid=null;
+const _NET_OWN_COLOR={ll:'#7C5CFC',public:'#1890FF',pe:'#AB87FF',family:'#009966',coop:'#C4862D',private:'#697386',unknown:'#8B97A8'};
+function _netEsc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function _netInitials(name){let s=String(name||'').replace(/[^A-Za-z]/g,'').slice(0,2).toUpperCase();return s||'\u00B7\u00B7'}
+function setNetworkInner(n){netInnerN=Math.max(3,Math.min(10,+n));let el=document.getElementById('netInnerV');if(el)el.textContent=netInnerN;renderNetwork()}
+function setNetworkOuter(n){netOuterN=Math.max(3,Math.min(10,+n));let el=document.getElementById('netOuterV');if(el)el.textContent=netOuterN;renderNetwork()}
+function setNetworkParents(b){netShowParents=!!b;renderNetwork()}
+function _netOpenInspect(){if(_netInspectCid)op(_netInspectCid)}
+function _netSetHover(id){_netHoverId=id;_netUpdateHoverDom();_netUpdateInspect()}
+function _netUpdateHoverDom(){
+  let host=document.getElementById('netSvgHost');if(!host)return;
+  let nodes=host.querySelectorAll('[data-nid]');
+  let edges=host.querySelectorAll('[data-edge]');
+  if(!_netHoverId){
+    nodes.forEach(n=>n.classList.remove('dim'));
+    edges.forEach(e=>{e.style.opacity=0.55});
+    return;
+  }
+  nodes.forEach(n=>{n.classList.toggle('dim',n.dataset.nid!==_netHoverId)});
+  edges.forEach(e=>{
+    let touches=(e.dataset.a===_netHoverId||e.dataset.b===_netHoverId);
+    e.style.opacity=touches?0.95:0.18;
+  });
+}
+function _netUpdateInspect(){
+  let inspectId=_netHoverId||'__ll__';
+  let host=document.getElementById('netSvgHost');if(!host)return;
+  let nodeEl=host.querySelector('[data-nid="'+(_netHoverId||'__ll__').replace(/"/g,'')+'"]');
+  let panel=document.getElementById('netInspect');if(!panel)return;
+  let dataNode=_NET_LAST&&_NET_LAST.nmap?_NET_LAST.nmap[_netHoverId||'__ll__']:null;
+  if(!dataNode&&_NET_LAST&&_NET_LAST.nmap)dataNode=_NET_LAST.nmap['__ll__'];
+  if(!dataNode){panel.style.display='none';return}
+  panel.style.display='block';
+  let av=document.getElementById('netInsAv');
+  let nm=document.getElementById('netInsName');
+  let sb=document.getElementById('netInsSub');
+  let st=document.getElementById('netInsStats');
+  let bt=document.getElementById('netInsBtn');
+  if(av){av.textContent=_netInitials(dataNode.label);av.style.background=dataNode.color||'#7C5CFC'}
+  if(nm)nm.textContent=dataNode.label;
+  if(sb)sb.textContent=dataNode.sub||'';
+  if(st){
+    let parts=[];
+    if(dataNode.fit!=null)parts.push('<span><b>'+dataNode.fit+'</b>fit</span>');
+    if(dataNode.overlap!=null)parts.push('<span><b>'+dataNode.overlap+'%</b>LL overlap</span>');
+    if(dataNode.locs!=null)parts.push('<span><b>'+dataNode.locs+'</b>locs</span>');
+    if(dataNode.states!=null)parts.push('<span><b>'+dataNode.states+'</b>states</span>');
+    if(parts.length===0)parts.push('<span style="color:var(--text-tertiary)">'+(dataNode.isParent?'Parent group':'\u2014')+'</span>');
+    st.innerHTML=parts.join('');
+  }
+  if(bt){
+    if(dataNode.cid){bt.disabled=false;bt.textContent='Open '+(dataNode.cid===LL_ID?'Lampton-Love':'profile');_netInspectCid=dataNode.cid}
+    else{bt.disabled=true;bt.textContent='Parent group (no profile)';_netInspectCid=null}
+  }
+}
+let _NET_LAST=null;
+function renderNetwork(){
+  let host=document.getElementById('netSvgHost');if(!host)return;
+  let ll=DATA.find(c=>c.id===LL_ID);
+  if(!ll){host.innerHTML='<div style="padding:40px;text-align:center;color:var(--text-secondary)">No anchor company found.</div>';return}
+  // Inner ring: top-N candidates by composite fit (excluding LL, excluded, platform)
+  let cellSets=_ovBuildCellSets(0.5);
+  let llCells=cellSets[LL_ID]||new Set();
+  let candidates=DATA.filter(c=>c.id!==LL_ID&&!c.excluded&&!platform.includes(c.id));
+  let withFit=candidates.map(c=>{let f=0;try{f=computeFitBreakdown(c).composite}catch(e){}return{c:c,fit:f}}).filter(x=>x.fit>0);
+  withFit.sort((a,b)=>b.fit-a.fit);
+  let targets=withFit.slice(0,netInnerN);
+  let targetIds=new Set(targets.map(t=>t.c.id));
+  // Outer ring: top-N competitors by Jaccard cell overlap with LL (excluding inner-ring members)
+  let competitorsAll=candidates.filter(c=>!targetIds.has(c.id)&&cellSets[c.id]&&cellSets[c.id].size>0).map(c=>{
+    let cells=cellSets[c.id];
+    let inter=0;cells.forEach(f=>{if(llCells.has(f))inter++});
+    let union=cells.size+llCells.size-inter;
+    let j=union>0?Math.round(inter/union*100):0;
+    return{c:c,overlap:j,shared:inter};
+  }).filter(x=>x.overlap>0);
+  competitorsAll.sort((a,b)=>b.overlap-a.overlap);
+  let competitors=competitorsAll.slice(0,netOuterN);
+  // Parent groups
+  let parentMap={};
+  if(netShowParents){
+    let ringMembers=[ll,...targets.map(t=>t.c),...competitors.map(c=>c.c)];
+    ringMembers.forEach(c=>{
+      let pg=c.parentGroup;
+      if(!pg||!pg.trim())return;
+      if(pg===c.name)return;
+      let lo=pg.toLowerCase();
+      if(lo==='independent'||lo==='public')return;
+      if(!parentMap[pg])parentMap[pg]={id:'parent::'+pg,label:pg,children:[]};
+      parentMap[pg].children.push(c.id);
+    });
+  }
+  let parents=Object.values(parentMap);
+  // Layout
+  let nodes=[];
+  // LL center
+  nodes.push({
+    id:'__ll__',cid:LL_ID,label:ll.name,x:500,y:320,r:32,color:'#7C5CFC',
+    sub:(ll.parentGroup&&ll.parentGroup!==ll.name?'Subsidiary of '+ll.parentGroup:'Anchor platform'),
+    isLL:true,locs:ll.locations.length,states:ll.states.length
+  });
+  function placeRing(arr,radius,a0,a1,getColor,kind){
+    let n=arr.length;
+    arr.forEach((entry,i)=>{
+      let t=n===1?0.5:i/(n-1);
+      let ang=a0+(a1-a0)*t;
+      let x=500+Math.cos(ang)*radius;
+      let y=320+Math.sin(ang)*radius;
+      let c=entry.c;
+      let sz=Math.max(14,Math.min(26,12+Math.sqrt((c.locations||[]).length||1)*1.6));
+      let color=getColor(c);
+      let sub='';
+      if(kind==='target')sub=(c.companyType||c.ownership||'').toString()+' \u00b7 fit '+entry.fit;
+      else sub=(c.companyType||c.ownership||'').toString()+' \u00b7 '+entry.overlap+'% LL overlap';
+      nodes.push({
+        id:c.id,cid:c.id,label:c.name,x,y,r:sz,color:color,
+        sub:sub,fit:entry.fit||null,overlap:entry.overlap||null,
+        locs:c.locations.length,states:c.states.length,kind:kind
+      });
+    });
+  }
+  // Targets in upper hemisphere (-π .. 0)
+  placeRing(targets,170,-Math.PI,0,c=>_NET_OWN_COLOR[c.ownership]||'#7C5CFC','target');
+  // Competitors in lower hemisphere (0.05π .. 0.95π)
+  placeRing(competitors,275,Math.PI*0.05,Math.PI*0.95,c=>_NET_OWN_COLOR[c.ownership]||'#D92D20','competitor');
+  // Parent nodes stack to the right
+  parents.forEach((p,i)=>{
+    nodes.push({
+      id:p.id,cid:null,label:p.label,x:920,y:90+i*60,r:18,color:'#0A2540',
+      sub:'Parent group ('+p.children.length+' subsidiar'+(p.children.length===1?'y':'ies')+')',
+      isParent:true
+    });
+  });
+  let nmap={};nodes.forEach(n=>{nmap[n.id]=n});
+  // Edges
+  let edges=[];
+  targets.forEach(t=>{edges.push({a:'__ll__',b:t.c.id,type:'target',label:'fit '+t.fit})});
+  competitors.forEach(c=>{edges.push({a:'__ll__',b:c.c.id,type:'competitor',label:c.overlap+'% overlap'})});
+  parents.forEach(p=>{p.children.forEach(cid=>{
+    let nid=cid===LL_ID?'__ll__':cid;
+    edges.push({a:nid,b:p.id,type:'parent'});
+  })});
+  _NET_LAST={nmap,nodes,edges};
+  function edgeColor(t){return t==='parent'?'#0A2540':t==='competitor'?'#D92D20':'#7C5CFC'}
+  // SVG (use plain string since we set innerHTML)
+  let svg='<svg viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid meet" style="width:100%;height:100%;display:block">'+
+    '<defs><pattern id="netGrid" width="25" height="25" patternUnits="userSpaceOnUse">'+
+    '<path d="M 25 0 L 0 0 0 25" fill="none" stroke="rgba(124,92,252,0.06)" stroke-width="0.5"/></pattern></defs>'+
+    '<rect width="1000" height="600" fill="url(#netGrid)"/>';
+  // Edges
+  edges.forEach((e,i)=>{
+    let a=nmap[e.a],b=nmap[e.b];if(!a||!b)return;
+    let mx=(a.x+b.x)/2,my=(a.y+b.y)/2;
+    let dash=e.type==='target'?'4 3':e.type==='parent'?'':'';
+    let sw=e.type==='parent'?2:1.25;
+    svg+='<g class="net-edge" data-edge="'+i+'" data-a="'+_netEsc(e.a)+'" data-b="'+_netEsc(e.b)+'" style="opacity:0.55">'+
+      '<line x1="'+a.x+'" y1="'+a.y+'" x2="'+b.x+'" y2="'+b.y+'" stroke="'+edgeColor(e.type)+'" stroke-width="'+sw+'"'+(dash?' stroke-dasharray="'+dash+'"':'')+'/>';
+    if(e.label){
+      let w=Math.max(60,e.label.length*5+12);
+      svg+='<rect x="'+(mx-w/2)+'" y="'+(my-8)+'" width="'+w+'" height="16" rx="8" fill="#fff" stroke="#E3E8EE"/>'+
+        '<text x="'+mx+'" y="'+(my+3.5)+'" text-anchor="middle" font-size="10" font-weight="500" fill="#425466" font-family="Inter">'+_netEsc(e.label)+'</text>';
+    }
+    svg+='</g>';
+  });
+  // Nodes
+  nodes.forEach(n=>{
+    let initials=_netInitials(n.label);
+    let labelW=Math.min(160,(n.label||'').length*6+16);
+    let labelTxt=(n.label||'').length>24?(n.label.slice(0,22)+'\u2026'):n.label;
+    svg+='<g class="net-node" data-nid="'+_netEsc(n.id)+'" data-cid="'+_netEsc(n.cid||'')+'" transform="translate('+n.x+','+n.y+')" '+
+      'onmouseover="_netSetHover(\''+_netEsc(n.id)+'\')" onmouseout="_netSetHover(null)" '+
+      (n.cid?'onclick="op(\''+_netEsc(n.cid)+'\')"':'')+'>';
+    if(n.isLL)svg+='<circle r="'+(n.r+8)+'" fill="none" stroke="'+n.color+'" stroke-width="1.5" opacity="0.3"/>';
+    svg+='<circle r="'+n.r+'" fill="'+n.color+'" stroke="#fff" stroke-width="3"/>'+
+      '<text y="5" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Inter">'+_netEsc(initials)+'</text>'+
+      '<rect x="'+(-labelW/2)+'" y="'+(n.r+6)+'" width="'+labelW+'" height="18" rx="9" fill="#fff" stroke="#E3E8EE"/>'+
+      '<text y="'+(n.r+18)+'" text-anchor="middle" font-size="10" font-weight="500" fill="#0A2540" font-family="Inter">'+_netEsc(labelTxt)+'</text>'+
+      '</g>';
+  });
+  svg+='</svg>';
+  host.innerHTML=svg;
+  // Default inspect = LL
+  _netHoverId=null;
+  _netUpdateInspect();
+}
+
 function clearPlatform(){
   platform=[];
   _proxCacheKey='__FORCE__';
@@ -3150,6 +3412,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='p'||e.key==='P'){e.preventDefault();setSection('proforma');return}              // Pro-Forma section
   if(e.key==='r'||e.key==='R'){e.preventDefault();setSection('brief');return}                  // Brief section (Rollup)
   if(e.key==='o'||e.key==='O'){e.preventDefault();setSection('overlap');return}                // Overlap section
+  if(e.key==='n'||e.key==='N'){e.preventDefault();setSection('network');return}                // Network section
   if(e.key==='a'||e.key==='A'){e.preventDefault();setSection('analytics');return}            // Analytics section
   if(e.key==='t'||e.key==='T'){e.preventDefault();setCompaniesSub('table');return}           // Companies > Table only
   if(e.key==='b'||e.key==='B'){e.preventDefault();setCompaniesSub('both');return}            // Companies > Table + Map
