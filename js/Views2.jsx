@@ -19,9 +19,44 @@ function _v2_fmtGallons(v) {
   return Math.round(v).toString();
 }
 
+// ECharts host: mounts a chart on a div, applies setOption({ ... }) on every change
+// to `option`, and disposes on unmount. Keeps Analytics free of mount/dispose boilerplate.
+function _EChart({ option, height = 260, style }) {
+  const ref = React.useRef(null);
+  const chartRef = React.useRef(null);
+  React.useEffect(() => {
+    if (!window.echarts || !ref.current) return;
+    chartRef.current = window.echarts.init(ref.current, null, { renderer: 'canvas' });
+    const onResize = () => { try { chartRef.current && chartRef.current.resize(); } catch (e) {} };
+    window.addEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('resize', onResize);
+      try { chartRef.current && chartRef.current.dispose(); } catch (e) {}
+      chartRef.current = null;
+    };
+  }, []);
+  React.useEffect(() => {
+    if (!chartRef.current || !option) return;
+    try { chartRef.current.setOption(option, true); } catch (e) {}
+  }, [option]);
+  if (!window.echarts) {
+    return (
+      <div style={{ height, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, color: '#8B97A8', background: '#F7FAFC', borderRadius: 6, ...(style || {}) }}>
+        Loading chart library…
+      </div>
+    );
+  }
+  return <div ref={ref} style={{ width: '100%', height, ...(style || {}) }} />;
+}
+
+// Lift Phase 10 filter state into a window-shared object so Analytics can mirror it.
+// CompanyListView writes here whenever its filter inputs change; AnalyticsView reads
+// here so the same filter set drives both views without prop-drilling through Dashboard.
+window._PI_SHARED_FILTERS = window._PI_SHARED_FILTERS || { filters: null, search: '' };
+
 // Aggregate the company list once per render; memoise on companies length.
-function useAnalyticsAggregates() {
-  const list = window.MOCK_COMPANIES || [];
+function useAnalyticsAggregates(filteredList) {
+  const list = filteredList || window.MOCK_COMPANIES || [];
   return React.useMemo(() => {
     let totalLocs = 0, totalGallons = 0, totalRev = 0, totalEmp = 0;
     const ownership = { family: 0, private: 0, pe: 0, public: 0, coop: 0, ll: 0, other: 0 };
@@ -73,24 +108,228 @@ function useAnalyticsAggregates() {
   }, [list, list.length]);
 }
 
+// Phase 15 — ownership pill set + companyType pill set used inside AnalyticsView.
+const _ANALYTICS_OWN_OPTS = [
+  { k: 'family',  label: 'Family',    color: '#009966' },
+  { k: 'private', label: 'Private',   color: '#697386' },
+  { k: 'pe',      label: 'PE-backed', color: '#AB87FF' },
+  { k: 'public',  label: 'Public',    color: '#1890FF' },
+  { k: 'coop',    label: 'Co-op',     color: '#C4862D' },
+];
+const _ANALYTICS_TYPE_OPTS = [
+  { k: 'retail_dealer',       label: 'Retail dealer'    },
+  { k: 'multi_fuel',          label: 'Multi-fuel'       },
+  { k: 'coop_utility',        label: 'Co-op / utility'  },
+  { k: 'industrial_gas',      label: 'Industrial gas'   },
+  { k: 'cylinder_exchange',   label: 'Cylinder'         },
+  { k: 'wholesale_transport', label: 'Wholesale'        },
+];
+
 function AnalyticsView() {
-  const agg = useAnalyticsAggregates();
-  const llRow = (window.MOCK_COMPANIES || []).find(c => c.id === 'll');
+  // In-view filter state: subset of the global filter spec (ownership, companyType,
+  // freeform search). Mirrors any filters the user set inside CompanyListView.
+  const all = window.MOCK_COMPANIES || [];
+  const shared = window._PI_SHARED_FILTERS || {};
+  const seedOwn = shared.filters && shared.filters.ownership ? new Set(shared.filters.ownership) : new Set();
+  const seedSearch = shared.search || '';
+  const [ownership, setOwnership] = React.useState(seedOwn);
+  const [companyType, setCompanyType] = React.useState(new Set());
+  const [search, setSearch] = React.useState(seedSearch);
+
+  const filtered = React.useMemo(() => {
+    const q = (search || '').trim().toLowerCase();
+    return all.filter(c => {
+      if (ownership.size && !ownership.has((c.ownership || '').toLowerCase())) return false;
+      if (companyType.size && !companyType.has(c.companyType || '')) return false;
+      if (q) {
+        const hay = [c.name, c.parent, c.parentGroup, c.hqCity, c.hqState, (c.states || []).join(' ')]
+          .filter(Boolean).join(' ').toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+  }, [all, ownership, companyType, search]);
+
+  const agg = useAnalyticsAggregates(filtered);
+  const llRow = all.find(c => c.id === 'll');
   const llShare = (llRow && llRow.marketShare) ? llRow.marketShare.nationalPct : null;
   const top6Pct = agg.topOperators.reduce((a, o) => a + (o.gallons || 0), 0);
   const totalG = agg.totalGallons;
 
+  // ---- ECharts options ----
+  // Ownership pie — derives data from agg.ownership (already filtered).
+  const ownershipPieOption = React.useMemo(() => {
+    const c = agg.ownership || {};
+    const data = [
+      { name: 'Family',    value: c.family  || 0, itemStyle: { color: '#009966' } },
+      { name: 'Private',   value: c.private || 0, itemStyle: { color: '#697386' } },
+      { name: 'PE-backed', value: c.pe      || 0, itemStyle: { color: '#AB87FF' } },
+      { name: 'Public',    value: c.public  || 0, itemStyle: { color: '#1890FF' } },
+      { name: 'Co-op',     value: c.coop    || 0, itemStyle: { color: '#C4862D' } },
+      { name: 'Other',     value: (c.other || 0) + (c.ll || 0), itemStyle: { color: '#C1CCD6' } },
+    ].filter(d => d.value > 0);
+    return {
+      tooltip: { trigger: 'item', formatter: '{b}: <b>{c}</b> ({d}%)' },
+      legend: { orient: 'vertical', right: 10, top: 'middle', itemWidth: 10, itemHeight: 10, textStyle: { fontSize: 12, color: '#425466' } },
+      series: [{
+        type: 'pie',
+        radius: ['52%', '78%'],
+        center: ['38%', '50%'],
+        avoidLabelOverlap: true,
+        itemStyle: { borderColor: '#fff', borderWidth: 2 },
+        label: { show: false },
+        labelLine: { show: false },
+        emphasis: { label: { show: true, fontSize: 14, fontWeight: 600, color: '#0A2540' } },
+        data,
+      }],
+    };
+  }, [agg.ownership]);
+
+  // Business-Type bar — counts per c.companyType in the *unfiltered-by-type* set
+  // so the user sees every bucket even when one is excluded by their filter.
+  const businessTypeOption = React.useMemo(() => {
+    // Apply ownership/search filters but ignore companyType filter to keep bars visible.
+    const q = (search || '').trim().toLowerCase();
+    const counts = { retail_dealer: 0, multi_fuel: 0, coop_utility: 0, industrial_gas: 0, cylinder_exchange: 0, wholesale_transport: 0 };
+    for (const c of all) {
+      if (ownership.size && !ownership.has((c.ownership || '').toLowerCase())) continue;
+      if (q) {
+        const hay = [c.name, c.parent, c.hqCity, c.hqState].filter(Boolean).join(' ').toLowerCase();
+        if (hay.indexOf(q) === -1) continue;
+      }
+      const t = c.companyType || '';
+      if (counts[t] != null) counts[t]++;
+    }
+    const labels = _ANALYTICS_TYPE_OPTS.map(o => o.label);
+    const values = _ANALYTICS_TYPE_OPTS.map(o => counts[o.k] || 0);
+    return {
+      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+      grid: { left: 8, right: 16, top: 12, bottom: 24, containLabel: true },
+      xAxis: { type: 'category', data: labels, axisLabel: { color: '#697386', fontSize: 11, interval: 0, rotate: 0 }, axisLine: { lineStyle: { color: '#E3E8EE' } }, axisTick: { show: false } },
+      yAxis: { type: 'value', axisLabel: { color: '#8B97A8', fontSize: 10 }, splitLine: { lineStyle: { color: '#EDF1F6' } } },
+      series: [{
+        type: 'bar',
+        data: values.map((v, i) => ({
+          value: v,
+          itemStyle: { color: companyType.size === 0 || companyType.has(_ANALYTICS_TYPE_OPTS[i].k) ? '#635BFF' : '#C1CCD6', borderRadius: [4, 4, 0, 0] },
+        })),
+        barMaxWidth: 56,
+        label: { show: true, position: 'top', fontSize: 11, color: '#0A2540', fontFamily: "'IBM Plex Mono'", fontWeight: 600 },
+      }],
+    };
+  }, [all, ownership, search, companyType]);
+
+  // Top 25 by Locations — horizontal bar chart over the filtered set.
+  const topLocationsOption = React.useMemo(() => {
+    const ranked = filtered
+      .map(c => ({ name: c.name, locs: (c.locations || []).length || c.totalLocs || 0, isLL: c.id === 'll' }))
+      .filter(r => r.locs > 0)
+      .sort((a, b) => b.locs - a.locs)
+      .slice(0, 25);
+    // ECharts renders horizontal bars top→bottom in y-axis order, so reverse for descending top→bottom.
+    const reversed = ranked.slice().reverse();
+    return {
+      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (p) => p[0].name + ': <b>' + p[0].value.toLocaleString() + '</b> locations' },
+      grid: { left: 8, right: 60, top: 8, bottom: 24, containLabel: true },
+      xAxis: { type: 'value', axisLabel: { color: '#8B97A8', fontSize: 10 }, splitLine: { lineStyle: { color: '#EDF1F6' } } },
+      yAxis: {
+        type: 'category',
+        data: reversed.map(r => r.name),
+        axisLabel: { color: '#425466', fontSize: 11, fontFamily: 'Inter' },
+        axisLine: { lineStyle: { color: '#E3E8EE' } },
+        axisTick: { show: false },
+      },
+      series: [{
+        type: 'bar',
+        data: reversed.map(r => ({ value: r.locs, itemStyle: { color: r.isLL ? '#FFD100' : '#635BFF', borderRadius: [0, 3, 3, 0] } })),
+        barMaxWidth: 14,
+        label: { show: true, position: 'right', fontSize: 11, color: '#0A2540', fontFamily: "'IBM Plex Mono'", fontWeight: 600, formatter: (p) => Number(p.value).toLocaleString() },
+      }],
+    };
+  }, [filtered]);
+
+  const togglePill = (setter, k) => {
+    setter(prev => {
+      const next = new Set(prev);
+      if (next.has(k)) next.delete(k); else next.add(k);
+      return next;
+    });
+  };
+
+  const filterSummary = (() => {
+    const parts = [];
+    if (ownership.size) parts.push(ownership.size + ' ownership');
+    if (companyType.size) parts.push(companyType.size + ' type');
+    if (search) parts.push('“' + search + '”');
+    return parts.length ? parts.join(' · ') : 'No filters · all ' + all.length.toLocaleString() + ' companies';
+  })();
+
   return (
     <div style={{ flex: 1, overflow: 'auto', background: '#F6F9FC', padding: 28 }}>
+      {/* Filter strip */}
+      <div style={{ background: '#fff', border: '1px solid #E3E8EE', borderRadius: 8, padding: '12px 16px', marginBottom: 20 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <Icon name="filter" size={13} color="#635BFF" />
+            <span style={{ fontSize: 12, fontWeight: 600, color: '#0A2540' }}>Analytics filter</span>
+            <span style={{ fontSize: 11, color: '#8B97A8' }}>{filterSummary}</span>
+          </div>
+          <div style={{ flex: 1 }} />
+          <div style={{ position: 'relative' }}>
+            <Icon name="search" size={12} color="#8B97A8" />
+            <input
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              placeholder="Filter by name, city, state…"
+              style={{ marginLeft: -16, padding: '6px 10px 6px 22px', border: '1px solid #E3E8EE', borderRadius: 6, fontSize: 12, fontFamily: 'inherit', outline: 'none', width: 220 }}
+            />
+          </div>
+          {(ownership.size > 0 || companyType.size > 0 || search) && (
+            <button
+              onClick={() => { setOwnership(new Set()); setCompanyType(new Set()); setSearch(''); }}
+              style={{ padding: '6px 10px', background: '#fff', border: '1px solid #E3E8EE', borderRadius: 6, fontSize: 12, color: '#425466', cursor: 'pointer', fontFamily: 'inherit' }}
+            >Clear</button>
+          )}
+        </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 18, flexWrap: 'wrap', marginTop: 10 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <span style={{ fontSize: 10, fontWeight: 600, color: '#8B97A8', textTransform: 'uppercase', letterSpacing: 0.4, marginRight: 4 }}>Ownership</span>
+            {_ANALYTICS_OWN_OPTS.map(o => {
+              const on = ownership.has(o.k);
+              return (
+                <button key={o.k} onClick={() => togglePill(setOwnership, o.k)} style={{
+                  padding: '3px 9px', border: '1px solid ' + (on ? o.color : '#E3E8EE'),
+                  background: on ? o.color : '#fff', color: on ? '#fff' : '#425466',
+                  borderRadius: 9999, fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit',
+                }}>{o.label}</button>
+              );
+            })}
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <span style={{ fontSize: 10, fontWeight: 600, color: '#8B97A8', textTransform: 'uppercase', letterSpacing: 0.4, marginRight: 4 }}>Business type</span>
+            {_ANALYTICS_TYPE_OPTS.map(o => {
+              const on = companyType.has(o.k);
+              return (
+                <button key={o.k} onClick={() => togglePill(setCompanyType, o.k)} style={{
+                  padding: '3px 9px', border: '1px solid ' + (on ? '#635BFF' : '#E3E8EE'),
+                  background: on ? '#EEF0FF' : '#fff', color: on ? '#4B45B8' : '#425466',
+                  borderRadius: 9999, fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit',
+                }}>{o.label}</button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       {/* KPI row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, marginBottom: 20 }}>
         <Card padding={0}><Stat label="Companies tracked" value={_v2_fmtInt(agg.total)}    delta={null} sub={`${_v2_fmtInt(agg.totalLocs)} locations`} icon="building"/></Card>
-        <Card padding={0}><Stat label="Annual gallons"    value={_v2_fmtGallons(agg.totalGallons)} delta={null} sub="industry total" icon="trending"/></Card>
+        <Card padding={0}><Stat label="Annual gallons"    value={_v2_fmtGallons(agg.totalGallons)} delta={null} sub="filtered set" icon="trending"/></Card>
         <Card padding={0}><Stat label="Aggregate revenue" value={_v2_fmtMoneyM(agg.totalRev)}     delta={null} sub="estimated" icon="zap"/></Card>
         <Card padding={0}><Stat label="Lampton Love share" value={llShare != null ? llShare.toFixed(2) + '%' : '—'} delta={null} sub="of national gallons" icon="target"/></Card>
       </div>
 
-      {/* Row 1: top operators + acquisition pace */}
+      {/* Row 1: Top operators (gallons) + Acquisition pace */}
       <div style={{ display: 'grid', gridTemplateColumns: '3fr 2fr', gap: 16, marginBottom: 20 }}>
         <Card padding={20}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
@@ -110,17 +349,32 @@ function AnalyticsView() {
         </Card>
       </div>
 
-      {/* Row 2: ownership breakdown + geographic */}
-      <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: 16 }}>
+      {/* Row 2: ECharts ownership pie + business-type bar */}
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: 16, marginBottom: 20 }}>
         <Card padding={20}>
           <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Ownership mix</div>
-          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>by company count</div>
-          <OwnershipDonut counts={agg.ownership} total={agg.total}/>
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 12 }}>by company count · {_v2_fmtInt(agg.total)} in view</div>
+          <_EChart option={ownershipPieOption} height={240} />
+        </Card>
+
+        <Card padding={20}>
+          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Business type</div>
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 12 }}>company count by retail-channel</div>
+          <_EChart option={businessTypeOption} height={240} />
+        </Card>
+      </div>
+
+      {/* Row 3: Top 25 by locations + top states by gallons (existing) */}
+      <div style={{ display: 'grid', gridTemplateColumns: '3fr 2fr', gap: 16 }}>
+        <Card padding={20}>
+          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Top 25 operators</div>
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 12 }}>by branch-location count · LL highlighted</div>
+          <_EChart option={topLocationsOption} height={520} />
         </Card>
 
         <Card padding={20}>
           <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Top states by gallons</div>
-          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>tracked operators only</div>
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>filtered operators</div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px 20px' }}>
             {agg.stateRows.map(([s, v]) => {
               const max = agg.stateRows[0][1];
@@ -134,6 +388,9 @@ function AnalyticsView() {
                 </div>
               );
             })}
+            {agg.stateRows.length === 0 && (
+              <div style={{ gridColumn: '1 / -1', fontSize: 12, color: '#8B97A8', padding: 16, textAlign: 'center' }}>No state-level gallons in current filter.</div>
+            )}
           </div>
         </Card>
       </div>
@@ -318,9 +575,69 @@ function _deriveSignals(companies) {
   return out;
 }
 
+// Hard-signal loader: pull data/signals.json (output of signals_ingest.py)
+// once per page lifetime. Cached on window so re-mounting the view is cheap.
+window.__SIGNALS_READY__ = window.__SIGNALS_READY__ || (async () => {
+  try {
+    const r = await fetch('data/signals.json', { cache: 'no-cache' });
+    if (!r.ok) throw new Error('signals.json ' + r.status);
+    const j = await r.json();
+    window.HARD_SIGNALS = Array.isArray(j.signals) ? j.signals : [];
+    window.SIGNALS_META = {
+      generatedAt: j.generatedAt || null,
+      count: window.HARD_SIGNALS.length,
+      live: window.HARD_SIGNALS.length > 0,
+    };
+    window.dispatchEvent(new CustomEvent('pi:signals-loaded', { detail: window.SIGNALS_META }));
+    console.info('[PI] signals.json loaded —', window.HARD_SIGNALS.length, 'hard signals');
+  } catch (err) {
+    window.HARD_SIGNALS = [];
+    window.SIGNALS_META = { generatedAt: null, count: 0, live: false };
+    console.warn('[PI] signals.json unavailable:', err.message);
+  }
+})();
+
+// Adapt a hard signal (SEC filing / promoted news) into the same shape the
+// SignalsView row renders. Adds confidence + url so the badge/link are
+// surfaced consistently with soft signals.
+function _adaptHardSignal(s) {
+  const tone = s.confidence === 'high' ? 'red' : 'amber';
+  return {
+    cid: s.companyId || null,
+    co: s.companyLabel || s.companyId || '—',
+    tone,
+    type: s.label || 'SEC filing',
+    text: (s.notes || s.evidence || '') +
+          (s.observedAt ? ' · Filed ' + (s.observedAt || '').slice(0, 10) : ''),
+    strength: Math.max(50, Math.min(99, s.strength || 70)),
+    tags: ['Hard signal', ...(s.tags || []).slice(0, 2)],
+    url: s.url || '',
+    confidence: s.confidence || 'high',
+    isHard: true,
+  };
+}
+
 function SignalsView({ onSelect }) {
   const all = (typeof window !== 'undefined' && window.MOCK_COMPANIES) || [];
-  const allSignals = React.useMemo(() => _deriveSignals(all), [all]);
+  // Bump on `pi:signals-loaded` so we pick up live signals when ingest finishes.
+  const [tick, setTick] = React.useState(0);
+  React.useEffect(() => {
+    const h = () => setTick(t => t + 1);
+    window.addEventListener('pi:signals-loaded', h);
+    return () => window.removeEventListener('pi:signals-loaded', h);
+  }, []);
+
+  const softSignals = React.useMemo(() => _deriveSignals(all), [all]);
+  const hardSignals = React.useMemo(
+    () => (window.HARD_SIGNALS || []).map(_adaptHardSignal),
+    [tick]
+  );
+  const meta = window.SIGNALS_META || { live: false, generatedAt: null };
+  // Hard signals first (they're the highest-confidence), then soft.
+  const allSignals = React.useMemo(
+    () => [...hardSignals.sort((a, b) => b.strength - a.strength), ...softSignals],
+    [hardSignals, softSignals]
+  );
   const [filter, setFilter] = React.useState('all');
   const [limit, setLimit] = React.useState(40);
 
@@ -339,7 +656,17 @@ function SignalsView({ onSelect }) {
       <div style={{ flex: 1, overflow: 'auto', padding: 28 }}>
         <Card padding={0}>
           <div style={{ padding: '14px 20px', borderBottom: '1px solid #EDF1F6', display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div style={{ flex: 1, fontSize: 14, fontWeight: 600, color: '#0A2540' }}>Derived signals <span style={{ color: '#8B97A8', fontWeight: 400, marginLeft: 6 }}>· {allSignals.length} active · {filtered.length} after filter</span></div>
+            <div style={{ flex: 1, fontSize: 14, fontWeight: 600, color: '#0A2540' }}>
+              Signals
+              <span style={{ color: '#8B97A8', fontWeight: 400, marginLeft: 6 }}>
+                · {hardSignals.length} hard · {softSignals.length} soft · {filtered.length} after filter
+              </span>
+              {meta.live && (
+                <span style={{ marginLeft: 10, fontSize: 11, color: '#009966', fontWeight: 500 }}>
+                  ● live (ingested {meta.generatedAt ? meta.generatedAt.slice(0, 10) : 'just now'})
+                </span>
+              )}
+            </div>
             <select value={filter} onChange={e => { setFilter(e.target.value); setLimit(40); }} style={{ padding: '6px 10px', border: '1px solid #E3E8EE', borderRadius: 6, fontSize: 12, color: '#0A2540', background: '#fff', fontFamily: 'inherit' }}>
               <option value="all">All types</option>
               {types.map(([t, n]) => <option key={t} value={t}>{t} ({n})</option>)}
@@ -348,14 +675,23 @@ function SignalsView({ onSelect }) {
           </div>
 
           {signals.map((s, i) => (
-            <div key={(s.cid || '') + '-' + i} onClick={() => onSelect && onSelect(s.cid || s.co)} style={{ padding: '16px 20px', borderBottom: '1px solid #EDF1F6', display: 'flex', gap: 14, cursor: 'pointer' }}>
-              <div style={{ width: 36, height: 36, borderRadius: 8, background: '#F7FAFC', border: '1px solid #E3E8EE', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                <Icon name={s.type.includes('succession') || s.type.includes('Succession') ? 'users' : s.type.includes('exit') || s.type.includes('Exit') ? 'arrowUp' : s.type.includes('overlap') || s.type.includes('Geographic') ? 'map' : s.type.includes('Public') ? 'building' : s.type.includes('Roll') ? 'zap' : 'sparkle'} size={15} color="#635BFF"/>
+            <div key={(s.cid || '') + '-' + i} onClick={() => onSelect && onSelect(s.cid || s.co)} style={{
+              padding: '16px 20px',
+              borderBottom: '1px solid #EDF1F6',
+              borderLeft: s.isHard ? '3px solid #D83E4A' : '3px solid transparent',
+              display: 'flex', gap: 14, cursor: 'pointer',
+              background: s.isHard ? 'linear-gradient(90deg,rgba(216,62,74,0.04),transparent 30%)' : 'transparent',
+            }}>
+              <div style={{ width: 36, height: 36, borderRadius: 8, background: s.isHard ? '#FEF2F3' : '#F7FAFC', border: '1px solid ' + (s.isHard ? '#FCD2D6' : '#E3E8EE'), display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <Icon name={s.isHard ? 'briefcase' : s.type.includes('succession') || s.type.includes('Succession') ? 'users' : s.type.includes('exit') || s.type.includes('Exit') ? 'arrowUp' : s.type.includes('overlap') || s.type.includes('Geographic') ? 'map' : s.type.includes('Public') ? 'building' : s.type.includes('Roll') ? 'zap' : 'sparkle'} size={15} color={s.isHard ? '#D83E4A' : '#635BFF'}/>
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
                   <span style={{ fontSize: 14, fontWeight: 600, color: '#0A2540' }}>{s.co}</span>
                   <Badge tone={s.tone} dot>{s.type}</Badge>
+                  {s.isHard
+                    ? <Badge tone="red">Hard · {(s.confidence || 'high').toUpperCase()}</Badge>
+                    : <Badge tone="outline">Heuristic</Badge>}
                 </div>
                 <p style={{ margin: 0, fontSize: 13, color: '#425466', lineHeight: 1.5 }}>{s.text}</p>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8, flexWrap: 'wrap' }}>
@@ -616,4 +952,4 @@ function BriefView() {
   );
 }
 
-Object.assign(window, { AnalyticsView, SignalsView, BriefView, OwnershipDonut });
+Object.assign(window, { AnalyticsView, SignalsView, BriefView, OwnershipDonut, _EChart });

@@ -15,7 +15,9 @@
 //       isBreaking: bool, readMinutes, thumbnail? }
 //   Freshness: hourly for general, webhook-push for breaking M&A.
 
-window.NEWS_ARTICLES = [
+// Mock seed used as fallback when /data/news.json is missing or empty.
+// In production, the array below is overwritten by the news_ingest.py output.
+window.NEWS_ARTICLES_SEED = [
   {
     id: 'n_001',
     headline: 'Blossman Gas engages Houlihan Lokey to explore strategic alternatives',
@@ -344,6 +346,36 @@ window.NEWS_ARTICLES = [
   },
 ];
 
+// Real-news loader: fetch /data/news.json (produced by scripts/news_ingest.py)
+// and replace the mock seed when available. UI components read from
+// `window.NEWS_ARTICLES` and `window.NEWS_META` so a re-fetch can hot-swap
+// the feed without remounting.
+window.NEWS_ARTICLES = window.NEWS_ARTICLES_SEED.slice();
+window.NEWS_META = { generatedAt: null, count: window.NEWS_ARTICLES.length, sources: [], live: false };
+
+window.__NEWS_READY__ = (async () => {
+  try {
+    const r = await fetch('data/news.json', { cache: 'no-cache' });
+    if (!r.ok) throw new Error('news.json ' + r.status);
+    const j = await r.json();
+    if (Array.isArray(j.articles) && j.articles.length > 0) {
+      window.NEWS_ARTICLES = j.articles;
+      window.NEWS_META = {
+        generatedAt: j.generatedAt || null,
+        count: j.articles.length,
+        sources: j.sources || [],
+        live: true,
+      };
+      window.dispatchEvent(new CustomEvent('pi:news-loaded', { detail: window.NEWS_META }));
+      console.info('[PI] news.json loaded —', j.articles.length, 'articles, generated', j.generatedAt);
+    } else {
+      console.info('[PI] news.json empty; using mock seed');
+    }
+  } catch (err) {
+    console.warn('[PI] news.json unavailable; using mock seed:', err.message);
+  }
+})();
+
 // ---------------------------------------------------------------------------
 // Category metadata
 // ---------------------------------------------------------------------------
@@ -407,8 +439,16 @@ function NewsView({ onSelect }) {
   const [cat, setCat] = React.useState('all');
   const [impact, setImpact] = React.useState('all'); // all | high | mid | low
   const [query, setQuery] = React.useState('');
+  // Bump on `pi:news-loaded` so we pick up live articles when ingest finishes.
+  const [tick, setTick] = React.useState(0);
+  React.useEffect(() => {
+    const onLoaded = () => setTick(t => t + 1);
+    window.addEventListener('pi:news-loaded', onLoaded);
+    return () => window.removeEventListener('pi:news-loaded', onLoaded);
+  }, []);
 
   const articles = window.NEWS_ARTICLES || [];
+  const meta = window.NEWS_META || { live: false, generatedAt: null };
 
   const filtered = articles.filter(a => {
     if (cat !== 'all' && a.category !== cat) return false;
@@ -595,9 +635,9 @@ function NewsView({ onSelect }) {
                       ))
                     )}
                     <div style={{ marginLeft: 'auto', display: 'flex', gap: 4 }}>
-                      <button style={iconBtnStyle}><Icon name="bell" size={13} color="#697386"/></button>
-                      <button style={iconBtnStyle}><Icon name="plus" size={13} color="#697386"/></button>
-                      <a href={`https://${a.sourceUrl}`} target="_blank" rel="noopener" onClick={(e) => e.preventDefault()} style={iconBtnStyle}>
+                      <button aria-label="Subscribe to alerts for this story" title="Subscribe to alerts" style={iconBtnStyle}><Icon name="bell" size={13} color="#697386"/></button>
+                      <button aria-label="Save this article" title="Save article" style={iconBtnStyle}><Icon name="plus" size={13} color="#697386"/></button>
+                      <a href={`https://${a.sourceUrl}`} target="_blank" rel="noopener" onClick={(e) => e.preventDefault()} aria-label={`Open source: ${a.sourceUrl || 'article'}`} title={a.sourceUrl ? ('Open ' + a.sourceUrl) : 'Open article'} style={iconBtnStyle}>
                         <Icon name="arrowRight" size={13} color="#635BFF"/>
                       </a>
                     </div>
@@ -609,7 +649,9 @@ function NewsView({ onSelect }) {
         </Card>
 
         <div style={{ textAlign: 'center', marginTop: 16, fontSize: 12, color: '#8B97A8' }}>
-          Showing {filtered.length} of {articles.length} articles · Feed refreshes hourly · Last updated 14m ago
+          Showing {filtered.length} of {articles.length} articles · {meta.live
+            ? <>Live feed · Generated {meta.generatedAt ? timeAgo(meta.generatedAt) : 'just now'}</>
+            : 'Demo seed (no live feed connected yet)'}
         </div>
       </div>
 
@@ -628,17 +670,20 @@ function NewsView({ onSelect }) {
           <Button variant="primary" size="sm" style={{ width: '100%' }}>Read full digest</Button>
         </div>
 
-        {/* Top sources */}
+        {/* Top sources — live from meta.sources when available */}
         <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 10 }}>Top sources this month</div>
         <div style={{ display: 'grid', gap: 6, marginBottom: 20 }}>
-          {[
-            ['LP Gas Magazine', 8, 'Trade'],
-            ['Butane-Propane News', 6, 'Trade'],
-            ['SEC EDGAR', 4, 'Filings'],
-            ['PE Hub', 3, 'M&A'],
-            ['Propane.com (PERC)', 3, 'Industry'],
-            ['Reuters', 2, 'General'],
-          ].map(([n, c, kind]) => (
+          {(meta.live && meta.sources && meta.sources.length
+            ? meta.sources.map(([n, c]) => [n, c, _sourceKind(n)])
+            : [
+                ['LP Gas Magazine', 8, 'Trade'],
+                ['Butane-Propane News', 6, 'Trade'],
+                ['SEC EDGAR', 4, 'Filings'],
+                ['PE Hub', 3, 'M&A'],
+                ['Propane.com (PERC)', 3, 'Industry'],
+                ['Reuters', 2, 'General'],
+              ]
+          ).map(([n, c, kind]) => (
             <div key={n} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 10px', border: '1px solid #EDF1F6', borderRadius: 6 }}>
               <div style={{ width: 24, height: 24, borderRadius: 5, background: '#F7FAFC', border: '1px solid #E3E8EE', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 9, fontWeight: 700, color: '#425466', fontFamily: "'IBM Plex Mono'" }}>
                 {n.split(' ').map(w => w[0]).join('').slice(0, 2)}
@@ -678,14 +723,25 @@ function NewsView({ onSelect }) {
         <div style={{ padding: 12, background: '#F7FAFC', borderRadius: 8, border: '1px solid #EDF1F6' }}>
           <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 8 }}>Feed coverage</div>
           <div style={{ display: 'grid', gap: 4, fontSize: 11, color: '#425466' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Sources monitored</span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>42</b></div>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Companies matched</span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>1,247</b></div>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Last ingestion</span><b style={{ color: '#009966', fontFamily: "'IBM Plex Mono'" }}>14m ago</b></div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Sources monitored</span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{meta.live ? (meta.sources || []).length : 5}</b></div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Companies matched</span><b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{(window.MOCK_COMPANIES || []).length.toLocaleString()}</b></div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}><span>Last ingestion</span><b style={{ color: meta.live ? '#009966' : '#8B97A8', fontFamily: "'IBM Plex Mono'" }}>{meta.live && meta.generatedAt ? timeAgo(meta.generatedAt) : 'demo seed'}</b></div>
           </div>
         </div>
       </div>
     </div>
   );
+}
+
+// Map source name → kind label for the right-rail "Top sources" list.
+function _sourceKind(name) {
+  const n = (name || '').toLowerCase();
+  if (n.includes('edgar') || n.includes('sec')) return 'Filings';
+  if (n.includes('npga') || n.includes('perc') || n.includes('propane.com')) return 'Industry';
+  if (n.includes('lp gas') || n.includes('butane') || n.includes('bpn')) return 'Trade';
+  if (n.includes('reuters') || n.includes('bloomberg')) return 'General';
+  if (n.includes('pe hub') || n.includes('lcd') || n.includes('pitchbook')) return 'M&A';
+  return 'Other';
 }
 
 const chipStyle = (active) => ({

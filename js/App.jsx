@@ -51,6 +51,9 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
   const [portfolio, setPortfolioState] = React.useState(() => (window._loadPortfolio ? window._loadPortfolio() : []));
   const [proFormaOpen, setProFormaOpen] = React.useState(false);
   const [shareOpen, setShareOpen] = React.useState(false);
+  // Phase 14 — Help (?) + Sources & methodology modals
+  const [helpOpen, setHelpOpen] = React.useState(false);
+  const [sourcesOpen, setSourcesOpen] = React.useState(false);
   const persistPortfolio = (next) => { setPortfolioState(next); if (window._savePortfolio) window._savePortfolio(next); };
   const handleAddPortfolio = (id) => {
     if (!id) return;
@@ -74,6 +77,50 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  // Phase 14 — global key handling: ? opens Help, ⌘/Ctrl+K opens command palette,
+  // ⌘/Ctrl+E exports the current view (delegates to whatever export button is in the page header).
+  // We ignore key presses while typing in form fields so search inputs still receive '?'.
+  React.useEffect(() => {
+    const isTextField = (el) => {
+      if (!el) return false;
+      const tag = (el.tagName || '').toLowerCase();
+      return tag === 'input' || tag === 'textarea' || tag === 'select' || el.isContentEditable;
+    };
+    const onKey = (e) => {
+      if (isTextField(e.target)) return;
+      // Help: ? (shift+/) — only when no other modifiers
+      if (e.key === '?' && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        e.preventDefault();
+        setHelpOpen(true);
+        return;
+      }
+      // Cmd/Ctrl+K — command palette
+      if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+        e.preventDefault();
+        setCmdOpen(true);
+        return;
+      }
+      // Cmd/Ctrl+E — export current view (forward to whatever Export button exists)
+      if ((e.metaKey || e.ctrlKey) && (e.key === 'e' || e.key === 'E')) {
+        e.preventDefault();
+        window.dispatchEvent(new CustomEvent('pi:export'));
+        return;
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, []);
+
+  // Phase 14 — listen for the avatar-menu "Sources & methodology" event.
+  React.useEffect(() => {
+    const open = () => setSourcesOpen(true);
+    window.addEventListener('pi:open-sources', open);
+    window.addEventListener('pi:open-help', () => setHelpOpen(true));
+    return () => {
+      window.removeEventListener('pi:open-sources', open);
+    };
   }, []);
 
   const persistScenarios = (arr) => { setScenariosState(arr); saveScenarios(arr); };
@@ -165,6 +212,8 @@ function Dashboard({ initialView = 'map', onLogout, user }) {
         <ShareModal ids={portfolio} onClose={() => setShareOpen(false)} />
       )}
 
+      {helpOpen && window.HelpModal && <HelpModal onClose={() => setHelpOpen(false)} />}
+      {sourcesOpen && window.SourcesModal && <SourcesModal onClose={() => setSourcesOpen(false)} />}
       {cmdOpen && <CommandPalette onClose={() => setCmdOpen(false)} onView={(v) => { setView(v); setCmdOpen(false); }} />}
       {scenariosOpen && (
         <ScenariosPanel

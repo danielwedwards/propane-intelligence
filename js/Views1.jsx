@@ -59,6 +59,20 @@ function MarketMapView({ onSelect, selected }) {
     hideExcluded: true,
   }), [ownership, states, region, revRange, locRange, fitRange]);
 
+  // Phase 15 — publish current filters/search to the shared bus so AnalyticsView
+  // (and any other view) can mirror them. Stored as a *plain* shape (Sets converted
+  // to arrays) so listeners can rehydrate without reaching into React internals.
+  React.useEffect(() => {
+    window._PI_SHARED_FILTERS = {
+      filters: {
+        ownership: ownership.size ? Array.from(ownership) : null,
+        states:    states.size    ? Array.from(states)    : null,
+        region, revRange, locRange, fitRange,
+      },
+      search,
+    };
+  }, [ownership, states, region, revRange, locRange, fitRange, search]);
+
   const toggleOwnership = (k) => {
     setOwnership(prev => {
       const next = new Set(prev);
@@ -100,7 +114,7 @@ function MarketMapView({ onSelect, selected }) {
         <div style={{ width: 260, background: '#fff', borderRight: '1px solid #E3E8EE', padding: 20, overflow: 'auto' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
             <div style={{ fontSize: 13, fontWeight: 600, color: '#0A2540' }}>Filters</div>
-            <button onClick={() => setFilterOpen(false)} style={{ border: 'none', background: 'transparent', color: '#8B97A8', cursor: 'pointer', padding: 2 }}><Icon name="x" size={14}/></button>
+            <button onClick={() => setFilterOpen(false)} aria-label="Close filters" title="Close filters" style={{ border: 'none', background: 'transparent', color: '#8B97A8', cursor: 'pointer', padding: 2 }}><Icon name="x" size={14}/></button>
           </div>
 
           {/* Search */}
@@ -617,6 +631,19 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
     hideExcluded: true,
   }), [ownership, statesSel, region]);
 
+  // Phase 15 — publish current filters/search to the shared bus so AnalyticsView
+  // (and any other view) can mirror them.
+  React.useEffect(() => {
+    window._PI_SHARED_FILTERS = {
+      filters: {
+        ownership: ownership.size ? Array.from(ownership) : null,
+        states:    statesSel.size ? Array.from(statesSel) : null,
+        region,
+      },
+      search,
+    };
+  }, [ownership, statesSel, region, search]);
+
   // Filter via the shared engine (same filter as the map for parity).
   const filtered = React.useMemo(() => {
     if (window.PI && typeof window.PI.applyFilters === 'function') {
@@ -893,7 +920,9 @@ function CompaniesTable({ rows, sortCol, sortDir, onSort, onSelect, selected, co
               <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: dist == null ? '#C1CCD6' : '#697386' }}>{dist == null ? '—' : Math.round(dist)}</td>
               <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: mkt > 0.01 ? '#1890FF' : '#C1CCD6' }}>{mkt > 0.001 ? mkt.toFixed(2) : '—'}</td>
               <td style={{ padding: '10px 14px', textAlign: 'right' }}>
-                {f == null ? <span style={{ color: '#C1CCD6' }}>—</span> : (
+                {window.FitScoreCell ? (
+                  <window.FitScoreCell company={c} />
+                ) : f == null ? <span style={{ color: '#C1CCD6' }}>—</span> : (
                   <div style={{ display: 'flex', alignItems: 'center', gap: 8, justifyContent: 'flex-end' }}>
                     <div style={{ width: 50, height: 5, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
                       <div style={{ width: f + '%', height: '100%', background: f > 70 ? '#635BFF' : f > 40 ? '#AB87FF' : '#C1CCD6' }} />
