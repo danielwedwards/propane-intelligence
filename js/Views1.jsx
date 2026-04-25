@@ -325,84 +325,277 @@ function MapCanvas({ positions, selected, onSelect }) {
   );
 }
 
-function CompanyListView({ onSelect, selected, compare, onCompare }) {
+// ---------------------------- Companies List View -----------------------
+
+function fmtMoney(v) {
+  if (v == null || isNaN(v)) return '—';
+  if (v >= 1000) return '$' + (v / 1000).toFixed(1) + 'B';
+  if (v >= 100)  return '$' + Math.round(v) + 'M';
+  return '$' + v.toFixed(1) + 'M';
+}
+function fmtInt(v) {
+  if (v == null || isNaN(v)) return '—';
+  return v.toLocaleString();
+}
+
+const TYPE_TONE = {
+  ll: 'indigo', public: 'blue', family: 'green', coop: 'amber', pe: 'indigo', private: 'neutral',
+};
+
+function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
   const rows = window.MOCK_COMPANIES || [];
+
+  // ----- filter state -----
+  const [search, setSearch]       = React.useState('');
+  const [ownership, setOwnership] = React.useState(() => new Set());
+  const [region, setRegion]       = React.useState('all');
+  const [sortCol, setSortCol]     = React.useState('fitScore');
+  const [sortDir, setSortDir]     = React.useState('desc');
+  const [pageSize, setPageSize]   = React.useState(200);
+
+  const filters = React.useMemo(() => ({
+    ownership: ownership.size ? ownership : null,
+    region,
+    hideExcluded: true,
+  }), [ownership, region]);
+
+  // Filter via the shared engine (same filter as the map for parity).
+  const filtered = React.useMemo(() => {
+    if (window.PI && typeof window.PI.applyFilters === 'function') {
+      return window.PI.applyFilters(rows, filters, search);
+    }
+    return rows;
+  }, [rows, filters, search]);
+
+  // Sort the filtered list.
+  const sorted = React.useMemo(() => {
+    const out = filtered.slice();
+    const dir = sortDir === 'desc' ? -1 : 1;
+    const get = (c) => {
+      switch (sortCol) {
+        case 'name': return (c.name || '').toLowerCase();
+        case 'type': return c.ownership || '';
+        case 'hq':   return (c.hqState || '') + ' ' + (c.hqCity || '');
+        case 'locs': return (c.locations || []).length || c.totalLocs || 0;
+        case 'rev':  return c.estRevenue == null ? -Infinity : c.estRevenue;
+        case 'emp':  return c.employeeCount == null ? -Infinity : c.employeeCount;
+        case 'states': return (c.states || []).length;
+        case 'mkt':  return (c.marketShare && c.marketShare.nationalPct) || 0;
+        case 'prox': return (c.proxScore && c.proxScore.mean != null) ? -c.proxScore.mean : -Infinity;
+        case 'county': return (c.countyShared && c.countyShared.count) || 0;
+        case 'fitScore':
+        default:     return c.fitScore != null ? c.fitScore : -1;
+      }
+    };
+    out.sort((a, b) => {
+      const va = get(a), vb = get(b);
+      if (typeof va === 'string') return va < vb ? -dir : va > vb ? dir : 0;
+      return va < vb ? -dir : va > vb ? dir : 0;
+    });
+    return out;
+  }, [filtered, sortCol, sortDir]);
+
+  const visible = React.useMemo(() => sorted.slice(0, pageSize), [sorted, pageSize]);
+
+  const setSort = (col) => {
+    if (sortCol === col) setSortDir(d => d === 'desc' ? 'asc' : 'desc');
+    else { setSortCol(col); setSortDir((col === 'name' || col === 'type' || col === 'hq') ? 'asc' : 'desc'); }
+  };
+
+  const toggleOwnership = (k) => setOwnership(prev => {
+    const next = new Set(prev); if (next.has(k)) next.delete(k); else next.add(k); return next;
+  });
+
+  // Active-filter chips
+  const chips = [];
+  ownership.forEach(o => chips.push({ label: o[0].toUpperCase() + o.slice(1), clear: () => toggleOwnership(o) }));
+  if (region !== 'all') chips.push({ label: region.replace('_',' '), clear: () => setRegion('all') });
+  if (search) chips.push({ label: '"' + search + '"', clear: () => setSearch('') });
+
   return (
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: '#F6F9FC', minHeight: 0 }}>
-      <div style={{ padding: '16px 28px', background: '#fff', borderBottom: '1px solid #E3E8EE', display: 'flex', alignItems: 'center', gap: 12 }}>
-        <div style={{ position: 'relative', flex: 1, maxWidth: 420 }}>
-          <Icon name="search" size={14} color="#8B97A8" />
-          <input placeholder="Search 1,247 companies…" style={{ width: '100%', padding: '7px 12px 7px 32px', border: '1px solid #E3E8EE', borderRadius: 6, fontSize: 13, fontFamily: 'inherit', outline: 'none' }} />
-          <div style={{ position: 'absolute', left: 10, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}><Icon name="search" size={14} color="#8B97A8"/></div>
+      <div style={{ padding: '16px 28px', background: '#fff', borderBottom: '1px solid #E3E8EE', display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }}>
+        <div style={{ position: 'relative', flex: 1, minWidth: 280, maxWidth: 420 }}>
+          <input
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            placeholder={'Search ' + rows.length.toLocaleString() + ' companies…'}
+            style={{ width: '100%', padding: '7px 12px 7px 32px', border: '1px solid #E3E8EE', borderRadius: 6, fontSize: 13, fontFamily: 'inherit', outline: 'none', boxSizing: 'border-box' }}
+          />
+          <div style={{ position: 'absolute', left: 10, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}>
+            <Icon name="search" size={14} color="#8B97A8"/>
+          </div>
         </div>
-        <Badge tone="outline">Family <Icon name="x" size={10} style={{ marginLeft: 4 }}/></Badge>
-        <Badge tone="outline">Southeast <Icon name="x" size={10} style={{ marginLeft: 4 }}/></Badge>
-        <Badge tone="outline">Revenue: $10M-$500M <Icon name="x" size={10} style={{ marginLeft: 4 }}/></Badge>
-        <div style={{ marginLeft: 'auto', fontSize: 12, color: '#697386' }}><span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{rows.length}</span> of 1,247 · Sorted by <b style={{ color: '#0A2540', fontWeight: 600 }}>Strategic fit</b></div>
+
+        {/* Region pills */}
+        <div style={{ display: 'flex', gap: 4 }}>
+          {[['all','All'],['southeast','SE'],['midwest','MW'],['northeast','NE'],['south_central','S.C'],['west','West']].map(([k,l]) => (
+            <button key={k} onClick={() => setRegion(k)} style={{
+              padding: '4px 9px', border: '1px solid ' + (region === k ? '#635BFF' : '#E3E8EE'),
+              background: region === k ? '#EEF0FF' : '#fff',
+              color: region === k ? '#4B45B8' : '#425466',
+              borderRadius: 9999, fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit',
+            }}>{l}</button>
+          ))}
+        </div>
+
+        {/* Ownership pills */}
+        <div style={{ display: 'flex', gap: 4 }}>
+          {OWNERSHIP_TYPES.map(t => {
+            const on = ownership.has(t.k);
+            return (
+              <button key={t.k} onClick={() => toggleOwnership(t.k)} style={{
+                padding: '4px 9px', border: '1px solid ' + (on ? t.color : '#E3E8EE'),
+                background: on ? t.color + '22' : '#fff',
+                color: on ? '#0A2540' : '#425466',
+                borderRadius: 9999, fontSize: 11, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit', display: 'inline-flex', alignItems: 'center', gap: 5,
+              }}>
+                <span style={{ width: 6, height: 6, borderRadius: '50%', background: t.color }}/>
+                {t.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {chips.length > 0 && chips.map((ch, i) => (
+          <Badge key={i} tone="outline" style={{ cursor: 'pointer' }}>
+            {ch.label}
+            <button onClick={ch.clear} style={{ background: 'transparent', border: 'none', cursor: 'pointer', marginLeft: 4, padding: 0, color: '#8B97A8' }}>
+              <Icon name="x" size={10}/>
+            </button>
+          </Badge>
+        ))}
+
+        <div style={{ marginLeft: 'auto', fontSize: 12, color: '#697386' }}>
+          <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{visible.length.toLocaleString()}</span>
+          {' of '}
+          <span style={{ fontFamily: "'IBM Plex Mono'" }}>{sorted.length.toLocaleString()}</span>
+          {sorted.length < rows.length && <span style={{ color: '#8B97A8' }}> · {rows.length.toLocaleString()} total</span>}
+        </div>
       </div>
 
       <div style={{ flex: 1, overflow: 'auto', padding: 28 }}>
         <Card padding={0} style={{ overflow: 'hidden' }}>
-          <CompaniesTable rows={rows} onSelect={onSelect} selected={selected} compare={compare} onCompare={onCompare} />
+          <CompaniesTable
+            rows={visible}
+            sortCol={sortCol} sortDir={sortDir} onSort={setSort}
+            onSelect={onSelect} selected={selected}
+            compare={compare} onCompare={onCompare}
+          />
+          {sorted.length > visible.length && (
+            <div style={{ padding: '14px 18px', borderTop: '1px solid #EDF1F6', textAlign: 'center', background: '#F7FAFC' }}>
+              <button
+                onClick={() => setPageSize(s => s + 500)}
+                style={{ padding: '7px 16px', border: '1px solid #E3E8EE', borderRadius: 6, background: '#fff', fontSize: 12, color: '#425466', fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit' }}>
+                Show next 500 ({(sorted.length - visible.length).toLocaleString()} hidden)
+              </button>
+            </div>
+          )}
         </Card>
       </div>
     </div>
   );
 }
 
-function CompaniesTable({ rows, onSelect, selected, compare = [], onCompare }) {
-  const fitScore = (c) => Math.max(20, Math.min(95, (c.total || 0) * 2 + 30 - (c.rank || 0)));
-  const signal = (c) => ['Recent','Leadership change','Rumored','Succession','—','—'][c.rank % 6];
+function SortableTH({ id, label, align, sortCol, sortDir, onSort }) {
+  const active = sortCol === id;
+  return (
+    <th
+      onClick={() => onSort(id)}
+      style={{
+        padding: '11px 14px',
+        textAlign: align || 'left',
+        fontSize: 11, fontWeight: 600,
+        color: active ? '#0A2540' : '#697386',
+        textTransform: 'uppercase', letterSpacing: 0.3,
+        background: '#F7FAFC', borderBottom: '1px solid #E3E8EE',
+        position: 'sticky', top: 0, cursor: 'pointer', userSelect: 'none',
+      }}
+    >
+      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+        {label}
+        {active && <Icon name={sortDir === 'desc' ? 'arrowDown' : 'arrowUp'} size={11} color="#635BFF" stroke={2.5} />}
+      </span>
+    </th>
+  );
+}
 
+function CompaniesTable({ rows, sortCol, sortDir, onSort, onSelect, selected, compare = [], onCompare }) {
+  const _onSort = onSort || (() => {});
   return (
     <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
       <thead>
         <tr>
-          {['', 'Company', 'Type', 'HQ', 'Locations', 'Revenue', 'EBITDA', 'Fit score', 'M&A signal', ''].map((h, i) => (
-            <th key={i} style={{ padding: '11px 14px', textAlign: i > 3 && i < 9 ? 'right' : 'left', fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.3, background: '#F7FAFC', borderBottom: '1px solid #E3E8EE', position: 'sticky', top: 0 }}>{h}</th>
-          ))}
+          <th style={{ padding: '11px 14px', background: '#F7FAFC', borderBottom: '1px solid #E3E8EE', position: 'sticky', top: 0, width: 32 }}/>
+          <SortableTH id="name"     label="Company"   sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="type"     label="Type"      sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="hq"       label="HQ"        sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="locs"     label="Locations" align="right" sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="rev"      label="Revenue"   align="right" sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="emp"      label="Employees" align="right" sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="county"   label="Shared cnty" align="right" sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="prox"     label="Avg dist (mi)" align="right" sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="mkt"      label="Mkt share %" align="right" sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <SortableTH id="fitScore" label="Fit"        align="right" sortCol={sortCol} sortDir={sortDir} onSort={_onSort}/>
+          <th style={{ padding: '11px 14px', background: '#F7FAFC', borderBottom: '1px solid #E3E8EE', position: 'sticky', top: 0, width: 32 }}/>
         </tr>
       </thead>
       <tbody>
-        {rows.map((c, i) => {
-          const f = fitScore(c);
-          const s = signal(c);
-          const isSel = selected === c.id;
-          const isCmp = compare.includes(c.id);
+        {rows.map((c) => {
+          const f      = c.fitScore != null ? c.fitScore : null;
+          const locs   = (c.locations || []).length || c.totalLocs || 0;
+          const sharedC= (c.countyShared && c.countyShared.count) || 0;
+          const dist   = (c.proxScore && c.proxScore.mean != null) ? c.proxScore.mean : null;
+          const mkt    = (c.marketShare && c.marketShare.nationalPct) || 0;
+          const isSel  = selected === c.id;
+          const isCmp  = compare.includes(c.id);
+          const tone   = TYPE_TONE[c.ownership] || 'neutral';
           return (
-            <tr key={c.id} onClick={() => onSelect(c.id)} style={{ borderBottom: '1px solid #EDF1F6', cursor: 'pointer', background: isSel ? '#EEF0FF' : '#fff' }}>
+            <tr key={c.id} onClick={() => onSelect && onSelect(c.id)} style={{ borderBottom: '1px solid #EDF1F6', cursor: 'pointer', background: isSel ? '#EEF0FF' : '#fff' }}>
               <td style={{ padding: '10px 14px' }}>
-                <input type="checkbox" checked={isCmp} onChange={e => { e.stopPropagation(); onCompare && onCompare(c.id); }} onClick={e => e.stopPropagation()} style={{ accentColor: '#635BFF' }} />
+                <input type="checkbox" checked={isCmp}
+                  onChange={e => { e.stopPropagation(); onCompare && onCompare(c.id); }}
+                  onClick={e => e.stopPropagation()}
+                  style={{ accentColor: '#635BFF' }}/>
               </td>
               <td style={{ padding: '10px 14px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <div style={{ width: 28, height: 28, borderRadius: 6, background: '#F7FAFC', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#425466', fontSize: 11, fontWeight: 600, border: '1px solid #E3E8EE' }}>{c.name.slice(0,2).toUpperCase()}</div>
+                  <div style={{ width: 28, height: 28, borderRadius: 6, background: '#F7FAFC', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#425466', fontSize: 11, fontWeight: 600, border: '1px solid #E3E8EE' }}>
+                    {(c.name || '').slice(0, 2).toUpperCase()}
+                  </div>
                   <div>
                     <div style={{ fontWeight: 500, color: '#0A2540' }}>{c.name}</div>
-                    <div style={{ fontSize: 11, color: '#8B97A8' }}>{c.parent}</div>
+                    <div style={{ fontSize: 11, color: '#8B97A8' }}>{c.parent || c.parentGroup || '—'}</div>
                   </div>
                 </div>
               </td>
               <td style={{ padding: '10px 14px' }}>
-                <Badge dot tone={c.type === 'll' ? 'indigo' : c.type === 'public' ? 'blue' : c.type === 'family' ? 'green' : c.type === 'coop' ? 'amber' : c.type === 'pe' ? 'indigo' : 'neutral'}>{c.typeLabel}</Badge>
+                <Badge dot tone={tone}>{c.typeLabel || c.ownership}</Badge>
               </td>
-              <td style={{ padding: '10px 14px', color: '#425466', fontSize: 12 }}>{c.states[0]}{c.states.length > 1 && <span style={{ color: '#8B97A8' }}> +{c.states.length - 1}</span>}</td>
-              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontVariantNumeric: 'tabular-nums' }}>{c.locs}</td>
-              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontVariantNumeric: 'tabular-nums' }}>${c.rev >= 1000 ? (c.rev / 1000).toFixed(1) + 'B' : c.rev.toFixed(1) + 'M'}</td>
-              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: '#697386', fontVariantNumeric: 'tabular-nums' }}>${(c.rev * 0.12).toFixed(1)}M</td>
+              <td style={{ padding: '10px 14px', color: '#425466', fontSize: 12 }}>
+                {c.hqCity ? c.hqCity + ', ' : ''}{c.hqState || (c.states || [])[0] || '—'}
+                {(c.states || []).length > 1 && (
+                  <span style={{ color: '#8B97A8' }}> · +{c.states.length - 1}</span>
+                )}
+              </td>
+              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: '#0A2540' }}>{fmtInt(locs)}</td>
+              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: c.estRevenue == null ? '#C1CCD6' : '#0A2540' }}>{fmtMoney(c.estRevenue)}</td>
+              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: c.employeeCount == null ? '#C1CCD6' : '#697386' }}>{fmtInt(c.employeeCount)}</td>
+              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: sharedC > 0 ? '#0A2540' : '#C1CCD6' }}>{sharedC || '—'}</td>
+              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: dist == null ? '#C1CCD6' : '#697386' }}>{dist == null ? '—' : Math.round(dist)}</td>
+              <td style={{ padding: '10px 14px', textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: mkt > 0.01 ? '#1890FF' : '#C1CCD6' }}>{mkt > 0.001 ? mkt.toFixed(2) : '—'}</td>
               <td style={{ padding: '10px 14px', textAlign: 'right' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8, justifyContent: 'flex-end' }}>
-                  <div style={{ width: 60, height: 5, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
-                    <div style={{ width: `${f}%`, height: '100%', background: f > 70 ? '#635BFF' : f > 40 ? '#AB87FF' : '#C1CCD6' }} />
+                {f == null ? <span style={{ color: '#C1CCD6' }}>—</span> : (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, justifyContent: 'flex-end' }}>
+                    <div style={{ width: 50, height: 5, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
+                      <div style={{ width: f + '%', height: '100%', background: f > 70 ? '#635BFF' : f > 40 ? '#AB87FF' : '#C1CCD6' }} />
+                    </div>
+                    <span style={{ fontFamily: "'IBM Plex Mono'", fontWeight: 600, color: '#0A2540', minWidth: 22, textAlign: 'right' }}>{f}</span>
                   </div>
-                  <span style={{ fontFamily: "'IBM Plex Mono'", fontWeight: 600, color: '#0A2540', minWidth: 24, textAlign: 'right' }}>{f}</span>
-                </div>
+                )}
               </td>
               <td style={{ padding: '10px 14px', textAlign: 'right' }}>
-                {s === '—' ? <span style={{ color: '#C1CCD6' }}>—</span> : <Badge tone={s === 'Recent' || s === 'Rumored' ? 'amber' : 'neutral'} dot>{s}</Badge>}
-              </td>
-              <td style={{ padding: '10px 14px', textAlign: 'right' }}>
-                <Icon name="chevronRight" size={14} color="#C1CCD6" />
+                <Icon name="chevronRight" size={14} color="#C1CCD6"/>
               </td>
             </tr>
           );
