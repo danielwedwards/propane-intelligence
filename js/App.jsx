@@ -38,7 +38,7 @@ function saveScenarios(arr) {
 window._loadScenarios = loadScenarios;
 window._saveScenarios = saveScenarios;
 
-function Dashboard({ initialView = 'map' }) {
+function Dashboard({ initialView = 'map', onLogout, user }) {
   // Hydrate from URL on first mount; ?view= already initialView, also pick up ?selected= and ?compare=
   const _initial = React.useMemo(() => _readUrlState(), []);
   const [view, setView] = React.useState(_initial.view || initialView);
@@ -97,7 +97,7 @@ function Dashboard({ initialView = 'map' }) {
 
   return (
     <div className="redesign" style={{ width: '100vw', height: '100vh', background: '#F6F9FC', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative', fontFamily: "'Inter', sans-serif" }}>
-      <TopNav active={view} onView={setView} onCmd={() => setCmdOpen(true)} />
+      <TopNav active={view} onView={setView} onCmd={() => setCmdOpen(true)} onLogout={onLogout} user={user} />
       <div style={{ flex: 1, display: 'flex', minHeight: 0 }}>
         <SideNav active={view} onView={(v) => { setView(v); setSelected(null); }} />
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', minWidth: 0, position: 'relative' }}>

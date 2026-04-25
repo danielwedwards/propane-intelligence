@@ -28,6 +28,9 @@ const Icon = ({ name, size = 16, color = 'currentColor', stroke = 1.75 }) => {
     sparkle: <React.Fragment><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.5 5.5l2.8 2.8M15.7 15.7l2.8 2.8M5.5 18.5l2.8-2.8M15.7 8.3l2.8-2.8"/></React.Fragment>,
     newspaper: <React.Fragment><path d="M4 4h14v16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4z"/><path d="M18 8h3v11a2 2 0 0 1-2 2"/><path d="M8 8h6M8 12h6M8 16h4"/></React.Fragment>,
     google: <React.Fragment><path d="M22 12.2c0-.7-.1-1.3-.2-1.9H12v3.8h5.6c-.2 1.2-1 2.3-2 3v2.5h3.3c1.9-1.8 3.1-4.4 3.1-7.4z" fill="#4285F4" stroke="none"/><path d="M12 22c2.7 0 5-1 6.7-2.4l-3.3-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3v2.6A10 10 0 0 0 12 22z" fill="#34A853" stroke="none"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3a10 10 0 0 0 0 9.2z" fill="#FBBC05" stroke="none"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3 7.4L6.4 10c.8-2.3 3-4.1 5.6-4.1z" fill="#EA4335" stroke="none"/></React.Fragment>,
+    info: <React.Fragment><circle cx="12" cy="12" r="9"/><path d="M12 8.5h.01M11 12h1v5h1"/></React.Fragment>,
+    'log-out': <React.Fragment><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></React.Fragment>,
+    bookmark: <React.Fragment><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></React.Fragment>,
   };
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={stroke} strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>

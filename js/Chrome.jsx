@@ -11,7 +11,32 @@ const NAV_ITEMS = [
   { id: 'brief',   icon: 'briefcase', label: 'Executive Brief' },
 ];
 
-function TopNav({ active, onView, onCmd }) {
+function TopNav({ active, onView, onCmd, onLogout, user }) {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const menuRef = React.useRef(null);
+  React.useEffect(() => {
+    if (!menuOpen) return;
+    const onDocClick = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) setMenuOpen(false);
+    };
+    const onEsc = (e) => { if (e.key === 'Escape') setMenuOpen(false); };
+    document.addEventListener('mousedown', onDocClick);
+    document.addEventListener('keydown', onEsc);
+    return () => {
+      document.removeEventListener('mousedown', onDocClick);
+      document.removeEventListener('keydown', onEsc);
+    };
+  }, [menuOpen]);
+
+  const userName = (user && user.name) || 'Daniel Edwards';
+  const userEmail = (user && user.email) || 'daniel.edwards@ergon.com';
+  const userInitials = (user && user.initials) || 'DE';
+
+  const handleLogout = () => {
+    setMenuOpen(false);
+    if (typeof onLogout === 'function') onLogout();
+  };
+
   return (
     <div style={{ height: 56, background: '#fff', borderBottom: '1px solid #E3E8EE', display: 'flex', alignItems: 'center', padding: '0 20px', gap: 24, flexShrink: 0 }}>
       {/* Logo */}
@@ -33,11 +58,59 @@ function TopNav({ active, onView, onCmd }) {
           <Icon name="bell" size={15} />
           <span style={{ position: 'absolute', top: -3, right: -3, background: '#635BFF', color: '#fff', fontSize: 9, fontWeight: 600, borderRadius: 9999, padding: '1px 4px', minWidth: 14, height: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid #fff', fontFamily: "'IBM Plex Mono'" }}>3</span>
         </button>
-        <div style={{ width: 28, height: 28, borderRadius: '50%', background: 'linear-gradient(135deg,#635BFF,#AB87FF)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 11, fontWeight: 600, cursor: 'pointer' }}>DE</div>
+        <div ref={menuRef} style={{ position: 'relative' }}>
+          <button
+            onClick={() => setMenuOpen(o => !o)}
+            aria-haspopup="menu"
+            aria-expanded={menuOpen}
+            title={userName}
+            style={{
+              width: 28, height: 28, borderRadius: '50%',
+              background: 'linear-gradient(135deg,#635BFF,#AB87FF)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              color: '#fff', fontSize: 11, fontWeight: 600, cursor: 'pointer',
+              border: menuOpen ? '2px solid #635BFF' : '2px solid transparent',
+              padding: 0, fontFamily: 'inherit',
+              boxShadow: menuOpen ? '0 0 0 3px rgba(99,91,255,0.18)' : 'none',
+              transition: 'box-shadow 120ms ease',
+            }}
+          >{userInitials}</button>
+          {menuOpen && (
+            <div role="menu" style={{
+              position: 'absolute', top: 38, right: 0, width: 240,
+              background: '#fff', border: '1px solid #E3E8EE', borderRadius: 10,
+              boxShadow: '0 12px 28px rgba(10,37,64,0.18)',
+              padding: 6, zIndex: 60, fontFamily: 'inherit',
+            }}>
+              <div style={{ padding: '10px 12px 8px', borderBottom: '1px solid #EDF1F6', marginBottom: 4 }}>
+                <div style={{ fontSize: 13, fontWeight: 600, color: '#0A2540', letterSpacing: '-0.2px' }}>{userName}</div>
+                <div style={{ fontSize: 11, color: '#697386', marginTop: 2, wordBreak: 'break-all' }}>{userEmail}</div>
+              </div>
+              <button role="menuitem" onClick={() => setMenuOpen(false)} style={_navMenuItemStyle}>
+                <Icon name="settings" size={14} /> <span style={{ flex: 1 }}>Settings</span>
+              </button>
+              <button role="menuitem" onClick={() => { setMenuOpen(false); window.dispatchEvent(new CustomEvent('pi:open-sources')); }} style={_navMenuItemStyle}>
+                <Icon name="info" size={14} /> <span style={{ flex: 1 }}>Sources & methodology</span>
+              </button>
+              <div style={{ height: 1, background: '#EDF1F6', margin: '4px 6px' }} />
+              <button role="menuitem" onClick={handleLogout} style={{ ..._navMenuItemStyle, color: '#B43F3F' }}>
+                <Icon name="log-out" size={14} /> <span style={{ flex: 1 }}>Log out</span>
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
 }
+
+const _navMenuItemStyle = {
+  display: 'flex', alignItems: 'center', gap: 10,
+  width: '100%', padding: '8px 12px',
+  background: 'transparent', border: 'none', borderRadius: 6,
+  fontSize: 13, color: '#0A2540', fontFamily: 'inherit',
+  cursor: 'pointer', textAlign: 'left',
+};
 
 function SideNav({ active, onView }) {
   return (

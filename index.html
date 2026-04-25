@@ -233,12 +233,20 @@
         setAuthed(true);
       };
 
+      const handleLogout = () => {
+        try { localStorage.removeItem(AUTH_KEY); } catch (e) {}
+        // Strip view/selection state from the URL so the next login lands clean.
+        try { history.replaceState(null, '', location.pathname); } catch (e) {}
+        setAuthed(false);
+      };
+
       if (!authed) {
         return variant === 'v2'
           ? <LoginV2 onLogin={handleLogin} fullscreen />
           : <LoginV1 onLogin={handleLogin} fullscreen />;
       }
-      return <Dashboard initialView={initialView} />;
+      const user = { name: 'Daniel Edwards', email: 'daniel.edwards@ergon.com', initials: 'DE' };
+      return <Dashboard initialView={initialView} onLogout={handleLogout} user={user} />;
     }
 
     // Wait for the data adapter before rendering, so views see real company data.
