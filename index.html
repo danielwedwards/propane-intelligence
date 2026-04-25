@@ -662,6 +662,35 @@ table.lt td{padding:var(--space-sm) var(--space-sm);min-height:var(--touch-min)}
 .main.view-charts .charts-wrap{display:block!important}
 [data-theme="dark"] .charts-wrap{background:#0a1018}
 [data-theme="dark"] .charts-wrap > div > div{background:#16202e}
+/* === v4.4.0: Pro-Forma section === */
+.pf-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
+.main.view-proforma{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
+.main.view-proforma .left,.main.view-proforma .rh,.main.view-proforma .map-wrap,.main.view-proforma .charts-wrap,.main.view-proforma .intel-wrap{display:none!important}
+.main.view-proforma .pf-wrap{display:block!important}
+.pf-wrap .pf-section-head{display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.pf-wrap .pf-section-head h2{margin:0;font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--text-primary);letter-spacing:-0.2px}
+.pf-wrap .pf-section-head .pf-stats-line{font-size:12px;color:var(--text-secondary);font-family:var(--font-mono)}
+.pf-wrap .pf-section-actions{margin-left:auto;display:flex;gap:8px}
+.pf-wrap .pf-section-actions button{padding:7px 14px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--white);color:var(--text-secondary);font-size:12px;font-weight:500;font-family:inherit;cursor:pointer;transition:all var(--tr-fast)}
+.pf-wrap .pf-section-actions button:hover{border-color:var(--brand);color:var(--brand)}
+.pf-wrap .pf-section-actions button.danger:hover{border-color:var(--red);color:var(--red)}
+.pf-empty-section{padding:60px 24px;text-align:center;background:var(--white);border:1px dashed var(--border);border-radius:12px}
+.pf-empty-section h3{margin:0 0 8px;font-size:16px;font-weight:600;color:var(--text-primary)}
+.pf-empty-section p{margin:0 0 20px;font-size:13px;color:var(--text-secondary);line-height:1.6;max-width:520px;margin-left:auto;margin-right:auto}
+.pf-empty-section .empty-cta{display:inline-flex;gap:10px;align-items:center}
+.pf-empty-section .empty-cta button{padding:9px 18px;border-radius:var(--radius-md);font-size:13px;font-weight:600;font-family:inherit;cursor:pointer;border:none;transition:all var(--tr-fast)}
+.pf-empty-section .empty-cta .primary{background:var(--brand);color:#fff}
+.pf-empty-section .empty-cta .primary:hover{background:var(--brand-dark)}
+.pf-empty-section .empty-cta .secondary{background:transparent;border:1px solid var(--border);color:var(--text-secondary)}
+.pf-empty-section .empty-cta .secondary:hover{border-color:var(--brand);color:var(--brand)}
+.pf-section-content{background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;padding:24px}
+.pf-section-content .pf-grid{grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px}
+.pf-section-content .pf-metric .v{font-size:28px}
+[data-theme="dark"] .pf-wrap{background:#0a1018}
+[data-theme="dark"] .pf-section-content{background:#16202e;border-color:#2a3a4e}
+[data-theme="dark"] .pf-empty-section{background:#16202e;border-color:#2a3a4e}
+/* When in Pro-Forma section, hide the bottom pf-bar to avoid duplication */
+body:has(.main.view-proforma) .pf-bar{display:none!important}
 /* === v4.3.0: Intelligence section (News + Signals) === */
 .intel-wrap{display:none;flex:1;overflow-y:auto;padding:24px 28px;background:var(--light-bg)}
 .main.view-intel{overflow:auto!important;flex:1 1 auto!important;min-height:0!important}
@@ -885,7 +914,7 @@ Continue with Microsoft
 <li><kbd>Space</kbd> &mdash; Toggle platform add/remove for selected row</li>
 <li><kbd>?</kbd> &mdash; Toggle this help panel</li>
 <li><kbd>/</kbd> &mdash; Focus search bar</li>
-<li><kbd>M</kbd> &mdash; Market Map &nbsp; <kbd>C</kbd> &mdash; Companies &nbsp; <kbd>I</kbd> &mdash; Intelligence &nbsp; <kbd>A</kbd> &mdash; Analytics</li>
+<li><kbd>M</kbd> &mdash; Market Map &nbsp; <kbd>C</kbd> &mdash; Companies &nbsp; <kbd>I</kbd> &mdash; Intelligence &nbsp; <kbd>P</kbd> &mdash; Pro-Forma &nbsp; <kbd>A</kbd> &mdash; Analytics</li>
 <li><kbd>T</kbd> &mdash; Companies &gt; Table only &nbsp; <kbd>B</kbd> &mdash; Companies &gt; Table + Map</li>
 <li><kbd>Esc</kbd> &mdash; Close panels</li>
 </ul>
@@ -947,6 +976,7 @@ Continue with Microsoft
 <button class="section-btn" data-section="map" role="tab" aria-selected="false" onclick="setSection('map')" title="Market Map (M)">Market Map</button>
 <button class="section-btn active" data-section="companies" role="tab" aria-selected="true" onclick="setSection('companies')" title="Companies (C)">Companies</button>
 <button class="section-btn" data-section="intelligence" role="tab" aria-selected="false" onclick="setSection('intelligence')" title="Intelligence (I)">Intelligence</button>
+<button class="section-btn" data-section="proforma" role="tab" aria-selected="false" onclick="setSection('proforma')" title="Pro-Forma (P)">Pro-Forma</button>
 <button class="section-btn" data-section="analytics" role="tab" aria-selected="false" onclick="setSection('analytics')" title="Analytics (A)">Analytics</button>
 </div>
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
@@ -1121,6 +1151,19 @@ Continue with Microsoft
 <div class="chart-card"><div class="chart-header"><h3 id="chartLocTitle">Top 25 by Location Count</h3></div><div id="chartLocations" style="height:780px"></div></div>
 </div>
 </div>
+<!-- v4.4.0: Pro-Forma section -->
+<div class="pf-wrap" id="pfWrap">
+<div class="pf-section-head">
+<h2>Pro-Forma Platform Builder</h2>
+<span class="pf-stats-line" id="pfSectionStats"></span>
+<div class="pf-section-actions">
+<button onclick="quickSave()" title="Save current platform">&#128190; Save</button>
+<button onclick="sharePF()" title="Share via email">&#128279; Share</button>
+<button class="danger" onclick="clearPlatform()" title="Clear all acquisitions">&#10005; Clear</button>
+</div>
+</div>
+<div id="pfSectionBody"></div>
+</div>
 <!-- v4.3.0: Intelligence section (News + Signals) -->
 <div class="intel-wrap" id="intelWrap">
 <div class="intel-head">
@@ -1248,14 +1291,15 @@ function setMobileView(view){
 /* === PRODUCT SPRINT B: Desktop view toggle (now driven by section nav in v4.1.0) === */
 function setView(view){
   let main=document.getElementById('mainArea');
-  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel'));
-  main.classList.remove('view-table','view-map','view-charts','view-intel');
+  let prevHadMap=main.classList.contains('view-map')||(!main.classList.contains('view-table')&&!main.classList.contains('view-charts')&&!main.classList.contains('view-intel')&&!main.classList.contains('view-proforma'));
+  main.classList.remove('view-table','view-map','view-charts','view-intel','view-proforma');
   if(view==='table')main.classList.add('view-table');
   else if(view==='map')main.classList.add('view-map');
   else if(view==='charts'){main.classList.add('view-charts');setTimeout(function(){renderCharts();chartInstances.forEach(function(c){c.resize()})},100)}
   else if(view==='intel'){main.classList.add('view-intel');setTimeout(function(){renderIntelligence()},50)}
-  // v4.3.0: Sync section nav + Companies sub-toggle UI from view
-  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':'companies'));
+  else if(view==='proforma'){main.classList.add('view-proforma');setTimeout(function(){updatePF()},50)}
+  // v4.4.0: Sync section nav + Companies sub-toggle UI from view
+  let section=(view==='map')?'map':(view==='charts'?'analytics':(view==='intel'?'intelligence':(view==='proforma'?'proforma':'companies')));
   document.querySelectorAll('.section-btn').forEach(btn=>{
     let isActive=btn.dataset.section===section;
     btn.classList.toggle('active',isActive);
@@ -1287,6 +1331,7 @@ function setSection(section){
     return;
   }
   if(section==='intelligence'||section==='intel'){setView('intel');return}
+  if(section==='proforma'||section==='pro-forma'||section==='pf'){setView('proforma');return}
   if(section==='analytics'||section==='charts'){setView('charts');return}
 }
 /* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
@@ -2303,7 +2348,14 @@ function togglePFFullscreen(e){
 function updatePF(){
   let bar=document.getElementById('pfBar');let m=document.getElementById('mainArea');
   let cta=document.getElementById('pfEmptyCTA');
-  if(platform.length===0){bar.classList.remove('active');m.classList.remove('pf-active','pf-expanded');pfExpanded=false;if(cta)cta.style.display='block';setTimeout(()=>map.invalidateSize(),50);return}
+  if(platform.length===0){
+    bar.classList.remove('active');m.classList.remove('pf-active','pf-expanded');pfExpanded=false;if(cta)cta.style.display='block';
+    // v4.4.0: empty-state for the Pro-Forma section
+    let pfSec=document.getElementById('pfSectionBody');
+    if(pfSec)pfSec.innerHTML='<div class="pf-empty-section"><h3>No platform selected</h3><p>Build a pro-forma platform by adding companies from the Companies table or Market Map. Click any company row, then use <b>Add to Platform</b> to include it. The platform anchors on Lampton-Love by default.</p><div class="empty-cta"><button class="primary" onclick="setSection(\'companies\')">Browse Companies</button><button class="secondary" onclick="setSection(\'map\')">Open Market Map</button></div></div>';
+    let pfSecStats=document.getElementById('pfSectionStats');if(pfSecStats)pfSecStats.textContent='';
+    setTimeout(()=>map.invalidateSize(),50);return;
+  }
   if(cta)cta.style.display='none';
   bar.classList.add('active');m.classList.add('pf-active');
   let ll=DATA.find(c=>c.id===LL_ID);
@@ -2413,6 +2465,13 @@ function updatePF(){
       }).filter(Boolean).join('\n');
       return '<div class="pf-share" title="'+coBreakdown+'\n---\nPro Forma: '+pct+'% ('+pfLocs+'/'+totLocs+')"><div class="st">'+st+'</div><div class="pct">'+pct+'%</div><div style="font-size:8px;color:var(--text-tertiary)">'+pfLocs+'/'+totLocs+'</div></div>'
     }).join('')+'</div>';
+  // v4.4.0: Mirror pf-body content into the Pro-Forma section, with the section's own framing
+  let pfSec=document.getElementById('pfSectionBody');
+  if(pfSec){
+    pfSec.innerHTML='<div class="pf-section-content">'+document.getElementById('pfBody').innerHTML+'</div>';
+  }
+  let pfSecStats=document.getElementById('pfSectionStats');
+  if(pfSecStats)pfSecStats.textContent=document.getElementById('pfStats').textContent;
   setTimeout(()=>map.invalidateSize(),50);
 }
 
@@ -2492,6 +2551,7 @@ document.addEventListener('keydown',e=>{
   if(e.key==='m'||e.key==='M'){e.preventDefault();setSection('map');return}                 // Market Map section
   if(e.key==='c'||e.key==='C'){e.preventDefault();setSection('companies');return}            // Companies section (uses last sub)
   if(e.key==='i'||e.key==='I'){e.preventDefault();setSection('intelligence');return}         // Intelligence section
+  if(e.key==='p'||e.key==='P'){e.preventDefault();setSection('proforma');return}              // Pro-Forma section
   if(e.key==='a'||e.key==='A'){e.preventDefault();setSection('analytics');return}            // Analytics section
   if(e.key==='t'||e.key==='T'){e.preventDefault();setCompaniesSub('table');return}           // Companies > Table only
   if(e.key==='b'||e.key==='B'){e.preventDefault();setCompaniesSub('both');return}            // Companies > Table + Map
