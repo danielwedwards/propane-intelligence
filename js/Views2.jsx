@@ -1,45 +1,112 @@
-// Views2.jsx — Analytics, Signals, Fit, Brief
+// Views2.jsx — Analytics, Signals, Brief
+
+// --- Local formatters (kept in-file; Babel-standalone scripts don't share locals) ---
+function _v2_fmtMoneyM(v) {
+  if (v == null || isNaN(v)) return '—';
+  if (v >= 1000) return '$' + (v / 1000).toFixed(1) + 'B';
+  if (v >= 100)  return '$' + Math.round(v) + 'M';
+  return '$' + Number(v).toFixed(1) + 'M';
+}
+function _v2_fmtInt(v) {
+  if (v == null || isNaN(v)) return '—';
+  return Math.round(Number(v)).toLocaleString();
+}
+function _v2_fmtGallons(v) {
+  if (v == null || isNaN(v)) return '—';
+  if (v >= 1e9) return (v / 1e9).toFixed(1) + 'B';
+  if (v >= 1e6) return (v / 1e6).toFixed(1) + 'M';
+  if (v >= 1e3) return (v / 1e3).toFixed(0) + 'K';
+  return Math.round(v).toString();
+}
+
+// Aggregate the company list once per render; memoise on companies length.
+function useAnalyticsAggregates() {
+  const list = window.MOCK_COMPANIES || [];
+  return React.useMemo(() => {
+    let totalLocs = 0, totalGallons = 0, totalRev = 0, totalEmp = 0;
+    const ownership = { family: 0, private: 0, pe: 0, public: 0, coop: 0, ll: 0, other: 0 };
+    const byState = {};                     // gallons by state — sum of marketShare.byStateG
+    const acqByYear = {};                   // acquisitions per calendar year
+    const operators = [];                   // [{name, gallons, rev, locs}]
+    const yearsSet = new Set();
+    for (const c of list) {
+      const locs = (c.locations || []).length || c.totalLocs || 0;
+      totalLocs += locs;
+      // Use county-allocated nationalG (already operator-split) so the sum
+      // across all operators equals total addressable gallons. Mixing this
+      // with raw estAnnualGallons breaks the percentage maths.
+      const galls = c.marketShare ? (c.marketShare.nationalG || 0) : 0;
+      totalGallons += galls;
+      totalRev += c.estRevenue || 0;
+      totalEmp += c.employeeCount || 0;
+      const own = (c.ownership || 'other').toLowerCase();
+      if (ownership[own] != null) ownership[own]++; else ownership.other++;
+      const ms = c.marketShare && c.marketShare.byStateG;
+      if (ms) {
+        for (const k of Object.keys(ms)) byState[k] = (byState[k] || 0) + (ms[k] || 0);
+      }
+      operators.push({
+        id: c.id, name: c.name,
+        gallons: galls,
+        rev: c.estRevenue || 0,
+        locs,
+      });
+      for (const a of (c.acquisitions || [])) {
+        const yr = Number(a && (a.year || (a.date && String(a.date).match(/\d{4}/) && String(a.date).match(/\d{4}/)[0]))) || null;
+        if (yr && yr >= 2000 && yr <= 2030) {
+          acqByYear[yr] = (acqByYear[yr] || 0) + 1;
+          yearsSet.add(yr);
+        }
+      }
+    }
+    operators.sort((a, b) => b.gallons - a.gallons);
+    const stateRows = Object.entries(byState).filter(([, v]) => v > 0).sort((a, b) => b[1] - a[1]).slice(0, 10);
+    const years = Array.from(yearsSet).sort();
+    return {
+      total: list.length,
+      totalLocs, totalGallons, totalRev, totalEmp,
+      ownership,
+      stateRows,
+      topOperators: operators.slice(0, 6),
+      acqByYear, years,
+    };
+  }, [list, list.length]);
+}
 
 function AnalyticsView() {
+  const agg = useAnalyticsAggregates();
+  const llRow = (window.MOCK_COMPANIES || []).find(c => c.id === 'll');
+  const llShare = (llRow && llRow.marketShare) ? llRow.marketShare.nationalPct : null;
+  const top6Pct = agg.topOperators.reduce((a, o) => a + (o.gallons || 0), 0);
+  const totalG = agg.totalGallons;
+
   return (
     <div style={{ flex: 1, overflow: 'auto', background: '#F6F9FC', padding: 28 }}>
       {/* KPI row */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, marginBottom: 20 }}>
-        <Card padding={0}><Stat label="Total market" value="$18.2B" delta="+4.2%" sub="YoY" icon="trending"/></Card>
-        <Card padding={0}><Stat label="Companies tracked" value="1,247" delta="+47" sub="Q/Q" icon="building"/></Card>
-        <Card padding={0}><Stat label="Platform share" value="4.7%" delta="+0.8pts" sub="YoY" icon="target"/></Card>
-        <Card padding={0}><Stat label="Addressable targets" value="247" delta="+12" sub="in play" icon="zap"/></Card>
+        <Card padding={0}><Stat label="Companies tracked" value={_v2_fmtInt(agg.total)}    delta={null} sub={`${_v2_fmtInt(agg.totalLocs)} locations`} icon="building"/></Card>
+        <Card padding={0}><Stat label="Annual gallons"    value={_v2_fmtGallons(agg.totalGallons)} delta={null} sub="industry total" icon="trending"/></Card>
+        <Card padding={0}><Stat label="Aggregate revenue" value={_v2_fmtMoneyM(agg.totalRev)}     delta={null} sub="estimated" icon="zap"/></Card>
+        <Card padding={0}><Stat label="Lampton Love share" value={llShare != null ? llShare.toFixed(2) + '%' : '—'} delta={null} sub="of national gallons" icon="target"/></Card>
       </div>
 
-      {/* Row 1: market share + rollup pace */}
+      {/* Row 1: top operators + acquisition pace */}
       <div style={{ display: 'grid', gridTemplateColumns: '3fr 2fr', gap: 16, marginBottom: 20 }}>
         <Card padding={20}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 20 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
             <div>
-              <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Market share trend</div>
-              <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2 }}>Top 6 operators · 8-quarter</div>
+              <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Top operators</div>
+              <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2 }}>By estimated annual gallons</div>
             </div>
-            <div style={{ display: 'flex', gap: 6 }}>
-              <Badge tone="outline">By revenue</Badge>
-              <Badge tone="outline">8 quarters</Badge>
-            </div>
+            <Badge tone="outline">{((top6Pct / Math.max(1, totalG)) * 100).toFixed(1)}% of market</Badge>
           </div>
-          <AreaChart />
-          <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginTop: 12, paddingTop: 12, borderTop: '1px solid #EDF1F6' }}>
-            {[['#635BFF','AmeriGas','12.1%'],['#00D4FF','Ferrellgas','9.2%'],['#009966','Suburban','6.8%'],['#AB87FF','Lampton Love','4.2%'],['#F5A623','Crystal Flash','3.1%'],['#FF5996','Dead River','2.7%']].map(([c,n,v]) => (
-              <div key={n} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }}>
-                <span style={{ width: 8, height: 8, borderRadius: 2, background: c }}/>
-                <span style={{ color: '#425466' }}>{n}</span>
-                <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{v}</span>
-              </div>
-            ))}
-          </div>
+          <OperatorBars operators={agg.topOperators} max={Math.max(1, agg.topOperators[0] ? agg.topOperators[0].gallons : 0)}/>
         </Card>
 
         <Card padding={20}>
-          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Roll-up pace</div>
-          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>Deals per quarter</div>
-          <BarChart />
+          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Acquisition pace</div>
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>Recorded deals by year</div>
+          <AcquisitionBars acqByYear={agg.acqByYear} years={agg.years}/>
         </Card>
       </div>
 
@@ -47,23 +114,26 @@ function AnalyticsView() {
       <div style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', gap: 16 }}>
         <Card padding={20}>
           <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Ownership mix</div>
-          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>by count</div>
-          <OwnershipDonut />
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>by company count</div>
+          <OwnershipDonut counts={agg.ownership} total={agg.total}/>
         </Card>
 
         <Card padding={20}>
-          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Top states by concentration</div>
-          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>families-owned, revenue-weighted</div>
+          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4 }}>Top states by gallons</div>
+          <div style={{ fontSize: 16, fontWeight: 600, color: '#0A2540', marginTop: 2, marginBottom: 18 }}>tracked operators only</div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2px 20px' }}>
-            {[['MS',42],['AL',38],['NC',34],['TN',31],['SC',27],['GA',24],['VA',22],['LA',19]].map(([s, v]) => (
-              <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '5px 0' }}>
-                <span style={{ fontSize: 13, fontWeight: 600, color: '#0A2540', minWidth: 24, fontFamily: "'IBM Plex Mono'" }}>{s}</span>
-                <div style={{ flex: 1, height: 6, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
-                  <div style={{ width: `${v * 2}%`, height: '100%', background: '#635BFF' }} />
+            {agg.stateRows.map(([s, v]) => {
+              const max = agg.stateRows[0][1];
+              return (
+                <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '5px 0' }}>
+                  <span style={{ fontSize: 13, fontWeight: 600, color: '#0A2540', minWidth: 24, fontFamily: "'IBM Plex Mono'" }}>{s}</span>
+                  <div style={{ flex: 1, height: 6, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
+                    <div style={{ width: ((v / max) * 100) + '%', height: '100%', background: '#635BFF' }} />
+                  </div>
+                  <span style={{ fontFamily: "'IBM Plex Mono'", fontSize: 11, color: '#697386', minWidth: 56, textAlign: 'right' }}>{_v2_fmtGallons(v)}</span>
                 </div>
-                <span style={{ fontFamily: "'IBM Plex Mono'", fontSize: 12, color: '#697386', minWidth: 24, textAlign: 'right' }}>{v}</span>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </Card>
       </div>
@@ -71,57 +141,51 @@ function AnalyticsView() {
   );
 }
 
-function AreaChart() {
-  const series = [
-    { color: '#635BFF', d: "M 0 40 L 60 35 L 120 32 L 180 30 L 240 27 L 300 25 L 360 22 L 420 18" },
-    { color: '#00D4FF', d: "M 0 80 L 60 75 L 120 74 L 180 68 L 240 65 L 300 62 L 360 58 L 420 55" },
-    { color: '#009966', d: "M 0 125 L 60 122 L 120 118 L 180 118 L 240 115 L 300 112 L 360 108 L 420 105" },
-    { color: '#AB87FF', d: "M 0 155 L 60 152 L 120 148 L 180 145 L 240 142 L 300 140 L 360 136 L 420 132" },
-  ];
+// Top-operators horizontal bars
+function OperatorBars({ operators, max }) {
+  if (!operators.length) return <div style={{ fontSize: 12, color: '#8B97A8' }}>No operator data.</div>;
   return (
-    <svg viewBox="0 0 420 200" style={{ width: '100%', height: 240 }}>
-      <defs>
-        {series.map((s, i) => (
-          <linearGradient key={i} id={`ag${i}`} x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stopColor={s.color} stopOpacity="0.20"/>
-            <stop offset="100%" stopColor={s.color} stopOpacity="0"/>
-          </linearGradient>
-        ))}
-      </defs>
-      <g stroke="#EDF1F6" strokeWidth="1">
-        {[0,40,80,120,160].map(y => <line key={y} x1="0" x2="420" y1={y} y2={y}/>)}
-      </g>
-      {series.map((s, i) => (
-        <path key={i} d={`${s.d} L 420 200 L 0 200 Z`} fill={`url(#ag${i})`}/>
-      ))}
-      {series.map((s, i) => (
-        <path key={`line${i}`} d={s.d} fill="none" stroke={s.color} strokeWidth="1.5" strokeLinecap="round"/>
-      ))}
-      {/* x-axis labels */}
-      <g fontSize="10" fill="#8B97A8" fontFamily="'IBM Plex Mono', monospace">
-        {['Q3 24','Q4 24','Q1 25','Q2 25','Q3 25','Q4 25','Q1 26','Q2 26'].map((l, i) => (
-          <text key={l} x={i * 60} y="195" textAnchor="middle">{l}</text>
-        ))}
-      </g>
-    </svg>
+    <div>
+      {operators.map((o, i) => {
+        const pct = max > 0 ? (o.gallons / max) * 100 : 0;
+        return (
+          <div key={o.id || i} style={{ display: 'grid', gridTemplateColumns: '160px 1fr 90px', alignItems: 'center', gap: 12, padding: '6px 0' }}>
+            <div style={{ fontSize: 13, color: '#0A2540', fontWeight: 500, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={o.name}>{o.name}</div>
+            <div style={{ height: 12, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
+              <div style={{ width: pct + '%', height: '100%', background: '#635BFF', borderRadius: 3 }}/>
+            </div>
+            <div style={{ fontSize: 12, fontFamily: "'IBM Plex Mono'", color: '#0A2540', textAlign: 'right' }}>
+              {_v2_fmtGallons(o.gallons)} <span style={{ color: '#8B97A8' }}>gal</span>
+            </div>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
-function BarChart() {
-  const data = [4, 6, 3, 8, 5, 11, 9, 14];
-  const max = 16;
+// Bar chart for acquisitions by year (real, from c.acquisitions)
+function AcquisitionBars({ acqByYear, years }) {
+  if (!years.length) {
+    return <div style={{ fontSize: 12, color: '#8B97A8', padding: 16, background: '#F7FAFC', borderRadius: 6, textAlign: 'center' }}>No acquisitions recorded yet.</div>;
+  }
+  const max = Math.max.apply(null, years.map(y => acqByYear[y]));
+  const w = 320, h = 180;
+  const barW = Math.max(8, (w - 40) / years.length - 4);
   return (
-    <svg viewBox="0 0 320 180" style={{ width: '100%', height: 240 }}>
+    <svg viewBox={'0 0 ' + w + ' ' + h} style={{ width: '100%', height: 240 }}>
       <g stroke="#EDF1F6">
-        {[0,45,90,135].map(y => <line key={y} x1="20" x2="320" y1={y + 10} y2={y + 10}/>)}
+        {[0, 0.33, 0.66, 1].map(t => <line key={t} x1="20" x2={w} y1={h - 30 - t * 130} y2={h - 30 - t * 130}/>)}
       </g>
-      {data.map((v, i) => {
-        const h = (v / max) * 140;
+      {years.map((y, i) => {
+        const v = acqByYear[y];
+        const bh = (v / max) * 130;
+        const x = 30 + i * ((w - 40) / years.length);
         return (
-          <g key={i}>
-            <rect x={30 + i * 36} y={150 - h} width="24" height={h} fill="#635BFF" rx="3"/>
-            <text x={42 + i * 36} y={150 - h - 5} textAnchor="middle" fontSize="11" fontWeight="600" fill="#0A2540" fontFamily="'IBM Plex Mono'">{v}</text>
-            <text x={42 + i * 36} y="168" textAnchor="middle" fontSize="9" fill="#8B97A8" fontFamily="'IBM Plex Mono'">{['Q3','Q4','Q1','Q2','Q3','Q4','Q1','Q2'][i]}</text>
+          <g key={y}>
+            <rect x={x} y={h - 30 - bh} width={barW} height={bh} fill="#635BFF" rx="2"/>
+            <text x={x + barW / 2} y={h - 30 - bh - 5} textAnchor="middle" fontSize="11" fontWeight="600" fill="#0A2540" fontFamily="'IBM Plex Mono'">{v}</text>
+            <text x={x + barW / 2} y={h - 12} textAnchor="middle" fontSize="9" fill="#8B97A8" fontFamily="'IBM Plex Mono'">{String(y).slice(2)}</text>
           </g>
         );
       })}
@@ -129,15 +193,24 @@ function BarChart() {
   );
 }
 
-function OwnershipDonut() {
+// Real ownership donut — accepts {counts, total}.
+// NOTE: the v1 component used JSX attributes `fontVariantNumeric` and
+// `textTransform` on <text> elements, which React passes through as DOM
+// attributes (lowercase) and warns about. Here we move them into `style`
+// so they apply as CSS (where they belong) and React stays quiet.
+function OwnershipDonut({ counts, total }) {
+  // Fallback to v1 demo numbers if real counts missing.
+  const c = counts || { family: 624, private: 246, pe: 189, public: 102, coop: 86, other: 0, ll: 0 };
+  const t = total != null ? total : Object.values(c).reduce((a, b) => a + b, 0);
   const data = [
-    { label: 'Family', value: 624, color: '#009966' },
-    { label: 'Private', value: 246, color: '#697386' },
-    { label: 'PE-backed', value: 189, color: '#AB87FF' },
-    { label: 'Public', value: 102, color: '#1890FF' },
-    { label: 'Co-op', value: 86, color: '#C4862D' },
-  ];
-  const total = data.reduce((a, d) => a + d.value, 0);
+    { label: 'Family',    value: c.family || 0,  color: '#009966' },
+    { label: 'Private',   value: c.private || 0, color: '#697386' },
+    { label: 'PE-backed', value: c.pe || 0,      color: '#AB87FF' },
+    { label: 'Public',    value: c.public || 0,  color: '#1890FF' },
+    { label: 'Co-op',     value: c.coop || 0,    color: '#C4862D' },
+    { label: 'Other',     value: (c.other || 0) + (c.ll || 0), color: '#C1CCD6' },
+  ].filter(d => d.value > 0);
+  const sum = data.reduce((a, d) => a + d.value, 0) || 1;
   let offset = 0;
   const circ = 2 * Math.PI * 50;
   return (
@@ -145,24 +218,26 @@ function OwnershipDonut() {
       <svg width="140" height="140" viewBox="0 0 140 140">
         <g transform="translate(70 70) rotate(-90)">
           {data.map((d, i) => {
-            const len = (d.value / total) * circ;
+            const len = (d.value / sum) * circ;
             const el = (
-              <circle key={i} r="50" fill="none" stroke={d.color} strokeWidth="22" strokeDasharray={`${len} ${circ}`} strokeDashoffset={-offset} />
+              <circle key={i} r="50" fill="none" stroke={d.color} strokeWidth="22" strokeDasharray={len + ' ' + circ} strokeDashoffset={-offset} />
             );
             offset += len;
             return el;
           })}
         </g>
-        <text x="70" y="68" textAnchor="middle" fontSize="24" fontWeight="600" fill="#0A2540" fontFamily="Inter" fontVariantNumeric="tabular-nums" letterSpacing="-0.5">1,247</text>
-        <text x="70" y="84" textAnchor="middle" fontSize="10" fill="#8B97A8" textTransform="uppercase" letterSpacing="0.6">companies</text>
+        <text x="70" y="68" textAnchor="middle" fontSize="22" fontWeight="600" fill="#0A2540" fontFamily="Inter" letterSpacing="-0.5"
+              style={{ fontVariantNumeric: 'tabular-nums' }}>{_v2_fmtInt(t)}</text>
+        <text x="70" y="84" textAnchor="middle" fontSize="10" fill="#8B97A8" letterSpacing="0.6"
+              style={{ textTransform: 'uppercase' }}>companies</text>
       </svg>
       <div style={{ flex: 1 }}>
         {data.map(d => (
           <div key={d.label} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '5px 0', fontSize: 12 }}>
             <span style={{ width: 8, height: 8, borderRadius: 2, background: d.color }}/>
             <span style={{ flex: 1, color: '#425466' }}>{d.label}</span>
-            <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{d.value}</span>
-            <span style={{ fontFamily: "'IBM Plex Mono'", color: '#8B97A8', fontSize: 11, minWidth: 36, textAlign: 'right' }}>{((d.value/total)*100).toFixed(1)}%</span>
+            <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{_v2_fmtInt(d.value)}</span>
+            <span style={{ fontFamily: "'IBM Plex Mono'", color: '#8B97A8', fontSize: 11, minWidth: 36, textAlign: 'right' }}>{((d.value/sum)*100).toFixed(1)}%</span>
           </div>
         ))}
       </div>
@@ -170,7 +245,7 @@ function OwnershipDonut() {
   );
 }
 
-// Signals feed
+// Signals feed (kept on demo strings until Phase 7 builds data/signals.json)
 function SignalsView({ onSelect }) {
   const signals = [
     { co: 'Blossman Gas', tone: 'amber', type: 'Rumored sale', ago: '2 days ago', text: 'Industry sources report family principals retained Houlihan Lokey. Estimated process Q3.', strength: 82, tags: ['High signal','Rumored'] },
@@ -207,7 +282,7 @@ function SignalsView({ onSelect }) {
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                     <span style={{ fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.3 }}>Signal strength</span>
                     <div style={{ width: 80, height: 4, background: '#EDF1F6', borderRadius: 2, overflow: 'hidden' }}>
-                      <div style={{ width: `${s.strength}%`, height: '100%', background: s.strength > 70 ? '#D83E4A' : s.strength > 50 ? '#C4862D' : '#635BFF' }}/>
+                      <div style={{ width: s.strength + '%', height: '100%', background: s.strength > 70 ? '#D83E4A' : s.strength > 50 ? '#C4862D' : '#635BFF' }}/>
                     </div>
                     <span style={{ fontFamily: "'IBM Plex Mono'", fontSize: 11, color: '#0A2540', fontWeight: 600 }}>{s.strength}</span>
                   </div>
@@ -231,7 +306,7 @@ function SignalsView({ onSelect }) {
                 <span style={{ fontSize: 13, fontWeight: 600, color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{v}</span>
               </div>
               <div style={{ height: 3, background: '#EDF1F6', borderRadius: 2 }}>
-                <div style={{ width: `${v * 8}%`, height: '100%', background: c, borderRadius: 2 }}/>
+                <div style={{ width: (v * 8) + '%', height: '100%', background: c, borderRadius: 2 }}/>
               </div>
             </div>
           ))}
@@ -249,12 +324,11 @@ function SignalsView({ onSelect }) {
   );
 }
 
-// Executive Brief
+// Executive Brief — kept as-is until Phase 6/7 wires real numbers.
 function BriefView() {
   return (
     <div style={{ flex: 1, overflow: 'auto', background: '#F6F9FC', padding: 28 }}>
       <div style={{ maxWidth: 960, margin: '0 auto' }}>
-        {/* Hero */}
         <div style={{ marginBottom: 24 }}>
           <div style={{ fontSize: 11, fontWeight: 600, color: '#635BFF', textTransform: 'uppercase', letterSpacing: 0.8, marginBottom: 8 }}>Executive brief · Q2 2026</div>
           <h1 style={{ margin: 0, fontSize: 36, fontWeight: 600, color: '#0A2540', letterSpacing: '-0.8px', lineHeight: 1.15 }}>
@@ -274,18 +348,16 @@ function BriefView() {
           </div>
         </div>
 
-        {/* KPI strip */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 12, marginBottom: 24 }}>
           {[['$18.2B','Market size','+4.2%'],['247','Targets in play','+12'],['4.7%','Platform share','+0.8pt'],['$1.24B','Pro forma rev','+8.1%']].map(([v,l,d]) => (
             <Card key={l} padding={16}>
               <div style={{ fontSize: 11, color: '#697386', fontWeight: 500, marginBottom: 6 }}>{l}</div>
-              <div style={{ fontSize: 22, fontWeight: 600, color: '#0A2540', fontFamily: 'Inter', fontVariantNumeric: 'tabular-nums', letterSpacing: '-0.5px' }}>{v}</div>
+              <div style={{ fontSize: 22, fontWeight: 600, color: '#0A2540', fontFamily: 'Inter', letterSpacing: '-0.5px', fontVariantNumeric: 'tabular-nums' }}>{v}</div>
               <div style={{ fontSize: 11, color: '#009966', fontWeight: 500, marginTop: 2 }}>↑ {d} YoY</div>
             </Card>
           ))}
         </div>
 
-        {/* 3 key findings */}
         {[
           { n: '01', tag: 'SUCCESSION', title: 'Family-owned succession is a 12-month opportunity', body: 'Seven confirmed succession signals in Q2 — led by Barrett Propane (MS) and Cherry Energy (NC). Average principal age at event = 67. These are strategic sellers, not auctioned processes.', chip: 'High priority' },
           { n: '02', tag: 'GEOGRAPHY', title: 'Southeast density makes the rollup economics work', body: 'Lampton Love anchors a 58-location footprint across 5 SE states. Acquisition of Blossman + Cherry + Barrett adds 82 locations with 74% geographic overlap at the county level.', chip: 'Thesis validated' },
@@ -307,7 +379,6 @@ function BriefView() {
           </Card>
         ))}
 
-        {/* Recommended actions */}
         <Card padding={24} style={{ marginTop: 24 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
             <Icon name="zap" size={16} color="#635BFF"/>
@@ -334,4 +405,4 @@ function BriefView() {
   );
 }
 
-Object.assign(window, { AnalyticsView, SignalsView, BriefView });
+Object.assign(window, { AnalyticsView, SignalsView, BriefView, OwnershipDonut });

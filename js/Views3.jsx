@@ -1,112 +1,211 @@
 // Views3.jsx — Strategic Fit, Competitor Overlap, Network graph
 
+const _DEFAULT_FIT_WEIGHTS = (window.PI && window.PI.DEFAULT_WEIGHTS)
+  ? Object.assign({}, window.PI.DEFAULT_WEIGHTS)
+  : { geo: 25, size: 20, ops: 15, culture: 15, fin: 15, integ: 10 };
+
 function FitView({ onSelect }) {
-  const rows = (window.MOCK_COMPANIES || []).filter(c => c.id !== 'll').slice(0, 10);
-  const driver = (c, k) => {
-    const seeds = { geo: 82, size: 65, ops: 72, culture: 78, financial: 70, integration: 68 };
-    return Math.max(15, Math.min(95, seeds[k] - (c.rank * 3) + (c.total || 0) * 1.5));
-  };
+  const all = window.MOCK_COMPANIES || [];
+  const [weights, setWeights] = React.useState(_DEFAULT_FIT_WEIGHTS);
+  const [tunerOpen, setTunerOpen] = React.useState(false);
+  const [region, setRegion] = React.useState('all');     // all | se
+  const [minFit, setMinFit] = React.useState(0);
+
+  // Re-rank whenever weights change. We mutate c.fitScore in place via the
+  // scoring engine — every other view that reads fitScore picks up the change.
+  React.useEffect(() => {
+    if (window.PI && typeof window.PI.rescoreFit === 'function') {
+      window.PI.rescoreFit(all, weights);
+    }
+  }, [weights, all]);
+
+  const SE_STATES = (window.PI && window.PI.REGIONS && window.PI.REGIONS.se) || ['MS','AL','GA','TN','SC','NC','VA','FL','LA','AR','KY'];
+
+  const rows = React.useMemo(() => {
+    const filtered = all.filter(c => c.id !== 'll' && c.fitScore != null && c.fitScore >= minFit);
+    const inRegion = region === 'se'
+      ? filtered.filter(c => (c.states || []).some(s => SE_STATES.indexOf(s) >= 0))
+      : filtered;
+    return inRegion.sort((a, b) => b.fitScore - a.fitScore).slice(0, 12);
+  }, [all, region, minFit, weights]);
+
+  const top = rows[0];
 
   return (
     <div style={{ flex: 1, display: 'flex', background: '#F6F9FC', minHeight: 0 }}>
       <div style={{ flex: 1, overflow: 'auto', padding: 28 }}>
-        {/* Scoring explanation */}
+        {/* Scoring explanation + weight chips */}
         <Card padding={20} style={{ marginBottom: 20 }}>
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20 }}>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: 11, fontWeight: 600, color: '#635BFF', textTransform: 'uppercase', letterSpacing: 0.6, marginBottom: 6 }}>Strategic Fit Score</div>
               <h2 style={{ margin: 0, fontSize: 20, fontWeight: 600, color: '#0A2540', letterSpacing: '-0.3px' }}>Weighted fit against Lampton Love platform</h2>
               <p style={{ margin: '6px 0 0', fontSize: 13, color: '#697386', lineHeight: 1.6 }}>
-                A composite 0–100 score across six dimensions. Weights: Geography 25% · Size 20% · Operations 15% · Culture 15% · Financial 15% · Integration 10%.
+                A composite 0–100 score across six dimensions. Adjust weights below — every row, the slideover, and the table re-rank live.
               </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 12 }}>
+                {_FIT_BUCKETS.map(b => (
+                  <Badge key={b.key} tone="outline">{b.label} {weights[b.key]}%</Badge>
+                ))}
+              </div>
             </div>
-            <Button variant="secondary" size="sm">Adjust weights</Button>
+            <Button variant={tunerOpen ? 'primary' : 'secondary'} size="sm" onClick={() => setTunerOpen(o => !o)}>{tunerOpen ? 'Hide weights' : 'Adjust weights'}</Button>
           </div>
+
+          {tunerOpen && (
+            <div style={{ marginTop: 16, paddingTop: 16, borderTop: '1px solid #EDF1F6' }}>
+              <_WeightTuner weights={weights} onChange={setWeights} onReset={() => setWeights(_DEFAULT_FIT_WEIGHTS)}/>
+            </div>
+          )}
         </Card>
+
+        {/* Filter row */}
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 12 }}>
+          <span style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginRight: 6 }}>Filter</span>
+          {[['all','All regions'],['se','Southeast only']].map(([k, l]) => (
+            <button key={k} onClick={() => setRegion(k)} style={{
+              padding: '5px 12px', fontSize: 12, fontWeight: 500, borderRadius: 999,
+              border: '1px solid ' + (region === k ? '#635BFF' : '#E3E8EE'),
+              background: region === k ? '#EEF0FF' : '#fff', color: region === k ? '#4B45B8' : '#425466', cursor: 'pointer',
+            }}>{l}</button>
+          ))}
+          <span style={{ marginLeft: 12, fontSize: 12, color: '#697386' }}>≥ fit</span>
+          <input type="range" min="0" max="80" step="5" value={minFit} onChange={e => setMinFit(Number(e.target.value))} style={{ accentColor: '#635BFF', width: 140 }}/>
+          <span style={{ fontSize: 12, fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600, minWidth: 24 }}>{minFit}</span>
+          <span style={{ marginLeft: 'auto', fontSize: 12, color: '#697386' }}>{rows.length} target{rows.length === 1 ? '' : 's'}</span>
+        </div>
 
         <Card padding={0}>
           <div style={{ padding: '14px 20px', borderBottom: '1px solid #EDF1F6', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div style={{ fontSize: 14, fontWeight: 600, color: '#0A2540' }}>Top 10 ranked targets</div>
-            <div style={{ display: 'flex', gap: 6 }}>
-              <Badge tone="outline">Southeast only</Badge>
-              <Badge tone="outline">≥ 50 fit score</Badge>
-            </div>
+            <div style={{ fontSize: 14, fontWeight: 600, color: '#0A2540' }}>Top {rows.length} ranked targets</div>
+            <Badge tone="outline">Live re-rank</Badge>
           </div>
 
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
-            <thead>
-              <tr style={{ background: '#F7FAFC' }}>
-                <th style={hStyle}>#</th>
-                <th style={{ ...hStyle, textAlign: 'left' }}>Company</th>
-                <th style={hStyle}>Geo</th>
-                <th style={hStyle}>Size</th>
-                <th style={hStyle}>Ops</th>
-                <th style={hStyle}>Culture</th>
-                <th style={hStyle}>Fin.</th>
-                <th style={hStyle}>Integ.</th>
-                <th style={{ ...hStyle, background: '#EEF0FF', color: '#4B45B8' }}>Fit score</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((c, i) => {
-                const drivers = ['geo','size','ops','culture','financial','integration'].map(k => driver(c, k));
-                const total = Math.round(drivers.reduce((a,b) => a+b, 0) / drivers.length);
-                return (
-                  <tr key={c.id} onClick={() => onSelect && onSelect(c.id)} style={{ borderBottom: '1px solid #EDF1F6', cursor: 'pointer' }}>
-                    <td style={{ padding: '12px 14px', color: '#8B97A8', fontFamily: "'IBM Plex Mono'", fontSize: 12 }}>{i + 1}</td>
-                    <td style={{ padding: '12px 14px' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                        <div style={{ width: 24, height: 24, borderRadius: 5, background: '#F7FAFC', border: '1px solid #E3E8EE', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 600, color: '#425466' }}>{c.name.slice(0,2).toUpperCase()}</div>
-                        <div>
-                          <div style={{ fontWeight: 500, color: '#0A2540' }}>{c.name}</div>
-                          <div style={{ fontSize: 11, color: '#8B97A8' }}>{c.typeLabel} · {c.states[0]}{c.states.length > 1 && ` +${c.states.length-1}`}</div>
+          {rows.length === 0 ? (
+            <div style={{ padding: 32, textAlign: 'center', color: '#8B97A8', fontSize: 13 }}>No companies meet the current filters.</div>
+          ) : (
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
+              <thead>
+                <tr style={{ background: '#F7FAFC' }}>
+                  <th style={hStyle}>#</th>
+                  <th style={{ ...hStyle, textAlign: 'left' }}>Company</th>
+                  <th style={hStyle}>Geo</th>
+                  <th style={hStyle}>Size</th>
+                  <th style={hStyle}>Ops</th>
+                  <th style={hStyle}>Culture</th>
+                  <th style={hStyle}>Fin.</th>
+                  <th style={hStyle}>Integ.</th>
+                  <th style={{ ...hStyle, background: '#EEF0FF', color: '#4B45B8' }}>Fit score</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((c, i) => {
+                  const bd = c.fitBreakdown || { geo:0, size:0, ops:0, culture:0, fin:0, integ:0 };
+                  const total = Math.round(c.fitScore || 0);
+                  const initials = (c.name || '··').replace(/[^A-Za-z]/g, '').slice(0,2).toUpperCase() || '··';
+                  return (
+                    <tr key={c.id} onClick={() => onSelect && onSelect(c.id)} style={{ borderBottom: '1px solid #EDF1F6', cursor: 'pointer' }}>
+                      <td style={{ padding: '12px 14px', color: '#8B97A8', fontFamily: "'IBM Plex Mono'", fontSize: 12 }}>{i + 1}</td>
+                      <td style={{ padding: '12px 14px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                          <div style={{ width: 24, height: 24, borderRadius: 5, background: '#F7FAFC', border: '1px solid #E3E8EE', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 10, fontWeight: 600, color: '#425466' }}>{initials}</div>
+                          <div>
+                            <div style={{ fontWeight: 500, color: '#0A2540' }}>{c.name}</div>
+                            <div style={{ fontSize: 11, color: '#8B97A8' }}>
+                              {c.typeLabel || c.type || '—'}
+                              {(c.states && c.states[0]) ? ' · ' + c.states[0] + (c.states.length > 1 ? ' +' + (c.states.length - 1) : '') : ''}
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                    {drivers.map((d, j) => (
-                      <td key={j} style={{ padding: '12px 6px', textAlign: 'center' }}>
-                        <DriverPill value={Math.round(d)} />
                       </td>
-                    ))}
-                    <td style={{ padding: '12px 14px', textAlign: 'center', background: '#FAFAFF' }}>
-                      <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10 }}>
-                        <span style={{ fontSize: 20, fontWeight: 600, color: '#0A2540', fontFamily: 'Inter', fontVariantNumeric: 'tabular-nums', letterSpacing: '-0.3px' }}>{total}</span>
-                        <div style={{ width: 50, height: 6, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
-                          <div style={{ width: `${total}%`, height: '100%', background: '#635BFF' }}/>
+                      <td style={{ padding: '12px 6px', textAlign: 'center' }}><DriverPill value={Math.round(bd.geo)}/></td>
+                      <td style={{ padding: '12px 6px', textAlign: 'center' }}><DriverPill value={Math.round(bd.size)}/></td>
+                      <td style={{ padding: '12px 6px', textAlign: 'center' }}><DriverPill value={Math.round(bd.ops)}/></td>
+                      <td style={{ padding: '12px 6px', textAlign: 'center' }}><DriverPill value={Math.round(bd.culture)}/></td>
+                      <td style={{ padding: '12px 6px', textAlign: 'center' }}><DriverPill value={Math.round(bd.fin)}/></td>
+                      <td style={{ padding: '12px 6px', textAlign: 'center' }}><DriverPill value={Math.round(bd.integ)}/></td>
+                      <td style={{ padding: '12px 14px', textAlign: 'center', background: '#FAFAFF' }}>
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 10 }}>
+                          <span style={{ fontSize: 20, fontWeight: 600, color: '#0A2540', fontFamily: 'Inter', letterSpacing: '-0.3px' }}>{total}</span>
+                          <div style={{ width: 50, height: 6, background: '#EDF1F6', borderRadius: 3, overflow: 'hidden' }}>
+                            <div style={{ width: total + '%', height: '100%', background: '#635BFF' }}/>
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          )}
         </Card>
       </div>
 
-      {/* Right: radar chart for top pick */}
+      {/* Right rail: radar chart for top pick */}
       <div style={{ width: 320, background: '#fff', borderLeft: '1px solid #E3E8EE', padding: 20, overflow: 'auto' }}>
         <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 4 }}>Top ranked</div>
-        <h3 style={{ margin: 0, fontSize: 18, fontWeight: 600, color: '#0A2540' }}>{rows[0]?.name}</h3>
-        <div style={{ fontSize: 12, color: '#697386', marginBottom: 16 }}>{rows[0]?.typeLabel} · {rows[0]?.locs} locations</div>
-
-        <RadarChart data={[
-          { label: 'Geography', value: driver(rows[0], 'geo') },
-          { label: 'Size', value: driver(rows[0], 'size') },
-          { label: 'Operations', value: driver(rows[0], 'ops') },
-          { label: 'Culture', value: driver(rows[0], 'culture') },
-          { label: 'Financial', value: driver(rows[0], 'financial') },
-          { label: 'Integration', value: driver(rows[0], 'integration') },
-        ]}/>
-
-        <div style={{ marginTop: 16, padding: 14, background: '#F7FAFC', borderRadius: 8, border: '1px solid #EDF1F6' }}>
-          <div style={{ fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 6 }}>AI summary</div>
-          <p style={{ margin: 0, fontSize: 12, color: '#425466', lineHeight: 1.6 }}>
-            Strong geographic complement with 7-state overlap. Comparable operating margin profile suggests low integration friction. Primary risk: principal not indicated openness to exploring.
-          </p>
+        <h3 style={{ margin: 0, fontSize: 18, fontWeight: 600, color: '#0A2540' }}>{top ? top.name : '—'}</h3>
+        <div style={{ fontSize: 12, color: '#697386', marginBottom: 16 }}>
+          {top ? (top.typeLabel || top.type || '—') : ''}
+          {top && top.locations ? ' · ' + top.locations.length + ' locations' : ''}
         </div>
 
-        <Button variant="primary" size="md" icon="briefcase" style={{ width: '100%', marginTop: 16 }}>Open full profile</Button>
+        {top && (
+          <RadarChart data={[
+            { label: 'Geography',   value: top.fitBreakdown ? top.fitBreakdown.geo : 0 },
+            { label: 'Size',        value: top.fitBreakdown ? top.fitBreakdown.size : 0 },
+            { label: 'Operations',  value: top.fitBreakdown ? top.fitBreakdown.ops : 0 },
+            { label: 'Culture',     value: top.fitBreakdown ? top.fitBreakdown.culture : 0 },
+            { label: 'Financial',   value: top.fitBreakdown ? top.fitBreakdown.fin : 0 },
+            { label: 'Integration', value: top.fitBreakdown ? top.fitBreakdown.integ : 0 },
+          ]}/>
+        )}
+
+        <div style={{ marginTop: 16, padding: 14, background: '#F7FAFC', borderRadius: 8, border: '1px solid #EDF1F6' }}>
+          <div style={{ fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 6 }}>Score derivation</div>
+          {top && top.fitBreakdown ? (
+            <p style={{ margin: 0, fontSize: 12, color: '#425466', lineHeight: 1.6 }}>
+              Composite of {Math.round(top.fitScore)} reflects {top.fitBreakdown.geo > 70 ? 'strong' : 'moderate'} geographic complement
+              {top.proxScore && top.proxScore.mean != null ? ' (avg ' + Math.round(top.proxScore.mean) + ' mi to nearest LL location)' : ''}
+              {top.countyShared && top.countyShared.count ? ', ' + top.countyShared.count + '-county overlap with the platform' : ''},
+              and a {top.fitBreakdown.culture > 60 ? 'culturally compatible' : 'culturally distant'} ownership profile.
+            </p>
+          ) : (
+            <p style={{ margin: 0, fontSize: 12, color: '#8B97A8' }}>Adjust filters to surface a target.</p>
+          )}
+        </div>
+
+        {top && (
+          <Button variant="primary" size="md" icon="briefcase" style={{ width: '100%', marginTop: 16 }} onClick={() => onSelect && onSelect(top.id)}>Open full profile</Button>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// Six-bucket weight tuner. Sliders are independent — weights aren't normalised
+// to 100 because computeFitScore divides by total, so any positive set works.
+function _WeightTuner({ weights, onChange, onReset }) {
+  const total = _FIT_BUCKETS.reduce((s, b) => s + (weights[b.key] || 0), 0);
+  return (
+    <div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14 }}>
+        {_FIT_BUCKETS.map(b => {
+          const v = weights[b.key] || 0;
+          return (
+            <div key={b.key}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 4 }}>
+                <span style={{ fontSize: 12, color: '#425466' }}>{b.label}</span>
+                <span style={{ fontFamily: "'IBM Plex Mono'", fontSize: 12, color: '#0A2540', fontWeight: 600 }}>{v}%</span>
+              </div>
+              <input type="range" min="0" max="50" step="1" value={v} onChange={e => onChange(Object.assign({}, weights, { [b.key]: Number(e.target.value) }))} style={{ accentColor: '#635BFF', width: '100%' }}/>
+            </div>
+          );
+        })}
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 12 }}>
+        <span style={{ fontSize: 11, color: '#697386' }}>Sum: <b style={{ color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{total}</b><span style={{ color: '#8B97A8' }}> · scaled to 100 internally</span></span>
+        <Button variant="secondary" size="sm" onClick={onReset}>Reset to default</Button>
       </div>
     </div>
   );
@@ -163,14 +262,60 @@ function RadarChart({ data }) {
   );
 }
 
-// Competitor Overlap — heatmap
-function OverlapView() {
-  const companies = ['AmeriGas','Ferrellgas','Blossman','Suburban','Crystal Flash','Dead River','Lampton Love','Cherry Energy'];
-  const data = companies.map((_, i) => companies.map((__, j) => {
-    if (i === j) return null;
-    const seed = (i * 7 + j * 13 + i + j) % 100;
-    return Math.round(seed * 0.9);
-  }));
+// Competitor Overlap — real pairwise county-overlap heatmap.
+// For each pair (i, j) we compute |Ci ∩ Cj| / |Ci ∪ Cj| (Jaccard) where Ci is
+// the set of FIPS counties touched by company i. attachLocationCounties() ran
+// during boot, so every loc has a `fips` tag.
+function OverlapView({ onSelect }) {
+  const all = window.MOCK_COMPANIES || [];
+  const [metric, setMetric] = React.useState('jaccard');   // jaccard | rowPct  (rowPct = shared / |row| → directional)
+  const [size, setSize] = React.useState(10);              // top-N
+
+  const data = React.useMemo(() => {
+    // Build FIPS set per company; rank by national gallons (fall back to revenue, then locations).
+    const ranked = all
+      .map(c => {
+        const fipsSet = new Set();
+        for (const loc of (c.locations || [])) if (loc.fips) fipsSet.add(loc.fips);
+        const score = (c.marketShare && c.marketShare.nationalG) || (c.estRevenue || 0) * 1e6 || (c.locations || []).length;
+        return { id: c.id, name: c.name, fipsSet, score, isLL: c.id === 'll', _c: c };
+      })
+      .filter(x => x.fipsSet.size > 0)
+      .sort((a, b) => b.score - a.score);
+
+    // Always keep LL anchor in the matrix even if it's not in the top-N.
+    const top = ranked.slice(0, size);
+    if (!top.some(x => x.isLL)) {
+      const ll = ranked.find(x => x.isLL);
+      if (ll) top[top.length - 1] = ll;
+    }
+
+    // Pairwise matrix: m[i][j] = overlap value 0..100 (null on diagonal)
+    const m = top.map((row, i) => top.map((col, j) => {
+      if (i === j) return null;
+      let inter = 0;
+      row.fipsSet.forEach(f => { if (col.fipsSet.has(f)) inter++; });
+      const denom = metric === 'jaccard'
+        ? new Set([...Array.from(row.fipsSet), ...Array.from(col.fipsSet)]).size
+        : row.fipsSet.size;
+      return denom > 0 ? Math.round((inter / denom) * 100) : 0;
+    }));
+
+    // Pull a couple of insights:
+    let highest = { v: -1 }, llHigh = { v: -1 }, lowest = { v: 101 };
+    for (let i = 0; i < top.length; i++) {
+      for (let j = i + 1; j < top.length; j++) {
+        const v = m[i][j];
+        if (v == null) continue;
+        if (v > highest.v) highest = { v, a: top[i], b: top[j] };
+        if (v < lowest.v && (top[i].isLL || top[j].isLL)) lowest = { v, a: top[i], b: top[j] };
+        if ((top[i].isLL || top[j].isLL) && v > llHigh.v) llHigh = { v, a: top[i], b: top[j] };
+      }
+    }
+    return { top, m, highest, llHigh, lowest };
+  }, [all, metric, size]);
+
+  const cellColor = v => v == null ? '#F7FAFC' : 'rgba(99,91,255,' + (v / 100 * 0.85 + 0.05).toFixed(2) + ')';
 
   return (
     <div style={{ flex: 1, overflow: 'auto', background: '#F6F9FC', padding: 28 }}>
@@ -180,58 +325,90 @@ function OverlapView() {
             <div style={{ fontSize: 11, fontWeight: 600, color: '#635BFF', textTransform: 'uppercase', letterSpacing: 0.6 }}>Competitor overlap</div>
             <h2 style={{ margin: '6px 0 0', fontSize: 20, fontWeight: 600, color: '#0A2540' }}>County-level service overlap</h2>
           </div>
-          <div style={{ display: 'flex', gap: 6 }}>
-            <Badge tone="outline">Top 8 · Revenue</Badge>
-            <Badge tone="outline">County overlap %</Badge>
+          <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+            <span style={{ fontSize: 11, color: '#697386' }}>Metric</span>
+            <button onClick={() => setMetric('jaccard')} style={{
+              padding: '5px 10px', fontSize: 11, borderRadius: 999, cursor: 'pointer',
+              border: '1px solid ' + (metric === 'jaccard' ? '#635BFF' : '#E3E8EE'),
+              background: metric === 'jaccard' ? '#EEF0FF' : '#fff',
+              color: metric === 'jaccard' ? '#4B45B8' : '#425466',
+            }}>Jaccard</button>
+            <button onClick={() => setMetric('rowPct')} style={{
+              padding: '5px 10px', fontSize: 11, borderRadius: 999, cursor: 'pointer',
+              border: '1px solid ' + (metric === 'rowPct' ? '#635BFF' : '#E3E8EE'),
+              background: metric === 'rowPct' ? '#EEF0FF' : '#fff',
+              color: metric === 'rowPct' ? '#4B45B8' : '#425466',
+            }}>Row %</button>
+            <span style={{ fontSize: 11, color: '#697386', marginLeft: 8 }}>Top</span>
+            {[8, 10, 14].map(n => (
+              <button key={n} onClick={() => setSize(n)} style={{
+                padding: '5px 10px', fontSize: 11, borderRadius: 999, cursor: 'pointer',
+                border: '1px solid ' + (size === n ? '#635BFF' : '#E3E8EE'),
+                background: size === n ? '#EEF0FF' : '#fff',
+                color: size === n ? '#4B45B8' : '#425466',
+              }}>{n}</button>
+            ))}
           </div>
         </div>
-        <p style={{ margin: '6px 0 0', fontSize: 13, color: '#697386' }}>Darker = higher overlap. Hover a cell for shared counties.</p>
+        <p style={{ margin: '6px 0 0', fontSize: 13, color: '#697386' }}>
+          Darker = higher overlap. {metric === 'jaccard' ? 'Jaccard = shared / union — symmetric.' : 'Row % = shared / row total — directional.'} Click a label to open the company.
+        </p>
       </Card>
 
       <Card padding={24}>
-        <div style={{ display: 'grid', gridTemplateColumns: `180px repeat(${companies.length}, 1fr)`, gap: 2 }}>
-          <div/>
-          {companies.map(c => (
-            <div key={c} style={{ fontSize: 10, fontWeight: 500, color: '#697386', textAlign: 'center', padding: '6px 4px', writingMode: 'vertical-rl', transform: 'rotate(180deg)', height: 80, display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>{c}</div>
-          ))}
-          {companies.map((rowLabel, i) => (
-            <React.Fragment key={i}>
-              <div style={{ fontSize: 12, color: '#425466', padding: '10px 12px', display: 'flex', alignItems: 'center', fontWeight: rowLabel === 'Lampton Love' ? 600 : 400 }}>{rowLabel}</div>
-              {data[i].map((v, j) => (
-                <div key={j} style={{
-                  aspectRatio: '1', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  background: v === null ? '#F7FAFC' : `rgba(99,91,255,${v / 100 * 0.8 + 0.04})`,
-                  borderRadius: 4, fontSize: 11, fontWeight: 500,
-                  color: v === null ? '#C1CCD6' : v > 50 ? '#fff' : '#0A2540',
-                  fontFamily: "'IBM Plex Mono'", cursor: v === null ? 'default' : 'pointer',
-                }}>
-                  {v === null ? '—' : `${v}%`}
-                </div>
-              ))}
-            </React.Fragment>
-          ))}
-        </div>
+        {data.top.length === 0 ? (
+          <div style={{ padding: 32, textAlign: 'center', color: '#8B97A8', fontSize: 13 }}>No companies have geocoded counties yet.</div>
+        ) : (
+          <div style={{ display: 'grid', gridTemplateColumns: '180px repeat(' + data.top.length + ', 1fr)', gap: 2 }}>
+            <div/>
+            {data.top.map(c => (
+              <div key={c.id} style={{ fontSize: 10, fontWeight: c.isLL ? 700 : 500, color: c.isLL ? '#4B45B8' : '#697386', textAlign: 'center', padding: '6px 4px', writingMode: 'vertical-rl', transform: 'rotate(180deg)', height: 100, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', cursor: 'pointer' }} onClick={() => onSelect && onSelect(c.id)} title={c.name}>{c.name}</div>
+            ))}
+            {data.top.map((rowCo, i) => (
+              <React.Fragment key={rowCo.id}>
+                <div onClick={() => onSelect && onSelect(rowCo.id)} style={{ fontSize: 12, color: rowCo.isLL ? '#4B45B8' : '#425466', padding: '10px 12px', display: 'flex', alignItems: 'center', fontWeight: rowCo.isLL ? 600 : 400, cursor: 'pointer', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={rowCo.name}>{rowCo.name}</div>
+                {data.m[i].map((v, j) => (
+                  <div key={j} title={v == null ? '' : (rowCo.name + ' ↔ ' + data.top[j].name + ': ' + v + '%')} style={{
+                    aspectRatio: '1', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    background: cellColor(v),
+                    borderRadius: 4, fontSize: 11, fontWeight: 500,
+                    color: v == null ? '#C1CCD6' : v > 50 ? '#fff' : '#0A2540',
+                    fontFamily: "'IBM Plex Mono'", cursor: v == null ? 'default' : 'help',
+                  }}>
+                    {v == null ? '—' : v + '%'}
+                  </div>
+                ))}
+              </React.Fragment>
+            ))}
+          </div>
+        )}
 
         {/* Color scale */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 24, justifyContent: 'center' }}>
           <span style={{ fontSize: 11, color: '#697386' }}>0%</span>
-          <div style={{ width: 240, height: 8, background: 'linear-gradient(90deg, rgba(99,91,255,0.05), rgba(99,91,255,0.85))', borderRadius: 4 }}/>
+          <div style={{ width: 240, height: 8, background: 'linear-gradient(90deg, rgba(99,91,255,0.05), rgba(99,91,255,0.90))', borderRadius: 4 }}/>
           <span style={{ fontSize: 11, color: '#697386' }}>100%</span>
         </div>
       </Card>
 
-      {/* Legend + insights */}
+      {/* Real insights derived from the matrix */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 16, marginTop: 20 }}>
         {[
-          { title: 'Highest overlap', v: 'AmeriGas ↔ Ferrellgas', s: '68% county overlap · national footprints collide in 31 states', tone: 'red' },
-          { title: 'Platform exposure', v: 'Lampton Love ↔ Blossman', s: '47% overlap — strongest competitive pressure in MS and AL', tone: 'amber' },
-          { title: 'Whitespace', v: 'Dead River ↔ Lampton Love', s: '2% overlap — geographically disjoint, no direct conflict', tone: 'green' },
-        ].map(i => (
-          <Card key={i.title} padding={18}>
-            <div style={{ fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.3, marginBottom: 4 }}>{i.title}</div>
-            <div style={{ fontSize: 14, fontWeight: 600, color: '#0A2540', marginBottom: 6 }}>{i.v}</div>
-            <div style={{ fontSize: 12, color: '#425466', lineHeight: 1.5, marginBottom: 10 }}>{i.s}</div>
-            <Badge tone={i.tone} dot>{i.tone === 'red' ? 'Direct conflict' : i.tone === 'amber' ? 'Watch closely' : 'Complementary'}</Badge>
+          { title: 'Highest overlap',     pair: data.highest, tone: 'red',   verdict: 'Direct conflict' },
+          { title: 'Platform exposure',   pair: data.llHigh,  tone: 'amber', verdict: 'Watch closely'  },
+          { title: 'LL whitespace',       pair: data.lowest,  tone: 'green', verdict: 'Complementary'  },
+        ].map(card => (
+          <Card key={card.title} padding={18}>
+            <div style={{ fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.3, marginBottom: 4 }}>{card.title}</div>
+            {card.pair && card.pair.a ? (
+              <>
+                <div style={{ fontSize: 14, fontWeight: 600, color: '#0A2540', marginBottom: 6 }}>{card.pair.a.name} ↔ {card.pair.b.name}</div>
+                <div style={{ fontSize: 12, color: '#425466', lineHeight: 1.5, marginBottom: 10 }}>{card.pair.v}% county overlap.</div>
+                <Badge tone={card.tone} dot>{card.verdict}</Badge>
+              </>
+            ) : (
+              <div style={{ fontSize: 12, color: '#8B97A8' }}>Insufficient data.</div>
+            )}
           </Card>
         ))}
       </div>
