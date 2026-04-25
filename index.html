@@ -801,7 +801,8 @@ Continue with Microsoft
 <li><kbd>Space</kbd> &mdash; Toggle platform add/remove for selected row</li>
 <li><kbd>?</kbd> &mdash; Toggle this help panel</li>
 <li><kbd>/</kbd> &mdash; Focus search bar</li>
-<li><kbd>T</kbd> &mdash; Table view &nbsp; <kbd>M</kbd> &mdash; Map view &nbsp; <kbd>B</kbd> &mdash; Both &nbsp; <kbd>C</kbd> &mdash; Charts</li>
+<li><kbd>M</kbd> &mdash; Market Map &nbsp; <kbd>C</kbd> &mdash; Companies &nbsp; <kbd>A</kbd> &mdash; Analytics</li>
+<li><kbd>T</kbd> &mdash; Companies &gt; Table only &nbsp; <kbd>B</kbd> &mdash; Companies &gt; Table + Map</li>
 <li><kbd>Esc</kbd> &mdash; Close panels</li>
 </ul>
 </div>
@@ -859,8 +860,9 @@ Continue with Microsoft
 <div style="display:flex;gap:8px;align-items:center;margin-left:auto">
 <!-- v4.1.0: Top-level section nav (Market Map | Companies) + Companies sub-toggle (Table | + Map) -->
 <div class="section-nav" id="sectionNav" role="tablist" aria-label="Main sections">
-<button class="section-btn" data-section="map" role="tab" aria-selected="false" onclick="setSection('map')">Market Map</button>
-<button class="section-btn active" data-section="companies" role="tab" aria-selected="true" onclick="setSection('companies')">Companies</button>
+<button class="section-btn" data-section="map" role="tab" aria-selected="false" onclick="setSection('map')" title="Market Map (M)">Market Map</button>
+<button class="section-btn active" data-section="companies" role="tab" aria-selected="true" onclick="setSection('companies')" title="Companies (C)">Companies</button>
+<button class="section-btn" data-section="analytics" role="tab" aria-selected="false" onclick="setSection('analytics')" title="Analytics (A)">Analytics</button>
 </div>
 <div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
 <button class="sub-btn" data-sub="table" role="tab" aria-selected="false" onclick="setCompaniesSub('table')" title="Table only (T)">Table</button>
@@ -1140,8 +1142,8 @@ function setView(view){
   if(view==='table')main.classList.add('view-table');
   else if(view==='map')main.classList.add('view-map');
   else if(view==='charts'){main.classList.add('view-charts');setTimeout(function(){renderCharts();chartInstances.forEach(function(c){c.resize()})},100)}
-  // v4.1.0: Sync section nav + Companies sub-toggle UI from view
-  let section=(view==='map')?'map':(view==='charts'?'charts':'companies');
+  // v4.2.0: Sync section nav + Companies sub-toggle UI from view
+  let section=(view==='map')?'map':(view==='charts'?'analytics':'companies');
   document.querySelectorAll('.section-btn').forEach(btn=>{
     let isActive=btn.dataset.section===section;
     btn.classList.toggle('active',isActive);
@@ -1163,7 +1165,7 @@ function setView(view){
     if((view==='map'||view==='both')&&!prevHadMap)resetMapToScope();
   },150);
 }
-/* v4.1.0: Top-level section selector. Companies remembers last sub-state via localStorage. */
+/* v4.2.0: Top-level section selector. Companies remembers last sub-state via localStorage. */
 function setSection(section){
   if(section==='map'){setView('map');return}
   if(section==='companies'){
@@ -1172,7 +1174,7 @@ function setSection(section){
     setView(sub);
     return;
   }
-  if(section==='charts'){setView('charts');return}
+  if(section==='analytics'||section==='charts'){setView('charts');return}
 }
 /* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
 function setCompaniesSub(sub){
@@ -2373,9 +2375,10 @@ document.addEventListener('keydown',e=>{
   }
   if(e.key==='?'){e.preventDefault();toggleHelp();return}
   if(e.key==='/'){e.preventDefault();document.getElementById('si').focus();return}
-  // v4.1.0: section + sub-view shortcuts
+  // v4.2.0: section + sub-view shortcuts
   if(e.key==='m'||e.key==='M'){e.preventDefault();setSection('map');return}                 // Market Map section
   if(e.key==='c'||e.key==='C'){e.preventDefault();setSection('companies');return}            // Companies section (uses last sub)
+  if(e.key==='a'||e.key==='A'){e.preventDefault();setSection('analytics');return}            // Analytics section
   if(e.key==='t'||e.key==='T'){e.preventDefault();setCompaniesSub('table');return}           // Companies > Table only
   if(e.key==='b'||e.key==='B'){e.preventDefault();setCompaniesSub('both');return}            // Companies > Table + Map
   let companies=fil();
