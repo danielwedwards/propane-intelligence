@@ -243,40 +243,122 @@ function OwnershipDonut({ counts, total }) {
   );
 }
 
-// Signals feed (kept on demo strings until Phase 7 builds data/signals.json)
+// Real-data signals: derive deal-relevant signals from companies + scoring engine.
+// Signal types are deterministic patterns over real attributes:
+//   - Family succession: family-owned + fitScore >= 45 (anchored to LL fit)
+//   - Geographic overlap: countyShared.count >= 3 with LL
+//   - PE exit window: ownership == pe and fitScore >= 40
+//   - Public divestiture watch: ownership == public
+//   - Co-op governance shift: ownership == coop
+//   - Roll-up momentum: any acquisitions in record
+// Each signal carries a "strength" (0–100) so the feed sorts the loudest first.
+function _deriveSignals(companies) {
+  const ll = companies.find(c => c.id === 'll' || c.canonicalId === 'lampton_love');
+  const out = [];
+  companies.forEach(c => {
+    if (c === ll) return;
+    const own = (c.ownership || '').toLowerCase();
+    const fit = c.fitScore || 0;
+    const overlap = c.countyShared ? (c.countyShared.count || 0) : 0;
+    const stateLabel = c.hqState || (c.states && c.states[0]) || '—';
+    const locs = c.totalLocs || c.locs || 0;
+
+    if (own === 'family' && fit >= 45) {
+      const strength = Math.min(98, 50 + Math.round(fit * 0.5) + Math.min(20, overlap * 2));
+      out.push({
+        cid: c.id, co: c.name, tone: 'green', type: 'Family succession candidate',
+        text: 'Family-owned operator (' + locs + ' locations · ' + stateLabel + '). Fit score ' + Math.round(fit) + ' / 100 · ' + overlap + ' shared counties with LL. Watch for principal-age and generational-transition cues.',
+        strength, tags: ['Succession', overlap >= 3 ? 'Adjacent geography' : 'New geography'],
+      });
+    }
+    if (overlap >= 3 && own !== 'public') {
+      const strength = Math.min(95, 40 + overlap * 4 + Math.round(fit * 0.3));
+      out.push({
+        cid: c.id, co: c.name, tone: 'amber', type: 'Geographic overlap',
+        text: overlap + ' counties shared with LL footprint · ' + stateLabel + ' · ' + locs + ' locations. Acquisition would consolidate density rather than extend reach.',
+        strength, tags: ['Density play', 'Overlap ≥ ' + overlap],
+      });
+    }
+    if ((own === 'pe' || own === 'private equity') && fit >= 40) {
+      const strength = Math.min(92, 55 + Math.round(fit * 0.4));
+      out.push({
+        cid: c.id, co: c.name, tone: 'amber', type: 'PE platform — exit window',
+        text: 'PE-backed operator with fit ' + Math.round(fit) + ' / 100. Hold-period dynamics suggest secondary sale within 12–24 months — monitor for banker engagement.',
+        strength, tags: ['Exit watch'],
+      });
+    }
+    if (own === 'public' && fit >= 30) {
+      out.push({
+        cid: c.id, co: c.name, tone: 'blue', type: 'Public divestiture watch',
+        text: 'Public operator (' + (c.ticker ? c.ticker + ' · ' : '') + locs + ' locations). Watch for non-core asset divestitures consistent with capital-allocation guidance.',
+        strength: Math.min(78, 35 + Math.round(fit * 0.5)),
+        tags: ['Carve-out potential'],
+      });
+    }
+    if (own === 'cooperative' || own === 'coop' || own === 'co-op') {
+      if (fit >= 35) {
+        out.push({
+          cid: c.id, co: c.name, tone: 'neutral', type: 'Co-op governance',
+          text: 'Cooperative ownership · ' + locs + ' locations. Strategic moves require board approval but historical precedent for asset rationalisation exists.',
+          strength: Math.min(68, 30 + Math.round(fit * 0.4)),
+          tags: ['Co-op'],
+        });
+      }
+    }
+    if (Array.isArray(c.acquisitions) && c.acquisitions.length > 0) {
+      out.push({
+        cid: c.id, co: c.name, tone: 'neutral', type: 'Roll-up momentum',
+        text: 'Active acquirer · ' + c.acquisitions.length + ' tracked deals. Pace and target profile inform competitive bidding dynamics.',
+        strength: Math.min(80, 45 + c.acquisitions.length * 4),
+        tags: ['Acquirer'],
+      });
+    }
+  });
+  out.sort((a, b) => b.strength - a.strength);
+  return out;
+}
+
 function SignalsView({ onSelect }) {
-  const signals = [
-    { co: 'Blossman Gas', tone: 'amber', type: 'Rumored sale', ago: '2 days ago', text: 'Industry sources report family principals retained Houlihan Lokey. Estimated process Q3.', strength: 82, tags: ['High signal','Rumored'] },
-    { co: 'Cherry Energy', tone: 'green', type: 'Leadership change', ago: '1 week ago', text: 'CEO Marcus Cherry announced retirement effective Sept 2026. Succession plan not disclosed.', strength: 64, tags: ['Family succession','Confirmed'] },
-    { co: 'Dead River Company', tone: 'blue', type: 'Capital raise', ago: '2 weeks ago', text: 'Filed Form D reporting $85M minority recap with Brookfield. May signal grow-then-sell strategy.', strength: 58, tags: ['PE entry'] },
-    { co: 'Crystal Flash', tone: 'neutral', type: 'Bolt-on acquired', ago: '3 weeks ago', text: 'Acquired Palmer Gas & Oil (5 loc, NH). 31st add-on since 2019 recap. Pace accelerating.', strength: 45, tags: ['Roll-up signal'] },
-    { co: 'Eastern Propane & Oil', tone: 'amber', type: 'PE exit window', ago: '1 month ago', text: 'Ares-backed platform passing 5-year mark. Secondary sale expected within 12 months.', strength: 71, tags: ['Exit expected'] },
-    { co: 'Barrett Propane', tone: 'green', type: 'Family succession', ago: '6 weeks ago', text: '3rd gen principal considering transition per industry conference remarks. Open to exploring strategics.', strength: 52, tags: ['Warm'] },
-  ];
+  const all = (typeof window !== 'undefined' && window.MOCK_COMPANIES) || [];
+  const allSignals = React.useMemo(() => _deriveSignals(all), [all]);
+  const [filter, setFilter] = React.useState('all');
+  const [limit, setLimit] = React.useState(40);
+
+  const types = React.useMemo(() => {
+    const m = new Map();
+    allSignals.forEach(s => { m.set(s.type, (m.get(s.type) || 0) + 1); });
+    return [...m.entries()].sort((a, b) => b[1] - a[1]);
+  }, [allSignals]);
+
+  const filtered = filter === 'all' ? allSignals : allSignals.filter(s => s.type === filter);
+  const visible = filtered.slice(0, limit);
+  const signals = visible;
 
   return (
     <div style={{ flex: 1, display: 'flex', background: '#F6F9FC', minHeight: 0 }}>
       <div style={{ flex: 1, overflow: 'auto', padding: 28 }}>
         <Card padding={0}>
           <div style={{ padding: '14px 20px', borderBottom: '1px solid #EDF1F6', display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div style={{ flex: 1, fontSize: 14, fontWeight: 600, color: '#0A2540' }}>Recent signals <span style={{ color: '#8B97A8', fontWeight: 400, marginLeft: 6 }}>· 18 this quarter</span></div>
-            <Button variant="secondary" size="sm" icon="filter">Filter</Button>
-            <Button variant="secondary" size="sm">Sort: Recency</Button>
+            <div style={{ flex: 1, fontSize: 14, fontWeight: 600, color: '#0A2540' }}>Derived signals <span style={{ color: '#8B97A8', fontWeight: 400, marginLeft: 6 }}>· {allSignals.length} active · {filtered.length} after filter</span></div>
+            <select value={filter} onChange={e => { setFilter(e.target.value); setLimit(40); }} style={{ padding: '6px 10px', border: '1px solid #E3E8EE', borderRadius: 6, fontSize: 12, color: '#0A2540', background: '#fff', fontFamily: 'inherit' }}>
+              <option value="all">All types</option>
+              {types.map(([t, n]) => <option key={t} value={t}>{t} ({n})</option>)}
+            </select>
+            <Button variant="secondary" size="sm">Sort: Strength</Button>
           </div>
 
           {signals.map((s, i) => (
-            <div key={i} onClick={() => onSelect && onSelect(s.co)} style={{ padding: '16px 20px', borderBottom: '1px solid #EDF1F6', display: 'flex', gap: 14, cursor: 'pointer' }}>
+            <div key={(s.cid || '') + '-' + i} onClick={() => onSelect && onSelect(s.cid || s.co)} style={{ padding: '16px 20px', borderBottom: '1px solid #EDF1F6', display: 'flex', gap: 14, cursor: 'pointer' }}>
               <div style={{ width: 36, height: 36, borderRadius: 8, background: '#F7FAFC', border: '1px solid #E3E8EE', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                <Icon name={s.type.includes('Leadership') ? 'users' : s.type.includes('Capital') ? 'trending' : s.type.includes('bolt') || s.type.includes('Bolt') ? 'zap' : s.type.includes('exit') || s.type.includes('Exit') ? 'arrowUp' : 'sparkle'} size={15} color="#635BFF"/>
+                <Icon name={s.type.includes('succession') || s.type.includes('Succession') ? 'users' : s.type.includes('exit') || s.type.includes('Exit') ? 'arrowUp' : s.type.includes('overlap') || s.type.includes('Geographic') ? 'map' : s.type.includes('Public') ? 'building' : s.type.includes('Roll') ? 'zap' : 'sparkle'} size={15} color="#635BFF"/>
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
                   <span style={{ fontSize: 14, fontWeight: 600, color: '#0A2540' }}>{s.co}</span>
                   <Badge tone={s.tone} dot>{s.type}</Badge>
-                  <span style={{ fontSize: 11, color: '#8B97A8', marginLeft: 'auto' }}>{s.ago}</span>
                 </div>
                 <p style={{ margin: 0, fontSize: 13, color: '#425466', lineHeight: 1.5 }}>{s.text}</p>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8, flexWrap: 'wrap' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                     <span style={{ fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.3 }}>Signal strength</span>
                     <div style={{ width: 80, height: 4, background: '#EDF1F6', borderRadius: 2, overflow: 'hidden' }}>
@@ -284,30 +366,41 @@ function SignalsView({ onSelect }) {
                     </div>
                     <span style={{ fontFamily: "'IBM Plex Mono'", fontSize: 11, color: '#0A2540', fontWeight: 600 }}>{s.strength}</span>
                   </div>
-                  {s.tags.map(t => <Badge key={t} tone="outline">{t}</Badge>)}
+                  {(s.tags || []).map(t => <Badge key={t} tone="outline">{t}</Badge>)}
                 </div>
               </div>
               <Icon name="chevronRight" size={16} color="#C1CCD6"/>
             </div>
           ))}
+          {filtered.length > limit && (
+            <div style={{ padding: '14px 20px', textAlign: 'center', borderTop: '1px solid #EDF1F6' }}>
+              <Button variant="ghost" size="sm" onClick={() => setLimit(limit + 40)}>Show {Math.min(40, filtered.length - limit)} more</Button>
+              <span style={{ fontSize: 11, color: '#8B97A8', marginLeft: 8 }}>{visible.length} of {filtered.length}</span>
+            </div>
+          )}
         </Card>
       </div>
 
-      {/* Signal types sidebar */}
+      {/* Signal types sidebar — counts come from real derivation */}
       <div style={{ width: 280, background: '#fff', borderLeft: '1px solid #E3E8EE', padding: 20, overflow: 'auto' }}>
-        <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 12 }}>Signal volume (trailing)</div>
+        <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 12 }}>Signal volume (active)</div>
         <div style={{ display: 'grid', gap: 8 }}>
-          {[['Rumored sale', 8, '#D83E4A'],['Leadership change', 5, '#C4862D'],['Capital raise', 3, '#1890FF'],['Family succession', 7, '#009966'],['Bolt-on acquired', 12, '#635BFF'],['PE exit window', 4, '#AB87FF']].map(([l, v, c]) => (
-            <div key={l} style={{ padding: '8px 10px', border: '1px solid #EDF1F6', borderRadius: 6 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 5 }}>
-                <span style={{ fontSize: 12, color: '#425466' }}>{l}</span>
-                <span style={{ fontSize: 13, fontWeight: 600, color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{v}</span>
+          {types.map(([l, v], i) => {
+            const palette = ['#009966','#C4862D','#1890FF','#635BFF','#AB87FF','#D83E4A','#697386'];
+            const color = palette[i % palette.length];
+            const max = types[0] ? types[0][1] : 1;
+            return (
+              <div key={l} onClick={() => { setFilter(filter === l ? 'all' : l); setLimit(40); }} style={{ padding: '8px 10px', border: '1px solid ' + (filter === l ? '#635BFF' : '#EDF1F6'), borderRadius: 6, cursor: 'pointer', background: filter === l ? '#F2F1FF' : '#fff' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 5 }}>
+                  <span style={{ fontSize: 12, color: '#425466' }}>{l}</span>
+                  <span style={{ fontSize: 13, fontWeight: 600, color: '#0A2540', fontFamily: "'IBM Plex Mono'" }}>{v}</span>
+                </div>
+                <div style={{ height: 3, background: '#EDF1F6', borderRadius: 2 }}>
+                  <div style={{ width: ((v / max) * 100) + '%', height: '100%', background: color, borderRadius: 2 }}/>
+                </div>
               </div>
-              <div style={{ height: 3, background: '#EDF1F6', borderRadius: 2 }}>
-                <div style={{ width: (v * 8) + '%', height: '100%', background: c, borderRadius: 2 }}/>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
         <div style={{ marginTop: 20, padding: 14, background: '#F7FAFC', borderRadius: 8, border: '1px solid #EDF1F6' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>

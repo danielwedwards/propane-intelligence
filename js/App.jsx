@@ -1,9 +1,82 @@
 // App.jsx — live dashboard prototype (single interactive instance)
+
+// URL state helpers — read/write `view`, `selected`, `compare` to URL search.
+// Hash-style URLs would also work but ?view=... already lands the right entry view.
+const _PI_VIEW_KEYS = new Set(['map','list','analytics','signals','news','fit','overlap','network','brief','compare']);
+function _readUrlState() {
+  try {
+    const p = new URLSearchParams(location.search);
+    const view = p.get('view');
+    const sel = p.get('selected');
+    const cmp = (p.get('compare') || '').split(',').filter(Boolean);
+    return {
+      view: view && _PI_VIEW_KEYS.has(view) ? view : null,
+      selected: sel || null,
+      compare: cmp.slice(0, 4),
+    };
+  } catch (e) { return {}; }
+}
+function _writeUrlState({ view, selected, compare }) {
+  try {
+    const p = new URLSearchParams(location.search);
+    if (view) p.set('view', view); else p.delete('view');
+    if (selected) p.set('selected', selected); else p.delete('selected');
+    if (compare && compare.length) p.set('compare', compare.join(',')); else p.delete('compare');
+    const q = p.toString();
+    history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
+  } catch (e) {}
+}
+
+// Saved scenarios — view + selected + compare combos stored in localStorage.
+const _PI_SCENARIOS_KEY = 'pi_saved_scenarios_v1';
+function loadScenarios() {
+  try { return JSON.parse(localStorage.getItem(_PI_SCENARIOS_KEY) || '[]'); } catch (e) { return []; }
+}
+function saveScenarios(arr) {
+  try { localStorage.setItem(_PI_SCENARIOS_KEY, JSON.stringify(arr)); } catch (e) {}
+}
+window._loadScenarios = loadScenarios;
+window._saveScenarios = saveScenarios;
+
 function Dashboard({ initialView = 'map' }) {
-  const [view, setView] = React.useState(initialView);
-  const [selected, setSelected] = React.useState(null);
-  const [compare, setCompare] = React.useState([]);
+  // Hydrate from URL on first mount; ?view= already initialView, also pick up ?selected= and ?compare=
+  const _initial = React.useMemo(() => _readUrlState(), []);
+  const [view, setView] = React.useState(_initial.view || initialView);
+  const [selected, setSelected] = React.useState(_initial.selected);
+  const [compare, setCompare] = React.useState(_initial.compare || []);
   const [cmdOpen, setCmdOpen] = React.useState(false);
+  const [scenariosOpen, setScenariosOpen] = React.useState(false);
+  const [scenarios, setScenariosState] = React.useState(() => loadScenarios());
+
+  // Persist view/selected/compare to the URL whenever they change.
+  React.useEffect(() => {
+    _writeUrlState({ view, selected, compare });
+  }, [view, selected, compare]);
+
+  // Allow back/forward to update state.
+  React.useEffect(() => {
+    const onPop = () => {
+      const s = _readUrlState();
+      if (s.view) setView(s.view);
+      setSelected(s.selected || null);
+      setCompare(s.compare || []);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  const persistScenarios = (arr) => { setScenariosState(arr); saveScenarios(arr); };
+  const saveCurrentScenario = (label) => {
+    const name = (label && label.trim()) || ('Scenario ' + (scenarios.length + 1));
+    const next = [...scenarios.filter(s => s.name !== name), { name, view, selected, compare, savedAt: Date.now() }];
+    persistScenarios(next);
+  };
+  const applyScenario = (s) => {
+    setView(s.view || 'map');
+    setSelected(s.selected || null);
+    setCompare(s.compare || []);
+  };
+  const removeScenario = (name) => persistScenarios(scenarios.filter(s => s.name !== name));
 
   const handleCompare = (id) => {
     setCompare(prev => prev.includes(id) ? prev.filter(x => x !== id) : prev.length < 4 ? [...prev, id] : prev);
@@ -32,6 +105,7 @@ function Dashboard({ initialView = 'map' }) {
             {compare.length > 0 && view !== 'compare' && (
               <Button variant="ink" size="sm" icon="users" onClick={() => setView('compare')}>Compare ({compare.length})</Button>
             )}
+            <Button variant="secondary" size="sm" icon="bookmark" onClick={() => setScenariosOpen(true)}>Scenarios{scenarios.length ? ' (' + scenarios.length + ')' : ''}</Button>
             <Button variant="secondary" size="sm" icon="filter">Filter</Button>
             <Button variant="primary" size="sm" icon="plus">New analysis</Button>
           </PageHeader>
@@ -39,7 +113,11 @@ function Dashboard({ initialView = 'map' }) {
           {view === 'map' && <MarketMapView onSelect={setSelected} selected={selected} />}
           {view === 'list' && <CompanyListView onSelect={setSelected} selected={selected} compare={compare} onCompare={handleCompare} />}
           {view === 'analytics' && <AnalyticsView />}
-          {view === 'signals' && <SignalsView onSelect={(name) => { const c = (window.MOCK_COMPANIES||[]).find(x => x.name === name); if (c) setSelected(c.id); }}/>}
+          {view === 'signals' && <SignalsView onSelect={(idOrName) => {
+            const cs = window.MOCK_COMPANIES || [];
+            const c = cs.find(x => x.id === idOrName) || cs.find(x => x.canonicalId === idOrName) || cs.find(x => x.name === idOrName);
+            if (c) setSelected(c.id);
+          }}/>}
           {view === 'news' && <NewsView onSelect={setSelected} />}
           {view === 'fit' && <FitView onSelect={setSelected} />}
           {view === 'overlap' && <OverlapView />}
@@ -52,6 +130,72 @@ function Dashboard({ initialView = 'map' }) {
       </div>
 
       {cmdOpen && <CommandPalette onClose={() => setCmdOpen(false)} onView={(v) => { setView(v); setCmdOpen(false); }} />}
+      {scenariosOpen && (
+        <ScenariosPanel
+          scenarios={scenarios}
+          current={{ view, selected, compare }}
+          onClose={() => setScenariosOpen(false)}
+          onSave={(name) => { saveCurrentScenario(name); }}
+          onApply={(s) => { applyScenario(s); setScenariosOpen(false); }}
+          onRemove={removeScenario}
+        />
+      )}
+    </div>
+  );
+}
+
+function ScenariosPanel({ scenarios, current, onClose, onSave, onApply, onRemove }) {
+  const [name, setName] = React.useState('');
+  return (
+    <div onClick={onClose} style={{ position: 'fixed', inset: 0, background: 'rgba(10,37,64,0.35)', backdropFilter: 'blur(3px)', zIndex: 100, display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: 110 }}>
+      <div onClick={e => e.stopPropagation()} style={{ width: 520, background: '#fff', borderRadius: 10, boxShadow: '0 25px 50px rgba(10,37,64,0.25)', overflow: 'hidden' }}>
+        <div style={{ padding: '14px 18px', borderBottom: '1px solid #EDF1F6', display: 'flex', alignItems: 'center', gap: 10 }}>
+          <Icon name="bookmark" size={16} color="#635BFF"/>
+          <div style={{ flex: 1, fontSize: 14, fontWeight: 600, color: '#0A2540' }}>Saved scenarios</div>
+          <span style={{ fontSize: 11, color: '#8B97A8' }}>view + selection persist via URL</span>
+        </div>
+
+        <div style={{ padding: '14px 18px', borderBottom: '1px solid #EDF1F6' }}>
+          <div style={{ fontSize: 11, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.4, marginBottom: 8 }}>Save current</div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <input
+              autoFocus
+              value={name}
+              onChange={e => setName(e.target.value)}
+              placeholder={'e.g. Southeast roll-up · ' + (current.view || 'map')}
+              style={{ flex: 1, padding: '8px 10px', border: '1px solid #E3E8EE', borderRadius: 6, fontSize: 13, fontFamily: 'inherit', color: '#0A2540' }}
+            />
+            <Button variant="primary" size="sm" onClick={() => { onSave(name); setName(''); }}>Save</Button>
+          </div>
+          <div style={{ marginTop: 8, fontSize: 11, color: '#8B97A8' }}>
+            View: <b style={{ color: '#425466' }}>{current.view}</b>
+            {current.selected ? (<>· Selected: <b style={{ color: '#425466' }}>{current.selected}</b></>) : null}
+            {current.compare && current.compare.length ? (<> · Comparing {current.compare.length}</>) : null}
+          </div>
+        </div>
+
+        <div style={{ maxHeight: 320, overflow: 'auto' }}>
+          {scenarios.length === 0 ? (
+            <div style={{ padding: 24, fontSize: 13, color: '#8B97A8', textAlign: 'center' }}>No saved scenarios yet.</div>
+          ) : scenarios.map(s => (
+            <div key={s.name} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '12px 18px', borderBottom: '1px solid #EDF1F6' }}>
+              <div style={{ width: 28, height: 28, borderRadius: 6, background: '#F7FAFC', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Icon name="bookmark" size={13} color="#635BFF"/>
+              </div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontSize: 13, fontWeight: 600, color: '#0A2540' }}>{s.name}</div>
+                <div style={{ fontSize: 11, color: '#8B97A8' }}>
+                  {s.view}
+                  {s.selected ? ' · ' + s.selected : ''}
+                  {s.compare && s.compare.length ? ' · compare ' + s.compare.length : ''}
+                </div>
+              </div>
+              <Button variant="ghost" size="sm" onClick={() => onApply(s)}>Open</Button>
+              <Button variant="ghost" size="sm" onClick={() => onRemove(s.name)}>×</Button>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
@@ -100,4 +244,4 @@ function CommandPalette({ onClose, onView }) {
   );
 }
 
-Object.assign(window, { Dashboard, CommandPalette });
+Object.assign(window, { Dashboard, CommandPalette, ScenariosPanel });
