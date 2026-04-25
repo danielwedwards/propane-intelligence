@@ -483,6 +483,35 @@ function LeafletMap({
     }
   }, [selectedId]);
 
+  // ---------- 6) external focus events: pan/zoom to (lat,lng) -------------
+  // Other views (e.g. CompanyDetail "On map" buttons) dispatch
+  // window.dispatchEvent(new CustomEvent('pi:focus-location', { detail: { lat, lng, zoom, companyId } }))
+  // to drop a pin on a specific location and bring it into view.
+  React.useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const onFocus = (ev) => {
+      const d = ev && ev.detail;
+      if (!d) return;
+      const lat = +d.lat, lng = +d.lng;
+      if (!isFinite(lat) || !isFinite(lng)) return;
+      const zoom = Math.max(map.getZoom() || 0, +d.zoom || 11);
+      // Push the company selection first so the selection effect (which calls
+      // fitBounds on all of that company's markers) runs before we pan.
+      // Otherwise it would override our setView on the next render tick.
+      if (d.companyId && onSelectRef.current) {
+        try { onSelectRef.current(d.companyId); } catch (e) {}
+      }
+      // Defer setView until after React has flushed the selection effect, so
+      // our pan/zoom to the specific location wins the race.
+      setTimeout(() => {
+        try { map.setView([lat, lng], zoom, { animate: true }); } catch (e) {}
+      }, 30);
+    };
+    window.addEventListener('pi:focus-location', onFocus);
+    return () => window.removeEventListener('pi:focus-location', onFocus);
+  }, []);
+
   return (
     <div
       ref={containerRef}

@@ -829,13 +829,33 @@ function CompanyDetail({ companyId, onClose, onCompare }) {
               <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 0.5fr 1fr 0.8fr', padding: '8px 12px', background: '#F7FAFC', borderBottom: '1px solid #EDF1F6', fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.3 }}>
                 <div>City</div><div>State</div><div>County</div><div style={{ textAlign: 'right' }}>Lat / Lng</div>
               </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 0.5fr 1fr 0.8fr 56px', padding: '8px 12px', background: '#F7FAFC', borderBottom: '1px solid #EDF1F6', fontSize: 10, fontWeight: 600, color: '#697386', textTransform: 'uppercase', letterSpacing: 0.3, marginTop: -33 }}>
+                <div/><div/><div/><div/><div style={{ textAlign: 'right' }}/>
+              </div>
               {visibleLocs.map((loc, i) => (
-                <div key={i} style={{ display: 'grid', gridTemplateColumns: '1.4fr 0.5fr 1fr 0.8fr', padding: '7px 12px', borderBottom: i === visibleLocs.length - 1 ? 'none' : '1px solid #F2F4F7', fontSize: 12, color: '#425466', alignItems: 'center' }}>
+                <div key={i} style={{ display: 'grid', gridTemplateColumns: '1.4fr 0.5fr 1fr 0.8fr 56px', padding: '7px 12px', borderBottom: i === visibleLocs.length - 1 ? 'none' : '1px solid #F2F4F7', fontSize: 12, color: '#425466', alignItems: 'center' }}>
                   <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={loc.address || loc.name || loc.city || ''}>{loc.city || loc.name || '—'}</div>
                   <div style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540' }}>{loc.state || '—'}</div>
                   <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{loc.county || '—'}</div>
                   <div style={{ textAlign: 'right', fontFamily: "'IBM Plex Mono'", color: '#8B97A8', fontSize: 11 }}>
                     {loc.lat != null && loc.lng != null ? Number(loc.lat).toFixed(2) + ', ' + Number(loc.lng).toFixed(2) : '—'}
+                  </div>
+                  <div style={{ textAlign: 'right' }}>
+                    {loc.lat != null && loc.lng != null ? (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          window.dispatchEvent(new CustomEvent('pi:focus-location', { detail: { lat: +loc.lat, lng: +loc.lng, zoom: 11, companyId: c.id } }));
+                          if (typeof onClose === 'function') onClose();
+                        }}
+                        title="Show on map"
+                        style={{
+                          padding: '3px 8px', border: '1px solid #E3E8EE', background: '#fff',
+                          color: '#4B45B8', fontSize: 10, fontWeight: 600, borderRadius: 4,
+                          cursor: 'pointer', fontFamily: 'inherit',
+                        }}
+                      >On map</button>
+                    ) : null}
                   </div>
                 </div>
               ))}

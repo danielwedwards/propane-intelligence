@@ -521,6 +521,75 @@ const TYPE_TONE = {
   ll: 'indigo', public: 'blue', family: 'green', coop: 'amber', pe: 'indigo', private: 'neutral',
 };
 
+// ----- CSV export -----------------------------------------------------------
+
+const _CSV_COLS = [
+  ['name',          (c) => c.name || ''],
+  ['parent',        (c) => c.parent || c.parentGroup || ''],
+  ['ownership',     (c) => c.ownership || ''],
+  ['type',          (c) => c.typeLabel || ''],
+  ['hq_city',       (c) => c.hqCity || ''],
+  ['hq_state',      (c) => c.hqState || ((c.states||[])[0]) || ''],
+  ['states',        (c) => (c.states || []).join('|')],
+  ['locations',     (c) => (c.locations || []).length || c.totalLocs || 0],
+  ['se_locations',  (c) => c.seLocs || 0],
+  ['est_revenue_m', (c) => c.estRevenue == null ? '' : c.estRevenue],
+  ['employees',     (c) => c.employeeCount == null ? '' : c.employeeCount],
+  ['year_founded',  (c) => c.yearFounded || ''],
+  ['annual_gallons',(c) => (c.marketShare && c.marketShare.nationalG) || c.estAnnualGallons || ''],
+  ['market_share_pct', (c) => (c.marketShare && c.marketShare.nationalPct != null) ? c.marketShare.nationalPct : ''],
+  ['shared_counties',  (c) => (c.countyShared && c.countyShared.count) || 0],
+  ['shared_county_pct',(c) => (c.countyShared && c.countyShared.pct != null) ? c.countyShared.pct : ''],
+  ['avg_dist_to_ll_mi',(c) => (c.proxScore && c.proxScore.mean != null) ? Math.round(c.proxScore.mean) : ''],
+  ['fit_score',     (c) => c.fitScore != null ? c.fitScore : ''],
+  ['website',       (c) => c.website || ''],
+  ['phone',         (c) => c.phone || ''],
+  ['email',         (c) => c.email || ''],
+  ['ticker',        (c) => c.ticker || ''],
+  ['canonical_id',  (c) => c.canonicalId || c.id || ''],
+];
+
+function _csvEscape(v) {
+  if (v == null) return '';
+  const s = String(v);
+  // RFC 4180: wrap in quotes if it contains comma / quote / newline; double internal quotes.
+  return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+
+function _buildCsv(rows) {
+  const header = _CSV_COLS.map(c => c[0]).join(',');
+  const lines = rows.map(r => _CSV_COLS.map(c => _csvEscape(c[1](r))).join(','));
+  // Prepend BOM so Excel auto-detects UTF-8.
+  return '\uFEFF' + [header].concat(lines).join('\r\n') + '\r\n';
+}
+
+function _downloadCsvForCompanies(rows, filename) {
+  try {
+    const csv = _buildCsv(rows);
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename || 'propane-intelligence.csv';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { try { document.body.removeChild(a); URL.revokeObjectURL(url); } catch (e) {} }, 200);
+  } catch (err) {
+    console.error('[PI] CSV export failed', err);
+  }
+}
+
+function _csvFilenameForFilters({ search, ownership, statesSel, region } = {}) {
+  const tag = [];
+  if (region && region !== 'all') tag.push(region.replace('_','-'));
+  if (statesSel && statesSel.size) tag.push([...statesSel].sort().join('-'));
+  if (ownership && ownership.size) tag.push([...ownership].sort().join('-'));
+  if (search && search.trim()) tag.push(search.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,24));
+  const stamp = new Date().toISOString().slice(0,10);
+  const slug = tag.length ? '_' + tag.join('_') : '';
+  return `propane-intelligence_${stamp}${slug}.csv`;
+}
+
 function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
   const rows = window.MOCK_COMPANIES || [];
   const [statePickerOpen, setStatePickerOpen] = React.useState(false);
@@ -700,11 +769,16 @@ function CompanyListView({ onSelect, selected, compare = [], onCompare }) {
           </Badge>
         ))}
 
-        <div style={{ marginLeft: 'auto', fontSize: 12, color: '#697386' }}>
-          <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{visible.length.toLocaleString()}</span>
-          {' of '}
-          <span style={{ fontFamily: "'IBM Plex Mono'" }}>{sorted.length.toLocaleString()}</span>
-          {sorted.length < rows.length && <span style={{ color: '#8B97A8' }}> · {rows.length.toLocaleString()} total</span>}
+        <div style={{ marginLeft: 'auto', fontSize: 12, color: '#697386', display: 'flex', alignItems: 'center', gap: 12 }}>
+          <Button variant="secondary" size="sm" icon="download"
+            onClick={() => _downloadCsvForCompanies(sorted, _csvFilenameForFilters({ search, ownership, statesSel, region }))}
+          >Export CSV</Button>
+          <div>
+            <span style={{ fontFamily: "'IBM Plex Mono'", color: '#0A2540', fontWeight: 600 }}>{visible.length.toLocaleString()}</span>
+            {' of '}
+            <span style={{ fontFamily: "'IBM Plex Mono'" }}>{sorted.length.toLocaleString()}</span>
+            {sorted.length < rows.length && <span style={{ color: '#8B97A8' }}> · {rows.length.toLocaleString()} total</span>}
+          </div>
         </div>
       </div>
 
