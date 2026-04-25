@@ -2440,7 +2440,20 @@ function render(){try{
   let tb=document.getElementById('tb');
   updateFilterBar();
   if(companies.length===0){
-    tb.innerHTML='<tr><td colspan="13"><div class="empty-state">No companies match your filters<br><span style="font-size:10px;color:var(--slate);font-weight:400">Try removing ownership or state filters, or clear your search</span></div></td></tr>';
+    let activeFilterChips=[];
+    if(stateFilter.size>0)activeFilterChips.push(stateFilter.size+' state'+(stateFilter.size===1?'':'s'));
+    if(ownerFilter.size>0)activeFilterChips.push(ownerFilter.size+' ownership type'+(ownerFilter.size===1?'':'s'));
+    if(ctFilter.size>0)activeFilterChips.push(ctFilter.size+' company type'+(ctFilter.size===1?'':'s'));
+    if(searchQuery)activeFilterChips.push('search "'+searchQuery+'"');
+    if(hideEx)activeFilterChips.push('excluded hidden');
+    if(hideLL)activeFilterChips.push('Lampton-Love hidden');
+    let filterTxt=activeFilterChips.length?'Active filters: '+activeFilterChips.join(' &middot; '):'No active filters — but the table is still empty.';
+    tb.innerHTML='<tr><td colspan="13" style="padding:0"><div class="empty-state" style="padding:48px 20px">'+
+      '<div style="font-size:32px;margin-bottom:12px;color:var(--text-tertiary)">&#128269;</div>'+
+      '<div style="font-size:15px;color:var(--text-primary);font-weight:600;margin-bottom:6px">No companies match your filters</div>'+
+      '<div style="font-size:11px;color:var(--text-tertiary);margin-bottom:16px">'+filterTxt+'</div>'+
+      '<button onclick="resetApp()" style="padding:8px 16px;background:var(--brand);color:#fff;border:none;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer">&#x21bb; Clear all filters</button>'+
+      '</div></td></tr>';
     return;
   }
   let prevScores={};
@@ -3090,7 +3103,10 @@ function updatePF(){
     bar.classList.remove('active');m.classList.remove('pf-active','pf-expanded');pfExpanded=false;if(cta)cta.style.display='block';
     // v4.4.0: empty-state for the Pro-Forma section
     let pfSec=document.getElementById('pfSectionBody');
-    if(pfSec)pfSec.innerHTML='<div class="pf-empty-section"><h3>No platform selected</h3><p>Build a pro-forma platform by adding companies from the Companies table or Market Map. Click any company row, then use <b>Add to Platform</b> to include it. The platform anchors on Lampton-Love by default.</p><div class="empty-cta"><button class="primary" onclick="setSection(\'companies\')">Browse Companies</button><button class="secondary" onclick="setSection(\'map\')">Open Market Map</button></div></div>';
+    if(pfSec){
+      let scnHasAny=_scnAll().length>0;
+      pfSec.innerHTML='<div class="pf-empty-section"><h3>No platform selected</h3><p>Build a pro-forma platform by adding companies from the Companies table or Market Map. Click any company row, then use <b>Add to Platform</b> to include it. The platform anchors on Lampton-Love by default.</p><div class="empty-cta"><button class="primary" onclick="setSection(\'companies\')">Browse Companies</button><button class="secondary" onclick="setSection(\'map\')">Open Market Map</button>'+(scnHasAny?'<button class="secondary" onclick="setSection(\'scenarios\')">Load Scenario</button>':'')+'<button class="secondary" onclick="toggleCmdPalette()" title="Search anything (⌘K)">&#10142; Quick Search</button></div></div>';
+    }
     let pfSecStats=document.getElementById('pfSectionStats');if(pfSecStats)pfSecStats.textContent='';
     // v4.6.0: keep Brief view in sync (empty state)
     let main_e=document.getElementById('mainArea');
@@ -3401,9 +3417,16 @@ function renderBrief(){
   // Empty state
   if(acqs.length===0){
     body.innerHTML=head+
-      '<div class="brief-empty"><b>No platform built yet.</b><br>'+
-      'Select acquisition targets from the Companies table or Market Map, then return here for an executive rollup.<br><br>'+
-      '<button class="primary" onclick="setSection(\'companies\')" style="padding:8px 18px;border:none;border-radius:6px;background:var(--brand);color:#fff;font-weight:600;font-size:13px;cursor:pointer">Browse Companies</button></div>'+
+      '<div class="cmp-empty" style="margin-top:24px">'+
+      '<div class="ico">&#128202;</div>'+
+      '<h3>Build a platform to generate the Brief</h3>'+
+      '<p>The Brief is an executive rollup of your acquisition list — KPIs, complementarity scores, geography, and live intelligence. Add 1+ targets to populate it.</p>'+
+      '<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">'+
+      '<button class="cta" onclick="setSection(\'companies\')">Browse Companies</button>'+
+      '<button class="cta" style="background:var(--white);color:var(--brand);border:1px solid var(--brand)" onclick="setSection(\'map\')">Open Market Map</button>'+
+      (_scnAll().length?'<button class="cta" style="background:var(--white);color:var(--brand);border:1px solid var(--brand)" onclick="setSection(\'scenarios\')">Load a Scenario</button>':'')+
+      '</div>'+
+      '</div>'+
       _briefFooter();
     return;
   }
@@ -3605,7 +3628,12 @@ function renderOverlap(){
     if(ll)top[top.length-1]=ll;
   }
   if(top.length<2){
-    body.innerHTML='<div class="ov-card"><div class="ov-empty">Not enough geocoded companies to compute overlap. Need at least 2 companies with locations.</div></div>';
+    body.innerHTML='<div class="cmp-empty">'+
+      '<div class="ico">&#9863;</div>'+
+      '<h3>Overlap needs 2+ companies with locations</h3>'+
+      '<p>Add at least one acquisition target to your platform to compute pairwise territory overlap. The matrix shows shared 30-mile cells, weighted by either Jaccard similarity or row-percent.</p>'+
+      '<button class="cta" onclick="setSection(\'companies\')">Add a Target</button>'+
+      '</div>';
     return;
   }
   // Pairwise matrix
@@ -5463,7 +5491,12 @@ function renderIntelligence(){
   let feedEl=document.getElementById('intelFeed');
   if(feedEl){
     if(filtered.length===0){
-      feedEl.innerHTML='<div class="intel-empty">No '+(intelTab==='news'?'articles':'signals')+' match these filters.</div>';
+      feedEl.innerHTML='<div class="intel-empty">'+
+        '<div style="font-size:28px;margin-bottom:10px;color:var(--text-tertiary)">&#128270;</div>'+
+        '<div style="font-size:14px;color:var(--text-primary);font-weight:600;margin-bottom:4px">No '+(intelTab==='news'?'articles':'signals')+' match these filters</div>'+
+        '<div style="font-size:11px;color:var(--text-tertiary);margin-bottom:14px">Try clearing the category filter or search query.</div>'+
+        '<button onclick="setIntelCategory(\'all\');document.getElementById(\'intelQuery\').value=\'\';renderIntelligence()" style="padding:7px 14px;background:var(--white);color:var(--brand);border:1px solid var(--brand);border-radius:6px;font-size:11px;font-weight:600;cursor:pointer">&#x21bb; Reset filters</button>'+
+        '</div>';
     } else {
       let kind=intelTab==='news'?'news':'signals';
       // Sort by recency desc
