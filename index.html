@@ -226,6 +226,22 @@ table.lt th.sorted .sort-arrow{opacity:1;color:var(--brand)}
 .th-sub{display:block;font-size:9px;font-weight:400;letter-spacing:0;text-transform:none;opacity:0.5;line-height:1;margin-top:2px}
 /* Modern SaaS table rows */
 table.lt td{padding:10px 8px;border-bottom:1px solid var(--border-subtle);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;text-align:center;font-size:var(--text-sm)}
+/* v4.20.0: Density toggle — compact mode tightens row padding + font */
+body.density-compact table.lt td{padding:5px 6px;font-size:11px}
+body.density-compact table.lt th{padding:6px 6px;font-size:9.5px}
+body.density-compact table.lt .cn{font-size:11.5px}
+body.density-compact table.lt .cn small{font-size:9.5px}
+body.density-compact .add-btn,body.density-compact .spot-btn{width:22px;height:22px;font-size:11px}
+body.density-compact .badge{padding:1px 6px;font-size:9px}
+body.density-compact .wl-star{font-size:13px;padding:1px 4px}
+.density-toggle{display:inline-flex;align-items:center;gap:0;border:1px solid var(--border-subtle);border-radius:var(--radius-md);overflow:hidden;background:var(--white)}
+.density-toggle button{background:transparent;border:none;padding:5px 9px;font-size:10px;color:var(--text-secondary);cursor:pointer;font-family:inherit;font-weight:600;letter-spacing:.3px;text-transform:uppercase;line-height:1.4}
+.density-toggle button:hover{background:var(--light-bg);color:var(--text-primary)}
+.density-toggle button.is-active{background:var(--light-bg);color:var(--brand)}
+.density-toggle button:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
+[data-theme="dark"] .density-toggle{background:#0e1620;border-color:#1f2a36}
+[data-theme="dark"] .density-toggle button{color:#a0aec0}
+[data-theme="dark"] .density-toggle button.is-active{background:#16202e;color:#cbd5e0}
 table.lt td:nth-child(4){text-align:left} /* Company name left-aligned */
 table.lt tbody tr:nth-child(even){background:transparent}
 [data-theme="dark"] table.lt tbody tr:nth-child(even){background:rgba(255,255,255,0.015)}
@@ -1614,7 +1630,7 @@ Continue with Microsoft
 <div class="main" id="mainArea">
 <div class="left">
 <!-- === PRODUCT SPRINT B: Polished League Table header === -->
-<div class="ph"><div style="display:flex;align-items:center;gap:8px"><h2 style="margin:0">League Table</h2><button class="help-btn" onclick="toggleHelp()" title="Scoring methodology &amp; keyboard shortcuts" aria-label="Help and keyboard shortcuts">?</button><button class="help-btn" onclick="toggleSources()" title="View data sources &amp; methodology" aria-label="Data sources" style="font-size:9px;width:auto;padding:0 8px;border-radius:var(--radius-sm)">Sources</button></div><span class="cnt" id="tc" aria-live="polite">0 companies</span></div>
+<div class="ph"><div style="display:flex;align-items:center;gap:8px"><h2 style="margin:0">League Table</h2><button class="help-btn" onclick="toggleHelp()" title="Scoring methodology &amp; keyboard shortcuts" aria-label="Help and keyboard shortcuts">?</button><button class="help-btn" onclick="toggleSources()" title="View data sources &amp; methodology" aria-label="Data sources" style="font-size:9px;width:auto;padding:0 8px;border-radius:var(--radius-sm)">Sources</button></div><div style="display:flex;align-items:center;gap:10px"><div class="density-toggle" role="group" aria-label="Row density"><button id="densityComfortable" class="is-active" onclick="setDensity('comfortable')" aria-pressed="true" title="Comfortable rows">&#9776;</button><button id="densityCompact" onclick="setDensity('compact')" aria-pressed="false" title="Compact rows">&#8801;</button></div><span class="cnt" id="tc" aria-live="polite">0 companies</span></div></div>
 <div class="tscroll" id="tscrollWrap">
 <table class="lt" id="lt">
 <!-- Force column widths with colgroup -->
@@ -4029,6 +4045,21 @@ function _actRenderPanel(){
   body.innerHTML=h;
 }
 
+/* === v4.20.0: Density toggle (comfortable / compact rows in table) === */
+const DENSITY_KEY='pi_density';
+function setDensity(mode){
+  let m=mode==='compact'?'compact':'comfortable';
+  document.body.classList.toggle('density-compact',m==='compact');
+  try{localStorage.setItem(DENSITY_KEY,m)}catch(e){}
+  let cb=document.getElementById('densityComfortable'),pb=document.getElementById('densityCompact');
+  if(cb){cb.classList.toggle('is-active',m==='comfortable');cb.setAttribute('aria-pressed',m==='comfortable'?'true':'false')}
+  if(pb){pb.classList.toggle('is-active',m==='compact');pb.setAttribute('aria-pressed',m==='compact'?'true':'false')}
+}
+function _densityRestore(){
+  let m='comfortable';try{m=localStorage.getItem(DENSITY_KEY)||'comfortable'}catch(e){}
+  setDensity(m);
+}
+
 /* === v4.17.0: Command palette (Cmd/Ctrl-K) === */
 let _cpActiveIdx=0,_cpResults=[];
 const CP_SECTIONS=[
@@ -4051,7 +4082,8 @@ const CP_ACTIONS=[
   {label:'Clear compare',ico:'×',color:'#C0392B',run:()=>{cmpClear()}},
   {label:'Clear activity log',ico:'⎚',color:'#697386',run:()=>{_actClear()}},
   {label:'Print Brief',ico:'⎙',color:'#324663',run:()=>{setSection('brief');setTimeout(()=>briefPrint(),200)}},
-  {label:'Open keyboard shortcuts',ico:'?',color:'#5B8DEF',run:()=>{toggleHelp()}}
+  {label:'Open keyboard shortcuts',ico:'?',color:'#5B8DEF',run:()=>{toggleHelp()}},
+  {label:'Toggle density (comfortable / compact)',ico:'≡',color:'#697386',run:()=>{setDensity(document.body.classList.contains('density-compact')?'comfortable':'compact');showToast('Density: '+(document.body.classList.contains('density-compact')?'compact':'comfortable'))}}
 ];
 function _cpFuzzy(query,text){
   if(!query)return {score:0,matches:[]};
@@ -5608,6 +5640,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if(sn)sn.addEventListener('input',updateShareMessage);
   _actUpdateBadge();
   _wlUpdateBadge();
+  _densityRestore();
 });
 
 function loadFromURL(){
