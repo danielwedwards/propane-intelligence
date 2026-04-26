@@ -1880,6 +1880,8 @@ Continue with Microsoft
 <button class="intel-tab" data-tab="signals" role="tab" aria-selected="false" onclick="setIntelTab('signals')">Signals <span class="tab-count" id="intelSignalsCount">0</span></button>
 </div>
 <span class="intel-meta" id="intelMeta">Loading…</span>
+<span id="intelStaleChip" style="display:none;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:3px 8px;border-radius:9px;margin-left:6px"></span>
+<button id="intelRefreshBtn" onclick="_intelRefresh()" title="Refresh news + signals feeds" aria-label="Refresh intelligence feed" style="margin-left:auto;padding:5px 10px;font-size:11px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--white);color:var(--text-secondary);cursor:pointer;font-family:inherit;font-weight:500">&#x21bb; Refresh</button>
 </div>
 <div class="intel-head" style="margin-bottom:12px">
 <div class="intel-search">
@@ -5137,6 +5139,8 @@ function doLogin(){
     document.getElementById('loginOverlay').style.display='none';
     sessionStorage.setItem('propane_auth','1');
     showToast('Welcome, '+esc(email.split('@')[0]));
+    // v4.23.0: refresh news + signals on login (force-bypass once-only guard)
+    try{_intelLoadStarted=false;_intelLoad({force:true})}catch(e){console.error('[login refresh]',e)}
   } else {
     loginFailCount++;
     if(loginFailCount>=3){
@@ -5508,21 +5512,113 @@ function _intelResolveCompany(id,fallbackLabel){
   return{id:null,name:fallbackLabel||pretty,matched:false};
 }
 
-async function _intelLoad(){
-  if(_intelLoadStarted)return;
+/* === v4.23.0: News feed hardening ===
+ * news.json schema (validated on load):
+ *   {
+ *     schema?: number,          // optional version, default 1
+ *     generatedAt: ISO8601 str, // required — feed freshness
+ *     count?: number,           // optional, validated against articles.length
+ *     sources?: [[name,n], ...],
+ *     articles: [{
+ *       id: string (required, unique),
+ *       headline: string (required),
+ *       source: string (required),
+ *       sourceUrl?: string,
+ *       url?: string,
+ *       publishedAt: ISO8601 str (required),
+ *       companyIds: string[] (required, may be empty),
+ *       category: string (one of INTEL_CAT_META keys, falls back to 'default'),
+ *       summary?: string,
+ *       impactScore?: number (0-100),
+ *       isBreaking?: boolean,
+ *       readMinutes?: number
+ *     }, ...]
+ *   }
+ * Stale: > 7 days old by generatedAt → show amber chip
+ * Critical-stale: > 30 days old → show red chip + warn-toast
+ */
+let _intelLastLoadAt=0,_intelLastLoadOk=false,_intelLastError='';
+function _intelValidateNews(j){
+  if(!j||typeof j!=='object')return{ok:false,err:'Not an object'};
+  if(!j.generatedAt)return{ok:false,err:'Missing generatedAt'};
+  if(!Array.isArray(j.articles))return{ok:false,err:'articles is not an array'};
+  // De-dupe by URL (some feeds republish across sources)
+  let seen=new Set();let cleaned=[];
+  for(let a of j.articles){
+    if(!a||!a.id||!a.headline||!a.source||!a.publishedAt){continue}
+    if(!Array.isArray(a.companyIds))a.companyIds=[];
+    if(!a.category||!INTEL_CAT_META[a.category])a.category=a.category||'default';
+    let dedupeKey=a.url||a.id;
+    if(seen.has(dedupeKey))continue;
+    seen.add(dedupeKey);
+    cleaned.push(a);
+  }
+  j.articles=cleaned;
+  if(typeof j.count!=='number')j.count=cleaned.length;
+  return{ok:true,err:''};
+}
+function _intelValidateSignals(j){
+  if(!j||typeof j!=='object')return{ok:false,err:'Not an object'};
+  if(!Array.isArray(j.signals))return{ok:false,err:'signals is not an array'};
+  return{ok:true,err:''};
+}
+function _intelStalenessLabel(){
+  if(!INTEL_NEWS||!INTEL_NEWS.generatedAt)return null;
+  let age=Date.now()-new Date(INTEL_NEWS.generatedAt).getTime();
+  let days=Math.floor(age/86400000);
+  if(days>=30)return{level:'critical',days:days,label:'Stale '+days+'d'};
+  if(days>=7)return{level:'warn',days:days,label:'Stale '+days+'d'};
+  return null;
+}
+async function _intelFetchOne(url,validator,retries){
+  retries=(retries==null)?2:retries;
+  let bust='?_='+Date.now();
+  for(let attempt=0;attempt<=retries;attempt++){
+    try{
+      let res=await fetch(url+bust,{cache:'no-store'});
+      if(!res.ok){throw new Error('HTTP '+res.status)}
+      let j=await res.json();
+      let v=validator?validator(j):{ok:true};
+      if(!v.ok){throw new Error('Schema invalid: '+v.err)}
+      return{ok:true,data:j};
+    }catch(e){
+      if(attempt>=retries)return{ok:false,err:e.message||String(e)};
+      await new Promise(r=>setTimeout(r,300*(attempt+1)));
+    }
+  }
+}
+async function _intelLoad(opts){
+  let force=opts&&opts.force;
+  if(_intelLoadStarted&&!force)return;
   _intelLoadStarted=true;
   let intelMeta=document.getElementById('intelMeta');
-  if(intelMeta)intelMeta.textContent='Loading…';
-  try{
-    let[nRes,sRes]=await Promise.all([
-      fetch('data/news.json').catch(()=>({ok:false})),
-      fetch('data/signals.json').catch(()=>({ok:false}))
-    ]);
-    if(nRes.ok)INTEL_NEWS=await nRes.json();
-    if(sRes.ok)INTEL_SIGNALS=await sRes.json();
-  }catch(e){console.error('Intelligence load failed',e)}
+  if(intelMeta)intelMeta.textContent=force?'Refreshing…':'Loading…';
+  let nRes=await _intelFetchOne('data/news.json',_intelValidateNews,2);
+  let sRes=await _intelFetchOne('data/signals.json',_intelValidateSignals,2);
+  if(nRes.ok){INTEL_NEWS=nRes.data}
+  else{_intelLastError='News: '+nRes.err}
+  if(sRes.ok){INTEL_SIGNALS=sRes.data}
+  else if(!_intelLastError){_intelLastError='Signals: '+sRes.err}
+  _intelLastLoadAt=Date.now();
+  _intelLastLoadOk=nRes.ok;
   renderIntelligence();
   try{_wlScanNewsForAlerts()}catch(e){console.error('[wl scan]',e)}
+  // Surface stale state
+  let stale=_intelStalenessLabel();
+  if(stale&&stale.level==='critical'&&force){showToast('News feed is '+stale.days+' days old — data may be outdated')}
+}
+async function _intelRefresh(){
+  // Manual or auto refresh — bypasses the once-only guard
+  showToast('Refreshing intelligence feed…');
+  _intelLoadStarted=false;
+  await _intelLoad({force:true});
+  let stale=_intelStalenessLabel();
+  if(_intelLastLoadOk){
+    if(!stale)showToast('Intelligence refreshed');
+    else showToast('Refreshed (feed last updated '+stale.days+'d ago)');
+  } else {
+    showToast('Refresh failed: '+_intelLastError);
+  }
 }
 
 function setIntelTab(tab){
@@ -5609,11 +5705,31 @@ function renderIntelligence(){
   let metaEl=document.getElementById('intelMeta');
   if(metaEl){
     if(latest){
-      let staleHours=(Date.now()-new Date(latest).getTime())/3600000;
-      let stale=staleHours>72;
+      let staleHoursLocal=(Date.now()-new Date(latest).getTime())/3600000;
+      let stale=staleHoursLocal>72;
+      // v4.23.0: render error state if no live data + we had an error
+
       metaEl.innerHTML='<b class="'+(stale?'stale':'')+'">\u25CF</b> Last updated '+_intelTimeAgo(latest)+' &middot; '+(news.length+signals.length)+' items';
+    } else if(_intelLastError){
+      metaEl.innerHTML='<b style="color:#C0392B">●</b> Failed to load &mdash; <span style="color:#C0392B">'+_intelEscape(_intelLastError)+'</span>';
     } else {
       metaEl.textContent='No data loaded';
+    }
+  }
+  // v4.23.0 Stale chip
+  let staleEl=document.getElementById('intelStaleChip');
+  if(staleEl){
+    let s=_intelStalenessLabel();
+    if(s){
+      staleEl.style.display='';
+      if(s.level==='critical'){
+        staleEl.style.background='#FEF3F2';staleEl.style.color='#C0392B';staleEl.style.border='1px solid #FECDCA';
+      } else {
+        staleEl.style.background='#FEF7EC';staleEl.style.color='#B54708';staleEl.style.border='1px solid #FEDF89';
+      }
+      staleEl.textContent=s.label;
+    } else {
+      staleEl.style.display='none';
     }
   }
   let items=intelTab==='news'?news:signals;
@@ -5816,7 +5932,10 @@ function releaseTrap(container){
 // === INIT ===
 window.addEventListener('load',async()=>{
   document.documentElement.setAttribute('data-theme','light');
-  if(sessionStorage.getItem('propane_auth')==='1')document.getElementById('loginOverlay').style.display='none';
+  let isAuthed=sessionStorage.getItem('propane_auth')==='1';
+  if(isAuthed)document.getElementById('loginOverlay').style.display='none';
+  // v4.23.0: kick off intel fetch immediately if already authed
+  if(isAuthed){try{setTimeout(()=>{_intelLoad({force:true})},300)}catch(e){}}
   // Load data from external JSON files
   const dataLoaded = await loadData();
   if (!dataLoaded) return;
