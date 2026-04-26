@@ -483,7 +483,7 @@ table.lt tbody tr.kb-sel{outline:2px solid var(--gold);outline-offset:-2px}
 .help-modal h4{font-size:11px;text-transform:uppercase;letter-spacing:0.8px;color:var(--gold);margin:14px 0 6px}
 .help-modal p{font-size:12px;color:var(--navy-mid);line-height:1.7;margin-bottom:6px}
 .help-modal ul{font-size:12px;color:var(--navy-mid);line-height:1.7;padding-left:18px;margin-bottom:8px}
-.help-modal kbd{display:inline-block;padding:1px 5px;background:var(--light-bg);border:1px solid var(--border);border-radius:3px;font-size:10px;font-family:monospace}
+.help-modal kbd{display:inline-block;padding:1px 5px;background:var(--light-bg);border:1px solid var(--border);border-radius:3px;font-size:10px;font-family:var(--font-mono)}
 /* Empty state */
 .empty-state{padding:40px 20px;text-align:center;color:var(--slate);font-size:12px}
 /* === SPRINT 2: Search highlight === */
@@ -510,7 +510,7 @@ table.lt tbody tr.kb-sel{outline:2px solid var(--gold);outline-offset:-2px}
 .pf-empty{padding:var(--space-xl) var(--space-lg);text-align:center;border:2px dashed var(--border);border-radius:var(--radius-md);color:var(--slate);font-size:var(--text-sm);margin:var(--space-lg)}
 .pf-empty .pf-empty-icon{font-size:24px;margin-bottom:var(--space-sm);opacity:0.4}
 /* === SPRINT 5: Keyboard hint badges === */
-.kbd-hint{display:inline-block;font-size:8px;background:rgba(0,0,0,0.08);color:var(--slate);padding:1px 4px;border-radius:3px;margin-left:4px;font-family:monospace;vertical-align:middle;line-height:1.4}
+.kbd-hint{display:inline-block;font-size:8px;background:rgba(0,0,0,0.08);color:var(--slate);padding:1px 4px;border-radius:3px;margin-left:4px;font-family:var(--font-mono);vertical-align:middle;line-height:1.4}
 [data-theme="dark"] .kbd-hint{background:rgba(255,255,255,0.08)}
 /* === SPRINT 2: Active filter chips === */
 .filter-bar{padding:6px 16px;background:#FFFFFF;border-bottom:1px solid var(--border-subtle);display:none;align-items:center;gap:6px;flex-wrap:wrap;font-size:var(--text-xs)}
@@ -743,8 +743,8 @@ body:has(.main.view-proforma) .pf-bar{display:none!important}
 body:has(.main.view-network) .pf-bar{display:none!important}
 .net-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:18px 24px 14px;background:var(--white);border-bottom:1px solid var(--border-subtle);flex-wrap:wrap}
 .net-head .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:4px}
-.net-head .title-block h2{margin:0;font-family:var(--font-serif);font-size:20px;font-weight:400;color:var(--text-primary);letter-spacing:-0.2px}
-.net-head .title-block .sub{margin-top:4px;font-size:11px;color:var(--text-secondary);max-width:520px;line-height:1.5}
+.net-head .title-block h2{margin:0;font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--text-primary);letter-spacing:-0.2px}
+.net-head .title-block .sub{margin-top:6px;font-size:12px;color:var(--text-secondary);max-width:560px;line-height:1.5}
 .net-head .ctrls{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
 .net-head .ctrls .grp{display:inline-flex;align-items:center;gap:8px}
 .net-head .ctrls .lbl{font-size:10px;font-weight:600;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.4px}
@@ -1041,7 +1041,7 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
   body.deck-mode .brief-wrap,body.deck-mode .cmp-wrap,body.deck-mode .overlap-wrap,body.deck-mode .net-wrap,body.deck-mode .scn-wrap{display:block!important;overflow:visible!important;height:auto!important;page-break-before:always;padding:24px 28px}
   body.deck-mode .deck-cover{display:flex!important;flex-direction:column;justify-content:center;align-items:flex-start;padding:60px;min-height:8in;background:#141414;color:#fff;page-break-after:always}
   body.deck-mode .deck-cover .eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:#FFD100;text-transform:uppercase;margin-bottom:14px}
-  body.deck-mode .deck-cover h1{font-size:38pt;margin:0 0 14px 0;font-family:Georgia,serif;font-weight:400}
+  body.deck-mode .deck-cover h1{font-size:38pt;margin:0 0 14px 0;font-family:var(--font-serif);font-weight:400}
   body.deck-mode .deck-cover .sub{font-size:14pt;color:#A8A4A2}
   body.deck-mode .deck-cover .toc{margin-top:36px;font-size:10pt;color:#E0DBD5}
   body.deck-mode .deck-cover .toc li{padding:4px 0;list-style:none;border-bottom:1px solid #595959}
@@ -1150,7 +1150,7 @@ body:has(.main.view-overlap) .pf-bar{display:none!important}
 body:has(.main.view-brief) .pf-bar{display:none!important}
 .brief-page{max-width:920px;margin:0 auto;background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;box-shadow:var(--shadow-xs);padding:36px 44px;font-family:var(--font-sans)}
 .brief-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding-bottom:18px;border-bottom:2px solid var(--brand);margin-bottom:22px;flex-wrap:wrap}
-.brief-head .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.6px;margin-bottom:6px}
+.brief-head .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:6px}
 .brief-head .title-block h1{margin:0;font-family:var(--font-serif);font-size:30px;font-weight:400;color:var(--text-primary);letter-spacing:-0.4px;line-height:1.15}
 .brief-head .title-block .sub{margin-top:6px;font-size:12px;color:var(--text-secondary);font-family:var(--font-mono)}
 .brief-head .actions{display:flex;gap:8px;flex-wrap:wrap}
@@ -2889,7 +2889,7 @@ function updateCountyLayer(){
           if(haversine(cd.lat,cd.lng,l.lat,l.lng)<CONFIG.COUNTY_R&&!nearby.some(n=>n.co===c.name))nearby.push({co:c.name,loc:l.city});
         }));
         let popup=L.popup().setLatLng(e.latlng).setContent(
-          '<div style="font-family:Inter,sans-serif;font-size:11px;padding:4px;min-width:200px">'+
+          '<div style="font-family:var(--font-sans);font-size:11px;padding:4px;min-width:200px">'+
           '<div style="font-weight:700;font-size:13px;margin-bottom:4px">'+esc(cd.n)+'</div>'+
           '<div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:6px 0">'+
           '<div style="background:#f4f5f7;padding:4px 6px;border-radius:3px"><div style="font-size:8px;color:#889;text-transform:uppercase">Households</div><div style="font-weight:600">'+(cd.h||0).toLocaleString()+'</div></div>'+
@@ -3254,7 +3254,7 @@ function cp(){let pp=document.getElementById('pp');releaseTrap(pp);pp.classList.
 
 function zoomToLoc(lat,lng,name){
   map.setView([lat,lng],14);
-  L.popup().setLatLng([lat,lng]).setContent('<div style="font-family:Inter,sans-serif;font-size:12px;font-weight:600;padding:4px">'+esc(name)+'</div>').openOn(map);
+  L.popup().setLatLng([lat,lng]).setContent('<div style="font-family:var(--font-sans);font-size:12px;font-weight:600;padding:4px">'+esc(name)+'</div>').openOn(map);
 }
 
 // === PRO FORMA ===
@@ -3554,7 +3554,7 @@ function _briefMapSVG(allCos, llObj){
     let isLL=llStates.has(st);
     let cosHere=pfStateCos[st]?[...pfStateCos[st]].length:0;
     let title=st+': '+(n>0?n+' platform location'+(n===1?'':'s')+(cosHere>0?' across '+cosHere+' compan'+(cosHere===1?'y':'ies'):''):'no platform presence')+(isLL?' \u2014 LL anchor state':'');
-    let badge=(n>0&&n<99)?'<text x="'+(x+cell-3)+'" y="'+(y+9)+'" font-size="7" font-weight="700" font-family="\'JetBrains Mono\',monospace" text-anchor="end" fill="'+textFillFor(st)+'" opacity="0.85" pointer-events="none">'+n+'</text>':'';
+    let badge=(n>0&&n<99)?'<text x="'+(x+cell-3)+'" y="'+(y+9)+'" font-size="7" font-weight="700" font-family="\'IBM Plex Mono\',monospace" text-anchor="end" fill="'+textFillFor(st)+'" opacity="0.85" pointer-events="none">'+n+'</text>':'';
     cells+='<g><title>'+title+'</title>'+
       '<rect x="'+x+'" y="'+y+'" width="'+cell+'" height="'+cell+'" rx="3" fill="'+fillFor(st)+'" stroke="'+strokeFor(st)+'" stroke-width="0.75"/>'+
       '<text x="'+(x+cell/2)+'" y="'+(y+cell/2+3.5)+'" font-size="9" font-weight="700" font-family="Inter,sans-serif" text-anchor="middle" fill="'+textFillFor(st)+'" pointer-events="none">'+st+'</text>'+
@@ -5858,14 +5858,14 @@ async function loadData() {
     console.log('Loaded: ' + DATA.length + ' companies, ' + CD.length + ' counties (GeoJSON deferred)');
 
     if (!DATA || !Array.isArray(DATA) || DATA.length === 0) {
-      document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:Inter,sans-serif"><h2>Error: No company data loaded</h2></div>';
+      document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:var(--font-sans)"><h2>Error: No company data loaded</h2></div>';
       return;
     }
 
     return true;
   } catch (err) {
     console.error('Data load error:', err);
-    document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:Inter,sans-serif;flex-direction:column"><h2>Error Loading Data</h2><p>' + err.message + '</p><p>Make sure data/ directory contains companies.json and counties_national.json</p></div>';
+    document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:var(--font-sans);flex-direction:column"><h2>Error Loading Data</h2><p>' + err.message + '</p><p>Make sure data/ directory contains companies.json and counties_national.json</p></div>';
     return false;
   }
 }
