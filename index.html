@@ -592,6 +592,34 @@ table.lt td{padding:var(--space-sm) var(--space-sm);min-height:var(--touch-min)}
 .section-btn{padding:7px 16px;border:none;border-radius:var(--radius-sm);font-size:12px;font-weight:600;font-family:inherit;color:var(--text-tertiary);background:transparent;cursor:pointer;transition:all var(--tr-fast);letter-spacing:0.2px}
 .section-btn:hover{color:var(--text-primary)}
 .section-btn.active{background:var(--white);color:var(--text-primary);box-shadow:var(--shadow-xs)}
+/* v4.22.0: Grouped nav (Discover / Analyze / Plan / Insights) */
+.nav-groups{display:flex;gap:2px;background:#F0F2F5;border-radius:var(--radius-md);padding:3px}
+.nav-group{padding:7px 14px;border:none;border-radius:var(--radius-sm);font-size:12px;font-weight:600;font-family:inherit;color:var(--text-tertiary);background:transparent;cursor:pointer;transition:all var(--tr-fast);letter-spacing:0.2px;display:inline-flex;align-items:center;gap:5px}
+.nav-group:hover{color:var(--text-primary)}
+.nav-group.active{background:var(--white);color:var(--text-primary);box-shadow:var(--shadow-xs)}
+.nav-group .ng-count{display:inline-flex;align-items:center;justify-content:center;min-width:14px;height:14px;padding:0 4px;border-radius:7px;background:rgba(124,92,252,.12);color:var(--brand);font-size:9px;font-weight:700;font-family:var(--font-mono)}
+.nav-group.active .ng-count{background:var(--brand);color:#fff}
+.nav-sub{display:inline-flex;align-items:center;gap:1px;background:transparent;border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:2px;margin-left:6px;flex-wrap:nowrap}
+.nav-sub-btn{padding:5px 11px;border:none;border-radius:4px;font-size:11px;font-weight:500;font-family:inherit;color:var(--text-secondary);background:transparent;cursor:pointer;transition:all var(--tr-fast);white-space:nowrap}
+.nav-sub-btn:hover{background:var(--light-bg);color:var(--text-primary)}
+.nav-sub-btn.active{background:var(--brand);color:#fff;font-weight:600}
+.nav-sub-btn:focus-visible{outline:2px solid var(--brand);outline-offset:1px}
+[data-theme="dark"] .nav-groups{background:#0e1620}
+[data-theme="dark"] .nav-group{color:#8899AA}
+[data-theme="dark"] .nav-group:hover{color:#e0e4ea}
+[data-theme="dark"] .nav-group.active{background:#1a2534;color:#e0e4ea}
+[data-theme="dark"] .nav-sub{background:#0e1620;border-color:#1f2a36}
+[data-theme="dark"] .nav-sub-btn{color:#a0aec0}
+[data-theme="dark"] .nav-sub-btn:hover{background:#142031;color:#fff}
+@media (max-width:1100px){
+  .nav-sub-btn{padding:5px 9px;font-size:10.5px}
+  .nav-group{padding:6px 11px}
+}
+@media (max-width:900px){
+  .nav-groups{flex-shrink:0}
+  .nav-sub{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;max-width:100%}
+  .nav-sub::-webkit-scrollbar{height:3px}
+}
 .sub-toggle{display:flex;gap:1px;background:transparent;border:1px solid var(--border);border-radius:var(--radius-md);padding:2px;margin-left:8px;transition:opacity var(--tr-fast)}
 .sub-toggle[hidden]{display:none}
 .sub-btn{padding:5px 11px;border:none;border-radius:var(--radius-sm);font-size:11px;font-weight:500;font-family:inherit;color:var(--slate);background:transparent;cursor:pointer;transition:all var(--tr-fast)}
@@ -1492,9 +1520,19 @@ Continue with Microsoft
 <span><b id="hl">0</b> Locations</span>
 <span><b id="hs">0</b> States</span>
 </div>
-<div style="display:flex;gap:8px;align-items:center;margin-left:auto">
-<!-- v4.1.0: Top-level section nav (Market Map | Companies) + Companies sub-toggle (Table | + Map) -->
-<div class="section-nav" id="sectionNav" role="tablist" aria-label="Main sections">
+<div style="display:flex;gap:8px;align-items:center;margin-left:auto;flex-wrap:wrap">
+<!-- v4.22.0: Grouped section nav: 4 groups (Discover / Analyze / Plan / Insights) + dynamic sub-pill row -->
+<div class="nav-groups" id="navGroups" role="tablist" aria-label="Section groups">
+<button class="nav-group" data-group="discover" role="tab" aria-selected="true" onclick="setNavGroup('discover')" title="Discover targets (Map, Companies)">Discover<span class="ng-count" aria-hidden="true">2</span></button>
+<button class="nav-group" data-group="analyze" role="tab" aria-selected="false" onclick="setNavGroup('analyze')" title="Analyze targets (Intelligence, Overlap, Network, Compare)">Analyze<span class="ng-count" aria-hidden="true">4</span></button>
+<button class="nav-group" data-group="plan" role="tab" aria-selected="false" onclick="setNavGroup('plan')" title="Plan + produce (Pro-Forma, Brief, Scenarios)">Plan<span class="ng-count" aria-hidden="true">3</span></button>
+<button class="nav-group" data-group="insights" role="tab" aria-selected="false" onclick="setNavGroup('insights')" title="Aggregate insights (Analytics)">Insights<span class="ng-count" aria-hidden="true">1</span></button>
+</div>
+<div class="nav-sub" id="navSub" role="tablist" aria-label="Sections">
+<!-- Populated dynamically by setNavGroup() -->
+</div>
+<!-- Hidden but kept for back-compat: original section-btn elements drive setSection() bindings + activity-feed routing tests. -->
+<div id="sectionNav" style="display:none" role="tablist" aria-label="All sections (hidden)" aria-hidden="true">
 <button class="section-btn" data-section="map" role="tab" aria-selected="false" onclick="setSection('map')" title="Market Map (M)">Market Map</button>
 <button class="section-btn active" data-section="companies" role="tab" aria-selected="true" onclick="setSection('companies')" title="Companies (C)">Companies</button>
 <button class="section-btn" data-section="intelligence" role="tab" aria-selected="false" onclick="setSection('intelligence')" title="Intelligence (I)">Intelligence</button>
@@ -1998,6 +2036,13 @@ function setView(view){
 }
 /* v4.3.0: Top-level section selector. Companies remembers last sub-state via localStorage. */
 function setSection(section){
+  // Normalize aliases
+  let canonical=section;
+  if(section==='intel')canonical='intelligence';
+  else if(section==='pro-forma'||section==='pf')canonical='proforma';
+  else if(section==='charts')canonical='analytics';
+  // v4.22.0: sync grouped nav UI
+  try{if(typeof syncNavToSection==='function')syncNavToSection(canonical)}catch(e){}
   if(section==='map'){setView('map');return}
   if(section==='companies'){
     let sub='both';
@@ -2017,6 +2062,100 @@ function setSection(section){
 /* v4.1.0: Sub-toggle inside Companies section (Table only / + Map). */
 function setCompaniesSub(sub){
   setView(sub==='table'?'table':'both');
+}
+/* === v4.22.0: Grouped section nav (Discover/Analyze/Plan/Insights) === */
+const NAV_GROUPS={
+  discover:{label:'Discover',sections:[
+    {id:'map',label:'Market Map',hint:'M'},
+    {id:'companies',label:'Companies',hint:'C'}
+  ]},
+  analyze:{label:'Analyze',sections:[
+    {id:'intelligence',label:'Intelligence',hint:'I'},
+    {id:'overlap',label:'Overlap',hint:'O'},
+    {id:'network',label:'Network',hint:'N'},
+    {id:'compare',label:'Compare',hint:'X'}
+  ]},
+  plan:{label:'Plan',sections:[
+    {id:'proforma',label:'Pro-Forma',hint:'P'},
+    {id:'brief',label:'Brief',hint:'R'},
+    {id:'scenarios',label:'Scenarios',hint:'S'}
+  ]},
+  insights:{label:'Insights',sections:[
+    {id:'analytics',label:'Analytics',hint:'A'}
+  ]}
+};
+const NAV_LAST_KEY='pi_nav_last';
+function _navSectionToGroup(sectionId){
+  for(let g in NAV_GROUPS){
+    if(NAV_GROUPS[g].sections.some(s=>s.id===sectionId))return g;
+  }
+  return 'discover';
+}
+function setNavGroup(g,initialSectionOverride){
+  if(!NAV_GROUPS[g])return;
+  // Update group buttons visual state
+  document.querySelectorAll('.nav-group').forEach(b=>{
+    let on=b.dataset.group===g;
+    b.classList.toggle('active',on);
+    b.setAttribute('aria-selected',on?'true':'false');
+  });
+  // Build sub-pills for this group
+  let sub=document.getElementById('navSub');
+  if(sub){
+    let last={};try{last=JSON.parse(localStorage.getItem(NAV_LAST_KEY)||'{}')||{}}catch(e){}
+    let target=initialSectionOverride||last[g]||NAV_GROUPS[g].sections[0].id;
+    sub.innerHTML=NAV_GROUPS[g].sections.map(s=>
+      '<button class="nav-sub-btn'+(s.id===target?' active':'')+'" data-section="'+s.id+'" role="tab" aria-selected="'+(s.id===target?'true':'false')+'" onclick="navSubClick(\''+s.id+'\')" title="'+_cmpEsc(s.label)+' ('+s.hint+')">'+_cmpEsc(s.label)+'</button>'
+    ).join('');
+    // Switch to the target section
+    setSection(target);
+    // Persist
+    last[g]=target;try{localStorage.setItem(NAV_LAST_KEY,JSON.stringify(last))}catch(e){}
+  }
+}
+function navSubClick(sectionId){
+  setSection(sectionId);
+  let g=_navSectionToGroup(sectionId);
+  let last={};try{last=JSON.parse(localStorage.getItem(NAV_LAST_KEY)||'{}')||{}}catch(e){}
+  last[g]=sectionId;
+  try{localStorage.setItem(NAV_LAST_KEY,JSON.stringify(last))}catch(e){}
+  // Update active state on sub-pills
+  document.querySelectorAll('#navSub .nav-sub-btn').forEach(b=>{
+    let on=b.dataset.section===sectionId;
+    b.classList.toggle('active',on);
+    b.setAttribute('aria-selected',on?'true':'false');
+  });
+}
+/* Hook: when setSection runs (via shortcut, palette, activity-feed click),
+   sync the grouped nav so the right group + sub-pill highlights. */
+function syncNavToSection(sectionId){
+  let g=_navSectionToGroup(sectionId);
+  // Update group + sub-pills without re-routing
+  document.querySelectorAll('.nav-group').forEach(b=>{
+    let on=b.dataset.group===g;
+    b.classList.toggle('active',on);
+    b.setAttribute('aria-selected',on?'true':'false');
+  });
+  let sub=document.getElementById('navSub');
+  if(sub){
+    // If group changed, rebuild
+    let firstBtn=sub.querySelector('.nav-sub-btn');
+    let curGroup=firstBtn?_navSectionToGroup(firstBtn.dataset.section):null;
+    if(curGroup!==g){
+      sub.innerHTML=NAV_GROUPS[g].sections.map(s=>
+        '<button class="nav-sub-btn'+(s.id===sectionId?' active':'')+'" data-section="'+s.id+'" role="tab" aria-selected="'+(s.id===sectionId?'true':'false')+'" onclick="navSubClick(\''+s.id+'\')" title="'+_cmpEsc(s.label)+' ('+s.hint+')">'+_cmpEsc(s.label)+'</button>'
+      ).join('');
+    } else {
+      sub.querySelectorAll('.nav-sub-btn').forEach(b=>{
+        let on=b.dataset.section===sectionId;
+        b.classList.toggle('active',on);
+        b.setAttribute('aria-selected',on?'true':'false');
+      });
+    }
+  }
+  // Persist
+  let last={};try{last=JSON.parse(localStorage.getItem(NAV_LAST_KEY)||'{}')||{}}catch(e){}
+  last[g]=sectionId;try{localStorage.setItem(NAV_LAST_KEY,JSON.stringify(last))}catch(e){}
 }
 /* Reset map to current filter scope (or continental US) so it isn't stuck zoomed-in on a previously opened company. */
 function resetMapToScope(){
@@ -5637,6 +5776,14 @@ document.addEventListener('DOMContentLoaded',()=>{
   _actUpdateBadge();
   _wlUpdateBadge();
   _densityRestore();
+  // v4.22.0: initialize grouped nav with persisted last-section per group
+  try{
+    let last=JSON.parse(localStorage.getItem('pi_nav_last')||'{}')||{};
+    // Default to companies (existing default)
+    let initialSection=last.discover||'companies';
+    let initialGroup=_navSectionToGroup(initialSection);
+    setNavGroup(initialGroup,initialSection);
+  }catch(e){console.error('[nav init]',e);setNavGroup('discover','companies')}
 });
 
 function loadFromURL(){
