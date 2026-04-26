@@ -8,7 +8,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>U.S. Propane Market Map | Ergon Corporate Development</title>
+<title>Propane Intelligence</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -162,7 +162,7 @@ body{font-family:var(--font-sans);background:var(--light-bg);color:var(--text-pr
 .header .sep{width:1px;height:24px;background:var(--border);margin:0 12px;flex-shrink:0}
 .header .sub{font-size:12px;color:var(--text-secondary);letter-spacing:0;text-transform:none;font-weight:500;white-space:nowrap}
 .header-left{display:flex;align-items:center;flex-shrink:0;gap:10px}
-.header-mark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#7C5CFC,#5B3FD1);display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:700;letter-spacing:-0.5px;font-family:var(--font-sans);flex-shrink:0}
+.header-mark{width:30px;height:30px;border-radius:7px;background:linear-gradient(135deg,#7C5CFC,#5B3FD1);display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:700;letter-spacing:0;font-family:var(--font-sans);flex-shrink:0}
 [data-theme="dark"] .header-mark{background:linear-gradient(135deg,#7C5CFC,#5B3FD1)}
 .header-stats{display:flex;gap:8px;font-size:var(--text-sm);color:var(--text-secondary);align-items:center;flex-shrink:0}
 .header-stats span{display:flex;align-items:center;gap:3px;padding:3px 10px;background:var(--light-bg);border-radius:var(--radius-full);border:1px solid var(--border);font-size:11px;white-space:nowrap}
@@ -424,7 +424,7 @@ table.lt tbody tr.kb-sel{outline:2px solid var(--gold);outline-offset:-2px}
 /* Top nav bar */
 .login-topbar{position:absolute;top:0;left:0;right:0;padding:24px 48px;display:flex;align-items:center;justify-content:space-between;z-index:2}
 .login-brand{display:flex;align-items:center;gap:10px}
-.login-mark{width:28px;height:28px;border-radius:7px;background:linear-gradient(135deg,#7C5CFC,#5B3FD1);display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:700;letter-spacing:-0.5px;font-family:var(--font-sans)}
+.login-mark{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#7C5CFC,#5B3FD1);display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:700;letter-spacing:0;font-family:var(--font-sans)}
 .login-brand-name{font-size:15px;font-weight:600;color:#0A2540;letter-spacing:-0.2px}
 .login-brand-sub{color:#697386;font-weight:400}
 .login-topright{display:flex;align-items:center;gap:24px;font-size:13px;color:#425466}
@@ -1337,8 +1337,8 @@ body:has(.main.view-brief) .pf-bar{display:none!important}
 <!-- Top nav bar -->
 <div class="login-topbar">
 <div class="login-brand">
-<div class="login-mark">E</div>
-<span class="login-brand-name">Ergon <span class="login-brand-sub">Market Intelligence</span></span>
+<div class="login-mark">PI</div>
+<span class="login-brand-name">Propane Intelligence</span>
 </div>
 <div class="login-topright">
 <a href="mailto:corpdev@ergon.com">Support</a>
@@ -1349,8 +1349,8 @@ body:has(.main.view-brief) .pf-bar{display:none!important}
 <!-- Centered card -->
 <div class="login-card-wrap">
 <div class="login-box">
-<h1 class="login-title">Sign in to Ergon</h1>
-<p class="login-sub">Access the U.S. Propane Market Map</p>
+<h1 class="login-title">Sign in</h1>
+<p class="login-sub">Access Propane Intelligence</p>
 <button type="button" class="login-sso" onclick="doLogin()" title="Continue with Google (demo uses local auth)">
 <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
 <path d="M22 12.2c0-.7-.1-1.3-.2-1.9H12v3.8h5.6c-.2 1.2-1 2.3-2 3v2.5h3.3c1.9-1.8 3.1-4.4 3.1-7.4z" fill="#4285F4"/>
@@ -1385,11 +1385,9 @@ Continue with Microsoft
 </div>
 <!-- Page footer strip -->
 <div class="login-page-footer">
-<span>&copy; 2026 Ergon, Inc.</span>
+<span>&copy; 2026 Propane Intelligence</span>
 <a href="#">Privacy</a>
 <a href="#">Terms</a>
-<span style="color:#C1CCD6">&middot;</span>
-<span>SOC 2 Type II &middot; HIPAA-ready</span>
 </div>
 </div>
 <!-- v4.17.0 Command palette -->
@@ -1486,10 +1484,8 @@ Continue with Microsoft
 <!-- ========== MODERN SAAS HEADER ========== -->
 <div class="header">
 <div class="header-left">
-<div class="header-mark" aria-hidden="true">E</div>
-<h1 style="font-family:var(--font-sans);font-size:12px;font-weight:700;letter-spacing:1.2px">ERGON CORPORATE DEVELOPMENT</h1>
-<div class="sep"></div>
-<span class="sub" style="font-weight:500">U.S. Propane Market Map</span>
+<div class="header-mark" aria-hidden="true">PI</div>
+<h1 style="font-family:var(--font-sans);font-size:12px;font-weight:700;letter-spacing:1.2px">PROPANE INTELLIGENCE</h1>
 </div>
 <div class="header-stats">
 <span><b id="hc">0</b> Companies</span>
@@ -1542,7 +1538,7 @@ Continue with Microsoft
 </div>
 </div>
 <!-- SPRINT 6: Print info -->
-<div class="print-info" id="printInfo">U.S. Propane Market Map &mdash; Ergon Corporate Development &mdash; Confidential</div>
+<div class="print-info" id="printInfo">Propane Intelligence &mdash; Confidential</div>
 <!-- SPRINT 8: Mobile tabs -->
 <div class="mobile-tabs" id="mobileTabs" role="tablist">
 <button class="active" role="tab" onclick="setMobileView('table')">Table</button>
@@ -3323,7 +3319,7 @@ function exportDeck(){
   if(platform.length)sections.push('Network Graph');
   if(_scnAll().length)sections.push('Scenarios ('+_scnAll().length+')');
   cover.innerHTML='<div class="eyebrow">Strategic Platform Deck</div>'+
-    '<h1>U.S. Propane Market Intelligence</h1>'+
+    '<h1>Propane Intelligence</h1>'+
     '<div class="sub">Pro-forma rollup briefing &middot; '+new Date().toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'})+'</div>'+
     '<div class="toc"><div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#FFD100;margin-bottom:8px">Contents</div><ul style="margin:0;padding:0">'+
       sections.map(s=>'<li>'+s+'</li>').join('')+
@@ -5214,7 +5210,7 @@ function updateShareMessage(){
   let totalLocs=allCos.reduce((s,c)=>s+c.seLocs,0);
   let ms=marketShare[LL_ID]||{se:0};
   let scenarioName=document.getElementById('shareScenarioName').value||'Pro Forma Scenario';
-  let msg='Hi,\n\nI wanted to share a propane acquisition scenario from the U.S. Propane Market Map tool.\n\n'+
+  let msg='Hi,\n\nI wanted to share a propane acquisition scenario from Propane Intelligence.\n\n'+
     'Scenario: '+scenarioName+'\n'+
     'Platform: Lampton-Love ('+(ll?ll.seLocs:0)+' locations)\n'+
     'Acquisitions: '+acqs.map(c=>c.name+' ('+c.seLocs+' locs)').join(', ')+'\n'+
@@ -5229,7 +5225,7 @@ function sendShareEmail(){
   let recipient=document.getElementById('shareRecipient').value.trim();
   if(shareProvider!=='copy'&&recipient&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recipient)){showToast('Please enter a valid email address');return}
   let msg=document.getElementById('shareMessage').value;
-  let subject='U.S. Propane Market Map — '+scenarioName;
+  let subject='Propane Intelligence — '+scenarioName;
   // Save the scenario first
   let saves=getSaves();
   saves.unshift({name:scenarioName,ids:[...platform],ts:Date.now()});
