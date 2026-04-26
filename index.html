@@ -211,7 +211,7 @@ select.fsel{padding:5px 8px;border:1px solid var(--border);border-radius:var(--r
 .tscroll{flex:1;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent;transition:opacity 0.12s ease}
 /* === SPRINT E: Responsive table layout — percentage widths fit any panel size === */
 table.lt{width:100%;border-collapse:collapse;font-size:11px;table-layout:auto}
-table.lt col.col-eye{width:3%}table.lt col.col-add{width:3%}table.lt col.col-rank{width:3%}
+table.lt col.col-bulk{width:3%}table.lt col.col-eye{width:3%}table.lt col.col-add{width:3%}table.lt col.col-rank{width:3%}
 table.lt col.col-name{width:18%}
 table.lt col.col-type{width:9%}table.lt col.col-locs{width:7%}
 table.lt col.col-prox{width:7%}table.lt col.col-cnty{width:7%}table.lt col.col-total{width:8%}
@@ -228,6 +228,16 @@ table.lt th.sorted .sort-arrow{opacity:1;color:var(--brand)}
 .th-sub{display:block;font-size:9px;font-weight:400;letter-spacing:0;text-transform:none;opacity:0.5;line-height:1;margin-top:2px}
 /* Modern SaaS table rows */
 table.lt td{padding:10px 8px;border-bottom:1px solid var(--border-subtle);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;text-align:center;font-size:var(--text-sm)}
+/* === v4.28.0: Bulk select bar (sticky above the table when rows are selected) === */
+.bulk-bar{display:none;position:sticky;top:0;z-index:30;background:linear-gradient(135deg,#7C5CFC 0%,#5B3FD1 100%);color:#fff;padding:8px 14px;border-radius:var(--radius-md);margin:8px 8px 4px;align-items:center;gap:10px;box-shadow:var(--shadow);flex-wrap:wrap}
+.bulk-bar.is-active{display:flex}
+.bulk-bar .ct{font-weight:700;font-family:var(--font-mono);font-size:13px;background:rgba(255,255,255,.18);padding:3px 9px;border-radius:9px}
+.bulk-bar .lbl{font-size:12px;font-weight:500;letter-spacing:0.2px}
+.bulk-bar button{padding:5px 11px;font-size:11px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.12);color:#fff;border-radius:6px;cursor:pointer;font-family:inherit;font-weight:600;transition:all .12s ease}
+.bulk-bar button:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.5)}
+.bulk-bar button.warn:hover{background:rgba(255,80,80,.4);border-color:rgba(255,120,120,.6)}
+.bulk-bar .spacer{flex:1}
+.bulk-cb,table.lt th input[type=checkbox]{width:14px;height:14px;accent-color:var(--brand)}
 /* v4.20.0: Density toggle — compact mode tightens row padding + font */
 body.density-compact table.lt td{padding:5px 6px;font-size:11px}
 body.density-compact table.lt th{padding:6px 6px;font-size:9.5px}
@@ -1667,15 +1677,26 @@ Continue with Microsoft
 <div class="left">
 <!-- === PRODUCT SPRINT B: Polished League Table header === -->
 <div class="ph"><div style="display:flex;align-items:center;gap:8px"><h2 style="margin:0">League Table</h2><button class="help-btn" onclick="toggleHelp()" title="Scoring methodology &amp; keyboard shortcuts" aria-label="Help and keyboard shortcuts">?</button><button class="help-btn" onclick="toggleSources()" title="View data sources &amp; methodology" aria-label="Data sources" style="font-size:9px;width:auto;padding:0 8px;border-radius:var(--radius-sm)">Sources</button></div><div style="display:flex;align-items:center;gap:10px"><div class="density-toggle" role="group" aria-label="Row density"><button id="densityComfortable" class="is-active" onclick="setDensity('comfortable')" aria-pressed="true" title="Comfortable rows">&#9776;</button><button id="densityCompact" onclick="setDensity('compact')" aria-pressed="false" title="Compact rows">&#8801;</button></div><span class="cnt" id="tc" aria-live="polite">0 companies</span></div></div>
+<!-- v4.28.0: Bulk-select action bar -->
+<div class="bulk-bar" id="bulkBar" role="region" aria-label="Bulk actions">
+<span class="ct" id="bulkCount">0</span>
+<span class="lbl">selected</span>
+<div class="spacer"></div>
+<button onclick="bulkAddToPlatform()" title="Add all selected to platform">+ Add to Platform</button>
+<button onclick="bulkAddToWatchlist()" title="Watch all selected">&#9733; Watch</button>
+<button onclick="bulkAddToCompare()" title="Add to compare (max 4)">&#10696; Compare</button>
+<button onclick="bulkClearSelection()" class="warn" title="Clear selection" aria-label="Clear">&times; Clear</button>
+</div>
 <div class="tscroll" id="tscrollWrap">
 <table class="lt" id="lt">
 <!-- Force column widths with colgroup -->
 <colgroup>
-<col class="col-eye"><col class="col-add"><col class="col-rank"><col class="col-name">
+<col class="col-bulk"><col class="col-eye"><col class="col-add"><col class="col-rank"><col class="col-name">
 <col class="col-type"><col class="col-locs"><col class="col-prox"><col class="col-cnty">
 <col class="col-total"><col class="col-mkt"><col class="col-rev"><col class="col-emp"><col class="col-states">
 </colgroup>
 <thead><tr>
+<th title="Select rows for bulk actions" style="text-align:center;cursor:pointer" onclick="bulkSelectAllVisible(event)"><input type="checkbox" id="bulkSelectAll" aria-label="Select all visible rows" style="margin:0;cursor:pointer" onclick="event.stopPropagation();bulkSelectAllVisible({target:{checked:this.checked}})"></th>
 <th title="Spotlight: isolate this company on the map" style="text-align:center">&#128065;</th>
 <th title="Add to pro forma platform" style="text-align:center">+</th>
 <th title="Rank in current sort order" style="text-align:center">#</th>
@@ -2641,7 +2662,7 @@ function render(){try{
     if(hideEx)activeFilterChips.push('excluded hidden');
     if(hideLL)activeFilterChips.push('Lampton-Love hidden');
     let filterTxt=activeFilterChips.length?'Active filters: '+activeFilterChips.join(' &middot; '):'No active filters — but the table is still empty.';
-    tb.innerHTML='<tr><td colspan="13" style="padding:0"><div class="empty-state" style="padding:48px 20px">'+
+    tb.innerHTML='<tr><td colspan="14" style="padding:0"><div class="empty-state" style="padding:48px 20px">'+
       '<div style="font-size:32px;margin-bottom:12px;color:var(--text-tertiary)">&#128269;</div>'+
       '<div style="font-size:15px;color:var(--text-primary);font-weight:600;margin-bottom:6px">No companies match your filters</div>'+
       '<div style="font-size:11px;color:var(--text-tertiary);margin-bottom:16px">'+filterTxt+'</div>'+
@@ -2670,7 +2691,9 @@ function render(){try{
     }
     /* SPRINT 5: Row hover preview + score tooltips */
     let rowCls=[];if(i===selectedRow)rowCls.push('kb-sel');if(inSpot)rowCls.push('row-spot');if(inPF)rowCls.push('row-pf');
+    let bulkChecked=_bulkSelected.has(c.id);
     return '<tr onclick="op(\''+c.id+'\')" data-id="'+c.id+'" style="'+(c.excluded?'opacity:0.5':'')+'"'+(rowCls.length?' class="'+rowCls.join(' ')+'"':'')+' onmouseenter="showRowPreview(event,\''+c.id+'\')" onmouseleave="hideRowPreview()">'+
+    '<td style="text-align:center;padding:4px"><input type="checkbox" class="bulk-cb"'+(bulkChecked?' checked':'')+(canAdd||isLL?'':' disabled')+' onclick="event.stopPropagation();bulkToggle(\''+c.id+'\',this.checked)" aria-label="Select '+esc(c.name)+'" style="margin:0;cursor:pointer"></td>'+
     '<td><button class="spot-btn'+(inSpot?' on':'')+'" onclick="toggleSpotlight(\''+c.id+'\',event)" title="Spotlight on map" aria-label="Spotlight '+esc(c.name)+'">&#128065;</button></td>'+
     '<td>'+(canAdd?'<button class="add-btn'+(inPF?' added':'')+'" onclick="event.stopPropagation();togglePlatform(\''+c.id+'\')" title="'+(inPF?'Remove from':'Add to')+' platform" aria-label="'+(inPF?'Remove':'Add')+' '+esc(c.name)+'">'+(inPF?'&#10003;':'+')+'</button>':(isLL?'<span style="color:var(--gold);font-size:11px" aria-label="Lampton Love platform company">&#9733;</span>':''))+'</td>'+
     '<td class="num" style="color:var(--slate);font-size:10px">'+(i+1)+'</td>'+
@@ -2685,10 +2708,12 @@ function render(){try{
     '<td class="num" style="font-size:10px;color:var(--green)">'+(c.estRevenue?'$'+c.estRevenue+'M':'\u2014')+'</td>'+
     '<td class="num" style="font-size:10px">'+(c.employeeCount||'\u2014')+'</td>'+
     '<td style="font-size:9px;color:var(--slate);max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="'+c.states.join(', ')+'">'+c.states.slice(0,6).join(', ')+(c.states.length>6?' +' +(c.states.length-6):'')+'</td>'+
-  '</tr>'}).join('')+(totalCompanies>TABLE_LIMIT?'<tr><td colspan="13" style="text-align:center;padding:12px"><button onclick="document.getElementById(\'tb\').dataset.showAll=\'1\';render()" style="background:var(--navy);color:#fff;border:none;padding:8px 24px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600">Show all '+totalCompanies+' companies ('+(totalCompanies-TABLE_LIMIT)+' more)</button></td></tr>':'');
+  '</tr>'}).join('')+(totalCompanies>TABLE_LIMIT?'<tr><td colspan="14" style="text-align:center;padding:12px"><button onclick="document.getElementById(\'tb\').dataset.showAll=\'1\';render()" style="background:var(--navy);color:#fff;border:none;padding:8px 24px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600">Show all '+totalCompanies+' companies ('+(totalCompanies-TABLE_LIMIT)+' more)</button></td></tr>':'');
   // Show/hide map hint
   let hint=document.getElementById('mapHint');
   if(hint)hint.style.display=(spotlight.size===0&&companies.length>0)?'block':'none';
+  // v4.28.0: Sync bulk-bar after re-render (rows may have changed via filter/search/sort)
+  try{_bulkUpdateBar()}catch(e){}
 }catch(e){console.error('[render]',e);showToast('Display error — try refreshing')}}
 
 // === MAP ===
@@ -3260,6 +3285,96 @@ function zoomToLoc(lat,lng,name){
 }
 
 // === PRO FORMA ===
+/* === v4.28.0: Bulk select state + actions === */
+let _bulkSelected=new Set();
+function _bulkUpdateBar(){
+  let bar=document.getElementById('bulkBar');if(!bar)return;
+  let n=_bulkSelected.size;
+  bar.classList.toggle('is-active',n>0);
+  let ct=document.getElementById('bulkCount');if(ct)ct.textContent=n;
+  // Sync header checkbox indeterminate state
+  let head=document.getElementById('bulkSelectAll');if(head){
+    let visible=Array.from(document.querySelectorAll('#tb tr[data-id] input.bulk-cb:not([disabled])'));
+    let total=visible.length,checked=visible.filter(c=>c.checked).length;
+    head.checked=total>0&&checked===total;
+    head.indeterminate=checked>0&&checked<total;
+  }
+}
+function bulkToggle(id,checked){
+  if(checked)_bulkSelected.add(id);
+  else _bulkSelected.delete(id);
+  _bulkUpdateBar();
+}
+function bulkSelectAllVisible(ev){
+  let target=ev&&ev.target?ev.target:null;
+  let setChecked;
+  if(target&&'checked' in target){setChecked=!!target.checked}
+  else{
+    // Clicked the th cell — flip based on current state
+    let head=document.getElementById('bulkSelectAll');
+    setChecked=!head.checked;head.checked=setChecked;
+  }
+  document.querySelectorAll('#tb tr[data-id] input.bulk-cb:not([disabled])').forEach(cb=>{
+    cb.checked=setChecked;
+    let id=cb.closest('tr').dataset.id;
+    if(setChecked)_bulkSelected.add(id);else _bulkSelected.delete(id);
+  });
+  _bulkUpdateBar();
+}
+function bulkClearSelection(){
+  _bulkSelected.clear();
+  document.querySelectorAll('#tb input.bulk-cb').forEach(cb=>{cb.checked=false});
+  let head=document.getElementById('bulkSelectAll');if(head){head.checked=false;head.indeterminate=false}
+  _bulkUpdateBar();
+}
+function bulkAddToPlatform(){
+  if(_bulkSelected.size===0){showToast('Nothing selected');return}
+  let added=0,skipped=0;
+  _bulkSelected.forEach(id=>{
+    if(id===LL_ID){skipped++;return}
+    if(platform.includes(id)){skipped++;return}
+    platform.push(id);added++;
+    let c=DATA.find(x=>x.id===id);if(c)_actLog('platform_add',c.name,{id:c.id});
+  });
+  if(added>0){computeProxScores();updatePF();render();updateMap()}
+  showToast('Added '+added+' to platform'+(skipped>0?' ('+skipped+' skipped)':''));
+  bulkClearSelection();
+}
+function bulkAddToWatchlist(){
+  if(_bulkSelected.size===0){showToast('Nothing selected');return}
+  let added=0,skipped=0;
+  _bulkSelected.forEach(id=>{
+    if(id===LL_ID){skipped++;return}
+    if(_wlHas(id)){skipped++;return}
+    _wlAdd(id);added++;
+    let c=DATA.find(x=>x.id===id);if(c)_actLog('watchlist_add',c.name,{id:c.id});
+  });
+  if(added>0&&typeof render==='function')render();
+  showToast('Added '+added+' to watchlist'+(skipped>0?' ('+skipped+' already watched)':''));
+  bulkClearSelection();
+}
+function bulkAddToCompare(){
+  if(_bulkSelected.size===0){showToast('Nothing selected');return}
+  let added=0,skipped=0;
+  let ids=Array.from(_bulkSelected);
+  for(let id of ids){
+    if(compareIds.length>=CMP_MAX){skipped++;continue}
+    if(compareIds.includes(id)){skipped++;continue}
+    let c=DATA.find(x=>x.id===id);if(!c)continue;
+    compareIds.push(id);added++;
+    _actLog('compare_add',c.name,{id:c.id});
+  }
+  if(added>0){
+    _cmpPersist();
+    let main=document.getElementById('mainArea');
+    if(main&&main.classList.contains('view-compare'))renderCompare();
+  }
+  let msg='Added '+added+' to compare';
+  if(skipped>0)msg+=' ('+skipped+' skipped — limit '+CMP_MAX+')';
+  showToast(msg);
+  bulkClearSelection();
+}
+
 function togglePlatform(id){try{
   if(id===LL_ID)return;
   let c=DATA.find(x=>x.id===id);
