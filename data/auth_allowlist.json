@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "description": "Propane Intelligence — authorized email addresses. Lowercase only. Edit this file + commit to grant or revoke access. Domains in 'allowDomains' grant blanket access to anyone with @<domain>.",
+  "generatedAt": "2026-04-26T00:00:00Z",
+  "allowDomains": [
+    "ergon.com"
+  ],
+  "allowEmails": [
+    "daniel.wylie.edwards@gmail.com"
+  ],
+  "demoMode": {
+    "enabled": true,
+    "demoEmails": ["demo", "admin"],
+    "note": "Demo accounts bypass OAuth. Disable in production by setting enabled:false."
+  }
+}

@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
 <!-- tippy.js removed for performance; using native Leaflet tooltips -->
+<!-- v4.30.0: Google Identity Services -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 <style>
 /* === SPRINT 9: font-display:swap for faster load === */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
@@ -977,6 +979,12 @@ body:has(.main.view-scenarios) .pf-bar{display:none!important}
 .skl-line{display:block;height:11px;margin:6px 0}
 .skl-card{padding:10px 12px;border:1px solid var(--border-subtle);border-radius:var(--radius-md);background:var(--light-bg);margin-bottom:8px}
 [data-theme="dark"] .skl{background:linear-gradient(90deg,#1a2534 0%,#0f1722 50%,#1a2534 100%);background-size:200% 100%}
+/* === v4.30.0: Authenticated user chip in top-bar === */
+.auth-chip{display:inline-flex;align-items:center;gap:7px;padding:3px 10px 3px 3px;border:1px solid var(--border-subtle);border-radius:9999px;background:var(--white);color:var(--text-secondary);font-size:11px;font-weight:500;line-height:1.2;cursor:default;max-width:180px}
+.auth-avatar{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#7C5CFC 0%,#5B3FD1 100%);background-size:cover;background-position:center;color:#fff;font-size:10px;font-weight:700;display:inline-flex;align-items:center;justify-content:center}
+.auth-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+[data-theme="dark"] .auth-chip{background:#0e1620;border-color:#1f2a36;color:#cbd5e0}
+@media (max-width:760px){.auth-chip .auth-name{display:none}.auth-chip{padding:3px;border:none}}
 /* === v4.13.0: Activity feed (top-bar bell + dropdown panel) === */
 .act-wrap{position:relative;display:inline-flex;align-items:center}
 .act-btn{position:relative;width:34px;height:30px;padding:0;border:1px solid var(--border-subtle);background:var(--white);border-radius:var(--radius-md);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:var(--text-secondary);transition:all .12s ease}
@@ -1391,7 +1399,9 @@ body:has(.main.view-brief) .pf-bar{display:none!important}
 <div class="login-box">
 <h1 class="login-title">Sign in</h1>
 <p class="login-sub">Access Propane Intelligence</p>
-<button type="button" class="login-sso" onclick="doLogin()" title="Continue with Google (demo uses local auth)">
+<!-- v4.30.0: Google Identity Services real button slot — falls back to email/password if not configured -->
+<div id="googleSigninSlot" style="display:flex;justify-content:center;margin-bottom:8px;min-height:44px"></div>
+<button type="button" class="login-sso" id="googleSigninFallback" onclick="doLogin()" title="Continue with Google (configure AUTH_GOOGLE_CLIENT_ID in index.html)">
 <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
 <path d="M22 12.2c0-.7-.1-1.3-.2-1.9H12v3.8h5.6c-.2 1.2-1 2.3-2 3v2.5h3.3c1.9-1.8 3.1-4.4 3.1-7.4z" fill="#4285F4"/>
 <path d="M12 22c2.7 0 5-1 6.7-2.4l-3.3-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3v2.6A10 10 0 0 0 12 22z" fill="#34A853"/>
@@ -1584,6 +1594,7 @@ Continue with Microsoft
 </div>
 <button class="logout-btn" onclick="exportCSV()" title="Export CSV">&#8595; Export</button>
 <button class="logout-btn" onclick="resetApp()" title="Reset">&#x21bb; Reset</button>
+<div class="auth-chip" id="authUserChip" style="display:none" title=""></div>
 <button class="logout-btn" onclick="doLogout()">Sign Out</button>
 </div>
 </div>
@@ -4241,6 +4252,8 @@ function _actLog(kind,text,meta){
   if(!ACT_KIND_META[kind])return;
   let entry={id:_actGenId(),ts:Date.now(),kind:kind,text:String(text||'')};
   if(meta&&typeof meta==='object')entry.meta=meta;
+  // v4.30.0: attribute event to current user when available
+  try{let u=_authGetCurrentUser&&_authGetCurrentUser();if(u){entry.user=u.email}}catch(e){}
   let arr=_actAll();arr.unshift(entry);_actPersist(arr);
   _actUpdateBadge();
   // If panel open, refresh it
@@ -4291,10 +4304,12 @@ function _actRenderPanel(){
     } else if(e.kind==='platform_add'||e.kind==='platform_remove'){
       click=' onclick="setSection(\'proforma\');toggleActivityPanel()" style="cursor:pointer"';
     }
+    let metaLine=_cmpEsc(m.label)+' · '+_actAgo(e.ts);
+    if(e.user)metaLine+=' · '+_cmpEsc(e.user.split('@')[0]);
     h+='<div class="act-item"'+click+'>'+
       '<span class="act-ico" style="background:'+m.color+'" aria-hidden="true">'+m.icon+'</span>'+
       '<div class="act-body"><div class="act-text">'+_cmpEsc(e.text)+'</div>'+
-      '<div class="act-meta">'+_cmpEsc(m.label)+' · '+_actAgo(e.ts)+'</div></div>'+
+      '<div class="act-meta">'+metaLine+'</div></div>'+
       '</div>';
   });
   body.innerHTML=h;
@@ -5248,20 +5263,189 @@ function exportCSV(){
   showToast('Exported '+companies.length+' companies to CSV');
 }
 
-// === LOGIN ===
-function doLogin(){
+// === v4.30.0: Real authentication ===
+// Configuration (replace AUTH_GOOGLE_CLIENT_ID with a real client_id from
+// Google Cloud Console > APIs & Services > Credentials > OAuth 2.0 Client ID
+// > Authorized JavaScript origins must include your GitHub Pages URL).
+const AUTH_GOOGLE_CLIENT_ID = 'REPLACE_WITH_GOOGLE_OAUTH_CLIENT_ID';
+const AUTH_SESSION_KEY = 'pi_session';
+const AUTH_USER_KEY = 'pi_user';
+const AUTH_SESSION_HOURS = 8;  // session expires after N hours of inactivity
+let AUTH_ALLOWLIST = null;     // populated lazily from data/auth_allowlist.json
+
+async function _authLoadAllowlist(){
+  if(AUTH_ALLOWLIST)return AUTH_ALLOWLIST;
+  try{
+    let r=await fetch('data/auth_allowlist.json?_='+Date.now(),{cache:'no-store'});
+    if(r.ok){AUTH_ALLOWLIST=await r.json()}
+  }catch(e){console.error('[auth] allowlist fetch failed',e)}
+  if(!AUTH_ALLOWLIST){
+    // Failsafe — let demo through but warn
+    AUTH_ALLOWLIST={allowDomains:['ergon.com'],allowEmails:[],demoMode:{enabled:true,demoEmails:['demo','admin']}};
+  }
+  return AUTH_ALLOWLIST;
+}
+function _authIsEmailAllowed(email){
+  if(!AUTH_ALLOWLIST)return false;
+  let e=String(email||'').trim().toLowerCase();
+  if(!e)return false;
+  // Domain check
+  let domains=(AUTH_ALLOWLIST.allowDomains||[]).map(d=>String(d).toLowerCase());
+  if(domains.some(d=>e.endsWith('@'+d)))return true;
+  // Email check
+  let emails=(AUTH_ALLOWLIST.allowEmails||[]).map(d=>String(d).toLowerCase());
+  if(emails.includes(e))return true;
+  return false;
+}
+function _authIsDemoAllowed(email,pass){
+  if(!AUTH_ALLOWLIST||!AUTH_ALLOWLIST.demoMode||!AUTH_ALLOWLIST.demoMode.enabled)return false;
+  let demoEmails=(AUTH_ALLOWLIST.demoMode.demoEmails||[]).map(d=>String(d).toLowerCase());
+  let e=String(email||'').trim().toLowerCase();
+  // demo: any password OK; admin: pass must be 'admin'
+  if(e==='demo'&&demoEmails.includes('demo'))return true;
+  if(e==='admin'&&demoEmails.includes('admin')&&pass==='admin')return true;
+  return false;
+}
+function _authStartSession(user){
+  // user = {email, name, picture?, provider, sub?}
+  let session={
+    user:user,
+    startedAt:Date.now(),
+    expiresAt:Date.now()+AUTH_SESSION_HOURS*3600*1000,
+  };
+  try{
+    sessionStorage.setItem(AUTH_SESSION_KEY,JSON.stringify(session));
+    sessionStorage.setItem(AUTH_USER_KEY,JSON.stringify(user));
+    sessionStorage.setItem('propane_auth','1'); // back-compat
+  }catch(e){console.error('[auth] session save',e)}
+  document.getElementById('loginOverlay').style.display='none';
+  let displayName=user.name||user.email.split('@')[0];
+  showToast('Welcome, '+esc(displayName));
+  _actLog('platform_add','Sign-in: '+user.email,{provider:user.provider}); // reuse activity feed
+  // Refresh news on login
+  try{_intelLoadStarted=false;_intelLoad({force:true})}catch(e){}
+  // Show profile chip
+  _authRenderUserChip();
+}
+function _authGetCurrentUser(){
+  try{
+    let raw=sessionStorage.getItem(AUTH_SESSION_KEY);
+    if(!raw)return null;
+    let s=JSON.parse(raw);
+    if(!s||!s.user)return null;
+    if(s.expiresAt&&Date.now()>s.expiresAt){
+      _authSignOut(false);
+      return null;
+    }
+    return s.user;
+  }catch(e){return null}
+}
+function _authRenewSession(){
+  // Slide expiresAt forward on user interaction (no more than once per minute to avoid storage churn)
+  try{
+    let raw=sessionStorage.getItem(AUTH_SESSION_KEY);
+    if(!raw)return;
+    let s=JSON.parse(raw);
+    if(!s||!s.user||!s.expiresAt)return;
+    let now=Date.now();
+    if(now>s.expiresAt){_authSignOut(false);return}
+    let renewIn=AUTH_SESSION_HOURS*3600*1000;
+    let newExpiry=now+renewIn;
+    if(newExpiry-s.expiresAt<60000)return; // throttle to 1/min
+    s.expiresAt=newExpiry;
+    sessionStorage.setItem(AUTH_SESSION_KEY,JSON.stringify(s));
+  }catch(e){}
+}
+// Hook session renewal into common UI events
+['click','keydown'].forEach(ev=>document.addEventListener(ev,_authRenewSession,{passive:true,capture:true}));
+function _authRenderUserChip(){
+  let user=_authGetCurrentUser();
+  let chip=document.getElementById('authUserChip');
+  if(!chip)return;
+  if(!user){chip.style.display='none';return}
+  chip.style.display='';
+  let initial=(user.name||user.email||'?').trim().charAt(0).toUpperCase();
+  chip.innerHTML='<span class="auth-avatar"'+(user.picture?' style="background-image:url(\''+_cmpEsc(user.picture)+'\')"':'')+'>'+(user.picture?'':_cmpEsc(initial))+'</span>'+
+    '<span class="auth-name">'+_cmpEsc(user.name||user.email)+'</span>';
+  chip.title=user.email+' · '+user.provider+' · session expires '+new Date(JSON.parse(sessionStorage.getItem(AUTH_SESSION_KEY)).expiresAt).toLocaleString();
+}
+function _authSignOut(toast){
+  try{sessionStorage.removeItem(AUTH_SESSION_KEY);sessionStorage.removeItem(AUTH_USER_KEY);sessionStorage.removeItem('propane_auth')}catch(e){}
+  if(toast!==false)showToast('Signed out');
+  document.getElementById('loginOverlay').style.display='flex';
+  _authRenderUserChip();
+  // Sign out of Google session if loaded
+  try{if(window.google&&google.accounts&&google.accounts.id)google.accounts.id.disableAutoSelect()}catch(e){}
+}
+// JWT decoder (no signature verification — we trust the Google Identity callback wrapper which is HTTPS+CORS-protected)
+function _authDecodeJWT(token){
+  try{
+    let parts=token.split('.');
+    if(parts.length!==3)return null;
+    let b64=parts[1].replace(/-/g,'+').replace(/_/g,'/');
+    while(b64.length%4)b64+='=';
+    return JSON.parse(decodeURIComponent(escape(atob(b64))));
+  }catch(e){console.error('[auth] jwt decode',e);return null}
+}
+async function _authHandleGoogle(response){
+  await _authLoadAllowlist();
+  let token=response&&response.credential;
+  if(!token){showToast('Google sign-in failed');return}
+  let payload=_authDecodeJWT(token);
+  if(!payload||!payload.email){
+    document.getElementById('loginErr').textContent='Sign-in failed: invalid token';
+    return;
+  }
+  let email=String(payload.email).toLowerCase();
+  if(!_authIsEmailAllowed(email)){
+    document.getElementById('loginErr').textContent=email+' is not on the access list. Contact your admin.';
+    return;
+  }
+  _authStartSession({
+    email:email,
+    name:payload.name||email.split('@')[0],
+    picture:payload.picture||null,
+    provider:'google',
+    sub:payload.sub
+  });
+}
+async function _authInitGoogle(){
+  if(!window.google||!google.accounts||!google.accounts.id){
+    setTimeout(_authInitGoogle,500);return;
+  }
+  if(AUTH_GOOGLE_CLIENT_ID==='REPLACE_WITH_GOOGLE_OAUTH_CLIENT_ID'){
+    // Not configured yet — leave the button as a passthrough that uses email/password
+    return;
+  }
+  google.accounts.id.initialize({
+    client_id:AUTH_GOOGLE_CLIENT_ID,
+    callback:_authHandleGoogle,
+    auto_select:false,
+    cancel_on_tap_outside:true
+  });
+  // Render the official Google button into the login-sso slot if user hasn't customized
+  let host=document.getElementById('googleSigninSlot');
+  if(host)google.accounts.id.renderButton(host,{theme:'outline',size:'large',text:'continue_with',shape:'rectangular',logo_alignment:'left',width:340});
+}
+window.handleGoogleSignIn=_authHandleGoogle; // expose so HTML data-callback can find it
+
+async function doLogin(){
+  await _authLoadAllowlist();
   let now=Date.now();
   if(now<loginLockUntil){return}
   let email=document.getElementById('loginEmail').value.trim();
   let pass=document.getElementById('loginPass').value;
   if(!email||!pass){document.getElementById('loginErr').textContent='Please enter email and password';return}
-  if(email.endsWith('@ergon.com')||email==='demo'||(email==='admin'&&pass==='admin')){
+  let okDemo=_authIsDemoAllowed(email,pass);
+  let okEmail=_authIsEmailAllowed(email);
+  if(okDemo||okEmail){
     loginFailCount=0;
-    document.getElementById('loginOverlay').style.display='none';
-    sessionStorage.setItem('propane_auth','1');
-    showToast('Welcome, '+esc(email.split('@')[0]));
-    // v4.23.0: refresh news + signals on login (force-bypass once-only guard)
-    try{_intelLoadStarted=false;_intelLoad({force:true})}catch(e){console.error('[login refresh]',e)}
+    _authStartSession({
+      email:okDemo?email:email.toLowerCase(),
+      name:email.split('@')[0],
+      picture:null,
+      provider:okDemo?'demo':'email'
+    });
   } else {
     loginFailCount++;
     if(loginFailCount>=3){
@@ -5276,7 +5460,7 @@ function doLogin(){
         document.getElementById('loginErr').textContent='Too many attempts. Wait '+remaining+'s';
       },1000);
     } else {
-      document.getElementById('loginErr').textContent='Access restricted to authorized personnel';
+      document.getElementById('loginErr').textContent='Access restricted — '+email+' is not on the allowlist.';
     }
   }
 }
@@ -5342,12 +5526,11 @@ function toggleSidebar(){
   setTimeout(function(){if(map)map.invalidateSize()},300);
 }
 function doLogout(){
-  sessionStorage.removeItem('propane_auth');
-  document.getElementById('loginOverlay').style.display='flex';
+  // v4.30.0: Use auth helper for consistent cleanup
   document.getElementById('loginEmail').value='';
   document.getElementById('loginPass').value='';
   document.getElementById('loginErr').textContent='';
-  showToast('Signed out');
+  _authSignOut();
 }
 
 function updateSavedCount(){
@@ -6165,8 +6348,14 @@ function releaseTrap(container){
 // === INIT ===
 window.addEventListener('load',async()=>{
   document.documentElement.setAttribute('data-theme','light');
-  let isAuthed=sessionStorage.getItem('propane_auth')==='1';
+  // v4.30.0: Real auth — load allowlist, restore session, init Google
+  await _authLoadAllowlist();
+  let user=_authGetCurrentUser();
+  let isAuthed=!!user;
   if(isAuthed)document.getElementById('loginOverlay').style.display='none';
+  _authRenderUserChip();
+  // Initialize Google Sign-In (waits for the gsi script to load)
+  try{_authInitGoogle()}catch(e){console.error('[auth] google init',e)}
   // v4.23.0: kick off intel fetch immediately if already authed
   if(isAuthed){try{setTimeout(()=>{_intelLoad({force:true})},300)}catch(e){}}
   // Load data from external JSON files
