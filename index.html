@@ -3719,6 +3719,7 @@ function renderBrief(){
     '<div class="actions">'+
     '<button class="primary" onclick="briefPrint()" title="Print or save as PDF">&#128424; Print / PDF</button>'+
     '<button onclick="exportDeck()" title="Print Brief + Compare + Overlap + Network + Scenarios as one deck">&#128196; Export Deck</button>'+
+    '<button onclick="copyShareURL()" title="Copy a shareable link to this view (platform + filters)">&#128279; Copy Link</button>'+
     '<button onclick="briefEmail()" title="Email summary">&#9993; Email</button>'+
     '<button onclick="setSection(\'companies\')" title="Browse companies">&#43; Add targets</button>'+
     '</div></div>';
@@ -4337,7 +4338,9 @@ const CP_ACTIONS=[
   {label:'Clear activity log',ico:'⎚',color:'#697386',run:()=>{_actClear()}},
   {label:'Print Brief',ico:'⎙',color:'#324663',run:()=>{setSection('brief');setTimeout(()=>briefPrint(),200)}},
   {label:'Open keyboard shortcuts',ico:'?',color:'#5B8DEF',run:()=>{toggleHelp()}},
-  {label:'Toggle density (comfortable / compact)',ico:'≡',color:'#697386',run:()=>{setDensity(document.body.classList.contains('density-compact')?'comfortable':'compact');showToast('Density: '+(document.body.classList.contains('density-compact')?'compact':'comfortable'))}}
+  {label:'Toggle density (comfortable / compact)',ico:'≡',color:'#697386',run:()=>{setDensity(document.body.classList.contains('density-compact')?'comfortable':'compact');showToast('Density: '+(document.body.classList.contains('density-compact')?'compact':'comfortable'))}},
+  {label:'Copy shareable link',ico:'⌘',color:'#7C5CFC',run:()=>{copyShareURL()}},
+  {label:'Refresh news feed',ico:'↻',color:'#5B8DEF',run:()=>{_intelRefresh()}}
 ];
 function _cpFuzzy(query,text){
   if(!query)return {score:0,matches:[]};
@@ -5004,6 +5007,7 @@ function renderScenarios(){
             '<button onclick="scnEdit(\''+s.id+'\')" title="Rename / edit description" aria-label="Edit scenario">&#9998; Edit</button>'+
             '<button class="iconbtn" onclick="scnTogglePin(\''+s.id+'\')" title="'+(s.pinned?'Unpin':'Pin to top')+'" aria-label="'+(s.pinned?'Unpin scenario':'Pin scenario to top')+'" aria-pressed="'+(s.pinned?'true':'false')+'">'+(s.pinned?'&#9733;':'&#9734;')+'</button>'+
             '<button class="iconbtn" onclick="scnDuplicate(\''+s.id+'\')" title="Duplicate" aria-label="Duplicate scenario">&#10063;</button>'+
+            '<button class="iconbtn" onclick="shareScenarioById(\''+s.id+'\')" title="Copy shareable link" aria-label="Copy shareable link">&#128279;</button>'+
             '<button class="iconbtn" onclick="scnExportOne(\''+s.id+'\')" title="Export as JSON" aria-label="Export scenario as JSON">&#8595;</button>'+
             '<button class="iconbtn danger" onclick="scnPromptDelete(\''+s.id+'\')" title="Delete" aria-label="Delete scenario">&#128465;</button>'+
           '</div>')+
@@ -6019,12 +6023,124 @@ document.addEventListener('DOMContentLoaded',()=>{
   }catch(e){console.error('[nav init]',e);setNavGroup('discover','companies')}
 });
 
+/* === v4.29.0: Share scenario via URL — query-string with platform+filters+section === */
+function buildShareURL(opts){
+  // opts: {includeFilters, includeSection} — both default true
+  opts=opts||{};
+  let p=new URLSearchParams();
+  if(platform.length>0)p.set('p',platform.join(','));
+  if(opts.includeFilters!==false){
+    if(stateFilter.size>0)p.set('s',[...stateFilter].sort().join(','));
+    if(ownerFilter.size>0)p.set('o',[...ownerFilter].sort().join(','));
+    if(ctFilter.size>0)p.set('t',[...ctFilter].sort().join(','));
+    if(searchQuery)p.set('q',searchQuery);
+    if(hideEx)p.set('hx','1');
+    if(hideLL)p.set('hl','1');
+  }
+  if(opts.includeSection!==false){
+    let main=document.getElementById('mainArea');
+    let cls=main?main.className:'';
+    let sec='';
+    if(cls.includes('view-brief'))sec='brief';
+    else if(cls.includes('view-overlap'))sec='overlap';
+    else if(cls.includes('view-network'))sec='network';
+    else if(cls.includes('view-compare'))sec='compare';
+    else if(cls.includes('view-scenarios'))sec='scenarios';
+    else if(cls.includes('view-charts'))sec='analytics';
+    else if(cls.includes('view-intel'))sec='intelligence';
+    else if(cls.includes('view-proforma'))sec='proforma';
+    else if(cls.includes('view-map'))sec='map';
+    if(sec)p.set('v',sec);
+  }
+  let qs=p.toString();
+  return window.location.origin+window.location.pathname+(qs?'?'+qs:'');
+}
+function copyShareURL(opts){
+  let url=buildShareURL(opts);
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(()=>{
+      showToast('Link copied to clipboard');
+    }).catch(()=>_copyShareURLFallback(url));
+  } else {_copyShareURLFallback(url)}
+}
+function _copyShareURLFallback(url){
+  let ta=document.createElement('textarea');ta.value=url;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');showToast('Link copied to clipboard')}
+  catch(e){prompt('Copy this link:',url)}
+  finally{document.body.removeChild(ta)}
+}
+function shareScenarioById(id){
+  // Build URL for a saved scenario (independent of current platform)
+  let arr=_scnAll();let s=arr.find(x=>x.id===id);if(!s){showToast('Scenario not found');return}
+  let p=new URLSearchParams();
+  if(s.ids&&s.ids.length)p.set('p',s.ids.join(','));
+  if(s.filters){
+    if(s.filters.state&&s.filters.state.length)p.set('s',s.filters.state.join(','));
+    if(s.filters.ownership&&s.filters.ownership.length)p.set('o',s.filters.ownership.join(','));
+    if(s.filters.ct&&s.filters.ct.length)p.set('t',s.filters.ct.join(','));
+    if(s.filters.search)p.set('q',s.filters.search);
+    if(s.filters.hideEx)p.set('hx','1');
+    if(s.filters.hideLL)p.set('hl','1');
+  }
+  p.set('v','brief');
+  if(s.name)p.set('n',s.name);
+  let url=window.location.origin+window.location.pathname+'?'+p.toString();
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(()=>showToast('Link copied: '+s.name)).catch(()=>_copyShareURLFallback(url));
+  } else {_copyShareURLFallback(url)}
+  _actLog('scenario_load','Shared link: '+s.name,{id:s.id});
+}
 function loadFromURL(){
+  // v4.29.0: Support both legacy #pf=... hash AND new ?p=...&s=...&v=... query string
+  let urlObj=null;
+  try{urlObj=new URL(window.location.href)}catch(e){return}
+  let qp=urlObj.searchParams;
   let hash=window.location.hash;
-  if(!hash||!hash.startsWith('#pf='))return;
-  let ids=hash.substring(4).split(',').filter(Boolean);
-  ids.forEach(id=>{if(DATA.find(c=>c.id===id)&&!platform.includes(id))platform.push(id)});
-  if(platform.length>0){computeProxScores();updatePF();render();updateMap();showToast('Loaded shared selection ('+platform.length+' companies)')}
+  let pIds=[],sect=null,scenarioName=null;
+  let filters={state:null,owner:null,ct:null,search:null,hideEx:false,hideLL:false};
+  if(qp.has('p')){
+    pIds=qp.get('p').split(',').filter(Boolean);
+    if(qp.has('s'))filters.state=qp.get('s').split(',').filter(Boolean);
+    if(qp.has('o'))filters.owner=qp.get('o').split(',').filter(Boolean);
+    if(qp.has('t'))filters.ct=qp.get('t').split(',').filter(Boolean);
+    if(qp.has('q'))filters.search=qp.get('q');
+    if(qp.get('hx')==='1')filters.hideEx=true;
+    if(qp.get('hl')==='1')filters.hideLL=true;
+    if(qp.has('v'))sect=qp.get('v');
+    if(qp.has('n'))scenarioName=qp.get('n');
+  } else if(hash&&hash.startsWith('#pf=')){
+    pIds=hash.substring(4).split(',').filter(Boolean);
+  } else {
+    return; // nothing to load
+  }
+  // Apply platform
+  let added=0;
+  pIds.forEach(id=>{if(DATA.find(c=>c.id===id)&&!platform.includes(id)){platform.push(id);added++}});
+  // Apply filters
+  if(filters.state){stateFilter=new Set(filters.state)}
+  if(filters.owner){ownerFilter=new Set(filters.owner)}
+  if(filters.ct){ctFilter=new Set(filters.ct)}
+  if(filters.search!=null){searchQuery=filters.search;let si=document.getElementById('si');if(si)si.value=searchQuery}
+  if(filters.hideEx)hideEx=true;
+  if(filters.hideLL)hideLL=true;
+  // Sync UI state
+  if(filters.state||filters.owner||filters.ct||filters.search!=null||filters.hideEx||filters.hideLL){
+    try{if(typeof updateFilterBar==='function')updateFilterBar()}catch(e){}
+    try{if(typeof updateSidebarChips==='function')updateSidebarChips()}catch(e){}
+    try{document.querySelectorAll('#statePills .state-pill').forEach(p=>{if(p.dataset.st&&p.dataset.st!=='ALL')p.classList.toggle('on',stateFilter.has(p.dataset.st))})}catch(e){}
+    try{document.querySelectorAll('#ownerPills .state-pill').forEach(p=>{if(p.dataset.ow&&p.dataset.ow!=='ALL')p.classList.toggle('on',ownerFilter.has(p.dataset.ow))})}catch(e){}
+    try{document.querySelectorAll('#ctPills .state-pill').forEach(p=>{if(p.dataset.ct&&p.dataset.ct!=='ALL')p.classList.toggle('on',ctFilter.has(p.dataset.ct))})}catch(e){}
+  }
+  if(added>0||filters.state||filters.owner||filters.ct||filters.search){
+    computeProxScores();updatePF();render();updateMap();
+    let msg='Loaded shared scenario';
+    if(scenarioName)msg+=': '+scenarioName;
+    else if(added>0)msg+=' ('+added+' compan'+(added===1?'y':'ies')+')';
+    showToast(msg);
+  }
+  // Switch to requested section
+  if(sect&&typeof setSection==='function'){setTimeout(()=>setSection(sect),200)}
 }
 
 /* === SPRINT 2: Focus trap utility === */
