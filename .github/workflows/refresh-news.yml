@@ -1,0 +1,58 @@
+name: Refresh news + signals feeds
+
+on:
+  schedule:
+    # Daily at 11:00 UTC (07:00 ET / 06:00 CT) — before East-coast morning standups
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+    # Manual trigger from Actions tab
+    inputs:
+      sources:
+        description: 'Comma-separated source keys to refresh (npga,lpgas,bpnews,sec_edgar). Empty = all.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/news_pipeline/requirements.txt
+
+      - name: Run news refresh
+        env:
+          NEWS_SOURCES: ${{ github.event.inputs.sources }}
+        run: |
+          python scripts/news_pipeline/refresh_news.py
+
+      - name: Show summary
+        run: |
+          echo "==== news.json head ===="
+          python -c "import json; d=json.load(open('data/news.json')); print('generatedAt:', d.get('generatedAt')); print('count:', d.get('count')); print('sources:', d.get('sources')); print('first 3:', [a['headline'] for a in d['articles'][:3]])"
+
+      - name: Commit if changed
+        run: |
+          git config user.name "propane-intelligence-bot"
+          git config user.email "noreply@propane-intelligence.local"
+          if git diff --quiet data/news.json data/signals.json 2>/dev/null; then
+            echo "No changes — feeds unchanged."
+          else
+            git add data/news.json data/signals.json
+            git commit -m "data: refresh news + signals feeds ($(date -u +'%Y-%m-%dT%H:%MZ'))"
+            git push
+          fi
