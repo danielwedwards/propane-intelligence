@@ -613,7 +613,9 @@ table.lt td{padding:var(--space-sm) var(--space-sm);min-height:var(--touch-min)}
 .nav-group.active{background:var(--white);color:var(--text-primary);box-shadow:var(--shadow-xs)}
 .nav-group .ng-count{display:inline-flex;align-items:center;justify-content:center;min-width:14px;height:14px;padding:0 4px;border-radius:7px;background:rgba(124,92,252,.12);color:var(--brand);font-size:9px;font-weight:700;font-family:var(--font-mono)}
 .nav-group.active .ng-count{background:var(--brand);color:#fff}
-.nav-sub{display:inline-flex;align-items:center;gap:1px;background:transparent;border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:2px;margin-left:6px;flex-wrap:nowrap}
+.nav-sub{display:inline-flex;align-items:center;gap:1px;background:transparent;border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:2px;margin-left:6px;flex-wrap:nowrap;min-width:280px;justify-content:flex-start}
+/* v4.31.0: Stabilize the top-bar so right-side controls don't shift when group changes.
+   The widest group is Analyze (4 pills ~268px); 280px reserves enough so layout is fixed. */
 .nav-sub-btn{padding:5px 11px;border:none;border-radius:4px;font-size:11px;font-weight:500;font-family:inherit;color:var(--text-secondary);background:transparent;cursor:pointer;transition:all var(--tr-fast);white-space:nowrap}
 .nav-sub-btn:hover{background:var(--light-bg);color:var(--text-primary)}
 .nav-sub-btn.active{background:var(--brand);color:#fff;font-weight:600}
@@ -1171,8 +1173,8 @@ body:has(.main.view-brief) .pf-bar{display:none!important}
 .brief-page{max-width:920px;margin:0 auto;background:var(--white);border:1px solid var(--border-subtle);border-radius:12px;box-shadow:var(--shadow-xs);padding:36px 44px;font-family:var(--font-sans)}
 .brief-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding-bottom:18px;border-bottom:2px solid var(--brand);margin-bottom:22px;flex-wrap:wrap}
 .brief-head .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:6px}
-.brief-head .title-block h1{margin:0;font-family:var(--font-serif);font-size:30px;font-weight:400;color:var(--text-primary);letter-spacing:-0.4px;line-height:1.15}
-.brief-head .title-block .sub{margin-top:6px;font-size:12px;color:var(--text-secondary);font-family:var(--font-mono)}
+.brief-head .title-block h1{margin:0;font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--text-primary);letter-spacing:-0.2px;line-height:1.2}
+.brief-head .title-block .sub{margin-top:6px;font-size:12px;color:var(--text-secondary);font-family:var(--font-sans)}
 .brief-head .actions{display:flex;gap:8px;flex-wrap:wrap}
 .brief-head .actions button{padding:8px 14px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--white);color:var(--text-secondary);font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;transition:all var(--tr-fast);display:inline-flex;align-items:center;gap:6px}
 .brief-head .actions button:hover{border-color:var(--brand);color:var(--brand)}
@@ -1257,6 +1259,15 @@ body:has(.main.view-brief) .pf-bar{display:none!important}
 .main.view-intel .left,.main.view-intel .rh,.main.view-intel .map-wrap,.main.view-intel .charts-wrap{display:none!important}
 .main.view-intel .intel-wrap{display:block!important}
 .intel-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+/* v4.31.0: Intelligence title-block — visual parity with .cmp-head/.scn-head/.ov-head/.net-head */
+.intel-titlehead{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.intel-titlehead .title-block .eyebrow{font-size:10px;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:4px;font-family:var(--font-sans)}
+.intel-titlehead .title-block h2{margin:0;font-family:var(--font-serif);font-size:22px;font-weight:400;color:var(--text-primary);letter-spacing:-0.2px}
+.intel-titlehead .title-block .sub{margin-top:6px;font-size:12px;color:var(--text-secondary);max-width:580px;line-height:1.5;font-family:var(--font-sans)}
+.intel-titlehead .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.intel-titlehead .actions button{padding:7px 13px;font-size:12px;border-radius:var(--radius-md);border:1px solid var(--border);background:var(--white);color:var(--text-secondary);font-family:inherit;font-weight:500;cursor:pointer;transition:all var(--tr-fast)}
+.intel-titlehead .actions button:hover{border-color:var(--brand);color:var(--brand)}
+[data-theme="dark"] .intel-titlehead .actions button{background:#16202e;color:#a0aec0;border-color:#2a3a4e}
 .intel-tabs{display:inline-flex;background:#F0F2F5;border-radius:var(--radius-sm);padding:3px;gap:2px}
 .intel-tab{padding:7px 16px;border:none;border-radius:5px;font-size:12px;font-weight:600;font-family:inherit;color:var(--text-tertiary);background:transparent;cursor:pointer;transition:all var(--tr-fast);letter-spacing:0.2px}
 .intel-tab:hover{color:var(--text-primary)}
@@ -1566,10 +1577,7 @@ Continue with Microsoft
 <button class="section-btn" data-section="scenarios" role="tab" aria-selected="false" onclick="setSection('scenarios')" title="Scenarios (S)">Scenarios</button>
 <button class="section-btn" data-section="analytics" role="tab" aria-selected="false" onclick="setSection('analytics')" title="Analytics (A)">Analytics</button>
 </div>
-<div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout">
-<button class="sub-btn" data-sub="table" role="tab" aria-selected="false" onclick="setCompaniesSub('table')" title="Table only (T)">Table</button>
-<button class="sub-btn active" data-sub="both" role="tab" aria-selected="true" onclick="setCompaniesSub('both')" title="Table + Map (B)">+ Map</button>
-</div>
+<!-- v4.31.0: companiesSubToggle moved into the League Table header to keep top-bar layout stable across groups. Hidden marker remains so existing setView() sync code keeps working. -->
 <div class="act-wrap">
 <button class="act-btn" id="wlBtn" onclick="toggleWatchlistPanel()" aria-haspopup="true" aria-expanded="false" aria-label="Watchlist" title="Watchlist">
 <span class="act-bell" aria-hidden="true">&#9733;</span>
@@ -1687,7 +1695,7 @@ Continue with Microsoft
 <div class="main" id="mainArea">
 <div class="left">
 <!-- === PRODUCT SPRINT B: Polished League Table header === -->
-<div class="ph"><div style="display:flex;align-items:center;gap:8px"><h2 style="margin:0">League Table</h2><button class="help-btn" onclick="toggleHelp()" title="Scoring methodology &amp; keyboard shortcuts" aria-label="Help and keyboard shortcuts">?</button><button class="help-btn" onclick="toggleSources()" title="View data sources &amp; methodology" aria-label="Data sources" style="font-size:9px;width:auto;padding:0 8px;border-radius:var(--radius-sm)">Sources</button></div><div style="display:flex;align-items:center;gap:10px"><div class="density-toggle" role="group" aria-label="Row density"><button id="densityComfortable" class="is-active" onclick="setDensity('comfortable')" aria-pressed="true" title="Comfortable rows">&#9776;</button><button id="densityCompact" onclick="setDensity('compact')" aria-pressed="false" title="Compact rows">&#8801;</button></div><span class="cnt" id="tc" aria-live="polite">0 companies</span></div></div>
+<div class="ph"><div style="display:flex;align-items:center;gap:8px"><h2 style="margin:0">League Table</h2><button class="help-btn" onclick="toggleHelp()" title="Scoring methodology &amp; keyboard shortcuts" aria-label="Help and keyboard shortcuts">?</button><button class="help-btn" onclick="toggleSources()" title="View data sources &amp; methodology" aria-label="Data sources" style="font-size:9px;width:auto;padding:0 8px;border-radius:var(--radius-sm)">Sources</button></div><div style="display:flex;align-items:center;gap:10px"><div class="sub-toggle" id="companiesSubToggle" role="tablist" aria-label="Companies layout"><button class="sub-btn" data-sub="table" role="tab" aria-selected="false" onclick="setCompaniesSub('table')" title="Table only (T)">Table</button><button class="sub-btn active" data-sub="both" role="tab" aria-selected="true" onclick="setCompaniesSub('both')" title="Table + Map (B)">+ Map</button></div><div class="density-toggle" role="group" aria-label="Row density"><button id="densityComfortable" class="is-active" onclick="setDensity('comfortable')" aria-pressed="true" title="Comfortable rows">&#9776;</button><button id="densityCompact" onclick="setDensity('compact')" aria-pressed="false" title="Compact rows">&#8801;</button></div><span class="cnt" id="tc" aria-live="polite">0 companies</span></div></div>
 <!-- v4.28.0: Bulk-select action bar -->
 <div class="bulk-bar" id="bulkBar" role="region" aria-label="Bulk actions">
 <span class="ct" id="bulkCount">0</span>
@@ -1908,14 +1916,24 @@ Continue with Microsoft
 </div>
 <!-- v4.3.0: Intelligence section (News + Signals) -->
 <div class="intel-wrap" id="intelWrap">
+<!-- v4.31.0: Title-block + eyebrow + h2 + sub for visual consistency with Compare/Overlap/Network/Plan sections -->
+<div class="intel-titlehead">
+<div class="title-block">
+<div class="eyebrow">Live Intelligence</div>
+<h2>News &amp; Signals</h2>
+<div class="sub">Real-time news from NPGA, LP Gas, BPN, plus SEC EDGAR filings for tracked propane companies. Watchlist alerts surface in the Activity feed when a company you star is mentioned.</div>
+</div>
+<div class="actions">
+<button id="intelRefreshBtn" onclick="_intelRefresh()" title="Refresh news + signals feeds (last fetched: see chip below)" aria-label="Refresh intelligence feed">&#x21bb; Refresh</button>
+</div>
+</div>
 <div class="intel-head">
 <div class="intel-tabs" id="intelTabs" role="tablist" aria-label="Intelligence tabs">
 <button class="intel-tab active" data-tab="news" role="tab" aria-selected="true" onclick="setIntelTab('news')">News <span class="tab-count" id="intelNewsCount">0</span></button>
 <button class="intel-tab" data-tab="signals" role="tab" aria-selected="false" onclick="setIntelTab('signals')">Signals <span class="tab-count" id="intelSignalsCount">0</span></button>
 </div>
-<span class="intel-meta" id="intelMeta">Loading…</span>
+<span class="intel-meta" id="intelMeta">Loading&hellip;</span>
 <span id="intelStaleChip" style="display:none;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:3px 8px;border-radius:9px;margin-left:6px"></span>
-<button id="intelRefreshBtn" onclick="_intelRefresh()" title="Refresh news + signals feeds" aria-label="Refresh intelligence feed" style="margin-left:auto;padding:5px 10px;font-size:11px;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--white);color:var(--text-secondary);cursor:pointer;font-family:inherit;font-weight:500">&#x21bb; Refresh</button>
 </div>
 <div class="intel-head" style="margin-bottom:12px">
 <div class="intel-search">
@@ -5876,10 +5894,19 @@ function _intelStalenessLabel(){
 }
 async function _intelFetchOne(url,validator,retries){
   retries=(retries==null)?2:retries;
-  let bust='?_='+Date.now();
+  // v4.31.0: Stronger cache bust — random + timestamp; force no-cache + Pragma headers + Cache-Control
+  let bust='?_='+Date.now()+'_'+Math.random().toString(36).slice(2,8);
   for(let attempt=0;attempt<=retries;attempt++){
     try{
-      let res=await fetch(url+bust,{cache:'no-store'});
+      let res=await fetch(url+bust,{
+        cache:'no-store',
+        credentials:'omit',
+        headers:{
+          'Cache-Control':'no-cache, no-store, must-revalidate',
+          'Pragma':'no-cache',
+          'Expires':'0'
+        }
+      });
       if(!res.ok){throw new Error('HTTP '+res.status)}
       let j=await res.json();
       let v=validator?validator(j):{ok:true};
@@ -5895,34 +5922,62 @@ async function _intelLoad(opts){
   let force=opts&&opts.force;
   if(_intelLoadStarted&&!force)return;
   _intelLoadStarted=true;
+  // v4.31.0: Visible refresh state on the button + meta line
   let intelMeta=document.getElementById('intelMeta');
+  let refreshBtn=document.getElementById('intelRefreshBtn');
   if(intelMeta)intelMeta.textContent=force?'Refreshing…':'Loading…';
+  if(refreshBtn){
+    refreshBtn.disabled=true;
+    refreshBtn.dataset.origText=refreshBtn.dataset.origText||refreshBtn.innerHTML;
+    refreshBtn.innerHTML='⟳ Refreshing&hellip;';
+    refreshBtn.style.opacity='0.7';
+  }
+  let prevCount=INTEL_NEWS?(INTEL_NEWS.articles||[]).length:0;
+  let prevGen=INTEL_NEWS?INTEL_NEWS.generatedAt:null;
   let nRes=await _intelFetchOne('data/news.json',_intelValidateNews,2);
   let sRes=await _intelFetchOne('data/signals.json',_intelValidateSignals,2);
-  if(nRes.ok){INTEL_NEWS=nRes.data}
+  if(nRes.ok){INTEL_NEWS=nRes.data;_intelLastError=''}
   else{_intelLastError='News: '+nRes.err}
   if(sRes.ok){INTEL_SIGNALS=sRes.data}
   else if(!_intelLastError){_intelLastError='Signals: '+sRes.err}
   _intelLastLoadAt=Date.now();
   _intelLastLoadOk=nRes.ok;
-  renderIntelligence();
+  // Always re-render — even if content is identical, the user expects visible feedback
+  try{renderIntelligence()}catch(e){console.error('[render intel]',e)}
   try{_wlScanNewsForAlerts()}catch(e){console.error('[wl scan]',e)}
-  // Surface stale state
-  let stale=_intelStalenessLabel();
-  if(stale&&stale.level==='critical'&&force){showToast('News feed is '+stale.days+' days old — data may be outdated')}
-}
-async function _intelRefresh(){
-  // Manual or auto refresh — bypasses the once-only guard
-  showToast('Refreshing intelligence feed…');
-  _intelLoadStarted=false;
-  await _intelLoad({force:true});
-  let stale=_intelStalenessLabel();
-  if(_intelLastLoadOk){
-    if(!stale)showToast('Intelligence refreshed');
-    else showToast('Refreshed (feed last updated '+stale.days+'d ago)');
-  } else {
+  // Restore button state
+  if(refreshBtn){
+    refreshBtn.disabled=false;
+    refreshBtn.innerHTML=refreshBtn.dataset.origText||'↻ Refresh';
+    refreshBtn.style.opacity='';
+  }
+  // Compute deltas for the toast
+  if(force&&_intelLastLoadOk){
+    let newCount=(INTEL_NEWS.articles||[]).length;
+    let newGen=INTEL_NEWS.generatedAt;
+    let stale=_intelStalenessLabel();
+    let deltaMsg='';
+    if(prevGen&&newGen&&newGen!==prevGen){
+      let added=newCount-prevCount;
+      deltaMsg=added>0?(' · '+added+' new article'+(added===1?'':'s')):' · feed updated';
+    } else if(prevGen===newGen){
+      deltaMsg=' · no changes since '+_intelTimeAgo(newGen);
+    }
+    let staleNote=(stale&&stale.level==='critical')?' (feed last updated '+stale.days+'d ago — schedule may not be running)':'';
+    showToast('Intelligence refreshed'+deltaMsg+staleNote);
+  } else if(force&&!_intelLastLoadOk){
     showToast('Refresh failed: '+_intelLastError);
   }
+}
+async function _intelRefresh(){
+  // Manual refresh — bypasses the once-only guard
+  _intelLoadStarted=false;
+  await _intelLoad({force:true});
+  // v4.31.0: brief visual flash on the news/signals count badges so user sees the data update
+  try{
+    let nc=document.getElementById('intelNewsCount'),sc=document.getElementById('intelSignalsCount');
+    [nc,sc].forEach(el=>{if(!el)return;el.style.transition='background .25s ease,color .25s ease';let prevBg=el.style.background,prevColor=el.style.color;el.style.background='#7C5CFC';el.style.color='#fff';setTimeout(()=>{el.style.background=prevBg;el.style.color=prevColor},700)});
+  }catch(e){}
 }
 
 function setIntelTab(tab){
@@ -6012,8 +6067,15 @@ function renderIntelligence(){
       let staleHoursLocal=(Date.now()-new Date(latest).getTime())/3600000;
       let stale=staleHoursLocal>72;
       // v4.23.0: render error state if no live data + we had an error
+      // v4.31.0: also show local 'fetched at' indicator so refresh button feedback is visible
+      let fetchedNote='';
+      if(_intelLastLoadAt){
+        let secsAgo=Math.floor((Date.now()-_intelLastLoadAt)/1000);
+        let fetchedStr=secsAgo<5?'just now':(secsAgo<60?(secsAgo+'s ago'):(Math.floor(secsAgo/60)+'m ago'));
+        fetchedNote=' &middot; <span style="color:var(--text-tertiary)">fetched '+fetchedStr+'</span>';
+      }
 
-      metaEl.innerHTML='<b class="'+(stale?'stale':'')+'">\u25CF</b> Last updated '+_intelTimeAgo(latest)+' &middot; '+(news.length+signals.length)+' items';
+      metaEl.innerHTML='<b class="'+(stale?'stale':'')+'">\u25CF</b> Feed dated '+_intelTimeAgo(latest)+' &middot; '+(news.length+signals.length)+' items'+fetchedNote;
     } else if(_intelLastError){
       metaEl.innerHTML='<b style="color:#C0392B">●</b> Failed to load &mdash; <span style="color:#C0392B">'+_intelEscape(_intelLastError)+'</span>';
     } else {
